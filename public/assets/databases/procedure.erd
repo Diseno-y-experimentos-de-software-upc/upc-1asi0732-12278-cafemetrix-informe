@@ -1,0 +1,1564 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2600,
+    "height": 2000,
+    "scrollTop": -160.7331,
+    "scrollLeft": -225.6652,
+    "zoomLevel": 0.91,
+    "show": 420,
+    "database": 4,
+    "databaseName": "procedure_db",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "t_recipe",
+      "t_portfolio",
+      "t_ingredient",
+      "t_grind_calibration",
+      "t_cupping_session",
+      "t_defect"
+    ],
+    "relationshipIds": [
+      "r_recipe_portfolio",
+      "r_recipe_cupping_session",
+      "r_ingredient_recipe"
+    ],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "t_recipe": {
+        "id": "t_recipe",
+        "name": "recipes",
+        "comment": "",
+        "columnIds": [
+          "c_recipe_id",
+          "c_recipe_user_id",
+          "c_recipe_name",
+          "c_recipe_image_url",
+          "c_recipe_extraction_method",
+          "c_recipe_extraction_category",
+          "c_recipe_ratio",
+          "c_recipe_cupping_session_id",
+          "c_recipe_portfolio_id",
+          "c_recipe_preparation_time",
+          "c_recipe_steps",
+          "c_recipe_tips",
+          "c_recipe_cupping",
+          "c_recipe_grind_size"
+        ],
+        "seqColumnIds": [
+          "c_recipe_id",
+          "c_recipe_user_id",
+          "c_recipe_name",
+          "c_recipe_image_url",
+          "c_recipe_extraction_method",
+          "c_recipe_extraction_category",
+          "c_recipe_ratio",
+          "c_recipe_cupping_session_id",
+          "c_recipe_portfolio_id",
+          "c_recipe_preparation_time",
+          "c_recipe_steps",
+          "c_recipe_tips",
+          "c_recipe_cupping",
+          "c_recipe_grind_size"
+        ],
+        "ui": {
+          "x": 1019.0232,
+          "y": 116.9676,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#175fe6"
+        },
+        "meta": {
+          "updateAt": 1776139045439,
+          "createAt": 1713000000000
+        }
+      },
+      "t_portfolio": {
+        "id": "t_portfolio",
+        "name": "portfolios",
+        "comment": "",
+        "columnIds": [
+          "c_portfolio_id",
+          "c_portfolio_user_id",
+          "c_portfolio_name"
+        ],
+        "seqColumnIds": [
+          "c_portfolio_id",
+          "c_portfolio_user_id",
+          "c_portfolio_name"
+        ],
+        "ui": {
+          "x": 956.6755,
+          "y": 648.9637,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#175fe6"
+        },
+        "meta": {
+          "updateAt": 1776139053872,
+          "createAt": 1713000000000
+        }
+      },
+      "t_ingredient": {
+        "id": "t_ingredient",
+        "name": "ingredients",
+        "comment": "",
+        "columnIds": [
+          "c_ingredient_id",
+          "c_ingredient_recipe_id",
+          "c_ingredient_name",
+          "c_ingredient_amount",
+          "c_ingredient_unit"
+        ],
+        "seqColumnIds": [
+          "c_ingredient_id",
+          "c_ingredient_recipe_id",
+          "c_ingredient_name",
+          "c_ingredient_amount",
+          "c_ingredient_unit"
+        ],
+        "ui": {
+          "x": 626.7993,
+          "y": 481.3995,
+          "zIndex": 1,
+          "widthName": 61,
+          "widthComment": 60,
+          "color": "#175fe6"
+        },
+        "meta": {
+          "updateAt": 1776139051141,
+          "createAt": 1713000000000
+        }
+      },
+      "t_grind_calibration": {
+        "id": "t_grind_calibration",
+        "name": "grind_calibrations",
+        "comment": "",
+        "columnIds": [
+          "c_grind_calibration_id",
+          "c_grind_calibration_profile_id",
+          "c_grind_calibration_name",
+          "c_grind_calibration_method",
+          "c_grind_calibration_equipment",
+          "c_grind_calibration_grind_number",
+          "c_grind_calibration_aperture",
+          "c_grind_calibration_cup_volume",
+          "c_grind_calibration_final_volume",
+          "c_grind_calibration_calibration_date",
+          "c_grind_calibration_comments",
+          "c_grind_calibration_notes",
+          "c_grind_calibration_sample_image"
+        ],
+        "seqColumnIds": [
+          "c_grind_calibration_id",
+          "c_grind_calibration_profile_id",
+          "c_grind_calibration_name",
+          "c_grind_calibration_method",
+          "c_grind_calibration_equipment",
+          "c_grind_calibration_grind_number",
+          "c_grind_calibration_aperture",
+          "c_grind_calibration_cup_volume",
+          "c_grind_calibration_final_volume",
+          "c_grind_calibration_calibration_date",
+          "c_grind_calibration_comments",
+          "c_grind_calibration_notes",
+          "c_grind_calibration_sample_image"
+        ],
+        "ui": {
+          "x": 278.9095,
+          "y": 106.6741,
+          "zIndex": 1,
+          "widthName": 96,
+          "widthComment": 60,
+          "color": "#175fe6"
+        },
+        "meta": {
+          "updateAt": 1776139036988,
+          "createAt": 1713000000000
+        }
+      },
+      "t_cupping_session": {
+        "id": "t_cupping_session",
+        "name": "cupping_sessions",
+        "comment": "",
+        "columnIds": [
+          "c_cupping_session_id",
+          "c_cupping_session_profile_id",
+          "c_cupping_session_name",
+          "c_cupping_session_origin",
+          "c_cupping_session_variety",
+          "c_cupping_session_processing",
+          "c_cupping_session_session_date",
+          "c_cupping_session_favorite",
+          "c_cupping_session_results_json",
+          "c_cupping_session_roast_style_notes"
+        ],
+        "seqColumnIds": [
+          "c_cupping_session_id",
+          "c_cupping_session_profile_id",
+          "c_cupping_session_name",
+          "c_cupping_session_origin",
+          "c_cupping_session_variety",
+          "c_cupping_session_processing",
+          "c_cupping_session_session_date",
+          "c_cupping_session_favorite",
+          "c_cupping_session_results_json",
+          "c_cupping_session_roast_style_notes",
+          "t0Kiza4N8LrfnTt0OL9Nw"
+        ],
+        "ui": {
+          "x": 602.0254,
+          "y": 120,
+          "zIndex": 1,
+          "widthName": 94,
+          "widthComment": 60,
+          "color": "#175fe6"
+        },
+        "meta": {
+          "updateAt": 1776138863903,
+          "createAt": 1713000000000
+        }
+      },
+      "t_defect": {
+        "id": "t_defect",
+        "name": "defects",
+        "comment": "",
+        "columnIds": [
+          "c_defect_id",
+          "c_defect_profile_id",
+          "c_defect_coffee_display_name",
+          "c_defect_coffee_region",
+          "c_defect_coffee_variety",
+          "c_defect_coffee_total_weight",
+          "c_defect_name",
+          "c_defect_defect_type",
+          "c_defect_defect_weight",
+          "c_defect_percentage",
+          "c_defect_probable_cause",
+          "c_defect_suggested_solution"
+        ],
+        "seqColumnIds": [
+          "c_defect_id",
+          "c_defect_profile_id",
+          "c_defect_coffee_display_name",
+          "c_defect_coffee_region",
+          "c_defect_coffee_variety",
+          "c_defect_coffee_total_weight",
+          "c_defect_name",
+          "c_defect_defect_type",
+          "c_defect_defect_weight",
+          "c_defect_percentage",
+          "c_defect_probable_cause",
+          "c_defect_suggested_solution"
+        ],
+        "ui": {
+          "x": 281.3037,
+          "y": 520.9113,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#175fe6"
+        },
+        "meta": {
+          "updateAt": 1776139029159,
+          "createAt": 1713000000000
+        }
+      },
+      "r4WYjvozyRRct6FuBVxyh": {
+        "id": "r4WYjvozyRRct6FuBVxyh",
+        "name": "",
+        "comment": "",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 987.6151,
+          "y": 164,
+          "zIndex": 15,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1776138992604,
+          "createAt": 1776138973717
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "c_recipe_id": {
+        "id": "c_recipe_id",
+        "tableId": "t_recipe",
+        "name": "id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_user_id": {
+        "id": "c_recipe_user_id",
+        "tableId": "t_recipe",
+        "name": "user_id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_name": {
+        "id": "c_recipe_name",
+        "tableId": "t_recipe",
+        "name": "name",
+        "comment": "",
+        "dataType": "VARCHAR(20)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_image_url": {
+        "id": "c_recipe_image_url",
+        "tableId": "t_recipe",
+        "name": "image_url",
+        "comment": "",
+        "dataType": "VARCHAR(2048)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 87,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_extraction_method": {
+        "id": "c_recipe_extraction_method",
+        "tableId": "t_recipe",
+        "name": "extraction_method",
+        "comment": "",
+        "dataType": "VARCHAR(50)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 101,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_extraction_category": {
+        "id": "c_recipe_extraction_category",
+        "tableId": "t_recipe",
+        "name": "extraction_category",
+        "comment": "",
+        "dataType": "VARCHAR(50)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 106,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_ratio": {
+        "id": "c_recipe_ratio",
+        "tableId": "t_recipe",
+        "name": "ratio",
+        "comment": "",
+        "dataType": "VARCHAR(10)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_cupping_session_id": {
+        "id": "c_recipe_cupping_session_id",
+        "tableId": "t_recipe",
+        "name": "cupping_session_id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 2,
+          "widthName": 103,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_portfolio_id": {
+        "id": "c_recipe_portfolio_id",
+        "tableId": "t_recipe",
+        "name": "portfolio_id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 2,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_preparation_time": {
+        "id": "c_recipe_preparation_time",
+        "tableId": "t_recipe",
+        "name": "preparation_time",
+        "comment": "",
+        "dataType": "DOUBLE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 92,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1776138787445,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_steps": {
+        "id": "c_recipe_steps",
+        "tableId": "t_recipe",
+        "name": "steps",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1776138813171,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_tips": {
+        "id": "c_recipe_tips",
+        "tableId": "t_recipe",
+        "name": "tips",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1776138819002,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_cupping": {
+        "id": "c_recipe_cupping",
+        "tableId": "t_recipe",
+        "name": "cupping",
+        "comment": "",
+        "dataType": "VARCHAR(20)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_recipe_grind_size": {
+        "id": "c_recipe_grind_size",
+        "tableId": "t_recipe",
+        "name": "grind_size",
+        "comment": "",
+        "dataType": "VARCHAR(20)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_portfolio_id": {
+        "id": "c_portfolio_id",
+        "tableId": "t_portfolio",
+        "name": "id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_portfolio_user_id": {
+        "id": "c_portfolio_user_id",
+        "tableId": "t_portfolio",
+        "name": "user_id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_portfolio_name": {
+        "id": "c_portfolio_name",
+        "tableId": "t_portfolio",
+        "name": "name",
+        "comment": "",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_ingredient_id": {
+        "id": "c_ingredient_id",
+        "tableId": "t_ingredient",
+        "name": "id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_ingredient_recipe_id": {
+        "id": "c_ingredient_recipe_id",
+        "tableId": "t_ingredient",
+        "name": "recipe_id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_ingredient_name": {
+        "id": "c_ingredient_name",
+        "tableId": "t_ingredient",
+        "name": "name",
+        "comment": "",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_ingredient_amount": {
+        "id": "c_ingredient_amount",
+        "tableId": "t_ingredient",
+        "name": "amount",
+        "comment": "",
+        "dataType": "DOUBLE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_ingredient_unit": {
+        "id": "c_ingredient_unit",
+        "tableId": "t_ingredient",
+        "name": "unit",
+        "comment": "",
+        "dataType": "VARCHAR(10)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_id": {
+        "id": "c_grind_calibration_id",
+        "tableId": "t_grind_calibration",
+        "name": "id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_profile_id": {
+        "id": "c_grind_calibration_profile_id",
+        "tableId": "t_grind_calibration",
+        "name": "profile_id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_name": {
+        "id": "c_grind_calibration_name",
+        "tableId": "t_grind_calibration",
+        "name": "name",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_method": {
+        "id": "c_grind_calibration_method",
+        "tableId": "t_grind_calibration",
+        "name": "method",
+        "comment": "",
+        "dataType": "VARCHAR(120)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_equipment": {
+        "id": "c_grind_calibration_equipment",
+        "tableId": "t_grind_calibration",
+        "name": "equipment",
+        "comment": "",
+        "dataType": "VARCHAR(120)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_grind_number": {
+        "id": "c_grind_calibration_grind_number",
+        "tableId": "t_grind_calibration",
+        "name": "grind_number",
+        "comment": "",
+        "dataType": "VARCHAR(64)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 76,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_aperture": {
+        "id": "c_grind_calibration_aperture",
+        "tableId": "t_grind_calibration",
+        "name": "aperture",
+        "comment": "",
+        "dataType": "DOUBLE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_cup_volume": {
+        "id": "c_grind_calibration_cup_volume",
+        "tableId": "t_grind_calibration",
+        "name": "cup_volume",
+        "comment": "",
+        "dataType": "DOUBLE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 65,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_final_volume": {
+        "id": "c_grind_calibration_final_volume",
+        "tableId": "t_grind_calibration",
+        "name": "final_volume",
+        "comment": "",
+        "dataType": "DOUBLE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 69,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_calibration_date": {
+        "id": "c_grind_calibration_calibration_date",
+        "tableId": "t_grind_calibration",
+        "name": "calibration_date",
+        "comment": "",
+        "dataType": "DATE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 86,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_comments": {
+        "id": "c_grind_calibration_comments",
+        "tableId": "t_grind_calibration",
+        "name": "comments",
+        "comment": "",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_notes": {
+        "id": "c_grind_calibration_notes",
+        "tableId": "t_grind_calibration",
+        "name": "notes",
+        "comment": "",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_grind_calibration_sample_image": {
+        "id": "c_grind_calibration_sample_image",
+        "tableId": "t_grind_calibration",
+        "name": "sample_image",
+        "comment": "",
+        "dataType": "LONGTEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 77,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_id": {
+        "id": "c_cupping_session_id",
+        "tableId": "t_cupping_session",
+        "name": "id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_profile_id": {
+        "id": "c_cupping_session_profile_id",
+        "tableId": "t_cupping_session",
+        "name": "profile_id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_name": {
+        "id": "c_cupping_session_name",
+        "tableId": "t_cupping_session",
+        "name": "name",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_origin": {
+        "id": "c_cupping_session_origin",
+        "tableId": "t_cupping_session",
+        "name": "origin",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_variety": {
+        "id": "c_cupping_session_variety",
+        "tableId": "t_cupping_session",
+        "name": "variety",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_processing": {
+        "id": "c_cupping_session_processing",
+        "tableId": "t_cupping_session",
+        "name": "processing",
+        "comment": "",
+        "dataType": "VARCHAR(120)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_session_date": {
+        "id": "c_cupping_session_session_date",
+        "tableId": "t_cupping_session",
+        "name": "session_date",
+        "comment": "",
+        "dataType": "DATE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 69,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_favorite": {
+        "id": "c_cupping_session_favorite",
+        "tableId": "t_cupping_session",
+        "name": "favorite",
+        "comment": "",
+        "dataType": "BOOLEAN",
+        "default": "false",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_results_json": {
+        "id": "c_cupping_session_results_json",
+        "tableId": "t_cupping_session",
+        "name": "results_json",
+        "comment": "",
+        "dataType": "LONGTEXT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_cupping_session_roast_style_notes": {
+        "id": "c_cupping_session_roast_style_notes",
+        "tableId": "t_cupping_session",
+        "name": "roast_style_notes",
+        "comment": "",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 92,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_id": {
+        "id": "c_defect_id",
+        "tableId": "t_defect",
+        "name": "id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_profile_id": {
+        "id": "c_defect_profile_id",
+        "tableId": "t_defect",
+        "name": "profile_id",
+        "comment": "",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_coffee_display_name": {
+        "id": "c_defect_coffee_display_name",
+        "tableId": "t_defect",
+        "name": "coffee_display_name",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 111,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_coffee_region": {
+        "id": "c_defect_coffee_region",
+        "tableId": "t_defect",
+        "name": "coffee_region",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 74,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_coffee_variety": {
+        "id": "c_defect_coffee_variety",
+        "tableId": "t_defect",
+        "name": "coffee_variety",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 75,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_coffee_total_weight": {
+        "id": "c_defect_coffee_total_weight",
+        "tableId": "t_defect",
+        "name": "coffee_total_weight",
+        "comment": "",
+        "dataType": "DOUBLE",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 105,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_name": {
+        "id": "c_defect_name",
+        "tableId": "t_defect",
+        "name": "name",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_defect_type": {
+        "id": "c_defect_defect_type",
+        "tableId": "t_defect",
+        "name": "defect_type",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_defect_weight": {
+        "id": "c_defect_defect_weight",
+        "tableId": "t_defect",
+        "name": "defect_weight",
+        "comment": "",
+        "dataType": "DOUBLE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 76,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_percentage": {
+        "id": "c_defect_percentage",
+        "tableId": "t_defect",
+        "name": "percentage",
+        "comment": "",
+        "dataType": "DOUBLE",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 62,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_probable_cause": {
+        "id": "c_defect_probable_cause",
+        "tableId": "t_defect",
+        "name": "probable_cause",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 84,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "c_defect_suggested_solution": {
+        "id": "c_defect_suggested_solution",
+        "tableId": "t_defect",
+        "name": "suggested_solution",
+        "comment": "",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 104,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "t0Kiza4N8LrfnTt0OL9Nw": {
+        "id": "t0Kiza4N8LrfnTt0OL9Nw",
+        "tableId": "t_cupping_session",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1776138861555,
+          "createAt": 1776138861555
+        }
+      }
+    },
+    "relationshipEntities": {
+      "r_recipe_portfolio": {
+        "id": "r_recipe_portfolio",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 1,
+        "start": {
+          "tableId": "t_portfolio",
+          "columnIds": [
+            "c_portfolio_id"
+          ],
+          "x": 1081.6755,
+          "y": 648.9637,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "t_recipe",
+          "columnIds": [
+            "c_recipe_portfolio_id"
+          ],
+          "x": 1170.0232,
+          "y": 508.9676,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "r_recipe_cupping_session": {
+        "id": "r_recipe_cupping_session",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 1,
+        "start": {
+          "tableId": "t_cupping_session",
+          "columnIds": [
+            "c_cupping_session_id"
+          ],
+          "x": 884.0254,
+          "y": 268,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "t_recipe",
+          "columnIds": [
+            "c_recipe_cupping_session_id"
+          ],
+          "x": 1019.0232,
+          "y": 214.9676,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      },
+      "r_ingredient_recipe": {
+        "id": "r_ingredient_recipe",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "t_recipe",
+          "columnIds": [
+            "c_recipe_id"
+          ],
+          "x": 1019.0232,
+          "y": 410.9676,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "t_ingredient",
+          "columnIds": [
+            "c_ingredient_recipe_id"
+          ],
+          "x": 876.7993,
+          "y": 569.3995,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1713000000000,
+          "createAt": 1713000000000
+        }
+      }
+    },
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}
