@@ -4032,7 +4032,7 @@ Puede añadirse un video *about the team* en el que se resume el rol de cada int
 
 - Enlace para acceder al [repositorio Informe](https://github.com/Diseno-y-experimentos-de-software-upc/upc-1asi0732-12278-cafemetrix-informe#521-sprint-backlogs)
 
-- Enlace para acceder al [repositorio Landing-page]()
+- Enlace para acceder al [repositorio Landing-page](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-landingPage)
 
 - Enlace para acceder al [repositorio Front-end](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-frontEnd.git)
 
