@@ -51,6 +51,20 @@
 <div align="center" style="font-weight: bold;">Abril de 2026</div>
 
 <!--ÍNDICE-->
+
+
+# Registro de versiones del informe
+
+| Versión | Fecha | Autor | Descripción de modificación |
+|---------|-------|-------|-----------------------------|
+| TB1     |       |       |                             |
+
+# Project Report Collaboration Insights
+
+| Entregable | Integrante | Actividades realizadas | Conclusiones |
+|------------|------------|------------------------|--------------|
+| TB1        | x          | x                      | x            |
+
 # Contenido
 - [Registro de versiones del informe](#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
@@ -251,14 +265,33 @@
     - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
         - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
 
-- [Conclusiones](#conclusiones)
-- [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+- [Avance de Conclusiones, Bibliografía y Anexos](#avance-de-conclusiones-bibliografía-y-anexos)
+    - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+    - [Conclusiones](#conclusiones)
+    - [Recomendaciones](#recomendaciones)
+    - [Bibliografía](#bibliografía)
+    - [Anexos](#anexos)
 - [Video App Validation](#video-app-validation)
 - [Video About-the-Team](#video-about-the-team)
-- [Bibliografía](#bibliografía)
-- [Anexos](#anexos)
 
 
+
+# Student Outcome
+
+## ABET – EAC - Student Outcome 4
+La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
+
+En esta sección cada integrante sustenta, para **TB1**, cómo sus actividades contribuyen al logro del Outcome 4 en sus criterios específicos.
+
+
+| Criterio específico | Acciones realizadas | Conclusiones  |
+|---------------------|---------------------|---------------|
+| 4.c.1. Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software. | x | x |
+| 4.c.2. Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales. | x | x |
+
+
+
+# Part I: As-Is Software Project
 
 # Capítulo I: Introducción
 
@@ -379,8 +412,88 @@ Visualmente, el producto debe ser claro, moderno y profesional, con un diseño m
 
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+**Hypothesis Statement 1:**
+
+**Creemos que si** CaféLab proporciona a baristas y cafeterías una plataforma digital que permita documentar, replicar y compartir procesos clave como el tueste, la calibración del molino, la cata y la preparación estos usuarios se sentirán satisfechos, sus procesos tendrán una mejor calidad y seguirán usando y recomendando la aplicación.
+
+**Sabremos** que hemos tenido éxito.
+
+**Cuando** la consistencia del café mejore en un 40% y la satisfacción del cliente aumente en un 30%.
+
+**Hypothesis Statement 2:**
+
+**Creemos que si** CaféLab implementa un módulo que alinee los parámetros técnicos del tueste (como humedad, temperatura de carga y curva de tueste) con el perfil final en taza las inconsistencias en la extracción disminuirán y las cafeterías podrán sacar un mejor provecho.
+
+**Sabremos** que hemos tenido éxito.
+
+**Cuando** los baristas reduzcan las inconsistencias en la extracción en un 35% y disminuyan las pérdidas de calidad en un 25%.
+
+**Hypothesis Statement 3:**
+
+**Creemos que si** CaféLab integra el sensor IoT TrackSilo para monitorear en tiempo real la temperatura y la humedad del café verde durante su almacenamiento, con alertas tempranas y registro por lote entonces el café tendrá una mejor calidad y menos producto sufrirá daños durante la primera etapa.
+
+**Sabremos** que hemos tenido éxito.
+
+**Cuando** los usuarios reduzcan las pérdidas de calidad por mala conservación en un 30% y mejoren los resultados del tueste en un 20%.
+
+
 #### 1.2.2.4. Lean UX Canvas
+
+A partir de lo recopilado se propopone una plataforma dual software + iot que automatiza variables críticas comno temperatura y humedad. De este modo, se presenta el Lean UX Canvas, el cual articula los siguientes componentes clave:
+
+<ul>
+
+<li> 
+  Problem Statement: Se identifica un gap crítico: la falta de conexión técnica entre el tueste y la experiencia en taza, lo que genera inconsistencia y pérdida de calidad.
+</li>
+
+<li> 
+  Customer Segments & Outcomes: El modelo se enfoca inicialmente en baristas profesionales y cafeterías de especialidad, buscando como resultado principal la reducción de mermas y el incremento de la fidelización mediante la consistencia del café.
+</li>
+
+<li>
+  Assumptions e Hypothesis Statements: Basándonos en la metodología Lean, hemos transformado nuestras suposiciones en hipótesis verificables. Por ejemplo: "Creemos que si proporcionamos herramientas para registrar curvas de tueste, los baristas mejorarán la consistencia de su producto".
+</li>
+</ul>
+
+<td><img src="public/assets/images/chapter-1/lean-ux/lean-ux-canvas.png" alt="LeanUxCanvas"></td>
+
+Enlace para acceder al [Canvas](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
+
+
+
 ## 1.3. Segmentos objetivos
+
+CafeLab se basa en el dominio del café de especialidad, donde la precisión técnica y la trazabilidad son factores críticos de éxito. De este modo, se han identificado dos perfiles clave que interactúan directamente con el ecosistema IoT propuesto.
+
+<h4>Segmento 1: Baristas Profesionales</h4>
+Este segmento está compuesto por especialistas enfocados en la ejecución técnica y la excelencia sensorial. Representan el motor operativo que garantiza la calidad final del producto.
+
+- <strong>Perfil Demográfico y Estadístico:</strong>
+    - Edad: Predominantemente entre 25 y 40 años (SCA, 2022).
+    - Crecimiento: El volumen de baristas certificados en la región (Perú, Colombia, México) presenta un incremento anual del 15% al 20% desde 2018 (SCA, 2023).
+    - Dispositivos: Uso intensivo de dispositivos móviles (iOS/Android) para la captura rápida de datos en barra.
+
+- <strong>Características del Dominio:</strong>
+    - Pain Point Crítico: Registro manual de aromas y curvas de tueste rompe el flujo de trabajo y genera pérdida de información valiosa.
+    - Necesidad: Requieren herramientas que eliminen la dependencia de la memoria y el "ensayo y error" mediante la automatización de variables como temperatura y humedad.
+    - Objetivo: Lograr la repetibilidad de perfiles de tueste y la profesionalización de consultorías mediante datos técnicos exportables.
+
+<h4>Segmento 2: Cafeterías de Especialidad (Dueños y Administradores)</h4>
+Este segmento representa la capa estratégica y de toma de decisiones. Su enfoque principal es la rentabilidad, la consistencia de la marca y la sostenibilidad del suministro.
+
+- <strong>Perfil Demográfico y Estadístico:</strong>
+    - Edad: Emprendedores de 30 a 50 años con formación en gestión o gastronomía.
+    - Mercado: El mercado de café de especialidad en Latam crece a una tasa del 9.4% anual (Euromonitor, 2023).
+    - Escalabilidad: Más del 70% de estos negocios se ubican en zonas urbanas dinámicas y gestionan equipos de 3 a 10 colaboradores.
+
+- <strong>Características del Dominio:</strong>
+    - Pain Point Crítico: Cálculo manual de la merma y la inconsistencia entre baristas como un riesgo directo para la utilidad neta.
+    - Necesidad: Una plataforma de seguimiento total que integre el inventario con el monitoreo en tiempo real de los granos almacenados.
+    - Objetivo: Fortalecer la fidelización del cliente mediante una "narrativa de origen" verificable con datos reales de trazabilidad, asegurando que cada taza servida mantenga el estándar de calidad de la marca.
+
+
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
@@ -641,16 +754,294 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
+#### Preguntas dirigidas a baristas profesionales:
+
+**Preguntas principales:**
+
+1. ¿Qué aspecto de tu método actual para registrar tus perfiles de tueste y recetas te gustaría que fuera más eficiente o preciso? ¿Hay alguna información valiosa que actualmente sea difícil de capturar o que lleve demasiado tiempo documentar?
+2. ¿Qué sistema has desarrollado para capturar y gestionar toda la información sobre origen, altitud, variedad y procesamiento? ¿Hay algún dato que te gustaría replicar más veces pero es complicado hacerlo con tus métodos actuales?
+3. ¿Qué sistema has empleado para capturar y gestionar toda la información sobre origen, altitud, variedad y procesamiento? ¿Hay algún dato que te gustaría registrar pero es complicado hacerlo con tus métodos actuales?
+4. ¿Qué estrategia has desarrollado para documentar y ajustar los parámetros de molienda para tus diferentes métodos de preparación? ¿Cuál es el desafío más frustrante que enfrentas al intentar mantener esta precisión?
+5. ¿Qué método has encontrado más efectivo para registrar tus evaluaciones sensoriales y conectarlas directamente con tus perfiles de tueste?
+6. ¿Qué tipo de información te han solicitado jueces o clientes sofisticados que te haya costado proporcionar de manera profesional? ¿Cómo has resuelto este desafío?
+7. ¿Qué sistema has desarrollado para transportar todo tu conocimiento técnico y artístico en competencias, consultorías o colaboraciones? ¿Cuál es el punto débil de este proceso que te gustaría resolver?
+8. ¿Qué metodología has implementado para rastrear el estado de tu café verde y tostado a lo largo del tiempo? ¿Qué información adicional sobre tus lotes te ayudaría a tomar decisiones más precisas sobre su uso óptimo?
+9. ¿Cuáles son esos puntos críticos que encuentras más desafiantes al intentar documentar y reproducir una curva de tueste específica? ¿Qué soluciones creativas has desarrollado para superar estas limitaciones?
+10. ¿Qué herramientas digitales has incorporado que realmente han transformado algún aspecto de tu proceso? ¿Dónde sientes que la tecnología actual todavía te deja con necesidades sin resolver?
+11. Si existiera una plataforma integral que conectara cada fase del proceso —desde la recepción del grano verde hasta la experiencia final en taza—, ¿qué funcionalidades específicas considerarías absolutamente esenciales? Considerando el impacto en tu eficiencia y calidad.
+
+---
+
+#### Preguntas dirigidas a dueños/administradores de cafeterías de especialidad:
+
+**Preguntas principales:**
+
+1. ¿Qué estrategias implementas para mantener la consistencia en la calidad del café servido cuando cuentas con diferentes baristas en tu equipo?
+2. ¿Cómo comunicas a tus clientes la información sobre las características especiales del café que ofreces? ¿Cuál es la información más solicitada por ellos?
+3. ¿Cómo registras y evalúas a tus proveedores de café verde? ¿Qué datos son cruciales para tu proceso de selección?
+4. ¿Cómo monitoreas actualmente la temperatura y humedad en el almacenamiento del café verde?  ¿Utilizas algún instrumento (termómetro, higrómetro) o es un control manual?
+5. ¿Qué tan útil te parecería contar con un dispositivo que mida automáticamente la humedad y temperatura del café verde y registre esos datos en tiempo real? ¿En qué situaciones crees que más te ayudaría?
+6. ¿Preferirías que el sistema solo te alerte cuando haya condiciones inadecuadas o que también actúe automáticamente (por ejemplo, activando ventilación)? ¿Por qué?
+7. ¿Cómo documentas y transmites el conocimiento técnico sobre tus cafés a tu equipo? ¿Qué herramientas utilizas para este proceso?
+8. ¿Cómo calculan actualmente el rendimiento y la rentabilidad por lote de café? ¿Qué métricas te gustaría poder medir con más precisión?
+9. ¿Qué información consideras fundamental para garantizar la trazabilidad completa desde el origen hasta la taza? ¿Cómo la organizas actualmente?
+10. ¿Qué herramientas digitales utilizas actualmente para la gestión de tu cafetería? ¿Qué procesos siguen siendo principalmente manuales o análogos?
+11. Si existiera una plataforma integral que conectara cada fase del proceso —desde la recepción del grano verde hasta la experiencia final en taza—, ¿qué funcionalidades específicas considerarías absolutamente esenciales? Considerando el impacto en tu eficiencia y calidad.
+
+---
+
+
+
 ### 2.2.2. Registro de entrevistas
+#### Entrevistas a baristas profesionales
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 1</td>
+    <td>Alejandra Avellaneda</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td><img src="public/assets/images/chapter-2/interviews/alejandra.png" alt="Foto de Alejandra Avellaneda" width="4000"></td>
+    <td>Alejandra trabaja en el área operativa de una cadena de cafeterías, donde se encarga de estandarizar las recetas y asegurar la consistencia en la calidad del café entre tiendas. Tiene conocimientos técnicos sobre calibración, evaluación sensorial y trazabilidad del grano, y maneja protocolos detallados para eventos fuera del entorno habitual. Utiliza balanzas de precisión y máquinas programables como parte de sus herramientas diarias. Si bien reconoce que ciertos datos sensibles no pueden compartirse por temas de confidencialidad, considera que una plataforma digital que integre información de trazabilidad, tueste y calidad sensorial podría ser de gran valor para su operación.</td>
+  </tr>
+  <tr>
+    <td>Timing: 00:00 - 06:48</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación </td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 2</td>
+    <td>Ranferi Valdivia</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Juan de Lurigancho</td>
+  </tr>
+  <tr>
+    <td><img src="public/assets/images/chapter-2/interviews/ranferi-valdivia.png" alt="Foto de Ranferi Valdivia" width="9000"></td>
+    <td>Ranferi Valdivia representa al segmento de baristas profesionales. Como usuario de 25 años con preferencia por iPhone, requiere una interfaz móvil rápida e intuitiva. El principal hallazgo es que procesos críticos como la molienda y el tueste dependen de prueba y error influenciada por factores externos (clima, humedad, máquina), generando frustración por falta de repetibilidad. La información está altamente fragmentada (notas, audios, fotos, cuadernos), dificultando la elaboración de reportes y la organización del conocimiento. Además, existe una desconexión entre la experiencia sensorial y su registro, ya que muchas decisiones dependen de la memoria y no de datos estructurados. Entre los puntos clave: la anotación manual interrumpe el flujo de trabajo, es difícil reproducir perfiles por falta de control ambiental, y existe una fuerte demanda por una plataforma integral que conecte todo el proceso. También se identifica la necesidad de automatizar la captura de datos (incluyendo variables ambientales con IoT) y mejorar la presentación profesional de la información para clientes y consultorías.</td>
+  </tr>
+  <tr>
+    <td>Timing: 06:48 - 14:31</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 3</td>
+    <td>Anyela Guillermo</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><img src="public/assets/images/chapter-2/interviews/anyela.png" alt="Foto de Anyela Guillermo" width="7000"></td>
+    <td>Anyela es una barista con 3 años de experiencia en café de especialidad y participante en competencias de latte art. Sus principales desafíos incluyen mantener la consistencia entre baristas, documentar recetas, encontrar temperaturas ideales para métodos filtrados, preservar propiedades del café mediante almacenamiento adecuado y lograr precisión en calibraciones. Aunque utiliza registros manuales, identifica la necesidad de herramientas tecnológicas para evaluación del café, análisis de variedades y monitoreo de almacenamiento. Considera valioso implementar una plataforma integral que conecte todo el proceso del café y espacios tipo laboratorio que integren teoría y práctica, desde el cultivo hasta la taza final.</td>
+  </tr>
+  <tr>
+    <td>Timing: 14:31 - 20:51</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+</tr>
+</table>
+
+#### Entrevistas a dueños o administradores de cafeterías de especialidad
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 1</td>
+    <td>Raul Donayre</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>42</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><img src="public/assets/images/chapter-2/interviews/raul.png" alt="Foto de Raul Donayre" width="7000"></td>
+    <td>Raul describió sus principales desafíos operativos y necesidades tecnológicas. Actualmente maneja de forma manual y desorganizada aspectos cruciales como certificaciones, información de proveedores y trazabilidad del café, lo que dificulta responder ágilmente a los clientes. Utiliza métodos básicos para comunicar las características especiales del café, incluyendo tarjetas informativas, aunque reconoce que necesita algo más visual y atractivo. Para mantener la consistencia entre baristas, implementa un sistema de mentoría y reuniones semanales de cata, pero admite que su documentación y capacitación necesitan actualización. En cuanto a tecnología, usa principalmente Excel, una caja registradora digital y aplicaciones básicas de tueste, pero carece de un sistema integral. Su principal necesidad es una plataforma que mejore la eficiencia operativa y la experiencia del cliente, permitiendo mostrar el valor agregado de sus productos para justificar precios más altos y aumentar la rentabilidad del negocio. El dueño enfatiza que cualquier solución debe ser tangible y visible para los clientes, ayudando a gestionar todo el proceso desde la recepción del grano hasta la taza final.</td>
+  </tr>
+  <tr>
+    <td>Timing: 20:51 - 27:02</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 2</td>
+    <td>Omar Ortiz</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>47</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><img src="public/assets/images/chapter-2/interviews/omar.png" alt="Foto de Omar Ortiz" width="5000"></td>
+    <td>Omar cuenta con una certificación internacional como barista por la SCA y actualmente es dueño de una cafetería especializada. Tiene un conocimiento sólido sobre los procesos del café, desde la selección del grano y sus características (como altura, proceso y humedad), hasta el control del tueste y la calibración diaria de las bebidas. Se encarga personalmente del almacenamiento y monitoreo del grano, utilizando herramientas como Excel para llevar registros de peso, rendimiento y trazabilidad. Aunque se maneja bien con herramientas digitales básicas, reconoce que ciertos procesos manuales podrían optimizarse mediante una plataforma digital especializada. Publica contenido educativo sobre café en LinkedIn, lo cual también refuerza su rol como formador dentro del rubro.</td>
+  </tr>
+  <tr>
+    <td>Timing: 27:02 - 33:21</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistada 3</td>
+    <td>Patricia Alvarez</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><img src="public/assets/images/chapter-2/interviews/patricia.png" alt="Foto de Patricia Alvarez" width="7000"></td>
+    <td>Patricia maneja su cafetería con procesos parcialmente estandarizados, pero aún depende mucho de la experiencia del equipo, lo que genera variabilidad en la calidad. Utiliza métodos básicos para comunicar el café y registrar proveedores, pero reconoce que la información no está centralizada ni conectada. El mayor problema está en el almacenamiento del café verde, donde el control de temperatura y humedad es empírico y sin datos registrados. Por ello, considera muy útil un dispositivo IoT que monitoree estas condiciones en tiempo real e incluso automatice acciones como la ventilación, aunque prefiere mantener cierto control manual.Además, identifica debilidades en la documentación del conocimiento, la trazabilidad y el cálculo de rentabilidad, que actualmente son poco precisos y mayormente manuales. Su principal necesidad es una plataforma integral que conecte todo el proceso desde el almacenamiento hasta la taza, automatice el registro de datos y mejore la consistencia y toma de decisiones en el negocio.</td>
+  </tr>
+  <tr>
+    <td>Timing: 33:21 - 37:39</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 4</td>
+    <td>Cesar Costa</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>La Molina</td>
+  </tr>
+  <tr>
+    <td><img src="public/assets/images/chapter-2/interviews/cesar.png" alt="Foto de Cesar Costa" width="9000"></td>
+    <td>César Costa, dueño de una cafetería de especialidad, tiene un enfoque orientado a la rentabilidad y la estandarización, utilizando principalmente celular y laptop para la gestión. Actualmente, el monitoreo de temperatura y humedad es totalmente manual mediante instrumentos básicos, lo que implica dependencia constante y riesgo de errores. Además, aunque registra métricas como costos y rendimiento, la información está dispersa en sistemas poco eficientes. Entre sus principales necesidades, destaca la estandarización entre baristas, que hoy depende del ensayo y error, y una mejor gestión de proveedores basada en consistencia. Muestra una alta apertura hacia soluciones IoT, considerando que el monitoreo en tiempo real ayudaría a resolver la falta de datos precisos, especialmente en cambios de temporada. Finalmente, aunque existe documentación interna, el aprendizaje sigue siendo empírico, por lo que valora herramientas que automaticen el control (como ventilación y alertas) y reduzcan la carga operativa del equipo, mejorando la eficiencia y la toma de decisiones.</td>
+  </tr>
+  <tr>
+    <td>Timing: 37:39 - 43:11</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+
+
+
 ### 2.2.3. Análisis de entrevistas
+
+<h4>Análisis del segmento de administradores o dueños de cafeterías de especialidad</h4>
+
+<p>
+Los entrevistados en este segmento presentan un perfil técnico sólido y participan activamente en todo el proceso del café de especialidad. Sin embargo, coinciden en que, aunque utilizan herramientas como Excel y WhatsApp para registrar información, muchos procesos siguen siendo manuales, desorganizados y poco confiables, lo que dificulta la trazabilidad y la consistencia en la calidad.
+</p>
+
+<p>
+En relación al almacenamiento del café verde, se identificó como un punto crítico: la mayoría no cuenta con un control preciso de temperatura y humedad, y varios han experimentado pérdidas de calidad por estas condiciones. En este contexto, existe una percepción claramente positiva hacia un dispositivo IoT que permita monitorear estas variables en tiempo real. Los entrevistados consideran que este tipo de solución sería especialmente útil para prevenir deterioro del grano, reducir la dependencia de la supervisión manual y tomar decisiones más informadas.
+</p>
+
+<p>
+Además, valoran no solo la capacidad de monitoreo, sino también la posibilidad de recibir alertas e incluso automatizar acciones como la ventilación, aunque prefieren mantener cierto control sobre estas decisiones. Este interés refleja una necesidad concreta de pasar de un manejo empírico a uno basado en datos.
+</p>
+
+<p>
+Finalmente, el 100% de los entrevistados expresó interés en una plataforma integral que centralice la información y conecte todas las etapas del proceso. Dentro de esta solución, el componente IoT es percibido como una pieza clave para mejorar la trazabilidad, optimizar la conservación del café y garantizar mayor consistencia en la calidad final del producto.
+</p>
+<h4>Análisis del segmento de baristas profesionales</h4>
+
+<p>
+Los baristas entrevistados muestran un alto nivel técnico y compromiso con la calidad, pero enfrentan dificultades para estandarizar procesos y documentar información clave como recetas, perfiles de tueste y ajustes de molienda, los cuales actualmente se registran de forma manual o informal. Esto genera variabilidad en los resultados y limita la replicabilidad del café.
+</p>
+
+<p>
+En cuanto al almacenamiento del café, se identifica que no siempre se controla bajo condiciones óptimas, lo que puede afectar directamente la calidad del grano. Frente a esto, los entrevistados ven con buenos ojos la implementación de un dispositivo IoT que permita monitorear temperatura y humedad de forma constante, ya que ayudaría a reducir riesgos, mejorar la conservación y disminuir la dependencia de controles empíricos.
+</p>
+
+<p>
+Además, existe interés en que este tipo de tecnología no solo registre datos, sino que los integre con otros aspectos del proceso, como el tueste y la evaluación sensorial. La posibilidad de contar con alertas y cierto nivel de automatización es valorada, siempre que se mantenga control sobre las decisiones.
+</p>
+
+<p>
+Finalmente, el 100% de los entrevistados expresó la necesidad de una plataforma digital integral que conecte todas las etapas del café. Dentro de esta solución, el componente IoT es percibido como un elemento clave para mejorar la trazabilidad, profesionalizar el trabajo del barista y lograr mayor consistencia en la calidad del producto final.
+</p>
+
+
+
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 **Administradores y dueños de cafeterias de especialidad**
-<td><img src="public\assets\images\chapter-2\userPersonas\UserPersona_FernandoGoijman.png" alt="Fernando Goijman"></td>
+<td><img src="public/assets/images/chapter-2/userPersonas/UserPersona_FernandoGoijman.png" alt="Fernando Goijman"></td>
 
 **Barista Profesional**
-<td><img src="public\assets\images\chapter-2\userPersonas\UserPersona_ValeriaRamos.png" alt="Valeria Ramos"></td>
+<td><img src="public/assets/images/chapter-2/userPersonas/UserPersona_ValeriaRamos.png" alt="Valeria Ramos"></td>
 
 
 
@@ -698,23 +1089,133 @@ En este contexto, CaféLab se posiciona como una solución que permite integrar 
 
 ### 2.3.3 User Journey Mapping
 **Administradores y dueños de cafeterias de especialidad**
-![Journey Map Fernando](<public/assets/images/chapter-2/journeymapping/Fernando.png>)
+![Journey Map Fernando](public/assets/images/chapter-2/journeymapping/Fernando.png)
 **Barista Profesional**
-![Journey Map Valeria](<public/assets/images/chapter-2/journeymapping/Valeria.png>)
+![Journey Map Valeria](public/assets/images/chapter-2/journeymapping/Valeria.png)
 
 ### 2.3.4. Empathy Mapping
 **Administradores y dueños de cafeterias de especialidad**
-![Empathy Map dueño](<public/assets/images/chapter-2/empathymapping/Empathy_map_Dueños.png>)
+![Empathy Map dueño](public/assets/images/chapter-2/empathymapping/Empathy_map_Dueños.png)
 **Barista Profesional**
-![Barista](<public/assets/images/chapter-2/empathymapping/Empathy_Map_Barista_Professional.png>)
+![Barista](public/assets/images/chapter-2/empathymapping/Empathy_Map_Barista_Professional.png)
 
-## 2.4. Big Picture EventStorming
+### 2.3.5. As-is Scenario Mapping
 
-## 2.5. Ubiquitous Language
+Para llevar a cabo el As-is Scenario Mapping, el equipo realizó un proceso de needfinding con el fin de comprender mejor el negocio y determinar la situación actual de las operaciones en las cafeterías de especialidad y el trabajo de los baristas. Este proceso permitió identificar las diferentes fases correspondientes a cada uno de los segmentos objetivos, brindando un entendimiento más profundo del flujo de trabajo y revelando las limitaciones y desafíos del sistema actual.
+
+**Administradores y dueños de cafeterías de especialidad**
+<td><img src="public/assets/images/AS-IS/AS_IS_ADMINISTRADORES_Y_DUEÑOS_DE_CAFETERIAS_DE_ESPECIALIDAD.png" alt="As-Is Administradores y dueños de cafeterías de especialidad"></td>
+
+
+**Barista Profesional**
+<td><img src="public/assets/images/AS-IS/AS_IS_BARISTA_PROFESIONAL.png" alt="As-Is Baristas profesionales"></td>
+
+
+## 2.4. Ubiquitous Language
+
+En este proyecto, el uso de **Domain-Driven Design (DDD)** permite alinear el desarrollo de software con la realidad del negocio del café de especialidad. Uno de los pilares de DDD es el Lenguaje Ubicuo (Ubiquitous Language), el cual es un conjunto de términos compartidos que se construyen en colaboración entre desarrolladores, diseñadores y expertos del dominio, en nuestro caso, entre los desarrolladores, baristas y administradores de cafeterías.
+
+**Glosario de Términos:**
+
+<table border = 1>
+  <thead>
+    <tr>
+      <th>Término (Inglés)</th>
+      <th>Término (Español)</th>
+      <th>Definición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Coffee Lot</strong></td>
+      <td>Lote de Café</td>
+      <td>Conjunto de granos de café que comparten origen, variedad, proceso y cosecha.</td>
+    </tr>
+    <tr>
+      <td><strong>Storage Conditions</strong></td>
+      <td>Condiciones de Almacenamiento</td>
+      <td>Parámetros ambientales (temperatura y humedad relativa) que afectan la calidad del grano de café verde y que deben mantenerse dentro de rangos óptimos.</td>
+    </tr>
+    <tr>
+      <td><strong>Roast Profile</strong></td>
+      <td>Perfil de Tueste</td>
+      <td>Conjunto de parámetros que describen cómo se ha tostado un lote de café.</td>
+    </tr>
+    <tr>
+      <td><strong>Roast Curve</strong></td>
+      <td>Curva de Tueste</td>
+      <td>Gráfica que muestra la evolución de temperatura del grano y del ambiente durante el proceso de tueste.</td>
+    </tr>
+    <tr>
+      <td><strong>Calibration</strong></td>
+      <td>Calibración</td>
+      <td>Ajuste de variables en la preparación para estandarizar resultados sensoriales de una bebida.</td>
+    </tr>
+    <tr>
+      <td><strong>Traceability</strong></td>
+      <td>Trazabilidad</td>
+      <td>Capacidad de seguir el recorrido del café desde su origen hasta la taza, incluyendo certificaciones y condiciones.</td>
+    </tr>
+    <tr>
+      <td><strong>Cupping</strong></td>
+      <td>Cata</td>
+      <td>Evaluación sensorial del café basada en atributos como acidez, cuerpo, aroma y sabor.</td>
+    </tr>
+    <tr>
+      <td><strong>Sensory Hexagon</strong></td>
+      <td>Hexágono Sensorial</td>
+      <td>Visualización gráfica, en un hexágono de radar,  de los atributos sensoriales del café, útil para comparar cafés según su perfil en taza.</td>
+    </tr>
+    <tr>
+      <td><strong>Recipe Portfolio</strong></td>
+      <td>Portafolio de Recetas</td>
+      <td>Colección digital de recetas vinculadas a métodos, bebidas, clientes o competencias.</td>
+    </tr>
+    <tr>
+      <td><strong>Green Inventory</strong></td>
+      <td>Inventario de Café Verde</td>
+      <td>Registro y control del café sin tostar, incluyendo lotes, estado y trazabilidad.</td>
+    </tr>
+    <tr>
+      <td><strong>Roasted Inventory</strong></td>
+      <td>Inventario de Café Tostado</td>
+      <td>Registro del café ya tostado disponible, asociado a sus respectivos perfiles y lotes.</td>
+    </tr>
+    <tr>
+      <td><strong>Certification</strong></td>
+      <td>Certificación</td>
+      <td>Documentación que acredita prácticas éticas o sostenibles de cada lote, tales como orgánico, comercio justo, etc.</td>
+    </tr>
+    <tr>
+      <td><strong>TrackSilo</strong></td>
+      <td>TrackSilo</td>
+      <td>Dispositivo IoT que monitorea temperatura y humedad de los sacos de café verde, y alerta sobre condiciones fuera del rango óptimo.</td>
+    </tr>
+    <tr>
+      <td><strong>Yield Analysis</strong></td>
+      <td>Análisis de Rendimiento</td>
+      <td>Cálculo de pérdida de peso tras el tueste y análisis económico del proceso.</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 # Capítulo III: Requirements Specification
 
-## 3.1. User Stories
+## 3.1. To-Be Scenario Mapping
+
+En el caso del To-be Scenario Mapping, el equipo definió cómo se visualizaría el flujo de trabajo una vez que la solución CaféLab haya sido implementada en los dos segmentos objetivos. El propósito de este artefacto es analizar y mejorar los aspectos negativos identificados en el As-is Scenario, optimizando los procesos de monitoreo, registro y retroalimentación, y elevando la calidad del café, la eficiencia operativa y la capacidad para tomar decisiones informadas.
+
+**Administradores y dueños de cafeterias de especialidad**
+<td><img src="public/assets/images/TO-BE/TO_BE_ADMINISTRADORES_Y_DUEÑOS_DE_CAFETERIAS_DE_ESPECIALIDAD.png" alt="To-Be Administradores y dueños de cafeterías de especialidad"></td>
+
+**Barista Profesional**
+<td><img src="public/assets/images/TO-BE/TO_BE_BARISTA_PROFESIONAL.png" alt="To-Be Baristas profesionales"></td>
+
+
+
+## 3.2. User Stories
 
 Las user stories son una forma de convertir el lenguaje informal de los usuarios del sistema en requerimientos de software que deben ser considerados durante el desarrollo de la plataforma. Para el proyecto CaféLab IoT, se presenta un conjunto de user stories y technical stories que guían el desarrollo del sistema de monitoreo ambiental TrackSilo, incluyendo la gestión de lecturas del sensor, activación de actuadores y visualización de condiciones de almacenamiento del café verde.
 
@@ -1312,12 +1813,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 
 </table>
 
-## 3.2. Impact Mapping.
-### 3.2.1. Mapa de impacto de Freddy, el dueño de cafetería
-![Freddy](<public/assets/images/impactmapping/Impact map 1.png>)
-### 3.2.2. Mapa de impacto de Valeria, barista
-![alt text](<public/assets/images/impactmapping/Valeria Ramos.png>)
-
 ## 3.3. Product Backlog
 
 <table border="1">
@@ -1746,3 +2241,525 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </tr>
 
 </table>
+
+
+## 3.4. Impact Mapping.
+### 3.4.1. Mapa de impacto de Freddy, el dueño de cafetería
+![Freddy](public/assets/images/impactmapping/Impact-map-1.png)
+### 3.4.2. Mapa de impacto de Valeria, barista
+![alt text](public/assets/images/impactmapping/Valeria-Ramos.png)
+
+
+# Capítulo IV: Product Design
+## 4.1. Style Guideline
+### 4.1.1. General Style Guidelines
+Los "style guideline" son un conjunto de principios visuales y comunicacionales que permite mantener coherencia y claridad en la interfaz del producto. En el caso de **Cafelab**, esta guía busca comunicar profesionalismo, precisión técnica y una identidad cercana al rubro del café de especialidad.
+
+**Branding:**
+**Nombre de marca:**  
+Cafelab representa un laboratorio digital para baristas y cafeterías de especialidad. El nombre fusiona la precisión técnica ("lab") con la calidez y cultura del café.
+
+<img src="public/assets/images/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
+
+**Misión:**  
+Brindar herramientas digitales que profesionalicen el trabajo del barista, integrando tecnología con el arte de la preparación del café.
+
+**Visión:**  
+Ser la plataforma líder en documentación, calibración y trazabilidad para negocios de café de especialidad en Latinoamérica.
+
+**Colores:**
+- **Primario:**
+  Verde Oliva `#618985`
+- **Secundarios:**
+  Negro Oliva `#414535`
+  Leon`#C19875`
+- **Terciarios:**
+  Hueso `#f8f7f2`  - Fondo
+  Gris Ceniza `#96BBBB`
+
+Color de Texto:
+- Sobre fondo oscuro: `#FFFFFF`
+- Sobre fondo claro: `#414535`
+
+<img src="public/assets/images/styleGuidelines/Colors.png" alt="Distribucion de paleta de colores" width="7000">
+
+- Color de Botones:
+  Oscuro:
+  `#414535`
+  Claro:
+  `#F8F8F8`
+
+<img src="public/assets/images/styleGuidelines/Buttons.png" alt="Distribucion de botones" width="7000">
+
+**Tipografía:**
+
+La tipografía define la jerarquía visual y la legibilidad de la plataforma. Se han definido los siguientes estilos:
+
+- **Heading 01:** Montserrat SemiBold – 52px
+- **Heading 02:** Montserrat Medium – 36px
+- **Heading 03:** Arial Nova Bold – 24px
+- **Heading 04:** Arial Nova Regular – 18px
+- **Texto principal:** Arial Nova Regular – 16px
+- **Texto técnico:** Roboto Mono – 14px
+
+<img src="public/assets/images/styleGuidelines/Heading.png" alt="Tipofrafía principal" width="7000">
+
+<img src="public/assets/images/styleGuidelines/Body.png" alt="Tipografía secundaria" width="7000">
+
+**Tono de comunicación:**
+- Profesional pero cercano.
+- Técnico, sin perder accesibilidad.
+- Entusiasta y claro.
+### 4.1.2. Web Style Guidelines
+El enfoque de diseño web de Cafelab es limpio, moderno y centrado en la eficiencia operativa. El estilo busca balancear datos técnicos complejos con una experiencia visualmente amigable.
+
+**Tarjetas y visualizaciones:**
+
+- Se usan componentes visuales como "cards" para representar lotes, tuestes, recetas y catas.
+- Visualizaciones clave como curvas de tueste y hexágonos sensoriales están integradas con alto contraste y claridad.
+- Cada módulo se presenta con íconos representativos del proceso (tueste, molienda, método, etc.).
+
+**Botones:**
+
+- Botones primarios: Redondeados, fondo color negro oliva, texto blanco.
+- Botones secundarios: Bordeados, fondo transparente, texto café.
+- Uso de color rojo `#D32F2F` para acciones destructivas (eliminar lote, cancelar proceso).
+
+**Tablas:**
+
+- Las tablas muestran listas de lotes, tuestes, recetas o usuarios.
+- Diseño limpio, encabezados destacados, intercalado de filas para facilitar la lectura.
+- Columnas ordenables y con íconos de filtrado.
+
+**Pantallas emergentes:**
+
+- Pop-ups propios (no de navegador) para confirmación de acciones importantes.
+- Fondo oscuro atenuado y foco visual centrado.
+- Botones de acción y cierre claramente visibles.
+
+### 4.1.3. Mobile Style Guidelines
+
+#### 4.1.3.1. iOS Mobile Style Guidelines
+#### 4.1.3.2. Android Mobile Style Guidelines
+
+
+## 4.2. Information Architecture
+La arquitectura de información de Cafelab ha sido diseñada para guiar al usuario de forma lógica, eficiente y contextual a través de todas las funcionalidades de la plataforma. Cada módulo ha sido organizado con el objetivo de representar las etapas del proceso del café desde su estado verde hasta la taza final. Se busca facilitar tanto el registro de información técnica como su posterior análisis para toma de decisiones, con una experiencia fluida, clara y estructurada.
+
+A continuación, se detallan los sistemas de organización, etiquetado, navegación, búsqueda y posicionamiento web considerados para garantizar una experiencia digital de calidad.
+
+### 4.2.1. Organization Systems.
+La organización del contenido en Cafelab ha sido diseñada teniendo en cuenta las distintas etapas del proceso del café y la variedad de perfiles de usuario. A lo largo de la plataforma, se utilizan diferentes tipos de organización visual para facilitar el acceso, comprensión y uso eficiente de las herramientas disponibles.
+
+#### Organización jerárquica (Visual Hierarchy)
+
+La estructura jerárquica se aplica principalmente en la Landing Page y en los paneles de administración. En estos espacios, se presenta la información de forma descendente según su relevancia, empezando por los valores de la marca, seguido de los beneficios, funcionalidades clave y finalmente los planes disponibles. Los títulos, botones de llamada a la acción y módulos destacados ocupan mayor espacio visual para guiar la atención del usuario. Este tipo de organización también se implementa en vistas como el perfil del barista o administrador, donde los datos personales y funciones de edición están claramente separados, priorizando la información antes que las acciones.
+
+#### Organización secuencial (Step-by-step)
+
+En procesos técnicos como el registro de una curva de tueste, la calibración de una receta o una sesión de cata, la aplicación guía al usuario paso a paso. El flujo está diseñado para que cada acción derive lógicamente en la siguiente, permitiendo una documentación completa y estructurada. Por ejemplo, en el registro de tueste, el usuario primero indica el lote, luego los parámetros técnicos, seguido por la curva de temperatura y finaliza con la comparación o guardado del perfil. Esta secuencia reduce errores y facilita la repetibilidad de procesos complejos.
+
+#### Organización matricial
+
+El panel de inicio (Dashboard) utiliza una organización matricial que permite al usuario tener una vista general del estado actual de su operación. En esta interfaz, se combinan tarjetas interactivas, indicadores visuales, gráficas e hipervínculos que llevan directamente a los módulos de tueste, cata, recetas o inventario. Esta disposición permite acceder rápidamente a áreas específicas sin necesidad de recorrer un camino lineal. La interfaz es especialmente útil para administradores que requieren monitoreo y toma de decisiones rápidas.
+
+#### Categorización del contenido
+
+Según el tipo de información y su propósito dentro de la plataforma, se aplican distintas formas de categorización:
+
+- **Alfabética:** Utilizada en listados de métodos de preparación, variedades de café o recetas personalizadas. Facilita la localización rápida de elementos en bibliotecas extensas.
+- **Cronológica:** Aplicada en historiales de cata, curvas de tueste y registros de inventario. Esta categorización es esencial para el análisis de evolución de lotes y procesos a lo largo del tiempo.
+- **Por tópicos:** Implementada en la segmentación del contenido educativo, artículos técnicos o secciones informativas dentro del dashboard.
+- **Según audiencia:** La plataforma adapta su contenido de inicio según el tipo de usuario. Por ejemplo, un administrador accede directamente al panel general con estadísticas e inventario, mientras que un barista profesional inicia en la vista de tuestes activos o próximas calibraciones.
+
+Esta combinación de sistemas de organización permite que Cafelab ofrezca una experiencia flexible y funcional, respetando tanto la lógica del proceso cafetalero como las necesidades específicas de sus distintos usuarios.
+### 4.2.2. Labeling Systems.
+El sistema de etiquetado de Cafelab busca maximizar la claridad y minimizar la carga cognitiva del usuario mediante un lenguaje directo, técnico y específico del rubro cafetalero.
+
+Uso de etiquetas precisas, técnicas y consistentes: "Curva de Tueste", "Perfil Sensorial", "Lote #xxx", "Ratio", "Taza".
+- Etiquetas breves en menús: `Inicio`, `Tueste`, `Cata`, `Recetas`, `Inventario`.
+- Tarjetas y gráficos etiquetados con íconos + texto para facilitar el reconocimiento visual.
+### 4.2.3. SEO Tags and Meta Tags
+Los meta tags y SEO tags son elementos clave para mejorar el posicionamiento de la aplicación en motores de búsqueda, facilitar la indexación y enriquecer la experiencia en plataformas de redirección o previsualización (como redes sociales y navegadores). En Cafelab, estos elementos están optimizados tanto para la Landing Page como para la Web App una vez iniciada sesión.
+
+**Landing Page:**
+- Etiqueta de título:
+  Utilizada para la lectura de los motores de búsqueda en los encabezados de las distintas páginas.
+```html
+<title>Cafelab – Dominio total sobre tu café</title>
+```
+```html
+<title>Cafelab | Panel de Control</title>
+```
+- Etiqueta configuración de caracteres:
+  Muestra correctamente los caracteres del alfabeto castellano.
+```html
+<meta charset="utf-8">
+```
+- Etiqueta de descripción:
+  Nos sirve para que el motor de búsqueda tenga un resumen del contenido de la página.
+
+```html
+<meta name="description" content="Plataforma integral para baristas y cafeterías que conecta el café verde con la taza final. Documenta, calibra y escala tu calidad.">
+```
+```html
+<meta name="description" content="Gestión completa de tus tuestes, recetas y procesos desde un solo lugar.">
+
+```
+- Etiqueta de palabras clave:
+  Utilizada para la lectura de los motores de búsqueda en los encabezados de las distintas páginas.
+```html
+<meta name="keywords" content="café de especialidad, barista, tueste, cata, trazabilidad, calibración, cafelab">
+```
+```html
+<meta name="keywords" content="panel de tueste, perfil sensorial, barista app, café verde, recetas de café">
+```
+-  Etiqueta de autor y derechos de autor:
+   Etiqueta que nos permite registrar la autoría de la página.
+```html
+<meta name="author" content="Equipo Cafelab - CafeMetrix">
+<meta name="copyright" content="cafelab"/>
+```
+
+
+
+### 4.2.4. Searching Systems.
+Los sistemas de búsqueda de Cafelab están diseñados para que el usuario pueda encontrar información específica de manera ágil, incluso dentro de grandes volúmenes de datos históricos o múltiples lotes activos.
+- Búsqueda por texto: En tuestes, recetas, catas y lotes.
+- Filtros combinables: Método de preparación, origen del grano, fecha, variedad.
+- Resultados con etiquetas visuales (tipo de café, método, fecha) y opciones para ordenar y comparar.
+### 4.2.5. Navigation Systems.
+Los sistemas de navegación de Cafelab permiten al usuario recorrer los diferentes módulos y procesos de forma estructurada, intuitiva y adaptativa al dispositivo utilizado.
+
+- Menú lateral fijo (web desktop): Accesos a los principales módulos.
+- Menú hamburguesa (responsive): Versión simplificada para móviles.
+- Barra superior contextual: Con accesos rápidos a perfil, notificaciones, ayuda.
+- Flujo secuencial: Registro paso a paso para tuestes y catas.
+- Breadcrumbs: En vistas de detalle, para mantener contexto.
+- Call To Action claros: “Registrar nuevo tueste”, “Crear receta”, “Ver historial”.
+## 4.3. Landing Page UI Design.
+### 4.3.1. Landing Page Wireframe.
+**Landing Page para Desktop Web Browser**
+La versión wireframe de nuestra landing page presenta una estructura básica compuesta por diversos elementos fundamentales. En la parte superior se ubica la navegación principal representada mediante bloques simples que indican secciones como Beneficios, Planes, Contáctanos, Iniciar sesión y el selector de idioma. Las visualizaciones de datos se representan mediante áreas designadas para dashboards y gráficos, utilizando rectángulos con líneas básicas en su interior. Asimismo, los planes de suscripción se organizan en una cuadrícula de cuatro tarjetas, cada una como un rectángulo con espacios para encabezados y listas de características. Finalmente, la sección de testimonios se muestra con bloques para imágenes de perfil y áreas de texto para citas.
+
+![Hero](public/assets/images/LandingWireframes/1.png)
+![Segmentacion de usuarios](public/assets/images/LandingWireframes/2.png)
+![Visualizaciones](public/assets/images/LandingWireframes/3.png)
+![Planes](public/assets/images/LandingWireframes/4.png)
+![Testimonios](public/assets/images/LandingWireframes/5.png)
+![FAQ](public/assets/images/LandingWireframes/6.png)
+![Footer](public/assets/images/LandingWireframes/7.png)
+
+**Landing Page para Mobile Web Browser**
+<br>
+
+![MobileWireframes](public/assets/images/LandingWireframes/8.png)
+
+### 4.3.2. Landing Page Mock-up.
+**Landing Page para Desktop Web Browser**
+En nuestra versión mock-up se evidencia la implementación de los elementos de diseño específicos de Café Lab. Se aplicó la paleta de colores característica, que incluye tonos tierra y marrones cálidos como color primario, junto con verdes oscuros como color secundario, creando una estética que evoca la naturaleza del café y su proceso artesanal. La tipografía seleccionada se implementó de manera consistente en todos los elementos de texto, desde los encabezados principales hasta los párrafos descriptivos y botones de acción.
+
+![Hero](public/assets/images/LandingMockUps/1.png)
+![Segmentacion de usuarios](public/assets/images/LandingMockUps/2.png)
+![Visualizaciones](public/assets/images/LandingMockUps/3.png)
+![Planes](public/assets/images/LandingMockUps/4.png)
+![Testimonios](public/assets/images/LandingMockUps/5.png)
+![FAQ](public/assets/images/LandingMockUps/6.png)
+![Footer](public/assets/images/LandingMockUps/7.png)
+
+**Landing Page para Mobile Web Browser**
+![Inicio, menu, visualizaciones, planes](public/assets/images/LandingMockUps/8.png)
+![testimonios, FAQ, footer](public/assets/images/LandingMockUps/9.png)
+
+
+## 4.4. Mobile Applications UX/UI Design.
+### 4.4.1. Mobile Applications Wireframes.
+Enlace para acceder al [Figma de vistas móviles](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1).
+
+![Mobile Wireframes - Register](public/assets/images/MobileWireframes/Register.png)
+![Mobile Wireframes - Signin](public/assets/images/MobileWireframes/Signin.png)
+![Mobile Wireframes - Suppliers](public/assets/images/MobileWireframes/Suppliers.png)
+![Mobile Wireframes - CoffeeLot](public/assets/images/MobileWireframes/Coffeelot.png)
+![Mobile Wireframes - Roast](public/assets/images/MobileWireframes/Roast.png)
+![Mobile Wireframes - Cupping](public/assets/images/MobileWireframes/Cupping.png)
+![Mobile Wireframes - Recipes](public/assets/images/MobileWireframes/Recipes.png)
+![Mobile Wireframes - Patterns](public/assets/images/MobileWireframes/Patterns.png)
+![Mobile Wireframes - Defect](public/assets/images/MobileWireframes/Defect.png)
+![Mobile Wireframes - Calibration](public/assets/images/MobileWireframes/Calibration.png)
+![Mobile Wireframes - Inventory](public/assets/images/MobileWireframes/Inventory.png)
+![Mobile Wireframes - Cost](public/assets/images/MobileWireframes/Cost.png)
+
+### 4.4.2. Mobile Applications Wireflow Diagrams.
+
+### 4.4.3. Mobile Applications Mock-ups.
+Se reutilizan los mock-ups móviles del proyecto CaféLab, alineados con los flujos funcionales principales de autenticación, gestión operativa y análisis.
+
+![Mobile Mockups - Register](public/assets/images/MobileWireframes/Register.png)
+![Mobile Mockups - Signin](public/assets/images/MobileWireframes/Signin.png)
+![Mobile Mockups - Suppliers](public/assets/images/MobileWireframes/Suppliers.png)
+![Mobile Mockups - CoffeeLot](public/assets/images/MobileWireframes/Coffeelot.png)
+![Mobile Mockups - Roast](public/assets/images/MobileWireframes/Roast.png)
+![Mobile Mockups - Cupping](public/assets/images/MobileWireframes/Cupping.png)
+![Mobile Mockups - Recipes](public/assets/images/MobileWireframes/Recipes.png)
+![Mobile Mockups - Patterns](public/assets/images/MobileWireframes/Patterns.png)
+![Mobile Mockups - Defect](public/assets/images/MobileWireframes/Defect.png)
+![Mobile Mockups - Calibration](public/assets/images/MobileWireframes/Calibration.png)
+![Mobile Mockups - Inventory](public/assets/images/MobileWireframes/Inventory.png)
+![Mobile Mockups - Cost](public/assets/images/MobileWireframes/Cost.png)
+
+### 4.4.4. Mobile Applications User Flow Diagrams.
+
+## 4.5. Mobile Applications Prototyping.
+### 4.5.1. Android Mobile Applications Prototyping.
+Enlace del prototipo [Figma](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1).
+
+### 4.5.2. iOS Mobile Applications Prototyping.
+
+## 4.6. Web Applications UX/UI Design.
+### 4.6.1. Web Applications Wireframes.
+Enlace para acceder al [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1).
+
+![Web Wireframes - Signup](public/assets/images/WebAppMockup/SingUpBarUS01.png)
+![Web Wireframes - Signin](public/assets/images/WebAppMockup/SingInUS01.png)
+![Web Wireframes - Suppliers](public/assets/images/WebAppMockup/Suppliers.png)
+![Web Wireframes - Coffee Lot](public/assets/images/WebAppMockup/CoffeLot.png)
+![Web Wireframes - Roast Profiles](public/assets/images/WebAppMockup/RoastProfiles.png)
+
+### 4.6.2. Web Applications Wireflow Diagrams.
+Se reutilizan wireflows del proyecto previo para los objetivos de usuario principales: registro, inicio de sesión, gestión de proveedores, lotes, perfiles de tueste, catas, recetas, inventario y costos.
+
+![Wireflow - Registro](public/assets/images/Wireflows/Register.png)
+![Wireflow - Inicio de sesión](public/assets/images/Wireflows/InicioSesion.png)
+![Wireflow - Proveedores](public/assets/images/Wireflows/Proveedores.png)
+![Wireflow - Lote de café](public/assets/images/Wireflows/LoteCafe.png)
+![Wireflow - Gestor de costos](public/assets/images/Wireflows/GestorCostos.png)
+
+### 4.6.3. Web Applications Mock-ups.
+Se reutilizan mock-ups de escritorio y móvil para validar consistencia visual, jerarquía de información y cobertura de historias de usuario priorizadas en TB1.
+
+![Web Mockup - User Profile](public/assets/images/WebAppMockup/UserProfile.png)
+![Web Mockup - Roast Comparison](public/assets/images/WebAppMockup/RoastComparison.png)
+![Web Mockup - Cupping Sessions](public/assets/images/WebAppMockup/CuppingSessions.png)
+![Web Mockup - Recipes](public/assets/images/WebAppMockup/Recipes.png)
+![Web Mockup - Inventory](public/assets/images/WebAppMockup/Inventary.png)
+
+### 4.6.4. Web Applications User Flow Diagrams.
+USER GOAL: Registrar bebida.
+![User Flow - Bebidas y Portafolio](public/assets/images/UserFlowDiagram/BebidasPortafolio.png)
+
+USER GOAL: Registrar perfil de tueste.
+![User Flow - Perfil de Tueste](public/assets/images/UserFlowDiagram/RegitrarPerfilTueste.png)
+
+USER GOAL: Registrar sesión de cata.
+![User Flow - Sesión de Cata](public/assets/images/UserFlowDiagram/SesionCata.png)
+
+## 4.7. Web Applications Prototyping.
+Enlace para acceder al video del [Web Applications Prototyping](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
+
+Enlace del prototipo [Figma](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1).
+
+## 4.8. Domain-Driven Software Architecture.
+### 4.8.1. Software Architecture Context Diagram.
+<td><img src="public/assets/images/New-ddd/C4 Contexto.png"></td>
+
+### 4.8.2. Software Architecture Container Diagrams.
+<td><img src="public/assets/images/New-ddd/C4 Contenedores.png"></td>
+
+### 4.8.3. Software Architecture Components Diagrams.
+**Auth**
+<td><img src="public/assets/images/New-ddd/C4 Frontend Componentes AUTH.png"></td>
+
+**Coffee Production Bounded Context**
+<td><img src="public/assets/images/New-ddd/C4 Backend Componentes COFFEE-PRODUCTION.png"></td>
+
+**Profiles Bounded Context**
+<td><img src="public/assets/images/New-ddd/C4 Backend Componentes PROFILES.png"></td>
+
+**IAM Bounded Context**
+<td><img src="public/assets/images/New-ddd/C4 Backend Componentes IAM.png"></td>
+
+## 4.9. Software Object-Oriented Design.
+### 4.9.1. Class Diagrams.
+<td><img src="public/assets/images/Plantuml/classes/production/Production_Bounded_Context.png"></td>
+<td><img src="public/assets/images/Plantuml/classes/Cost-Management/Management_Bounded_Context.png"></td>
+<td><img src="public/assets/images/Plantuml/classes/IAM/domain.png"></td>
+
+### 4.9.2. Class Dictionary.
+<table border="1">
+<tr>
+<th>Class</th>
+<th>Bounded Context</th>
+<th>Entity/Value Object</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><strong>SensoryEvaluation</strong></td>
+<td>Sensory Evaluation</td>
+<td>Entity</td>
+<td>Representa una evaluación sensorial (cata) de un lote tostado.</td>
+</tr>
+<tr>
+<td><strong>Recipe</strong></td>
+<td>Preparation</td>
+<td>Entity</td>
+<td>Representa una receta de preparación de café.</td>
+</tr>
+<tr>
+<td><strong>Inventory</strong></td>
+<td>Administration</td>
+<td>Entity</td>
+<td>Representa el inventario de café verde y tostado.</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Administration</td>
+<td>Entity</td>
+<td>Representa la estructura de costos asociada a un lote.</td>
+</tr>
+</table>
+
+## 4.10. Database Design.
+### 4.10.1. Relational/Non-Relational Database Diagram.
+<img src="https://raw.githubusercontent.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab/feature/informe-readme/public/assets/images/Database%20Diagram/Database_Diagram.png" alt="Database Diagram">
+
+# Capítulo V: Product Implementation
+
+## 5.1. Software Configuration Management.
+### 5.1.1. Software Development Environment Configuration.
+#### Project Management
+1. Trello: Para gestión general de sprints, tareas del equipo y seguimiento.
+   - Link: [Trello](https://trello.com/b/diGtoNBa/sprint-1)
+
+#### Product UX/UI Design
+1. Figma: Para diseños como Wireframes, Mockups y Prototypes.
+   - Link: [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&t=fprZU86nz2ahB2Bi-1)
+2. Vertabelo: Para diagramas de base de datos.
+   - Link: [Vertabelo](https://vertabelo.com/)
+
+#### Software Development
+1. Visual Studio Code: Para desarrollo de la solución.
+2. GitHub: Para repositorios, branches y control de versiones.
+
+### 5.1.2. Source Code Management.
+Para todo el desarrollo de CaféLab se usa el flujo de trabajo Gitflow y la convención Conventional Commits.
+
+#### Main branch
+La rama `main` mantiene el código más estable y desplegado.
+
+#### Develop branch
+La rama `develop` integra avances antes de su paso a `main`.
+
+#### Feature branch
+Se usa para nuevas funcionalidades; deriva de `develop` y vuelve a `develop`.
+
+#### Hotfix branch
+Se usa para correcciones críticas; deriva de `main` y vuelve a `main` y `develop`.
+
+### 5.1.3. Source Code Style Guide & Conventions.
+Todo el código de la solución se redacta en inglés para mantener consistencia internacional y facilitar mantenimiento.
+
+### 5.1.4. Software Deployment Configuration.
+
+## 5.2. Product Implementation & Deployment.
+### 5.2.1. Sprint Backlogs.
+Se adjuntan los sprint backlogs de TB1 en los anexos y tablero de seguimiento del equipo.
+
+### 5.2.2. Implemented Landing Page Evidence.
+Se presenta evidencia en las secciones de diseño y prototipado de landing page, junto con el despliegue funcional del producto.
+
+### 5.2.3. Implemented Frontend-Web Application Evidence.
+Se presenta evidencia de implementación web mediante capturas de pantallas funcionales y prototipos navegables.
+
+### 5.2.4. Implemented Native-Mobile Application Evidence.
+Se presenta evidencia de implementación móvil en los mock-ups y flujos definidos para la app nativa.
+
+### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence.
+
+### 5.2.6. RESTful API documentation.
+
+### 5.2.7. Team Collaboration Insights.
+El equipo trabajó con distribución por funcionalidades, revisión cruzada de entregables y seguimiento continuo en tablero colaborativo.
+
+## 5.3. Video About-the-Product.
+Se muestra el video about the product, donde se evidencia la explicacion sobre los principales features, sustentacion de diseño  y proposito de la aplicacion.
+
+**Título:** `upc-pre-202510-1asi0729-4307-cafemetrix-about-the-product-sprint-3`
+<td><img src="public/assets/images/abouttheproduct/v2.png" alt="Sesiones de cata no funcionales"></td>
+
+
+
+- **YouTube:** [Ver en YouTube](https://www.youtube.com/watch?v=hYDHNbU16zw)
+- **Microsoft Stream:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=N5dUfT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+# Avance de Conclusiones, Bibliografía y Anexos
+
+Este apartado cierra, en el marco del **TB1 (Sprint Review, semana 4)** del curso *Diseño de Experimentos de Ingeniería de Software* (1ASI0732, NRC 12278), el avance de conclusiones del trabajo documentado, la bibliografía de referencia y el material de apoyo (anexos), en sintonía con la estructura y cierre del [README de guía del proyecto Café Lab](../README-guia.md) (repositorio de curso *Desarrollo de Aplicaciones Open Source* y referencia de documentación).
+
+# Conclusiones y recomendaciones
+
+## Conclusiones
+
+- **Problema y segmentos**  
+  Se identificó con claridad a los segmentos objetivo (baristas profesionales y administración de cafeterías de especialidad) y sus necesidades en la cadena de valor del café, sustentado en el needfinding, entrevistas y análisis competitivo descritos en los capítulos anteriores.
+
+- **Propuesta y alcance (TB1)**  
+  **Café Lab** se plantea como solución que integra documentación de tueste, gestión de lotes, catas, recetas y análisis, en línea con el perfil de solución y los escenarios to-be. En este entregable se priorizó la trazabilidad del diseño (UX/UI, arquitectura, datos) y la evidencia de implementación inicial.
+
+- **Metodología**  
+  Se aplicó **Lean UX** (problema, supuestos, hipótesis, canvas) y técnicas de levantamiento y especificación (historias, backlog, impact mapping), con una base sólida para medir y refinar en iteraciones posteriores del curso.
+
+- **Diseño de producto**  
+  Se documentaron guías de estilo, arquitectura de información, landing page, experiencia web y móvil, arquitectura de software, diseño orientado a objetos y esquema de base de datos, de modo que el producto mantiene coherencia visual, semántica de dominio y estructura implementable.
+
+- **Implementación y gestión**  
+  Se detallan entorno de desarrollo, flujo de trabajo (Gitflow, convenciones) y criterios de estilo, con evidencia de avance en landing, front web, app móvil (mock-ups y prototipos) y criterios de colaboración en equipo, según lo requerido para el informe de medio término.
+
+- **Alineación con el curso**  
+  Los siguientes ciclos del curso podrán vincular estos artefactos con el ciclo de experimentación (diseño de experimentos, métricas, validación) sin rehacer el fundamento de requisitos y diseño ya consolidado en TB1.
+
+## Recomendaciones
+
+- Completar y validar con usuarios **wireflows y flujos de usuario de la aplicación móvil** donde aún haya evolución de diseño, y vincular cada flujo a historias de usuario priorizadas.
+- Afinar **métricas y criterios de verificación** asociados a las hipótesis Lean UX (p. ej. tareas completadas, tiempo en flujo, errores en registro) para soportar análisis en la parte de experimentación del curso.
+- Preparar **sesiones de validación** (usabilidad o entrevistas demostrativas) con registro estructurado de hallazgos y trazabilidad a ítems del backlog y al mapa de impacto.
+- Mantener **sincronización** entre repositorio de código, Figma, tablero de tareas (Trello) y el presente informe para cierres de TP y entregas posteriores.
+- Revisar **accesibilidad, rendimiento y consistencia** entre landing, web responsive y móvil antes de ampliar alcance a nuevas integraciones o despliegues.
+
+# Video App Validation
+
+Se reserva un espacio para el enlace al video de **validación** de la aplicación (o verificación de criterios de aceptación con usuarios), según el cronograma publicado en el aula. Cuando el equipo tenga el enlace (Microsoft Stream, YouTube, etc.), debe incorporarse aquí y en la fila correspondiente de anexos.
+
+# Video About-the-Team
+
+Puede añadirse un video *about the team* en el que se resume el rol de cada integrante, la coordinación y el aprendizaje del TB1, en coherencia con la sección *Project Report Collaboration Insights*. El listado de integrantes de **Café Metrix** figura en la carátula del presente documento; el enlace a la grabación (cuando exista) puede agregarse en anexos.
+
+# Bibliografía
+
+- **Google** (s. f.). *Material Design — design system (Android)*. [https://m3.material.io](https://m3.material.io)
+- **Apple Inc.** (s. f.). *Human Interface Guidelines (iOS, iPadOS)*. [https://developer.apple.com/design/human-interface-guidelines](https://developer.apple.com/design/human-interface-guidelines)
+- **Nielsen Norman Group** (Nielsen, J.; Norman, D.). (s. f.). *Usability and UX* (heurísticas y guías de investigación). [https://www.nngroup.com](https://www.nngroup.com)
+- **Gothelf, J.; Seiden, J.** (2016). *Lean UX. Designing Great Products with Agile Teams* (2.ª ed.). O’Reilly.
+- **ISO/IEC 25010:2011** — *Systems and software engineering — SQuaRE — System and software quality models* (criterio de calidad de producto, útil para vincular atributos a experimentos y validación).
+- **Specialty Coffee Association (SCA).** (2022). *Programas, educación y comunidad* (alineación con café de especialidad y formación en barra). [https://sca.coffee](https://sca.coffee)
+- **International Coffee Organization (ICO).** (2023). *Estadísticas e informes de mercado* (citar título y año concretos al redactar en cuerpo del informe). [https://www.ico.org](https://www.ico.org)
+- **Euromonitor International.** (2023). *Café y horeca en América Latina* (citar título, año y tipo de estudio concretos al usarlos en texto; la URL y el título varían). [https://www.euromonitor.com](https://www.euromonitor.com)
+- **Khononov, V.** (2022). *Learning Domain-Driven Design*. O’Reilly Media, Inc. [https://www.oreilly.com](https://www.oreilly.com)
+- **Evans, E.** (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley.
+- **Vernon, V.** (2016). *Domain-Driven Design Distilled*. Addison-Wesley.
+- **Google**. (s. f.). *Angular* y *Angular Material* (documentación y componentes; según el stack reutilizado). [https://angular.dev](https://angular.dev) y [https://material.angular.dev](https://material.angular.dev)
+
+# Anexos
+
+- [Figma — Café Lab (diseño, wireframes, mockups)](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&t=fprZU86nz2ahB2Bi-1)
+- [Figma — prototipo navegable (Web Applications Prototyping)](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1)
+- [Trello — tablero de sprints (referencia de organización, TB1)](https://trello.com/b/diGtoNBa/sprint-1)
+- [Video — Web Applications Prototyping (SharePoint, referencia de guía)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- **YouTube (About the product, misma que sección 5.3):** [Ver en YouTube](https://www.youtube.com/watch?v=hYDHNbU16zw)
+- **Microsoft Stream (About the product, misma que sección 5.3):** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=N5dUfT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- **Código e informe de referencia (proyecto base Café Metrix, curso de aplicaciones open source, para trazas de ERD, diagramas y estructura):**  
+  - [Front-end (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-frontEnd.git)  
+  - [Back-end (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-backEnd.git)  
+  - [Landing (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-landingPage.git)  
+  - [Repositorio informe / rama con diagramas (referencia)](https://github.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab/tree/feature/informe-readme)  
+- **Entornos desplegados (referencia, según repositorio reutilizado):** [Landing pública (ejemplo)](https://cafelanding-60903.web.app/) y [API Swagger (ejemplo, si aplica a la rama de referencia)](https://cafelabbackend.azurewebsites.net/swagger-ui/index.html#/)  
+- **Pendiente por el equipo 1ASI0732 (NRC 12278):** enlace al repositorio o carpeta pública con **entregable TB1 (Keynote, .zip, informe PDF si aplica)** y video de **exposición TB1** de este ciclo, cuando el docente o la coordinación compartan la ruta canónica.
