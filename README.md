@@ -173,7 +173,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
         - [3.4.2. Mapa de impacto de Valeria, barrista.](#322-mapa-de-impacto-de-valeria-barrista)
 
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
-    - [4.1. Style Guidelines](#41-style-guidelines)
+    - [4.1. Style Guideline](#41-style-guideline)
         - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
         - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
         - [4.1.3. Mobile Style Guidelines](#413-mobile-style-guidelines)
@@ -2141,6 +2141,7 @@ La tipografía define la jerarquía visual y la legibilidad de la plataforma. Se
 - Profesional pero cercano.
 - Técnico, sin perder accesibilidad.
 - Entusiasta y claro.
+
 ### 4.1.2. Web Style Guidelines
 El enfoque de diseño web de Cafelab es limpio, moderno y centrado en la eficiencia operativa. El estilo busca balancear datos técnicos complejos con una experiencia visualmente amigable.
 
@@ -2490,6 +2491,60 @@ Se usa para correcciones críticas; deriva de `main` y vuelve a `main` y `develo
 Todo el código de la solución se redacta en inglés para mantener consistencia internacional y facilitar mantenimiento.
 
 ### 5.1.4. Software Deployment Configuration.
+#### Landing Page Deployment
+Para desplegar la landing page, es necesario contar con una cuenta de GitHub y tener acceso como administrador al repositorio del proyecto. A partir de ahí, se pueden cargar los documentos desde un entorno local al repositorio y proceder con el despliegue. A continuación, se describen los pasos seguidos:
+
+1. **Creación de ramas**: Se crean ramas específicas para que cada miembro del equipo pueda trabajar en módulos o componentes del proyecto Angular de forma organizada y sin generar conflictos en la rama principal.
+2. **Estructura del proyecto**: Se define una estructura clara:
+   - Carpeta `src/public/components`: para los componentes principales.
+   - Carpeta `public`: para las imágenes y configuración i18n.
+   - Carpeta `src/core/services`: para los servicios para implementar el i18n.
+3. **Subida de archivos al repositorio**:
+   - Instalación de Git.
+   - Configuración del repositorio remoto.
+   - Uso de comandos Git para hacer commit y push de los cambios.
+4. **Configuración para despliegue**:
+   - Instalación de Firebase CLI con el comando **npm install -g firebase-tools**
+   - Nos autenticamos en Firebase con el comando **firebase login**.
+   - Inicialización del proyecto Firebase en el directorio del proyecto Angular con el comando **firebase init**.
+   - Seleccionamos Hosting.
+   - Elegimos el proyecto Firebase creado previamente.
+   - Indicamos como carpeta de despliegue dist/nombre-del-proyecto.
+   - Realizamos el build del proyecto con **ng build** para luego hacer el deploy con **firebase deploy**.
+
+5. **Resolución de conflictos**:
+   - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.
+   - Se verifica que los conflictos hayan sido solucionados correctamente.
+
+Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, permitiendo actualizaciones automáticas tras nuevas versiones y asegurando un entorno estable para el front-end.
+
+🔗 **Landing Page en FireBase**: [https://cafelanding-60903.web.app/](https://cafelanding-60903.web.app/)
+
+---
+
+#### Front End Web Application Deployment
+
+1. Iniciamos sesión en Netlify y vinculamos el repositorio correspondiente.  
+   ![Imagen 1](public/assets/images/SoftwareDeploymentConfiguration/Imagen1.png)
+
+2. Seleccionamos el proyecto adecuado desde la lista de repositorios.  
+   ![Imagen 2](public/assets/images/SoftwareDeploymentConfiguration/Imagen2.png)
+
+3. Completamos los campos necesarios:
+   - Equipo.
+   - Rama donde están los archivos.
+   - Nombre de la página a desplegar.  
+   ![Imagen 3](public/assets/images/SoftwareDeploymentConfiguration/Imagen3.png)  
+   ![Imagen 4](public/assets/images/SoftwareDeploymentConfiguration/Imagen4.png)
+
+4. Procedemos con el despliegue del sitio.  
+   ![Imagen 5](public/assets/images/SoftwareDeploymentConfiguration/Imagen5.png)
+
+5. Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en Netlify.  
+   ![Imagen 6](public/assets/images/SoftwareDeploymentConfiguration/Imagen6.png)  
+   ![Imagen 7](public/assets/images/SoftwareDeploymentConfiguration/Imagen7.png)
+
+🔗 **Página desplegada en Netlify**: [https://cafe-lab-landing-opensource.netlify.app/](https://cafe-lab-landing-opensource.netlify.app/)
 
 ## 5.2. Product Implementation & Deployment.
 ### 5.2.1. Sprint Backlogs.
@@ -2585,7 +2640,7 @@ Puede añadirse un video *about the team* en el que se resume el rol de cada int
 - [Figma — prototipo navegable (Web Applications Prototyping)](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1)
 - [Trello — tablero de sprints (referencia de organización, TB1)](https://trello.com/b/diGtoNBa/sprint-1)
 - [Video — Web Applications Prototyping (SharePoint, referencia de guía)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-- **YouTube (About the product, misma que sección 5.3):** [Ver en YouTube](https://www.youtube.com/watch?v=hYDHNbU16zw)
+- **Video About the product:** [Ver en YouTube](https://www.youtube.com/watch?v=hYDHNbU16zw)
 - **Microsoft Stream (About the product, misma que sección 5.3):** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=N5dUfT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 - **Código e informe de referencia (proyecto base Café Metrix, curso de aplicaciones open source, para trazas de ERD, diagramas y estructura):**  
   - [Front-end (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-frontEnd.git)  
