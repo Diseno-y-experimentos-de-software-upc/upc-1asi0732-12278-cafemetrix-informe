@@ -53,8 +53,9 @@
 
 | Versión | Fecha       | Autor                                | Descripción de Modificación                                                        |
 |---------|-------------|--------------------------------------|------------------------------------------------------------------------------------|
-| 1.0     | 25/04/2026  | Fernandez Camayo, Carlos Fredy       | Creación del documento, estructura del informe y carátula                          |
-| 1.1     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Nuevo formato para project report collaboration insights y student outcome         |
+| 1.0     | 25/04/2026  | Fernandez Camayo, Carlos Fredy       | Creó el documento, estructura del informe y carátula                               |
+| 1.1     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Puso nuevo formato para project report collaboration insights y student outcome    |
+| 1.2     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió su perfil de integrante                                                     |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -406,17 +407,17 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
-  <tr> 
-    <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+  <tr>
+    <td><img src="public/assets/images/chapter-1/integrantes/adriand.jpeg" alt="Adrian Donayre" width="150"></td>
+    <td>Mi nombre es <strong>Adrian Donayre</strong>, tengo 19 años y actualmente estoy cursando el quinto ciclo de la carrera de Ingeniería de Software en la UPC. Tengo habilidad en los lenguajes C++ y javascript. Así mismo, cuento con experiencia en monitoreo de infraestructura en herramientas como Azure, NR y Kemp. Personalmente, opino que lo que hagamos en la universidad se verá reflejado en nuestra vida profesional. Por ello me esfuerzo en ampliar mis conocimientos y conseguir nuevas experiencias que me sumen para seguir mejorando.</td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/fredy.png"alt="Fredy Fernandez" width="200">  </td>
+    <td> Mi nombre es <strong>Carlos Fredy Fernandez Camayo</strong>. Soy estudiante de ingenieria de software. Tengo experiencia en desarrollo de proyectos Frontend y Backend con Angular y Spring boot, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/chris.jpg"alt="Christian Inga" width="200">  </td>
+    <td> Mi nombre es <strong>Christian Inga</strong>, tengo 20 años y actualmente me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Cuento con una gran disposición para el trabajo colaborativo y la capacidad de adaptarme rápidamente a diferentes metodologías de aprendizaje y dinámicas de grupo, asegurando siempre un desempeño confiable y organizado.</td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
