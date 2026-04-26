@@ -56,6 +56,7 @@
 | 1.0     | 25/04/2026  | Fernandez Camayo, Carlos Fredy       | Creó el documento, estructura del informe y carátula                               |
 | 1.1     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Puso nuevo formato para project report collaboration insights y student outcome    |
 | 1.2     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió su perfil de integrante                                                     |
+| 1.3     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió sprint backlogs, deployment evidence, US, TS y Product Backlog              |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -2546,9 +2547,1398 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 
 🔗 **Página desplegada en Netlify**: [https://cafe-lab-landing-opensource.netlify.app/](https://cafe-lab-landing-opensource.netlify.app/)
 
+
 ## 5.2. Product Implementation & Deployment.
 ### 5.2.1. Sprint Backlogs.
-Se adjuntan los sprint backlogs de TB1 en los anexos y tablero de seguimiento del equipo.
+#### Sprint Backlog 1
+Durante el primer sprint, el equipo se propuso iniciar y finalizar la landing page. Para la organización y gestión de sus integrantes, se empleó Trello, lo que facilitó la división de las historias de usuario en tareas más pequeñas y su asignación según las habilidades de cada miembro. A pesar de ello, debido a las limitaciones de tiempo y la acumulación de tareas, no tuvimos la oportunidad de probar al completo todas las historias definidas.
+
+<p align="center">
+    <img src="public/assets/images/Sprint1/trello.png" alt="Organización en la herramienta Trello">
+</p>
+
+Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
+
+<table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">User Story</th>
+                <th colspan="6">Work-Item/Task</th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Estimation (Hours)</th>
+                <th>Assigned To</th>
+                <th>Status (To-do / In Process / To Review / Done)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>US20</td>
+                <td>Información del Producto</td>
+                <td>TK01</td>
+                <td>Configurar proyecto y estructura base</td>
+                <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
+                <td>4</td>
+                <td>Guillermo</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>TK02</td>
+                <td>Desarrollar sección "Enfoque en beneficios claros"</td>
+                <td>Implementar sección con título y áreas diferenciadas para baristas y cafeterías</td>
+                <td>3</td>
+                <td>Kalet</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td>US21</td>
+                <td>Secciones Específicas por Segmento</td>
+                <td>TK03</td>
+                <td>Implementar secciones para baristas y cafeterías</td>
+                <td>Crear las áreas "Soy barista" y "Tengo una cafetería" con descripciones y CTAs</td>
+                <td>4</td>
+                <td>Christian</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>TK04</td>
+                <td>Desarrollar sección de datos y gráficos</td>
+                <td>Implementar área "Datos que respaldan tus decisiones" con gráficos de dashboard y curvas</td>
+                <td>5</td>
+                <td>Adrian</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>TK05</td>
+                <td>Crear sección de planes y características</td>
+                <td>Implementar la comparativa de los 4 planes con precios y listas de características</td>
+                <td>5</td>
+                <td>Fredy</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td>US22</td>
+                <td>Contacto con Equipo</td>
+                <td>TK06</td>
+                <td>Desarrollar sección de testimonios</td>
+                <td>Crear área de testimonios con fotos y citas de usuarios actuales</td>
+                <td>3</td>
+                <td>Kalet</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>TK07</td>
+                <td>Implementar sección FAQ y contacto</td>
+                <td>Crear área combinada con preguntas frecuentes y formulario de contacto con validación básica</td>
+                <td>4</td>
+                <td>Guillermo</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td>US23</td>
+                <td>Acceso directo a plataforma</td>
+                <td>TK08</td>
+                <td>Crear footer y enlaces</td>
+                <td>Implementar pie de página con navegación, recursos y contacto</td>
+                <td>4</td>
+                <td>Kalet</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>TK09</td>
+                <td>Optimizar responsive y realizar pruebas</td>
+                <td>Asegurar compatibilidad con dispositivos móviles y ejecutar pruebas de funcionamiento</td>
+                <td>5</td>
+                <td>Adrian</td>
+                <td>Done</td>
+            </tr>
+        </tbody>
+</table>
+
+#### Sprint Backlog 2
+Durante el segundo sprint, el equipo se propuso iniciar y finalizar el frontend. Para la organización y gestión de sus integrantes, se empleó Trello, lo que facilitó la división de las historias de usuario en tareas más pequeñas y su asignación según las habilidades de cada miembro. 
+
+<p align="center">
+    <img src="public/assets/images/Sprint2/trello.PNG" alt="Organización en la herramienta Trello">
+</p>
+
+Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
+
+<table border="1">
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="5">Work-Item/Task</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+<th>Description</th>
+<th>Estimation (Hours)</th>
+<th>Assigned To</th>
+<th>Status (To-do / In Process / To Review / Done)</th>
+</tr>
+<tr>
+<td rowspan="3">US01</td>
+<td rowspan="3">Registro de Proveedores</td>
+<td>TK01</td>
+<td>Diseñar formulario de registro</td>
+<td>Crear interfaz de usuario para el registro de proveedores con campos requeridos</td>
+<td>2</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK02</td>
+<td>Implementar validaciones</td>
+<td>Agregar validaciones de campos y manejo de errores</td>
+<td>2</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK03</td>
+<td>Conectar con servicios</td>
+<td>Implementar comunicación con la fake API para guardar proveedores</td>
+<td>1</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="3">US02</td>
+<td rowspan="3">Gestión de Lotes de Café Verde</td>
+<td>TK04</td>
+<td>Crear formulario de lotes</td>
+<td>Diseñar interfaz para registrar información de lotes de café verde</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK05</td>
+<td>Implementar lista con filtros</td>
+<td>Crear vista de tabla con todos los lotes y opciones de filtrado</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK06</td>
+<td>Agregar operaciones CRUD</td>
+<td>Implementar crear, leer, actualizar y eliminar lotes</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US03</td>
+<td rowspan="2">Registro de Certificaciones</td>
+<td>TK07</td>
+<td>Diseñar interfaz de certificaciones</td>
+<td>Crear formulario para documentar certificaciones con campos necesarios</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK08</td>
+<td>Implementar gestión de documentos</td>
+<td>Agregar funcionalidad para simular carga y vista previa de archivos</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US04</td>
+<td rowspan="2">Creación de Perfil de Tueste</td>
+<td>TK09</td>
+<td>Diseñar editor de perfiles</td>
+<td>Crear interfaz para configurar perfiles de tueste personalizados</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK10</td>
+<td>Implementar visualizaciones</td>
+<td>Agregar gráficos de curvas de temperatura y tiempo</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US05</td>
+<td rowspan="2">Registro de Sesión de Tueste</td>
+<td>TK11</td>
+<td>Crear formulario de sesión</td>
+<td>Diseñar interfaz para documentar cada sesión de tueste</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK12</td>
+<td>Implementar vista de historial</td>
+<td>Crear tabla con historial de sesiones, paginación y búsqueda</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="3">US06</td>
+<td rowspan="3">Análisis Comparativo de Tuestes</td>
+<td>TK13</td>
+<td>Diseñar selector múltiple</td>
+<td>Crear interfaz para seleccionar y comparar varios tuestes</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK14</td>
+<td>Implementar gráficos comparativos</td>
+<td>Desarrollar visualizaciones para comparar patrones y resultados</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK15</td>
+<td>Agregar análisis estadístico</td>
+<td>Implementar cálculos y métricas comparativas</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US07</td>
+<td rowspan="2">Biblioteca de Defectos de Tueste</td>
+<td>TK16</td>
+<td>Crear catálogo visual</td>
+<td>Diseñar galería de defectos comunes con imágenes y descripciones</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK17</td>
+<td>Implementar sistema de búsqueda</td>
+<td>Agregar búsqueda y filtrado por categorías</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US08</td>
+<td rowspan="2">Cata Digital Estructurada</td>
+<td>TK18</td>
+<td>Diseñar formulario de cata</td>
+<td>Crear interfaz para evaluaciones sensoriales estructuradas</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK19</td>
+<td>Implementar herramienta visual</td>
+<td>Agregar rueda de sabores interactiva para selección de atributos</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US09</td>
+<td rowspan="2">Visualización de Perfiles Sensoriales</td>
+<td>TK20</td>
+<td>Crear gráfico radial</td>
+<td>Implementar visualización tipo radar para perfiles sensoriales</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK21</td>
+<td>Implementar comparación visual</td>
+<td>Agregar funcionalidad para superponer múltiples perfiles</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US10</td>
+<td rowspan="2">Correlación Tueste-Sabor</td>
+<td>TK22</td>
+<td>Diseñar vista de correlaciones</td>
+<td>Crear interfaz para visualizar relaciones entre parámetros</td>
+<td>2</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK23</td>
+<td>Implementar análisis sensorial</td>
+<td>Agregar funcionalidad para mostrar resultados sensoriales</td>
+<td>3</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="3">US11</td>
+<td rowspan="3">Historial de Catas</td>
+<td>TK24</td>
+<td>Crear vista de historial</td>
+<td>Diseñar interfaz para acceder a catas anteriores</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK25</td>
+<td>Implementar filtros avanzados</td>
+<td>Agregar filtros por lote, fecha, origen y período</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK26</td>
+<td>Agregar análisis de tendencias</td>
+<td>Implementar gráficos de evolución temporal</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="3">US12</td>
+<td rowspan="3">Creación de Recetas de Preparación</td>
+<td>TK27</td>
+<td>Diseñar editor de recetas</td>
+<td>Crear interfaz para documentar recetas detalladas</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK28</td>
+<td>Implementar parámetros de preparación</td>
+<td>Agregar campos para temperatura, tiempo y proporciones</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK29</td>
+<td>Crear galería de métodos</td>
+<td>Implementar biblioteca visual de métodos de preparación</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US13</td>
+<td rowspan="2">Calibración de Molienda</td>
+<td>TK30</td>
+<td>Diseñar configurador de molienda</td>
+<td>Crear interfaz para documentar configuraciones por equipo</td>
+<td>1</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK31</td>
+<td>Implementar guías visuales</td>
+<td>Agregar referencias visuales para tamaños de partícula</td>
+<td>1</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US14</td>
+<td rowspan="2">Portafolio de Bebidas</td>
+<td>TK32</td>
+<td>Crear catálogo digital</td>
+<td>Diseñar portafolio visual de bebidas y recetas</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK33</td>
+<td>Implementar presentación interactiva</td>
+<td>Agregar funcionalidad para presentar a clientes</td>
+<td>1</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US15</td>
+<td rowspan="2">Compartir Recetas</td>
+<td>TK34</td>
+<td>Implementar sistema de compartir</td>
+<td>Crear funcionalidad para compartir recetas con el equipo</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK35</td>
+<td>Agregar control de versiones</td>
+<td>Implementar historial de cambios en recetas</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US16</td>
+<td rowspan="2">Control de Inventario Integrado</td>
+<td>TK36</td>
+<td>Diseñar dashboard de inventario</td>
+<td>Crear vista general de inventario de café verde y tostado</td>
+<td>2</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK37</td>
+<td>Implementar alertas de stock</td>
+<td>Agregar notificaciones para niveles bajos de inventario</td>
+<td>1</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US17</td>
+<td rowspan="2">Gestión de Costos de Producción</td>
+<td>TK38</td>
+<td>Crear calculadora de costos</td>
+<td>Diseñar herramienta para calcular costos por lote</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK39</td>
+<td>Implementar análisis de rentabilidad</td>
+<td>Agregar visualizaciones de márgenes y rentabilidad</td>
+<td>1</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US18</td>
+<td rowspan="2">Análisis de Eficiencia y Rendimiento</td>
+<td>TK40</td>
+<td>Diseñar dashboard de métricas</td>
+<td>Crear vista con indicadores clave de producción</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK41</td>
+<td>Implementar reportes comparativos</td>
+<td>Agregar comparación entre lotes y períodos</td>
+<td>1</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US19</td>
+<td rowspan="2">Reportes de Trazabilidad</td>
+<td>TK42</td>
+<td>Crear generador de reportes</td>
+<td>Diseñar sistema para generar reportes de trazabilidad completa</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK43</td>
+<td>Implementar exportación</td>
+<td>Agregar funcionalidad para descargar reportes</td>
+<td>1</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="3">US20</td>
+<td rowspan="3">Información del Producto</td>
+<td>TK44</td>
+<td>Configurar proyecto y estructura base</td>
+<td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
+<td>4</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK45</td>
+<td>Desarrollar sección "Enfoque en beneficios claros"</td>
+<td>Implementar sección con título y áreas diferenciadas para baristas y cafeterías</td>
+<td>3</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK46</td>
+<td>Implementar diseño adaptable</td>
+<td>Asegurar que la interfaz funcione en diferentes dispositivos</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td rowspan="3">US21</td>
+<td rowspan="3">Secciones Específicas por Segmento</td>
+<td>TK47</td>
+<td>Implementar secciones para baristas y cafeterías</td>
+<td>Crear las áreas "Soy barista" y "Tengo una cafetería" con descripciones y CTAs</td>
+<td>4</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK48</td>
+<td>Desarrollar sección de datos y gráficos</td>
+<td>Implementar área "Datos que respaldan tus decisiones" con gráficos de dashboard y curvas</td>
+<td>5</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK49</td>
+<td>Crear sección de planes y características</td>
+<td>Implementar la comparativa de los 4 planes con precios y listas de características</td>
+<td>5</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US22</td>
+<td rowspan="2">Contacto con Equipo</td>
+<td>TK50</td>
+<td>Desarrollar sección de testimonios</td>
+<td>Crear área de testimonios con fotos y citas de usuarios actuales</td>
+<td>3</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK51</td>
+<td>Implementar formulario de contacto</td>
+<td>Crear formulario funcional para consultas antes del registro</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US23</td>
+<td rowspan="2">Acceso directo a plataforma</td>
+<td>TK52</td>
+<td>Implementar botones principales</td>
+<td>Agregar botones de llamada a la acción en secciones clave</td>
+<td>1</td>
+<td>Adrian</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>TK53</td>
+<td>Crear navegación rápida</td>
+<td>Implementar accesos directos desde el menú principal</td>
+<td>1</td>
+<td>Adrian</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td rowspan="3">US24</td>
+<td rowspan="3">Registro y Autenticación (Usuarios)</td>
+<td>TK54</td>
+<td>Diseñar formularios de acceso</td>
+<td>Crear interfaces de registro e inicio de sesión con validaciones</td>
+<td>2</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK55</td>
+<td>Implementar gestión de sesiones</td>
+<td>Agregar manejo de estado de autenticación del usuario</td>
+<td>2</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK56</td>
+<td>Agregar recuperación de contraseña</td>
+<td>Implementar flujo para recuperar acceso a la cuenta</td>
+<td>1</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US25</td>
+<td rowspan="2">Perfil Personalizado</td>
+<td>TK57</td>
+<td>Diseñar página de perfil</td>
+<td>Crear interfaz para configurar información profesional</td>
+<td>1</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK58</td>
+<td>Implementar personalización</td>
+<td>Agregar opciones para personalizar la experiencia del usuario</td>
+<td>1</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US26</td>
+<td rowspan="2">Selección de Plan</td>
+<td>TK59</td>
+<td>Diseñar selector de planes</td>
+<td>Crear interfaz para elegir entre planes disponibles</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK60</td>
+<td>Implementar proceso de suscripción</td>
+<td>Agregar flujo completo de selección y confirmación</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+</table>
+
+#### Sprint Backlog 3
+<p align="center">
+    <img src="public/assets/images/Sprint3/trello.PNG" alt="Organización en la herramienta Trello">
+</p>
+
+Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e840bf4e7e3608009f8f64e64a47551EC81/sprint-3-cafelab)
+
+<table border="1">
+<tr>
+<th colspan="2">User/Technical Story</th>
+<th colspan="5">Work-Item/Task</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+<th>Description</th>
+<th>Estimation (Hours)</th>
+<th>Assigned To</th>
+<th>Status (To-do / In Process / To Review / Done)</th>
+</tr>
+<tr>
+<td rowspan="2">US05</td>
+<td rowspan="2">Registro de Sesión de Tueste</td>
+<td>TK11</td>
+<td>Crear formulario de sesión</td>
+<td>Diseñar interfaz para documentar cada sesión de tueste</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK12</td>
+<td>Implementar vista de historial</td>
+<td>Crear tabla con historial de sesiones, paginación y búsqueda</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="3">US06</td>
+<td rowspan="3">Análisis Comparativo de Tuestes</td>
+<td>TK13</td>
+<td>Diseñar selector múltiple</td>
+<td>Crear interfaz para seleccionar y comparar varios tuestes</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK14</td>
+<td>Implementar gráficos comparativos</td>
+<td>Desarrollar visualizaciones para comparar patrones y resultados</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK15</td>
+<td>Agregar análisis estadístico</td>
+<td>Implementar cálculos y métricas comparativas</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US07</td>
+<td rowspan="2">Biblioteca de Defectos de Tueste</td>
+<td>TK16</td>
+<td>Crear catálogo visual</td>
+<td>Diseñar galería de defectos comunes con imágenes y descripciones</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK17</td>
+<td>Implementar sistema de búsqueda</td>
+<td>Agregar búsqueda y filtrado por categorías</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US08</td>
+<td rowspan="2">Cata Digital Estructurada</td>
+<td>TK18</td>
+<td>Diseñar formulario de cata</td>
+<td>Crear interfaz para evaluaciones sensoriales estructuradas</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK19</td>
+<td>Implementar herramienta visual</td>
+<td>Agregar rueda de sabores interactiva para selección de atributos</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US09</td>
+<td rowspan="2">Visualización de Perfiles Sensoriales</td>
+<td>TK20</td>
+<td>Crear gráfico radial</td>
+<td>Implementar visualización tipo radar para perfiles sensoriales</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK21</td>
+<td>Implementar comparación visual</td>
+<td>Agregar funcionalidad para superponer múltiples perfiles</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US10</td>
+<td rowspan="2">Correlación Tueste-Sabor</td>
+<td>TK22</td>
+<td>Diseñar vista de correlaciones</td>
+<td>Crear interfaz para visualizar relaciones entre parámetros</td>
+<td>2</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK23</td>
+<td>Implementar análisis sensorial</td>
+<td>Agregar funcionalidad para mostrar resultados sensoriales</td>
+<td>3</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="3">US11</td>
+<td rowspan="3">Historial de Catas</td>
+<td>TK24</td>
+<td>Crear vista de historial</td>
+<td>Diseñar interfaz para acceder a catas anteriores</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK25</td>
+<td>Implementar filtros avanzados</td>
+<td>Agregar filtros por lote, fecha, origen y período</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK26</td>
+<td>Agregar análisis de tendencias</td>
+<td>Implementar gráficos de evolución temporal</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="3">US12</td>
+<td rowspan="3">Creación de Recetas de Preparación</td>
+<td>TK27</td>
+<td>Diseñar editor de recetas</td>
+<td>Crear interfaz para documentar recetas detalladas</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK28</td>
+<td>Implementar parámetros de preparación</td>
+<td>Agregar campos para temperatura, tiempo y proporciones</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK29</td>
+<td>Crear galería de métodos</td>
+<td>Implementar biblioteca visual de métodos de preparación</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US13</td>
+<td rowspan="2">Calibración de Molienda</td>
+<td>TK30</td>
+<td>Diseñar configurador de molienda</td>
+<td>Crear interfaz para documentar configuraciones por equipo</td>
+<td>1</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK31</td>
+<td>Implementar guías visuales</td>
+<td>Agregar referencias visuales para tamaños de partícula</td>
+<td>1</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US14</td>
+<td rowspan="2">Portafolio de Bebidas</td>
+<td>TK32</td>
+<td>Crear catálogo digital</td>
+<td>Diseñar portafolio visual de bebidas y recetas</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK33</td>
+<td>Implementar presentación interactiva</td>
+<td>Agregar funcionalidad para presentar a clientes</td>
+<td>1</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US15</td>
+<td rowspan="2">Compartir Recetas</td>
+<td>TK34</td>
+<td>Implementar sistema de compartir</td>
+<td>Crear funcionalidad para compartir recetas con el equipo</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK35</td>
+<td>Agregar control de versiones</td>
+<td>Implementar historial de cambios en recetas</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US16</td>
+<td rowspan="2">Control de Inventario Integrado</td>
+<td>TK36</td>
+<td>Diseñar dashboard de inventario</td>
+<td>Crear vista general de inventario de café verde y tostado</td>
+<td>2</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK37</td>
+<td>Implementar alertas de stock</td>
+<td>Agregar notificaciones para niveles bajos de inventario</td>
+<td>1</td>
+<td>Kalet</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US17</td>
+<td rowspan="2">Gestión de Costos de Producción</td>
+<td>TK38</td>
+<td>Crear calculadora de costos</td>
+<td>Diseñar herramienta para calcular costos por lote</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK39</td>
+<td>Implementar análisis de rentabilidad</td>
+<td>Agregar visualizaciones de márgenes y rentabilidad</td>
+<td>1</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US18</td>
+<td rowspan="2">Análisis de Eficiencia y Rendimiento</td>
+<td>TK40</td>
+<td>Diseñar dashboard de métricas</td>
+<td>Crear vista con indicadores clave de producción</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK41</td>
+<td>Implementar reportes comparativos</td>
+<td>Agregar comparación entre lotes y períodos</td>
+<td>1</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US19</td>
+<td rowspan="2">Reportes de Trazabilidad</td>
+<td>TK42</td>
+<td>Crear generador de reportes</td>
+<td>Diseñar sistema para generar reportes de trazabilidad completa</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK43</td>
+<td>Implementar exportación</td>
+<td>Agregar funcionalidad para descargar reportes</td>
+<td>1</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US25</td>
+<td rowspan="2">Perfil Personalizado</td>
+<td>TK57</td>
+<td>Diseñar página de perfil</td>
+<td>Crear interfaz para configurar información profesional</td>
+<td>1</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK58</td>
+<td>Implementar personalización</td>
+<td>Agregar opciones para personalizar la experiencia del usuario</td>
+<td>1</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US26</td>
+<td rowspan="2">Selección de Plan</td>
+<td>TK59</td>
+<td>Diseñar selector de planes</td>
+<td>Crear interfaz para elegir entre planes disponibles</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK60</td>
+<td>Implementar proceso de suscripción</td>
+<td>Agregar flujo completo de selección y confirmación</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS01</td>
+<td>POST HTTPS Proveedores</td>
+<td>TK61</td>
+<td>Implementar API Proveedores</td>
+<td>Desarrollar endpoint POST seguro (HTTPS) para registro de proveedores</td>
+<td>3</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS02</td>
+<td>GET HTTPS Proveedores</td>
+<td>TK62</td>
+<td>Implementar consulta de proveedores</td>
+<td>Desarrollar endpoint GET seguro (HTTPS) para obtener listado de proveedores</td>
+<td>2</td>
+<td>Adrian</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS03</td>
+<td>GET HTTPS Planes</td>
+<td>TK63</td>
+<td>Implementar consulta de planes</td>
+<td>Crear endpoint GET seguro (HTTPS) para recuperar información de planes</td>
+<td>2</td>
+<td>Fredy</td>
+<td>To Review</td>
+</tr>
+<tr>
+<td>TS04</td>
+<td>POST HTTPS Planes</td>
+<td>TK64</td>
+<td>Implementar creación de planes</td>
+<td>Desarrollar endpoint POST seguro (HTTPS) para registro de nuevos planes</td>
+<td>3</td>
+<td>Guillermo</td>
+<td>To Review</td>
+</tr>
+<tr>
+<td>TS05</td>
+<td>POST HTTPS Certificaciones</td>
+<td>TK65</td>
+<td>Implementar registro de certificaciones</td>
+<td>Crear endpoint POST seguro (HTTPS) para gestionar certificaciones</td>
+<td>3</td>
+<td>Christian</td>
+<td>To Review</td>
+</tr>
+<tr>
+<td>TS06</td>
+<td>GET HTTPS Certificaciones</td>
+<td>TK66</td>
+<td>Implementar consulta de certificaciones</td>
+<td>Desarrollar endpoint GET seguro para obtener listado de certificaciones</td>
+<td>2</td>
+<td>Juan Diego</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS07</td>
+<td>POST HTTPS Perfiles-Tueste</td>
+<td>TK67</td>
+<td>Implementar registro de perfiles de tueste</td>
+<td>Crear endpoint POST para almacenar perfiles de tueste con seguridad HTTPS</td>
+<td>3</td>
+<td>Juan Diego</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS08</td>
+<td>POST HTTPS SesionesTueste</td>
+<td>TK68</td>
+<td>Implementar creación de sesiones de tueste</td>
+<td>Desarrollar endpoint POST seguro para registrar nuevas sesiones de tueste</td>
+<td>3</td>
+<td>Henry</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS09</td>
+<td>PATCH HTTPS Sesiones Tueste</td>
+<td>TK69</td>
+<td>Implementar actualización de sesiones</td>
+<td>Crear endpoint PATCH para modificar sesiones de tueste existentes</td>
+<td>2</td>
+<td>Henry</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS10</td>
+<td>GET HTTPS Análisis-Tueste</td>
+<td>TK70</td>
+<td>Implementar consulta de análisis</td>
+<td>Desarrollar endpoint GET seguro para recuperar análisis de tueste</td>
+<td>2</td>
+<td>Adrian</td>
+<td>To Review</td>
+</tr>
+<tr>
+<td>TS11</td>
+<td>GET HTTPS DefectosTueste</td>
+<td>TK71</td>
+<td>Implementar consulta de defectos</td>
+<td>Crear endpoint GET seguro para obtener listado de defectos de tueste</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS12</td>
+<td>POST HTTPS Catas</td>
+<td>TK72</td>
+<td>Implementar registro de catas</td>
+<td>Desarrollar endpoint POST seguro para almacenar resultados de catas</td>
+<td>3</td>
+<td>Christian</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS13</td>
+<td>GET HTTPS PerfilesSensoriales</td>
+<td>TK73</td>
+<td>Implementar consulta de perfiles</td>
+<td>Crear endpoint GET seguro para recuperar perfiles sensoriales</td>
+<td>2</td>
+<td>Juan Diego</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS14</td>
+<td>GET HTTPS Correlaciones</td>
+<td>TK74</td>
+<td>Implementar consulta de correlaciones</td>
+<td>Desarrollar endpoint GET seguro para obtener datos de correlaciones</td>
+<td>2</td>
+<td>Henry</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS15</td>
+<td>POST HTTPS Recetas</td>
+<td>TK75</td>
+<td>Implementar registro de recetas</td>
+<td>Crear endpoint POST seguro para almacenar recetas de tueste</td>
+<td>3</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS16</td>
+<td>POST HTTPS Calibraciones</td>
+<td>TK76</td>
+<td>Implementar registro de calibraciones</td>
+<td>Desarrollar endpoint POST seguro para guardar datos de calibración</td>
+<td>3</td>
+<td>Fredy</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS17</td>
+<td>GET HTTPS Inventario</td>
+<td>TK77</td>
+<td>Implementar consulta de inventario</td>
+<td>Crear endpoint GET seguro para obtener estado del inventario</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS18</td>
+<td>PATCH HTTPS Inventario</td>
+<td>TK78</td>
+<td>Implementar actualización de inventario</td>
+<td>Desarrollar endpoint PATCH seguro para modificar registros de inventario</td>
+<td>2</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS19</td>
+<td>POST HTTPS Contacto</td>
+<td>TK79</td>
+<td>Implementar formulario de contacto</td>
+<td>Crear endpoint POST seguro para procesar mensajes de contacto</td>
+<td>2</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS20</td>
+<td>POST HTTPS Usuarios</td>
+<td>TK80</td>
+<td>Implementar registro de usuarios</td>
+<td>Desarrollar endpoint POST seguro para creación de usuarios</td>
+<td>3</td>
+<td>Fredy</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS21</td>
+<td>POST HTTPS Autenticación</td>
+<td>TK81</td>
+<td>Implementar sistema de autenticación</td>
+<td>Crear endpoint POST seguro para proceso de login y generación de tokens</td>
+<td>3</td>
+<td>Henry</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS22</td>
+<td>GET HTTPS Planes</td>
+<td>TK82</td>
+<td>Implementar consulta de planes</td>
+<td>Desarrollar endpoint GET seguro para obtener información de planes</td>
+<td>2</td>
+<td>Christian</td>
+<td>To review</td>
+</tr>
+<tr>
+<td>TS23</td>
+<td>POST HTTPS Planes</td>
+<td>TK83</td>
+<td>Implementar creación de planes</td>
+<td>Crear endpoint POST seguro para registro de nuevos planes</td>
+<td>3</td>
+<td>Guillermo</td>
+<td>To review</td>
+</tr>
+</table>
+
+#### Sprint Backlog 4
+#### 5.2.4.3. Sprint Backlog 4.
+<p align="center">
+    <img src="public/assets/images/Sprint4/trello.PNG" alt="Organización en la herramienta Trello">
+</p>
+
+Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e840bf4e7e3608009f8f64e64a47551EC81/sprint-3-cafelab)
+
+<table border="1">
+<tr>
+<th colspan="2">User/Technical Story</th>
+<th colspan="5">Work-Item/Task</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+<th>Description</th>
+<th>Estimation (Hours)</th>
+<th>Assigned To</th>
+<th>Status</th>
+</tr>
+<tr>
+<td rowspan="3">US06</td>
+<td rowspan="3">Análisis Comparativo de Tuestes</td>
+<td>TK13</td>
+<td>Diseñar selector múltiple</td>
+<td>Crear interfaz para seleccionar y comparar varios tuestes</td>
+<td>2</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK14</td>
+<td>Implementar gráficos comparativos</td>
+<td>Desarrollar visualizaciones para comparar patrones y resultados</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK15</td>
+<td>Agregar análisis estadístico</td>
+<td>Implementar cálculos y métricas comparativas</td>
+<td>1</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US10</td>
+<td rowspan="2">Correlación Tueste-Sabor</td>
+<td>TK22</td>
+<td>Diseñar vista de correlaciones</td>
+<td>Crear interfaz para visualizar relaciones entre parámetros</td>
+<td>2</td>
+<td>Juan Diego</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK23</td>
+<td>Implementar análisis sensorial</td>
+<td>Agregar funcionalidad para mostrar resultados sensoriales</td>
+<td>3</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td rowspan="2">US17</td>
+<td rowspan="2">Gestión de Costos de Producción</td>
+<td>TK38</td>
+<td>Crear calculadora de costos</td>
+<td>Diseñar herramienta para calcular costos por lote</td>
+<td>2</td>
+<td>Henry</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TK39</td>
+<td>Implementar análisis de rentabilidad</td>
+<td>Agregar visualizaciones de márgenes y rentabilidad</td>
+<td>1</td>
+<td>Guillermo</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS10</td>
+<td>GET HTTPS Análisis-Tueste</td>
+<td>TK70</td>
+<td>Implementar consulta de análisis</td>
+<td>Desarrollar endpoint GET seguro para recuperar análisis de tueste</td>
+<td>2</td>
+<td>Christian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS14</td>
+<td>GET HTTPS Correlaciones</td>
+<td>TK74</td>
+<td>Implementar consulta de correlaciones</td>
+<td>Desarrollar endpoint GET seguro para obtener datos de correlaciones</td>
+<td>2</td>
+<td>Fredy</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS17</td>
+<td>GET HTTPS Inventario</td>
+<td>TK77</td>
+<td>Implementar consulta de inventario</td>
+<td>Crear endpoint GET seguro para obtener estado del inventario</td>
+<td>2</td>
+<td>Adrian</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>TS18</td>
+<td>PATCH HTTPS Inventario</td>
+<td>TK78</td>
+<td>Implementar actualización de inventario</td>
+<td>Desarrollar endpoint PATCH seguro para modificar registros de inventario</td>
+<td>2</td>
+<td>Juan Diego</td>
+<td>Done</td>
+</tr>
+</table>
+
 
 ### 5.2.2. Implemented Landing Page Evidence.
 Se presenta evidencia en las secciones de diseño y prototipado de landing page, junto con el despliegue funcional del producto.
