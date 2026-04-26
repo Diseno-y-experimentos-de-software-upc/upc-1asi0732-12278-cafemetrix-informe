@@ -422,11 +422,11 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> Mi nombre es <strong>...</strong>,... </td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> Mi nombre es <strong>...</strong>,... </td>
   </tr>
 
 </table>
@@ -550,8 +550,6 @@ A partir de lo recopilado se propopone una plataforma dual software + iot que au
 <td><img src="public/assets/images/chapter-1/lean-ux/lean-ux-canvas.png" alt="LeanUxCanvas"></td>
 
 Enlace para acceder al [Canvas](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
-
-
 
 ## 1.3. Segmentos objetivos
 
@@ -2549,8 +2547,133 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 
 
 ## 5.2. Product Implementation & Deployment.
+
 ### 5.2.1. Sprint Backlogs.
-#### Sprint Backlog 1
+
+Esta sección presenta, por sprint, el **Sprint Planning**, la matriz de **Aspect Leaders and Collaborators** y el **Sprint Backlog** (tablero Trello y tablas de historias/tareas).
+
+#### Sprint 1
+
+
+#### 5.2.1.1. Sprint Planning 1
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>26/04/2025</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>09:00 AM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Fredy Fernández, Christian Inga, Quispe Michael, Oscar Antayhua, Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Sprint 0 Review Summary</th>
+            <td>
+                Se completaron las actividades de preparación inicial, como la definición del alcance, la formación del equipo y la configuración de las herramientas. El equipo mostró compromiso y buena organización en la etapa previa al inicio formal del proyecto.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 0 Retrospective Summary</th>
+            <td>
+                El equipo destacó la claridad en los roles y la importancia de la comunicación continua. Se identificó como mejora futura documentar los acuerdos tomados y realizar reuniones breves de seguimiento.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 1 Goal</th>
+            <td>Orientar la comunicación y captar potenciales usuarios a través de una landing page que refleje la propuesta de valor de Café Metrix</td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Velocity</th>
+            <td>8</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>8</td>
+        </tr>
+    </tbody>
+</table>
+
+
+#### 5.2.1.2. Aspect Leaders and Collaborators.
+En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX), un artefacto clave que define la estructura de responsabilidades para el Sprint actual. Esta matriz identifica claramente quién asume el rol de líder y quiénes actúan como colaboradores en cada aspecto del proyecto, facilitando una comunicación efectiva y una distribución equitativa del trabajo.
+
+Para este Sprint, los aspectos principales corresponden a las User Stories que definen el alcance funcional de nuestra landing page: Información del Producto (US20), Secciones Específicas por Segmento (US21), Contacto con Equipo (US22) y Acceso directo a plataforma (US23). Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas y la carga de trabajo planificada.
+
+<table border="1">
+<tr>
+<th>Team Member (Last Name, First Name)</th>
+<th>GitHub Username</th>
+<th>Información del Producto (US23)</th>
+<th>Secciones Específicas por Segmento (US24)</th>
+<th>Contacto con Equipo (US25)</th>
+<th>Acceso directo a plataforma (US26)</th>
+</tr>
+<tr>
+<td>Donayre, Adrian</td>
+<td>adriandonayredev</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Antayhua, Oscar</td>
+<td>guillermotantalean1</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Quispe, Michael</td>
+<td>kalet123-commit</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Fernández, Fredy</td>
+<td>u202320083</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Inga, Christian</td>
+<td>Christian1905</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+</table>
+
+
+#### 5.2.1.3. Sprint Backlog 1.
 Durante el primer sprint, el equipo se propuso iniciar y finalizar la landing page. Para la organización y gestión de sus integrantes, se empleó Trello, lo que facilitó la división de las historias de usuario en tareas más pequeñas y su asignación según las habilidades de cada miembro. A pesar de ello, debido a las limitaciones de tiempo y la acumulación de tareas, no tuvimos la oportunidad de probar al completo todas las historias definidas.
 
 <p align="center">
@@ -2584,7 +2707,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Configurar proyecto y estructura base</td>
                 <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
                 <td>4</td>
-                <td>Camila</td>
+                <td>Oscar</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2594,7 +2717,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Desarrollar sección "Enfoque en beneficios claros"</td>
                 <td>Implementar sección con título y áreas diferenciadas para baristas y cafeterías</td>
                 <td>3</td>
-                <td>Oscar</td>
+                <td>Michael</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2644,7 +2767,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Implementar sección FAQ y contacto</td>
                 <td>Crear área combinada con preguntas frecuentes y formulario de contacto con validación básica</td>
                 <td>4</td>
-                <td>Camila</td>
+                <td>Oscar</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2654,7 +2777,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Crear footer y enlaces</td>
                 <td>Implementar pie de página con navegación, recursos y contacto</td>
                 <td>4</td>
-                <td>Oscar</td>
+                <td>Michael</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2670,7 +2793,300 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
         </tbody>
 </table>
 
-#### Sprint Backlog 2
+
+#### Sprint 2
+
+
+#### 5.2.2.1. Sprint Planning 2
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>14/05/2025</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>08:00 PM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Fredy Fernández, Christian Inga, Quispe Michael, Oscar Antayhua, Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Review Summary</th>
+            <td>
+                El equipo logró implementar la landing page y captar a los primeros usuarios interesados. Se recibieron comentarios positivos sobre la propuesta visual y la claridad del mensaje.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Retrospective Summary</th>
+            <td>
+                Se identificó como oportunidad de mejora la necesidad de organizar mejor las tareas del frontend y asegurar la integración continua. Se propuso fortalecer la comunicación en las revisiones técnicas.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 2 Goal</th>
+            <td>Habilitar la interacción y el valor inicial para los usuarios a través del desarrollo de las principales funcionalidades del frontend de Café Metrix</td>
+        </tr>
+        <tr>
+            <th>Sprint 2 Velocity</th>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>10</td>
+        </tr>
+    </tbody>
+</table>
+
+
+#### 5.2.2.2. Aspect Leaders and Collaborators.
+En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX), un artefacto clave que define la estructura de responsabilidades para el Sprint actual. Esta matriz identifica claramente quién asume el rol de líder y quiénes actúan como colaboradores en cada aspecto del proyecto, facilitando una comunicación efectiva y una distribución equitativa del trabajo.
+
+Para este Sprint, los aspectos principales corresponden a las User Stories que definen el alcance funcional de nuestro front end: Registro de Proveedores (US01), Gestión de Lotes de Café Verde (US02), Registro de Certificaciones (US03), Creación de Perfil de Tueste (US04), Registro de Sesión de Tueste (US05), Análisis Comparativo de Tuestes (US06), Biblioteca de Defectos de Tueste (US07), Cata Digital Estructurada (US08), Visualización de Perfiles Sensoriales (US09), Correlación Tueste-Sabor (US10), Historial de Catas (US11), Creación de Recetas de Preparación (US12), Calibración de Molienda (US13), Portafolio de Bebidas (US14), Compartir Recetas (US15), Control de Inventario Integrado (US16), Gestión de Costos de Producción (US17), Análisis de Eficiencia y Rendimiento (US18), Reportes de Trazabilidad (US19), Información del Producto (US20), Secciones Específicas por Segmento (US21), Contacto con Equipo (US22), Acceso directo a plataforma (US23), Registro y Autenticación (Usuarios) (US24), Perfil Personalizado (US25) y Selección de Plan (US26). Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas y la carga de trabajo planificada.
+
+<table border="1" align="center">
+<tr>
+<th rowspan="2">User Story</th>
+<th colspan="5">Team Members</th>
+</tr>
+<tr>
+<th>Adrian<br/>Donayre</th>
+<th>Oscar<br/>Antayhua</th>
+<th>Michael<br/>Fred<br/>(Quispe)</th>
+<th>Fredy<br/>Fernández</th>
+<th>Christian<br/>Inga</th>
+</tr>
+<tr>
+<td>US01: Registro de Proveedores</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US02: Gestión de Lotes de Café Verde</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US03: Registro de Certificaciones</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US04: Creación de Perfil de Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US05: Registro de Sesión de Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US06: Análisis Comparativo de Tuestes</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US07: Biblioteca de Defectos de Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US08: Cata Digital Estructurada</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US09: Visualización de Perfiles Sensoriales</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US10: Correlación Tueste-Sabor</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US11: Historial de Catas</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US12: Creación de Recetas de Preparación</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US13: Calibración de Molienda</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US14: Portafolio de Bebidas</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+<tr>
+<td>US15: Compartir Recetas</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US16: Control de Inventario Integrado</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US17: Gestión de Costos de Producción</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+<tr>
+<td>US18: Análisis de Eficiencia y Rendimiento</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+<tr>
+<td>US19: Reportes de Trazabilidad</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+<tr>
+<td>US20: Información del Producto</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US21: Secciones Específicas por Segmento</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>L</td>
+</tr>
+<tr>
+<td>US22: Contacto con Equipo</td>
+<td>C</td>
+<td>L</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US23: Acceso directo a plataforma</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US24: Registro y Autenticación (Usuarios)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US25: Perfil Personalizado</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US26: Selección de Plan</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+</table>
+
+
+#### 5.2.2.3. Sprint Backlog 2.
 Durante el segundo sprint, el equipo se propuso iniciar y finalizar el frontend. Para la organización y gestión de sus integrantes, se empleó Trello, lo que facilitó la división de las historias de usuario en tareas más pequeñas y su asignación según las habilidades de cada miembro. 
 
 <p align="center">
@@ -2851,7 +3267,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar formulario de cata</td>
 <td>Crear interfaz para evaluaciones sensoriales estructuradas</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2859,7 +3275,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar herramienta visual</td>
 <td>Agregar rueda de sabores interactiva para selección de atributos</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2895,7 +3311,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar análisis sensorial</td>
 <td>Agregar funcionalidad para mostrar resultados sensoriales</td>
 <td>3</td>
-<td>Oscar</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2905,7 +3321,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Crear vista de historial</td>
 <td>Diseñar interfaz para acceder a catas anteriores</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2913,7 +3329,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar filtros avanzados</td>
 <td>Agregar filtros por lote, fecha, origen y período</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2921,7 +3337,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Agregar análisis de tendencias</td>
 <td>Implementar gráficos de evolución temporal</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2931,7 +3347,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar editor de recetas</td>
 <td>Crear interfaz para documentar recetas detalladas</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2939,7 +3355,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar parámetros de preparación</td>
 <td>Agregar campos para temperatura, tiempo y proporciones</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2947,7 +3363,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Crear galería de métodos</td>
 <td>Implementar biblioteca visual de métodos de preparación</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2993,7 +3409,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar sistema de compartir</td>
 <td>Crear funcionalidad para compartir recetas con el equipo</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3001,7 +3417,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Agregar control de versiones</td>
 <td>Implementar historial de cambios en recetas</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3011,7 +3427,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar dashboard de inventario</td>
 <td>Crear vista general de inventario de café verde y tostado</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3083,7 +3499,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Configurar proyecto y estructura base</td>
 <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
 <td>4</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3091,7 +3507,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Desarrollar sección "Enfoque en beneficios claros"</td>
 <td>Implementar sección con título y áreas diferenciadas para baristas y cafeterías</td>
 <td>3</td>
-<td>Oscar</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3099,7 +3515,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar diseño adaptable</td>
 <td>Asegurar que la interfaz funcione en diferentes dispositivos</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>To-do</td>
 </tr>
 <tr>
@@ -3135,7 +3551,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Desarrollar sección de testimonios</td>
 <td>Crear área de testimonios con fotos y citas de usuarios actuales</td>
 <td>3</td>
-<td>Oscar</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3143,7 +3559,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar formulario de contacto</td>
 <td>Crear formulario funcional para consultas antes del registro</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3228,7 +3644,461 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 </tr>
 </table>
 
-#### Sprint Backlog 3
+
+#### Sprint 3
+
+
+#### 5.2.3.1. Sprint Planning 3
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>29/05/2025</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>07:00 PM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Fredy Fernández, Christian Inga, Quispe Michael, Oscar Antayhua, Adrian Donayre, Camila Loli</td>
+        </tr>
+        <tr>
+            <th>Sprint 2 Review Summary</th>
+            <td>
+                Se logró el desarrollo de las principales vistas del frontend y se integraron funcionalidades críticas para los usuarios. El feedback recogido permitió ajustar detalles de la interfaz y mejorar la experiencia general.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 2 Retrospective Summary</th>
+            <td>
+                El equipo valoró la capacidad de adaptación frente a cambios de requerimientos. Se identificó como área de mejora una mayor cobertura de pruebas y la necesidad de documentar flujos complejos en backend y frontend.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 3 Goal</th>
+            <td>Consolidar la experiencia integral del usuario mediante la finalización del frontend y el despliegue de capacidades backend, enfocadas en la gestión y análisis de datos de la cadena productiva del café</td>
+        </tr>
+        <tr>
+            <th>Sprint 3 Velocity</th>
+            <td>50</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>50</td>
+        </tr>
+    </tbody>
+</table>
+
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+Para este Sprint, los aspectos principales corresponden a las User Stories restantes del alcance proyectado a nuestro front end sumado a la realización de las Technical Stories corresponientes al back end: Registro de Sesión de Tueste (US05), Análisis Comparativo de Tuestes (US06), Biblioteca de Defectos de Tueste (US07), Cata Digital Estructurada (US08), Visualización de Perfiles Sensoriales (US09), Correlación Tueste-Sabor (US10), Historial de Catas (US11), Creación de Recetas de Preparación (US12), Calibración de Molienda (US13), Portafolio de Bebidas (US14), Compartir Recetas (US15), Control de Inventario Integrado (US16), Gestión de Costos de Producción (US17), Análisis de Eficiencia y Rendimiento (US18), Reportes de Trazabilidad (US19), Perfil Personalizado (US25), Selección de Plan (US26), POST HTTPS Proveedores (TS01), GET HTTPS Proveedores (TS02), GET HTTPS Planes (TS03), POST HTTPS Planes (TS04), entre otros. Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas y la carga de trabajo planificada.
+
+<table border="1" align="center">
+<tr>
+<th rowspan="2">User Story</th>
+<th colspan="5">Team Members</th>
+</tr>
+<tr>
+<th>Adrian<br/>Donayre</th>
+<th>Oscar<br/>Antayhua</th>
+<th>Michael<br/>Fred<br/>(Quispe)</th>
+<th>Fredy<br/>Fernández</th>
+<th>Christian<br/>Inga</th>
+<th>Camila<br/>Loli</th>
+</tr>
+<tr>
+<td>US05: Registro de Sesión de Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US06: Análisis Comparativo de Tuestes</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US07: Biblioteca de Defectos de Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US08: Cata Digital Estructurada</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US09: Visualización de Perfiles Sensoriales</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US10: Correlación Tueste-Sabor</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US11: Historial de Catas</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US12: Creación de Recetas de Preparación</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US13: Calibración de Molienda</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US14: Portafolio de Bebidas</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US15: Compartir Recetas</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US16: Control de Inventario Integrado</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US17: Gestión de Costos de Producción</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US18: Análisis de Eficiencia y Rendimiento</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US19: Reportes de Trazabilidad</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US20: Información del Producto</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US25: Perfil Personalizado</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US26: Selección de Plan</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS01: POST HTTPS Proveedores</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS02: GET HTTPS Proveedores</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS03: GET HTTPS Planes</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS04: POST HTTPS Planes</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS05: POST HTTPS Certificaciones</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS06: GET HTTPS Certificaciones</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS07: POST HTTPS Perfiles-Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS08: POST HTTPS SesionesTueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS09: PATCH HTTPS Sesiones Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS10: GET HTTPS Análisis-Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS11: GET HTTPS DefectosTueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS12: POST HTTPS Catas</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS13: GET HTTPS PerfilesSensoriales</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS14: GET HTTPS Correlaciones</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS15: POST HTTPS Recetas</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS16: POST HTTPS Calibraciones</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS17: GET HTTPS Inventario</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS18: PATCH HTTPS Inventario</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS19: POST HTTPS Contacto</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS20: POST HTTPS Usuarios</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS21: POST HTTPS Autenticación</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS22: GET HTTPS Planes</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS23: POST HTTPS Planes</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+</table>
+
+
+#### 5.2.3.3. Sprint Backlog 3.
 <p align="center">
     <img src="public/assets/images/Sprint3/trello.PNG" alt="Organización en la herramienta Trello">
 </p>
@@ -3319,7 +4189,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar formulario de cata</td>
 <td>Crear interfaz para evaluaciones sensoriales estructuradas</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3327,7 +4197,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar herramienta visual</td>
 <td>Agregar rueda de sabores interactiva para selección de atributos</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3373,7 +4243,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear vista de historial</td>
 <td>Diseñar interfaz para acceder a catas anteriores</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3381,7 +4251,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar filtros avanzados</td>
 <td>Agregar filtros por lote, fecha, origen y período</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3389,7 +4259,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Agregar análisis de tendencias</td>
 <td>Implementar gráficos de evolución temporal</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3399,7 +4269,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar editor de recetas</td>
 <td>Crear interfaz para documentar recetas detalladas</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3407,7 +4277,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar parámetros de preparación</td>
 <td>Agregar campos para temperatura, tiempo y proporciones</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3415,7 +4285,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear galería de métodos</td>
 <td>Implementar biblioteca visual de métodos de preparación</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3461,7 +4331,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar sistema de compartir</td>
 <td>Crear funcionalidad para compartir recetas con el equipo</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3469,7 +4339,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Agregar control de versiones</td>
 <td>Implementar historial de cambios en recetas</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3479,7 +4349,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar dashboard de inventario</td>
 <td>Crear vista general de inventario de café verde y tostado</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3487,7 +4357,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar alertas de stock</td>
 <td>Agregar notificaciones para niveles bajos de inventario</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3617,7 +4487,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar creación de planes</td>
 <td>Desarrollar endpoint POST seguro (HTTPS) para registro de nuevos planes</td>
 <td>3</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>To Review</td>
 </tr>
 <tr>
@@ -3637,7 +4507,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de certificaciones</td>
 <td>Desarrollar endpoint GET seguro para obtener listado de certificaciones</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3647,7 +4517,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar registro de perfiles de tueste</td>
 <td>Crear endpoint POST para almacenar perfiles de tueste con seguridad HTTPS</td>
 <td>3</td>
-<td>Oscar</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3687,7 +4557,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de defectos</td>
 <td>Crear endpoint GET seguro para obtener listado de defectos de tueste</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -3707,7 +4577,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de perfiles</td>
 <td>Crear endpoint GET seguro para recuperar perfiles sensoriales</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Camila</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -3807,12 +4677,158 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar creación de planes</td>
 <td>Crear endpoint POST seguro para registro de nuevos planes</td>
 <td>3</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>To review</td>
 </tr>
 </table>
 
-#### Sprint Backlog 4
+
+#### Sprint 4
+
+
+#### 5.2.4.1. Sprint Planning 4
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>4/07/2025</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>06:00 PM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Fredy Fernández, Christian Inga, Quispe Michael, Oscar Antayhua, Adrian Donayre, Camila Loli</td>
+        </tr>
+        <tr>
+            <th>Sprint 3 Review Summary</th>
+            <td>
+                El equipo completó parcielmente el desarrollo del backend. Se realizó la primera pruebas preliminares datos reales y se recibieron sugerencias para el despliegue final de ambas capas.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 3 Retrospective Summary</th>
+            <td>
+                Se reconoció la mejora en los procesos de integración y comunicación. El equipo propuso enfocar la siguiente etapa en completar el backend y su implementación con el front end.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 4 Goal</th>
+            <td>Culminar la entrega de la plataforma Café Metrix, integrando y desplegando todas las funcionalidades clave en frontend y backend, listas para su adopción por parte de baristas y cafeterías de especialidad</td>
+        </tr>
+        <tr>
+            <th>Sprint 4 Velocity</th>
+            <td>50</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>50</td>
+        </tr>
+    </tbody>
+</table>
+
+
+#### 5.2.4.2. Aspect Leaders and Collaborators.
+Para este Sprint, los aspectos principales se centrarán en el desarrollo de las User Stories clave Análisis Comparativo de Tuestes (US06), Correlación Tueste-Sabor (US10) y Gestión de Costos de Producción (US17), junto con sus Technical Stories asociadas: GET HTTPS Análisis-Tueste (TS10), GET HTTPS Correlaciones (TS14), GET HTTPS Inventario (TS17) y PATCH HTTPS Inventario (TS18). Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas y la carga de trabajo planificada, manteniendo un equilibrio entre las necesidades de front end y back end para garantizar una implementación eficiente y coordinada de estas funcionalidades críticas del sistema.
+
+<table border="1" align="center">
+<tr>
+<th rowspan="2">User Story / Technical Story</th>
+<th colspan="6">Team Members</th>
+</tr>
+<tr>
+<th>Adrian<br/>Donayre</th>
+<th>Oscar<br/>Antayhua</th>
+<th>Michael<br/>Fred<br/>(Quispe)</th>
+<th>Fredy<br/>Fernández</th>
+<th>Christian<br/>Inga</th>
+<th>Camila<br/>Loli</th>
+</tr>
+<tr>
+<td>US06: Análisis Comparativo de Tuestes</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US10: Correlación Tueste-Sabor</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>US17: Gestión de Costos de Producción</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS10: GET HTTPS Análisis-Tueste</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS14: GET HTTPS Correlaciones</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS17: GET HTTPS Inventario</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>TS18: PATCH HTTPS Inventario</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+</table>
+
+
 #### 5.2.4.3. Sprint Backlog 4.
 <p align="center">
     <img src="public/assets/images/Sprint4/trello.PNG" alt="Organización en la herramienta Trello">
@@ -3842,7 +4858,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar selector múltiple</td>
 <td>Crear interfaz para seleccionar y comparar varios tuestes</td>
 <td>2</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3868,7 +4884,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar vista de correlaciones</td>
 <td>Crear interfaz para visualizar relaciones entre parámetros</td>
 <td>2</td>
-<td>Michael</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3886,7 +4902,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear calculadora de costos</td>
 <td>Diseñar herramienta para calcular costos por lote</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3894,7 +4910,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar análisis de rentabilidad</td>
 <td>Agregar visualizaciones de márgenes y rentabilidad</td>
 <td>1</td>
-<td>Camila</td>
+<td>Oscar</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3934,27 +4950,1930 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar actualización de inventario</td>
 <td>Desarrollar endpoint PATCH seguro para modificar registros de inventario</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 </table>
 
 
 ### 5.2.2. Implemented Landing Page Evidence.
-Se presenta evidencia en las secciones de diseño y prototipado de landing page, junto con el despliegue funcional del producto.
+
+Evidencias de implementación de la **landing page** (**Sprint 1**): desarrollo, ejecución, documentación de servicios y despliegue (Netlify).
+
+#### 5.2.1.4. Development Evidence for Sprint Review.
+<table border="1">
+<tr>
+<th>Repository</th>
+<th>Branch</th>
+<th>Commit Id</th>
+<th>Commit Message</th>
+<th>Commit Message Body</th>
+<th>Committed on (Date)</th>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>main</td>
+<td>d83b119</td>
+<td>Merge pull request #9 from upc-pre-202510-1asi0730-4364-CafeMetrix/develop</td>
+<td>Merge pull request #9 from upc-pre-202510-1asi0730-4364-CafeMetrix/develop</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>develop</td>
+<td>52f8c02</td>
+<td>Cambios del footer</td>
+<td>Cambios del footer</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>main</td>
+<td>88b0054</td>
+<td>Merge pull request #8 from upc-pre-202510-1asi0730-4364-CafeMetrix/develop</td>
+<td>Merge pull request #8 from upc-pre-202510-1asi0730-4364-CafeMetrix/develop</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-planes-caracteristicas</td>
+<td>8b1ce23</td>
+<td>Merge pull request #7 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK04-planes-caracteristicas</td>
+<td>Merge pull request #7 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK04-planes-caracteristicas</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-planes-caracteristicas</td>
+<td>5d8e923</td>
+<td>Merge branch 'develop' of https://github.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab-landingPage into feature/TK04-planes-caracteristicas</td>
+<td>Merge branch 'develop' of https://github.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab-landingPage into feature/TK04-planes-caracteristicas</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-planes-caracteristicas</td>
+<td>028ff5b</td>
+<td>add section plans-features and testimonials</td>
+<td>add section plans-features and testimonials</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-planes-caracteristicas</td>
+<td>012ba1a</td>
+<td>add section plans-features and testimonials</td>
+<td>add section plans-features and testimonials</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-planes-caracteristicas</td>
+<td>b7c7cc4</td>
+<td>add section plans-features and testimonials</td>
+<td>add section plans-features and testimonials</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-planes-caracteristicas</td>
+<td>8791f03</td>
+<td>add section plans-features and testimonials"</td>
+<td>add section plans-features and testimonials"</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK06-faq-contacto</td>
+<td>47e4882</td>
+<td>Merge pull request #5 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK06-faq-contacto</td>
+<td>Merge pull request #5 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK06-faq-contacto</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK06-faq-contacto</td>
+<td>db22b02</td>
+<td>feat (landing): join section faq to the rest of sections</td>
+<td>feat (landing): join section faq to the rest of sections</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK06-faq-contacto</td>
+<td>b5d8c31</td>
+<td>fix: sections visualization</td>
+<td>fix: sections visualization</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-datos-graficos</td>
+<td>3dc985b</td>
+<td>Merge pull request #4 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK04-datos-graficos</td>
+<td>Merge pull request #4 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK04-datos-graficos</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-datos-graficos</td>
+<td>752afd8</td>
+<td>Merge branch 'develop' of https://github.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab-landingPage into feature/TK04-datos-graficos</td>
+<td>Merge branch 'develop' of https://github.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab-landingPage into feature/TK04-datos-graficos</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-datos-graficos</td>
+<td>52749d7</td>
+<td>feat: join sections</td>
+<td>feat: join sections</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK03-segmentos-barista-cafeteria</td>
+<td>ee480ec</td>
+<td>Merge pull request #3 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK03-segmentos-barista-cafeteria</td>
+<td>Merge pull request #3 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK03-segmentos-barista-cafeteria</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK03-segmentos-barista-cafeteria</td>
+<td>bbe8843</td>
+<td>feat: add data and graphics section</td>
+<td>feat: add data and graphics section</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK03-segmentos-barista-cafeteria</td>
+<td>59b8d36</td>
+<td>style: increase benefits section size on style.css</td>
+<td>style: increase benefits section size on style.css</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK03-segmentos-barista-cafeteria</td>
+<td>1dd5638</td>
+<td>Feat: Add benefits section to style.css</td>
+<td>Feat: Add benefits section to style.css</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK03-segmentos-barista-cafeteria</td>
+<td>79799eb</td>
+<td>Feat: Add benefits section to index.html</td>
+<td>Feat: Add benefits section to index.html</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-datos-graficos</td>
+<td>c6108c7</td>
+<td>Merge pull request #2 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK04-datos-graficos</td>
+<td>Merge pull request #2 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK04-datos-graficos</td>
+<td>Apr 23, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-datos-graficos</td>
+<td>b00f2ac</td>
+<td>Fix: Add active button corner</td>
+<td>Fix: Add active button corner</td>
+<td>Apr 23, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK04-datos-graficos</td>
+<td>4f51736</td>
+<td>style: change hover view</td>
+<td>style: change hover view</td>
+<td>Apr 23, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>develop</td>
+<td>4945634</td>
+<td>style: change files position and fix conflicts of this restructure</td>
+<td>style: change files position and fix conflicts of this restructure</td>
+<td>Apr 22, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK01-estructura-base</td>
+<td>1093b41</td>
+<td>Merge pull request #1 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK01-estructura-base</td>
+<td>Merge pull request #1 from upc-pre-202510-1asi0730-4364-CafeMetrix/feature/TK01-estructura-base</td>
+<td>Apr 22, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/TK01-estructura-base</td>
+<td>19f91f6</td>
+<td>Feat: Add banner, logo header and hero section</td>
+<td>Feat: Add banner, logo header and hero section</td>
+<td>Apr 21, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>f94808c</td>
+<td>fix: Add again Chris profile.</td>
+<td>fix: Add again Chris profile.</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>8a54fb0</td>
+<td>Add images</td>
+<td>Add images</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>33d1049</td>
+<td>mock-up images</td>
+<td>mock-up images</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>f0aae0a</td>
+<td>feat: add student outcome</td>
+<td>feat: add student outcome</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>8ae118e</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>b076138</td>
+<td>add tb1 actions</td>
+<td>add tb1 actions</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>3aa9d15</td>
+<td>feat(readme): add student outcome</td>
+<td>feat(readme): add student outcome</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>263068b</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>de95384</td>
+<td>feat: Add Chris profile.</td>
+<td>feat: Add Chris profile.</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>5a4f156</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>a70beaa</td>
+<td>feat(readme): add complementary content to web application wireframes for mobile enviroment</td>
+<td>feat(readme): add complementary content to web application wireframes for mobile enviroment</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>484ef3e</td>
+<td>feat: add development evidence for sprint review</td>
+<td>feat: add development evidence for sprint review</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>3cacb73</td>
+<td>feat: add aspect leaders</td>
+<td>feat: add aspect leaders</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>6d5b3dc</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>277efa6</td>
+<td>feat: add webapp wireframes desktop</td>
+<td>feat: add webapp wireframes desktop</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>0847392</td>
+<td>fix(readme): resolve merge conflict in README.md</td>
+<td>fix(readme): resolve merge conflict in README.md</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>760282c</td>
+<td>feat(informe):add software development environment configuration, source code style guide and conventions section.</td>
+<td>feat(informe):add software development environment configuration, source code style guide and conventions section.</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>62f60f2</td>
+<td>feat: add description of sprint planing 1</td>
+<td>feat: add description of sprint planing 1</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>d95e653</td>
+<td>Update section 5.1.4: Software Deployment Configuration with detailed instructions and images</td>
+<td>Update section 5.1.4: Software Deployment Configuration with detailed instructions and images</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>92a6413</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>0c881c7</td>
+<td>feat: add sprint backlog1</td>
+<td>feat: add sprint backlog1</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>b1c9b4d</td>
+<td>Add Software Deployment Configuration images</td>
+<td>Add Software Deployment Configuration images</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>9e7fdbf</td>
+<td>style: new center to trello image</td>
+<td>style: new center to trello image</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>ccdd13d</td>
+<td>style: new center for trello image</td>
+<td>style: new center for trello image</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>31b9e4b</td>
+<td>style: center the trello image</td>
+<td>style: center the trello image</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>2ccb5f0</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>b13a831</td>
+<td>feat: add trello image</td>
+<td>feat: add trello image</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>308af54</td>
+<td>Add Fredy's image to assets for README</td>
+<td>Add Fredy's image to assets for README</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>cf4ac47</td>
+<td>Update README with report information</td>
+<td>Update README with report information</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>364dc8f</td>
+<td>feat: add software object-oriented design</td>
+<td>feat: add software object-oriented design</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>5b93642</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Merge branch 'feature/informe-readme' of https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab into feature/informe-readme</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>4243d25</td>
+<td>feat: add database diagram</td>
+<td>feat: add database diagram</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>5b3bc3a</td>
+<td>feat: add new member</td>
+<td>feat: add new member</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>ad5de07</td>
+<td>style: modify interviews header</td>
+<td>style: modify interviews header</td>
+<td>Apr 25, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/informe-readme</td>
+<td>60bd2fd</td>
+<td>feat: change an image link</td>
+<td>feat: change an image link</td>
+<td>Apr 25, 2025</td>
+</tr>
+</table>
+
+
+#### 5.2.1.5. Execution Evidence for Sprint Review.
+**Sección diferenciación de segmentos objetivo**
+<figure style="text-align: center;">
+    <img src="public/assets/images/Evidences/1.png" alt="Evidencia 1">
+</figure>
+
+**Sección módulos a ofrecer**
+<figure style="text-align: center;">
+    <img src="public/assets/images/Evidences/2.png" alt="Evidencia 2">
+</figure>
+
+**Sección elección de suscripción**
+<figure style="text-align: center;">
+    <img src="public/assets/images/Evidences/3.png" alt="Evidencia 3">
+</figure>
+
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review.
+Para la entrega de nuestro primer sprint no se contempló la documentación de servicios.
+
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review.
+En nuestro primer sprint, logramos desplegar la landing page. Estará mejorada para el segundo sprint, dado que se encontraron pequeñas partes que se pueden mejorar.
+<div align="center">
+  <img src="public/assets/images/Deployment1stSprint/1.png" alt="1">
+  <img src="public/assets/images/Deployment1stSprint/2.png" alt="2">
+  <img src="public/assets/images/Deployment1stSprint/3.png" alt="3">
+  <img src="public/assets/images/Deployment1stSprint/4.png" alt="4">
+  <img src="public/assets/images/Deployment1stSprint/5.png" alt="5">
+  <img src="public/assets/images/Deployment1stSprint/6.png" alt="6">
+  <img src="public/assets/images/Deployment1stSprint/7.png" alt="7">
+  <img src="public/assets/images/Deployment1stSprint/8.png" alt="8">
+  <img src="public/assets/images/Deployment1stSprint/9.png" alt="9">
+</div>
+
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence.
-Se presenta evidencia de implementación web mediante capturas de pantallas funcionales y prototipos navegables.
 
-### 5.2.4. Implemented Native-Mobile Application Evidence.
-Se presenta evidencia de implementación móvil en los mock-ups y flujos definidos para la app nativa.
+Evidencias de la aplicación **web (frontend)**: **Development Evidence** y **Execution Evidence** de los sprints de implementación (Sprints 2–4; el Sprint 1 se centra en la landing).
 
-### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence.
+#### 5.2.2.4. Development Evidence for Sprint Review.
 
-### 5.2.6. RESTful API documentation.
+<table border="1">
+<tr>
+<th>Repository</th>
+<th>Branch</th>
+<th>Commit id</th>
+<th>Commit Message</th>
+<th>Commit Message Body</th>
+<th>Committer on (Date)</th>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>main</td>
+<td>d83b119</td>
+<td>Merge pull request #9 from upc-pre-202510-1asi0730-4364-CafeMetrix/develop</td>
+<td>Merge pull request #9 from upc-pre-202510-1asi0730-4364-CafeMetrix/develop</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>develop</td>
+<td>52f8c02</td>
+<td>Cambios del footer</td>
+<td>Cambios del footer</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>develop</td>
+<td>663d974</td>
+<td>set up the basic project structure</td>
+<td>set up the basic project structure</td>
+<td>May 8, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>develop</td>
+<td>42fe08e</td>
+<td>initial commit</td>
+<td>initial commit</td>
+<td>May 8, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>a6e63e7</td>
+<td>feat(public): finished all views in cupping sessions page component.</td>
+<td>feat(public): finished all views in cupping sessions page component.</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>454a671</td>
+<td>feat(public): add the new cupping session button in cupping sessions page component</td>
+<td>feat(public): add the new cupping session button in cupping sessions page component</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>0b7286f</td>
+<td>feat(public): add filter feature to cupping sessions page component.</td>
+<td>feat(public): add filter feature to cupping sessions page component.</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>1244538</td>
+<td>feat(public): add cupping sessions page component</td>
+<td>feat(public): add cupping sessions page component</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>929a31c</td>
+<td>feat(public): add cupping sessions component structure</td>
+<td>feat(public): add cupping sessions component structure</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>8ba9c68</td>
+<td>fix(dashboard): correct title of cards</td>
+<td>fix(dashboard): correct title of cards</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>b64833a</td>
+<td>fix(dashboard): correct navbar and color of exit button</td>
+<td>fix(dashboard): correct navbar and color of exit button</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>e3891d3</td>
+<td>feat(public): add welcome barsta page component</td>
+<td>feat(public): add welcome barsta page component</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>5f4cf56</td>
+<td>fix(payments): correct to bold font type to mat cart titles</td>
+<td>fix(payments): correct to bold font type to mat cart titles</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>0a008de</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>8621e4e</td>
+<td>feat(ui): add angular material</td>
+<td>feat(ui): add angular material</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/inventory</td>
+<td>443a29d</td>
+<td>feat(public): add the register consume feature button to inventory page component.</td>
+<td>feat(public): add the register consume feature button to inventory page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/inventory</td>
+<td>56de333</td>
+<td>feat(public): add all view for inventory page component</td>
+<td>feat(public): add all view for inventory page component</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/inventory</td>
+<td>b5ce673</td>
+<td>feat(shared): import navbar component from welcome-barista branch.</td>
+<td>feat(shared): import navbar component from welcome-barista branch.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/inventory</td>
+<td>a91f173</td>
+<td>feat(public): add initial structure for inventory page component.</td>
+<td>feat(public): add initial structure for inventory page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/library-defects</td>
+<td>2bbcfde</td>
+<td>feature: new branch</td>
+<td>feature: new branch</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/portfolio-recipes</td>
+<td>ba4dce7</td>
+<td>Added recipes and portfolio page</td>
+<td>Added recipes and portfolio page</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>34ffae4</td>
+<td>feat(public): finished all views for production cost management page component.</td>
+<td>feat(public): finished all views for production cost management page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>d15cca1</td>
+<td>feat(public): add step 3 and 4 to production cost management page component.</td>
+<td>feat(public): add step 3 and 4 to production cost management page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>b55fef6</td>
+<td>feat(public): add the step 1 and 2 to production cost management page component.</td>
+<td>feat(public): add the step 1 and 2 to production cost management page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>b750203</td>
+<td>feat(shared): import navbar component from welcome-barista branch.</td>
+<td>feat(shared): import navbar component from welcome-barista branch.</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>8c806f9</td>
+<td>feat(public): add inicial version off product cost management page component.</td>
+<td>feat(public): add inicial version off product cost management page component.</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/select-payment</td>
+<td>0a008de</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/select-payment</td>
+<td>8621e4e</td>
+<td>feat(ui): add angular material</td>
+<td>feat(ui): add angular material</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>befed27</td>
+<td>feat: add files</td>
+<td>feat: add files</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>9d1d245</td>
+<td>feat(i18n): add language switcher.</td>
+<td>feat(i18n): add language switcher.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>6655b9f</td>
+<td>feat(i18n): add i18n support through ngx-translate.</td>
+<td>feat(i18n): add i18n support through ngx-translate.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>010e33f</td>
+<td>feat(environments): add courses endpoint path.</td>
+<td>feat(environments): add courses endpoint path.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>b3c9d1f</td>
+<td>feat(fake-api): add json-server and configure fake api.</td>
+<td>feat(fake-api): add json-server and configure fake api.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>8ba9c68</td>
+<td>fix(dashboard): correct title of cards</td>
+<td>fix(dashboard): correct title of cards</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>b64833a</td>
+<td>fix(dashboard): correct navbar and color of exit button</td>
+<td>fix(dashboard): correct navbar and color of exit button</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>e3891d3</td>
+<td>feat(public): add welcome barsta page component</td>
+<td>feat(public): add welcome barsta page component</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>5f4cf56</td>
+<td>fix(payments): correct to bold font type to mat cart titles</td>
+<td>fix(payments): correct to bold font type to mat cart titles</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>0a008de</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>8621e4e</td>
+<td>feat(ui): add angular material</td>
+<td>feat(ui): add angular material</td>
+<td>May 14, 2025</td>
+</tr>
+</table>
 
-### 5.2.7. Team Collaboration Insights.
-El equipo trabajó con distribución por funcionalidades, revisión cruzada de entregables y seguimiento continuo en tablero colaborativo.
+
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+**Sección dashboard de dueño**
+<figure style="text-align: center;">
+    <img src="public/assets/images/Evidences2/1.png" alt="Evidencia 1">
+</figure>
+
+**Sección proveedores**
+<figure style="text-align: center;">
+    <img src="public/assets/images/Evidences2/2.png" alt="Evidencia 2">
+</figure>
+
+**Sección registro de nuevo proveedor**
+<figure style="text-align: center;">
+    <img src="public/assets/images/Evidences2/3.png" alt="Evidencia 3">
+</figure>
+
+**Sección iniciar sesión**
+<figure style="text-align: center;">
+    <img src="public/assets/images/Evidences2/4.png" alt="Evidencia 4">
+</figure>
+
+**Sección editar perfil**
+<figure style="text-align: center;">
+    <img src="public/assets/images/Evidences2/5.png" alt="Evidencia 5">
+</figure>
+
+
+#### 5.2.3.4. Development Evidence for Sprint Review.
+
+<table border="1">
+<tr>
+<th>Repository</th>
+<th>Branch</th>
+<th>Commit id</th>
+<th>Commit Message</th>
+<th>Commit Message Body</th>
+<th>Committer on (Date)</th>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>1738bf2</td>
+  <td>fix(payment): se separó el component plan card correctamente.</td>
+  <td>guillermotantalean1</td>
+  <td>May 30, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>7b63c65</td>
+  <td>cambios en los archivos</td>
+  <td>guillermotantalean1</td>
+  <td>May 30, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>main</td>
+  <td>3c461bd</td>
+  <td>style: add favicon and rename the application</td>
+  <td>adriandonayredev</td>
+  <td>May 31, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>main</td>
+  <td>df9ca94</td>
+  <td>feat(chore): add auth domain with toolbar in public component and an endpoint</td>
+  <td>adriandonayredev</td>
+  <td>May 31, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>0bb4258</td>
+  <td>fix(dashboard): fixed the welcome barista component to a correct ddd architecture</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>04a7887</td>
+  <td>fix(dashboards): correct the src route in welcome barista page component</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>c39e185</td>
+  <td>fix(cupping sessions): create service and entity in cupping sessions feature.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>a2a167a</td>
+  <td>fix(payment): fix the route to the visa and mastercard logo.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>e0e0b3b</td>
+  <td>fix(payment): fix styles of select-payment page component.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>7223931</td>
+  <td>add styles to select payment component</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+</table>
+
+
+#### 5.2.3.5. Execution Evidence for Sprint Review.
+Se muestran evidencias de la implementacion de frontend, considerando las user goals y correciones del despliegue anterior
+<td><img src="public/assets/images/evidencefrontend/evidence1.png" alt="Foto de Evidence 1"></td>
+<td><img src="public/assets/images/evidencefrontend/evidence2.png" alt="Foto de Evidence 2"></td>
+<td><img src="public/assets/images/evidencefrontend/evidence3.png" alt="Foto de Evidence 3"></td>
+<td><img src="public/assets/images/evidencefrontend/evidence4.png" alt="Foto de Evidence 4"></td>
+
+
+#### 5.2.4.4. Development Evidence for Sprint Review.
+
+
+<table border="1">
+<tr>
+<th>Repository</th>
+<th>Branch</th>
+<th>Commit id</th>
+<th>Commit Message</th>
+<th>Commit Message Body</th>
+<th>Committer on (Date)</th>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>1738bf2</td>
+  <td>fix(payment): se separó el component plan card correctamente.</td>
+  <td>guillermotantalean1</td>
+  <td>May 30, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>7b63c65</td>
+  <td>cambios en los archivos</td>
+  <td>guillermotantalean1</td>
+  <td>May 30, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>main</td>
+  <td>3c461bd</td>
+  <td>style: add favicon and rename the application</td>
+  <td>adriandonayredev</td>
+  <td>May 31, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>main</td>
+  <td>df9ca94</td>
+  <td>feat(chore): add auth domain with toolbar in public component and an endpoint</td>
+  <td>adriandonayredev</td>
+  <td>May 31, 2025</td>
+</tr>
+
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>0bb4258</td>
+  <td>fix(dashboard): fixed the welcome barista component to a correct ddd architecture</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>04a7887</td>
+  <td>fix(dashboards): correct the src route in welcome barista page component</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>c39e185</td>
+  <td>fix(cupping sessions): create service and entity in cupping sessions feature.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>a2a167a</td>
+  <td>fix(payment): fix the route to the visa and mastercard logo.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>e0e0b3b</td>
+  <td>fix(payment): fix styles of select-payment page component.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>7223931</td>
+  <td>add styles to select payment component</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+</table>
+
+
+#### 5.2.4.5. Execution Evidence for Sprint Review.
+Se muestran evidencias de la implementacion del frontend con backend, considerando las user goals y correciones del despliegue anterior.
+<td><img src="public/assets/images/EvidencesFinal/1.jpeg" alt="Foto de Evidence 1"></td>
+<td><img src="public/assets/images/EvidencesFinal/2.jpeg" alt="Foto de Evidence 2"></td>
+<td><img src="public/assets/images/EvidencesFinal/3.jpeg" alt="Foto de Evidence 3"></td>
+<td><img src="public/assets/images/EvidencesFinal/4.jpeg" alt="Foto de Evidence 4"></td>
+
+
+### 5.2.4. Acuerdo de Servicio - SaaS.
+
+**Pendiente:** incorporar el **Acuerdo de Servicio SaaS** según la plantilla o lineamientos del curso (SLA, alcance, responsabilidades, limitación de responsabilidad, tratamiento de datos, etc.).
+
+### 5.2.5. Implemented Native-Mobile Application Evidence.
+
+Capturas y evidencias de ejecución en contexto **móvil** (principalmente **Sprint 3**). Completar con evidencias adicionales del equipo (build en dispositivo, capturas de app nativa) si aplica.
+
+
+
+#### 5.2.3.5. Execution Evidence for Sprint Review.
+Se muestran evidencias de la implementacion de frontend, considerando las user goals y correciones del despliegue anterior
+<td><img src="public/assets/images/evidencefrontend/evidence1.png" alt="Foto de Evidence 1"></td>
+<td><img src="public/assets/images/evidencefrontend/evidence2.png" alt="Foto de Evidence 2"></td>
+<td><img src="public/assets/images/evidencefrontend/evidence3.png" alt="Foto de Evidence 3"></td>
+<td><img src="public/assets/images/evidencefrontend/evidence4.png" alt="Foto de Evidence 4"></td>
+
+
+### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence.
+
+Evidencias de **backend y API**: tablas de commits, documentación **Swagger/OpenAPI** y **despliegue** (cuando aplique por sprint).
+
+#### 5.2.2.4. Development Evidence for Sprint Review.
+
+<table border="1">
+<tr>
+<th>Repository</th>
+<th>Branch</th>
+<th>Commit id</th>
+<th>Commit Message</th>
+<th>Commit Message Body</th>
+<th>Committer on (Date)</th>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>main</td>
+<td>d83b119</td>
+<td>Merge pull request #9 from upc-pre-202510-1asi0730-4364-CafeMetrix/develop</td>
+<td>Merge pull request #9 from upc-pre-202510-1asi0730-4364-CafeMetrix/develop</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>develop</td>
+<td>52f8c02</td>
+<td>Cambios del footer</td>
+<td>Cambios del footer</td>
+<td>Apr 26, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>develop</td>
+<td>663d974</td>
+<td>set up the basic project structure</td>
+<td>set up the basic project structure</td>
+<td>May 8, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>develop</td>
+<td>42fe08e</td>
+<td>initial commit</td>
+<td>initial commit</td>
+<td>May 8, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>a6e63e7</td>
+<td>feat(public): finished all views in cupping sessions page component.</td>
+<td>feat(public): finished all views in cupping sessions page component.</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>454a671</td>
+<td>feat(public): add the new cupping session button in cupping sessions page component</td>
+<td>feat(public): add the new cupping session button in cupping sessions page component</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>0b7286f</td>
+<td>feat(public): add filter feature to cupping sessions page component.</td>
+<td>feat(public): add filter feature to cupping sessions page component.</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>1244538</td>
+<td>feat(public): add cupping sessions page component</td>
+<td>feat(public): add cupping sessions page component</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>929a31c</td>
+<td>feat(public): add cupping sessions component structure</td>
+<td>feat(public): add cupping sessions component structure</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>8ba9c68</td>
+<td>fix(dashboard): correct title of cards</td>
+<td>fix(dashboard): correct title of cards</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>b64833a</td>
+<td>fix(dashboard): correct navbar and color of exit button</td>
+<td>fix(dashboard): correct navbar and color of exit button</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>e3891d3</td>
+<td>feat(public): add welcome barsta page component</td>
+<td>feat(public): add welcome barsta page component</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>5f4cf56</td>
+<td>fix(payments): correct to bold font type to mat cart titles</td>
+<td>fix(payments): correct to bold font type to mat cart titles</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>0a008de</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/cupping-sessions</td>
+<td>8621e4e</td>
+<td>feat(ui): add angular material</td>
+<td>feat(ui): add angular material</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/inventory</td>
+<td>443a29d</td>
+<td>feat(public): add the register consume feature button to inventory page component.</td>
+<td>feat(public): add the register consume feature button to inventory page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/inventory</td>
+<td>56de333</td>
+<td>feat(public): add all view for inventory page component</td>
+<td>feat(public): add all view for inventory page component</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/inventory</td>
+<td>b5ce673</td>
+<td>feat(shared): import navbar component from welcome-barista branch.</td>
+<td>feat(shared): import navbar component from welcome-barista branch.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/inventory</td>
+<td>a91f173</td>
+<td>feat(public): add initial structure for inventory page component.</td>
+<td>feat(public): add initial structure for inventory page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/library-defects</td>
+<td>2bbcfde</td>
+<td>feature: new branch</td>
+<td>feature: new branch</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/portfolio-recipes</td>
+<td>ba4dce7</td>
+<td>Added recipes and portfolio page</td>
+<td>Added recipes and portfolio page</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>34ffae4</td>
+<td>feat(public): finished all views for production cost management page component.</td>
+<td>feat(public): finished all views for production cost management page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>d15cca1</td>
+<td>feat(public): add step 3 and 4 to production cost management page component.</td>
+<td>feat(public): add step 3 and 4 to production cost management page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>b55fef6</td>
+<td>feat(public): add the step 1 and 2 to production cost management page component.</td>
+<td>feat(public): add the step 1 and 2 to production cost management page component.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>b750203</td>
+<td>feat(shared): import navbar component from welcome-barista branch.</td>
+<td>feat(shared): import navbar component from welcome-barista branch.</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/production-cost-management</td>
+<td>8c806f9</td>
+<td>feat(public): add inicial version off product cost management page component.</td>
+<td>feat(public): add inicial version off product cost management page component.</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/select-payment</td>
+<td>0a008de</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/select-payment</td>
+<td>8621e4e</td>
+<td>feat(ui): add angular material</td>
+<td>feat(ui): add angular material</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>befed27</td>
+<td>feat: add files</td>
+<td>feat: add files</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>9d1d245</td>
+<td>feat(i18n): add language switcher.</td>
+<td>feat(i18n): add language switcher.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>6655b9f</td>
+<td>feat(i18n): add i18n support through ngx-translate.</td>
+<td>feat(i18n): add i18n support through ngx-translate.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>010e33f</td>
+<td>feat(environments): add courses endpoint path.</td>
+<td>feat(environments): add courses endpoint path.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/signin-signout</td>
+<td>b3c9d1f</td>
+<td>feat(fake-api): add json-server and configure fake api.</td>
+<td>feat(fake-api): add json-server and configure fake api.</td>
+<td>May 15, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>8ba9c68</td>
+<td>fix(dashboard): correct title of cards</td>
+<td>fix(dashboard): correct title of cards</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>b64833a</td>
+<td>fix(dashboard): correct navbar and color of exit button</td>
+<td>fix(dashboard): correct navbar and color of exit button</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>e3891d3</td>
+<td>feat(public): add welcome barsta page component</td>
+<td>feat(public): add welcome barsta page component</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>5f4cf56</td>
+<td>fix(payments): correct to bold font type to mat cart titles</td>
+<td>fix(payments): correct to bold font type to mat cart titles</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>0a008de</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>feat(payment): add select payment screen and navbar</td>
+<td>May 14, 2025</td>
+</tr>
+<tr>
+<td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+<td>feature/welcome-barista</td>
+<td>8621e4e</td>
+<td>feat(ui): add angular material</td>
+<td>feat(ui): add angular material</td>
+<td>May 14, 2025</td>
+</tr>
+</table>
+
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, el objetivo del equipo era avanzar con el desarrollo del front-end completo de la aplicación, dividiendo las responsabilidades por secciones entre los integrantes. Sin embargo, por motivos técnicos y de coordinación, algunas secciones asignadas no fueron completadas ni funcionales al momento del cierre del sprint.
+
+A pesar de estos inconvenientes, se logró desarrollar y desplegar la sección de la rama **OwnerPlan**, cumpliendo con los objetivos planteados para esa parte. Para no depender de un back-end aún no implementado, se optó por utilizar una **API simulada (fake API)** con **MockApi**, lo que permitió conectar el front-end con datos simulados y ofrecer una experiencia funcional para la revisión.
+
+[Link del MockApi](https://682697d8397e48c913169c83.mockapi.io/)
+
+<table border="1">
+  <tr>
+    <th>EndPoint</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>/coffe-type </td>
+    <td>Se implementaron las operaciones crud en coffe-type, donde se intento desarrollar el funcionamiento create de forma local.</td>
+  </tr>
+  <tr>
+    <td>/defect-type</td>
+    <td>Se implementaron las operaciones crud en defect-type, donde se intento desarrollar el funcionamiento create de forma local.</td>
+  </tr>
+  <tr>
+    <td>/defect-records</td>
+    <td>Se implementaron las operaciones crud en defect-records, donde se intento desarrollar el funcionamiento create de forma local.</td>
+  </tr>
+  <tr>
+    <td>/recipes</td>
+    <td>Se implementaron las operaciones crud en base.service.ts, donde se logro desarrollar el funcionamiento de create de forma local, completando el funcionamiento de registro en la tabla del modulo recipes</td>
+  </tr>
+  <tr>
+    <td>/portafolios</td>
+    <td>Se implementaron las operaciones crud en base.service.ts, donde se logro desarrollar el funcionamiento de create de forma local, completando el funcionamiento de registro en la tabla del modulo portafolios</td>
+  </tr>
+      <td>/users</td>
+    <td>Se implementaron las funcionalidades en http-instance.service.ts, donde se intento desarrollar el funcionamiento de create de forma local y remota mediante mockApi.</td>
+  </tr>
+      <td>/coffee-lots</td>
+    <td>Se implementaron las operaciones crud en Coffe-lots.service.ts, donde se logro desarrollar el funcionamiento de create de forma remota y local mediante mockApi, completando el funcionamiento de registro en la tabla del modulo coffee-lots</td>
+  </tr>
+      <td>/providers</td>
+    <td>Se implementaron las operaciones crud en provider.service.ts, donde se logro desarrollar el funcionamiento de create de forma remota y local mediante mockApi, completando el funcionamiento de registro en la tabla del modulo provider</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id </th>
+    <th>Commit message</th>
+    <th>Commited
+on (Date)</th>
+  </tr>
+  <tr>
+    <td>cafeLab-frontEnd</td>
+    <td>feature/library-defects</td>
+    <td>2bbcfde3f89e59c222010cc7f4767a0085fded17</td>
+    <td>feature: new branch</td>
+       <td>15/05/2025</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontEnd</td>
+    <td>feature/portfolio-recipes</td>
+    <td>ba4dce7da059b556482f65fa2d1c5876368e3d60</td>
+    <td>Added recipes and portfolio page
+</td>
+       <td>15/05/2025</td>
+  </tr>
+
+  <tr>
+    <td>cafeLab-frontEnd</td>
+    <td>feature/signin-signout</td>
+    <td>befed27d619b28713e868ec39166a16e03a14203</td>
+    <td>feat: add files
+
+</td>
+       <td>15/05/2025</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontEnd</td>
+    <td>ownerPlan</td>
+    <td>8b7281546f23b33499b5a6ea01f62811be5d04fe</td>
+    <td>deploy
+</td>
+       <td>15/05/2025</td>
+  </tr>
+ 
+</table>
+
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+En nuestro segundo sprint, logramos avanzar el front end mas no finalizarlo. Estará mejorada para el tercer sprint, dado que se encontraron inconvenientes al integrar el fake REST API en cada sección.
+
+#### Landing page:
+El despliegue de la landin page se mantiene en el mismo repositorio donde se realizo el despliegue de la misma, manteniendose en la rama main
+<figure style="text-align: center;">
+    <img src="public/assets/images/evidenceSprint2/evidenceLanding.png" alt="Evidencia 5">
+</figure>
+
+<div align="center">
+  <img src="public/assets/images/Deployment1stSprint/1.png" alt="1">
+  <img src="public/assets/images/Deployment1stSprint/2.png" alt="2">
+  <img src="public/assets/images/Deployment1stSprint/3.png" alt="3">
+  <img src="public/assets/images/Deployment1stSprint/4.png" alt="4">
+  <img src="public/assets/images/Deployment1stSprint/5.png" alt="5">
+  <img src="public/assets/images/Deployment1stSprint/6.png" alt="6">
+  <img src="public/assets/images/Deployment1stSprint/7.png" alt="7">
+  <img src="public/assets/images/Deployment1stSprint/8.png" alt="8">
+  <img src="public/assets/images/Deployment1stSprint/9.png" alt="9">
+</div>
+
+#### Web Application:
+El despligue de la aplicacion frontend se realizo en firebase, utilizando la rama OwnerPlan del repositorio. Mediante el uso de los comandos 'npm run build', la configuracion de la carpeta 'dist', con el fin de poder conservar unicamente lo realizado en esta rama, ya que se puede conectar a la base de datos remotas con mockApi, seguidamente se confirma el despligue con "firebase deploy --only hosting"
+
+<div align="center">
+  <img src="public/assets/images/evidenceSprint2/evidence1.png" alt="1">
+  <img src="public/assets/images/evidenceSprint2/evidence2.png" alt="2">
+  <img src="public/assets/images/evidenceSprint2/evidence3.png" alt="3">
+  <img src="public/assets/images/evidenceSprint2/evidence4.png" alt="4">
+</div>
+
+
+#### 5.2.3.4. Development Evidence for Sprint Review.
+
+<table border="1">
+<tr>
+<th>Repository</th>
+<th>Branch</th>
+<th>Commit id</th>
+<th>Commit Message</th>
+<th>Commit Message Body</th>
+<th>Committer on (Date)</th>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>1738bf2</td>
+  <td>fix(payment): se separó el component plan card correctamente.</td>
+  <td>guillermotantalean1</td>
+  <td>May 30, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>7b63c65</td>
+  <td>cambios en los archivos</td>
+  <td>guillermotantalean1</td>
+  <td>May 30, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>main</td>
+  <td>3c461bd</td>
+  <td>style: add favicon and rename the application</td>
+  <td>adriandonayredev</td>
+  <td>May 31, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>main</td>
+  <td>df9ca94</td>
+  <td>feat(chore): add auth domain with toolbar in public component and an endpoint</td>
+  <td>adriandonayredev</td>
+  <td>May 31, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>0bb4258</td>
+  <td>fix(dashboard): fixed the welcome barista component to a correct ddd architecture</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>04a7887</td>
+  <td>fix(dashboards): correct the src route in welcome barista page component</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>c39e185</td>
+  <td>fix(cupping sessions): create service and entity in cupping sessions feature.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>a2a167a</td>
+  <td>fix(payment): fix the route to the visa and mastercard logo.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>e0e0b3b</td>
+  <td>fix(payment): fix styles of select-payment page component.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>7223931</td>
+  <td>add styles to select payment component</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+</table>
+
+
+#### 5.2.4.4. Development Evidence for Sprint Review.
+
+
+<table border="1">
+<tr>
+<th>Repository</th>
+<th>Branch</th>
+<th>Commit id</th>
+<th>Commit Message</th>
+<th>Commit Message Body</th>
+<th>Committer on (Date)</th>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>1738bf2</td>
+  <td>fix(payment): se separó el component plan card correctamente.</td>
+  <td>guillermotantalean1</td>
+  <td>May 30, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>7b63c65</td>
+  <td>cambios en los archivos</td>
+  <td>guillermotantalean1</td>
+  <td>May 30, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>main</td>
+  <td>3c461bd</td>
+  <td>style: add favicon and rename the application</td>
+  <td>adriandonayredev</td>
+  <td>May 31, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>main</td>
+  <td>df9ca94</td>
+  <td>feat(chore): add auth domain with toolbar in public component and an endpoint</td>
+  <td>adriandonayredev</td>
+  <td>May 31, 2025</td>
+</tr>
+
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>0bb4258</td>
+  <td>fix(dashboard): fixed the welcome barista component to a correct ddd architecture</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>04a7887</td>
+  <td>fix(dashboards): correct the src route in welcome barista page component</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>c39e185</td>
+  <td>fix(cupping sessions): create service and entity in cupping sessions feature.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>a2a167a</td>
+  <td>fix(payment): fix the route to the visa and mastercard logo.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>e0e0b3b</td>
+  <td>fix(payment): fix styles of select-payment page component.</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+<tr>
+  <td>upc-pre-202510-1asi0730-4364-CafeMetrix</td>
+  <td>feature/frontend-guillermo</td>
+  <td>7223931</td>
+  <td>add styles to select payment component</td>
+  <td>guillermotantalean1</td>
+  <td>Jun 1, 2025</td>
+</tr>
+</table>
+
+
+### 5.2.7. RESTful API documentation.
+
+Documentación de la API (**Services Documentation Evidence for Sprint Review** / Swagger, OpenAPI) por sprint.
+
+
+
+#### 5.2.7.1. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, el objetivo del equipo era avanzar con el desarrollo del front-end completo de la aplicación, dividiendo las responsabilidades por secciones entre los integrantes. Sin embargo, por motivos técnicos y de coordinación, algunas secciones asignadas no fueron completadas ni funcionales al momento del cierre del sprint.
+
+A pesar de estos inconvenientes, se logró desarrollar y desplegar la sección de la rama **OwnerPlan**, cumpliendo con los objetivos planteados para esa parte. Para no depender de un back-end aún no implementado, se optó por utilizar una **API simulada (fake API)** con **MockApi**, lo que permitió conectar el front-end con datos simulados y ofrecer una experiencia funcional para la revisión.
+
+[Link del MockApi](https://682697d8397e48c913169c83.mockapi.io/)
+
+<table border="1">
+  <tr>
+    <th>EndPoint</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>/coffe-type </td>
+    <td>Se implementaron las operaciones crud en coffe-type, donde se intento desarrollar el funcionamiento create de forma local.</td>
+  </tr>
+  <tr>
+    <td>/defect-type</td>
+    <td>Se implementaron las operaciones crud en defect-type, donde se intento desarrollar el funcionamiento create de forma local.</td>
+  </tr>
+  <tr>
+    <td>/defect-records</td>
+    <td>Se implementaron las operaciones crud en defect-records, donde se intento desarrollar el funcionamiento create de forma local.</td>
+  </tr>
+  <tr>
+    <td>/recipes</td>
+    <td>Se implementaron las operaciones crud en base.service.ts, donde se logro desarrollar el funcionamiento de create de forma local, completando el funcionamiento de registro en la tabla del modulo recipes</td>
+  </tr>
+  <tr>
+    <td>/portafolios</td>
+    <td>Se implementaron las operaciones crud en base.service.ts, donde se logro desarrollar el funcionamiento de create de forma local, completando el funcionamiento de registro en la tabla del modulo portafolios</td>
+  </tr>
+      <td>/users</td>
+    <td>Se implementaron las funcionalidades en http-instance.service.ts, donde se intento desarrollar el funcionamiento de create de forma local y remota mediante mockApi.</td>
+  </tr>
+      <td>/coffee-lots</td>
+    <td>Se implementaron las operaciones crud en Coffe-lots.service.ts, donde se logro desarrollar el funcionamiento de create de forma remota y local mediante mockApi, completando el funcionamiento de registro en la tabla del modulo coffee-lots</td>
+  </tr>
+      <td>/providers</td>
+    <td>Se implementaron las operaciones crud en provider.service.ts, donde se logro desarrollar el funcionamiento de create de forma remota y local mediante mockApi, completando el funcionamiento de registro en la tabla del modulo provider</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id </th>
+    <th>Commit message</th>
+    <th>Commited
+on (Date)</th>
+  </tr>
+  <tr>
+    <td>cafeLab-frontEnd</td>
+    <td>feature/library-defects</td>
+    <td>2bbcfde3f89e59c222010cc7f4767a0085fded17</td>
+    <td>feature: new branch</td>
+       <td>15/05/2025</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontEnd</td>
+    <td>feature/portfolio-recipes</td>
+    <td>ba4dce7da059b556482f65fa2d1c5876368e3d60</td>
+    <td>Added recipes and portfolio page
+</td>
+       <td>15/05/2025</td>
+  </tr>
+
+  <tr>
+    <td>cafeLab-frontEnd</td>
+    <td>feature/signin-signout</td>
+    <td>befed27d619b28713e868ec39166a16e03a14203</td>
+    <td>feat: add files
+
+</td>
+       <td>15/05/2025</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontEnd</td>
+    <td>ownerPlan</td>
+    <td>8b7281546f23b33499b5a6ea01f62811be5d04fe</td>
+    <td>deploy
+</td>
+       <td>15/05/2025</td>
+  </tr>
+ 
+</table>
+
+
+### 5.2.8. Team Collaboration Insights.
+
+#### 5.2.8.1. Team Collaboration Insights during Sprint.
+<table border="1">
+  <tr>
+    <th>Alumno</th>
+    <th>Actividad</th>
+  </tr>
+  <tr>
+    <td>Antayhua Castillo Oscar Josue </td>
+    <td>Creación de estructura inicial del proyecto e implementación de header con navegación y hero banner principal</td>
+  </tr>
+  <tr>
+    <td>Quispe Roldan Michael Fred</td>
+    <td>Implementación de sección con título y áreas diferenciadas para baristas y cafeterías</td>
+  </tr>
+  <tr>
+    <td>Adrian Ricardo Donayre Alvarez</td>
+    <td>Implementación de área "Datos que respaldan tus decisiones" con gráficos de dashboard y curvas</td>
+  </tr>
+  <tr>
+    <td>Christian Fabrizio Inga Orihuela</td>
+    <td>Creación de las áreas "Soy barista" y "Tengo una cafetería" con descripciones y CTAs</td>
+  </tr>
+  <tr>
+    <td>Carlos Fredy Fernandez Camayo</td>
+    <td>Implementación de la comparativa de los 4 planes con precios y listas de características</td>
+  </tr>
+</table>
+
+
+#### 5.2.8.2. Team Collaboration Insights during Sprint.
+<table border="1">
+  <tr>
+    <th>Alumno</th>
+    <th>Actividad</th>
+  </tr>
+  <tr>
+    <td>Antayhua Castillo Oscar Josue </td>
+    <td>Creación de welcome barista, inventory, register production cost management and cupping sessions.</td>
+  </tr>
+  <tr>
+    <td>Quispe Roldan Michael Fred</td>
+    <td>Creación de defects library, patterns of roast with cupping, library relation of roast with cupping and record grind calibration.</td>
+  </tr>
+  <tr>
+    <td>Adrian Ricardo Donayre Alvarez</td>
+    <td>Creación de sign in, sign up barista, sign up owner, user profile and select suscription.</td>
+  </tr>
+  <tr>
+    <td>Christian Fabrizio Inga Orihuela</td>
+    <td>Creación de portfolio and recipes, recipe registration, recipe information coffee extraction and complete welcome.</td>
+  </tr>
+  <tr>
+    <td>Carlos Fredy Fernandez Camayo</td>
+    <td>Creación de welcome owner, suppliers, coffee lot, roast profiles, roast comparison, suppliers registration, coffee lot registration, roast profiles registration, supplier information and coffee lot information.</td>
+  </tr>
+</table>
 
 ## 5.3. Video About-the-Product.
 Se muestra el video about the product, donde se evidencia la explicacion sobre los principales features, sustentacion de diseño  y proposito de la aplicacion.
@@ -3968,8 +6887,6 @@ Se muestra el video about the product, donde se evidencia la explicacion sobre l
 - **Microsoft Stream:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=N5dUfT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 # Avance de Conclusiones, Bibliografía y Anexos
-
-Este apartado cierra, en el marco del **TB1 (Sprint Review, semana 4)** del curso *Diseño de Experimentos de Ingeniería de Software* (1ASI0732, NRC 12278), el avance de conclusiones del trabajo documentado, la bibliografía de referencia y el material de apoyo (anexos), en sintonía con la estructura y cierre del [README de guía del proyecto Café Lab](../README-guia.md) (repositorio de curso *Desarrollo de Aplicaciones Open Source* y referencia de documentación).
 
 # Conclusiones y recomendaciones
 
@@ -4038,4 +6955,4 @@ Puede añadirse un video *about the team* en el que se resume el rol de cada int
   - [Landing (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-landingPage.git)  
   - [Repositorio informe / rama con diagramas (referencia)](https://github.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab/tree/feature/informe-readme)  
 - **Entornos desplegados (referencia, según repositorio reutilizado):** [Landing pública (ejemplo)](https://cafelanding-60903.web.app/) y [API Swagger (ejemplo, si aplica a la rama de referencia)](https://cafelabbackend.azurewebsites.net/swagger-ui/index.html#/)  
-- **Pendiente por el equipo 1ASI0732 (NRC 12278):** enlace al repositorio o carpeta pública con **entregable TB1 (Keynote, .zip, informe PDF si aplica)** y video de **exposición TB1** de este ciclo, cuando el docente o la coordinación compartan la ruta canónica.
+- **Pendiente por el equipo 1ASI0732 (NRC 12278):** enlace al repositorio o carpeta pública con **entregable TB1 (Keynote,.zip, informe PDF si aplica)** y video de **exposición TB1** de este ciclo, cuando el docente o la coordinación compartan la ruta canónica.
