@@ -319,9 +319,6 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     - [Recomendaciones](#recomendaciones)
     - [Bibliografía](#bibliografía)
     - [Anexos](#anexos)
-- [Video App Validation](#video-app-validation)
-- [Video About-the-Team](#video-about-the-team)
-
 
 
 # Student Outcome
