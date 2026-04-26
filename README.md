@@ -45,32 +45,78 @@
     <li>Quispe Roldan, Michael Fred - U20221e734</li>
 </ul>
 
-
-
 <!--Ciclo-->
 <div align="center" style="font-weight: bold;">Abril de 2026</div>
 
-<!--ÍNDICE-->
-
-
+<!--Cualquier modificación del documento es una nueva versión-->
 # Registro de versiones del informe
 
-| Versión | Fecha | Autor | Descripción de modificación |
-|---------|-------|-------|-----------------------------|
-| TB1     |       |       |                             |
+| Versión | Fecha       | Autor                                | Descripción de Modificación                                                        |
+|---------|-------------|--------------------------------------|------------------------------------------------------------------------------------|
+| 1.0     | 25/04/2026  | Fernandez Camayo, Carlos Fredy       | Creación del documento, estructura del informe y carátula                          |
+| 1.1     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Nuevo formato para project report collaboration insights y student outcome         |
 
 # Project Report Collaboration Insights
+En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
 
-| Entregable | Integrante | Actividades realizadas | Conclusiones |
-|------------|------------|------------------------|--------------|
-| TB1        | x          | x                      | x            |
+Link del project report: [https://github.com/Diseno-y-experimentos-de-software-upc/upc-1asi0732-12278-cafemetrix-informe](https://github.com/Diseno-y-experimentos-de-software-upc/upc-1asi0732-12278-cafemetrix-informe)
 
+<table>
+  <tr>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Entregable</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Integrante 1</strong></td>
+    <td>Aportes</td>
+    <td>TB1</td>
+  </tr>
+  <tr>
+    <td><strong>Integrante 2</strong></td>
+    <td>Aportes</td>
+    <td>TB1</td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td>Aportes</td>
+    <td>TB1</td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td>Aportes</td>
+    <td>TB1</td>
+  </tr>
+  <tr>
+    <td><strong>Christian Fabrizio Inga Orihuela</strong></td>
+    <td>Aportes</td>
+    <td>TB1</td>
+  </tr>
+  <tr>
+    <td><strong>Integrante 6</strong></td>
+    <td>Aportes</td>
+    <td>TB1</td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2">En general, todos los integrantes del equipo han demostrado una participación activa y comprometida en la elaboración del informe, contribuyendo con sus habilidades y conocimientos para asegurar que el documento refleje de manera precisa y completa el desarrollo de nuestro proyecto. La colaboración efectiva entre los miembros del equipo ha sido fundamental para el éxito de esta etapa del proyecto.</td>
+  </tr>
+    <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2">
+    <img src="public/assets/images/cover/insights/commit-por-integrante.png" alt="Evidencia">
+    <img src="public/assets/images/cover/insights/commits-grupal.png" alt="Evidencia"></td>
+  </tr>
+</table>
+
+
+<!--ÍNDICE-->
 # Contenido
 - [Registro de versiones del informe](#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
 - [Contenido](#contenido)
 - [Student Outcome](#student-outcome)
-- [Part I: As-Is Software Project ](#Part-I:-As-Is-Software-Project)
+- [Part I: As-Is Software Project](#part-i-as-is-software-project)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
     - [1.1. Startup Profile](#11-startup-profile)
         - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -281,15 +327,57 @@
 ## ABET – EAC - Student Outcome 4
 La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
 
-En esta sección cada integrante sustenta, para **TB1**, cómo sus actividades contribuyen al logro del Outcome 4 en sus criterios específicos.
-
-
-| Criterio específico | Acciones realizadas | Conclusiones  |
-|---------------------|---------------------|---------------|
-| 4.c.1. Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software. | x | x |
-| 4.c.2. Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales. | x | x |
-
-
+<div style="text-align:center;">
+    <table align="center" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tr>
+            <th style="text-align:center; border: 1px solid #ddd;">Student Outcomes</th>
+            <th style="text-align:center; border: 1px solid #ddd;">Acciones realizadas</th>
+            <th style="text-align:center; border: 1px solid #ddd;">Conclusiones</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; vertical-align: top;">
+            4.c.1. Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>
+            <td style="border: 1px solid #ddd; vertical-align: top;">
+                <strong>Integrante 1</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Integrante 2</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Adrian Donayre</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Christian Inga</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Carlos Fernandez</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Integrante 6</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+            </td>
+        <td style="border: 1px solid #ddd; vertical-align: top;">
+            <b>TB1:</b> resumen de actividades<br><br>
+        </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; vertical-align: top;">
+             4.c.2. Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
+            <td style="border: 1px solid #ddd; vertical-align: top;">
+                <strong>Integrante 1</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Integrante 2</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Adrian Donayre</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Christian Inga</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Carlos Fernandez</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+                <strong>Integrante 6</strong><br>
+                TB1: <br>descripción de actividades<br><br>
+            </td>
+        <td style="border: 1px solid #ddd; vertical-align: top;">
+            <b>TB1:</b> resumen de actividades<br><br>
+        </td>
+      </tr>
+</table>
+</div>
 
 # Part I: As-Is Software Project
 
