@@ -1305,8 +1305,7 @@ En el caso del To-be Scenario Mapping, el equipo definió cómo se visualizaría
 
 
 ## 3.2. User Stories
-
-Las user stories son una forma de convertir el lenguaje informal de los usuarios del sistema en requerimientos de software que deben ser considerados durante el desarrollo de la plataforma. Para el proyecto CaféLab IoT, se presenta un conjunto de user stories y technical stories que guían el desarrollo del sistema de monitoreo ambiental TrackSilo, incluyendo la gestión de lecturas del sensor, activación de actuadores y visualización de condiciones de almacenamiento del café verde.
+Las user stories son una forma de convertir el lenguaje informal de los usuarios del sistema en requerimientos de software que deben ser considerados durante el desarrollo de la plataforma. Una user story bien construida le permite al desarrollador comprender la funcionalidad requerida, su propósito y el valor que aporta al usuario final. Para el proyecto Café Lab, se presenta un conjunto de user y technical stories que guían el desarrollo de la aplicación web, incluyendo módulos funcionales, vistas especializadas y componentes técnicos orientados a la trazabilidad y estandarización del café de especialidad.
 
 <table border="1">
 <tr>
@@ -1316,7 +1315,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <th>Criterios de Aceptación</th>
 <th>Relacionado con (Epic ID)</th>
 </tr>
-
 <tr>
 <td>US01</td>
 <td>Registro de Proveedores</td>
@@ -1324,15 +1322,41 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong> Creación de nuevo proveedor.<br><strong>Dado que</strong> se establece relación con un nuevo proveedor de café<br><strong>Cuando</strong> el usuario inresa los datos completos (nombre, ubicación, contacto, tipos de café)<br><strong>Entonces</strong> el sistema registra la información y genera un perfil de proveedor.<br><br><strong>Escenario 2:</strong> Evaluación de proveedor.<br><strong>Dado que</strong> se han recibido lotes de un proveedor específico<br><strong>Cuando</strong> el usuario completa el formulario de evaluación con criterios definidos<br><strong>Entonces</strong> el sistema guarda la evaluación en el historial del proveedor.</td>
 <td>EP02</td>
 </tr>
-
+<tr>
+<td>TS01</td>
+<td>POST HTTPS Proveedores</td>
+<td>Como desarrollador, quiero registrar nuevos proveedores mediante una API para ampliar la red de suministro</td>
+<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito registrar un proveedor con datos completos<br><strong>Entonces</strong> recibo confirmación del proveedor creado con su identificador.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito registrar un proveedor con datos incompletos<br><strong>Entonces</strong> recibo un mensaje con los campos requeridos faltantes.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>TS02</td>
+<td>GET HTTPS Proveedores</td>
+<td>Como desarrollador, quiero consultar proveedores mediante una API para mostrar opciones disponibles</td>
+<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito la lista de proveedores con filtros<br><strong>Entonces</strong> recibo los proveedores que cumplen los criterios.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito proveedores con parámetros incorrectos<br><strong>Entonces</strong> recibo un mensaje indicando los parámetros inválidos.</td>
+<td>N/A</td>
+</tr>
 <tr>
 <td>US02</td>
 <td>Gestión de Lotes de Café Verde</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero registrar y hacer seguimiento de cada lote de café verde para mantener control de inventario y trazabilidad</td>
-<td><strong>Escenario 1:</strong> Ingreso de nuevo lote.<br><strong>Dado que</strong> se recibe un nuevo lote de café verde<br><strong>Cuando</strong> el usuario registra sus características completas (origen, variedad, proceso, altitud, peso)<br><strong>Entonces</strong> el sistema guarda la información para asegurar la trazabilidad para ese lote.<br><br><strong>Escenario 2:</strong> Actualización de estado.<br><strong>Dado que</strong> un lote cambia de condición durante su ciclo de vida<br><strong>Cuando</strong> el usuario actualiza su estado (almacenado, en tueste, agotado)<br><strong>Entonces</strong> el sistema registra la fecha, hora y responsable del cambio de estado.</td>
+<td><strong>Escenario 1:</strong> Ingreso de nuevo lote.<br><strong>Dado que</strong> se recibe un nuevo lote de café verde<br><strong>Cuando</strong> el usuario registra sus características completas (origen, variedad, proceso, altitud, peso)<br><strong>Entonces</strong> el sistema genera un código único de trazabilidad para ese lote.<br><br><strong>Escenario 2:</strong> Actualización de estado.<br><strong>Dado que</strong> un lote cambia de condición durante su ciclo de vida<br><strong>Cuando</strong> el usuario actualiza su estado (almacenado, en tueste, agotado)<br><strong>Entonces</strong> el sistema registra la fecha, hora y responsable del cambio de estado.</td>
 <td>EP02</td>
 </tr>
-
+<tr>
+<td>TS03</td>
+<td>POST HTTPS Lotes</td>
+<td>Como desarrollador, quiero registrar nuevos lotes de café mediante una API para mantener el inventario actualizado</td>
+<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito registrar un lote con datos completos<br><strong>Entonces</strong> recibo confirmación del lote creado con su código de trazabilidad.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito registrar un lote con un proveedor inexistente<br><strong>Entonces</strong> recibo un mensaje indicando que el proveedor no existe.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>TS04</td>
+<td>PATCH HTTPS Lotes</td>
+<td>Como desarrollador, quiero actualizar el estado de lotes mediante una API para reflejar cambios en el ciclo de vida</td>
+<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito cambiar el estado de un lote a un valor válido<br><strong>Entonces</strong> recibo el lote con su estado actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito un cambio de estado no permitido<br><strong>Entonces</strong> recibo un mensaje con los cambios de estado permitidos.</td>
+<td>N/A</td>
+</tr>
 <tr>
 <td>US03</td>
 <td>Creación de Perfil de Tueste</td>
@@ -1341,300 +1365,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 
 <td>EP02</td>
 </tr>
-
-<tr>
-<td>US04</td>
-<td>Biblioteca de Defectos de Tueste</td>
-<td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
-<td><strong>Escenario 1:</strong> Consulta de defecto.<br><strong>Dado que</strong> el usuario observa anomalías en su café recién tostado<br><strong>Cuando</strong> busca en el sistema por características visuales o descriptivas del problema<br><strong>Entonces</strong> el sistema muestra posibles defectos coincidentes con sus causas y soluciones.<br><br><strong>Escenario 2:</strong> Documentación de soluciones.<br><strong>Dado que</strong> el usuario identifica un defecto específico en su tueste<br><strong>Cuando</strong> accede a la ficha detallada del defecto en la biblioteca<br><strong>Entonces</strong> el sistema presenta causas probables y soluciones recomendadas con ejemplos.</td>
-<td>EP03</td>
-</tr>
-
-<tr>
-<td>US05</td>
-<td>Cata Digital Estructurada</td>
-<td>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste</td>
-<td><strong>Escenario 1:</strong> Creación de nueva cata.<br><strong>Dado que</strong> el usuario prueba un café recién tostado<br><strong>Cuando</strong> inicia una nueva sesión de cata vinculada al lote y tueste específicos<br><strong>Entonces</strong> el sistema presenta el formulario completo de evaluación sensorial.<br><br><strong>Escenario 2:</strong> Evaluación por atributos.<br><strong>Dado que</strong> el usuario sigue un protocolo estandarizado de cata<br><strong>Cuando</strong> califica cada atributo sensorial (acidez, cuerpo, dulzor, etc.) en la escala definida<br><strong>Entonces</strong> el sistema genera automáticamente el perfil sensorial completo.</td>
-<td>EP04</td>
-</tr>
-
-<tr>
-<td>US06</td>
-<td>Análisis Comparativo de Tuestes</td>
-<td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
-<td><strong>Escenario 1:</strong> Selección de sesiones a comparar.<br><strong>Dado que</strong> el usuario tiene múltiples sesiones de tueste registradas<br><strong>Cuando</strong> selecciona dos o más sesiones para análisis comparativo<br><strong>Entonces</strong> el sistema muestra las curvas superpuestas con códigos de color diferenciados.<br><br><strong>Escenario 2:</strong> Análisis de variables específicas.<br><strong>Dado que</strong> el usuario desea estudiar factores concretos del tueste<br><strong>Cuando</strong> selecciona variables específicas de interés (tiempo desarrollo, temperatura final)<br><strong>Entonces</strong> el sistema muestra su correlación con los resultados sensoriales registrados.</td>
-<td>EP03</td>
-</tr>
-
-<tr>
-<td>US07</td>
-<td>Creación de Recetas de Preparación</td>
-<td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
-<td><strong>Escenario 1:</strong> Creación de receta estándar.<br><strong>Dado que</strong> el usuario desarrolla una nueva receta de preparación<br><strong>Cuando</strong> registra todos los parámetros requeridos (ratio, temperatura, tiempo, molienda, método)<br><strong>Entonces</strong> el sistema guarda la receta completa en su biblioteca personal.<br><br><strong>Escenario 2:</strong> Vinculación a lote específico.<br><strong>Dado que</strong> el usuario optimiza una receta para un café particular<br><strong>Cuando</strong> asocia la receta a un lote específico registrado en el sistema<br><strong>Entonces</strong> el sistema establece la trazabilidad completa desde origen hasta método de preparación.</td>
-<td>EP05</td>
-</tr>
-
-
-<tr>
-<td>US08</td>
-<td>Calibración de Molienda</td>
-<td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
-<td><strong>Escenario 1:</strong> Registro de nueva calibración.<br><strong>Dado que</strong> el usuario ajusta un molino para un método específico<br><strong>Cuando</strong> documenta la configuración precisa (número, apertura) en el sistema<br><strong>Entonces</strong> la calibración queda registrada con fecha, equipo y método asociados.<br><br><strong>Escenario 2:</strong> Referencia visual comparativa.<br><strong>Dado que</strong> el usuario necesita una referencia objetiva de molienda<br><strong>Cuando</strong> adjunta foto de la molienda y registra el tiempo resultante de extracción<br><strong>Entonces</strong> el sistema almacena estos datos como estándar visual para comparaciones futuras.</td>
-<td>EP05</td>
-</tr>
-
-
-<tr>
-<td>US09</td>
-<td>Portafolio de Bebidas</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
-<td><strong>Escenario 1:</strong> Creación de ficha de bebida.<br><strong>Dado que</strong> el usuario desarrolla una bebida especial para su menú<br><strong>Cuando</strong> completa la ficha técnica (ingredientes, método, presentación, foto)<br><strong>Entonces</strong> el sistema incorpora la bebida a su portafolio digital profesional.<br><br><strong>Escenario 2:</strong> Organización por categorías personalizadas.<br><strong>Dado que</strong> el usuario maneja diversas bebidas en su portafolio<br><strong>Cuando</strong> las clasifica según tipos definidos (espresso, filtrado, signature, estacionales)<br><strong>Entonces</strong> el sistema genera un catálogo organizado y fácilmente consultable.</td>
-<td>EP05</td>
-</tr>
-
-<tr>
-<td>US10</td>
-<td>Visualización de Perfiles Sensoriales</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
-<td><strong>Escenario 1:</strong> Generación de hexágono sensorial.<br><strong>Dado que</strong> el usuario ha completado una evaluación de cata<br><strong>Cuando</strong> solicita la visualización gráfica de los resultados<br><strong>Entonces</strong> el sistema genera el hexágono con los seis atributos principales evaluados.<br><br><strong>Escenario 2:</strong> Comparación de perfiles.<br><strong>Dado que</strong> el usuario desea contrastar diferentes cafés evaluados<br><strong>Cuando</strong> selecciona múltiples catas para visualización simultánea<br><strong>Entonces</strong> el sistema muestra los hexágonos superpuestos con códigos de color diferenciados.</td>
-<td>EP04</td>
-</tr>
-
-<tr>
-<td>US11</td>
-<td>Control de Inventario Integrado</td>
-<td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
-<td><strong>Escenario 1:</strong> Seguimiento centralizado de stock.<br><strong>Dado que</strong> el usuario maneja múltiples productos y estados del café<br><strong>Cuando</strong> accede al panel central de inventario<br><strong>Entonces</strong> el sistema muestra niveles actuales, movimientos recientes y alertas activas.<br><br><strong>Escenario 2:</strong> Registro de consumo con trazabilidad.<br><strong>Dado que</strong> el usuario utiliza café para producción diaria<br><strong>Cuando</strong> registra el consumo vinculándolo a lotes específicos y productos finales<br><strong>Entonces</strong> el sistema actualiza automáticamente las existencias y mantiene la trazabilidad.</td>
-<td>EP06</td>
-</tr>
-
-<tr>
-<td>US12</td>
-<td>Correlación Tueste-Sabor</td>
-<td>Como barista profesional, quiero visualizar la correlación entre parámetros de tueste y resultados sensoriales para optimizar mis perfiles</td>
-<td><strong>Escenario 1:</strong> Análisis de factor específico.<br><strong>Dado que</strong> el usuario busca entender la influencia de un parámetro técnico<br><strong>Cuando</strong> selecciona una variable concreta de tueste (ej. tiempo de desarrollo)<br><strong>Entonces</strong> el sistema muestra gráficos de correlación con atributos sensoriales registrados.<br><br><strong>Escenario 2:</strong> Identificación de patrones.<br><strong>Dado que</strong> el usuario busca consistencia en resultados sensoriales<br><strong>Cuando</strong> analiza múltiples sesiones que produjeron perfiles similares<br><strong>Entonces</strong> el sistema identifica y destaca patrones comunes en los perfiles de tueste.</td>
-<td>EP04</td>
-</tr>
-
-
-<tr>
-<td>US13</td>
-<td>Compartir Recetas</td>
-<td>Como barista profesional, quiero compartir mis recetas con mi equipo para mantener consistencia en la preparación</td>
-<td><strong>Escenario 1:</strong> Compartir con equipo interno.<br><strong>Dado que</strong> el usuario desarrolla una receta exitosa que debe estandarizarse<br><strong>Cuando</strong> la marca como "compartida con equipo" y define permisos<br><strong>Entonces</strong> el sistema la pone a disposición de todos los miembros autorizados.<br><br><strong>Escenario 2:</strong> Sugerencia de mejoras.<br><strong>Dado que</strong> un miembro del equipo prueba una receta compartida<br><strong>Cuando</strong> implementa variaciones y propone ajustes documentados<br><strong>Entonces</strong> el sistema notifica al creador original y registra las sugerencias manteniendo la versión original.</td>
-<td>EP05</td>
-</tr>
-
-<tr>
-<td>US14</td>
-<td>Análisis de Eficiencia y Rendimiento</td>
-<td>Como dueño de cafetería de especialidad, quiero monitorear y comparar el rendimiento productivo entre distintos lotes para identificar factores que afectan la eficiencia</td>
-<td><strong>Escenario 1:</strong> Registro automático de indicadores de rendimiento.<br><strong>Dado que</strong> un lote ha sido procesado completamente<br><strong>Cuando</strong> el usuario finaliza el registro de tueste y producción<br><strong>Entonces</strong> el sistema calcula automáticamente métricas de rendimiento (% de merma, tiempo efectivo, productividad por hora).<br><br><strong>Escenario 2:</strong> Comparativa avanzada entre lotes.<br><strong>Dado que</strong> el usuario busca optimizar su producción<br><strong>Cuando</strong> accede a la herramienta de análisis y selecciona múltiples lotes con atributos similares<br><strong>Entonces</strong> el sistema genera una tabla comparativa que resalta variaciones significativas en rendimiento y señala posibles causas basadas en parámetros registrados.</td>
-<td>EP06</td>
-</tr>
-
-<tr>
-<td>US15</td>
-<td>Reportes de Trazabilidad</td>
-<td>Como dueño de cafetería de especialidad, quiero generar reportes de trazabilidad completa para comunicar transparencia y valor agregado</td>
-<td><strong>Escenario 1:</strong> Generación de reporte integral por lote.<br><strong>Dado que</strong> el usuario necesita documentar la trazabilidad completa<br><strong>Cuando</strong> selecciona un lote específico que ha sido procesado<br><strong>Entonces</strong> el sistema genera un informe detallado con toda la cadena documentada desde origen.<br><br><strong>Escenario 2:</strong> Ficha técnica comercial para cliente.<br><strong>Dado que</strong> el usuario necesita comunicar el valor diferencial de su producto<br><strong>Cuando</strong> solicita generar una ficha para un producto específico de su catálogo<br><strong>Entonces</strong> el sistema produce un documento que incluye origen, procesamiento, tueste y perfil sensorial.</td>
-<td>EP06</td>
-</tr>
-
-<tr>
-<td>US16</td>
-<td>Información del Producto</td>
-<td>Como visitante de la landing page, quiero encontrar información clara sobre la plataforma para entender sus beneficios y decidir si me interesa</td>
-<td><strong>Escenario 1:</strong> Primera visita al sitio.<br><strong>Dado que</strong> el visitante accede por primera vez al sitio web<br><strong>Cuando</strong> carga la página de inicio<br><strong>Entonces</strong> visualiza el mensaje principal (value proposition) y beneficios clave.<br><br><strong>Escenario 2:</strong> Exploración de características.<br><strong>Dado que</strong> el visitante desea conocer las funcionalidades<br><strong>Cuando</strong> navega por la sección de características destacadas<br><strong>Entonces</strong> encuentra información clara con ilustraciones visuales de cada funcionalidad.</td>
-<td>EP07</td>
-</tr>
-
-<tr>
-<td>US17</td>
-<td>Secciones Específicas por Segmento</td>
-<td>Como visitante de la landing page, quiero encontrar información adaptada a mi perfil profesional para evaluar si la solución responde a mis necesidades específicas</td>
-<td><strong>Escenario 1:</strong> Sección para baristas.<br><strong>Dado que</strong> el visitante se identifica como barista profesional<br><strong>Cuando</strong> accede a la sección "Para Baristas"<br><strong>Entonces</strong> encuentra contenido adaptado a sus desafíos específicos y testimonios relevantes.<br><br><strong>Escenario 2:</strong> Sección para cafeterías.<br><strong>Dado que</strong> el visitante administra o es dueño de una cafetería<br><strong>Cuando</strong> accede a la sección "Para Cafeterías"<br><strong>Entonces</strong> encuentra contenido enfocado en gestión de negocios, trazabilidad y certificaciones.</td>
-<td>EP07</td>
-</tr>
-
-<tr>
-<td>US18</td>
-<td>Contacto con Equipo</td>
-<td>Como visitante de la landing page, quiero contactar con el equipo del sistema para resolver dudas específicas antes de registrarme</td>
-<td><strong>Escenario 1:</strong> Envío de consulta.<br><strong>Dado que</strong> el visitante tiene preguntas sobre la plataforma<br><strong>Cuando</strong> completa el formulario de contacto con sus datos y consulta<br><strong>Entonces</strong> el sistema envía la información al equipo y muestra confirmación.<br><br><strong>Escenario 2:</strong> Solicitud de demostración.<br><strong>Dado que</strong> el visitante quiere ver el sistema en funcionamiento<br><strong>Cuando</strong> solicita una demostración personalizada mediante el formulario específico<br><strong>Entonces</strong> el sistema agenda la cita y envía confirmación con los detalles de conexión.</td>
-<td>EP07</td>
-</tr>
-
-<tr>
-<td>US19</td>
-<td>Acceso directo a plataforma</td>
-<td>Como visitante de la landing page, quiero redirigirme hacia la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
-<td><strong>Escenario 1:</strong> Navegación exitosa<br><strong>Dado que</strong> el visitante quiere empezar a usar el sistema<br><strong>Cuando</strong> navegue por la landing page y pulse el botón de acceso a la plataforma<br><strong>Entonces</strong> será transferido correctamente a la interfaz principal del sistema.<br><br><strong>Escenario 2:</strong> Error de conexión<br><strong>Dado que</strong> el visitante intenta ingresar al sistema<br><strong>Cuando</strong> pulse el botón de acceso en la landing page y exista un problema de conexión o disponibilidad del servidor<br><strong>Entonces</strong> visualizará una notificación clara explicando el problema.</td>
-<td>EP07</td>
-</tr>
-
-<tr>
-<td>US20</td>
-<td>Registro y Autenticación (Usuarios)</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos</td>
-<td><strong>Escenario 1:</strong> El usuario accede a la pantalla de registro.<br><strong>Dado que</strong> el usuario no tiene una cuenta en el sistema<br><strong>Cuando</strong> visualiza las opciones de registro (correo, Google, Facebook)<br><strong>Entonces</strong> el sistema permite elegir su método preferido y completar el registro.<br><br><strong>Escenario 2:</strong> El usuario inicia sesión.<br><strong>Dado que</strong> el usuario ya tiene una cuenta registrada<br><strong>Cuando</strong> ingresa sus credenciales correctamente<br><strong>Entonces</strong> el sistema le permite acceder a su panel personalizado.<br><br><strong>Escenario 3:</strong> El usuario ingresa credenciales incorrectas.<br><strong>Dado que</strong> el usuario tiene una cuenta<br><strong>Cuando</strong> ingresa datos erróneos<br><strong>Entonces</strong> el sistema muestra un mensaje de error y opciones de recuperación.</td>
-<td>EP01</td>
-</tr>
-
-<tr>
-<td>US21</td>
-<td>Perfil Personalizado</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
-<td><strong>Escenario 1:</strong> Configuración inicial de perfil.<br><strong>Dado que</strong> el usuario ha completado el registro exitosamente<br><strong>Cuando</strong> accede por primera vez al sistema<br><strong>Entonces</strong> el sistema solicita completar información básica (nombre, rol, experiencia).<br><br><strong>Escenario 2:</strong> Actualización de perfil.<br><strong>Dado que</strong> el usuario desea modificar sus datos personales<br><strong>Cuando</strong> accede a la sección de perfil y realiza cambios<br><strong>Entonces</strong> el sistema guarda la información actualizada correctamente.</td>
-<td>EP01</td>
-</tr>
-
-<tr>
-<td>US22</td>
-<td>Selección de Plan</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero elegir entre los diferentes planes disponibles para acceder a las funcionalidades que mejor se adapten a mis necesidades</td>
-<td><strong>Escenario 1:</strong> Visualización de planes.<br><strong>Dado que</strong> el usuario está registrado en el sistema<br><strong>Cuando</strong> accede a la sección de planes disponibles<br><strong>Entonces</strong> el sistema muestra una comparativa detallada de funcionalidades y precios.<br><br><strong>Escenario 2:</strong> Selección de plan gratuito.<br><strong>Dado que</strong> el usuario desea utilizar funcionalidades básicas<br><strong>Cuando</strong> selecciona "Plan Base Cafetal"<br><strong>Entonces</strong> el sistema le otorga acceso inmediato a las funcionalidades correspondientes.</td>
-<td>EP01</td>
-</tr>
-
-
-<!-- ==================== EP08 ==================== -->
-
-
-<tr>
-<td>US23</td>
-<td>Visualización de condiciones del almacén en tiempo real</td>
-<td>Como dueño de cafetería de especialidad, quiero visualizar la temperatura y humedad del almacén en tiempo real desde el dashboard de CaféLab para tomar decisiones oportunas sobre la conservación del café verde.</td>
-<td>
-<strong>Escenario 1:</strong> Visualización de datos actuales.<br>
-<strong>Dado que</strong> el sensor TrackSilo está activo y conectado<br>
-<strong>Cuando</strong> el usuario accede al panel de monitoreo<br>
-<strong>Entonces</strong> el sistema muestra la temperatura y humedad actuales del almacén junto con su estado (óptimo, alerta, peligro).<br><br>
-<strong>Escenario 2:</strong> Sensor sin señal.<br>
-<strong>Dado que</strong> el TrackSilo ha dejado de enviar lecturas<br>
-<strong>Cuando</strong> el usuario accede al panel de monitoreo<br>
-<strong>Entonces</strong> el sistema muestra un aviso indicando que el sensor no responde desde hace X minutos.
-</td>
-<td>EP08</td>
-</tr>
-
-<tr>
-<td>US24</td>
-<td>Consulta de historial ambiental por lote</td>
-<td>Como dueño de cafetería de especialidad o barista profesional, quiero consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico para entender las condiciones en que estuvo conservado.</td>
-<td>
-<strong>Escenario 1:</strong> Consulta exitosa de historial.<br>
-<strong>Dado que</strong> el lote tiene lecturas ambientales registradas durante su período de almacenamiento<br>
-<strong>Cuando</strong> el usuario selecciona un lote y accede a su historial ambiental<br>
-<strong>Entonces</strong> el sistema muestra un gráfico de temperatura y humedad en el tiempo con marcadores de eventos y alertas ocurridas.<br><br>
-<strong>Escenario 2:</strong> Lote sin datos ambientales.<br>
-<strong>Dado que</strong> el lote fue registrado antes de que el TrackSilo estuviera activo<br>
-<strong>Cuando</strong> el usuario intenta consultar el historial ambiental<br>
-<strong>Entonces</strong> el sistema informa que no hay datos de monitoreo para ese período.
-</td>
-<td>EP08</td>
-</tr>
-
-<tr>
-<td>US25</td>
-<td>Recepción de alertas por condiciones fuera de rango</td>
-<td>Como dueño de cafetería de especialidad, quiero recibir una notificación inmediata cuando la temperatura o humedad del almacén superen los umbrales configurados para actuar antes de que el café se vea afectado.</td>
-<td>
-<strong>Escenario 1:</strong> Alerta por humedad elevada.<br>
-<strong>Dado que</strong> el TrackSilo detecta humedad relativa superior al 65%<br>
-<strong>Cuando</strong> la lectura supera el umbral configurado<br>
-<strong>Entonces</strong> el sistema envía una notificación por email al dueño indicando el valor registrado, el umbral superado y la hora del evento.<br><br>
-<strong>Escenario 2:</strong> Alerta por temperatura elevada.<br>
-<strong>Dado que</strong> el TrackSilo detecta temperatura superior a 22°C<br>
-<strong>Cuando</strong> la lectura supera el umbral configurado<br>
-<strong>Entonces</strong> el sistema envía una notificación por email indicando el valor registrado y activa la señal del deshumedecedor.
-</td>
-<td>EP08</td>
-</tr>
-
-<tr>
-<td>US26</td>
-<td>Configuración de umbrales de monitoreo</td>
-<td>Como dueño de cafetería de especialidad, quiero configurar los valores de umbral de temperatura y humedad según el tipo de café almacenado para personalizar las alertas a mis necesidades.</td>
-<td>
-<strong>Escenario 1:</strong> Configuración exitosa de umbrales.<br>
-<strong>Dado que</strong> el usuario accede a la configuración del TrackSilo<br>
-<strong>Cuando</strong> ingresa valores de umbral válidos para temperatura (entre 10°C y 30°C) y humedad (entre 40% y 80%)<br>
-<strong>Entonces</strong> el sistema guarda la configuración y la aplica a las lecturas futuras del sensor.<br><br>
-<strong>Escenario 2:</strong> Valores fuera del rango permitido.<br>
-<strong>Dado que</strong> el usuario intenta guardar valores de umbral inválidos<br>
-<strong>Cuando</strong> ingresa un valor fuera del rango aceptable<br>
-<strong>Entonces</strong> el sistema muestra un mensaje de error indicando el rango permitido y no guarda los cambios.
-</td>
-<td>EP08</td>
-</tr>
-
-<tr>
-<td>US27</td>
-<td>Indicador de estado ambiental por lote</td>
-<td>Como barista profesional, quiero ver un indicador visual del estado ambiental del lote con el que voy a trabajar para anticipar ajustes en mis parámetros de extracción antes de calibrar.</td>
-<td>
-<strong>Escenario 1:</strong> Lote en condiciones óptimas.<br>
-<strong>Dado que</strong> el lote activo fue almacenado dentro de los rangos de temperatura y humedad recomendados<br>
-<strong>Cuando</strong> el barista consulta el lote en el sistema<br>
-<strong>Entonces</strong> el sistema muestra un indicador verde con el resumen de condiciones de almacenamiento.<br><br>
-<strong>Escenario 2:</strong> Lote con desvíos registrados.<br>
-<strong>Dado que</strong> el lote activo registró al menos un período fuera de los rangos óptimos durante su almacenamiento<br>
-<strong>Cuando</strong> el barista consulta el lote<br>
-<strong>Entonces</strong> el sistema muestra un indicador amarillo o rojo con el detalle de los períodos y valores fuera de rango.
-</td>
-<td>EP08</td>
-</tr>
-
-<tr>
-<td>US28</td>
-<td>Activación automática del deshumedecedor</td>
-<td>Como dueño de cafetería de especialidad, quiero que el sistema active automáticamente la señal de deshumidificación cuando las condiciones del almacén lo requieran para no depender de intervención manual.</td>
-<td>
-<strong>Escenario 1:</strong> Activación por condiciones fuera de rango.<br>
-<strong>Dado que</strong> el sensor detecta temperatura superior a 22°C o humedad superior al 65%<br>
-<strong>Cuando</strong> se supera el umbral configurado<br>
-<strong>Entonces</strong> el sistema activa la señal del actuador (LED de deshumidificación en simulación) y registra el evento con hora de inicio.<br><br>
-<strong>Escenario 2:</strong> Desactivación al recuperar condiciones normales.<br>
-<strong>Dado que</strong> el deshumedecedor está activo<br>
-<strong>Cuando</strong> la temperatura baja de 20°C y la humedad baja del 60% durante al menos 5 minutos consecutivos<br>
-<strong>Entonces</strong> el sistema desactiva el actuador y registra la hora de fin del evento.
-</td>
-<td>EP08</td>
-</tr>
-
-<tr>
-<td>TS01</td>
-<td>POST HTTPS Proveedores</td>
-<td>Como desarrollador, quiero registrar nuevos proveedores mediante una API para ampliar la red de suministro</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito registrar un proveedor con datos completos<br><strong>Entonces</strong> recibo confirmación del proveedor creado con su identificador.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito registrar un proveedor con datos incompletos<br><strong>Entonces</strong> recibo un mensaje con los campos requeridos faltantes.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS02</td>
-<td>GET HTTPS Proveedores</td>
-<td>Como desarrollador, quiero consultar proveedores mediante una API para mostrar opciones disponibles</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito la lista de proveedores con filtros<br><strong>Entonces</strong> recibo los proveedores que cumplen los criterios.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito proveedores con parámetros incorrectos<br><strong>Entonces</strong> recibo un mensaje indicando los parámetros inválidos.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS03</td>
-<td>POST HTTPS Lotes</td>
-<td>Como desarrollador, quiero registrar nuevos lotes de café mediante una API para mantener el inventario actualizado</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito registrar un lote con datos completos<br><strong>Entonces</strong> recibo confirmación del lote creado con su código de trazabilidad.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito registrar un lote con un proveedor inexistente<br><strong>Entonces</strong> recibo un mensaje indicando que el proveedor no existe.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS04</td>
-<td>PATCH HTTPS Lotes</td>
-<td>Como desarrollador, quiero actualizar el estado de lotes mediante una API para reflejar cambios en el ciclo de vida</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito cambiar el estado de un lote a un valor válido<br><strong>Entonces</strong> recibo el lote con su estado actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito un cambio de estado no permitido<br><strong>Entonces</strong> recibo un mensaje con los cambios de estado permitidos.</td>
-<td>N/A</td>
-</tr>
-
 <tr>
 <td>TS05</td>
 <td>POST HTTPS Perfiles-Tueste</td>
@@ -1642,15 +1372,26 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br><strong>Cuando</strong> solicito crear un perfil con parámetros completos<br><strong>Entonces</strong> recibo confirmación del perfil creado en la biblioteca.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br><strong>Cuando</strong> solicito crear un perfil con temperaturas fuera de rango<br><strong>Entonces</strong> recibo un mensaje con los rangos permitidos.</td>
 <td>N/A</td>
 </tr>
-
 <tr>
+<td>US04</td>
+<td>Biblioteca de Defectos de Tueste</td>
+<td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
+<td><strong>Escenario 1:</strong> Consulta de defecto.<br><strong>Dado que</strong> el usuario observa anomalías en su café recién tostado<br><strong>Cuando</strong> busca en el sistema por características visuales o descriptivas del problema<br><strong>Entonces</strong> el sistema muestra posibles defectos coincidentes con sus causas y soluciones.<br><br><strong>Escenario 2:</strong> Documentación de soluciones.<br><strong>Dado que</strong> el usuario identifica un defecto específico en su tueste<br><strong>Cuando</strong> accede a la ficha detallada del defecto en la biblioteca<br><strong>Entonces</strong> el sistema presenta causas probables y soluciones recomendadas con ejemplos.</td>
+<td>EP03</td>
+</tr>
 <td>TS06</td>
 <td>GET HTTPS DefectosTueste</td>
 <td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco defectos con criterios específicos<br><strong>Entonces</strong> recibo los defectos coincidentes y sus soluciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco sin especificar ningún criterio<br><strong>Entonces</strong> recibo un mensaje solicitando al menos un parámetro de búsqueda.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US05</td>
+<td>Cata Digital Estructurada</td>
+<td>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste</td>
+<td><strong>Escenario 1:</strong> Creación de nueva cata.<br><strong>Dado que</strong> el usuario prueba un café recién tostado<br><strong>Cuando</strong> inicia una nueva sesión de cata vinculada al lote y tueste específicos<br><strong>Entonces</strong> el sistema presenta el formulario completo de evaluación sensorial.<br><br><strong>Escenario 2:</strong> Evaluación por atributos.<br><strong>Dado que</strong> el usuario sigue un protocolo estandarizado de cata<br><strong>Cuando</strong> califica cada atributo sensorial (acidez, cuerpo, dulzor, etc.) en la escala definida<br><strong>Entonces</strong> el sistema genera automáticamente el perfil sensorial completo.</td>
+<td>EP04</td>
+</tr>
 <tr>
 <td>TS07</td>
 <td>POST HTTPS Catas</td>
@@ -1658,7 +1399,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una evaluación completa de un café<br><strong>Entonces</strong> recibo confirmación de la cata registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una cata sin identificar el lote o tueste<br><strong>Entonces</strong> recibo un mensaje indicando que se requiere identificar el café.</td>
 <td>N/A</td>
 </tr>
-
 <tr>
 <td>TS08</td>
 <td>GET HTTPS PerfilesSensoriales</td>
@@ -1666,7 +1406,55 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil sensorial existente<br><strong>Entonces</strong> recibo los datos para generar el hexágono sensorial.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil que no existe<br><strong>Entonces</strong> recibo un mensaje indicando que el perfil no se encontró.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US06</td>
+<td>Historial de Catas</td>
+<td>Como barista profesional, quiero acceder al historial de catas por lote, origen o periodo para analizar tendencias y consistencia</td>
+<td><strong>Escenario 1:</strong> Filtrado por criterios múltiples.<br><strong>Dado que</strong> el usuario busca catas específicas en su historial<br><strong>Cuando</strong> aplica filtros combinados (fecha, origen, variedad, procesamiento)<br><strong>Entonces</strong> el sistema muestra resultados que cumplen todos los criterios establecidos.<br><br><strong>Escenario 2:</strong> Análisis de evolución temporal.<br><strong>Dado que</strong> el usuario quiere evaluar cambios en el tiempo de un mismo café<br><strong>Cuando</strong> selecciona un lote específico con múltiples catas realizadas<br><strong>Entonces</strong> el sistema presenta gráficos de evolución de atributos a lo largo del tiempo.</td>
+<td>EP04</td>
+</tr>
+<tr>
+<td>US07</td>
+<td>Creación de Recetas de Preparación</td>
+<td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
+<td><strong>Escenario 1:</strong> Creación de receta estándar.<br><strong>Dado que</strong> el usuario desarrolla una nueva receta de preparación<br><strong>Cuando</strong> registra todos los parámetros requeridos (ratio, temperatura, tiempo, molienda, método)<br><strong>Entonces</strong> el sistema guarda la receta completa en su biblioteca personal.<br><br><strong>Escenario 2:</strong> Vinculación a lote específico.<br><strong>Dado que</strong> el usuario optimiza una receta para un café particular<br><strong>Cuando</strong> asocia la receta a un lote específico registrado en el sistema<br><strong>Entonces</strong> el sistema establece la trazabilidad completa desde origen hasta método de preparación.</td>
+<td>EP05</td>
+</tr>
+<tr>
+<td>TS09</td>
+<td>POST HTTPS Recetas</td>
+<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
+<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta completa de preparación<br><strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta con método de preparación inválido<br><strong>Entonces</strong> recibo un mensaje con los métodos válidos.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>US08</td>
+<td>Calibración de Molienda</td>
+<td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
+<td><strong>Escenario 1:</strong> Registro de nueva calibración.<br><strong>Dado que</strong> el usuario ajusta un molino para un método específico<br><strong>Cuando</strong> documenta la configuración precisa (número, apertura) en el sistema<br><strong>Entonces</strong> la calibración queda registrada con fecha, equipo y método asociados.<br><br><strong>Escenario 2:</strong> Referencia visual comparativa.<br><strong>Dado que</strong> el usuario necesita una referencia objetiva de molienda<br><strong>Cuando</strong> adjunta foto de la molienda y registra el tiempo resultante de extracción<br><strong>Entonces</strong> el sistema almacena estos datos como estándar visual para comparaciones futuras.</td>
+<td>EP05</td>
+</tr>
+<tr>
+<td>TS10</td>
+<td>POST HTTPS Calibraciones</td>
+<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
+<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una nueva calibración con todos los datos<br><strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una imagen en formato no soportado<br><strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>US09</td>
+<td>Portafolio de Bebidas</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
+<td><strong>Escenario 1:</strong> Creación de ficha de bebida.<br><strong>Dado que</strong> el usuario desarrolla una bebida especial para su menú<br><strong>Cuando</strong> completa la ficha técnica (ingredientes, método, presentación, foto)<br><strong>Entonces</strong> el sistema incorpora la bebida a su portafolio digital profesional.<br><br><strong>Escenario 2:</strong> Organización por categorías personalizadas.<br><strong>Dado que</strong> el usuario maneja diversas bebidas en su portafolio<br><strong>Cuando</strong> las clasifica según tipos definidos (espresso, filtrado, signature, estacionales)<br><strong>Entonces</strong> el sistema genera un catálogo organizado y fácilmente consultable.</td>
+<td>EP05</td>
+</tr>
+<tr>
+<td>US10</td>
+<td>Control de Inventario Integrado</td>
+<td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
+<td><strong>Escenario 1:</strong> Seguimiento centralizado de stock.<br><strong>Dado que</strong> el usuario maneja múltiples productos y estados del café<br><strong>Cuando</strong> accede al panel central de inventario<br><strong>Entonces</strong> el sistema muestra niveles actuales, movimientos recientes y alertas activas.<br><br><strong>Escenario 2:</strong> Registro de consumo con trazabilidad.<br><strong>Dado que</strong> el usuario utiliza café para producción diaria<br><strong>Cuando</strong> registra el consumo vinculándolo a lotes específicos y productos finales<br><strong>Entonces</strong> el sistema actualiza automáticamente las existencias y mantiene la trazabilidad.</td>
+<td>EP06</td>
+</tr>
 <tr>
 <td>TS08</td>
 <td>POST HTTPS SesionesTueste</td>
@@ -1674,15 +1462,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> solicito iniciar una sesión con lote y perfil válidos<br><strong>Entonces</strong> recibo confirmación de la sesión iniciada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> solicito iniciar sesión con un lote ya agotado<br><strong>Entonces</strong> recibo un mensaje indicando que el lote no está disponible.</td>
 <td>N/A</td>
 </tr>
-
-<tr>
-<td>TS09</td>
-<td>POST HTTPS Recetas</td>
-<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta completa de preparación<br><strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta con método de preparación inválido<br><strong>Entonces</strong> recibo un mensaje con los métodos válidos.</td>
-<td>N/A</td>
-</tr>
-
 <tr>
 <td>TS09</td>
 <td>PATCH HTTPS SesionesTueste</td>
@@ -1690,15 +1469,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> envío nuevas lecturas de tiempo y temperatura<br><strong>Entonces</strong> recibo confirmación de la lectura registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> envío lecturas a una sesión ya finalizada<br><strong>Entonces</strong> recibo un mensaje indicando que la sesión está cerrada.</td>
 <td>N/A</td>
 </tr>
-
 <tr>
-<td>TS10</td>
-<td>POST HTTPS Calibraciones</td>
-<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una nueva calibración con todos los datos<br><strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una imagen en formato no soportado<br><strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.</td>
-<td>N/A</td>
+<td>US06</td>
+<td>Análisis Comparativo de Tuestes</td>
+<td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
+<td><strong>Escenario 1:</strong> Selección de sesiones a comparar.<br><strong>Dado que</strong> el usuario tiene múltiples sesiones de tueste registradas<br><strong>Cuando</strong> selecciona dos o más sesiones para análisis comparativo<br><strong>Entonces</strong> el sistema muestra las curvas superpuestas con códigos de color diferenciados.<br><br><strong>Escenario 2:</strong> Análisis de variables específicas.<br><strong>Dado que</strong> el usuario desea estudiar factores concretos del tueste<br><strong>Cuando</strong> selecciona variables específicas de interés (tiempo desarrollo, temperatura final)<br><strong>Entonces</strong> el sistema muestra su correlación con los resultados sensoriales registrados.</td>
+<td>EP03</td>
 </tr>
-
 <tr>
 <td>TS10</td>
 <td>GET HTTPS Análisis-Tueste</td>
@@ -1706,7 +1483,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito comparar varias sesiones de tueste<br><strong>Entonces</strong> recibo las curvas comparativas y correlaciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito comparar demasiadas sesiones<br><strong>Entonces</strong> recibo un mensaje indicando el límite máximo permitido.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US07</td>
+<td>Biblioteca de Defectos de Tueste</td>
+<td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
+<td><strong>Escenario 1:</strong> Consulta de defecto.<br><strong>Dado que</strong> el usuario observa anomalías en su café recién tostado<br><strong>Cuando</strong> busca en el sistema por características visuales o descriptivas del problema<br><strong>Entonces</strong> el sistema muestra posibles defectos coincidentes con sus causas y soluciones.<br><br><strong>Escenario 2:</strong> Documentación de soluciones.<br><strong>Dado que</strong> el usuario identifica un defecto específico en su tueste<br><strong>Cuando</strong> accede a la ficha detallada del defecto en la biblioteca<br><strong>Entonces</strong> el sistema presenta causas probables y soluciones recomendadas con ejemplos.</td>
+<td>EP03</td>
+</tr>
 <tr>
 <td>TS11</td>
 <td>GET HTTPS DefectosTueste</td>
@@ -1714,7 +1497,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco defectos con criterios específicos<br><strong>Entonces</strong> recibo los defectos coincidentes y sus soluciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco sin especificar ningún criterio<br><strong>Entonces</strong> recibo un mensaje solicitando al menos un parámetro de búsqueda.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US08</td>
+<td>Cata Digital Estructurada</td>
+<td>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste</td>
+<td><strong>Escenario 1:</strong> Creación de nueva cata.<br><strong>Dado que</strong> el usuario prueba un café recién tostado<br><strong>Cuando</strong> inicia una nueva sesión de cata vinculada al lote y tueste específicos<br><strong>Entonces</strong> el sistema presenta el formulario completo de evaluación sensorial.<br><br><strong>Escenario 2:</strong> Evaluación por atributos.<br><strong>Dado que</strong> el usuario sigue un protocolo estandarizado de cata<br><strong>Cuando</strong> califica cada atributo sensorial (acidez, cuerpo, dulzor, etc.) en la escala definida<br><strong>Entonces</strong> el sistema genera automáticamente el perfil sensorial completo.</td>
+<td>EP04</td>
+</tr>
 <tr>
 <td>TS12</td>
 <td>POST HTTPS Catas</td>
@@ -1722,7 +1511,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una evaluación completa de un café<br><strong>Entonces</strong> recibo confirmación de la cata registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una cata sin identificar el lote o tueste<br><strong>Entonces</strong> recibo un mensaje indicando que se requiere identificar el café.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US09</td>
+<td>Visualización de Perfiles Sensoriales</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
+<td><strong>Escenario 1:</strong> Generación de hexágono sensorial.<br><strong>Dado que</strong> el usuario ha completado una evaluación de cata<br><strong>Cuando</strong> solicita la visualización gráfica de los resultados<br><strong>Entonces</strong> el sistema genera el hexágono con los seis atributos principales evaluados.<br><br><strong>Escenario 2:</strong> Comparación de perfiles.<br><strong>Dado que</strong> el usuario desea contrastar diferentes cafés evaluados<br><strong>Cuando</strong> selecciona múltiples catas para visualización simultánea<br><strong>Entonces</strong> el sistema muestra los hexágonos superpuestos con códigos de color diferenciados.</td>
+<td>EP04</td>
+</tr>
 <tr>
 <td>TS13</td>
 <td>GET HTTPS PerfilesSensoriales</td>
@@ -1730,7 +1525,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil sensorial existente<br><strong>Entonces</strong> recibo los datos para generar el hexágono sensorial.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil que no existe<br><strong>Entonces</strong> recibo un mensaje indicando que el perfil no se encontró.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US10</td>
+<td>Correlación Tueste-Sabor</td>
+<td>Como barista profesional, quiero visualizar la correlación entre parámetros de tueste y resultados sensoriales para optimizar mis perfiles</td>
+<td><strong>Escenario 1:</strong> Análisis de factor específico.<br><strong>Dado que</strong> el usuario busca entender la influencia de un parámetro técnico<br><strong>Cuando</strong> selecciona una variable concreta de tueste (ej. tiempo de desarrollo)<br><strong>Entonces</strong> el sistema muestra gráficos de correlación con atributos sensoriales registrados.<br><br><strong>Escenario 2:</strong> Identificación de patrones.<br><strong>Dado que</strong> el usuario busca consistencia en resultados sensoriales<br><strong>Cuando</strong> analiza múltiples sesiones que produjeron perfiles similares<br><strong>Entonces</strong> el sistema identifica y destaca patrones comunes en los perfiles de tueste.</td>
+<td>EP04</td>
+</tr>
 <tr>
 <td>TS14</td>
 <td>GET HTTPS Correlaciones</td>
@@ -1738,7 +1539,20 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito correlaciones entre parámetros específicos<br><strong>Entonces</strong> recibo los datos de correlación estadística.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito correlacionar parámetros incompatibles<br><strong>Entonces</strong> recibo un mensaje con los parámetros que pueden correlacionarse.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US11</td>
+<td>Historial de Catas</td>
+<td>Como barista profesional, quiero acceder al historial de catas por lote, origen o periodo para analizar tendencias y consistencia</td>
+<td><strong>Escenario 1:</strong> Filtrado por criterios múltiples.<br><strong>Dado que</strong> el usuario busca catas específicas en su historial<br><strong>Cuando</strong> aplica filtros combinados (fecha, origen, variedad, procesamiento)<br><strong>Entonces</strong> el sistema muestra resultados que cumplen todos los criterios establecidos.<br><br><strong>Escenario 2:</strong> Análisis de evolución temporal.<br><strong>Dado que</strong> el usuario quiere evaluar cambios en el tiempo de un mismo café<br><strong>Cuando</strong> selecciona un lote específico con múltiples catas realizadas<br><strong>Entonces</strong> el sistema presenta gráficos de evolución de atributos a lo largo del tiempo.</td>
+<td>EP04</td>
+</tr>
+<tr>
+<td>US12</td>
+<td>Creación de Recetas de Preparación</td>
+<td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
+<td><strong>Escenario 1:</strong> Creación de receta estándar.<br><strong>Dado que</strong> el usuario desarrolla una nueva receta de preparación<br><strong>Cuando</strong> registra todos los parámetros requeridos (ratio, temperatura, tiempo, molienda, método)<br><strong>Entonces</strong> el sistema guarda la receta completa en su biblioteca personal.<br><br><strong>Escenario 2:</strong> Vinculación a lote específico.<br><strong>Dado que</strong> el usuario optimiza una receta para un café particular<br><strong>Cuando</strong> asocia la receta a un lote específico registrado en el sistema<br><strong>Entonces</strong> el sistema establece la trazabilidad completa desde origen hasta método de preparación.</td>
+<td>EP05</td>
+</tr>
 <tr>
 <td>TS15</td>
 <td>POST HTTPS Recetas</td>
@@ -1746,7 +1560,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta completa de preparación<br><strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta con método de preparación inválido<br><strong>Entonces</strong> recibo un mensaje con los métodos válidos.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US13</td>
+<td>Calibración de Molienda</td>
+<td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
+<td><strong>Escenario 1:</strong> Registro de nueva calibración.<br><strong>Dado que</strong> el usuario ajusta un molino para un método específico<br><strong>Cuando</strong> documenta la configuración precisa (número, apertura) en el sistema<br><strong>Entonces</strong> la calibración queda registrada con fecha, equipo y método asociados.<br><br><strong>Escenario 2:</strong> Referencia visual comparativa.<br><strong>Dado que</strong> el usuario necesita una referencia objetiva de molienda<br><strong>Cuando</strong> adjunta foto de la molienda y registra el tiempo resultante de extracción<br><strong>Entonces</strong> el sistema almacena estos datos como estándar visual para comparaciones futuras.</td>
+<td>EP05</td>
+</tr>
 <tr>
 <td>TS16</td>
 <td>POST HTTPS Calibraciones</td>
@@ -1754,7 +1574,27 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una nueva calibración con todos los datos<br><strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una imagen en formato no soportado<br><strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US14</td>
+<td>Portafolio de Bebidas</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
+<td><strong>Escenario 1:</strong> Creación de ficha de bebida.<br><strong>Dado que</strong> el usuario desarrolla una bebida especial para su menú<br><strong>Cuando</strong> completa la ficha técnica (ingredientes, método, presentación, foto)<br><strong>Entonces</strong> el sistema incorpora la bebida a su portafolio digital profesional.<br><br><strong>Escenario 2:</strong> Organización por categorías personalizadas.<br><strong>Dado que</strong> el usuario maneja diversas bebidas en su portafolio<br><strong>Cuando</strong> las clasifica según tipos definidos (espresso, filtrado, signature, estacionales)<br><strong>Entonces</strong> el sistema genera un catálogo organizado y fácilmente consultable.</td>
+<td>EP05</td>
+</tr>
+<tr>
+<td>US15</td>
+<td>Compartir Recetas</td>
+<td>Como barista profesional, quiero compartir mis recetas con mi equipo para mantener consistencia en la preparación</td>
+<td><strong>Escenario 1:</strong> Compartir con equipo interno.<br><strong>Dado que</strong> el usuario desarrolla una receta exitosa que debe estandarizarse<br><strong>Cuando</strong> la marca como "compartida con equipo" y define permisos<br><strong>Entonces</strong> el sistema la pone a disposición de todos los miembros autorizados.<br><br><strong>Escenario 2:</strong> Sugerencia de mejoras.<br><strong>Dado que</strong> un miembro del equipo prueba una receta compartida<br><strong>Cuando</strong> implementa variaciones y propone ajustes documentados<br><strong>Entonces</strong> el sistema notifica al creador original y registra las sugerencias manteniendo la versión original.</td>
+<td>EP05</td>
+</tr>
+<tr>
+<td>US16</td>
+<td>Control de Inventario Integrado</td>
+<td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
+<td><strong>Escenario 1:</strong> Seguimiento centralizado de stock.<br><strong>Dado que</strong> el usuario maneja múltiples productos y estados del café<br><strong>Cuando</strong> accede al panel central de inventario<br><strong>Entonces</strong> el sistema muestra niveles actuales, movimientos recientes y alertas activas.<br><br><strong>Escenario 2:</strong> Registro de consumo con trazabilidad.<br><strong>Dado que</strong> el usuario utiliza café para producción diaria<br><strong>Cuando</strong> registra el consumo vinculándolo a lotes específicos y productos finales<br><strong>Entonces</strong> el sistema actualiza automáticamente las existencias y mantiene la trazabilidad.</td>
+<td>EP06</td>
+</tr>
 <tr>
 <td>TS17</td>
 <td>GET HTTPS Inventario</td>
@@ -1762,7 +1602,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> solicito el inventario con filtros específicos<br><strong>Entonces</strong> recibo el listado de existencias actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> solicito información sin tener permisos suficientes<br><strong>Entonces</strong> recibo un mensaje indicando acceso denegado.</td>
 <td>N/A</td>
 </tr>
-
 <tr>
 <td>TS18</td>
 <td>PATCH HTTPS Inventario</td>
@@ -1770,7 +1609,55 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> registro el consumo de un producto con cantidad válida<br><strong>Entonces</strong> recibo confirmación del inventario actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> registro un consumo mayor al disponible<br><strong>Entonces</strong> recibo un mensaje indicando stock insuficiente.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US17</td>
+<td>Gestión de Costos de Producción</td>
+<td>Como dueño de cafetería de especialidad, quiero registrar y analizar los costos de producción de cada lote para optimizar mi estructura de precios y rentabilidad</td>
+<td><strong>Escenario 1:</strong> Registro completo de estructura de costos.<br><strong>Dado que</strong> el usuario necesita documentar todos los costos de un lote<br><strong>Cuando</strong> ingresa al módulo de costos y selecciona un lote procesado<br><strong>Entonces</strong> el sistema presenta un formulario con categorías predefinidas para cada tipo de costo (compra, transporte, almacenamiento, mano de obra, procesamiento).<br><br><strong>Escenario 2:</strong> Visualización de indicadores económicos.<br><strong>Dado que</strong> el usuario ha completado el registro de costos<br><strong>Cuando</strong> accede al dashboard económico del lote<br><strong>Entonces</strong> el sistema muestra automáticamente indicadores clave como costo por kilo, costo por taza y margen potencial según precios de mercado.</td>
+<td>EP06</td>
+</tr>
+<tr>
+<td>US18</td>
+<td>Análisis de Eficiencia y Rendimiento</td>
+<td>Como dueño de cafetería de especialidad, quiero monitorear y comparar el rendimiento productivo entre distintos lotes para identificar factores que afectan la eficiencia</td>
+<td><strong>Escenario 1:</strong> Registro automático de indicadores de rendimiento.<br><strong>Dado que</strong> un lote ha sido procesado completamente<br><strong>Cuando</strong> el usuario finaliza el registro de tueste y producción<br><strong>Entonces</strong> el sistema calcula automáticamente métricas de rendimiento (% de merma, tiempo efectivo, productividad por hora).<br><br><strong>Escenario 2:</strong> Comparativa avanzada entre lotes.<br><strong>Dado que</strong> el usuario busca optimizar su producción<br><strong>Cuando</strong> accede a la herramienta de análisis y selecciona múltiples lotes con atributos similares<br><strong>Entonces</strong> el sistema genera una tabla comparativa que resalta variaciones significativas en rendimiento y señala posibles causas basadas en parámetros registrados.</td>
+<td>EP06</td>
+</tr>
+<tr>
+<td>US19</td>
+<td>Reportes de Trazabilidad</td>
+<td>Como dueño de cafetería de especialidad, quiero generar reportes de trazabilidad completa para comunicar transparencia y valor agregado</td>
+<td><strong>Escenario 1:</strong> Generación de reporte integral por lote.<br><strong>Dado que</strong> el usuario necesita documentar la trazabilidad completa<br><strong>Cuando</strong> selecciona un lote específico que ha sido procesado<br><strong>Entonces</strong> el sistema genera un informe detallado con toda la cadena documentada desde origen.<br><br><strong>Escenario 2:</strong> Ficha técnica comercial para cliente.<br><strong>Dado que</strong> el usuario necesita comunicar el valor diferencial de su producto<br><strong>Cuando</strong> solicita generar una ficha para un producto específico de su catálogo<br><strong>Entonces</strong> el sistema produce un documento que incluye origen, procesamiento, tueste y perfil sensorial.</td>
+<td>EP06</td>
+</tr>
+<tr>
+<td>US20</td>
+<td>Información del Producto</td>
+<td>Como visitante de la landing page, quiero encontrar información clara sobre la plataforma para entender sus beneficios y decidir si me interesa</td>
+<td><strong>Escenario 1:</strong> Primera visita al sitio.<br><strong>Dado que</strong> el visitante accede por primera vez al sitio web<br><strong>Cuando</strong> carga la página de inicio<br><strong>Entonces</strong> visualiza el mensaje principal (value proposition) y beneficios clave.<br><br><strong>Escenario 2:</strong> Exploración de características.<br><strong>Dado que</strong> el visitante desea conocer las funcionalidades<br><strong>Cuando</strong> navega por la sección de características destacadas<br><strong>Entonces</strong> encuentra información clara con ilustraciones visuales de cada funcionalidad.</td>
+<td>EP07</td>
+</tr>
+<tr>
+<td>US21</td>
+<td>Secciones Específicas por Segmento</td>
+<td>Como visitante de la landing page, quiero encontrar información adaptada a mi perfil profesional para evaluar si la solución responde a mis necesidades específicas</td>
+<td><strong>Escenario 1:</strong> Sección para baristas.<br><strong>Dado que</strong> el visitante se identifica como barista profesional<br><strong>Cuando</strong> accede a la sección "Para Baristas"<br><strong>Entonces</strong> encuentra contenido adaptado a sus desafíos específicos y testimonios relevantes.<br><br><strong>Escenario 2:</strong> Sección para cafeterías.<br><strong>Dado que</strong> el visitante administra o es dueño de una cafetería<br><strong>Cuando</strong> accede a la sección "Para Cafeterías"<br><strong>Entonces</strong> encuentra contenido enfocado en gestión de negocios, trazabilidad y certificaciones.</td>
+<td>EP07</td>
+</tr>
+<tr>
+<td>US22</td>
+<td>Contacto con Equipo</td>
+<td>Como visitante de la landing page, quiero contactar con el equipo del sistema para resolver dudas específicas antes de registrarme</td>
+<td><strong>Escenario 1:</strong> Envío de consulta.<br><strong>Dado que</strong> el visitante tiene preguntas sobre la plataforma<br><strong>Cuando</strong> completa el formulario de contacto con sus datos y consulta<br><strong>Entonces</strong> el sistema envía la información al equipo y muestra confirmación.<br><br><strong>Escenario 2:</strong> Solicitud de demostración.<br><strong>Dado que</strong> el visitante quiere ver el sistema en funcionamiento<br><strong>Cuando</strong> solicita una demostración personalizada mediante el formulario específico<br><strong>Entonces</strong> el sistema agenda la cita y envía confirmación con los detalles de conexión.</td>
+<td>EP07</td>
+</tr>
+<tr>
+<td>US23</td>
+<td>Acceso directo a plataforma</td>
+<td>Como visitante de la landing page, quiero redirigirme hacia la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
+<td><strong>Escenario 1:</strong> Navegación exitosa<br><strong>Dado que</strong> el visitante quiere empezar a usar el sistema<br><strong>Cuando</strong> navegue por la landing page y pulse el botón de acceso a la plataforma<br><strong>Entonces</strong> será transferido correctamente a la interfaz principal del sistema.<br><br><strong>Escenario 2:</strong> Error de conexión<br><strong>Dado que</strong> el visitante intenta ingresar al sistema<br><strong>Cuando</strong> pulse el botón de acceso en la landing page y exista un problema de conexión o disponibilidad del servidor<br><strong>Entonces</strong> visualizará una notificación clara explicando el problema.</td>
+<td>EP07</td>
+</tr>
 <tr>
 <td>TS19</td>
 <td>POST HTTPS Contacto</td>
@@ -1778,7 +1665,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API pública<br><strong>Cuando</strong> envío un formulario de contacto completo<br><strong>Entonces</strong> recibo confirmación del mensaje enviado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API pública<br><strong>Cuando</strong> envío un formulario sin email de contacto<br><strong>Entonces</strong> recibo un mensaje indicando que el email es obligatorio.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US24</td>
+<td>Registro y Autenticación (Usuarios)</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos</td>
+<td><strong>Escenario 1:</strong> El usuario accede a la pantalla de registro.<br><strong>Dado que</strong> el usuario no tiene una cuenta en el sistema<br><strong>Cuando</strong> visualiza las opciones de registro (correo, Google, Facebook)<br><strong>Entonces</strong> el sistema permite elegir su método preferido y completar el registro.<br><br><strong>Escenario 2:</strong> El usuario inicia sesión.<br><strong>Dado que</strong> el usuario ya tiene una cuenta registrada<br><strong>Cuando</strong> ingresa sus credenciales correctamente<br><strong>Entonces</strong> el sistema le permite acceder a su panel personalizado.<br><br><strong>Escenario 3:</strong> El usuario ingresa credenciales incorrectas.<br><strong>Dado que</strong> el usuario tiene una cuenta<br><strong>Cuando</strong> ingresa datos erróneos<br><strong>Entonces</strong> el sistema muestra un mensaje de error y opciones de recuperación.</td>
+<td>EP01</td>
+</tr>
 <tr>
 <td>TS20</td>
 <td>POST HTTPS Usuarios</td>
@@ -1786,7 +1679,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br><strong>Cuando</strong> solicito registrar un usuario con datos válidos<br><strong>Entonces</strong> recibo confirmación de usuario creado con su identificador.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br><strong>Cuando</strong> solicito registrar un usuario con email ya existente<br><strong>Entonces</strong> recibo un mensaje indicando que el email ya está registrado.</td>
 <td>N/A</td>
 </tr>
-
 <tr>
 <td>TS21</td>
 <td>POST HTTPS Autenticación</td>
@@ -1794,7 +1686,20 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de autenticación<br><strong>Cuando</strong> envío credenciales válidas de un usuario<br><strong>Entonces</strong> recibo confirmación de acceso autorizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de autenticación<br><strong>Cuando</strong> envío credenciales incorrectas<br><strong>Entonces</strong> recibo un mensaje indicando error de autenticación.</td>
 <td>N/A</td>
 </tr>
-
+<tr>
+<td>US25</td>
+<td>Perfil Personalizado</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
+<td><strong>Escenario 1:</strong> Configuración inicial de perfil.<br><strong>Dado que</strong> el usuario ha completado el registro exitosamente<br><strong>Cuando</strong> accede por primera vez al sistema<br><strong>Entonces</strong> el sistema solicita completar información básica (nombre, rol, experiencia).<br><br><strong>Escenario 2:</strong> Actualización de perfil.<br><strong>Dado que</strong> el usuario desea modificar sus datos personales<br><strong>Cuando</strong> accede a la sección de perfil y realiza cambios<br><strong>Entonces</strong> el sistema guarda la información actualizada correctamente.</td>
+<td>EP01</td>
+</tr>
+<tr>
+<td>US26</td>
+<td>Selección de Plan</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero elegir entre los diferentes planes disponibles para acceder a las funcionalidades que mejor se adapten a mis necesidades</td>
+<td><strong>Escenario 1:</strong> Visualización de planes.<br><strong>Dado que</strong> el usuario está registrado en el sistema<br><strong>Cuando</strong> accede a la sección de planes disponibles<br><strong>Entonces</strong> el sistema muestra una comparativa detallada de funcionalidades y precios.<br><br><strong>Escenario 2:</strong> Selección de plan gratuito.<br><strong>Dado que</strong> el usuario desea utilizar funcionalidades básicas<br><strong>Cuando</strong> selecciona "Plan Base Cafetal"<br><strong>Entonces</strong> el sistema le otorga acceso inmediato a las funcionalidades correspondientes.</td>
+<td>EP01</td>
+</tr>
 <tr>
 <td>TS22</td>
 <td>GET HTTPS Planes</td>
@@ -1802,7 +1707,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de planes<br><strong>Cuando</strong> solicito la lista de planes disponibles<br><strong>Entonces</strong> recibo todos los planes con sus características y precios.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de planes<br><strong>Cuando</strong> solicito los planes y hay un problema técnico<br><strong>Entonces</strong> recibo un mensaje indicando que el servicio no está disponible.</td>
 <td>N/A</td>
 </tr>
-
 <tr>
 <td>TS23</td>
 <td>POST HTTPS Planes</td>
@@ -1810,525 +1714,363 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de suscripciones<br><strong>Cuando</strong> solicito una suscripción con plan y pago válidos<br><strong>Entonces</strong> recibo confirmación de la suscripción activada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de suscripciones<br><strong>Cuando</strong> solicito una suscripción con método de pago rechazado<br><strong>Entonces</strong> recibo un mensaje sobre el problema de pago.</td>
 <td>N/A</td>
 </tr>
-
-
-<!-- ==================== EP09 ==================== -->
-
-
-<tr>
-<td>TS24</td>
-<td>POST API SensorReadings</td>
-<td>Como desarrollador, quiero registrar lecturas del sensor TrackSilo mediante una API REST para almacenar los datos de temperatura y humedad en la base de datos.</td>
-<td>
-<strong>Escenario 1:</strong> Lectura válida registrada.<br>
-<strong>Dado que</strong> el ESP32 tiene acceso al endpoint de lecturas<br>
-<strong>Cuando</strong> envía una lectura con temperatura y humedad dentro de rangos físicamente posibles<br>
-<strong>Entonces</strong> el sistema registra la lectura con timestamp y devuelve confirmación 201.<br><br>
-<strong>Escenario 2:</strong> Lectura con datos inválidos.<br>
-<strong>Dado que</strong> el ESP32 envía una lectura con valores fuera de rango físico<br>
-<strong>Cuando</strong> el sistema valida los datos<br>
-<strong>Entonces</strong> devuelve un error 400 indicando los campos inválidos y no almacena la lectura.
-</td>
-<td>EP09</td>
-</tr>
-
-<tr>
-<td>TS25</td>
-<td>GET API SensorReadings</td>
-<td>Como desarrollador, quiero consultar el historial de lecturas del sensor mediante una API REST para construir el gráfico de condiciones ambientales en el dashboard.</td>
-<td>
-<strong>Escenario 1:</strong> Consulta con rango de fechas.<br>
-<strong>Dado que</strong> tengo acceso al endpoint de lecturas<br>
-<strong>Cuando</strong> solicito lecturas filtrando por fecha de inicio y fin<br>
-<strong>Entonces</strong> recibo el listado paginado de lecturas ordenadas cronológicamente.<br><br>
-<strong>Escenario 2:</strong> Consulta sin parámetros.<br>
-<strong>Dado que</strong> tengo acceso al endpoint de lecturas<br>
-<strong>Cuando</strong> solicito lecturas sin especificar filtros<br>
-<strong>Entonces</strong> recibo las últimas 100 lecturas por defecto.
-</td>
-<td>EP09</td>
-</tr>
-
-<tr>
-<td>TS26</td>
-<td>GET API SensorStatus</td>
-<td>Como desarrollador, quiero consultar el estado actual del sensor TrackSilo mediante una API para mostrar en el dashboard si el dispositivo está activo o desconectado.</td>
-<td>
-<strong>Escenario 1:</strong> Sensor activo.<br>
-<strong>Dado que</strong> el TrackSilo ha enviado al menos una lectura en los últimos 2 minutos<br>
-<strong>Cuando</strong> se consulta el estado del sensor<br>
-<strong>Entonces</strong> el sistema devuelve estado "online" con la última lectura registrada.<br><br>
-<strong>Escenario 2:</strong> Sensor sin respuesta.<br>
-<strong>Dado que</strong> el TrackSilo no ha enviado lecturas en más de 2 minutos<br>
-<strong>Cuando</strong> se consulta el estado<br>
-<strong>Entonces</strong> el sistema devuelve estado "offline" con la marca de tiempo de la última lectura recibida.
-</td>
-<td>EP09</td>
-</tr>
-
-<tr>
-<td>TS27</td>
-<td>POST API ActuatorEvents</td>
-<td>Como desarrollador, quiero registrar eventos de activación y desactivación del deshumedecedor mediante una API para mantener el historial de intervenciones del sistema.</td>
-<td>
-<strong>Escenario 1:</strong> Registro de activación.<br>
-<strong>Dado que</strong> el sistema detecta condiciones fuera de rango<br>
-<strong>Cuando</strong> se activa el actuador<br>
-<strong>Entonces</strong> el sistema registra un evento con tipo "ACTIVATE", timestamp y los valores del sensor que lo dispararon, devolviendo 201.<br><br>
-<strong>Escenario 2:</strong> Registro de desactivación.<br>
-<strong>Dado que</strong> el actuador está activo y las condiciones vuelven a rango óptimo<br>
-<strong>Cuando</strong> el sistema desactiva el actuador<br>
-<strong>Entonces</strong> registra un evento "DEACTIVATE" con timestamp y calcula la duración del ciclo de deshumidificación.
-</td>
-<td>EP09</td>
-</tr>
-
-<tr>
-<td>TS28</td>
-<td>POST API AlertNotifications</td>
-<td>Como desarrollador, quiero enviar notificaciones por email cuando se superen los umbrales configurados para mantener informado al dueño de la cafetería en tiempo real.</td>
-<td>
-<strong>Escenario 1:</strong> Notificación enviada correctamente.<br>
-<strong>Dado que</strong> el sistema detecta una lectura fuera del umbral configurado<br>
-<strong>Cuando</strong> se activa el servicio de notificaciones<br>
-<strong>Entonces</strong> se envía un email al dueño con el tipo de alerta, valor registrado, umbral superado y timestamp, y se registra el envío en la base de datos.<br><br>
-<strong>Escenario 2:</strong> Error en el envío.<br>
-<strong>Dado que</strong> el servicio de email no está disponible<br>
-<strong>Cuando</strong> el sistema intenta enviar la notificación<br>
-<strong>Entonces</strong> registra el intento fallido y lo encola para reintento en los próximos 5 minutos.
-</td>
-<td>EP09</td>
-</tr>
-
 </table>
 
 ## 3.3. Product Backlog
-
-<table border="1">
-<tr>
-<th>#</th>
-<th>User Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Story Points</th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>US16</td>
-<td>Información del Producto</td>
-<td>Como visitante de la landing page, quiero encontrar información clara sobre la plataforma para entender sus beneficios y decidir si me interesa</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td>US17</td>
-<td>Secciones Específicas por Segmento</td>
-<td>Como visitante de la landing page, quiero encontrar información adaptada a mi perfil profesional para evaluar si la solución responde a mis necesidades específicas</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>3</td>
-<td>US18</td>
-<td>Contacto con Equipo</td>
-<td>Como visitante de la landing page, quiero contactar con el equipo del sistema para resolver dudas específicas antes de registrarme</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>4</td>
-<td>US19</td>
-<td>Acceso directo a plataforma</td>
-<td>Como visitante de la landing page, quiero redirigirme a la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>5</td>
-<td>US20</td>
-<td>Registro y Autenticación (Usuarios)</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>6</td>
-<td>US21</td>
-<td>Perfil Personalizado</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>7</td>
-<td>US22</td>
-<td>Selección de Plan</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero elegir entre los diferentes planes disponibles para acceder a las funcionalidades que mejor se adapten a mis necesidades</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>8</td>
-<td>US01</td>
-<td>Registro de Proveedores</td>
-<td>Como dueño de cafetería de especialidad, quiero registrar y evaluar a mis proveedores para mantener un control de calidad y trazabilidad de origen</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>9</td>
-<td>US02</td>
-<td>Gestión de Lotes de Café Verde</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero registrar y hacer seguimiento de cada lote de café verde para mantener control de inventario y trazabilidad</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>10</td>
-<td>US23</td>
-<td>Visualización de condiciones del almacén en tiempo real</td>
-<td>Como dueño de cafetería de especialidad, quiero visualizar la temperatura y humedad del almacén en tiempo real desde el dashboard de CaféLab para tomar decisiones oportunas sobre la conservación del café verde</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>11</td>
-<td>US25</td>
-<td>Recepción de alertas por condiciones fuera de rango</td>
-<td>Como dueño de cafetería de especialidad, quiero recibir una notificación inmediata cuando la temperatura o humedad del almacén superen los umbrales configurados para actuar antes de que el café se vea afectado</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>12</td>
-<td>US28</td>
-<td>Activación automática del deshumedecedor</td>
-<td>Como dueño de cafetería de especialidad, quiero que el sistema active automáticamente la señal de deshumidificación cuando las condiciones del almacén lo requieran para no depender de intervención manual</td>
-<td>8</td>
-</tr>
-
-<tr>
-<td>13</td>
-<td>US26</td>
-<td>Configuración de umbrales de monitoreo</td>
-<td>Como dueño de cafetería de especialidad, quiero configurar los valores de umbral de temperatura y humedad según el tipo de café almacenado para personalizar las alertas a mis necesidades</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>14</td>
-<td>US24</td>
-<td>Consulta de historial ambiental por lote</td>
-<td>Como dueño de cafetería de especialidad o barista profesional, quiero consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico para entender las condiciones en que estuvo conservado</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>15</td>
-<td>US27</td>
-<td>Indicador de estado ambiental por lote</td>
-<td>Como barista profesional, quiero ver un indicador visual del estado ambiental del lote con el que voy a trabajar para anticipar ajustes en mis parámetros de extracción antes de calibrar</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>16</td>
-<td>US11</td>
-<td>Control de Inventario Integrado</td>
-<td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>17</td>
-<td>US03</td>
-<td>Creación de Perfil de Tueste</td>
-<td>Como barista profesional, quiero crear perfiles de tueste personalizados para documentar y replicar mis mejores resultados</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>18</td>
-<td>US05</td>
-<td>Cata Digital Estructurada</td>
-<td>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>19</td>
-<td>US07</td>
-<td>Creación de Recetas de Preparación</td>
-<td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>20</td>
-<td>US14</td>
-<td>Análisis de Eficiencia y Rendimiento</td>
-<td>Como dueño de cafetería de especialidad, quiero monitorear y comparar el rendimiento productivo entre distintos lotes para identificar factores que afectan la eficiencia</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>21</td>
-<td>US12</td>
-<td>Correlación Tueste-Sabor</td>
-<td>Como barista profesional, quiero visualizar la correlación entre parámetros de tueste y resultados sensoriales para optimizar mis perfiles</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>22</td>
-<td>US10</td>
-<td>Visualización de Perfiles Sensoriales</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>23</td>
-<td>US15</td>
-<td>Reportes de Trazabilidad</td>
-<td>Como dueño de cafetería de especialidad, quiero generar reportes de trazabilidad completa para comunicar transparencia y valor agregado</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>24</td>
-<td>US08</td>
-<td>Calibración de Molienda</td>
-<td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>25</td>
-<td>US06</td>
-<td>Análisis Comparativo de Tuestes</td>
-<td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>26</td>
-<td>US13</td>
-<td>Compartir Recetas</td>
-<td>Como barista profesional, quiero compartir mis recetas con mi equipo para mantener consistencia en la preparación</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>27</td>
-<td>US04</td>
-<td>Biblioteca de Defectos de Tueste</td>
-<td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>28</td>
-<td>US09</td>
-<td>Portafolio de Bebidas</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>29</td>
-<td>TS20</td>
-<td>POST HTTPS Usuarios</td>
-<td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>30</td>
-<td>TS21</td>
-<td>POST HTTPS Autenticación</td>
-<td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>31</td>
-<td>TS22</td>
-<td>GET HTTPS Planes</td>
-<td>Como desarrollador, quiero obtener información sobre planes disponibles mediante una API para mostrar opciones de suscripción</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>32</td>
-<td>TS23</td>
-<td>POST HTTPS Planes</td>
-<td>Como desarrollador, quiero suscribir usuarios a planes mediante una API para gestionar acceso a funcionalidades</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>33</td>
-<td>TS03</td>
-<td>POST HTTPS Lotes</td>
-<td>Como desarrollador, quiero registrar nuevos lotes de café mediante una API para mantener el inventario actualizado</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>34</td>
-<td>TS04</td>
-<td>PATCH HTTPS Lotes</td>
-<td>Como desarrollador, quiero actualizar el estado de lotes mediante una API para reflejar cambios en el ciclo de vida</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>35</td>
-<td>TS24</td>
-<td>POST API SensorReadings</td>
-<td>Como desarrollador, quiero registrar lecturas del sensor TrackSilo mediante una API REST para almacenar los datos de temperatura y humedad en la base de datos</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>36</td>
-<td>TS25</td>
-<td>GET API SensorReadings</td>
-<td>Como desarrollador, quiero consultar el historial de lecturas del sensor mediante una API REST para construir el gráfico de condiciones ambientales en el dashboard</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>37</td>
-<td>TS26</td>
-<td>GET API SensorStatus</td>
-<td>Como desarrollador, quiero consultar el estado actual del sensor TrackSilo mediante una API para mostrar en el dashboard si el dispositivo está activo o desconectado</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>38</td>
-<td>TS27</td>
-<td>POST API ActuatorEvents</td>
-<td>Como desarrollador, quiero registrar eventos de activación y desactivación del deshumedecedor mediante una API para mantener el historial de intervenciones del sistema</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>39</td>
-<td>TS28</td>
-<td>POST API AlertNotifications</td>
-<td>Como desarrollador, quiero enviar notificaciones por email cuando se superen los umbrales configurados para mantener informado al dueño de la cafetería en tiempo real</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>40</td>
-<td>TS07</td>
-<td>POST HTTPS Catas</td>
-<td>Como desarrollador, quiero registrar evaluaciones sensoriales mediante una API para documentar características del café</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>41</td>
-<td>TS08</td>
-<td>GET HTTPS PerfilesSensoriales</td>
-<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>42</td>
-<td>TS05</td>
-<td>POST HTTPS Perfiles-Tueste</td>
-<td>Como desarrollador, quiero crear perfiles de tueste mediante una API para estandarizar procesos</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>43</td>
-<td>TS09</td>
-<td>POST HTTPS Recetas</td>
-<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>44</td>
-<td>TS17</td>
-<td>GET HTTPS Inventario</td>
-<td>Como desarrollador, quiero consultar el inventario integrado mediante una API para visualizar existencias</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>45</td>
-<td>TS18</td>
-<td>PATCH HTTPS Inventario</td>
-<td>Como desarrollador, quiero actualizar el consumo de inventario mediante una API para mantener existencias actualizadas</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>46</td>
-<td>TS14</td>
-<td>GET HTTPS Correlaciones</td>
-<td>Como desarrollador, quiero obtener correlaciones entre tueste y sabor mediante una API para optimizar procesos</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>47</td>
-<td>TS10</td>
-<td>GET HTTPS Análisis-Tueste</td>
-<td>Como desarrollador, quiero obtener análisis comparativo de tuestes mediante una API para identificar patrones</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>48</td>
-<td>TS01</td>
-<td>POST HTTPS Proveedores</td>
-<td>Como desarrollador, quiero registrar nuevos proveedores mediante una API para ampliar la red de suministro</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>49</td>
-<td>TS02</td>
-<td>GET HTTPS Proveedores</td>
-<td>Como desarrollador, quiero consultar proveedores mediante una API para mostrar opciones disponibles</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>50</td>
-<td>TS10</td>
-<td>POST HTTPS Calibraciones</td>
-<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>51</td>
-<td>TS11</td>
-<td>GET HTTPS DefectosTueste</td>
-<td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>52</td>
-<td>TS19</td>
-<td>POST HTTPS Contacto</td>
-<td>Como desarrollador, quiero procesar formularios de contacto mediante una API para gestionar comunicaciones con visitantes</td>
-<td>1</td>
-</tr>
-
+<table>
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th rowspan="2">#<br>Orden</th>
+      <th rowspan="2">User<br>Story<br>Id</th>
+      <th rowspan="2">Título</th>
+      <th rowspan="2">Descripción</th>
+      <th rowspan="2">Story<br>Points<br>(1/2/3/5/8)</th>
+    </tr>
+  </thead>
+ </tr>
+        <tr>
+            <td class="center">1</td>
+            <td>US20</td>
+            <td>Información del Producto</td>
+            <td>Como visitante de la landing page, quiero encontrar información clara sobre la plataforma para entender sus beneficios y decidir si me interesa</td>
+            <td class="center">1</td>
+        </tr>
+        <tr>
+            <td class="center">2</td>
+            <td>US21</td>
+            <td>Secciones Específicas por Segmento</td>
+            <td>Como visitante de la landing page, quiero encontrar información adaptada a mi perfil profesional para evaluar si la solución responde a mis necesidades específicas</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">3</td>
+            <td>US22</td>
+            <td>Contacto con Equipo</td>
+            <td>Como visitante de la landing page, quiero contactar con el equipo del sistema para resolver dudas específicas antes de registrarme</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">4</td>
+            <td>US23</td>
+            <td>Acceso directo a plataforma</td>
+            <td>Como visitante de la landing page, quiero redirigirme hacia la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">5</td>
+            <td>US02</td>
+            <td>Gestión de Lotes de Café Verde</td>
+            <td>Como barista profesional o dueño de cafetería de especialidad, quiero registrar y hacer seguimiento de cada lote de café verde para mantener control de inventario y trazabilidad</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">6</td>
+            <td>US12</td>
+            <td>Creación de Recetas de Preparación</td>
+            <td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">7</td>
+            <td>US08</td>
+            <td>Cata Digital Estructurada</td>
+            <td>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">8</td>
+            <td>US16</td>
+            <td>Control de Inventario Integrado</td>
+            <td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">9</td>
+            <td>US04</td>
+            <td>Creación de Perfil de Tueste</td>
+            <td>Como barista profesional, quiero crear perfiles de tueste personalizados para documentar y replicar mis mejores resultados</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">10</td>
+            <td>US17</td>
+            <td>Gestión de Costos de Producción</td>
+            <td>Como dueño de cafetería de especialidad, quiero registrar y analizar los costos de producción de cada lote para optimizar mi estructura de precios y rentabilidad</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">11</td>
+            <td>US18</td>
+            <td>Análisis de Eficiencia y Rendimiento</td>
+            <td>Como dueño de cafetería de especialidad, quiero monitorear y comparar el rendimiento productivo entre distintos lotes para identificar factores que afectan la eficiencia</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">12</td>
+            <td>US09</td>
+            <td>Visualización de Perfiles Sensoriales</td>
+            <td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">13</td>
+            <td>US05</td>
+            <td>Registro de Sesión de Tueste</td>
+            <td>Como barista profesional, quiero documentar cada sesión de tueste asociada a un lote específico para mantener trazabilidad y control de calidad</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">14</td>
+            <td>US01</td>
+            <td>Registro de Proveedores</td>
+            <td>Como dueño de cafetería de especialidad, quiero registrar y evaluar a mis proveedores para mantener un control de calidad y trazabilidad de origen</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">15</td>
+            <td>US13</td>
+            <td>Calibración de Molienda</td>
+            <td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">16</td>
+            <td>US10</td>
+            <td>Correlación Tueste-Sabor</td>
+            <td>Como barista profesional, quiero visualizar la correlación entre parámetros de tueste y resultados sensoriales para optimizar mis perfiles</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">17</td>
+            <td>US19</td>
+            <td>Reportes de Trazabilidad</td>
+            <td>Como dueño de cafetería de especialidad, quiero generar reportes de trazabilidad completa para comunicar transparencia y valor agregado</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">18</td>
+            <td>US03</td>
+            <td>Registro de Certificaciones</td>
+            <td>Como dueño de cafetería de especialidad, quiero documentar las certificaciones de mis cafés para validar y comunicar su valor agregado</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">19</td>
+            <td>US14</td>
+            <td>Portafolio de Bebidas</td>
+            <td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">20</td>
+            <td>US06</td>
+            <td>Análisis Comparativo de Tuestes</td>
+            <td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">21</td>
+            <td>US15</td>
+            <td>Compartir Recetas</td>
+            <td>Como barista profesional, quiero compartir mis recetas con mi equipo para mantener consistencia en la preparación</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">22</td>
+            <td>US11</td>
+            <td>Historial de Catas</td>
+            <td>Como barista profesional, quiero acceder al historial de catas por lote, origen o periodo para analizar tendencias y consistencia</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">23</td>
+            <td>US07</td>
+            <td>Biblioteca de Defectos de Tueste</td>
+            <td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">24</td>
+            <td>US24</td>
+            <td>Registro y Autenticación (Usuarios)</td>
+            <td>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">25</td>
+            <td>US25</td>
+            <td>Perfil Personalizado</td>
+            <td>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">26</td>
+            <td>US26</td>
+            <td>Selección de Plan</td>
+            <td>Como barista profesional o dueño de cafetería de especialidad, quiero elegir entre los diferentes planes disponibles para acceder a las funcionalidades que mejor se adapten a mis necesidades</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">27</td>
+            <td>TS20</td>
+            <td>POST HTTPS Usuarios</td>
+            <td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
+            <td class="center">1</td>
+        </tr>
+        <tr>
+            <td class="center">28</td>
+            <td>TS21</td>
+            <td>POST HTTPS Autenticación</td>
+            <td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">29</td>
+            <td>TS22</td>
+            <td>GET HTTPS Planes</td>
+            <td>Como desarrollador, quiero obtener información sobre planes disponibles mediante una API para mostrar opciones de suscripción</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">30</td>
+            <td>TS03</td>
+            <td>POST HTTPS Lotes</td>
+            <td>Como desarrollador, quiero registrar nuevos lotes de café mediante una API para mantener el inventario actualizado</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">31</td>
+            <td>TS15</td>
+            <td>POST HTTPS Recetas</td>
+            <td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">32</td>
+            <td>TS12</td>
+            <td>POST HTTPS Catas</td>
+            <td>Como desarrollador, quiero registrar evaluaciones sensoriales mediante una API para documentar características del café</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">33</td>
+            <td>TS17</td>
+            <td>GET HTTPS Inventario</td>
+            <td>Como desarrollador, quiero consultar el inventario integrado mediante una API para visualizar existencias</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">34</td>
+            <td>TS07</td>
+            <td>POST HTTPS Perfiles-Tueste</td>
+            <td>Como desarrollador, quiero crear perfiles de tueste mediante una API para estandarizar procesos</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">35</td>
+            <td>TS14</td>
+            <td>GET HTTPS Correlaciones</td>
+            <td>Como desarrollador, quiero obtener correlaciones entre tueste y sabor mediante una API para optimizar procesos</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">36</td>
+            <td>TS08</td>
+            <td>POST HTTPS Sesiones-Tueste</td>
+            <td>Como desarrollador, quiero registrar sesiones de tueste mediante una API para documentar cada proceso</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">37</td>
+            <td>TS01</td>
+            <td>POST HTTPS Proveedores</td>
+            <td>Como desarrollador, quiero registrar nuevos proveedores mediante una API para ampliar la red de suministro</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">38</td>
+            <td>TS16</td>
+            <td>POST HTTPS Calibraciones</td>
+            <td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">39</td>
+            <td>TS13</td>
+            <td>GET HTTPS Perfiles-Sensoriales</td>
+            <td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">40</td>
+            <td>TS18</td>
+            <td>PATCH HTTPS Inventario</td>
+            <td>Como desarrollador, quiero actualizar el consumo de inventario mediante una API para mantener existencias actualizadas</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">41</td>
+            <td>TS05</td>
+            <td>POST HTTPS Certificaciones</td>
+            <td>Como desarrollador, quiero registrar certificaciones mediante una API para validar la calidad y origen del café</td>
+            <td class="center">3</td>
+        </tr>
+        <tr>
+            <td class="center">42</td>
+            <td>TS19</td>
+            <td>POST HTTPS Contacto</td>
+            <td>Como desarrollador, quiero procesar formularios de contacto mediante una API para gestionar comunicaciones con visitantes</td>
+            <td class="center">1</td>
+        </tr>
+        <tr>
+            <td class="center">43</td>
+            <td>TS10</td>
+            <td>GET HTTPS Análisis-Tueste</td>
+            <td>Como desarrollador, quiero obtener análisis comparativo de tuestes mediante una API para identificar patrones</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">44</td>
+            <td>TS23</td>
+            <td>POST HTTPS Planes</td>
+            <td>Como desarrollador, quiero suscribir usuarios a planes mediante una API para gestionar acceso a funcionalidades</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">45</td>
+            <td>TS02</td>
+            <td>GET HTTPS Proveedores</td>
+            <td>Como desarrollador, quiero consultar proveedores mediante una API para mostrar opciones disponibles</td>
+            <td class="center">1</td>
+        </tr>
+        <tr>
+            <td class="center">46</td>
+            <td>TS04</td>
+            <td>PATCH HTTPS Lotes</td>
+            <td>Como desarrollador, quiero actualizar el estado de lotes mediante una API para reflejar cambios en el ciclo de vida</td>
+            <td class="center">2</td>
+        </tr>
+        <tr>
+            <td class="center">47</td>
+            <td>TS06</td>
+            <td>GET HTTPS Certificaciones</td>
+            <td>Como desarrollador, quiero obtener certificaciones mediante una API para mostrar valor agregado del producto</td>
+            <td class="center">1</td>
+        </tr>
+        <tr>
+            <td class="center">48</td>
+            <td>TS09</td>
+            <td>PATCH HTTPS Sesiones-Tueste</td>
+            <td>Como desarrollador, quiero actualizar lecturas de una sesión de tueste mediante una API para construir la curva real</td>
+            <td class="center">5</td>
+        </tr>
+        <tr>
+            <td class="center">49</td>
+            <td>TS11</td>
+            <td>GET HTTPS Defectos-Tueste</td>
+            <td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
+            <td class="center">1</td> 
 </table>
 
 
