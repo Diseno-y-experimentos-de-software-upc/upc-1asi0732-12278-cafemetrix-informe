@@ -319,8 +319,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     - [Recomendaciones](#recomendaciones)
     - [Bibliografía](#bibliografía)
     - [Anexos](#anexos)
-- [Video App Validation](#video-app-validation)
-- [Video About-the-Team](#video-about-the-team)
+
 
 
 
@@ -6937,15 +6936,22 @@ Puede añadirse un video *about the team* en el que se resume el rol de cada int
 
 # Anexos
 
-- [Figma — Café Lab (diseño, wireframes, mockups)](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&t=fprZU86nz2ahB2Bi-1)
-- [Figma — prototipo navegable (Web Applications Prototyping)](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1)
-- [Trello — tablero de sprints (referencia de organización, TB1)](https://trello.com/b/diGtoNBa/sprint-1)
-- [Video — Web Applications Prototyping (SharePoint, referencia de guía)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-- **Video About the product:** [Ver en YouTube](https://www.youtube.com/watch?v=hYDHNbU16zw)
-- **Microsoft Stream (About the product, misma que sección 5.3):** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=N5dUfT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-- **Código e informe de referencia (proyecto base Café Metrix, curso de aplicaciones open source, para trazas de ERD, diagramas y estructura):**  
-  - [Front-end (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-frontEnd.git)  
-  - [Back-end (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-backEnd.git)  
-  - [Landing (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-landingPage.git)  
-  - [Repositorio informe / rama con diagramas (referencia)](https://github.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab/tree/feature/informe-readme)  
-- **Entornos desplegados (referencia, según repositorio reutilizado):** [Landing pública (ejemplo)](https://cafelanding-60903.web.app/) y [API Swagger (ejemplo, si aplica a la rama de referencia)](https://cafelabbackend.azurewebsites.net/swagger-ui/index.html#/)  
+- Enlace para acceder al [video exposición de TB1]()
+
+- Enlace para acceder al [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&p=f&t=f0KUudOr0KNMX5mk-0)
+
+- Enlace para acceder al [repositorio Informe](https://github.com/Diseno-y-experimentos-de-software-upc/upc-1asi0732-12278-cafemetrix-informe#521-sprint-backlogs)
+
+- Enlace para acceder al [repositorio Landing-page](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-landingPage)
+
+- Enlace para acceder al [repositorio Front-end](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-frontEnd.git)
+
+- Enlace para acceder al [repositorio Back-end](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend/tree/main)
+
+- Enlace para acceder al [Landing-page deployado]()
+
+- Enlace para acceder al [Front-end deployado]()
+
+- Enlace para acceder al [Backend deployado]()
+
+- Enlace al video "About the Product": [video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=oOeUxQ)
