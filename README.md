@@ -57,6 +57,7 @@
 | 1.1     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Puso nuevo formato para project report collaboration insights y student outcome    |
 | 1.2     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió su perfil de integrante                                                     |
 | 1.3     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió sprint backlogs, deployment evidence, US, TS y Product Backlog              |
+| 1.4     | 27/04/2026  | Donayre Alvarez, Adrian Ricardo      | Actualizó los technical stories agrupandolos por API                               |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -1323,20 +1324,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>EP02</td>
 </tr>
 <tr>
-<td>TS01</td>
-<td>POST HTTPS Proveedores</td>
-<td>Como desarrollador, quiero registrar nuevos proveedores mediante una API para ampliar la red de suministro</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito registrar un proveedor con datos completos<br><strong>Entonces</strong> recibo confirmación del proveedor creado con su identificador.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito registrar un proveedor con datos incompletos<br><strong>Entonces</strong> recibo un mensaje con los campos requeridos faltantes.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>TS02</td>
-<td>GET HTTPS Proveedores</td>
-<td>Como desarrollador, quiero consultar proveedores mediante una API para mostrar opciones disponibles</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito la lista de proveedores con filtros<br><strong>Entonces</strong> recibo los proveedores que cumplen los criterios.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito proveedores con parámetros incorrectos<br><strong>Entonces</strong> recibo un mensaje indicando los parámetros inválidos.</td>
-<td>N/A</td>
-</tr>
-<tr>
 <td>US02</td>
 <td>Gestión de Lotes de Café Verde</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero registrar y hacer seguimiento de cada lote de café verde para mantener control de inventario y trazabilidad</td>
@@ -1344,33 +1331,11 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>EP02</td>
 </tr>
 <tr>
-<td>TS03</td>
-<td>POST HTTPS Lotes</td>
-<td>Como desarrollador, quiero registrar nuevos lotes de café mediante una API para mantener el inventario actualizado</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito registrar un lote con datos completos<br><strong>Entonces</strong> recibo confirmación del lote creado con su código de trazabilidad.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito registrar un lote con un proveedor inexistente<br><strong>Entonces</strong> recibo un mensaje indicando que el proveedor no existe.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>TS04</td>
-<td>PATCH HTTPS Lotes</td>
-<td>Como desarrollador, quiero actualizar el estado de lotes mediante una API para reflejar cambios en el ciclo de vida</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito cambiar el estado de un lote a un valor válido<br><strong>Entonces</strong> recibo el lote con su estado actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito un cambio de estado no permitido<br><strong>Entonces</strong> recibo un mensaje con los cambios de estado permitidos.</td>
-<td>N/A</td>
-</tr>
-<tr>
 <td>US03</td>
 <td>Creación de Perfil de Tueste</td>
 <td>Como barista profesional, quiero crear perfiles de tueste personalizados para documentar y replicar mis mejores resultados</td>
 <td><strong>Escenario 1:</strong> Creación manual de perfil.<br><strong>Dado que</strong> el usuario desarrolla un nuevo perfil de tueste<br><strong>Cuando</strong> ingresa todos los parámetros requeridos (temperatura inicial, curva, tiempo, desarrollo)<br><strong>Entonces</strong> el sistema guarda el perfil en su biblioteca personal.<br><br><strong>Escenario 2:</strong> Duplicación y modificación.<br><strong>Dado que</strong> el usuario quiere adaptar un perfil existente<br><strong>Cuando</strong> selecciona la opción "duplicar" y modifica valores específicos<br><strong>Entonces</strong> el sistema crea una nueva variante manteniendo referencia al perfil original.</td>
-
 <td>EP02</td>
-</tr>
-<tr>
-<td>TS05</td>
-<td>POST HTTPS Perfiles-Tueste</td>
-<td>Como desarrollador, quiero crear perfiles de tueste mediante una API para estandarizar procesos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br><strong>Cuando</strong> solicito crear un perfil con parámetros completos<br><strong>Entonces</strong> recibo confirmación del perfil creado en la biblioteca.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br><strong>Cuando</strong> solicito crear un perfil con temperaturas fuera de rango<br><strong>Entonces</strong> recibo un mensaje con los rangos permitidos.</td>
-<td>N/A</td>
 </tr>
 <tr>
 <td>US04</td>
@@ -1378,12 +1343,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
 <td><strong>Escenario 1:</strong> Consulta de defecto.<br><strong>Dado que</strong> el usuario observa anomalías en su café recién tostado<br><strong>Cuando</strong> busca en el sistema por características visuales o descriptivas del problema<br><strong>Entonces</strong> el sistema muestra posibles defectos coincidentes con sus causas y soluciones.<br><br><strong>Escenario 2:</strong> Documentación de soluciones.<br><strong>Dado que</strong> el usuario identifica un defecto específico en su tueste<br><strong>Cuando</strong> accede a la ficha detallada del defecto en la biblioteca<br><strong>Entonces</strong> el sistema presenta causas probables y soluciones recomendadas con ejemplos.</td>
 <td>EP03</td>
-</tr>
-<td>TS06</td>
-<td>GET HTTPS DefectosTueste</td>
-<td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco defectos con criterios específicos<br><strong>Entonces</strong> recibo los defectos coincidentes y sus soluciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco sin especificar ningún criterio<br><strong>Entonces</strong> recibo un mensaje solicitando al menos un parámetro de búsqueda.</td>
-<td>N/A</td>
 </tr>
 <tr>
 <td>US05</td>
@@ -1393,20 +1352,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>EP04</td>
 </tr>
 <tr>
-<td>TS07</td>
-<td>POST HTTPS Catas</td>
-<td>Como desarrollador, quiero registrar evaluaciones sensoriales mediante una API para documentar características del café</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una evaluación completa de un café<br><strong>Entonces</strong> recibo confirmación de la cata registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una cata sin identificar el lote o tueste<br><strong>Entonces</strong> recibo un mensaje indicando que se requiere identificar el café.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>TS08</td>
-<td>GET HTTPS PerfilesSensoriales</td>
-<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil sensorial existente<br><strong>Entonces</strong> recibo los datos para generar el hexágono sensorial.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil que no existe<br><strong>Entonces</strong> recibo un mensaje indicando que el perfil no se encontró.</td>
-<td>N/A</td>
-</tr>
-<tr>
 <td>US06</td>
 <td>Historial de Catas</td>
 <td>Como barista profesional, quiero acceder al historial de catas por lote, origen o periodo para analizar tendencias y consistencia</td>
@@ -1421,25 +1366,11 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>EP05</td>
 </tr>
 <tr>
-<td>TS09</td>
-<td>POST HTTPS Recetas</td>
-<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta completa de preparación<br><strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta con método de preparación inválido<br><strong>Entonces</strong> recibo un mensaje con los métodos válidos.</td>
-<td>N/A</td>
-</tr>
-<tr>
 <td>US08</td>
 <td>Calibración de Molienda</td>
 <td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
 <td><strong>Escenario 1:</strong> Registro de nueva calibración.<br><strong>Dado que</strong> el usuario ajusta un molino para un método específico<br><strong>Cuando</strong> documenta la configuración precisa (número, apertura) en el sistema<br><strong>Entonces</strong> la calibración queda registrada con fecha, equipo y método asociados.<br><br><strong>Escenario 2:</strong> Referencia visual comparativa.<br><strong>Dado que</strong> el usuario necesita una referencia objetiva de molienda<br><strong>Cuando</strong> adjunta foto de la molienda y registra el tiempo resultante de extracción<br><strong>Entonces</strong> el sistema almacena estos datos como estándar visual para comparaciones futuras.</td>
 <td>EP05</td>
-</tr>
-<tr>
-<td>TS10</td>
-<td>POST HTTPS Calibraciones</td>
-<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una nueva calibración con todos los datos<br><strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una imagen en formato no soportado<br><strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.</td>
-<td>N/A</td>
 </tr>
 <tr>
 <td>US09</td>
@@ -1456,264 +1387,432 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>EP06</td>
 </tr>
 <tr>
-<td>TS08</td>
-<td>POST HTTPS SesionesTueste</td>
-<td>Como desarrollador, quiero registrar sesiones de tueste mediante una API para documentar cada proceso</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> solicito iniciar una sesión con lote y perfil válidos<br><strong>Entonces</strong> recibo confirmación de la sesión iniciada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> solicito iniciar sesión con un lote ya agotado<br><strong>Entonces</strong> recibo un mensaje indicando que el lote no está disponible.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>TS09</td>
-<td>PATCH HTTPS SesionesTueste</td>
-<td>Como desarrollador, quiero actualizar lecturas de una sesión de tueste mediante una API para construir la curva real</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> envío nuevas lecturas de tiempo y temperatura<br><strong>Entonces</strong> recibo confirmación de la lectura registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> envío lecturas a una sesión ya finalizada<br><strong>Entonces</strong> recibo un mensaje indicando que la sesión está cerrada.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US06</td>
+<td>US11</td>
 <td>Análisis Comparativo de Tuestes</td>
 <td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
 <td><strong>Escenario 1:</strong> Selección de sesiones a comparar.<br><strong>Dado que</strong> el usuario tiene múltiples sesiones de tueste registradas<br><strong>Cuando</strong> selecciona dos o más sesiones para análisis comparativo<br><strong>Entonces</strong> el sistema muestra las curvas superpuestas con códigos de color diferenciados.<br><br><strong>Escenario 2:</strong> Análisis de variables específicas.<br><strong>Dado que</strong> el usuario desea estudiar factores concretos del tueste<br><strong>Cuando</strong> selecciona variables específicas de interés (tiempo desarrollo, temperatura final)<br><strong>Entonces</strong> el sistema muestra su correlación con los resultados sensoriales registrados.</td>
 <td>EP03</td>
 </tr>
 <tr>
-<td>TS10</td>
-<td>GET HTTPS Análisis-Tueste</td>
-<td>Como desarrollador, quiero obtener análisis comparativo de tuestes mediante una API para identificar patrones</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito comparar varias sesiones de tueste<br><strong>Entonces</strong> recibo las curvas comparativas y correlaciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito comparar demasiadas sesiones<br><strong>Entonces</strong> recibo un mensaje indicando el límite máximo permitido.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US07</td>
-<td>Biblioteca de Defectos de Tueste</td>
-<td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
-<td><strong>Escenario 1:</strong> Consulta de defecto.<br><strong>Dado que</strong> el usuario observa anomalías en su café recién tostado<br><strong>Cuando</strong> busca en el sistema por características visuales o descriptivas del problema<br><strong>Entonces</strong> el sistema muestra posibles defectos coincidentes con sus causas y soluciones.<br><br><strong>Escenario 2:</strong> Documentación de soluciones.<br><strong>Dado que</strong> el usuario identifica un defecto específico en su tueste<br><strong>Cuando</strong> accede a la ficha detallada del defecto en la biblioteca<br><strong>Entonces</strong> el sistema presenta causas probables y soluciones recomendadas con ejemplos.</td>
-<td>EP03</td>
-</tr>
-<tr>
-<td>TS11</td>
-<td>GET HTTPS DefectosTueste</td>
-<td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco defectos con criterios específicos<br><strong>Entonces</strong> recibo los defectos coincidentes y sus soluciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco sin especificar ningún criterio<br><strong>Entonces</strong> recibo un mensaje solicitando al menos un parámetro de búsqueda.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US08</td>
-<td>Cata Digital Estructurada</td>
-<td>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste</td>
-<td><strong>Escenario 1:</strong> Creación de nueva cata.<br><strong>Dado que</strong> el usuario prueba un café recién tostado<br><strong>Cuando</strong> inicia una nueva sesión de cata vinculada al lote y tueste específicos<br><strong>Entonces</strong> el sistema presenta el formulario completo de evaluación sensorial.<br><br><strong>Escenario 2:</strong> Evaluación por atributos.<br><strong>Dado que</strong> el usuario sigue un protocolo estandarizado de cata<br><strong>Cuando</strong> califica cada atributo sensorial (acidez, cuerpo, dulzor, etc.) en la escala definida<br><strong>Entonces</strong> el sistema genera automáticamente el perfil sensorial completo.</td>
-<td>EP04</td>
-</tr>
-<tr>
-<td>TS12</td>
-<td>POST HTTPS Catas</td>
-<td>Como desarrollador, quiero registrar evaluaciones sensoriales mediante una API para documentar características del café</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una evaluación completa de un café<br><strong>Entonces</strong> recibo confirmación de la cata registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una cata sin identificar el lote o tueste<br><strong>Entonces</strong> recibo un mensaje indicando que se requiere identificar el café.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US09</td>
+<td>US12</td>
 <td>Visualización de Perfiles Sensoriales</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
 <td><strong>Escenario 1:</strong> Generación de hexágono sensorial.<br><strong>Dado que</strong> el usuario ha completado una evaluación de cata<br><strong>Cuando</strong> solicita la visualización gráfica de los resultados<br><strong>Entonces</strong> el sistema genera el hexágono con los seis atributos principales evaluados.<br><br><strong>Escenario 2:</strong> Comparación de perfiles.<br><strong>Dado que</strong> el usuario desea contrastar diferentes cafés evaluados<br><strong>Cuando</strong> selecciona múltiples catas para visualización simultánea<br><strong>Entonces</strong> el sistema muestra los hexágonos superpuestos con códigos de color diferenciados.</td>
 <td>EP04</td>
 </tr>
 <tr>
-<td>TS13</td>
-<td>GET HTTPS PerfilesSensoriales</td>
-<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil sensorial existente<br><strong>Entonces</strong> recibo los datos para generar el hexágono sensorial.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil que no existe<br><strong>Entonces</strong> recibo un mensaje indicando que el perfil no se encontró.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US10</td>
+<td>US13</td>
 <td>Correlación Tueste-Sabor</td>
 <td>Como barista profesional, quiero visualizar la correlación entre parámetros de tueste y resultados sensoriales para optimizar mis perfiles</td>
 <td><strong>Escenario 1:</strong> Análisis de factor específico.<br><strong>Dado que</strong> el usuario busca entender la influencia de un parámetro técnico<br><strong>Cuando</strong> selecciona una variable concreta de tueste (ej. tiempo de desarrollo)<br><strong>Entonces</strong> el sistema muestra gráficos de correlación con atributos sensoriales registrados.<br><br><strong>Escenario 2:</strong> Identificación de patrones.<br><strong>Dado que</strong> el usuario busca consistencia en resultados sensoriales<br><strong>Cuando</strong> analiza múltiples sesiones que produjeron perfiles similares<br><strong>Entonces</strong> el sistema identifica y destaca patrones comunes en los perfiles de tueste.</td>
 <td>EP04</td>
 </tr>
 <tr>
-<td>TS14</td>
-<td>GET HTTPS Correlaciones</td>
-<td>Como desarrollador, quiero obtener correlaciones entre tueste y sabor mediante una API para optimizar procesos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito correlaciones entre parámetros específicos<br><strong>Entonces</strong> recibo los datos de correlación estadística.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito correlacionar parámetros incompatibles<br><strong>Entonces</strong> recibo un mensaje con los parámetros que pueden correlacionarse.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US11</td>
-<td>Historial de Catas</td>
-<td>Como barista profesional, quiero acceder al historial de catas por lote, origen o periodo para analizar tendencias y consistencia</td>
-<td><strong>Escenario 1:</strong> Filtrado por criterios múltiples.<br><strong>Dado que</strong> el usuario busca catas específicas en su historial<br><strong>Cuando</strong> aplica filtros combinados (fecha, origen, variedad, procesamiento)<br><strong>Entonces</strong> el sistema muestra resultados que cumplen todos los criterios establecidos.<br><br><strong>Escenario 2:</strong> Análisis de evolución temporal.<br><strong>Dado que</strong> el usuario quiere evaluar cambios en el tiempo de un mismo café<br><strong>Cuando</strong> selecciona un lote específico con múltiples catas realizadas<br><strong>Entonces</strong> el sistema presenta gráficos de evolución de atributos a lo largo del tiempo.</td>
-<td>EP04</td>
-</tr>
-<tr>
-<td>US12</td>
-<td>Creación de Recetas de Preparación</td>
-<td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
-<td><strong>Escenario 1:</strong> Creación de receta estándar.<br><strong>Dado que</strong> el usuario desarrolla una nueva receta de preparación<br><strong>Cuando</strong> registra todos los parámetros requeridos (ratio, temperatura, tiempo, molienda, método)<br><strong>Entonces</strong> el sistema guarda la receta completa en su biblioteca personal.<br><br><strong>Escenario 2:</strong> Vinculación a lote específico.<br><strong>Dado que</strong> el usuario optimiza una receta para un café particular<br><strong>Cuando</strong> asocia la receta a un lote específico registrado en el sistema<br><strong>Entonces</strong> el sistema establece la trazabilidad completa desde origen hasta método de preparación.</td>
-<td>EP05</td>
-</tr>
-<tr>
-<td>TS15</td>
-<td>POST HTTPS Recetas</td>
-<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta completa de preparación<br><strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta con método de preparación inválido<br><strong>Entonces</strong> recibo un mensaje con los métodos válidos.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US13</td>
-<td>Calibración de Molienda</td>
-<td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
-<td><strong>Escenario 1:</strong> Registro de nueva calibración.<br><strong>Dado que</strong> el usuario ajusta un molino para un método específico<br><strong>Cuando</strong> documenta la configuración precisa (número, apertura) en el sistema<br><strong>Entonces</strong> la calibración queda registrada con fecha, equipo y método asociados.<br><br><strong>Escenario 2:</strong> Referencia visual comparativa.<br><strong>Dado que</strong> el usuario necesita una referencia objetiva de molienda<br><strong>Cuando</strong> adjunta foto de la molienda y registra el tiempo resultante de extracción<br><strong>Entonces</strong> el sistema almacena estos datos como estándar visual para comparaciones futuras.</td>
-<td>EP05</td>
-</tr>
-<tr>
-<td>TS16</td>
-<td>POST HTTPS Calibraciones</td>
-<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una nueva calibración con todos los datos<br><strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una imagen en formato no soportado<br><strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.</td>
-<td>N/A</td>
-</tr>
-<tr>
 <td>US14</td>
-<td>Portafolio de Bebidas</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
-<td><strong>Escenario 1:</strong> Creación de ficha de bebida.<br><strong>Dado que</strong> el usuario desarrolla una bebida especial para su menú<br><strong>Cuando</strong> completa la ficha técnica (ingredientes, método, presentación, foto)<br><strong>Entonces</strong> el sistema incorpora la bebida a su portafolio digital profesional.<br><br><strong>Escenario 2:</strong> Organización por categorías personalizadas.<br><strong>Dado que</strong> el usuario maneja diversas bebidas en su portafolio<br><strong>Cuando</strong> las clasifica según tipos definidos (espresso, filtrado, signature, estacionales)<br><strong>Entonces</strong> el sistema genera un catálogo organizado y fácilmente consultable.</td>
-<td>EP05</td>
-</tr>
-<tr>
-<td>US15</td>
 <td>Compartir Recetas</td>
 <td>Como barista profesional, quiero compartir mis recetas con mi equipo para mantener consistencia en la preparación</td>
 <td><strong>Escenario 1:</strong> Compartir con equipo interno.<br><strong>Dado que</strong> el usuario desarrolla una receta exitosa que debe estandarizarse<br><strong>Cuando</strong> la marca como "compartida con equipo" y define permisos<br><strong>Entonces</strong> el sistema la pone a disposición de todos los miembros autorizados.<br><br><strong>Escenario 2:</strong> Sugerencia de mejoras.<br><strong>Dado que</strong> un miembro del equipo prueba una receta compartida<br><strong>Cuando</strong> implementa variaciones y propone ajustes documentados<br><strong>Entonces</strong> el sistema notifica al creador original y registra las sugerencias manteniendo la versión original.</td>
 <td>EP05</td>
 </tr>
 <tr>
-<td>US16</td>
-<td>Control de Inventario Integrado</td>
-<td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
-<td><strong>Escenario 1:</strong> Seguimiento centralizado de stock.<br><strong>Dado que</strong> el usuario maneja múltiples productos y estados del café<br><strong>Cuando</strong> accede al panel central de inventario<br><strong>Entonces</strong> el sistema muestra niveles actuales, movimientos recientes y alertas activas.<br><br><strong>Escenario 2:</strong> Registro de consumo con trazabilidad.<br><strong>Dado que</strong> el usuario utiliza café para producción diaria<br><strong>Cuando</strong> registra el consumo vinculándolo a lotes específicos y productos finales<br><strong>Entonces</strong> el sistema actualiza automáticamente las existencias y mantiene la trazabilidad.</td>
-<td>EP06</td>
-</tr>
-<tr>
-<td>TS17</td>
-<td>GET HTTPS Inventario</td>
-<td>Como desarrollador, quiero consultar el inventario integrado mediante una API para visualizar existencias</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> solicito el inventario con filtros específicos<br><strong>Entonces</strong> recibo el listado de existencias actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> solicito información sin tener permisos suficientes<br><strong>Entonces</strong> recibo un mensaje indicando acceso denegado.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>TS18</td>
-<td>PATCH HTTPS Inventario</td>
-<td>Como desarrollador, quiero actualizar el consumo de inventario mediante una API para mantener existencias actualizadas</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> registro el consumo de un producto con cantidad válida<br><strong>Entonces</strong> recibo confirmación del inventario actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> registro un consumo mayor al disponible<br><strong>Entonces</strong> recibo un mensaje indicando stock insuficiente.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US17</td>
+<td>US15</td>
 <td>Gestión de Costos de Producción</td>
 <td>Como dueño de cafetería de especialidad, quiero registrar y analizar los costos de producción de cada lote para optimizar mi estructura de precios y rentabilidad</td>
 <td><strong>Escenario 1:</strong> Registro completo de estructura de costos.<br><strong>Dado que</strong> el usuario necesita documentar todos los costos de un lote<br><strong>Cuando</strong> ingresa al módulo de costos y selecciona un lote procesado<br><strong>Entonces</strong> el sistema presenta un formulario con categorías predefinidas para cada tipo de costo (compra, transporte, almacenamiento, mano de obra, procesamiento).<br><br><strong>Escenario 2:</strong> Visualización de indicadores económicos.<br><strong>Dado que</strong> el usuario ha completado el registro de costos<br><strong>Cuando</strong> accede al dashboard económico del lote<br><strong>Entonces</strong> el sistema muestra automáticamente indicadores clave como costo por kilo, costo por taza y margen potencial según precios de mercado.</td>
 <td>EP06</td>
 </tr>
 <tr>
-<td>US18</td>
+<td>US16</td>
 <td>Análisis de Eficiencia y Rendimiento</td>
 <td>Como dueño de cafetería de especialidad, quiero monitorear y comparar el rendimiento productivo entre distintos lotes para identificar factores que afectan la eficiencia</td>
 <td><strong>Escenario 1:</strong> Registro automático de indicadores de rendimiento.<br><strong>Dado que</strong> un lote ha sido procesado completamente<br><strong>Cuando</strong> el usuario finaliza el registro de tueste y producción<br><strong>Entonces</strong> el sistema calcula automáticamente métricas de rendimiento (% de merma, tiempo efectivo, productividad por hora).<br><br><strong>Escenario 2:</strong> Comparativa avanzada entre lotes.<br><strong>Dado que</strong> el usuario busca optimizar su producción<br><strong>Cuando</strong> accede a la herramienta de análisis y selecciona múltiples lotes con atributos similares<br><strong>Entonces</strong> el sistema genera una tabla comparativa que resalta variaciones significativas en rendimiento y señala posibles causas basadas en parámetros registrados.</td>
 <td>EP06</td>
 </tr>
 <tr>
-<td>US19</td>
+<td>US17</td>
 <td>Reportes de Trazabilidad</td>
 <td>Como dueño de cafetería de especialidad, quiero generar reportes de trazabilidad completa para comunicar transparencia y valor agregado</td>
 <td><strong>Escenario 1:</strong> Generación de reporte integral por lote.<br><strong>Dado que</strong> el usuario necesita documentar la trazabilidad completa<br><strong>Cuando</strong> selecciona un lote específico que ha sido procesado<br><strong>Entonces</strong> el sistema genera un informe detallado con toda la cadena documentada desde origen.<br><br><strong>Escenario 2:</strong> Ficha técnica comercial para cliente.<br><strong>Dado que</strong> el usuario necesita comunicar el valor diferencial de su producto<br><strong>Cuando</strong> solicita generar una ficha para un producto específico de su catálogo<br><strong>Entonces</strong> el sistema produce un documento que incluye origen, procesamiento, tueste y perfil sensorial.</td>
 <td>EP06</td>
 </tr>
 <tr>
-<td>US20</td>
+<td>US18</td>
 <td>Información del Producto</td>
 <td>Como visitante de la landing page, quiero encontrar información clara sobre la plataforma para entender sus beneficios y decidir si me interesa</td>
 <td><strong>Escenario 1:</strong> Primera visita al sitio.<br><strong>Dado que</strong> el visitante accede por primera vez al sitio web<br><strong>Cuando</strong> carga la página de inicio<br><strong>Entonces</strong> visualiza el mensaje principal (value proposition) y beneficios clave.<br><br><strong>Escenario 2:</strong> Exploración de características.<br><strong>Dado que</strong> el visitante desea conocer las funcionalidades<br><strong>Cuando</strong> navega por la sección de características destacadas<br><strong>Entonces</strong> encuentra información clara con ilustraciones visuales de cada funcionalidad.</td>
 <td>EP07</td>
 </tr>
 <tr>
-<td>US21</td>
+<td>US19</td>
 <td>Secciones Específicas por Segmento</td>
 <td>Como visitante de la landing page, quiero encontrar información adaptada a mi perfil profesional para evaluar si la solución responde a mis necesidades específicas</td>
 <td><strong>Escenario 1:</strong> Sección para baristas.<br><strong>Dado que</strong> el visitante se identifica como barista profesional<br><strong>Cuando</strong> accede a la sección "Para Baristas"<br><strong>Entonces</strong> encuentra contenido adaptado a sus desafíos específicos y testimonios relevantes.<br><br><strong>Escenario 2:</strong> Sección para cafeterías.<br><strong>Dado que</strong> el visitante administra o es dueño de una cafetería<br><strong>Cuando</strong> accede a la sección "Para Cafeterías"<br><strong>Entonces</strong> encuentra contenido enfocado en gestión de negocios, trazabilidad y certificaciones.</td>
 <td>EP07</td>
 </tr>
 <tr>
-<td>US22</td>
+<td>US20</td>
 <td>Contacto con Equipo</td>
 <td>Como visitante de la landing page, quiero contactar con el equipo del sistema para resolver dudas específicas antes de registrarme</td>
 <td><strong>Escenario 1:</strong> Envío de consulta.<br><strong>Dado que</strong> el visitante tiene preguntas sobre la plataforma<br><strong>Cuando</strong> completa el formulario de contacto con sus datos y consulta<br><strong>Entonces</strong> el sistema envía la información al equipo y muestra confirmación.<br><br><strong>Escenario 2:</strong> Solicitud de demostración.<br><strong>Dado que</strong> el visitante quiere ver el sistema en funcionamiento<br><strong>Cuando</strong> solicita una demostración personalizada mediante el formulario específico<br><strong>Entonces</strong> el sistema agenda la cita y envía confirmación con los detalles de conexión.</td>
 <td>EP07</td>
 </tr>
 <tr>
-<td>US23</td>
+<td>US21</td>
 <td>Acceso directo a plataforma</td>
 <td>Como visitante de la landing page, quiero redirigirme hacia la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
-<td><strong>Escenario 1:</strong> Navegación exitosa<br><strong>Dado que</strong> el visitante quiere empezar a usar el sistema<br><strong>Cuando</strong> navegue por la landing page y pulse el botón de acceso a la plataforma<br><strong>Entonces</strong> será transferido correctamente a la interfaz principal del sistema.<br><br><strong>Escenario 2:</strong> Error de conexión<br><strong>Dado que</strong> el visitante intenta ingresar al sistema<br><strong>Cuando</strong> pulse el botón de acceso en la landing page y exista un problema de conexión o disponibilidad del servidor<br><strong>Entonces</strong> visualizará una notificación clara explicando el problema.</td>
+<td><strong>Escenario 1:</strong> Navegación exitosa.<br><strong>Dado que</strong> el visitante quiere empezar a usar el sistema<br><strong>Cuando</strong> navegue por la landing page y pulse el botón de acceso a la plataforma<br><strong>Entonces</strong> será transferido correctamente a la interfaz principal del sistema.<br><br><strong>Escenario 2:</strong> Error de conexión.<br><strong>Dado que</strong> el visitante intenta ingresar al sistema<br><strong>Cuando</strong> pulse el botón de acceso en la landing page y exista un problema de conexión o disponibilidad del servidor<br><strong>Entonces</strong> visualizará una notificación clara explicando el problema.</td>
 <td>EP07</td>
 </tr>
 <tr>
-<td>TS19</td>
-<td>POST HTTPS Contacto</td>
-<td>Como desarrollador, quiero procesar formularios de contacto mediante una API para gestionar comunicaciones con visitantes</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API pública<br><strong>Cuando</strong> envío un formulario de contacto completo<br><strong>Entonces</strong> recibo confirmación del mensaje enviado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API pública<br><strong>Cuando</strong> envío un formulario sin email de contacto<br><strong>Entonces</strong> recibo un mensaje indicando que el email es obligatorio.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US24</td>
+<td>US22</td>
 <td>Registro y Autenticación (Usuarios)</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos</td>
 <td><strong>Escenario 1:</strong> El usuario accede a la pantalla de registro.<br><strong>Dado que</strong> el usuario no tiene una cuenta en el sistema<br><strong>Cuando</strong> visualiza las opciones de registro (correo, Google, Facebook)<br><strong>Entonces</strong> el sistema permite elegir su método preferido y completar el registro.<br><br><strong>Escenario 2:</strong> El usuario inicia sesión.<br><strong>Dado que</strong> el usuario ya tiene una cuenta registrada<br><strong>Cuando</strong> ingresa sus credenciales correctamente<br><strong>Entonces</strong> el sistema le permite acceder a su panel personalizado.<br><br><strong>Escenario 3:</strong> El usuario ingresa credenciales incorrectas.<br><strong>Dado que</strong> el usuario tiene una cuenta<br><strong>Cuando</strong> ingresa datos erróneos<br><strong>Entonces</strong> el sistema muestra un mensaje de error y opciones de recuperación.</td>
 <td>EP01</td>
 </tr>
 <tr>
-<td>TS20</td>
-<td>POST HTTPS Usuarios</td>
-<td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br><strong>Cuando</strong> solicito registrar un usuario con datos válidos<br><strong>Entonces</strong> recibo confirmación de usuario creado con su identificador.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br><strong>Cuando</strong> solicito registrar un usuario con email ya existente<br><strong>Entonces</strong> recibo un mensaje indicando que el email ya está registrado.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>TS21</td>
-<td>POST HTTPS Autenticación</td>
-<td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de autenticación<br><strong>Cuando</strong> envío credenciales válidas de un usuario<br><strong>Entonces</strong> recibo confirmación de acceso autorizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de autenticación<br><strong>Cuando</strong> envío credenciales incorrectas<br><strong>Entonces</strong> recibo un mensaje indicando error de autenticación.</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>US25</td>
+<td>US23</td>
 <td>Perfil Personalizado</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
 <td><strong>Escenario 1:</strong> Configuración inicial de perfil.<br><strong>Dado que</strong> el usuario ha completado el registro exitosamente<br><strong>Cuando</strong> accede por primera vez al sistema<br><strong>Entonces</strong> el sistema solicita completar información básica (nombre, rol, experiencia).<br><br><strong>Escenario 2:</strong> Actualización de perfil.<br><strong>Dado que</strong> el usuario desea modificar sus datos personales<br><strong>Cuando</strong> accede a la sección de perfil y realiza cambios<br><strong>Entonces</strong> el sistema guarda la información actualizada correctamente.</td>
 <td>EP01</td>
 </tr>
 <tr>
-<td>US26</td>
+<td>US24</td>
 <td>Selección de Plan</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero elegir entre los diferentes planes disponibles para acceder a las funcionalidades que mejor se adapten a mis necesidades</td>
 <td><strong>Escenario 1:</strong> Visualización de planes.<br><strong>Dado que</strong> el usuario está registrado en el sistema<br><strong>Cuando</strong> accede a la sección de planes disponibles<br><strong>Entonces</strong> el sistema muestra una comparativa detallada de funcionalidades y precios.<br><br><strong>Escenario 2:</strong> Selección de plan gratuito.<br><strong>Dado que</strong> el usuario desea utilizar funcionalidades básicas<br><strong>Cuando</strong> selecciona "Plan Base Cafetal"<br><strong>Entonces</strong> el sistema le otorga acceso inmediato a las funcionalidades correspondientes.</td>
 <td>EP01</td>
 </tr>
+
 <tr>
-<td>TS22</td>
-<td>GET HTTPS Planes</td>
-<td>Como desarrollador, quiero obtener información sobre planes disponibles mediante una API para mostrar opciones de suscripción</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de planes<br><strong>Cuando</strong> solicito la lista de planes disponibles<br><strong>Entonces</strong> recibo todos los planes con sus características y precios.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de planes<br><strong>Cuando</strong> solicito los planes y hay un problema técnico<br><strong>Entonces</strong> recibo un mensaje indicando que el servicio no está disponible.</td>
+<td>TS01</td>
+<td>API HTTPS Proveedores</td>
+<td>Como desarrollador, quiero diseñar una API para gestionar proveedores y permitir su registro, consulta y evaluación</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> registro un proveedor con datos completos<br>
+<strong>Entonces</strong> recibo confirmación del proveedor creado.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> registro un proveedor con datos incompletos<br>
+<strong>Entonces</strong> recibo un mensaje con los campos faltantes.<br><br>
+
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> consulto proveedores con filtros<br>
+<strong>Entonces</strong> recibo los proveedores que cumplen los criterios.
+</td>
 <td>N/A</td>
 </tr>
+
 <tr>
-<td>TS23</td>
-<td>POST HTTPS Planes</td>
-<td>Como desarrollador, quiero suscribir usuarios a planes mediante una API para gestionar acceso a funcionalidades</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de suscripciones<br><strong>Cuando</strong> solicito una suscripción con plan y pago válidos<br><strong>Entonces</strong> recibo confirmación de la suscripción activada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de suscripciones<br><strong>Cuando</strong> solicito una suscripción con método de pago rechazado<br><strong>Entonces</strong> recibo un mensaje sobre el problema de pago.</td>
+<td>TS02</td>
+<td>API HTTPS Lotes</td>
+<td>Como desarrollador, quiero diseñar una API para gestionar lotes de café y su trazabilidad</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> registro un lote con datos completos<br>
+<strong>Entonces</strong> recibo confirmación del lote creado.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> registro un lote con proveedor inexistente<br>
+<strong>Entonces</strong> recibo un mensaje de error.<br><br>
+
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> actualizo el estado de un lote<br>
+<strong>Entonces</strong> recibo el lote con su estado actualizado.
+</td>
 <td>N/A</td>
 </tr>
+
+<tr>
+<td>TS03</td>
+<td>API HTTPS Perfiles de Tueste</td>
+<td>Como desarrollador, quiero diseñar una API para crear y consultar perfiles de tueste</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> creo un perfil con parámetros válidos<br>
+<strong>Entonces</strong> recibo confirmación del perfil creado.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> ingreso valores fuera de rango<br>
+<strong>Entonces</strong> recibo un mensaje indicando los límites permitidos.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS04</td>
+<td>API HTTPS Defectos de Tueste</td>
+<td>Como desarrollador, quiero diseñar una API para consultar y registrar defectos de tueste</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de defectos<br>
+<strong>Cuando</strong> busco defectos con criterios específicos<br>
+<strong>Entonces</strong> recibo los defectos coincidentes y sus soluciones.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de defectos<br>
+<strong>Cuando</strong> busco sin criterios<br>
+<strong>Entonces</strong> recibo un mensaje solicitando parámetros.<br><br>
+
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de defectos<br>
+<strong>Cuando</strong> registro un defecto con datos completos<br>
+<strong>Entonces</strong> el sistema guarda el defecto correctamente.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS05</td>
+<td>API HTTPS Catas</td>
+<td>Como desarrollador, quiero diseñar una API para registrar y consultar evaluaciones sensoriales</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de catas<br>
+<strong>Cuando</strong> registro una evaluación completa<br>
+<strong>Entonces</strong> recibo confirmación de la cata.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de catas<br>
+<strong>Cuando</strong> registro una cata sin identificar el café<br>
+<strong>Entonces</strong> recibo un mensaje de error.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS06</td>
+<td>API HTTPS Sesiones de Tueste</td>
+<td>Como desarrollador, quiero diseñar una API para gestionar sesiones de tueste y sus lecturas</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de sesiones<br>
+<strong>Cuando</strong> inicio una sesión con datos válidos<br>
+<strong>Entonces</strong> recibo confirmación de la sesión.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de sesiones<br>
+<strong>Cuando</strong> envío lecturas de temperatura y tiempo<br>
+<strong>Entonces</strong> recibo confirmación de la lectura.<br><br>
+
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de sesiones<br>
+<strong>Cuando</strong> envío datos a una sesión cerrada<br>
+<strong>Entonces</strong> recibo un mensaje indicando que la sesión está finalizada.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS07</td>
+<td>API HTTPS Recetas</td>
+<td>Como desarrollador, quiero diseñar una API de recetas de preparación para documentar métodos óptimos</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> envío una receta completa de preparación<br>
+<strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> envío una receta con método de preparación inválido<br>
+<strong>Entonces</strong> recibo un mensaje con los métodos válidos.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS08</td>
+<td>API HTTPS Calibraciones</td>
+<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
+<strong>Cuando</strong> envío una nueva calibración con todos los datos<br>
+<strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
+<strong>Cuando</strong> envío una imagen en formato no soportado<br>
+<strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS09</td>
+<td>API HTTPS Análisis-Tueste</td>
+<td>Como desarrollador, quiero obtener análisis comparativo de tuestes mediante una API para identificar patrones</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de análisis<br>
+<strong>Cuando</strong> solicito comparar varias sesiones de tueste<br>
+<strong>Entonces</strong> recibo las curvas comparativas y correlaciones.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de análisis<br>
+<strong>Cuando</strong> solicito comparar demasiadas sesiones<br>
+<strong>Entonces</strong> recibo un mensaje indicando el límite máximo permitido.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS10</td>
+<td>API HTTPS Perfiles Sensoriales</td>
+<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br>
+<strong>Cuando</strong> solicito un perfil sensorial existente<br>
+<strong>Entonces</strong> recibo los datos para generar el hexágono sensorial.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br>
+<strong>Cuando</strong> solicito un perfil que no existe<br>
+<strong>Entonces</strong> recibo un mensaje indicando que el perfil no se encontró.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS11</td>
+<td>API HTTPS Correlaciones</td>
+<td>Como desarrollador, quiero obtener correlaciones entre tueste y sabor mediante una API para optimizar procesos</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de análisis<br>
+<strong>Cuando</strong> solicito correlaciones entre parámetros específicos<br>
+<strong>Entonces</strong> recibo los datos de correlación estadística.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de análisis<br>
+<strong>Cuando</strong> solicito correlacionar parámetros incompatibles<br>
+<strong>Entonces</strong> recibo un mensaje con los parámetros que pueden correlacionarse.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS12</td>
+<td>API HTTPS Inventario</td>
+<td>Como desarrollador, quiero diseñar una API de inventario integrado para visualizar existencias y registrar consumos</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de inventario<br>
+<strong>Cuando</strong> solicito el inventario con filtros específicos<br>
+<strong>Entonces</strong> recibo el listado de existencias actualizado.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de inventario<br>
+<strong>Cuando</strong> solicito información sin tener permisos suficientes<br>
+<strong>Entonces</strong> recibo un mensaje indicando acceso denegado.<br><br>
+
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de inventario<br>
+<strong>Cuando</strong> registro el consumo de un producto con cantidad válida<br>
+<strong>Entonces</strong> recibo confirmación del inventario actualizado.<br><br>
+
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de inventario<br>
+<strong>Cuando</strong> registro un consumo mayor al disponible<br>
+<strong>Entonces</strong> recibo un mensaje indicando stock insuficiente.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS13</td>
+<td>API HTTPS Contacto</td>
+<td>Como desarrollador, quiero procesar formularios de contacto mediante una API para gestionar comunicaciones con visitantes</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API pública<br>
+<strong>Cuando</strong> envío un formulario de contacto completo<br>
+<strong>Entonces</strong> recibo confirmación del mensaje enviado.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API pública<br>
+<strong>Cuando</strong> envío un formulario sin email de contacto<br>
+<strong>Entonces</strong> recibo un mensaje indicando que el email es obligatorio.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS14</td>
+<td>API HTTPS Usuarios</td>
+<td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br>
+<strong>Cuando</strong> solicito registrar un usuario con datos válidos<br>
+<strong>Entonces</strong> recibo confirmación de usuario creado con su identificador.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br>
+<strong>Cuando</strong> solicito registrar un usuario con email ya existente<br>
+<strong>Entonces</strong> recibo un mensaje indicando que el email ya está registrado.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS15</td>
+<td>API HTTPS Autenticación</td>
+<td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de autenticación<br>
+<strong>Cuando</strong> envío credenciales válidas de un usuario<br>
+<strong>Entonces</strong> recibo confirmación de acceso autorizado.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de autenticación<br>
+<strong>Cuando</strong> envío credenciales incorrectas<br>
+<strong>Entonces</strong> recibo un mensaje indicando error de autenticación.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS16</td>
+<td>API HTTPS Planes</td>
+<td>Como desarrollador, quiero diseñar una API de planes y suscripciones para mostrar opciones disponibles y gestionar el acceso a funcionalidades</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de planes<br>
+<strong>Cuando</strong> solicito la lista de planes disponibles<br>
+<strong>Entonces</strong> recibo todos los planes con sus características y precios.<br><br>
+
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de planes<br>
+<strong>Cuando</strong> solicito los planes y hay un problema técnico<br>
+<strong>Entonces</strong> recibo un mensaje indicando que el servicio no está disponible.<br><br>
+
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de suscripciones<br>
+<strong>Cuando</strong> solicito una suscripción con plan y pago válidos<br>
+<strong>Entonces</strong> recibo confirmación de la suscripción activada.<br><br>
+
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de suscripciones<br>
+<strong>Cuando</strong> solicito una suscripción con método de pago rechazado<br>
+<strong>Entonces</strong> recibo un mensaje sobre el problema de pago.
+</td>
+<td>N/A</td>
+</tr>
+
 </table>
 
 ## 3.3. Product Backlog
