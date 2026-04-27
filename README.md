@@ -1490,31 +1490,26 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>API HTTPS Proveedores</td>
 <td>Como desarrollador, quiero diseñar una API para gestionar proveedores y permitir su registro, consulta y evaluación</td>
 <td>
-
 <!--GET-->
 <strong>Escenario 1:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de proveedores<br>
 <strong>Cuando</strong> consulto proveedores con la barra de búsqueda<br>
 <strong>Entonces</strong> recibo los proveedores que cumplen con mi búsqueda.<br><br>
-
 <!--POST-->
 <strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de proveedores<br>
 <strong>Cuando</strong> registro un proveedor con datos completos<br>
 <strong>Entonces</strong> recibo confirmación del proveedor creado.<br><br>
-
 <!--POST erroneo-->
 <strong>Escenario 3:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de proveedores<br>
 <strong>Cuando</strong> registro un proveedor con datos incompletos<br>
 <strong>Entonces</strong> recibo un mensaje con los campos faltantes.<br><br>
-
 <!--PUT-->
 <strong>Escenario 4:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de proveedores<br>
 <strong>Cuando</strong> actualizo el estado de un proveedor<br>
 <strong>Entonces</strong> recibo el proveedor con su estado actualizado.<br><br>
-
 <!--DELETE-->
 <strong>Escenario 5:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de proveedores<br>
@@ -1529,32 +1524,27 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>API HTTPS Lotes</td>
 <td>Como desarrollador, quiero diseñar una API para gestionar lotes de café y su trazabilidad</td>
 <td>
-
 <!--GET-->
 <strong>Escenario 1:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
 <strong>Cuando</strong> consulto lotes con la barra de búsqueda<br>
 <strong>Entonces</strong> recibo los lotes que cumplen con mi búsqueda.
 </td>
-
 <!--POST-->
 <strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
 <strong>Cuando</strong> registro un lote con datos completos<br>
 <strong>Entonces</strong> recibo confirmación del lote creado.<br><br>
-
 <!--POST erroneo-->
 <strong>Escenario 3:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
 <strong>Cuando</strong> registro un lote con un proveedor inexistente<br>
 <strong>Entonces</strong> recibo un mensaje de error.<br><br>
-
 <!--PUT-->
 <strong>Escenario 4:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
 <strong>Cuando</strong> actualizo el estado de un lote<br>
 <strong>Entonces</strong> recibo el lote con su estado actualizado.<br><br>
-
 <!--DELETE-->
 <strong>Escenario 5:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
@@ -1569,15 +1559,36 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>API HTTPS Perfiles de Tueste</td>
 <td>Como desarrollador, quiero diseñar una API para crear y consultar perfiles de tueste</td>
 <td>
+<!--GET barra de busqueda-->
 <strong>Escenario 1:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
-<strong>Cuando</strong> creo un perfil con parámetros válidos<br>
-<strong>Entonces</strong> recibo confirmación del perfil creado.<br><br>
-
+<strong>Cuando</strong> consulto perfiles de tueste con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo los perfiles de tueste que cumplen con mi búsqueda.<br><br>
+<!--GET filtros-->
 <strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
-<strong>Cuando</strong> ingreso valores fuera de rango<br>
-<strong>Entonces</strong> recibo un mensaje indicando los límites permitidos.
+<strong>Cuando</strong> filtro perfiles de tueste con la opción de filtrar<br>
+<strong>Entonces</strong> recibo los perfiles de tueste que cumplen con mis filtros.<br><br>
+<!--POST-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> creo un perfil con parámetros válidos<br>
+<strong>Entonces</strong> reci perfil creado.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> registro un perfil de tueste con valores fuera de rango<br>
+<strong>Entonces</strong> recibo un mensaje indicando los límites establecidos.
+<!--PUT-->
+<strong>Escenario 5:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> actualizo el estado de un perfile de tueste<br>
+<strong>Entonces</strong> recibo el perfil de tueste con su estado actualizado.<br><br>
+<!--DELETE-->
+<strong>Escenario 6:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> borro un perfil de tueste<br>
+<strong>Entonces</strong> dicho perfil de tueste desaparece de la lista de perfiles de tueste.
 </td>
 <td>N/A</td>
 </tr>
@@ -1587,20 +1598,21 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>API HTTPS Defectos de Tueste</td>
 <td>Como desarrollador, quiero diseñar una API para consultar y registrar defectos de tueste</td>
 <td>
+<!--GET barra de busqueda-->
 <strong>Escenario 1:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de defectos<br>
-<strong>Cuando</strong> busco defectos con criterios específicos<br>
-<strong>Entonces</strong> recibo los defectos coincidentes y sus soluciones.<br><br>
-
+<strong>Cuando</strong> consulto defectos con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo los defectos que cumplen con mi búsqueda.<br><br>
+<!--POST-->
 <strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de defectos<br>
-<strong>Cuando</strong> busco sin criterios<br>
-<strong>Entonces</strong> recibo un mensaje solicitando parámetros.<br><br>
-
+<strong>Cuando</strong> registro un defecto con datos completos<br>
+<strong>Entonces</strong> el sistema guarda el defecto correctamente.<br><br>
+<!--POST erroneo-->
 <strong>Escenario 3:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de defectos<br>
-<strong>Cuando</strong> registro un defecto con datos completos<br>
-<strong>Entonces</strong> el sistema guarda el defecto correctamente.
+<strong>Cuando</strong> registro un defecto con datos incompletos<br>
+<strong>Entonces</strong> recibo un mensaje indicando los campos faltantes.
 </td>
 <td>N/A</td>
 </tr>
@@ -1610,10 +1622,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>API HTTPS Catas</td>
 <td>Como desarrollador, quiero diseñar una API para registrar y consultar evaluaciones sensoriales</td>
 <td>
+
+
 <strong>Escenario 1:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de catas<br>
 <strong>Cuando</strong> registro una evaluación completa<br>
 <strong>Entonces</strong> recibo confirmación de la cata.<br><br>
+
 
 <strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de catas<br>
