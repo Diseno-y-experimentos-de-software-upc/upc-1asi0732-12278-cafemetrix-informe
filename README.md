@@ -6948,7 +6948,7 @@ Puede añadirse un video *about the team* en el que se resume el rol de cada int
 
 - Enlace para acceder al [repositorio Back-end](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend/tree/main)
 
-- Enlace para acceder al [Landing-page deployado]()
+- Enlace para acceder al [Landing-page deployado](https://cafemetrix-cafelab-landingpage.web.app/)
 
 - Enlace para acceder al [Front-end deployado]()
 
