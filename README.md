@@ -422,11 +422,11 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>,... </td>
+    <td> Mi nombre es <strong>...</strong>, ... </td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>,... </td>
+    <td> Mi nombre es <strong>...</strong>, ... </td>
   </tr>
 
 </table>
@@ -550,6 +550,8 @@ A partir de lo recopilado se propopone una plataforma dual software + iot que au
 <td><img src="public/assets/images/chapter-1/lean-ux/lean-ux-canvas.png" alt="LeanUxCanvas"></td>
 
 Enlace para acceder al [Canvas](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
+
+
 
 ## 1.3. Segmentos objetivos
 
@@ -2552,6 +2554,7 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 
 Esta sección presenta, por sprint, el **Sprint Planning**, la matriz de **Aspect Leaders and Collaborators** y el **Sprint Backlog** (tablero Trello y tablas de historias/tareas).
 
+
 #### Sprint 1
 
 
@@ -2583,7 +2586,7 @@ Esta sección presenta, por sprint, el **Sprint Planning**, la matriz de **Aspec
         </tr>
         <tr>
             <th>Attendees (to planning meeting)</th>
-            <td>Fredy Fernández, Christian Inga, Quispe Michael, Oscar Antayhua, Adrian Donayre</td>
+            <td>Fredy Fernández, Christian Inga, Kalet Esteban, Guillermo Tantaleán, Adrian Donayre</td>
         </tr>
         <tr>
             <th>Sprint 0 Review Summary</th>
@@ -2639,7 +2642,7 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 <td>L</td>
 </tr>
 <tr>
-<td>Antayhua, Oscar</td>
+<td>Tantaleán, Guillermo</td>
 <td>guillermotantalean1</td>
 <td>C</td>
 <td>C</td>
@@ -2647,7 +2650,7 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 <td>C</td>
 </tr>
 <tr>
-<td>Quispe, Michael</td>
+<td>Esteban, Henry</td>
 <td>kalet123-commit</td>
 <td>C</td>
 <td>C</td>
@@ -2707,7 +2710,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Configurar proyecto y estructura base</td>
                 <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
                 <td>4</td>
-                <td>Oscar</td>
+                <td>Guillermo</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2717,7 +2720,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Desarrollar sección "Enfoque en beneficios claros"</td>
                 <td>Implementar sección con título y áreas diferenciadas para baristas y cafeterías</td>
                 <td>3</td>
-                <td>Michael</td>
+                <td>Kalet</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2757,7 +2760,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Desarrollar sección de testimonios</td>
                 <td>Crear área de testimonios con fotos y citas de usuarios actuales</td>
                 <td>3</td>
-                <td>Michael</td>
+                <td>Kalet</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2767,7 +2770,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Implementar sección FAQ y contacto</td>
                 <td>Crear área combinada con preguntas frecuentes y formulario de contacto con validación básica</td>
                 <td>4</td>
-                <td>Oscar</td>
+                <td>Guillermo</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2777,7 +2780,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Crear footer y enlaces</td>
                 <td>Implementar pie de página con navegación, recursos y contacto</td>
                 <td>4</td>
-                <td>Michael</td>
+                <td>Kalet</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2825,7 +2828,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
         </tr>
         <tr>
             <th>Attendees (to planning meeting)</th>
-            <td>Fredy Fernández, Christian Inga, Quispe Michael, Oscar Antayhua, Adrian Donayre</td>
+            <td>Fredy Fernández, Christian Inga, Kalet Esteban, Guillermo Tantaleán, Adrian Donayre</td>
         </tr>
         <tr>
             <th>Sprint 1 Review Summary</th>
@@ -2870,8 +2873,8 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 </tr>
 <tr>
 <th>Adrian<br/>Donayre</th>
-<th>Oscar<br/>Antayhua</th>
-<th>Michael<br/>Fred<br/>(Quispe)</th>
+<th>Guillermo<br/>Tantaleán</th>
+<th>Henry<br/>Esteban<br/>(Kalet)</th>
 <th>Fredy<br/>Fernández</th>
 <th>Christian<br/>Inga</th>
 </tr>
@@ -3267,7 +3270,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar formulario de cata</td>
 <td>Crear interfaz para evaluaciones sensoriales estructuradas</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3275,7 +3278,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar herramienta visual</td>
 <td>Agregar rueda de sabores interactiva para selección de atributos</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3303,7 +3306,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar vista de correlaciones</td>
 <td>Crear interfaz para visualizar relaciones entre parámetros</td>
 <td>2</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3311,7 +3314,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar análisis sensorial</td>
 <td>Agregar funcionalidad para mostrar resultados sensoriales</td>
 <td>3</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3321,7 +3324,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Crear vista de historial</td>
 <td>Diseñar interfaz para acceder a catas anteriores</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3329,7 +3332,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar filtros avanzados</td>
 <td>Agregar filtros por lote, fecha, origen y período</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3337,7 +3340,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Agregar análisis de tendencias</td>
 <td>Implementar gráficos de evolución temporal</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3347,7 +3350,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar editor de recetas</td>
 <td>Crear interfaz para documentar recetas detalladas</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3355,7 +3358,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar parámetros de preparación</td>
 <td>Agregar campos para temperatura, tiempo y proporciones</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3363,7 +3366,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Crear galería de métodos</td>
 <td>Implementar biblioteca visual de métodos de preparación</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3373,7 +3376,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar configurador de molienda</td>
 <td>Crear interfaz para documentar configuraciones por equipo</td>
 <td>1</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3381,7 +3384,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar guías visuales</td>
 <td>Agregar referencias visuales para tamaños de partícula</td>
 <td>1</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3409,7 +3412,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar sistema de compartir</td>
 <td>Crear funcionalidad para compartir recetas con el equipo</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3417,7 +3420,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Agregar control de versiones</td>
 <td>Implementar historial de cambios en recetas</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3427,7 +3430,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar dashboard de inventario</td>
 <td>Crear vista general de inventario de café verde y tostado</td>
 <td>2</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3435,7 +3438,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar alertas de stock</td>
 <td>Agregar notificaciones para niveles bajos de inventario</td>
 <td>1</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3499,7 +3502,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Configurar proyecto y estructura base</td>
 <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
 <td>4</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3507,7 +3510,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Desarrollar sección "Enfoque en beneficios claros"</td>
 <td>Implementar sección con título y áreas diferenciadas para baristas y cafeterías</td>
 <td>3</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3515,7 +3518,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar diseño adaptable</td>
 <td>Asegurar que la interfaz funcione en diferentes dispositivos</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>To-do</td>
 </tr>
 <tr>
@@ -3551,7 +3554,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Desarrollar sección de testimonios</td>
 <td>Crear área de testimonios con fotos y citas de usuarios actuales</td>
 <td>3</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3559,7 +3562,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar formulario de contacto</td>
 <td>Crear formulario funcional para consultas antes del registro</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3676,7 +3679,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
         </tr>
         <tr>
             <th>Attendees (to planning meeting)</th>
-            <td>Fredy Fernández, Christian Inga, Quispe Michael, Oscar Antayhua, Adrian Donayre, Camila Loli</td>
+            <td>Fredy Fernández, Christian Inga, Kalet Esteban, Guillermo Tantaleán, Adrian Donayre, Juan Diego Mondoñedo</td>
         </tr>
         <tr>
             <th>Sprint 2 Review Summary</th>
@@ -3719,11 +3722,11 @@ Para este Sprint, los aspectos principales corresponden a las User Stories resta
 </tr>
 <tr>
 <th>Adrian<br/>Donayre</th>
-<th>Oscar<br/>Antayhua</th>
-<th>Michael<br/>Fred<br/>(Quispe)</th>
+<th>Guillermo<br/>Tantaleán</th>
+<th>Henry<br/>Esteban<br/>(Kalet)</th>
 <th>Fredy<br/>Fernández</th>
 <th>Christian<br/>Inga</th>
-<th>Camila<br/>Loli</th>
+<th>Juan Diego<br/>Mondoñedo</th>
 </tr>
 <tr>
 <td>US05: Registro de Sesión de Tueste</td>
@@ -4189,7 +4192,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar formulario de cata</td>
 <td>Crear interfaz para evaluaciones sensoriales estructuradas</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4197,7 +4200,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar herramienta visual</td>
 <td>Agregar rueda de sabores interactiva para selección de atributos</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4225,7 +4228,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar vista de correlaciones</td>
 <td>Crear interfaz para visualizar relaciones entre parámetros</td>
 <td>2</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4233,7 +4236,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar análisis sensorial</td>
 <td>Agregar funcionalidad para mostrar resultados sensoriales</td>
 <td>3</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4243,7 +4246,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear vista de historial</td>
 <td>Diseñar interfaz para acceder a catas anteriores</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4251,7 +4254,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar filtros avanzados</td>
 <td>Agregar filtros por lote, fecha, origen y período</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4259,7 +4262,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Agregar análisis de tendencias</td>
 <td>Implementar gráficos de evolución temporal</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4269,7 +4272,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar editor de recetas</td>
 <td>Crear interfaz para documentar recetas detalladas</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4277,7 +4280,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar parámetros de preparación</td>
 <td>Agregar campos para temperatura, tiempo y proporciones</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4285,7 +4288,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear galería de métodos</td>
 <td>Implementar biblioteca visual de métodos de preparación</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4295,7 +4298,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar configurador de molienda</td>
 <td>Crear interfaz para documentar configuraciones por equipo</td>
 <td>1</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4303,7 +4306,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar guías visuales</td>
 <td>Agregar referencias visuales para tamaños de partícula</td>
 <td>1</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4331,7 +4334,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar sistema de compartir</td>
 <td>Crear funcionalidad para compartir recetas con el equipo</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4339,7 +4342,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Agregar control de versiones</td>
 <td>Implementar historial de cambios en recetas</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4349,7 +4352,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar dashboard de inventario</td>
 <td>Crear vista general de inventario de café verde y tostado</td>
 <td>2</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4357,7 +4360,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar alertas de stock</td>
 <td>Agregar notificaciones para niveles bajos de inventario</td>
 <td>1</td>
-<td>Michael</td>
+<td>Kalet</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4487,7 +4490,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar creación de planes</td>
 <td>Desarrollar endpoint POST seguro (HTTPS) para registro de nuevos planes</td>
 <td>3</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>To Review</td>
 </tr>
 <tr>
@@ -4507,7 +4510,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de certificaciones</td>
 <td>Desarrollar endpoint GET seguro para obtener listado de certificaciones</td>
 <td>2</td>
-<td>Camila</td>
+<td>Juan Diego</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4517,7 +4520,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar registro de perfiles de tueste</td>
 <td>Crear endpoint POST para almacenar perfiles de tueste con seguridad HTTPS</td>
 <td>3</td>
-<td>Camila</td>
+<td>Juan Diego</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4527,7 +4530,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar creación de sesiones de tueste</td>
 <td>Desarrollar endpoint POST seguro para registrar nuevas sesiones de tueste</td>
 <td>3</td>
-<td>Michael</td>
+<td>Henry</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -4537,7 +4540,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar actualización de sesiones</td>
 <td>Crear endpoint PATCH para modificar sesiones de tueste existentes</td>
 <td>2</td>
-<td>Michael</td>
+<td>Henry</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4557,7 +4560,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de defectos</td>
 <td>Crear endpoint GET seguro para obtener listado de defectos de tueste</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -4577,7 +4580,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de perfiles</td>
 <td>Crear endpoint GET seguro para recuperar perfiles sensoriales</td>
 <td>2</td>
-<td>Camila</td>
+<td>Juan Diego</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -4587,7 +4590,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de correlaciones</td>
 <td>Desarrollar endpoint GET seguro para obtener datos de correlaciones</td>
 <td>2</td>
-<td>Michael</td>
+<td>Henry</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -4657,7 +4660,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar sistema de autenticación</td>
 <td>Crear endpoint POST seguro para proceso de login y generación de tokens</td>
 <td>3</td>
-<td>Michael</td>
+<td>Henry</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -4677,7 +4680,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar creación de planes</td>
 <td>Crear endpoint POST seguro para registro de nuevos planes</td>
 <td>3</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>To review</td>
 </tr>
 </table>
@@ -4714,7 +4717,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
         </tr>
         <tr>
             <th>Attendees (to planning meeting)</th>
-            <td>Fredy Fernández, Christian Inga, Quispe Michael, Oscar Antayhua, Adrian Donayre, Camila Loli</td>
+            <td>Fredy Fernández, Christian Inga, Kalet Esteban, Guillermo Tantaleán, Adrian Donayre, Juan Diego Mondoñedo</td>
         </tr>
         <tr>
             <th>Sprint 3 Review Summary</th>
@@ -4757,11 +4760,11 @@ Para este Sprint, los aspectos principales se centrarán en el desarrollo de las
 </tr>
 <tr>
 <th>Adrian<br/>Donayre</th>
-<th>Oscar<br/>Antayhua</th>
-<th>Michael<br/>Fred<br/>(Quispe)</th>
+<th>Guillermo<br/>Tantaleán</th>
+<th>Henry<br/>Esteban<br/>(Kalet)</th>
 <th>Fredy<br/>Fernández</th>
 <th>Christian<br/>Inga</th>
-<th>Camila<br/>Loli</th>
+<th>Juan Diego<br/>Mondoñedo</th>
 </tr>
 <tr>
 <td>US06: Análisis Comparativo de Tuestes</td>
@@ -4858,7 +4861,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar selector múltiple</td>
 <td>Crear interfaz para seleccionar y comparar varios tuestes</td>
 <td>2</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4884,7 +4887,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar vista de correlaciones</td>
 <td>Crear interfaz para visualizar relaciones entre parámetros</td>
 <td>2</td>
-<td>Camila</td>
+<td>Juan Diego</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4902,7 +4905,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear calculadora de costos</td>
 <td>Diseñar herramienta para calcular costos por lote</td>
 <td>2</td>
-<td>Michael</td>
+<td>Henry</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4910,7 +4913,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar análisis de rentabilidad</td>
 <td>Agregar visualizaciones de márgenes y rentabilidad</td>
 <td>1</td>
-<td>Oscar</td>
+<td>Guillermo</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -4950,7 +4953,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar actualización de inventario</td>
 <td>Desarrollar endpoint PATCH seguro para modificar registros de inventario</td>
 <td>2</td>
-<td>Camila</td>
+<td>Juan Diego</td>
 <td>Done</td>
 </tr>
 </table>
@@ -4958,7 +4961,8 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 
 ### 5.2.2. Implemented Landing Page Evidence.
 
-Evidencias de implementación de la **landing page** (**Sprint 1**): desarrollo, ejecución, documentación de servicios y despliegue (Netlify).
+Evidencias de **landing**: ejecución y despliegue del **Sprint 1** (subsecciones 5.2.1.5, 5.2.1.6 y 5.2.1.7), más la evidencia de desarrollo (5.2.1.4) cuando corresponde al repositorio o rama de la landing.
+
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 <table border="1">
@@ -5460,7 +5464,6 @@ Evidencias de implementación de la **landing page** (**Sprint 1**): desarrollo,
 </tr>
 </table>
 
-
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 **Sección diferenciación de segmentos objetivo**
 <figure style="text-align: center;">
@@ -5477,10 +5480,8 @@ Evidencias de implementación de la **landing page** (**Sprint 1**): desarrollo,
     <img src="public/assets/images/Evidences/3.png" alt="Evidencia 3">
 </figure>
 
-
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 Para la entrega de nuestro primer sprint no se contempló la documentación de servicios.
-
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 En nuestro primer sprint, logramos desplegar la landing page. Estará mejorada para el segundo sprint, dado que se encontraron pequeñas partes que se pueden mejorar.
@@ -5499,7 +5500,8 @@ En nuestro primer sprint, logramos desplegar la landing page. Estará mejorada p
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence.
 
-Evidencias de la aplicación **web (frontend)**: **Development Evidence** y **Execution Evidence** de los sprints de implementación (Sprints 2–4; el Sprint 1 se centra en la landing).
+Evidencias de **frontend web**: **Development Evidence** y **Execution Evidence** de los sprints donde se implementó la aplicación web (Sprints 2–4; Sprint 1 se centra en landing).
+
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
@@ -5826,7 +5828,6 @@ Evidencias de la aplicación **web (frontend)**: **Development Evidence** y **Ex
 </tr>
 </table>
 
-
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 **Sección dashboard de dueño**
 <figure style="text-align: center;">
@@ -5852,7 +5853,6 @@ Evidencias de la aplicación **web (frontend)**: **Development Evidence** y **Ex
 <figure style="text-align: center;">
     <img src="public/assets/images/Evidences2/5.png" alt="Evidencia 5">
 </figure>
-
 
 #### 5.2.3.4. Development Evidence for Sprint Review.
 
@@ -5947,14 +5947,12 @@ Evidencias de la aplicación **web (frontend)**: **Development Evidence** y **Ex
 </tr>
 </table>
 
-
 #### 5.2.3.5. Execution Evidence for Sprint Review.
 Se muestran evidencias de la implementacion de frontend, considerando las user goals y correciones del despliegue anterior
 <td><img src="public/assets/images/evidencefrontend/evidence1.png" alt="Foto de Evidence 1"></td>
 <td><img src="public/assets/images/evidencefrontend/evidence2.png" alt="Foto de Evidence 2"></td>
 <td><img src="public/assets/images/evidencefrontend/evidence3.png" alt="Foto de Evidence 3"></td>
 <td><img src="public/assets/images/evidencefrontend/evidence4.png" alt="Foto de Evidence 4"></td>
-
 
 #### 5.2.4.4. Development Evidence for Sprint Review.
 
@@ -6051,7 +6049,6 @@ Se muestran evidencias de la implementacion de frontend, considerando las user g
 </tr>
 </table>
 
-
 #### 5.2.4.5. Execution Evidence for Sprint Review.
 Se muestran evidencias de la implementacion del frontend con backend, considerando las user goals y correciones del despliegue anterior.
 <td><img src="public/assets/images/EvidencesFinal/1.jpeg" alt="Foto de Evidence 1"></td>
@@ -6062,13 +6059,11 @@ Se muestran evidencias de la implementacion del frontend con backend, consideran
 
 ### 5.2.4. Acuerdo de Servicio - SaaS.
 
-**Pendiente:** incorporar el **Acuerdo de Servicio SaaS** según la plantilla o lineamientos del curso (SLA, alcance, responsabilidades, limitación de responsabilidad, tratamiento de datos, etc.).
+
 
 ### 5.2.5. Implemented Native-Mobile Application Evidence.
 
-Capturas y evidencias de ejecución en contexto **móvil** (principalmente **Sprint 3**). Completar con evidencias adicionales del equipo (build en dispositivo, capturas de app nativa) si aplica.
-
-
+Este proyecto no cuenta con implementacion de una aplicacion mobile, debido a los alcances de su primera version en el curso de Desarrollo de Aplicaciones Open Source y prioridad del curso actual.Por otra parte el proyecto cuenta con evidencia de desarrollo de un prototipo UI en figma.
 
 #### 5.2.3.5. Execution Evidence for Sprint Review.
 Se muestran evidencias de la implementacion de frontend, considerando las user goals y correciones del despliegue anterior
@@ -6080,7 +6075,8 @@ Se muestran evidencias de la implementacion de frontend, considerando las user g
 
 ### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence.
 
-Evidencias de **backend y API**: tablas de commits, documentación **Swagger/OpenAPI** y **despliegue** (cuando aplique por sprint).
+Evidencias de **backend / API**: tablas de commits del repositorio backend y secciones de **Services Documentation Evidence** (Swagger) y despliegue cuando apliquen por sprint.
+
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
@@ -6407,7 +6403,6 @@ Evidencias de **backend y API**: tablas de commits, documentación **Swagger/Ope
 </tr>
 </table>
 
-
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 2, el objetivo del equipo era avanzar con el desarrollo del front-end completo de la aplicación, dividiendo las responsabilidades por secciones entre los integrantes. Sin embargo, por motivos técnicos y de coordinación, algunas secciones asignadas no fueron completadas ni funcionales al momento del cierre del sprint.
@@ -6497,7 +6492,6 @@ on (Date)</th>
  
 </table>
 
-
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 En nuestro segundo sprint, logramos avanzar el front end mas no finalizarlo. Estará mejorada para el tercer sprint, dado que se encontraron inconvenientes al integrar el fake REST API en cada sección.
 
@@ -6528,7 +6522,6 @@ El despligue de la aplicacion frontend se realizo en firebase, utilizando la ram
   <img src="public/assets/images/evidenceSprint2/evidence3.png" alt="3">
   <img src="public/assets/images/evidenceSprint2/evidence4.png" alt="4">
 </div>
-
 
 #### 5.2.3.4. Development Evidence for Sprint Review.
 
@@ -6622,7 +6615,6 @@ El despligue de la aplicacion frontend se realizo en firebase, utilizando la ram
   <td>Jun 1, 2025</td>
 </tr>
 </table>
-
 
 #### 5.2.4.4. Development Evidence for Sprint Review.
 
@@ -6722,11 +6714,10 @@ El despligue de la aplicacion frontend se realizo en firebase, utilizando la ram
 
 ### 5.2.7. RESTful API documentation.
 
-Documentación de la API (**Services Documentation Evidence for Sprint Review** / Swagger, OpenAPI) por sprint.
+La documentación de la API se presenta como **Services Documentation Evidence for Sprint Review** (Swagger, OpenAPI) agrupada por sprint, según lo requerido en el ítem del curso.
 
 
-
-#### 5.2.7.1. Services Documentation Evidence for Sprint Review
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 2, el objetivo del equipo era avanzar con el desarrollo del front-end completo de la aplicación, dividiendo las responsabilidades por secciones entre los integrantes. Sin embargo, por motivos técnicos y de coordinación, algunas secciones asignadas no fueron completadas ni funcionales al momento del cierre del sprint.
 
@@ -6818,18 +6809,21 @@ on (Date)</th>
 
 ### 5.2.8. Team Collaboration Insights.
 
-#### 5.2.8.1. Team Collaboration Insights during Sprint.
+Resumen de **Team Collaboration Insights during Sprint** por cada sprint incluido en el informe.
+
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint.
 <table border="1">
   <tr>
     <th>Alumno</th>
     <th>Actividad</th>
   </tr>
   <tr>
-    <td>Antayhua Castillo Oscar Josue </td>
+    <td>Guillermo Fabián Tantaleán Mesta </td>
     <td>Creación de estructura inicial del proyecto e implementación de header con navegación y hero banner principal</td>
   </tr>
   <tr>
-    <td>Quispe Roldan Michael Fred</td>
+    <td>Henry Kalet Esteban Roman</td>
     <td>Implementación de sección con título y áreas diferenciadas para baristas y cafeterías</td>
   </tr>
   <tr>
@@ -6847,18 +6841,18 @@ on (Date)</th>
 </table>
 
 
-#### 5.2.8.2. Team Collaboration Insights during Sprint.
+#### 5.2.2.8. Team Collaboration Insights during Sprint.
 <table border="1">
   <tr>
     <th>Alumno</th>
     <th>Actividad</th>
   </tr>
   <tr>
-    <td>Antayhua Castillo Oscar Josue </td>
+    <td>Guillermo Fabián Tantaleán Mesta </td>
     <td>Creación de welcome barista, inventory, register production cost management and cupping sessions.</td>
   </tr>
   <tr>
-    <td>Quispe Roldan Michael Fred</td>
+    <td>Henry Kalet Esteban Roman</td>
     <td>Creación de defects library, patterns of roast with cupping, library relation of roast with cupping and record grind calibration.</td>
   </tr>
   <tr>
@@ -6955,4 +6949,3 @@ Puede añadirse un video *about the team* en el que se resume el rol de cada int
   - [Landing (referencia)](https://github.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab-landingPage.git)  
   - [Repositorio informe / rama con diagramas (referencia)](https://github.com/upc-pre-202510-1asi0730-4364-CafeMetrix/cafeLab/tree/feature/informe-readme)  
 - **Entornos desplegados (referencia, según repositorio reutilizado):** [Landing pública (ejemplo)](https://cafelanding-60903.web.app/) y [API Swagger (ejemplo, si aplica a la rama de referencia)](https://cafelabbackend.azurewebsites.net/swagger-ui/index.html#/)  
-- **Pendiente por el equipo 1ASI0732 (NRC 12278):** enlace al repositorio o carpeta pública con **entregable TB1 (Keynote,.zip, informe PDF si aplica)** y video de **exposición TB1** de este ciclo, cuando el docente o la coordinación compartan la ruta canónica.
