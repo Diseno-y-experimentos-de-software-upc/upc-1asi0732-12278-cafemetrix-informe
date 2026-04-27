@@ -1490,20 +1490,36 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>API HTTPS Proveedores</td>
 <td>Como desarrollador, quiero diseñar una API para gestionar proveedores y permitir su registro, consulta y evaluación</td>
 <td>
+
+<!--GET-->
 <strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> consulto proveedores con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo los proveedores que cumplen con mi búsqueda.<br><br>
+
+<!--POST-->
+<strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de proveedores<br>
 <strong>Cuando</strong> registro un proveedor con datos completos<br>
 <strong>Entonces</strong> recibo confirmación del proveedor creado.<br><br>
 
-<strong>Escenario 2:</strong><br>
+<!--POST erroneo-->
+<strong>Escenario 3:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de proveedores<br>
 <strong>Cuando</strong> registro un proveedor con datos incompletos<br>
 <strong>Entonces</strong> recibo un mensaje con los campos faltantes.<br><br>
 
-<strong>Escenario 3:</strong><br>
+<!--PUT-->
+<strong>Escenario 4:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de proveedores<br>
-<strong>Cuando</strong> consulto proveedores con filtros<br>
-<strong>Entonces</strong> recibo los proveedores que cumplen los criterios.
+<strong>Cuando</strong> actualizo el estado de un proveedor<br>
+<strong>Entonces</strong> recibo el proveedor con su estado actualizado.<br><br>
+
+<!--DELETE-->
+<strong>Escenario 5:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> borro un proveedor<br>
+<strong>Entonces</strong> dicho proveedor desaparece de la lista de proveedores.
 </td>
 <td>N/A</td>
 </tr>
@@ -1513,20 +1529,37 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>API HTTPS Lotes</td>
 <td>Como desarrollador, quiero diseñar una API para gestionar lotes de café y su trazabilidad</td>
 <td>
+
+<!--GET-->
 <strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> consulto lotes con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo los lotes que cumplen con mi búsqueda.
+</td>
+
+<!--POST-->
+<strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
 <strong>Cuando</strong> registro un lote con datos completos<br>
 <strong>Entonces</strong> recibo confirmación del lote creado.<br><br>
 
-<strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de lotes<br>
-<strong>Cuando</strong> registro un lote con proveedor inexistente<br>
-<strong>Entonces</strong> recibo un mensaje de error.<br><br>
-
+<!--POST erroneo-->
 <strong>Escenario 3:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> registro un lote con un proveedor inexistente<br>
+<strong>Entonces</strong> recibo un mensaje de error.<br><br>
+
+<!--PUT-->
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
 <strong>Cuando</strong> actualizo el estado de un lote<br>
-<strong>Entonces</strong> recibo el lote con su estado actualizado.
+<strong>Entonces</strong> recibo el lote con su estado actualizado.<br><br>
+
+<!--DELETE-->
+<strong>Escenario 5:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> borro un lote<br>
+<strong>Entonces</strong> dicho lote desaparece de la lista de lotes.
 </td>
 <td>N/A</td>
 </tr>
