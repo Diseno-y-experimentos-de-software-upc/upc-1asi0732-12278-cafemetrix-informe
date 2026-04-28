@@ -2558,27 +2558,20 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 
 #### Front End Web Application Deployment
 
-1. Iniciamos sesión en Netlify y vinculamos el repositorio correspondiente.  
-   ![Imagen 1](public/assets/images/SoftwareDeploymentConfiguration/Imagen1.png)
+1. Iniciamos sesión en Firebase y configuramos el proyecto.  
+   ![Imagen 1](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy1.png)
 
-2. Seleccionamos el proyecto adecuado desde la lista de repositorios.  
-   ![Imagen 2](public/assets/images/SoftwareDeploymentConfiguration/Imagen2.png)
+2. Configuramos los archivos de firebase en el proyecto  
+   ![Imagen 2](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy2.png)
+   ![Imagen 3](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy3.png)
 
-3. Completamos los campos necesarios:
-   - Equipo.
-   - Rama donde están los archivos.
-   - Nombre de la página a desplegar.  
-   ![Imagen 3](public/assets/images/SoftwareDeploymentConfiguration/Imagen3.png)  
-   ![Imagen 4](public/assets/images/SoftwareDeploymentConfiguration/Imagen4.png)
+3. Procedemos con el despliegue del sitio con los comandos de firebase.  
+   ![Imagen 5](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy4.png)
 
-4. Procedemos con el despliegue del sitio.  
-   ![Imagen 5](public/assets/images/SoftwareDeploymentConfiguration/Imagen5.png)
+4. Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en firebase.  
+   ![Imagen 5](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy5.png)
 
-5. Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en Netlify.  
-   ![Imagen 6](public/assets/images/SoftwareDeploymentConfiguration/Imagen6.png)  
-   ![Imagen 7](public/assets/images/SoftwareDeploymentConfiguration/Imagen7.png)
-
-🔗 **Página desplegada en Netlify**: [https://cafe-lab-landing-opensource.netlify.app/](https://cafe-lab-landing-opensource.netlify.app/)
+🔗 **Página desplegada en Firebase**: [https://cafemetrix-cafelab-landingpage.web.app/](https://cafemetrix-cafelab-landingpage.web.app/)
 
 
 ## 5.2. Product Implementation & Deployment.
