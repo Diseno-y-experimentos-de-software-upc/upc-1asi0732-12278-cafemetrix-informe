@@ -414,7 +414,7 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 <table border="1">
   <tr>
     <td><img src="public/assets/images/chapter-1/integrantes/adriand.jpeg" alt="Adrian Donayre" width="150"></td>
-    <td>Mi nombre es <strong>Adrian Donayre</strong>, tengo 19 años y actualmente estoy cursando el quinto ciclo de la carrera de Ingeniería de Software en la UPC. Tengo habilidad en los lenguajes C++ y javascript. Así mismo, cuento con experiencia en monitoreo de infraestructura en herramientas como Azure, NR y Kemp. Personalmente, opino que lo que hagamos en la universidad se verá reflejado en nuestra vida profesional. Por ello me esfuerzo en ampliar mis conocimientos y conseguir nuevas experiencias que me sumen para seguir mejorando.</td>
+    <td>Mi nombre es <strong>Adrian Donayre</strong>, tengo 21 años y actualmente estoy cursando el séptimo ciclo de la carrera de Ingeniería de Software en la UPC. Tengo habilidad en los lenguajes C++ y javascript. Así mismo, cuento con experiencia en monitoreo de infraestructura en herramientas como Azure, NR y Kemp. Personalmente, opino que lo que hagamos en la universidad se verá reflejado en nuestra vida profesional. Por ello me esfuerzo en ampliar mis conocimientos y conseguir nuevas experiencias que me sumen para seguir mejorando.</td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/fredy.png"alt="Fredy Fernandez" width="200">  </td>
@@ -422,7 +422,7 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/chris.jpg"alt="Christian Inga" width="200">  </td>
-    <td> Mi nombre es <strong>Christian Inga</strong>, tengo 20 años y actualmente me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Cuento con una gran disposición para el trabajo colaborativo y la capacidad de adaptarme rápidamente a diferentes metodologías de aprendizaje y dinámicas de grupo, asegurando siempre un desempeño confiable y organizado.</td>
+    <td> Mi nombre es <strong>Christian Inga</strong>, tengo 21 años y actualmente me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Cuento con una gran disposición para el trabajo colaborativo y la capacidad de adaptarme rápidamente a diferentes metodologías de aprendizaje y dinámicas de grupo, asegurando siempre un desempeño confiable y organizado.</td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/CamilaLoli.jpg"alt="CamilaLoli.jpg" width="200">  </td>
