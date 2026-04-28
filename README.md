@@ -1528,8 +1528,7 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <strong>Escenario 1:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
 <strong>Cuando</strong> consulto lotes con la barra de búsqueda<br>
-<strong>Entonces</strong> recibo los lotes que cumplen con mi búsqueda.
-</td>
+<strong>Entonces</strong> recibo los lotes que cumplen con mi búsqueda.<br><br>
 <!--POST-->
 <strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de lotes<br>
@@ -1622,183 +1621,99 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>API HTTPS Catas</td>
 <td>Como desarrollador, quiero diseñar una API para registrar y consultar evaluaciones sensoriales</td>
 <td>
-
-
+<!--POST-->
 <strong>Escenario 1:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de catas<br>
 <strong>Cuando</strong> registro una evaluación completa<br>
-<strong>Entonces</strong> recibo confirmación de la cata.<br><br>
-
-
+<strong>Entonces</strong> el sistema guarda la cata correctamente.<br><br>
+<!--GET filtro-->
 <strong>Escenario 2:</strong><br>
 <strong>Dado que</strong> tengo acceso a la API de catas<br>
-<strong>Cuando</strong> registro una cata sin identificar el café<br>
-<strong>Entonces</strong> recibo un mensaje de error.
+<strong>Cuando</strong> filtro catas con la opción de filtrar<br>
+<strong>Entonces</strong> recibo las catas que cumplen con mis filtros.<br><br>
+<!--DELETE-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de catas<br>
+<strong>Cuando</strong> borro una cata<br>
+<strong>Entonces</strong> dicha cata desaparece de la lista de catas.
 </td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS06</td>
-<td>API HTTPS Sesiones de Tueste</td>
-<td>Como desarrollador, quiero diseñar una API para gestionar sesiones de tueste y sus lecturas</td>
+<td>API HTTPS Recetas</td>
+<td>Como desarrollador, quiero diseñar una API de recetas de preparación para documentar métodos óptimos</td>
 <td>
+<!--GET barra de busqueda-->
 <strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de sesiones<br>
-<strong>Cuando</strong> inicio una sesión con datos válidos<br>
-<strong>Entonces</strong> recibo confirmación de la sesión.<br><br>
-
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> busco una receta con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo la receta que cumple con mi criterio de búsqueda.<br><br>
+<!--POST-->
 <strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de sesiones<br>
-<strong>Cuando</strong> envío lecturas de temperatura y tiempo<br>
-<strong>Entonces</strong> recibo confirmación de la lectura.<br><br>
-
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> creo una nueva receta de preparación<br>
+<strong>Entonces</strong> el sistema guarda la receta correctamente.<br><br>
+<!--POST erroneo-->
 <strong>Escenario 3:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de sesiones<br>
-<strong>Cuando</strong> envío datos a una sesión cerrada<br>
-<strong>Entonces</strong> recibo un mensaje indicando que la sesión está finalizada.
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> envío una receta sin la url de su imagen<br>
+<strong>Entonces</strong> recibo un mensaje indicando el campo faltante.<br><br>
+<!--DELETE-->
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> borro un ingrediente<br>
+<strong>Entonces</strong> dicho ingrediente desaparece de la lista de ingredientes.
 </td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS07</td>
-<td>API HTTPS Recetas</td>
-<td>Como desarrollador, quiero diseñar una API de recetas de preparación para documentar métodos óptimos</td>
+<td>API HTTPS Calibraciones</td>
+<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
 <td>
+<!--POST-->
 <strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de recetas<br>
-<strong>Cuando</strong> envío una receta completa de preparación<br>
-<strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br>
-
+<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
+<strong>Cuando</strong> envío una nueva calibración con todos los datos<br>
+<strong>Entonces</strong> el sistema guarda la calibración correctamente.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
+<strong>Cuando</strong> envío una imagen en formato no soportado<br>
+<strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.<br><br>
+<!--PUT-->
 <strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de recetas<br>
-<strong>Cuando</strong> envío una receta con método de preparación inválido<br>
-<strong>Entonces</strong> recibo un mensaje con los métodos válidos.
+<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
+<strong>Cuando</strong> actualizo el estado de una calibración<br>
+<strong>Entonces</strong> recibo la calibración con su estado actualizado.
 </td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS08</td>
-<td>API HTTPS Calibraciones</td>
-<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
+<td>API HTTPS Inventario</td>
+<td>Como desarrollador, quiero diseñar una API de inventario integrado para visualizar existencias y registrar consumos</td>
 <td>
+<!--POST-->
 <strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
-<strong>Cuando</strong> envío una nueva calibración con todos los datos<br>
-<strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br>
-
+<strong>Dado que</strong> tengo acceso a la API de inventario<br>
+<strong>Cuando</strong> envío un nuevo registro de consumo con todos los datos<br>
+<strong>Entonces</strong> recibo el historial de consumos actualizado.<br><br>
+<!--POST erroneo-->
 <strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
-<strong>Cuando</strong> envío una imagen en formato no soportado<br>
-<strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.
+<strong>Dado que</strong> tengo acceso a la API de inventario<br>
+<strong>Cuando</strong> envío un nuevo registro sin la cantidad usada<br>
+<strong>Entonces</strong> recibo un mensaje indicando el campo faltante.
 </td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS09</td>
-<td>API HTTPS Análisis-Tueste</td>
-<td>Como desarrollador, quiero obtener análisis comparativo de tuestes mediante una API para identificar patrones</td>
-<td>
-<strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de análisis<br>
-<strong>Cuando</strong> solicito comparar varias sesiones de tueste<br>
-<strong>Entonces</strong> recibo las curvas comparativas y correlaciones.<br><br>
-
-<strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de análisis<br>
-<strong>Cuando</strong> solicito comparar demasiadas sesiones<br>
-<strong>Entonces</strong> recibo un mensaje indicando el límite máximo permitido.
-</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS10</td>
-<td>API HTTPS Perfiles Sensoriales</td>
-<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
-<td>
-<strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br>
-<strong>Cuando</strong> solicito un perfil sensorial existente<br>
-<strong>Entonces</strong> recibo los datos para generar el hexágono sensorial.<br><br>
-
-<strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br>
-<strong>Cuando</strong> solicito un perfil que no existe<br>
-<strong>Entonces</strong> recibo un mensaje indicando que el perfil no se encontró.
-</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS11</td>
-<td>API HTTPS Correlaciones</td>
-<td>Como desarrollador, quiero obtener correlaciones entre tueste y sabor mediante una API para optimizar procesos</td>
-<td>
-<strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de análisis<br>
-<strong>Cuando</strong> solicito correlaciones entre parámetros específicos<br>
-<strong>Entonces</strong> recibo los datos de correlación estadística.<br><br>
-
-<strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de análisis<br>
-<strong>Cuando</strong> solicito correlacionar parámetros incompatibles<br>
-<strong>Entonces</strong> recibo un mensaje con los parámetros que pueden correlacionarse.
-</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS12</td>
-<td>API HTTPS Inventario</td>
-<td>Como desarrollador, quiero diseñar una API de inventario integrado para visualizar existencias y registrar consumos</td>
-<td>
-<strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de inventario<br>
-<strong>Cuando</strong> solicito el inventario con filtros específicos<br>
-<strong>Entonces</strong> recibo el listado de existencias actualizado.<br><br>
-
-<strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de inventario<br>
-<strong>Cuando</strong> solicito información sin tener permisos suficientes<br>
-<strong>Entonces</strong> recibo un mensaje indicando acceso denegado.<br><br>
-
-<strong>Escenario 3:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de inventario<br>
-<strong>Cuando</strong> registro el consumo de un producto con cantidad válida<br>
-<strong>Entonces</strong> recibo confirmación del inventario actualizado.<br><br>
-
-<strong>Escenario 4:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de inventario<br>
-<strong>Cuando</strong> registro un consumo mayor al disponible<br>
-<strong>Entonces</strong> recibo un mensaje indicando stock insuficiente.
-</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS13</td>
-<td>API HTTPS Contacto</td>
-<td>Como desarrollador, quiero procesar formularios de contacto mediante una API para gestionar comunicaciones con visitantes</td>
-<td>
-<strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API pública<br>
-<strong>Cuando</strong> envío un formulario de contacto completo<br>
-<strong>Entonces</strong> recibo confirmación del mensaje enviado.<br><br>
-
-<strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API pública<br>
-<strong>Cuando</strong> envío un formulario sin email de contacto<br>
-<strong>Entonces</strong> recibo un mensaje indicando que el email es obligatorio.
-</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS14</td>
 <td>API HTTPS Usuarios</td>
 <td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
 <td>
@@ -1816,7 +1731,7 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </tr>
 
 <tr>
-<td>TS15</td>
+<td>TS10</td>
 <td>API HTTPS Autenticación</td>
 <td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
 <td>
@@ -1829,34 +1744,6 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <strong>Dado que</strong> tengo acceso a la API de autenticación<br>
 <strong>Cuando</strong> envío credenciales incorrectas<br>
 <strong>Entonces</strong> recibo un mensaje indicando error de autenticación.
-</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS16</td>
-<td>API HTTPS Planes</td>
-<td>Como desarrollador, quiero diseñar una API de planes y suscripciones para mostrar opciones disponibles y gestionar el acceso a funcionalidades</td>
-<td>
-<strong>Escenario 1:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de planes<br>
-<strong>Cuando</strong> solicito la lista de planes disponibles<br>
-<strong>Entonces</strong> recibo todos los planes con sus características y precios.<br><br>
-
-<strong>Escenario 2:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de planes<br>
-<strong>Cuando</strong> solicito los planes y hay un problema técnico<br>
-<strong>Entonces</strong> recibo un mensaje indicando que el servicio no está disponible.<br><br>
-
-<strong>Escenario 3:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de suscripciones<br>
-<strong>Cuando</strong> solicito una suscripción con plan y pago válidos<br>
-<strong>Entonces</strong> recibo confirmación de la suscripción activada.<br><br>
-
-<strong>Escenario 4:</strong><br>
-<strong>Dado que</strong> tengo acceso a la API de suscripciones<br>
-<strong>Cuando</strong> solicito una suscripción con método de pago rechazado<br>
-<strong>Entonces</strong> recibo un mensaje sobre el problema de pago.
 </td>
 <td>N/A</td>
 </tr>
