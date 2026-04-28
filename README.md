@@ -51,15 +51,18 @@
 <!--Cualquier modificación del documento es una nueva versión-->
 # Registro de versiones del informe
 
-| Versión | Fecha       | Autor                                | Descripción de Modificación                                                        |
-|---------|-------------|--------------------------------------|------------------------------------------------------------------------------------|
-| 1.0     | 25/04/2026  | Fernandez Camayo, Carlos Fredy       | Creó el documento, estructura del informe y carátula                               |
-| 1.1     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Puso nuevo formato para project report collaboration insights y student outcome    |
-| 1.2     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió su perfil de integrante                                                     |
-| 1.3     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió sprint backlogs, deployment evidence, US, TS y Product Backlog              |
-| 1.4     | 27/04/2026  | Donayre Alvarez, Adrian Ricardo      | Actualizó los technical stories agrupandolos por API                               |
-| 1.5     | 28/04/2026  | Donayre Alvarez, Adrian Ricardo      | Filtró US, TS y Product Backlog para alinearlos con las funciones implementadas    |
-| 1.6     | 28/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió su Student Outcome y Project Report Collaboration Insights                  |
+| Versión | Fecha      | Autor                           | Descripción de Modificación                                                     |
+|---------|------------|---------------------------------|---------------------------------------------------------------------------------|
+| 1.0     | 25/04/2026 | Fernandez Camayo, Carlos Fredy  | Creó el documento, estructura del informe y carátula                            |
+| 1.1     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo | Puso nuevo formato para project report collaboration insights y student outcome |
+| 1.2     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo | Añadió su perfil de integrante                                                  |
+| 1.3     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo | Añadió sprint backlogs, deployment evidence, US, TS y Product Backlog           |
+| 1.4     | 27/04/2026 | Donayre Alvarez, Adrian Ricardo | Actualizó los technical stories agrupandolos por API                            |
+| 1.5     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo | Filtró US, TS y Product Backlog para alinearlos con las funciones implementadas |
+| 1.6     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo | Añadió su Student Outcome y Project Report Collaboration Insights               |
+| 1.7     | 28/04/2026 | Loli Ramirez, Camila Cristina   | Añadió iOS Mobile Style Guidelines                                              |
+| 1.8     | 28/04/2026 | Loli Ramirez, Camila Cristina   | Añadió su perfil al equipo y su student outcome.                                |
+
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -330,56 +333,56 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
 ## ABET – EAC - Student Outcome 4
 La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
 
-<div style="text-align:center;">
-    <table align="center" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-        <tr>
-            <th style="text-align:center; border: 1px solid #ddd;">Student Outcomes</th>
-            <th style="text-align:center; border: 1px solid #ddd;">Acciones realizadas</th>
-            <th style="text-align:center; border: 1px solid #ddd;">Conclusiones</th>
-        </tr>
-        <tr>
-            <td style="border: 1px solid #ddd; vertical-align: top;">
-            4.c.1. Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>
-            <td style="border: 1px solid #ddd; vertical-align: top;">
-                <strong>Integrante 1</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-                <strong>Integrante 2</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-                <strong>Adrian Donayre</strong><br>
-                TB1: <br>Reconocí mi responsabilidad ética y profesional al depurar el Product Backlog para que refleje únicamente funcionalidades realmente implementadas en la aplicación. Eliminé inconsistencias y alineé las historias con el comportamiento real del sistema, evitando información inexacta. Además, incorporé los Sprint Backlogs para evidenciar la planificación y ejecución del trabajo, asegurando trazabilidad y transparencia.<br><br>
-                <strong>Christian Inga</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-                <strong>Carlos Fernandez</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-                <strong>Integrante 6</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-            </td>
-        <td style="border: 1px solid #ddd; vertical-align: top;">
-            <b>TB1:</b> resumen de actividades<br><br>
-        </td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid #ddd; vertical-align: top;">
-             4.c.2. Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
-            <td style="border: 1px solid #ddd; vertical-align: top;">
-                <strong>Integrante 1</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-                <strong>Integrante 2</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-                <strong>Adrian Donayre</strong><br>
-                TB1: <br>Emití juicios informados al depurar el Product Backlog, priorizando únicamente funcionalidades implementadas que aportan valor real al sistema. Consideré el impacto económico y operativo de incluir o excluir historias, asegurando que la documentación refleje de forma precisa el alcance del producto y evite sobreestimar sus capacidades. Además, al incorporar los Sprint Backlogs, facilité la comprensión del avance del proyecto y su viabilidad, contribuyendo a una toma de decisiones más informada por parte del equipo y stakeholders.<br><br>
-                <strong>Christian Inga</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-                <strong>Carlos Fernandez</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-                <strong>Integrante 6</strong><br>
-                TB1: <br>descripción de actividades<br><br>
-            </td>
-        <td style="border: 1px solid #ddd; vertical-align: top;">
-            <b>TB1:</b> resumen de actividades<br><br>
-        </td>
-      </tr>
-</table>
+<div style="text-align:center;">  
+    <table align="center" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">  
+        <tr>  
+            <th style="text-align:center; border: 1px solid #ddd;">Student Outcomes</th>  
+            <th style="text-align:center; border: 1px solid #ddd;">Acciones realizadas</th>  
+            <th style="text-align:center; border: 1px solid #ddd;">Conclusiones</th>  
+        </tr>  
+        <tr>  
+            <td style="border: 1px solid #ddd; vertical-align: top;">  
+            4.c.1. Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</td>  
+            <td style="border: 1px solid #ddd; vertical-align: top;">  
+                <strong>Camila Loli</strong><br>  
+                TB1: <br>Reconocí mi responsabilidad ética y profesional durante el desarrollo del diseño móvil (iOS Style Guidelines y Prototyping), asegurando que las decisiones de diseño prioricen la claridad, accesibilidad y facilidad de uso para los usuarios. Asimismo, definí lineamientos visuales consistentes (tipografía, colores, componentes e interacciones) con el objetivo de evitar confusión en la interfaz y garantizar una experiencia intuitiva.<br><br>  
+                <strong>Integrante 2</strong><br>  
+                TB1: <br>descripción de actividades<br><br>  
+                <strong>Adrian Donayre</strong><br>  
+                TB1: <br>Reconocí mi responsabilidad ética y profesional al depurar el Product Backlog para que refleje únicamente funcionalidades realmente implementadas en la aplicación. Eliminé inconsistencias y alineé las historias con el comportamiento real del sistema, evitando información inexacta. Además, incorporé los Sprint Backlogs para evidenciar la planificación y ejecución del trabajo, asegurando trazabilidad y transparencia.<br><br>  
+                <strong>Christian Inga</strong><br>  
+                TB1: <br>descripción de actividades<br><br>  
+                <strong>Carlos Fernandez</strong><br>  
+                TB1: <br>descripción de actividades<br><br>  
+                <strong>Integrante 6</strong><br>  
+                TB1: <br>descripción de actividades<br><br>  
+            </td>  
+        <td style="border: 1px solid #ddd; vertical-align: top;">  
+            <b>TB1:</b> resumen de actividades<br><br>  
+        </td>  
+        </tr>  
+        <tr>  
+            <td style="border: 1px solid #ddd; vertical-align: top;">  
+             4.c.2. Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>  
+            <td style="border: 1px solid #ddd; vertical-align: top;">  
+                <strong>Camila Loli</strong><br>  
+                TB1: <br>Emití juicios informados al diseñar la interfaz móvil, tomando decisiones que impactan directamente en la experiencia del usuario y en la usabilidad del sistema. Consideré el impacto social al asegurar que la aplicación sea accesible y comprensible para distintos tipos de usuarios, evitando barreras de uso. Además, prioricé el uso de una paleta de colores coherente y una visualización adecuada de datos.<br><br>  
+                <strong>Integrante 2</strong><br>  
+                TB1: <br>descripción de actividades<br><br>  
+                <strong>Adrian Donayre</strong><br>  
+                TB1: <br>Emití juicios informados al depurar el Product Backlog, priorizando únicamente funcionalidades implementadas que aportan valor real al sistema. Consideré el impacto económico y operativo de incluir o excluir historias, asegurando que la documentación refleje de forma precisa el alcance del producto y evite sobreestimar sus capacidades. Además, al incorporar los Sprint Backlogs, facilité la comprensión del avance del proyecto y su viabilidad, contribuyendo a una toma de decisiones más informada por parte del equipo y stakeholders.<br><br>  
+                <strong>Christian Inga</strong><br>  
+                TB1: <br>descripción de actividades<br><br>  
+                <strong>Carlos Fernandez</strong><br>  
+                TB1: <br>descripción de actividades<br><br>  
+                <strong>Integrante 6</strong><br>  
+                TB1: <br>descripción de actividades<br><br>  
+            </td>  
+        <td style="border: 1px solid #ddd; vertical-align: top;">  
+            <b>TB1:</b> resumen de actividades<br><br>  
+        </td>  
+      </tr>  
+</table>  
 </div>
 
 # Part I: As-Is Software Project
@@ -422,8 +425,8 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
     <td> Mi nombre es <strong>Christian Inga</strong>, tengo 20 años y actualmente me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Cuento con una gran disposición para el trabajo colaborativo y la capacidad de adaptarme rápidamente a diferentes metodologías de aprendizaje y dinámicas de grupo, asegurando siempre un desempeño confiable y organizado.</td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/CamilaLoli"alt="CamilaLoli.jpg" width="200">  </td>
+    <td> Mi nombre es <strong>Camila Cristina Loli Ramirez</strong>, tengo 21 años y soy estudiante de la carrera Ingeniería de Software. Mi carrera se basa en los conocimientos y técnicas científicas para crear un programa informático. Tengo experiencia con el trabajo en equipo, creación de proyectos y creación de programas básicos. Aportaré al equipo mi creatividad, compromiso de trabajo en equipo, puntualidad y responsabilidad. Me comprometo a trabajar constantemente para mejorar nuestro proyecto y a generar un entorno de trabajo sano con mi grupo. </td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
