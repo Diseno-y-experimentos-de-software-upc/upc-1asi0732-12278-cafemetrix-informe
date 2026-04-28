@@ -2358,7 +2358,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Configurar proyecto y estructura base</td>
                 <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
                 <td>4</td>
-                <td>Guillermo</td>
+                <td>Camila</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2368,7 +2368,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Desarrollar sección "Enfoque en beneficios claros"</td>
                 <td>Implementar sección con título y áreas diferenciadas para baristas y cafeterías</td>
                 <td>3</td>
-                <td>Kalet</td>
+                <td>Quispe</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2408,7 +2408,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Desarrollar sección de testimonios</td>
                 <td>Crear área de testimonios con fotos y citas de usuarios actuales</td>
                 <td>3</td>
-                <td>Kalet</td>
+                <td>Quispe</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2418,7 +2418,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Implementar sección FAQ y contacto</td>
                 <td>Crear área combinada con preguntas frecuentes y formulario de contacto con validación básica</td>
                 <td>4</td>
-                <td>Guillermo</td>
+                <td>Camila</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2428,7 +2428,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-1)
                 <td>Crear footer y enlaces</td>
                 <td>Implementar pie de página con navegación, recursos y contacto</td>
                 <td>4</td>
-                <td>Kalet</td>
+                <td>Quispe</td>
                 <td>Done</td>
             </tr>
             <tr>
@@ -2626,7 +2626,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar formulario de cata</td>
 <td>Crear interfaz para evaluaciones sensoriales estructuradas</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2634,7 +2634,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar herramienta visual</td>
 <td>Agregar rueda de sabores interactiva para selección de atributos</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2662,7 +2662,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar vista de correlaciones</td>
 <td>Crear interfaz para visualizar relaciones entre parámetros</td>
 <td>2</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2670,7 +2670,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar análisis sensorial</td>
 <td>Agregar funcionalidad para mostrar resultados sensoriales</td>
 <td>3</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2680,7 +2680,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Crear vista de historial</td>
 <td>Diseñar interfaz para acceder a catas anteriores</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2688,7 +2688,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar filtros avanzados</td>
 <td>Agregar filtros por lote, fecha, origen y período</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2696,7 +2696,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Agregar análisis de tendencias</td>
 <td>Implementar gráficos de evolución temporal</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2706,7 +2706,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar editor de recetas</td>
 <td>Crear interfaz para documentar recetas detalladas</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2714,7 +2714,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar parámetros de preparación</td>
 <td>Agregar campos para temperatura, tiempo y proporciones</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2722,7 +2722,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Crear galería de métodos</td>
 <td>Implementar biblioteca visual de métodos de preparación</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2732,7 +2732,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar configurador de molienda</td>
 <td>Crear interfaz para documentar configuraciones por equipo</td>
 <td>1</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2740,7 +2740,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar guías visuales</td>
 <td>Agregar referencias visuales para tamaños de partícula</td>
 <td>1</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2768,7 +2768,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar sistema de compartir</td>
 <td>Crear funcionalidad para compartir recetas con el equipo</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2776,7 +2776,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Agregar control de versiones</td>
 <td>Implementar historial de cambios en recetas</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2786,7 +2786,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Diseñar dashboard de inventario</td>
 <td>Crear vista general de inventario de café verde y tostado</td>
 <td>2</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2794,7 +2794,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar alertas de stock</td>
 <td>Agregar notificaciones para niveles bajos de inventario</td>
 <td>1</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2858,7 +2858,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Configurar proyecto y estructura base</td>
 <td>Crear estructura inicial del proyecto e implementar header con navegación y hero banner principal</td>
 <td>4</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2866,7 +2866,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Desarrollar sección "Enfoque en beneficios claros"</td>
 <td>Implementar sección con título y áreas diferenciadas para baristas y cafeterías</td>
 <td>3</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2874,7 +2874,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar diseño adaptable</td>
 <td>Asegurar que la interfaz funcione en diferentes dispositivos</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>To-do</td>
 </tr>
 <tr>
@@ -2910,7 +2910,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Desarrollar sección de testimonios</td>
 <td>Crear área de testimonios con fotos y citas de usuarios actuales</td>
 <td>3</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -2918,7 +2918,7 @@ Link de [Trello](https://trello.com/b/diGtoNBa/sprint-2)
 <td>Implementar formulario de contacto</td>
 <td>Crear formulario funcional para consultas antes del registro</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3095,7 +3095,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar formulario de cata</td>
 <td>Crear interfaz para evaluaciones sensoriales estructuradas</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3103,7 +3103,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar herramienta visual</td>
 <td>Agregar rueda de sabores interactiva para selección de atributos</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3131,7 +3131,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar vista de correlaciones</td>
 <td>Crear interfaz para visualizar relaciones entre parámetros</td>
 <td>2</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3139,7 +3139,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar análisis sensorial</td>
 <td>Agregar funcionalidad para mostrar resultados sensoriales</td>
 <td>3</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3149,7 +3149,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear vista de historial</td>
 <td>Diseñar interfaz para acceder a catas anteriores</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3157,7 +3157,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar filtros avanzados</td>
 <td>Agregar filtros por lote, fecha, origen y período</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3165,7 +3165,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Agregar análisis de tendencias</td>
 <td>Implementar gráficos de evolución temporal</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3175,7 +3175,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar editor de recetas</td>
 <td>Crear interfaz para documentar recetas detalladas</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3183,7 +3183,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar parámetros de preparación</td>
 <td>Agregar campos para temperatura, tiempo y proporciones</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3191,7 +3191,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear galería de métodos</td>
 <td>Implementar biblioteca visual de métodos de preparación</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3201,7 +3201,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar configurador de molienda</td>
 <td>Crear interfaz para documentar configuraciones por equipo</td>
 <td>1</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3209,7 +3209,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar guías visuales</td>
 <td>Agregar referencias visuales para tamaños de partícula</td>
 <td>1</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3237,7 +3237,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar sistema de compartir</td>
 <td>Crear funcionalidad para compartir recetas con el equipo</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3245,7 +3245,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Agregar control de versiones</td>
 <td>Implementar historial de cambios en recetas</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3255,7 +3255,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar dashboard de inventario</td>
 <td>Crear vista general de inventario de café verde y tostado</td>
 <td>2</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3263,7 +3263,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar alertas de stock</td>
 <td>Agregar notificaciones para niveles bajos de inventario</td>
 <td>1</td>
-<td>Kalet</td>
+<td>Quispe</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3393,7 +3393,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar creación de planes</td>
 <td>Desarrollar endpoint POST seguro (HTTPS) para registro de nuevos planes</td>
 <td>3</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>To Review</td>
 </tr>
 <tr>
@@ -3413,7 +3413,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de certificaciones</td>
 <td>Desarrollar endpoint GET seguro para obtener listado de certificaciones</td>
 <td>2</td>
-<td>Juan Diego</td>
+<td>Oscar Josue</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3423,7 +3423,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar registro de perfiles de tueste</td>
 <td>Crear endpoint POST para almacenar perfiles de tueste con seguridad HTTPS</td>
 <td>3</td>
-<td>Juan Diego</td>
+<td>Oscar Josue</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3433,7 +3433,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar creación de sesiones de tueste</td>
 <td>Desarrollar endpoint POST seguro para registrar nuevas sesiones de tueste</td>
 <td>3</td>
-<td>Henry</td>
+<td>Michael</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -3443,7 +3443,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar actualización de sesiones</td>
 <td>Crear endpoint PATCH para modificar sesiones de tueste existentes</td>
 <td>2</td>
-<td>Henry</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3463,7 +3463,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de defectos</td>
 <td>Crear endpoint GET seguro para obtener listado de defectos de tueste</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -3483,7 +3483,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de perfiles</td>
 <td>Crear endpoint GET seguro para recuperar perfiles sensoriales</td>
 <td>2</td>
-<td>Juan Diego</td>
+<td>Oscar Josue</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -3493,7 +3493,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar consulta de correlaciones</td>
 <td>Desarrollar endpoint GET seguro para obtener datos de correlaciones</td>
 <td>2</td>
-<td>Henry</td>
+<td>Michael</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -3563,7 +3563,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar sistema de autenticación</td>
 <td>Crear endpoint POST seguro para proceso de login y generación de tokens</td>
 <td>3</td>
-<td>Henry</td>
+<td>Michael</td>
 <td>To review</td>
 </tr>
 <tr>
@@ -3583,7 +3583,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar creación de planes</td>
 <td>Crear endpoint POST seguro para registro de nuevos planes</td>
 <td>3</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>To review</td>
 </tr>
 </table>
@@ -3618,7 +3618,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar selector múltiple</td>
 <td>Crear interfaz para seleccionar y comparar varios tuestes</td>
 <td>2</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3644,7 +3644,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Diseñar vista de correlaciones</td>
 <td>Crear interfaz para visualizar relaciones entre parámetros</td>
 <td>2</td>
-<td>Juan Diego</td>
+<td>Oscar Josue</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3662,7 +3662,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Crear calculadora de costos</td>
 <td>Diseñar herramienta para calcular costos por lote</td>
 <td>2</td>
-<td>Henry</td>
+<td>Michael</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3670,7 +3670,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar análisis de rentabilidad</td>
 <td>Agregar visualizaciones de márgenes y rentabilidad</td>
 <td>1</td>
-<td>Guillermo</td>
+<td>Camila</td>
 <td>Done</td>
 </tr>
 <tr>
@@ -3710,7 +3710,7 @@ Link de [Trello](https://trello.com/invite/b/6838b336ae571514f224c6eb/ATTIdf676e
 <td>Implementar actualización de inventario</td>
 <td>Desarrollar endpoint PATCH seguro para modificar registros de inventario</td>
 <td>2</td>
-<td>Juan Diego</td>
+<td>Oscar Josue</td>
 <td>Done</td>
 </tr>
 </table>
@@ -5640,11 +5640,11 @@ Resumen de **Team Collaboration Insights during Sprint** por cada sprint incluid
     <th>Actividad</th>
   </tr>
   <tr>
-    <td>Guillermo Fabián Tantaleán Mesta </td>
+    <td>Camila Cristina Loli Ramirez</td>
     <td>Creación de estructura inicial del proyecto e implementación de header con navegación y hero banner principal</td>
   </tr>
   <tr>
-    <td>Henry Kalet Esteban Roman</td>
+    <td>Michael Fred Quispe Roldan</td>
     <td>Implementación de sección con título y áreas diferenciadas para baristas y cafeterías</td>
   </tr>
   <tr>
@@ -5669,11 +5669,11 @@ Resumen de **Team Collaboration Insights during Sprint** por cada sprint incluid
     <th>Actividad</th>
   </tr>
   <tr>
-    <td>Guillermo Fabián Tantaleán Mesta </td>
+    <td>Camila Cristina Loli Ramirez</td>
     <td>Creación de welcome barista, inventory, register production cost management and cupping sessions.</td>
   </tr>
   <tr>
-    <td>Henry Kalet Esteban Roman</td>
+    <td>Michael Fred Quispe Roldan</td>
     <td>Creación de defects library, patterns of roast with cupping, library relation of roast with cupping and record grind calibration.</td>
   </tr>
   <tr>
