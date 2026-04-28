@@ -5077,6 +5077,70 @@ Se muestran evidencias de la implementacion del frontend con backend, consideran
 
 ### 5.2.4. Acuerdo de Servicio - SaaS.
 
+Esta sección establece los derechos, obligaciones y restricciones aplicables a los usuarios de la plataforma, garantizando transparencia en el uso del servicio SaaS. El presente documento se integra públicamente en la sección **"Terms and Conditions"** del website, cumpliendo con criterios de claridad, accesibilidad y cumplimiento normativo.
+
+---
+
+#### TÉRMINOS Y CONDICIONES DE USO - CAFÉ LAB
+
+##### 1. INFORMACIÓN GENERAL
+
+**Objeto del Servicio:**  
+Café Metrix otorga una licencia de uso de la plataforma Café Lab para el monitoreo de procesos de café mediante dispositivos IoT y gestión de inventarios.
+
+**Responsabilidad Ética y Profesional:**  
+En cumplimiento con el código de ética de ACM/IEEE y del CIP, garantizamos que el software es seguro, cumple con estándares de calidad y no perjudica la operación del cliente.
+
+---
+
+##### 2. MARCO NORMATIVO APLICABLE
+
+El servicio se rige bajo la legislación peruana vigente:
+
+- **Protección de Datos Personales:** Ley N° 29733 y su Reglamento (D.S. N° 003-2013-JUS).
+- **Marco Digital:** Ley N° 30096 (Ley de Delitos Informáticos) y el Código de Protección y Defensa del Consumidor (Ley N° 29571).
+
+---
+
+##### 3. CONDICIONES DE USO Y RESTRICCIONES
+
+**Capacidad Legal:**  
+El usuario debe ser mayor de edad y tener capacidad legal para contratar.
+
+**Restricciones:**  
+Queda estrictamente prohibido realizar ingeniería inversa sobre el software o los dispositivos IoT, así como utilizar la plataforma para falsear datos de trazabilidad que afecten la transparencia del mercado de café de especialidad.
+
+---
+
+##### 4. PROTECCIÓN DE DATOS Y PRIVACIDAD
+
+**Propiedad de los Datos:**  
+Café Metrix garantiza que los datos de tueste, catas y sensores son propiedad exclusiva del cliente.
+
+**Seguridad:**  
+Se aplican medidas técnicas para prevenir accesos no autorizados, asegurando la integridad de los resultados de los experimentos de café.
+
+---
+
+##### 5. DISPONIBILIDAD Y RESPONSABILIDADES (SLA)
+
+**Garantía de Servicio:**  
+Se garantiza un tiempo de actividad (**uptime**) del 99.5%.
+
+**Mantenimiento:**  
+Cualquier mantenimiento programado que afecte la visibilidad de los datos en tiempo real será notificado con al menos 24 horas de antelación.
+
+---
+
+##### 6. PROPIEDAD INTELECTUAL
+
+El software, el diseño de la interfaz y la tecnología de los sensores TrackSilo son propiedad exclusiva de Café Metrix.
+
+---
+
+##### 7. RESOLUCIÓN DE CONTROVERSIAS
+
+Cualquier controversia será sometida a la jurisdicción de los tribunales de Lima, Perú, bajo la ley peruana.
 
 
 ### 5.2.5. Implemented Native-Mobile Application Evidence.
@@ -5952,6 +6016,17 @@ Puede añadirse un video *about the team* en el que se resume el rol de cada int
 - **Evans, E.** (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley.
 - **Vernon, V.** (2016). *Domain-Driven Design Distilled*. Addison-Wesley.
 - **Google**. (s. f.). *Angular* y *Angular Material* (documentación y componentes; según el stack reutilizado). [https://angular.dev](https://angular.dev) y [https://material.angular.dev](https://material.angular.dev)
+- **Congreso de la República del Perú**. (2011, 3 de julio). *Ley N.° 29733, Ley de Protección de Datos Personales*. Diario Oficial El Peruano. [https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/243470-29733](https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/243470-29733)
+- **Presidencia de la República del Perú**. (2013, 22 de marzo). *Decreto Supremo N.° 003-2013-JUS que aprueba el Reglamento de la Ley N.° 29733*. Diario Oficial El Peruano. [https://www.minjus.gob.pe/wp-content/uploads/2013/04/LEY-29733.pdf](https://www.minjus.gob.pe/wp-content/uploads/2013/04/LEY-29733.pdf)
+- **Congreso de la República del Perú**. (2014, 22 de octubre). *Ley N.° 30096, Ley de Delitos Informáticos*. Diario Oficial El Peruano. [https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/394441-30096](https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/394441-30096)
+- **Congreso de la República del Perú**. (2010, 2 de septiembre). *Ley N.° 29571, Código de Protección y Defensa del Consumidor*. Diario Oficial El Peruano. [https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/395742-29571](https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/395742-29571)
+- **International Organization for Standardization (ISO)**. (2015). *ISO/IEC 27017:2015 — Security controls for cloud services*.
+- **International Organization for Standardization (ISO)**. (2019). *ISO/IEC 27018:2019 — Protection of personally identifiable information (PII) in public clouds*.
+- **Association for Computing Machinery (ACM)**. (2018). *ACM Code of Ethics and Professional Conduct*. [https://www.acm.org/code-of-ethics](https://www.acm.org/code-of-ethics)
+- **National Institute of Standards and Technology (NIST)**. (2011). *The NIST Definition of Cloud Computing (SP 800-145)*. [https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
+
+
+
 
 # Anexos
 
@@ -5969,8 +6044,8 @@ Puede añadirse un video *about the team* en el que se resume el rol de cada int
 
 - Enlace para acceder al [Landing-page deployado](https://cafemetrix-cafelab-landingpage.web.app/)
 
-- Enlace para acceder al [Front-end deployado]()
+- Enlace para acceder al [Front-end deployado](https://cafelab-frontend.vercel.app/login)
 
-- Enlace para acceder al [Backend deployado]()
+- Enlace para acceder al [Backend deployado](https://cafelab-backend-production-809b.up.railway.app/swagger-ui/index.html)
 
 - Enlace al video "About the Product": [video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=oOeUxQ)
