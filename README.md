@@ -425,8 +425,12 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
     <td> Mi nombre es <strong>Christian Inga</strong>, tengo 20 años y actualmente me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Cuento con una gran disposición para el trabajo colaborativo y la capacidad de adaptarme rápidamente a diferentes metodologías de aprendizaje y dinámicas de grupo, asegurando siempre un desempeño confiable y organizado.</td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/chapter-1/integrantes/CamilaLoli"alt="CamilaLoli.jpg" width="200">  </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/CamilaLoli.jpg"alt="CamilaLoli.jpg" width="200">  </td>
     <td> Mi nombre es <strong>Camila Cristina Loli Ramirez</strong>, tengo 21 años y soy estudiante de la carrera Ingeniería de Software. Mi carrera se basa en los conocimientos y técnicas científicas para crear un programa informático. Tengo experiencia con el trabajo en equipo, creación de proyectos y creación de programas básicos. Aportaré al equipo mi creatividad, compromiso de trabajo en equipo, puntualidad y responsabilidad. Me comprometo a trabajar constantemente para mejorar nuestro proyecto y a generar un entorno de trabajo sano con mi grupo. </td>
+  </tr>
+  <tr> 
+    <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
+    <td> Mi nombre es <strong>...</strong>, ... </td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
