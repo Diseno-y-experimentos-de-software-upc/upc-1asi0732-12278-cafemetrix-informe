@@ -2515,28 +2515,27 @@ Para desplegar la landing page, es necesario contar con una cuenta de GitHub y t
    - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.
    - Se verifica que los conflictos hayan sido solucionados correctamente.
 
-Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, permitiendo actualizaciones automáticas tras nuevas versiones y asegurando un entorno estable para el front-end.
-
-🔗 **Landing Page en FireBase**: [https://cafelanding-60903.web.app/](https://cafelanding-60903.web.app/)
-
----
-
-#### Front End Web Application Deployment
-
-1. Iniciamos sesión en Firebase y configuramos el proyecto.  
+ Iniciamos sesión en Firebase y configuramos el proyecto.  
    ![Imagen 1](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy1.png)
 
-2. Configuramos los archivos de firebase en el proyecto  
+ Configuramos los archivos de firebase en el proyecto  
    ![Imagen 2](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy2.png)
    ![Imagen 3](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy3.png)
 
-3. Procedemos con el despliegue del sitio con los comandos de firebase.  
+ Procedemos con el despliegue del sitio con los comandos de firebase.  
    ![Imagen 5](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy4.png)
 
-4. Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en firebase.  
+ Verificamos que el despliegue haya sido exitoso desde la sección de sitios activos en firebase.  
    ![Imagen 5](public/assets/images/SoftwareDeploymentConfiguration/landingpage-deploy5.png)
 
-🔗 **Página desplegada en Firebase**: [https://cafemetrix-cafelab-landingpage.web.app/](https://cafemetrix-cafelab-landingpage.web.app/)
+🔗 **Landing page desplegada en Firebase**: [https://cafemetrix-cafelab-landingpage.web.app/](https://cafemetrix-cafelab-landingpage.web.app/)
+
+---
+#### Web Services Deployment
+
+
+
+#### Front End Web Application Deployment
 
 
 ## 5.2. Product Implementation & Deployment.
