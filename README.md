@@ -109,8 +109,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     <tr>
     <td><strong>Evidencia</strong></td>
     <td colspan="2">
-    <img src="public/assets/images/cover/insights/commit-por-integrante.png" alt="Evidencia">
-    <img src="public/assets/images/cover/insights/commits-grupal.png" alt="Evidencia"></td>
+    <img src="public/assets/images/tb1Collaboration/tb1report.png" alt="Evidencia">
   </tr>
 </table>
 
