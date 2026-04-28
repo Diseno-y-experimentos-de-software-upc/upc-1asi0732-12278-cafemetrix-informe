@@ -92,7 +92,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
-    <td>Aportes</td>
+    <td>Colabore con la redaccion y actualizacion del informe del proyecto cafelab, asimismo aporte en la nueva version de la landing page, colabore en el desarrollo de la presentacion del proyecto.</td>
     <td>TB1</td>
   </tr>
   <tr>
@@ -353,7 +353,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Christian Inga</strong><br>  
                 TB1: <br>descripción de actividades<br><br>  
                 <strong>Carlos Fernandez</strong><br>  
-                TB1: <br>descripción de actividades<br><br>  
+                TB1: <br>Mediante mi aporte en diferentes puntos del informe, como la implementacion de politica Saas que me permitio comprender el rol y funcion de la aplicacion no unicamente como codigo, lo que me ayudo a mejorar mi vision etica y profesional en el desarrollo de software.<br><br>  
                 <strong>Integrante 6</strong><br>  
                 TB1: <br>descripción de actividades<br><br>  
             </td>  
@@ -374,7 +374,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Christian Inga</strong><br>  
                 TB1: <br>descripción de actividades<br><br>  
                 <strong>Carlos Fernandez</strong><br>  
-                TB1: <br>descripción de actividades<br><br>  
+                TB1: <br>Implementar y actualizar el contenido del proyecto me permitio reconocer la importancia de sistemas orientados a productividad en el area de cafeterias, emitiendo juicios adecuados sobre el impacto del proyecto presentado, no solo programacion, sino tambien en los resultados y mejoras de los usuarios.<br><br>  
                 <strong>Integrante 6</strong><br>  
                 TB1: <br>descripción de actividades<br><br>  
             </td>  
