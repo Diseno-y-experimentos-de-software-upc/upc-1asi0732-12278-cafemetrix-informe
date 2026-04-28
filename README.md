@@ -1914,6 +1914,38 @@ El enfoque de diseño web de Cafelab es limpio, moderno y centrado en la eficien
 ### 4.1.3. Mobile Style Guidelines
 
 #### 4.1.3.1. iOS Mobile Style Guidelines
+
+Para diseñar la versión iOS de la aplicación CaféLab, nos vamos a basar en el *Human Interface Guidelines* de Apple para el desarrollo de plataformas. Esta guía muestra tres principios que seguiremos en este diseño: jerarquía, armonía y consistencia. De esta manera, se prioriza la claridad, simplicidad y eficiencia en la interacción del usuario con la aplicación.
+
+* Paleta de colores:
+    * Para mantener la consistencia entre las aplicaciones web y móvil, hemos decidido utilizar la misma paleta de colores, que son representativos del producto CaféLab.
+
+<img src="public/assets/images/styleGuidelines/Colors.png" alt="Distribucion de paleta de colores" width="7000">
+
+* Tipografía:
+    * También vamos a utilizar las tipografías escogidas para el producto CaféLab debido a que son legibles y transmiten una apariencia sobria y profesional. En este caso, se usa Monserrat para los encabezados y Arial para el cuerpo del contenido. Asimismo, para mantener una jerarquía adecuada, hemos definido diferentes tamaños y pesos tipográficos. De esta forma, se facilita la identificación de títulos, subtítulos y contenido principal, lo que permite al usuario comprender la información de manera rápida y eficiente.
+
+<img src="public/assets/images/styleGuidelines/Heading.png" alt="Tipofrafía principal" width="7000">
+
+<img src="public/assets/images/styleGuidelines/Body.png" alt="Tipografía secundaria" width="7000">
+
+* Interacciones:
+    * En la aplicación iOS se han considerado dos gestos principales para garantizar una navegación fluida y eficiente:
+        * Tap: interacción principal para selección de opciones, navegación, ejecución de acciones
+        * Swipe: utilizado para acciones rápidas, ejecución de acciones secundarias
+  
+
+* Componentes:
+    * La interfaz cuanta con diferentes elementos visuales que estan diseñados para facilitar la comprensión y uso por parte del usuario:
+        * Botones: diseñados de manera clara e intuitiva, permite identificar su función en la aplicación.
+        * Iconografía: se usa para reforzar la comprensión de acciones.
+        * Visualización de gráficos: se implementa para representar la información del usuario (como datos de sesiones de cata y tueste)
+
+<img src="public/assets/images/styleGuidelines/Buttons.png" alt="Distribucion de botones" width="7000">
+
+<img src="public/assets/images/styleGuidelines/icons.png" alt="Distribucion de botones" width="7000">
+
+
 #### 4.1.3.2. Android Mobile Style Guidelines
 
 
