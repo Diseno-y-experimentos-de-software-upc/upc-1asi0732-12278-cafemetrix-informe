@@ -58,6 +58,8 @@
 | 1.2     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió su perfil de integrante                                                     |
 | 1.3     | 26/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió sprint backlogs, deployment evidence, US, TS y Product Backlog              |
 | 1.4     | 27/04/2026  | Donayre Alvarez, Adrian Ricardo      | Actualizó los technical stories agrupandolos por API                               |
+| 1.5     | 28/04/2026  | Donayre Alvarez, Adrian Ricardo      | Filtró US, TS y Product Backlog para alinearlos con las funciones implementadas    |
+| 1.6     | 28/04/2026  | Donayre Alvarez, Adrian Ricardo      | Añadió su Student Outcome y Project Report Collaboration Insights                  |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -82,7 +84,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
-    <td>Aportes</td>
+    <td>Depuré y validé el Product Backlog, asegurando que las User y Technical Stories reflejen fielmente las funcionalidades implementadas. Eliminé inconsistencias y ajusté los criterios de aceptación al comportamiento real del sistema. Asimismo, reorganicé la estructura para corregir duplicidades y dependencias. Finalmente, integré los Sprint Backlogs por iteración, evidenciando la planificación, priorización y ejecución real del desarrollo.</td>
     <td>TB1</td>
   </tr>
   <tr>
@@ -345,7 +347,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Integrante 2</strong><br>
                 TB1: <br>descripción de actividades<br><br>
                 <strong>Adrian Donayre</strong><br>
-                TB1: <br>descripción de actividades<br><br>
+                TB1: <br>Reconocí mi responsabilidad ética y profesional al depurar el Product Backlog para que refleje únicamente funcionalidades realmente implementadas en la aplicación. Eliminé inconsistencias y alineé las historias con el comportamiento real del sistema, evitando información inexacta. Además, incorporé los Sprint Backlogs para evidenciar la planificación y ejecución del trabajo, asegurando trazabilidad y transparencia.<br><br>
                 <strong>Christian Inga</strong><br>
                 TB1: <br>descripción de actividades<br><br>
                 <strong>Carlos Fernandez</strong><br>
@@ -366,7 +368,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Integrante 2</strong><br>
                 TB1: <br>descripción de actividades<br><br>
                 <strong>Adrian Donayre</strong><br>
-                TB1: <br>descripción de actividades<br><br>
+                TB1: <br>Emití juicios informados al depurar el Product Backlog, priorizando únicamente funcionalidades implementadas que aportan valor real al sistema. Consideré el impacto económico y operativo de incluir o excluir historias, asegurando que la documentación refleje de forma precisa el alcance del producto y evite sobreestimar sus capacidades. Además, al incorporar los Sprint Backlogs, facilité la comprensión del avance del proyecto y su viabilidad, contribuyendo a una toma de decisiones más informada por parte del equipo y stakeholders.<br><br>
                 <strong>Christian Inga</strong><br>
                 TB1: <br>descripción de actividades<br><br>
                 <strong>Carlos Fernandez</strong><br>
@@ -1317,6 +1319,61 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <th>Relacionado con (Epic ID)</th>
 </tr>
 <tr>
+<tr>
+  <td>EP01</td>
+  <td>Gestión de Usuarios y Seguridad</td>
+  <td>Como sistema, necesito tener un control de usuarios seguro y personalizado para proteger la información y ofrecer una experiencia adaptada al perfil.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP02</td>
+  <td>Gestión de Materia Prima</td>
+  <td>Como sistema, necesito ofrecer herramientas para el control, seguimiento y documentación del café verde para garantizar trazabilidad y calidad desde el origen.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP03</td>
+  <td>Gestión de Procesos de Tueste</td>
+  <td>Como sistema, necesito facilitar el registro, análisis y optimización de los procesos de tueste para garantizar resultados consistentes y de alta calidad.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP04</td>
+  <td>Evaluación Sensorial del Café</td>
+  <td>Como sistema, necesito proveer herramientas para la evaluación, registro y análisis sensorial del café para vincular aspectos técnicos con la experiencia final en taza.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP05</td>
+  <td>Gestión de Preparación y Recetas</td>
+  <td>Como sistema, necesito ofrecer herramientas para la gestión de estandarización y de métodos de preparación para garantizar consistencia en la experiencia final.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP06</td>
+  <td>Administración y Reportes</td>
+  <td>Como sistema, necesito proporcionar herramientas de gestión de análisis y reportes que conecten los aspectos técnicos con los operativos y financieros para optimizar la operación integral.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP07</td>
+  <td>Landing Page y Sitio Web Estático</td>
+  <td>Como sistema, necesito proporcionar un sitio web informativo y atractivo que comunique el valor de la plataforma a diferentes segmentos objetivo.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
 <td>US01</td>
 <td>Registro de Proveedores</td>
 <td>Como dueño de cafetería de especialidad, quiero registrar y evaluar a mis proveedores para mantener un control de calidad y trazabilidad de origen</td>
