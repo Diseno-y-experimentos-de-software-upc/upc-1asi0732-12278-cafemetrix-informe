@@ -109,7 +109,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Quispe Roldan, Michael Fred</strong></td>
-    <td>Aportes</td>
+    <td>Me encargué de elaborar los diagramas de flujo de usuario para la aplicación móvil (4.4.4. Mobile Applications User Flow Diagrams), definiendo los flujos de navegación e interacción del usuario en las distintas pantallas de la aplicación, lo que permitió visualizar de manera clara el recorrido del usuario y las decisiones clave dentro del sistema.</td>
     <td>TB1</td>
   </tr>
   <tr>
