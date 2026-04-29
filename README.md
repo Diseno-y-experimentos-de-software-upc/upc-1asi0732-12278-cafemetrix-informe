@@ -442,8 +442,8 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
     <td> Mi nombre es <strong>Oscar Antayhua</strong> y soy estudiante de la carrera de Ingeniería de Software en la UPC. Cuento con experiencia en desarrollo full stack, automatización de procesos y análisis de datos, lo que me ha permitido fortalecer tanto mis habilidades técnicas como mi capacidad para resolver problemas. Considero que todo lo que aprendemos y desarrollamos en la universidad influye directamente en nuestro crecimiento profesional, por eso me esfuerzo constantemente en seguir aprendiendo y adquiriendo nuevas experiencias. Me considero una persona responsable, proactiva y comprometida con el trabajo en equipo, dispuesta a aportar con dedicación, organización y creatividad en cada proyecto. </td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/Michael.png"alt="..." width="200">  </td>
+    <td> Mi nombre es <strong>Michael Quispe</strong> Soy estudiante de 8vo ciclo de la carrera de Ingeniería de Software con un enfoque sólido en el desarrollo Full Stack y móvil. Cuento con experiencia técnica en el uso de Flutter y el Android SDK para la creación de aplicaciones funcionales, además de dominar lenguajes como TypeScript, Java, PHP y Python. Mi perfil se caracteriza por la implementación de soluciones de software escalables, la gestión de bases de datos y un interés constante en la ciberseguridad, trabajando habitualmente en entornos Linux para optimizar procesos de desarrollo y despliegue. </td>
   </tr>
 
 </table>
