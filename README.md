@@ -2324,10 +2324,71 @@ Para desplegar la landing page, es necesario contar con una cuenta de GitHub y t
 
 ---
 #### Web Services Deployment
+Para desplegar los servicios web, fue necesario contar con acceso al repositorio del backend y a la plataforma Railway, donde se configuró el servicio principal de la aplicación junto con la base de datos. A partir de ello, se realizó la vinculación del repositorio, la definición de variables de entorno y la validación de la comunicación entre el servicio backend y el motor de base de datos.
 
+1. **Vinculación del repositorio**: Se conectó el repositorio del backend con Railway para automatizar el proceso de despliegue del servicio.
+2. **Creación del servicio y base de datos**:
+   - Se creó el servicio correspondiente al backend del proyecto.
+   - Se configuró un volumen MySQL para la persistencia de datos.
+   - Se enlazó el backend con la base de datos dentro del mismo entorno de Railway.
+3. **Configuración del entorno**:
+   - Se registraron las variables de entorno necesarias para la ejecución del backend.
+   - Se verificó que la aplicación pudiera conectarse correctamente a la base de datos desplegada.
+   - Se ajustó la configuración para asegurar la integración entre servicio, persistencia y entorno productivo.
+4. **Despliegue del backend**:
+   - Railway realizó el proceso de build y despliegue del servicio a partir del repositorio enlazado.
+   - Se comprobó que el servicio quede disponible en línea dentro del entorno de producción.
+5. **Verificación del despliegue**:
+   - Se validó desde el panel de Railway que tanto el servicio `cafelab-backend` como el recurso asociado a la base de datos se encuentren activos.
+   - Se confirmó la relación entre ambos componentes dentro del entorno desplegado.
+
+Configuramos el servicio backend y la base de datos en Railway.  
+![Imagen 1](public/assets/images/SoftwareDeploymentConfiguration/webservices-deploy1.png)
+
+Registramos las variables de entorno necesarias para la ejecución del backend.  
+![Imagen 2](public/assets/images/SoftwareDeploymentConfiguration/webservices-deploy2.png)
+
+Verificamos la conexión entre el backend y la base de datos dentro del entorno desplegado.  
+![Imagen 3](public/assets/images/SoftwareDeploymentConfiguration/webservices-deploy3.png)
+
+Comprobamos que el servicio y la base de datos se encuentran en estado activo en Railway.  
+![Imagen 4](public/assets/images/SoftwareDeploymentConfiguration/webservices-deploy4.png)
+
+
+🔗 **Back-end desplegado en Railway**: [https://cafelab-backend-production-809b.up.railway.app/swagger-ui/index.html](https://cafelab-backend-production-809b.up.railway.app/swagger-ui/index.html)
 
 
 #### Front End Web Application Deployment
+Para desplegar la aplicación web frontend, se utilizó la plataforma Vercel, vinculando el repositorio del proyecto para automatizar la publicación de la rama principal. Una vez importado el repositorio, se configuraron los parámetros necesarios para generar la versión productiva y habilitar el dominio de acceso de la aplicación.
+
+1. **Importación del repositorio**:
+   - Se inició sesión en Vercel.
+   - Se importó el repositorio correspondiente al frontend del proyecto.
+2. **Configuración del proyecto**:
+   - Se definió el proyecto frontend dentro de Vercel.
+   - Se tomó como fuente de despliegue la rama principal del repositorio.
+   - Se configuraron los parámetros requeridos para la compilación y publicación de la aplicación.
+3. **Build y despliegue**:
+   - Vercel ejecutó automáticamente el proceso de compilación del proyecto.
+   - Posteriormente, se realizó la publicación de la aplicación en el entorno productivo.
+4. **Asignación de dominio**:
+   - Se habilitó el dominio generado por Vercel para acceder a la aplicación desplegada.
+   - Se verificó que el dominio apunte correctamente a la versión productiva del frontend.
+5. **Validación del despliegue**:
+   - Se comprobó desde el panel de Vercel que el estado del proyecto fuera exitoso.
+   - Se validó que la aplicación se encontrara accesible desde el dominio asignado.
+
+Importamos el repositorio del frontend en Vercel y configuramos el proyecto.  
+![Imagen 1](public/assets/images/SoftwareDeploymentConfiguration/frontend-deploy1.png)
+
+Verificamos la configuración del despliegue y la rama utilizada para producción.  
+![Imagen 2](public/assets/images/SoftwareDeploymentConfiguration/frontend-deploy2.png)
+
+
+Validamos que la aplicación se encuentre disponible desde el dominio asignado.  
+![Imagen 3](public/assets/images/SoftwareDeploymentConfiguration/frontend-deploy3.png)
+
+🔗 **Frontend desplegado en Vercel**: [https://cafelab-frontend.vercel.app/](https://cafelab-frontend.vercel.app/)
 
 
 ## 5.2. Product Implementation & Deployment.
