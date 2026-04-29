@@ -67,6 +67,7 @@
 | 1.11    | 28/04/2026 | Fernandez Camayo, Carlos Fredy  | Acualizó link de landing page y nuevo despliegue                                |
 | 1.12    | 28/04/2026 | Fernandez Camayo, Carlos Fredy  | Añadió su student outcome.                                                      |
 | 1.13    | 28/04/2026 | Antayhua Castillo Oscar Josué  | Realizó el despliegue del frontend y backend, y configuró la conexión entre ambos.                                                      |
+| 1.14    | 29/04/2026 | Donayre Alvarez, Adrian Ricardo | Actualizó los Impact Mappings y la imagen del Collaboration Insights            |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -100,12 +101,12 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     <td>TB1</td>
   </tr>
   <tr>
-    <td><strong>Christian Fabrizio Inga Orihuela</strong></td>
+    <td><strong>Christian Fabrizio, Inga Orihuela</strong></td>
     <td>Aportes</td>
     <td>TB1</td>
   </tr>
   <tr>
-    <td><strong>Integrante 6</strong></td>
+    <td><strong>Quispe Roldan, Michael Fred</strong></td>
     <td>Aportes</td>
     <td>TB1</td>
   </tr>
@@ -179,8 +180,8 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     - [3.2. User Stories](#32-user-stories)
     - [3.3. Product Backlog](#33-product-backlog)
     - [3.4. Impact Mapping.](#34-impact-mapping)
-        - [3.4.1. Mapa de impacto de Freddy, el dueño de cafeteria.](#321-mapa-de-impacto-de-freddy-el-dueño-de-cafeteria)
-        - [3.4.2. Mapa de impacto de Valeria, barrista.](#322-mapa-de-impacto-de-valeria-barrista)
+        - [3.4.1. Mapa de impacto de Fernando, dueño de cafetería](#341-mapa-de-impacto-de-fernando-dueño-de-cafetería)
+        - [3.4.2. Mapa de impacto de Valeria, barista](#342-mapa-de-impacto-de-valeria-barista)
 
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
     - [4.1. Style Guideline](#41-style-guideline)
@@ -358,11 +359,11 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>descripción de actividades<br><br>  
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Mediante mi aporte en diferentes puntos del informe, como la implementacion de politica Saas que me permitio comprender el rol y funcion de la aplicacion no unicamente como codigo, lo que me ayudo a mejorar mi vision etica y profesional en el desarrollo de software.<br><br>  
-                <strong>Integrante 6</strong><br>  
+                <strong>Michael Quispe</strong><br>  
                 TB1: <br>descripción de actividades<br><br>  
             </td>  
         <td style="border: 1px solid #ddd; vertical-align: top;">  
-            <b>TB1:</b> resumen de actividades<br><br>  
+            <b>TB1:</b> En el desarrollo del proyecto, el equipo evidenció asumir responsabilidad ética y profesional en distintas áreas: se priorizó una experiencia de usuario clara, accesible y consistente mediante lineamientos de diseño bien definidos. Además, se aseguró un despliegue adecuado del frontend y backend con configuraciones confiables que garantizan estabilidad y disponibilidad. También se depuró el Product Backlog para reflejar únicamente funcionalidades implementadas, incorporando además Sprint Backlogs para asegurar trazabilidad y transparencia.<br><br>  
         </td>  
         </tr>  
         <tr>  
@@ -379,11 +380,11 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>descripción de actividades<br><br>  
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Implementar y actualizar el contenido del proyecto me permitio reconocer la importancia de sistemas orientados a productividad en el area de cafeterias, emitiendo juicios adecuados sobre el impacto del proyecto presentado, no solo programacion, sino tambien en los resultados y mejoras de los usuarios.<br><br>  
-                <strong>Integrante 6</strong><br>  
+                <strong>Michael Quispe</strong><br>  
                 TB1: <br>descripción de actividades<br><br>  
             </td>  
         <td style="border: 1px solid #ddd; vertical-align: top;">  
-            <b>TB1:</b> resumen de actividades<br><br>  
+            <b>TB1:</b> En el desarrollo del proyecto, el equipo evidenció emitió juicios informados considerando distintos impactos de la solución. Se tomaron decisiones de diseño orientadas a mejorar la accesibilidad y usabilidad, reconociendo su impacto social en diversos tipos de usuarios. Además, se seleccionaron herramientas de despliegue que optimizan la disponibilidad y validación del sistema, considerando su impacto operativo y económico.<br><br>  
         </td>  
       </tr>  
 </table>  
@@ -1828,10 +1829,13 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 
 
 ## 3.4. Impact Mapping.
-### 3.4.1. Mapa de impacto de Freddy, el dueño de cafetería
-![Freddy](public/assets/images/impactmapping/Impact-map-1.png)
+### 3.4.1. Mapa de impacto de Fernando, dueño de cafetería
+![Impact Mapping - Fernando Goijman 1](https://raw.githubusercontent.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab/feature/informe-readme/public/assets/images/ImpactMapping/ImpactMapping-FernandoGoijman1.jpeg)
+![Impact Mapping - Fernando Goijman 2](https://raw.githubusercontent.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab/feature/informe-readme/public/assets/images/ImpactMapping/ImpactMapping-FernandoGoijman2.jpeg)
+
 ### 3.4.2. Mapa de impacto de Valeria, barista
-![alt text](public/assets/images/impactmapping/Valeria-Ramos.png)
+![Impact Mapping - Valeria Ramos 1](https://raw.githubusercontent.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab/feature/informe-readme/public/assets/images/ImpactMapping/ImpactMapping-ValeriaRamos1.jpeg)
+![Impact Mapping - Valeria Ramos 2](https://raw.githubusercontent.com/upc-pre-202510-1asi0729-4307-CafeMetrix/cafeLab/feature/informe-readme/public/assets/images/ImpactMapping/ImpactMapping-ValeriaRamos2.jpeg)
 
 
 # Capítulo IV: Product Design
