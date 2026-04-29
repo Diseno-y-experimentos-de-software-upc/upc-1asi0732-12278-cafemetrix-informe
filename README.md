@@ -68,6 +68,7 @@
 | 1.12    | 28/04/2026 | Fernandez Camayo, Carlos Fredy  | Añadió su student outcome.                                                      |
 | 1.13    | 28/04/2026 | Antayhua Castillo Oscar Josué  | Realizó el despliegue del frontend y backend, y configuró la conexión entre ambos.                                                      |
 | 1.14    | 29/04/2026 | Donayre Alvarez, Adrian Ricardo | Actualizó los Impact Mappings y la imagen del Collaboration Insights            |
+| 1.15    | 29/04/2026 | Quispe Roldan, Michael Fred     | Añadió 4.4.4. Mobile Applications User Flow Diagrams                           |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
