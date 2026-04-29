@@ -71,6 +71,7 @@
 | 1.15    | 29/04/2026 | Quispe Roldan, Michael Fred     | Añadió 4.4.4. Mobile Applications User Flow Diagrams                           |
 | 1.16    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió 4.4.2. Mobile Applications Wireflow Diagrams                           |
 | 1.17    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió 4.1.3.2. Android Mobile Style Guidelines                         |
+| 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió su Project Report Collaboration Insights y Student Outcome                         |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -105,7 +106,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Christian Fabrizio, Inga Orihuela</strong></td>
-    <td>Aportes</td>
+    <td>Me encargué de elaborar los Mobile Application Wireflow Diagrams, definiendo la estructura visual y los flujos de navegación para las pantallas clave del sistema (Registro, Inventario, Tueste, entre otros), organizando la documentación en Markdown para asegurar la trazabilidad del diseño. Asimismo, desarrollé el apartado de Android Mobile Style Guidelines, adaptando la identidad visual de CaféLab bajo los principios de Material Design..</td>
     <td>TB1</td>
   </tr>
   <tr>
@@ -359,7 +360,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Adrian Donayre</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al depurar el Product Backlog para que refleje únicamente funcionalidades realmente implementadas en la aplicación. Eliminé inconsistencias y alineé las historias con el comportamiento real del sistema, evitando información inexacta. Además, incorporé los Sprint Backlogs para evidenciar la planificación y ejecución del trabajo, asegurando trazabilidad y transparencia.<br><br>  
                 <strong>Christian Inga</strong><br>  
-                TB1: <br>descripción de actividades<br><br>  
+                TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los Mobile Application Wireflow Diagrams, asegurando que la arquitectura de información y los flujos de navegación sean fieles a los requerimientos del sistema. Al definir los Android Mobile Style Guidelines bajo los estándares de Material Design, asumí la entrega de un diseño que sirva como base confiable para la implementación.<br><br>  
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Mediante mi aporte en diferentes puntos del informe, como la implementacion de politica Saas que me permitio comprender el rol y funcion de la aplicacion no unicamente como codigo, lo que me ayudo a mejorar mi vision etica y profesional en el desarrollo de software.<br><br>  
                 <strong>Michael Quispe</strong><br>  
@@ -380,7 +381,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Adrian Donayre</strong><br>  
                 TB1: <br>Emití juicios informados al depurar el Product Backlog, priorizando únicamente funcionalidades implementadas que aportan valor real al sistema. Consideré el impacto económico y operativo de incluir o excluir historias, asegurando que la documentación refleje de forma precisa el alcance del producto y evite sobreestimar sus capacidades. Además, al incorporar los Sprint Backlogs, facilité la comprensión del avance del proyecto y su viabilidad, contribuyendo a una toma de decisiones más informada por parte del equipo y stakeholders.<br><br>  
                 <strong>Christian Inga</strong><br>  
-                TB1: <br>descripción de actividades<br><br>  
+                TB1: <br>Emití juicios informados al definir la estructura de los wireflows y las guías de estilo para Android, considerando el impacto social de la accesibilidad y usabilidad para los usuarios. Al seleccionar componentes de navegación y jerarquías visuales, tomé decisiones que afectan directamente la eficiencia operativa y productividad del usuario. Asimismo, consideré el impacto económico de optimizar el desarrollo mediante una documentación estandarizada que reduce errores de implementación<br><br>  
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Implementar y actualizar el contenido del proyecto me permitio reconocer la importancia de sistemas orientados a productividad en el area de cafeterias, emitiendo juicios adecuados sobre el impacto del proyecto presentado, no solo programacion, sino tambien en los resultados y mejoras de los usuarios.<br><br>  
                 <strong>Michael Quispe</strong><br>  
