@@ -76,8 +76,8 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     <td width="40%"><strong>Entregable</strong></td>
   </tr>
   <tr>
-    <td><strong>Integrante 1</strong></td>
-    <td>Aportes</td>
+    <td><strong>Camila Loli</strong></td>
+    <td>Me encargué del diseño de la guía de estilos para la aplicación móvil en iOS, definí elementos clave como las interacciones y componentes visuales, esto asegura consistencia con la identidad del producto CaféLab. Asimismo, desarrolló el prototipo móvil en Figma, implementando las pantallas principales y sus flujos de navegación, lo que permitió validar la experiencia de usuario y la usabilidad del sistema antes de su implementación.</td>
     <td>TB1</td>
   </tr>
   <tr>
