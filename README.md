@@ -363,7 +363,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Mediante mi aporte en diferentes puntos del informe, como la implementacion de politica Saas que me permitio comprender el rol y funcion de la aplicacion no unicamente como codigo, lo que me ayudo a mejorar mi vision etica y profesional en el desarrollo de software.<br><br>  
                 <strong>Michael Quispe</strong><br>  
-                TB1: <br>descripción de actividades<br><br>  
+                TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los diagramas de flujo de usuario para la aplicación móvil (4.4.4. Mobile Applications User Flow Diagrams), asegurando que los flujos representen con fidelidad las interacciones reales del usuario. Definí con claridad cada nodo de decisión y camino de navegación, garantizando que la experiencia diseñada sea coherente, intuitiva y respetuosa de las expectativas del usuario final.<br><br>  
             </td>  
         <td style="border: 1px solid #ddd; vertical-align: top;">  
             <b>TB1:</b> En el desarrollo del proyecto, el equipo evidenció asumir responsabilidad ética y profesional en distintas áreas: se priorizó una experiencia de usuario clara, accesible y consistente mediante lineamientos de diseño bien definidos. Además, se aseguró un despliegue adecuado del frontend y backend con configuraciones confiables que garantizan estabilidad y disponibilidad. También se depuró el Product Backlog para reflejar únicamente funcionalidades implementadas, incorporando además Sprint Backlogs para asegurar trazabilidad y transparencia.<br><br>  
@@ -384,7 +384,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Implementar y actualizar el contenido del proyecto me permitio reconocer la importancia de sistemas orientados a productividad en el area de cafeterias, emitiendo juicios adecuados sobre el impacto del proyecto presentado, no solo programacion, sino tambien en los resultados y mejoras de los usuarios.<br><br>  
                 <strong>Michael Quispe</strong><br>  
-                TB1: <br>descripción de actividades<br><br>  
+                TB1: <br>Emití juicios informados al diseñar los flujos de usuario para la aplicación móvil, considerando el impacto que tiene una navegación clara y eficiente en la experiencia del usuario final. Tomé decisiones sobre la estructura de los flujos priorizando la simplicidad y accesibilidad, reconociendo que una navegación deficiente puede afectar negativamente la adopción del sistema y, por ende, el valor social y económico del producto.<br><br>  
             </td>  
         <td style="border: 1px solid #ddd; vertical-align: top;">  
             <b>TB1:</b> En el desarrollo del proyecto, el equipo evidenció emitió juicios informados considerando distintos impactos de la solución. Se tomaron decisiones de diseño orientadas a mejorar la accesibilidad y usabilidad, reconociendo su impacto social en diversos tipos de usuarios. Además, se seleccionaron herramientas de despliegue que optimizan la disponibilidad y validación del sistema, considerando su impacto operativo y económico.<br><br>  
