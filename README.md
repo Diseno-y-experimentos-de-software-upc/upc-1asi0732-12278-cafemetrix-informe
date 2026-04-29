@@ -2128,6 +2128,12 @@ Enlace del prototipo [Figma](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/
 
 ### 4.5.2. iOS Mobile Applications Prototyping.
 
+Para presentar el funcionamiento de la versión iOS de la aplicación CaféLab, por ello se va a agregar el enlace del video presentado su funcionamiento.
+
+<img src="public/assets/images/prototype/ios/captura.png" alt="Captura de video" width="4000">
+
+Enlace al video: [Video Prototipo iOS](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110385_upc_edu_pe/IQAcAwliDMMMT4kSl4yBoohJAbAAg_xvVk60SuH9st_TqRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VQfF1A).
+
 ## 4.6. Web Applications UX/UI Design.
 ### 4.6.1. Web Applications Wireframes.
 Enlace para acceder al [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1).
