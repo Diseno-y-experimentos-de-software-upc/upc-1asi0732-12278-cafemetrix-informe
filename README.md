@@ -69,6 +69,7 @@
 | 1.13    | 28/04/2026 | Antayhua Castillo Oscar Josué  | Realizó el despliegue del frontend y backend, y configuró la conexión entre ambos.                                                      |
 | 1.14    | 29/04/2026 | Donayre Alvarez, Adrian Ricardo | Actualizó los Impact Mappings y la imagen del Collaboration Insights            |
 | 1.15    | 29/04/2026 | Quispe Roldan, Michael Fred     | Añadió 4.4.4. Mobile Applications User Flow Diagrams                           |
+| 1.16    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió 4.4.2. Mobile Applications Wireflow Diagrams                           |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -2112,6 +2113,39 @@ Enlace para acceder al [Figma de vistas móviles](https://www.figma.com/design/a
 ![Mobile Wireframes - Cost](public/assets/images/MobileWireframes/Cost.png)
 
 ### 4.4.2. Mobile Applications Wireflow Diagrams.
+
+### Wireflow - Registro
+![Wireflow - Registro](public/assets/images/Wireflows/RegistroWireflow.png)
+
+### Wireflow - Inicio de Sesión
+![Wireflow - Inicio de Sesión](public/assets/images/Wireflows/LoginWireflow.png)
+
+### Wireflow - Proveedores
+![Wireflow - Proveedores](public/assets/images/Wireflows/SuppliersWireflow.png)
+
+### Wireflow - Lote de Café
+![Wireflow - Lote de Café](public/assets/images/Wireflows/CoffeeLotWireflow.png)
+
+### Wireflow - Inventario
+![Wireflow - Inventario](public/assets/images/Wireflows/Inventory.png)
+
+### Wireflow - Añadir Receta
+![Wireflow - Añadir Receta](public/assets/images/Wireflows/AddRecipeWireflow.png)
+
+### Wireflow - Calibración
+![Wireflow - Calibración](public/assets/images/Wireflows/CalibrationWireflow.png)
+
+### Wireflow - Defectos
+![Wireflow - Defectos](public/assets/images/Wireflows/DeffectsWireflow.png)
+
+### Wireflow - Recetas
+![Wireflow - Recetas](public/assets/images/Wireflows/RecipesWireflow.png)
+
+### Wireflow - Tueste
+![Wireflow - Tueste](public/assets/images/Wireflows/Roast.png)
+
+### Wireflow - Cata
+![Wireflow - Cata](public/assets/images/Wireflows/TastingWireflow.png)
 
 ### 4.4.3. Mobile Applications Mock-ups.
 Se reutilizan los mock-ups móviles del proyecto CaféLab, alineados con los flujos funcionales principales de autenticación, gestión operativa y análisis.
