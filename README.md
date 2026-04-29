@@ -70,6 +70,7 @@
 | 1.14    | 29/04/2026 | Donayre Alvarez, Adrian Ricardo | Actualizó los Impact Mappings y la imagen del Collaboration Insights            |
 | 1.15    | 29/04/2026 | Quispe Roldan, Michael Fred     | Añadió 4.4.4. Mobile Applications User Flow Diagrams                           |
 | 1.16    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió 4.4.2. Mobile Applications Wireflow Diagrams                           |
+| 1.17    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió 4.1.3.2. Android Mobile Style Guidelines                         |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -1965,6 +1966,35 @@ Para diseñar la versión iOS de la aplicación CaféLab, nos vamos a basar en e
 
 #### 4.1.3.2. Android Mobile Style Guidelines
 
+Para el diseño de la versión Android de la aplicación **Cafelab**, nos alineamos con los principios de **Material Design** de Google. Esta guía se fundamenta en la creación de interfaces con superficies táctiles, movimientos significativos y una disposición jerárquica clara. El objetivo es ofrecer una experiencia robusta y eficiente que se adapte de forma natural al ecosistema de dispositivos Android.
+
+* **Paleta de colores:**
+    Se mantiene la consistencia visual utilizando la paleta representativa de Cafelab. En Android, estos colores se aplican sobre superficies siguiendo las reglas de contraste de Material Design, asegurando que los elementos de acción (Verde Oliva) resalten sobre el fondo (Hueso) para una mejor usabilidad en condiciones de luz variables, como en una barra de café.
+
+<img src="public/assets/images/styleGuidelines/Colors.png" alt="Distribución de paleta de colores" width="7000">
+
+* **Tipografía:**
+    Continuamos con el uso de las tipografías institucionales para garantizar una identidad de marca unificada. **Montserrat** se utiliza para encabezados y títulos de sección, aportando un carácter profesional, mientras que **Arial Nova** se emplea en el cuerpo de texto por su legibilidad. El estilo técnico para datos específicos se mantiene en **Roboto Mono**.
+
+<img src="public/assets/images/styleGuidelines/Heading.png" alt="Tipografía principal" width="7000">
+
+<img src="public/assets/images/styleGuidelines/Body.png" alt="Tipografía secundaria" width="7000">
+
+* **Interacciones:**
+    La navegación en Android aprovecha los gestos estándar del sistema para que el usuario se sienta familiarizado desde el primer momento:
+    * **Tap (Toque):** Interacción base para seleccionar lotes, abrir recetas o confirmar procesos de tueste.
+    * **Long Press (Presión prolongada):** Utilizado para desplegar menús contextuales o permitir la selección múltiple en el inventario.
+    * **Scroll (Desplazamiento):** Vertical para listas de proveedores y recetas, con respuesta táctil fluida.
+
+* **Componentes:**
+    La interfaz utiliza componentes específicos de Android que facilitan el flujo de trabajo del barista:
+    * **Floating Action Button (FAB):** Botón circular prominente para la acción principal de cada pantalla (ej. "Nueva Cata").
+    * **Cards (Tarjetas):** Para organizar la información de lotes y perfiles de tueste de manera visual y ordenada.
+    * **Navegación Inferior:** Permite el acceso rápido a los módulos principales (Inventario, Tueste, Recetas) con una sola mano.
+
+<img src="public/assets/images/styleGuidelines/Buttons.png" alt="Distribución de botones" width="7000">
+
+<img src="public/assets/images/styleGuidelines/icons.png" alt="Distribución de iconos" width="250">
 
 ## 4.2. Information Architecture
 La arquitectura de información de Cafelab ha sido diseñada para guiar al usuario de forma lógica, eficiente y contextual a través de todas las funcionalidades de la plataforma. Cada módulo ha sido organizado con el objetivo de representar las etapas del proceso del café desde su estado verde hasta la taza final. Se busca facilitar tanto el registro de información técnica como su posterior análisis para toma de decisiones, con una experiencia fluida, clara y estructurada.
