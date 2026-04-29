@@ -66,7 +66,7 @@
 | 1.10    | 28/04/2026 | Loli Ramirez, Camila Cristina   | Añadió su perfil al equipo y su student outcome.                                |
 | 1.11    | 28/04/2026 | Fernandez Camayo, Carlos Fredy  | Acualizó link de landing page y nuevo despliegue                                |
 | 1.12    | 28/04/2026 | Fernandez Camayo, Carlos Fredy  | Añadió su student outcome.                                                      |
-
+| 1.13    | 28/04/2026 | Antayhua Castillo Oscar Josué  | Realizó el despliegue del frontend y backend, y configuró la conexión entre ambos.                                                      |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -85,8 +85,8 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     <td>TB1</td>
   </tr>
   <tr>
-    <td><strong>Integrante 2</strong></td>
-    <td>Aportes</td>
+    <td><strong>Antayhua Castillo, Oscar Josué</strong></td>
+    <td>Me encargué del despliegue del frontend en Vercel y del backend junto con la base de datos en Railway. Asimismo, configuré la conexión entre ambos entornos para asegurar el correcto funcionamiento de la aplicación, permitiendo su integración y disponibilidad para las pruebas y validación del sistema.</td>
     <td>TB1</td>
   </tr>
   <tr>
@@ -350,8 +350,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
             <td style="border: 1px solid #ddd; vertical-align: top;">  
                 <strong>Camila Loli</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional durante el desarrollo del diseño móvil (iOS Style Guidelines y Prototyping), asegurando que las decisiones de diseño prioricen la claridad, accesibilidad y facilidad de uso para los usuarios. Asimismo, definí lineamientos visuales consistentes (tipografía, colores, componentes e interacciones) con el objetivo de evitar confusión en la interfaz y garantizar una experiencia intuitiva.<br><br>  
-                <strong>Integrante 2</strong><br>  
-                TB1: <br>descripción de actividades<br><br>  
+                <strong>Oscar Antayhua</strong><br>  
+                TB1: <br>Reconocí mi responsabilidad ética y profesional al realizar el despliegue del frontend en Vercel y del backend con base de datos en Railway, asegurando una configuración adecuada de los entornos para el correcto funcionamiento del sistema. Asimismo, configuré la conexión entre ambos servicios de manera ordenada y verificable, priorizando la estabilidad, disponibilidad y confiabilidad de la aplicación para su uso y validación.<br><br>  
                 <strong>Adrian Donayre</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al depurar el Product Backlog para que refleje únicamente funcionalidades realmente implementadas en la aplicación. Eliminé inconsistencias y alineé las historias con el comportamiento real del sistema, evitando información inexacta. Además, incorporé los Sprint Backlogs para evidenciar la planificación y ejecución del trabajo, asegurando trazabilidad y transparencia.<br><br>  
                 <strong>Christian Inga</strong><br>  
@@ -371,8 +371,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
             <td style="border: 1px solid #ddd; vertical-align: top;">  
                 <strong>Camila Loli</strong><br>  
                 TB1: <br>Emití juicios informados al diseñar la interfaz móvil, tomando decisiones que impactan directamente en la experiencia del usuario y en la usabilidad del sistema. Consideré el impacto social al asegurar que la aplicación sea accesible y comprensible para distintos tipos de usuarios, evitando barreras de uso. Además, prioricé el uso de una paleta de colores coherente y una visualización adecuada de datos.<br><br>  
-                <strong>Integrante 2</strong><br>  
-                TB1: <br>descripción de actividades<br><br>  
+                <strong>Oscar Antayhua</strong><br>  
+                TB1: <br>Emití juicios informados al seleccionar plataformas de despliegue como Vercel para el frontend y Railway para el backend y la base de datos, considerando su utilidad para publicar, integrar y validar la solución de manera eficiente. Además, al configurar la conexión entre ambos entornos, contribuí a que el sistema funcione de forma accesible y continua, lo cual favorece una evaluación más realista del impacto operativo y del valor que ofrece la aplicación a sus usuarios.<br><br>  
                 <strong>Adrian Donayre</strong><br>  
                 TB1: <br>Emití juicios informados al depurar el Product Backlog, priorizando únicamente funcionalidades implementadas que aportan valor real al sistema. Consideré el impacto económico y operativo de incluir o excluir historias, asegurando que la documentación refleje de forma precisa el alcance del producto y evite sobreestimar sus capacidades. Además, al incorporar los Sprint Backlogs, facilité la comprensión del avance del proyecto y su viabilidad, contribuyendo a una toma de decisiones más informada por parte del equipo y stakeholders.<br><br>  
                 <strong>Christian Inga</strong><br>  
@@ -433,8 +433,8 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
     <td> Mi nombre es <strong>Camila Cristina Loli Ramirez</strong>, tengo 21 años y soy estudiante de la carrera Ingeniería de Software. Mi carrera se basa en los conocimientos y técnicas científicas para crear un programa informático. Tengo experiencia con el trabajo en equipo, creación de proyectos y creación de programas básicos. Aportaré al equipo mi creatividad, compromiso de trabajo en equipo, puntualidad y responsabilidad. Me comprometo a trabajar constantemente para mejorar nuestro proyecto y a generar un entorno de trabajo sano con mi grupo. </td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/Oscar.jpeg"alt="..." width="200">  </td>
+    <td> Mi nombre es <strong>Oscar Antayhua</strong> y soy estudiante de la carrera de Ingeniería de Software en la UPC. Cuento con experiencia en desarrollo full stack, automatización de procesos y análisis de datos, lo que me ha permitido fortalecer tanto mis habilidades técnicas como mi capacidad para resolver problemas. Considero que todo lo que aprendemos y desarrollamos en la universidad influye directamente en nuestro crecimiento profesional, por eso me esfuerzo constantemente en seguir aprendiendo y adquiriendo nuevas experiencias. Me considero una persona responsable, proactiva y comprometida con el trabajo en equipo, dispuesta a aportar con dedicación, organización y creatividad en cada proyecto. </td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/chapter-1/integrantes/user.jpeg"alt="..." width="200">  </td>
