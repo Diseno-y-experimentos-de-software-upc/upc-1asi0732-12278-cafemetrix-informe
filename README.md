@@ -58,10 +58,14 @@
 | 1.2     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo | Añadió su perfil de integrante                                                  |
 | 1.3     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo | Añadió sprint backlogs, deployment evidence, US, TS y Product Backlog           |
 | 1.4     | 27/04/2026 | Donayre Alvarez, Adrian Ricardo | Actualizó los technical stories agrupandolos por API                            |
-| 1.5     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo | Filtró US, TS y Product Backlog para alinearlos con las funciones implementadas |
-| 1.6     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo | Añadió su Student Outcome y Project Report Collaboration Insights               |
-| 1.7     | 28/04/2026 | Loli Ramirez, Camila Cristina   | Añadió iOS Mobile Style Guidelines                                              |
-| 1.8     | 28/04/2026 | Loli Ramirez, Camila Cristina   | Añadió su perfil al equipo y su student outcome.                                |
+| 1.5     | 27/04/2026 | Fernandez Camayo, Carlos Fredy  | Acualizó secciones del punto 5.2                                                |
+| 1.6     | 27/04/2026 | Fernandez Camayo, Carlos Fredy  | Añadio Terminos y condiciones.   
+| 1.7     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo | Filtró US, TS y Product Backlog para alinearlos con las funciones implementadas |
+| 1.8     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo | Añadió su Student Outcome y Project Report Collaboration Insights               |
+| 1.9     | 28/04/2026 | Loli Ramirez, Camila Cristina   | Añadió iOS Mobile Style Guidelines                                              |
+| 1.10    | 28/04/2026 | Loli Ramirez, Camila Cristina   | Añadió su perfil al equipo y su student outcome.                                |
+| 1.11    | 28/04/2026 | Fernandez Camayo, Carlos Fredy  | Acualizó link de landing page y nuevo despliegue                                |
+| 1.12    | 28/04/2026 | Fernandez Camayo, Carlos Fredy  | Añadió su student outcome.                                                      |
 
 
 # Project Report Collaboration Insights
