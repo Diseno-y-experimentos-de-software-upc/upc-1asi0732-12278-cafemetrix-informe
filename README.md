@@ -2130,6 +2130,39 @@ Se reutilizan los mock-ups móviles del proyecto CaféLab, alineados con los flu
 
 ### 4.4.4. Mobile Applications User Flow Diagrams.
 
+**USER GOAL: Crear cuenta en CaféLab (US01, US03)**
+![Mobile User Flow - Registro](public/assets/images/UserFlowDiagram/Mobile_Flow_Autenticacion.png)
+
+**USER GOAL: Iniciar sesión en CaféLab (US01, US02)**
+![Mobile User Flow - Login](public/assets/images/UserFlowDiagram/Mobile_Flow_Login.png)
+
+**USER GOAL: Registrar y editar proveedores (US04)**
+![Mobile User Flow - Proveedores](public/assets/images/UserFlowDiagram/Mobile_Flow_Proveedores.png)
+
+**USER GOAL: Registrar y gestionar lotes de café verde (US05, US06)**
+![Mobile User Flow - Lote de Café](public/assets/images/UserFlowDiagram/Mobile_Flow_LoteCafe.png)
+
+**USER GOAL: Gestionar y comparar perfiles de tueste (US07, US09)**
+![Mobile User Flow - Perfiles de Tueste](public/assets/images/UserFlowDiagram/Mobile_Flow_PerfilesTueste.png)
+
+**USER GOAL: Registrar y analizar sesiones de cata (US11, US12)**
+![Mobile User Flow - Sesiones de Cata](public/assets/images/UserFlowDiagram/Mobile_Flow_SesionesCata.png)
+
+**USER GOAL: Consultar defectos del café (US10)**
+![Mobile User Flow - Defectos](public/assets/images/UserFlowDiagram/Mobile_Flow_Defectos.png)
+
+**USER GOAL: Gestionar recetas de café (US15, US17, US18)**
+![Mobile User Flow - Recetas](public/assets/images/UserFlowDiagram/Mobile_Flow_Recetas.png)
+
+**USER GOAL: Registrar y editar calibraciones (US16)**
+![Mobile User Flow - Calibración](public/assets/images/UserFlowDiagram/Mobile_Flow_Calibracion.png)
+
+**USER GOAL: Gestionar inventario de café verde (US19)**
+![Mobile User Flow - Inventario](public/assets/images/UserFlowDiagram/Mobile_Flow_Inventario.png)
+
+**USER GOAL: Registrar y gestionar costos de producción (US20)**
+![Mobile User Flow - Costos de Producción](public/assets/images/UserFlowDiagram/Mobile_Flow_CostosProduccion.png)
+
 ## 4.5. Mobile Applications Prototyping.
 ### 4.5.1. Android Mobile Applications Prototyping.
 Enlace del prototipo [Figma](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1).
