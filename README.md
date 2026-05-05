@@ -4834,40 +4834,404 @@ Este proyecto no cuenta con implementacion de una aplicacion mobile, debido a lo
 
 ### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence.
 
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-5/api-evidence1.png" alt="Evidencia API 1">
+</figure>
 
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-5/api-evidence2.png" alt="Evidencia API 1">
+</figure>
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-5/api-evidence3.png" alt="Evidencia API 1">
+</figure>
 
 ### 5.2.7. RESTful API documentation.
 
+<table>
+  <thead>
+    <tr>
+      <th>Módulo</th>
+      <th>Método</th>
+      <th>Endpoint</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Coffee Lots -->
+    <tr>
+      <td>Coffee Lots</td>
+      <td>GET</td>
+      <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+      <td>Obtiene un lote de café por su identificador.</td>
+    </tr>
+    <tr>
+      <td>Coffee Lots</td>
+      <td>PUT</td>
+      <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+      <td>Actualiza la información de un lote de café existente.</td>
+    </tr>
+    <tr>
+      <td>Coffee Lots</td>
+      <td>DELETE</td>
+      <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+      <td>Elimina un lote de café registrado.</td>
+    </tr>
+    <tr>
+      <td>Coffee Lots</td>
+      <td>GET</td>
+      <td>/api/v1/coffee-lots</td>
+      <td>Lista los lotes de café del usuario autenticado.</td>
+    </tr>
+    <tr>
+      <td>Coffee Lots</td>
+      <td>POST</td>
+      <td>/api/v1/coffee-lots</td>
+      <td>Crea un nuevo lote de café asociado al perfil obtenido desde el JWT.</td>
+    </tr>
+    <tr>
+      <td>Coffee Lots</td>
+      <td>GET</td>
+      <td>/api/v1/coffee-lots/supplier/{supplierId}</td>
+      <td>Lista los lotes de café asociados a un proveedor del usuario.</td>
+    </tr>
+    <tr>
+      <td>Coffee Lots</td>
+      <td>GET</td>
+      <td>/api/v1/coffee-lots/profile/{userId}</td>
+      <td>Lista los lotes de café asociados a un perfil de usuario.</td>
+    </tr>
+    <!-- Portfolios -->
+    <tr>
+      <td>Portfolios</td>
+      <td>GET</td>
+      <td>/api/v1/portfolios/{portfolioId}</td>
+      <td>Obtiene un portafolio por su identificador, siempre que pertenezca al perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Portfolios</td>
+      <td>PUT</td>
+      <td>/api/v1/portfolios/{portfolioId}</td>
+      <td>Actualiza un portafolio existente del perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Portfolios</td>
+      <td>DELETE</td>
+      <td>/api/v1/portfolios/{portfolioId}</td>
+      <td>Elimina un portafolio perteneciente al perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Portfolios</td>
+      <td>GET</td>
+      <td>/api/v1/portfolios</td>
+      <td>Lista los portafolios del perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Portfolios</td>
+      <td>POST</td>
+      <td>/api/v1/portfolios</td>
+      <td>Crea un nuevo portafolio asociado al perfil obtenido desde el JWT.</td>
+    </tr>
+    <!-- Roast Profiles -->
+    <tr>
+      <td>Roast Profiles</td>
+      <td>GET</td>
+      <td>/api/v1/roast-profile/{roastProfileId}</td>
+      <td>Obtiene un perfil de tueste por su identificador.</td>
+    </tr>
+    <tr>
+      <td>Roast Profiles</td>
+      <td>PUT</td>
+      <td>/api/v1/roast-profile/{roastProfileId}</td>
+      <td>Actualiza un perfil de tueste existente.</td>
+    </tr>
+    <tr>
+      <td>Roast Profiles</td>
+      <td>DELETE</td>
+      <td>/api/v1/roast-profile/{roastProfileId}</td>
+      <td>Elimina un perfil de tueste registrado.</td>
+    </tr>
+    <tr>
+      <td>Roast Profiles</td>
+      <td>GET</td>
+      <td>/api/v1/roast-profile</td>
+      <td>Lista los perfiles de tueste del usuario autenticado.</td>
+    </tr>
+    <tr>
+      <td>Roast Profiles</td>
+      <td>POST</td>
+      <td>/api/v1/roast-profile</td>
+      <td>Crea un nuevo perfil de tueste asociado al JWT; el lote debe pertenecer al usuario.</td>
+    </tr>
+    <tr>
+      <td>Roast Profiles</td>
+      <td>GET</td>
+      <td>/api/v1/roast-profile/profile/{userId}</td>
+      <td>Lista los perfiles de tueste asociados a un usuario.</td>
+    </tr>
+    <tr>
+      <td>Roast Profiles</td>
+      <td>GET</td>
+      <td>/api/v1/roast-profile/lot/{coffeeLotId}</td>
+      <td>Lista los perfiles de tueste asociados a un lote de café del usuario.</td>
+    </tr>
+    <!-- Inventory Entries -->
+    <tr>
+      <td>Inventory Entries</td>
+      <td>GET</td>
+      <td>/api/v1/inventory-entries</td>
+      <td>Lista las entradas de inventario del usuario autenticado.</td>
+    </tr>
+    <tr>
+      <td>Inventory Entries</td>
+      <td>POST</td>
+      <td>/api/v1/inventory-entries</td>
+      <td>Registra un consumo de inventario y descuenta el stock del lote.</td>
+    </tr>
+    <!-- Recipes -->
+    <tr>
+      <td>Recipes</td>
+      <td>GET</td>
+      <td>/api/v1/recipes/{recipeId}</td>
+      <td>Obtiene una receta por su identificador, siempre que pertenezca al perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Recipes</td>
+      <td>PUT</td>
+      <td>/api/v1/recipes/{recipeId}</td>
+      <td>Actualiza una receta existente.</td>
+    </tr>
+    <tr>
+      <td>Recipes</td>
+      <td>DELETE</td>
+      <td>/api/v1/recipes/{recipeId}</td>
+      <td>Elimina una receta registrada.</td>
+    </tr>
+    <tr>
+      <td>Recipes</td>
+      <td>PUT</td>
+      <td>/api/v1/recipes/{recipeId}/ingredients/{ingredientId}</td>
+      <td>Actualiza un ingrediente de una receta.</td>
+    </tr>
+    <tr>
+      <td>Recipes</td>
+      <td>DELETE</td>
+      <td>/api/v1/recipes/{recipeId}/ingredients/{ingredientId}</td>
+      <td>Elimina un ingrediente de una receta.</td>
+    </tr>
+    <tr>
+      <td>Recipes</td>
+      <td>GET</td>
+      <td>/api/v1/recipes</td>
+      <td>Lista las recetas del perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Recipes</td>
+      <td>POST</td>
+      <td>/api/v1/recipes</td>
+      <td>Crea una nueva receta asociada al perfil obtenido desde el JWT.</td>
+    </tr>
+    <tr>
+      <td>Recipes</td>
+      <td>GET</td>
+      <td>/api/v1/recipes/{recipeId}/ingredients</td>
+      <td>Lista los ingredientes de una receta.</td>
+    </tr>
+    <tr>
+      <td>Recipes</td>
+      <td>POST</td>
+      <td>/api/v1/recipes/{recipeId}/ingredients</td>
+      <td>Añade un ingrediente a una receta del perfil autenticado.</td>
+    </tr>
+    <!-- Coffees -->
+    <tr>
+      <td>Coffees</td>
+      <td>GET</td>
+      <td>/api/v1/coffees</td>
+      <td>Lista todos los cafés disponibles.</td>
+    </tr>
+    <tr>
+      <td>Coffees</td>
+      <td>POST</td>
+      <td>/api/v1/coffees</td>
+      <td>Crea un nuevo café.</td>
+    </tr>
+    <tr>
+      <td>Coffees</td>
+      <td>GET</td>
+      <td>/api/v1/coffees/{coffeeId}</td>
+      <td>Obtiene un café por su identificador.</td>
+    </tr>
+    <!-- Authentication -->
+    <tr>
+      <td>Authentication</td>
+      <td>POST</td>
+      <td>/api/v1/authentication/sign-up</td>
+      <td>Registra un nuevo usuario en el sistema.</td>
+    </tr>
+    <tr>
+      <td>Authentication</td>
+      <td>POST</td>
+      <td>/api/v1/authentication/sign-in</td>
+      <td>Inicia sesión y genera el token JWT del usuario.</td>
+    </tr>
+    <!-- Cupping Sessions -->
+    <tr>
+      <td>Cupping Sessions</td>
+      <td>GET</td>
+      <td>/api/v1/cupping-sessions/{sessionId}</td>
+      <td>Obtiene una sesión de cata por su identificador.</td>
+    </tr>
+    <tr>
+      <td>Cupping Sessions</td>
+      <td>PUT</td>
+      <td>/api/v1/cupping-sessions/{sessionId}</td>
+      <td>Actualiza una sesión de cata existente.</td>
+    </tr>
+    <tr>
+      <td>Cupping Sessions</td>
+      <td>DELETE</td>
+      <td>/api/v1/cupping-sessions/{sessionId}</td>
+      <td>Elimina una sesión de cata registrada.</td>
+    </tr>
+    <tr>
+      <td>Cupping Sessions</td>
+      <td>GET</td>
+      <td>/api/v1/cupping-sessions</td>
+      <td>Lista las sesiones de cata del perfil autenticado, mostrando primero las más recientes.</td>
+    </tr>
+    <tr>
+      <td>Cupping Sessions</td>
+      <td>POST</td>
+      <td>/api/v1/cupping-sessions</td>
+      <td>Crea una nueva sesión de cata.</td>
+    </tr>
+    <!-- Defects -->
+    <tr>
+      <td>Defects</td>
+      <td>GET</td>
+      <td>/api/v1/defects</td>
+      <td>Lista los registros de defectos del perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Defects</td>
+      <td>POST</td>
+      <td>/api/v1/defects</td>
+      <td>Crea un nuevo registro de defecto asociado al usuario obtenido desde el JWT.</td>
+    </tr>
+    <tr>
+      <td>Defects</td>
+      <td>GET</td>
+      <td>/api/v1/defects/{defectId}</td>
+      <td>Obtiene un registro de defecto por su identificador, siempre que pertenezca al perfil autenticado.</td>
+    </tr>
+    <!-- Profiles -->
+    <tr>
+      <td>Profiles</td>
+      <td>GET</td>
+      <td>/api/v1/profiles</td>
+      <td>Obtiene un perfil por email.</td>
+    </tr>
+    <tr>
+      <td>Profiles</td>
+      <td>POST</td>
+      <td>/api/v1/profiles</td>
+      <td>Crea un nuevo perfil de usuario.</td>
+    </tr>
+    <tr>
+      <td>Profiles</td>
+      <td>GET</td>
+      <td>/api/v1/profiles/{userId}</td>
+      <td>Obtiene un perfil por el identificador del usuario.</td>
+    </tr>
+    <tr>
+      <td>Profiles</td>
+      <td>PATCH</td>
+      <td>/api/v1/profiles/{userId}</td>
+      <td>Actualiza parcialmente la información de un perfil.</td>
+    </tr>
+    <!-- Suppliers -->
+    <tr>
+      <td>Suppliers</td>
+      <td>GET</td>
+      <td>/api/v1/suppliers/{supplierId}</td>
+      <td>Obtiene un proveedor por su identificador.</td>
+    </tr>
+    <tr>
+      <td>Suppliers</td>
+      <td>PUT</td>
+      <td>/api/v1/suppliers/{supplierId}</td>
+      <td>Actualiza la información de un proveedor existente.</td>
+    </tr>
+    <tr>
+      <td>Suppliers</td>
+      <td>DELETE</td>
+      <td>/api/v1/suppliers/{supplierId}</td>
+      <td>Elimina un proveedor registrado.</td>
+    </tr>
+    <tr>
+      <td>Suppliers</td>
+      <td>GET</td>
+      <td>/api/v1/suppliers</td>
+      <td>Lista los proveedores del usuario autenticado.</td>
+    </tr>
+    <tr>
+      <td>Suppliers</td>
+      <td>POST</td>
+      <td>/api/v1/suppliers</td>
+      <td>Crea un nuevo proveedor.</td>
+    </tr>
+    <tr>
+      <td>Suppliers</td>
+      <td>GET</td>
+      <td>/api/v1/suppliers/profile/{userId}</td>
+      <td>Lista los proveedores asociados a un usuario.</td>
+    </tr>
+    <!-- Grind Calibrations -->
+    <tr>
+      <td>Grind Calibrations</td>
+      <td>GET</td>
+      <td>/api/v1/calibrations/{calibrationId}</td>
+      <td>Obtiene una calibración de molienda por su identificador, siempre que pertenezca al perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Grind Calibrations</td>
+      <td>PUT</td>
+      <td>/api/v1/calibrations/{calibrationId}</td>
+      <td>Actualiza una calibración de molienda del perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Grind Calibrations</td>
+      <td>GET</td>
+      <td>/api/v1/calibrations</td>
+      <td>Lista las calibraciones de molienda del perfil autenticado.</td>
+    </tr>
+    <tr>
+      <td>Grind Calibrations</td>
+      <td>POST</td>
+      <td>/api/v1/calibrations</td>
+      <td>Crea una nueva calibración de molienda asociada al usuario obtenido desde el JWT.</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### 5.2.8. Team Collaboration Insights.
 
-<table border="1">
-  <tr>
-    <th>Alumno</th>
-    <th>Actividad</th>
-  </tr>
-  <tr>
-    <td>Camila Cristina Loli Ramirez</td>
-    <td>Creación de estructura inicial del proyecto e implementación de header con navegación y hero banner principal</td>
-  </tr>
-  <tr>
-    <td>Michael Fred Quispe Roldan</td>
-    <td>Implementación de sección con título y áreas diferenciadas para baristas y cafeterías</td>
-  </tr>
-  <tr>
-    <td>Adrian Ricardo Donayre Alvarez</td>
-    <td>Implementación de área "Datos que respaldan tus decisiones" con gráficos de dashboard y curvas</td>
-  </tr>
-  <tr>
-    <td>Christian Fabrizio Inga Orihuela</td>
-    <td>Creación de las áreas "Soy barista" y "Tengo una cafetería" con descripciones y CTAs</td>
-  </tr>
-  <tr>
-    <td>Carlos Fredy Fernandez Camayo</td>
-    <td>Implementación de la comparativa de los 4 planes con precios y listas de características</td>
-  </tr>
-</table>
+#### Frontend 
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-5/collaboration-insights1.png" alt="Collaboration Insights 1">
+</figure>
+
+#### Backend
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-5/collaboration-insights2.png" alt="Collaboration Insights 2">
+</figure>
+
+#### Informe
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-5/collaboration-insights3.png" alt="Collaboration Insights 3">
+</figure>
 
 
 
