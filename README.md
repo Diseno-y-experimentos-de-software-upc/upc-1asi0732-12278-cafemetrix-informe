@@ -71,7 +71,8 @@
 | 1.15    | 29/04/2026 | Quispe Roldan, Michael Fred     | Añadió 4.4.4. Mobile Applications User Flow Diagrams                           |
 | 1.16    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió 4.4.2. Mobile Applications Wireflow Diagrams                           |
 | 1.17    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió 4.1.3.2. Android Mobile Style Guidelines                         |
-| 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió su Project Report Collaboration Insights y Student Outcome                         |
+| 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió su Project Report Collaboration Insights y Student Outcome         |
+| 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo     | Añadió la evidencia y documentación del RESTful API además del collaboration insights  |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
