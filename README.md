@@ -73,6 +73,7 @@
 | 1.17    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió 4.1.3.2. Android Mobile Style Guidelines                         |
 | 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió su Project Report Collaboration Insights y Student Outcome         |
 | 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo     | Añadió la evidencia y documentación del RESTful API además del collaboration insights  |
+| 1.20    | 06/05/2026 | Donayre Alvarez, Adrian Ricardo     | Añadió los links de las nuevas secciones del capítulo VI y VII  |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -5244,6 +5245,27 @@ Se muestra el video about the product, donde se evidencia la explicación sobre 
 
 - **YouTube:** [Ver en YouTube](https://www.youtube.com/watch?v=hYDHNbU16zw)
 - **Microsoft Stream:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=N5dUfT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+# Part II: Verification, Validation & Pipeline
+
+# Capítulo VI: Product Verification & Validation
+
+## 6.1. Testing Suites & Validation.
+### 6.1.1. Core Entities Unit Tests.
+### 6.1.2. Core Integration Tests.
+### 6.1.3. Core Behavior-Driven Development.
+### 6.1.4. Core System Tests.
+
+# Capítulo VII: DevOps Practices
+## 7.1. Continuous Integration.
+### 7.1.1. Tools and Practices.
+### 7.1.2. Build & Test Suite Pipeline Components.
+## 7.2. Continuous Delivery.
+### 7.2.1. Tools and Practices.
+### 7.2.2. Stages Deployment Pipeline Components.
+## 7.3. Continuous deployment.
+### 7.3.1. Tools and Practices.
+### 7.3.2. Production Deployment Pipeline Components.
 
 # Conclusiones y recomendaciones
 
