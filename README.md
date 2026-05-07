@@ -74,6 +74,7 @@
 | 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio     | Añadió su Project Report Collaboration Insights y Student Outcome         |
 | 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo     | Añadió la evidencia y documentación del RESTful API además del collaboration insights  |
 | 1.20    | 06/05/2026 | Donayre Alvarez, Adrian Ricardo     | Añadió los links de las nuevas secciones del capítulo VI y VII  |
+| 1.21    | 07/05/2026 | Quispe Roldan, Michael Fred         | Añadió 6.1.3. Core Behavior-Driven Development y 6.1.4. Core System Tests con pruebas del módulo Librería de Defectos |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
