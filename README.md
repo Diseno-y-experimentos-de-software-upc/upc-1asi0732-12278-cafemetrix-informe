@@ -5262,9 +5262,229 @@ Se muestra el video about the product, donde se evidencia la explicación sobre 
 ### 7.1.2. Build & Test Suite Pipeline Components.
 ## 7.2. Continuous Delivery.
 ### 7.2.1. Tools and Practices.
+
+**Tools:**
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; padding: 1rem 0;">
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #534AB7;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EEEDFE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🐙</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">GitHub</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EEEDFE; color: #3C3489;">Control de versiones</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Plataforma principal para el control de versiones del proyecto. Esta permite mantener el código organizado en ramas estables e integrar cambios mediante commits trazables.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CD</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Prepara versiones listas para despliegue sin publicarlas automáticamente en producción.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #185FA5;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #E6F1FB; display: flex; align-items: center; justify-content: center; font-size: 20px;">📋</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Trello</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #E6F1FB; color: #0C447C;">Gestión de tareas</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Gestiona las tareas del equipo, organiza los Sprint Backlogs y da seguimiento al estado de cada actividad.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CD</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Controla qué funcionalidades están listas, cuáles requieren revisión y cuáles pueden pasar a validación previa al despliegue.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #993556; grid-column: 1 / -1; max-width: 390px; justify-self: center;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FBEAF0; display: flex; align-items: center; justify-content: center; font-size: 20px;">🔒</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Variables de Entorno</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FBEAF0; color: #4B1528;">Configuración segura</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Configura datos sensibles del entorno: conexión a base de datos, puertos y configuraciones del backend.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CD</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Separa la configuración del código fuente, permitiendo despliegues más seguros y flexibles.</p>
+  </div>
+
+</div>
+
+**Practices:**
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; padding: 1rem 0;">
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #534AB7;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EEEDFE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🌿</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Feature Branching</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EEEDFE; color: #3C3489;">Ramas independientes</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Desarrollamos las nuevas funcionalidades en ramas independientes derivadas de una rama de integración. Esto nos permite evitar afectar directamente la versión estable del sistema y revisar cada cambio antes de integrarlo.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #185FA5;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #E6F1FB; display: flex; align-items: center; justify-content: center; font-size: 20px;">🔀</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Gitflow</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #E6F1FB; color: #0C447C;">Organización de ramas</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Organizamos el trabajo mediante ramas como <code>main</code>, <code>develop</code>, <code>feature</code> y <code>hotfix</code>. Esto nos permite separar el código estable del código en desarrollo y preparar entregas controladas.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #3B6D11;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EAF3DE; display: flex; align-items: center; justify-content: center; font-size: 20px;">✍️</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Conventional Commits</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EAF3DE; color: #27500A;">Trazabilidad</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Utilizamos mensajes de commit estructurados para indicar si un cambio corresponde a una nueva funcionalidad, corrección, ajuste de estilo o mejora. Esto facilita la trazabilidad del trabajo realizado.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #B87415;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FAEEDA; display: flex; align-items: center; justify-content: center; font-size: 20px;">✅</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Manual Validation Before Deployment</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FAEEDA; color: #633806;">Validación manual</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Antes de considerar una versión como lista, validamos que el frontend, backend, landing page y base de datos funcionen correctamente. Esto reduce errores antes de publicar una versión estable.</p>
+  </div>
+
+</div>
+
 ### 7.2.2. Stages Deployment Pipeline Components.
 ## 7.3. Continuous deployment.
 ### 7.3.1. Tools and Practices.
+
+**Tools:**
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; padding: 1rem 0;">
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #534AB7;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EEEDFE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🐙</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">GitHub</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EEEDFE; color: #3C3489;">Control de versiones</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Fuente principal del código para activar los despliegues desde las ramas configuradas.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CD</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Los cambios integrados a una rama estable pueden iniciar automáticamente el proceso de publicación en las plataformas conectadas.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #444441;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #F1EFE8; display: flex; align-items: center; justify-content: center; font-size: 20px;">▲</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Vercel</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #F1EFE8; color: #444441;">Frontend web</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Despliega de forma continua el frontend web, vinculado directamente con el repositorio.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CD</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Ejecuta automáticamente el build y publica la aplicación cuando se actualiza la rama configurada para producción.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #3B6D11;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EAF3DE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🚂</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Railway</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EAF3DE; color: #27500A;">Backend & base de datos</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Despliega de forma continua el backend y la base de datos, conectado al repositorio del proyecto.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CD</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Ejecuta el build, publica el servicio y mantiene activa la conexión con MySQL dentro del entorno productivo.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #B87415;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FAEEDA; display: flex; align-items: center; justify-content: center; font-size: 20px;">🔥</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Firebase Hosting</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FAEEDA; color: #633806;">Landing page</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Publica la landing page del proyecto manteniendo disponible una versión pública del sitio estático.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CD</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Permite mantener disponible y actualizable el sitio estático mediante comandos de despliegue.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #185FA5; grid-column: 1 / -1; max-width: 390px; justify-self: center;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #E6F1FB; display: flex; align-items: center; justify-content: center; font-size: 20px;">🗄️</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">MySQL on Railway</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #E6F1FB; color: #0C447C;">Base de datos</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Base de datos del backend desplegado, integrada dentro del entorno productivo en Railway.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CD</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Permite que el servicio backend trabaje con datos persistentes durante la ejecución de la aplicación en producción.</p>
+  </div>
+
+</div>
+
+**Practices:**
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; padding: 1rem 0;">
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #534AB7;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EEEDFE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🌿</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Deployment from Stable Branches</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EEEDFE; color: #3C3489;">Ramas estables</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Realizamos los despliegues desde ramas estables, principalmente <code>main</code>, para evitar que cambios incompletos o en desarrollo lleguen directamente al entorno productivo.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #3B6D11;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EAF3DE; display: flex; align-items: center; justify-content: center; font-size: 20px;">⚙️</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Automatic Build and Deployment</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EAF3DE; color: #27500A;">Automatización</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Vercel y Railway ejecutan el proceso de construcción y publicación al detectar cambios en la rama configurada. Esto reduce el trabajo manual y acelera la entrega de nuevas versiones.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #B87415;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FAEEDA; display: flex; align-items: center; justify-content: center; font-size: 20px;">🔒</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Production Environment Configuration</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FAEEDA; color: #633806;">Variables de entorno</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Configuramos variables de entorno para que la aplicación funcione correctamente en producción sin modificar el código fuente. Esto cubre credenciales, rutas de conexión y parámetros del servidor.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #185FA5;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #E6F1FB; display: flex; align-items: center; justify-content: center; font-size: 20px;">✅</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Service Availability and Integration Validation</p>
+       <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #E6F1FB; color: #0C447C;">Verificación post-despliegue e integración</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">
+    Después de cada despliegue, verificamos que los servicios estén activos y accesibles: el frontend en Vercel, el backend en Railway y la landing page en Firebase. Además, validamos que la aplicación web desplegada pueda comunicarse correctamente con el backend en línea, asegurando que el usuario pueda usar las funcionalidades reales del sistema.
+    </p>
+  </div>
+
+</div>
+
 ### 7.3.2. Production Deployment Pipeline Components.
 
 # Conclusiones y recomendaciones
