@@ -5254,7 +5254,198 @@ Se muestra el video about the product, donde se evidencia la explicación sobre 
 ### 6.1.1. Core Entities Unit Tests.
 ### 6.1.2. Core Integration Tests.
 ### 6.1.3. Core Behavior-Driven Development.
+
+En esta sección se presentan las pruebas de comportamiento (BDD) desarrolladas para el módulo de **Librería de Defectos** del backend de Café Lab. Las pruebas están implementadas en el archivo `DefectDomainBDDTest.java`, ubicado en `src/test/java/com/cafemetrix/cafelab/defects/domain/`, y utilizan JUnit 5 con clases `@Nested` y `@DisplayName` para estructurar los escenarios en formato Given/When/Then.
+
+**Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)
+
+**Archivo de pruebas BDD:** `src/test/java/com/cafemetrix/cafelab/defects/domain/DefectDomainBDDTest.java`
+
+#### Feature: Librería de defectos — modelo de dominio
+
+Las pruebas BDD cubren los siguientes escenarios de comportamiento agrupados por entidad:
+
+---
+
+**Scenario: Creación de DefectName**
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Valor válido | Un valor no vacío "Grano negro" | Se crea un `DefectName` | El valor se almacena correctamente |
+| Valor nulo | `null` | Se intenta crear un `DefectName` | Lanza `IllegalArgumentException` con mensaje sobre el nombre |
+| Valor en blanco | `"   "` | Se intenta crear un `DefectName` | Lanza `IllegalArgumentException` con mensaje sobre el nombre |
+
+---
+
+**Scenario: Creación de DefectType**
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Tipo válido | Un tipo no vacío "Categoría 1" | Se crea un `DefectType` | El valor se almacena correctamente |
+| Valor nulo | `null` | Se intenta crear un `DefectType` | Lanza `IllegalArgumentException` con mensaje sobre el tipo |
+| Valor en blanco | `""` | Se intenta crear un `DefectType` | Lanza `IllegalArgumentException` con mensaje sobre el tipo |
+
+---
+
+**Scenario: Creación de ProbableCause**
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Causa válida | Una causa descriptiva | Se crea un `ProbableCause` | El valor se almacena correctamente |
+| Valor nulo | `null` | Se intenta crear un `ProbableCause` | Lanza `IllegalArgumentException` con mensaje sobre la causa |
+| Valor en blanco | `"  "` | Se intenta crear un `ProbableCause` | Lanza `IllegalArgumentException` con mensaje sobre la causa |
+
+---
+
+**Scenario: Creación de SuggestedSolution**
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Solución válida | Una solución descriptiva | Se crea un `SuggestedSolution` | El valor se almacena correctamente |
+| Valor nulo | `null` | Se intenta crear un `SuggestedSolution` | Lanza `IllegalArgumentException` con mensaje sobre la solución |
+| Valor en blanco | `""` | Se intenta crear un `SuggestedSolution` | Lanza `IllegalArgumentException` con mensaje sobre la solución |
+
+---
+
+**Scenario: Validación de CreateDefectResource**
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Campos válidos | Todos los campos completos y en rango | Se construye el recurso | No lanza excepción |
+| Nombre de café nulo | `coffeeDisplayName = null` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el nombre del café |
+| Peso negativo | `defectWeight = -1.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el peso del defecto |
+| Porcentaje > 100 | `percentage = 150.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el porcentaje |
+| Porcentaje negativo | `percentage = -1.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el porcentaje |
+
+---
+
+**Scenario: Creación del agregado Defect**
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Comando válido | Un `CreateDefectCommand` con todos los campos | Se crea un `Defect` | Todos los campos se mapean correctamente al agregado |
+| Nombre con espacios | `coffeeDisplayName = "  Café Etiopía  "` | Se crea un `Defect` | Se aplica `trim()` y el nombre queda como `"Café Etiopía"` |
+
+---
+
+**Implementación representativa:**
+
+```java
+@Nested
+@DisplayName("Scenario: Creación del agregado Defect")
+class DefectAggregateBDD {
+
+    @Test
+    @DisplayName("Given un CreateDefectCommand válido, When se crea Defect, Then todos los campos son mapeados correctamente")
+    void givenValidCommand_whenCreate_thenFieldsMappedCorrectly() {
+        var command = new CreateDefectCommand(
+            1L, "Café Etiopía", "Yirgacheffe", "Heirloom",
+            500.0, "Grano negro", "Categoría 1",
+            25.0, 5.0, "Temperatura excesiva", "Reducir temperatura"
+        );
+
+        var defect = new Defect(command);
+
+        assertThat(defect.getUserId()).isEqualTo(1L);
+        assertThat(defect.getName()).isEqualTo("Grano negro");
+        assertThat(defect.getDefectType()).isEqualTo("Categoría 1");
+        assertThat(defect.getPercentage()).isEqualTo(5.0);
+    }
+}
+```
+
 ### 6.1.4. Core System Tests.
+
+En esta sección se presentan las pruebas de sistema desarrolladas para el módulo de **Librería de Defectos**. Las pruebas están implementadas en el archivo `DefectsControllerSystemTest.java`, ubicado en `src/test/java/com/cafemetrix/cafelab/defects/interfaces/rest/`, y validan el comportamiento completo de los endpoints REST del controlador `DefectsController`.
+
+**Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)
+
+**Archivo de pruebas de sistema:** `src/test/java/com/cafemetrix/cafelab/defects/interfaces/rest/DefectsControllerSystemTest.java`
+
+**Tecnologías utilizadas:** `@WebMvcTest`, `MockMvc`, `Mockito`, `AssertJ`, Spring Boot Test
+
+Los servicios `DefectCommandService`, `DefectQueryService` y `CurrentProfileIdResolver` son mockeados para aislar la capa de controlador y probar únicamente el comportamiento HTTP.
+
+---
+
+**System Tests: `POST /api/v1/defects`**
+
+| Escenario | Condición | HTTP Status esperado | Verificación adicional |
+|-----------|-----------|---------------------|------------------------|
+| Creación exitosa | Usuario autenticado + cuerpo válido | `201 Created` | `id`, `name`, `defectType`, `coffeeDisplayName` presentes en respuesta |
+| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
+| Datos inválidos | `defectWeight = -5.0` | `400 Bad Request` | — |
+
+---
+
+**System Tests: `GET /api/v1/defects`**
+
+| Escenario | Condición | HTTP Status esperado | Verificación adicional |
+|-----------|-----------|---------------------|------------------------|
+| Lista con defectos | Usuario autenticado, servicio retorna 2 defectos | `200 OK` | `$.length() == 2` |
+| Lista vacía | Usuario autenticado, servicio retorna lista vacía | `200 OK` | `$.length() == 0` |
+| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
+
+---
+
+**System Tests: `GET /api/v1/defects/{id}`**
+
+| Escenario | Condición | HTTP Status esperado | Verificación adicional |
+|-----------|-----------|---------------------|------------------------|
+| Defecto existente | Usuario autenticado + defecto encontrado | `200 OK` | `$.id == 10`, `$.userId == 1` |
+| Defecto no encontrado | Servicio lanza `DefectNotFoundException` | `404 Not Found` | — |
+| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
+
+---
+
+**Implementación representativa:**
+
+```java
+@Test
+@DisplayName("Given usuario autenticado y datos válidos, When POST /api/v1/defects, Then responde 201 con el defecto creado")
+void givenAuthenticatedUserAndValidBody_whenPost_thenReturns201() throws Exception {
+    when(currentProfileIdResolver.resolveProfileId()).thenReturn(Optional.of(1L));
+    var defect = mockDefect(10L, 1L);
+    when(defectCommandService.handle(any(CreateDefectCommand.class))).thenReturn(Optional.of(defect));
+
+    mockMvc.perform(post("/api/v1/defects")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(objectMapper.writeValueAsString(validCreateBody())))
+        .andExpect(status().isCreated())
+        .andExpect(jsonPath("$.id").value(10))
+        .andExpect(jsonPath("$.name").value("Grano negro"));
+}
+```
+
+---
+
+#### Validación del módulo: Librería de Defectos
+
+El módulo de Librería de Defectos expone tres endpoints REST documentados y desplegados en el backend de Café Lab (Railway). A continuación se muestra la evidencia de validación del módulo:
+
+**Endpoints validados:**
+
+| Método | Endpoint | Descripción | Estado |
+|--------|----------|-------------|--------|
+| `POST` | `/api/v1/defects` | Crear registro de defecto asociado al usuario autenticado (JWT) | ✅ Implementado |
+| `GET` | `/api/v1/defects` | Listar todos los defectos del perfil autenticado | ✅ Implementado |
+| `GET` | `/api/v1/defects/{id}` | Obtener defecto por ID (validando pertenencia al perfil) | ✅ Implementado |
+
+**Documentación Swagger:** El módulo está documentado en la especificación OpenAPI del backend bajo el tag `Defects`. La documentación Swagger puede consultarse en el endpoint `/swagger-ui/index.html` del servidor desplegado.
+
+**Cobertura de pruebas del módulo:**
+
+| Tipo de prueba | Archivo | Escenarios cubiertos |
+|----------------|---------|---------------------|
+| BDD (dominio) | `DefectDomainBDDTest.java` | 14 escenarios — value objects + agregado + resource |
+| Sistema (REST) | `DefectsControllerSystemTest.java` | 9 escenarios — POST, GET all, GET by ID |
+
+**Reglas de negocio validadas:**
+- `DefectName`, `DefectType`, `ProbableCause` y `SuggestedSolution` rechazan valores nulos o en blanco con mensajes de error descriptivos.
+- `CreateDefectResource` valida que `defectWeight > 0` y que `percentage` esté en el rango `[0, 100]`.
+- El nombre del café se normaliza con `trim()` al crear el agregado `Defect`.
+- Los endpoints retornan `401 Unauthorized` cuando el usuario no está autenticado.
+- El endpoint `GET /api/v1/defects/{id}` retorna `404 Not Found` cuando el defecto no existe o no pertenece al perfil autenticado.
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration.
