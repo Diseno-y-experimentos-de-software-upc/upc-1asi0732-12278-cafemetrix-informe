@@ -5453,6 +5453,104 @@ El módulo de Librería de Defectos expone tres endpoints REST documentados y de
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration.
 ### 7.1.1. Tools and Practices.
+
+
+**Tools:**
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; padding: 1rem 0;">
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #24292e;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #f6f8fa; display: flex; align-items: center; justify-content: center; font-size: 20px;">⚙️</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">GitHub Actions</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #f0f1f2; color: #24292e;">Automatización CI</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Orquestador encargado de ejecutar los flujos de trabajo automáticos cada vez que se detecta un cambio en el repositorio.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CI</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Ejecuta el build del proyecto, corre las suites de pruebas y valida que el código sea seguro antes de la integración.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #E62A2D;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FDEAEB; display: flex; align-items: center; justify-content: center; font-size: 20px;">🧪</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">JUnit & Mockito</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FDEAEB; color: #9B1C1E;">Pruebas Unitarias</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Frameworks estándar para pruebas en Java/Spring Boot que permiten verificar componentes de forma aislada y simular dependencias.</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CI</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Asegura que la lógica de negocio (tueste, sensores, catas) funcione correctamente a nivel de código fuente.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #2A8227; grid-column: 1 / -1; max-width: 390px; justify-self: center;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EAF3DE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🥒</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Cucumber</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EAF3DE; color: #1E5E1B;">Pruebas BDD</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0 0 8px;">Herramienta para ejecutar pruebas basadas en el comportamiento del usuario utilizando lenguaje natural (Gherkin).</p>
+    <p style="font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #999; margin: 10px 0 4px;">Rol en CI</p>
+    <p style="font-size: 13px; color: #333; line-height: 1.6; margin: 0; border-left: 2px solid #ccc; padding-left: 10px;">Valida que los flujos finales cumplan con los requerimientos de la startup Café Metrix antes de cualquier integración.</p>
+  </div>
+
+</div>
+
+**Practices:**
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; padding: 1rem 0;">
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #534AB7;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EEEDFE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🔄</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Test-Driven Development</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EEEDFE; color: #3C3489;">TDD</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Priorizamos la escritura de pruebas antes que el código funcional. Esto nos permite garantizar una cobertura de pruebas alta y un diseño de software orientado a requisitos técnicos desde el inicio.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #185FA5;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #E6F1FB; display: flex; align-items: center; justify-content: center; font-size: 20px;">🗣️</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Behavior-Driven Development</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #E6F1FB; color: #0C447C;">BDD</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Colaboramos mediante escenarios Gherkin para que tanto desarrolladores como baristas y stakeholders entiendan qué se está probando, alineando el software con la experiencia real de usuario.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #3B6D11;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EAF3DE; display: flex; align-items: center; justify-content: center; font-size: 20px;">💎</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Static Code Analysis</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EAF3DE; color: #27500A;">Calidad de código</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Implementamos análisis automático para detectar vulnerabilidades, olores de código (*code smells*) y deudas técnicas, asegurando que solo el código que cumple con los estándares de calidad sea integrado.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #B87415;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FAEEDA; display: flex; align-items: center; justify-content: center; font-size: 20px;">🤖</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Automated Build & Test</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FAEEDA; color: #633806;">Automatización</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Cada Pull Request dispara un flujo automático que compila el código y ejecuta todas las suites de prueba. Si una prueba falla, la integración se bloquea automáticamente para proteger la rama principal.</p>
+  </div>
+
+</div>
+
+
 ### 7.1.2. Build & Test Suite Pipeline Components.
 ## 7.2. Continuous Delivery.
 ### 7.2.1. Tools and Practices.
