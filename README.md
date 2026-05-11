@@ -128,6 +128,52 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Entregable</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Camila Loli</strong></td>
+    <td></td>
+    <td>TP1</td>
+  </tr>
+  <tr>
+    <td><strong>Antayhua Castillo, Oscar Josué</strong></td>
+    <td></td>
+    <td>TP1</td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td>Me encargué de documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment dentro del capítulo de DevOps Practices. Describí el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, explicando su rol en la preparación, validación y despliegue continuo del proyecto CaféLab.</td>
+    <td>TP1</td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td></td>
+    <td>TP1</td>
+  </tr>
+  <tr>
+    <td><strong>Christian Fabrizio, Inga Orihuela</strong></td>
+    <td></td>
+    <td>TP1</td>
+  </tr>
+  <tr>
+    <td><strong>Quispe Roldan, Michael Fred</strong></td>
+    <td></td>
+    <td>TP1</td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2">Todo el grupo participó activamente en la creación del informe, aportando su experiencia para garantizar un resultado preciso. La excelente coordinación interna fue la clave para completar exitosamente esta fase del trabajo.</td>
+  </tr>
+    <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2">
+    <img src="public/assets/images/tp1Collaboration/tp1report.png" alt="Evidencia">
+  </tr>
+</table>
 
 <!--ÍNDICE-->
 # Contenido
