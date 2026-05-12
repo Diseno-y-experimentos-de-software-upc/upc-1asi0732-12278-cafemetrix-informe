@@ -5629,7 +5629,15 @@ El módulo de Librería de Defectos expone tres endpoints REST documentados y de
 
 ### 7.1.2. Build & Test Suite Pipeline Components.
 
+El pipeline de integración continua (CI) implementado para CafeLab se encarga de validar automáticamente el estado del proyecto cada vez que se realiza un cambio en los repositorios (frontend y backend). Este flujo permite al equipo detectar errores tempranamente, antes de integrar nuevas funcionalidades a la rama principal.
 
+| Herramienta Utilizada | Componente(s) Pipeline                                               | Funcionalidades                                                                                                                                                                                                                                                        |
+|-----------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Maven                 | - Gestión de dependencias<br>- Fase de Construcción                  | - Descarga y administra las dependencias necesarias para compilar el proyecto Spring Boot.<br>- Compila el backend y valida que no existan errores de compilación. En caso de que los haya, se muestran cuales son para poder solucionarlos.                           |
+| JUnit, Mockito        | - Pruebas Unitarias<br>- Pruebas de Integración                      | - Ejecuta pruebas unitarias e integración sobre controladores, servicios y lógica de negocio.                                                                                                                                                                          |
+| Análisis estático     | - Static Code Analysis                                               | - Detecta vulnerabilidades y problemas en la calidad del código                                                                                                                                                                                                        |
+| GitHub Actions        | - Validación de Integración<br>- Automatización del flujo de trabajo | - Bloquea el merge de forma automática si alguna validación falla.<br>- Detecta cambios en el repositorio mediante push o pull requests e inicia el flujo CI.<br>- Si hay algún error en el despliegue del producto, muestra cuál fue el fallo y su respectivo código. |
+| Cucumber              | - Validación de comportamiento                                       | Ejecuta escenarios BDD escritos en Gherkin para validar los comportamientos funcionales del producto.                                                                                                                                                                  |
 
 ## 7.2. Continuous Delivery.
 ### 7.2.1. Tools and Practices.
