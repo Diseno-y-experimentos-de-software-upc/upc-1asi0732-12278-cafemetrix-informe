@@ -51,7 +51,7 @@
 <!--Cualquier modificación del documento es una nueva versión-->
 # Registro de versiones del informe
 
-|| Versión | Fecha      | Autor                             | Descripción de Modificación                                                                                           |
+| Versión | Fecha      | Autor                             | Descripción de Modificación                                                                                           |
 | ------- | ---------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | 1.0     | 25/04/2026 | Fernandez Camayo, Carlos Fredy    | Creó el documento, estructura del informe y carátula                                                                  |
 | 1.1     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo   | Puso nuevo formato para project report collaboration insights y student outcome                                       |
