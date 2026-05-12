@@ -75,6 +75,7 @@
 | 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo     | Añadió la evidencia y documentación del RESTful API además del collaboration insights  |
 | 1.20    | 06/05/2026 | Donayre Alvarez, Adrian Ricardo     | Añadió los links de las nuevas secciones del capítulo VI y VII  |
 | 1.21    | 07/05/2026 | Quispe Roldan, Michael Fred         | Añadió 6.1.3. Core Behavior-Driven Development y 6.1.4. Core System Tests con pruebas del módulo Librería de Defectos |
+| 1.22    | 11/05/2026 | Inga Orihuela, Christian Fabrizio         | Añadió 7.2.2. Stages Deployment Pipeline Components |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -5699,6 +5700,115 @@ El módulo de Librería de Defectos expone tres endpoints REST documentados y de
 </div>
 
 ### 7.2.2. Stages Deployment Pipeline Components.
+
+El pipeline de **Continuous Delivery** de CaféLab se estructura en una serie de etapas que permiten preparar una versión estable del producto antes de su publicación en producción. A diferencia del Continuous Deployment, en esta etapa el objetivo principal no es desplegar automáticamente cada cambio, sino asegurar que el código, la configuración, los servicios y las funcionalidades se encuentren en condiciones adecuadas para ser liberadas de forma controlada.
+
+Este flujo permite reducir riesgos antes del despliegue, validar la integración entre frontend, backend, base de datos y landing page, y mantener trazabilidad sobre los cambios incorporados en cada entrega.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; padding: 1rem 0;">
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #534AB7;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EEEDFE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🌿</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 1: Feature Development</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EEEDFE; color: #3C3489;">Desarrollo por funcionalidad</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Cada nueva funcionalidad se desarrolla en una rama independiente derivada de <code>develop</code>. Esto permite que el equipo trabaje de forma ordenada sin afectar directamente la versión estable del sistema.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #185FA5;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #E6F1FB; display: flex; align-items: center; justify-content: center; font-size: 20px;">✍️</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 2: Commit & Version Control</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #E6F1FB; color: #0C447C;">Control de cambios</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Los cambios se registran en GitHub mediante commits estructurados. Esto permite mantener trazabilidad sobre las funcionalidades, correcciones y ajustes realizados durante el desarrollo.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #3B6D11;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #EAF3DE; display: flex; align-items: center; justify-content: center; font-size: 20px;">🔀</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 3: Pull Request Review</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #EAF3DE; color: #27500A;">Revisión de cambios</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Antes de integrar una funcionalidad, se revisan los cambios mediante Pull Requests. Esta etapa permite verificar que el código esté alineado con la historia de usuario o technical story correspondiente.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #B87415;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FAEEDA; display: flex; align-items: center; justify-content: center; font-size: 20px;">🧩</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 4: Integration into Develop</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FAEEDA; color: #633806;">Integración</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Las funcionalidades aprobadas se integran en la rama <code>develop</code>, donde se consolida el avance del equipo. Esta rama funciona como base para preparar versiones candidatas antes de pasar a producción.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #8A3FFC;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #F0E7FF; display: flex; align-items: center; justify-content: center; font-size: 20px;">🏗️</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 5: Build Preparation</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #F0E7FF; color: #5E20B8;">Preparación del build</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Se verifica que los componentes principales puedan compilarse o ejecutarse correctamente. En esta etapa se revisa la preparación del frontend web, backend, landing page y servicios necesarios antes del despliegue.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #0F766E;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #DFF7F4; display: flex; align-items: center; justify-content: center; font-size: 20px;">⚙️</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 6: Environment Configuration</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #DFF7F4; color: #075E57;">Variables de entorno</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Se configuran las variables de entorno necesarias para la ejecución del sistema, como credenciales de base de datos, URL del backend, puertos, configuración de conexión y parámetros propios del entorno desplegado.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #C2410C;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FFEDD5; display: flex; align-items: center; justify-content: center; font-size: 20px;">✅</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 7: Pre-deployment Validation</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FFEDD5; color: #9A3412;">Validación previa</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Antes de liberar una versión, se valida manualmente que los módulos principales funcionen correctamente. Se revisan funcionalidades como autenticación, proveedores, lotes, inventario, recetas, catas, calibraciones, defectos y costos.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #BE123C;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #FFE4E6; display: flex; align-items: center; justify-content: center; font-size: 20px;">🚀</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 8: Deployment Readiness</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #FFE4E6; color: #9F1239;">Versión candidata</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Cuando la versión ha sido validada, los cambios se preparan para integrarse a una rama estable, principalmente <code>main</code>. Esta etapa permite dejar lista una versión candidata para su publicación final.</p>
+  </div>
+
+  <div style="background: #fff; border: 0.5px solid #ddd; border-radius: 12px; padding: 1.25rem; border-top: 3px solid #475569;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+      <div style="width: 36px; height: 36px; border-radius: 8px; background: #E2E8F0; display: flex; align-items: center; justify-content: center; font-size: 20px;">📋</div>
+      <div>
+        <p style="font-size: 15px; font-weight: 500; margin: 0;">Stage 9: Delivery Approval</p>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 100px; background: #E2E8F0; color: #334155;">Aprobación de entrega</span>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: #555; line-height: 1.6; margin: 0;">Finalmente, el equipo contrasta el avance técnico con las tareas registradas en Trello y el Sprint Backlog. Esto permite verificar que las actividades comprometidas estén completadas o correctamente documentadas.</p>
+  </div>
+
+</div>
+
+
 ## 7.3. Continuous deployment.
 ### 7.3.1. Tools and Practices.
 
