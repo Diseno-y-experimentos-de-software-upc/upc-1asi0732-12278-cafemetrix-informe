@@ -5305,6 +5305,32 @@ Se muestra el video about the product, donde se evidencia la explicación sobre 
 ## 6.1. Testing Suites & Validation.
 ### 6.1.1. Core Entities Unit Tests.
 ### 6.1.2. Core Integration Tests.
+
+En esta sección se presentan las pruebas de integración implementadas para validar el correcto funcionamiento de los controladores y servicios principales del sistema CafeLab. Las pruebas fueron desarrolladas con JUnit y Mockito, esto simula las dependencias y valida las respuestas HTTP esperadas de cada User Story.
+
+**User Stories relacionadas**
+
+| Módulo           | User Stories     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Archivos de Prueba                     |
+| ---------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| IAM              | US17             | *Registro y Autenticación (Usuarios)*<br><br>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos                                                                                                                                                                                                                                                                                                                                                                                                        | `IamIntegrationTests.java`             |
+| Profiles         | US18             | *Perfil Personalizado*<br><br>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema                                                                                                                                                                                                                                                                                                                                                                                                | `ProfilesIntegrationTests.java`        |
+| Production       | US01, US02, US03 | *US01: Registro de Proveedores*<br><br>Como dueño de cafetería de especialidad, quiero registrar y evaluar a mis proveedores para mantener un control de calidad y trazabilidad de origen<br><br>*US02: Gestión de Lotes de Café Verde*<br><br>Como barista profesional o dueño de cafetería de especialidad, quiero registrar y hacer seguimiento de cada lote de café verde para mantener control de inventario y trazabilidad<br><br>*US03: Creación de Perfil de Tueste*<br><br>Como barista profesional, quiero crear perfiles de tueste personalizados para documentar y replicar mis mejores resultados | `ProductionIntegrationTests.java`      |
+| Management       | US10             | *Control de Inventario Integrado*<br><br>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento                                                                                                                                                                                                                                                                                                                                                                                               | `ManagementIntegrationTests.java`      |
+| Defects          | US04             | *Biblioteca de Defectos de Tueste*<br><br>Como barista profesional, quiero registrar defectos detectados durante el tueste para documentar problemas recurrentes y consultarlos posteriormente                                                                                                                                                                                                                                                                                                                                                                                                                 | `DefectsIntegrationTests.java`         |
+| Cupping Sessions | US05, US06       | *US05: Cata Digital Estructurada*<br><br>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste<br><br>*US06: Historial de Catas*<br><br>Como barista profesional, quiero acceder al historial de catas por diferentes criterios para analizar tendencias y consistencia                                                                                                                                                                                                                                                  | `CuppingSessionsIntegrationTests.java` |
+| Preparation      | US07, US09       | *US07: Creación de Recetas de Preparación*<br><br>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café<br><br>*US09: Portafolio de Bebidas*<br><br>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos                                                                                                                                                                                                                                 | `PreparationIntegrationTests.java`     |
+| Calibrations     | US08             | *Calibración de Molienda*<br><br>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones                                                                                                                                                                                                                                                                                                                                                                                                                      | `CalibrationsIntegrationTests.java`    |
+
+**Repositorio donde se encuentrn las pruebas de integración**
+
+[https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)
+
+Las pruebas de integración se encuentran dentro de la carpeta `src/test/java/com/cafemetrix/cafelab/core/integration/tests`. Estas pruebas aseguran que las funcionalidades del backend se integren adecuadamente.
+
+**Evidencia de Pruebas de Integración**
+
+![Evidencia de Pruebas de Integración](public/assets/images/chapter-6/evidencia-pruebas-integracion.png)
+
 ### 6.1.3. Core Behavior-Driven Development.
 
 En esta sección se presentan las pruebas de comportamiento (BDD) desarrolladas para el módulo de **Librería de Defectos** del backend de Café Lab. Las pruebas están implementadas en el archivo `DefectDomainBDDTest.java`, ubicado en `src/test/java/com/cafemetrix/cafelab/defects/domain/`, y utilizan JUnit 5 con clases `@Nested` y `@DisplayName` para estructurar los escenarios en formato Given/When/Then.
@@ -5501,6 +5527,7 @@ El módulo de Librería de Defectos expone tres endpoints REST documentados y de
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration.
+
 ### 7.1.1. Tools and Practices.
 
 
@@ -5601,6 +5628,9 @@ El módulo de Librería de Defectos expone tres endpoints REST documentados y de
 
 
 ### 7.1.2. Build & Test Suite Pipeline Components.
+
+
+
 ## 7.2. Continuous Delivery.
 ### 7.2.1. Tools and Practices.
 
