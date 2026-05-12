@@ -92,7 +92,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     <td width="40%"><strong>Entregable</strong></td>
   </tr>
   <tr>
-    <td><strong>Camila Loli</strong></td>
+    <td><strong>Loli Ramirez, Camila Cristina</strong></td>
     <td>Me encargué del diseño de la guía de estilos para la aplicación móvil en iOS, definí elementos clave como las interacciones y componentes visuales, esto asegura consistencia con la identidad del producto CaféLab. Asimismo, desarrolló el prototipo móvil en Figma, implementando las pantallas principales y sus flujos de navegación, lo que permitió validar la experiencia de usuario y la usabilidad del sistema antes de su implementación.</td>
     <td>TB1</td>
   </tr>
@@ -139,8 +139,8 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     <td width="40%"><strong>Entregable</strong></td>
   </tr>
   <tr>
-    <td><strong>Camila Loli</strong></td>
-    <td></td>
+    <td><strong>Loli Ramirez Cristina</strong></td>
+    <td>Me encargué de implementar validaciones en los módulos backend relacionados con inventario y gestión de recursos dentro de CafeLab. Asimismo, desarrollé pruebas de integración utilizando JUnit y Mockito para distintos controladores y funcionalidades principales del sistema, lo que nos permitió validar respuestas HTTP, autenticación por perfil y flujos de negocio. Finalmente, realicé la documentación de Build & Test Suite y validaciones automáticas dentro del proceso de Continuous Integration.</td>
     <td>TP1</td>
   </tr>
   <tr>
@@ -408,6 +408,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
             <td style="border: 1px solid #ddd; vertical-align: top;">  
                 <strong>Camila Loli</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional durante el desarrollo del diseño móvil (iOS Style Guidelines y Prototyping), asegurando que las decisiones de diseño prioricen la claridad, accesibilidad y facilidad de uso para los usuarios. Asimismo, definí lineamientos visuales consistentes (tipografía, colores, componentes e interacciones) con el objetivo de evitar confusión en la interfaz y garantizar una experiencia intuitiva.<br><br>  
+                TP1: <br>Reconocí mi responsabilidad ética y profesional al implementar validaciones en el backend y pruebas de integración para distintos módulos de CafeLab, que incluye inventario, recetas, perfiles de tueste y defectos. Utilicé JUnit y Mockito para verificar el correcto funcionamiento de controladores, autenticación por perfil y respuestas HTTP esperadas, esto asegura que el sistema procese datos válidos y reduzca errores que puedan afectar la confiabilidad de la aplicación. Asimismo, colaboré en la documentación de prácticas DevOps y componentes del pipeline Build & Test Suite para fortalecer la calidad y trazabilidad del desarrollo.<br><br>
                 <strong>Oscar Antayhua</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al realizar el despliegue del frontend en Vercel y del backend con base de datos en Railway, asegurando una configuración adecuada de los entornos para el correcto funcionamiento del sistema. Asimismo, configuré la conexión entre ambos servicios de manera ordenada y verificable, priorizando la estabilidad, disponibilidad y confiabilidad de la aplicación para su uso y validación.<br><br>  
                 <strong>Adrian Donayre</strong><br>  
@@ -431,6 +432,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
             <td style="border: 1px solid #ddd; vertical-align: top;">  
                 <strong>Camila Loli</strong><br>  
                 TB1: <br>Emití juicios informados al diseñar la interfaz móvil, tomando decisiones que impactan directamente en la experiencia del usuario y en la usabilidad del sistema. Consideré el impacto social al asegurar que la aplicación sea accesible y comprensible para distintos tipos de usuarios, evitando barreras de uso. Además, prioricé el uso de una paleta de colores coherente y una visualización adecuada de datos.<br><br>  
+                TP1: <br>Emití juicios informados al desarrollar validaciones y pruebas automatizadas para módulos críticos del backend de CafeLab, en este aspecto se considera el impacto que tiene la estabilidad del sistema en la experiencia y confianza de los usuarios. Al implementar pruebas de integración y validaciones sobre flujos de inventario, recetas y defectos, contribuí a reducir riesgos de errores funcionales. Además, participé en la documentación de prácticas de integración continua y automatización de pruebas.<br><br>
                 <strong>Oscar Antayhua</strong><br>  
                 TB1: <br>Emití juicios informados al seleccionar plataformas de despliegue como Vercel para el frontend y Railway para el backend y la base de datos, considerando su utilidad para publicar, integrar y validar la solución de manera eficiente. Además, al configurar la conexión entre ambos entornos, contribuí a que el sistema funcione de forma accesible y continua, lo cual favorece una evaluación más realista del impacto operativo y del valor que ofrece la aplicación a sus usuarios.<br><br>  
                 <strong>Adrian Donayre</strong><br>  
