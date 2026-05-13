@@ -74,13 +74,15 @@
 | 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
 | 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió la evidencia y documentación del RESTful API además del collaboration insights                                 |
 | 1.20    | 06/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió los links de las nuevas secciones del capítulo VI y VII                                                        |
-| 1.21    | 07/05/2026 | Quispe Roldan, Michael Fred       | Añadió 6.1.3. Core Behavior-Driven Development y 6.1.4. Core System Tests con pruebas del módulo Librería de Defectos |
+| 1.21    | 07/05/2026 | Quispe Roldan, Michael Fred       | Añadió 6.1.3. Core Behavior-Driven Development con Cucumber .feature files (US17, US03, US05) y 6.1.4. Core System Tests con pruebas MockMvc del módulo Librería de Defectos |
 | 1.22    | 08/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió la sección de tools and practices en 7.1 continuos integration                                                 |
 | 1.23    | 11/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 7.2.2. Stages Deployment Pipeline Components                                                                   |
 | 1.24    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió 6.1.2 Core Integration Tests y 7.1.2. Build & Test Suite Pipeline Components                                   |
 | 1.25    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
 | 1.26    | 11/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y student outcome                                                     |
 | 1.27    | 12/05/2026 | Antayhua Castillo, Oscar Josué    | Añadió 7.3.2. Production Deployment Pipeline Components.                                                              |
+| 1.28    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 6.1.1 Core Entities Unit Tests.                                                                               |
+| 1.29    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome.                                                    |
 
 
 # Project Report Collaboration Insights
@@ -163,12 +165,12 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Christian Fabrizio, Inga Orihuela</strong></td>
-    <td></td>
+    <td>Me encargué de implementar las pruebas unitarias para las entidades core (6.1.1), cubriendo tanto User Stories como Technical Stories para asegurar la integridad de la lógica de negocio. Asimismo, desarrollé la documentación de los Stages Deployment Pipeline Components (7.2.2), detallando el flujo de despliegue en múltiples entornos. Además, realicé las validaciones por módulos para Recetas y Calibración de molienda, trabajando en ramas independientes desde develop tanto en el frontend como en el backend para garantizar la calidad de las funcionalidades implementadas.</td>
     <td>TP1</td>
   </tr>
   <tr>
     <td><strong>Quispe Roldan, Michael Fred</strong></td>
-    <td></td>
+    <td>Me encargué de implementar las pruebas BDD con Cucumber y las pruebas de sistema del backend de CafeLab. Para las pruebas BDD (6.1.3), implementé la infraestructura completa de Cucumber con archivos <code>.feature</code> en Gherkin para los US core del sistema: <code>us17_autenticacion.feature</code> (registro y login), <code>us03_perfil_tueste.feature</code> (creación de perfiles de tueste con autenticación y control de acceso por lote) y <code>us05_cata_digital.feature</code> (sesiones de cata estructuradas). Los 9 escenarios cubren flujos exitosos, acceso no autenticado (401) y acceso no autorizado (403), todos ejecutándose con <code>@WebMvcTest</code> y MockMvc mediante el runner <code>CucumberTestSuite</code>. Para las pruebas de sistema (6.1.4), desarrollé el archivo <code>DefectsControllerSystemTest.java</code>, implementando 9 escenarios con <code>@WebMvcTest</code> y <code>MockMvc</code> que validan el comportamiento completo de los endpoints REST (<code>POST /api/v1/defects</code>, <code>GET /api/v1/defects</code>, <code>GET /api/v1/defects/{id}</code>), incluyendo respuestas 201, 200, 401 y 404 según el estado de autenticación y los datos enviados.</td>
     <td>TP1</td>
   </tr>
   <tr>
@@ -419,7 +421,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al depurar el Product Backlog para que refleje únicamente funcionalidades realmente implementadas en la aplicación. Eliminé inconsistencias y alineé las historias con el comportamiento real del sistema, evitando información inexacta. Además, incorporé los Sprint Backlogs para evidenciar la planificación y ejecución del trabajo, asegurando trazabilidad y transparencia.<br><br>
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment en el proyecto CaféLab. Al describir el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, procuré que la información refleje de manera clara y veraz el flujo real de trabajo del equipo. Además, consideré importante explicar cómo estas herramientas contribuyen a una gestión ordenada del código, una configuración más segura del entorno y una validación responsable de los servicios antes y después del despliegue, evitando presentar procesos que no fueron aplicados en el proyecto.<br><br>  
                 <strong>Christian Inga</strong><br>  
-                TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los Mobile Application Wireflow Diagrams, asegurando que la arquitectura de información y los flujos de navegación sean fieles a los requerimientos del sistema. Al definir los Android Mobile Style Guidelines bajo los estándares de Material Design, asumí la entrega de un diseño que sirva como base confiable para la implementación.<br><br>  
+                TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los Mobile Application Wireflow Diagrams, asegurando que la arquitectura de información y los flujos de navegación sean fieles a los requerimientos del sistema. Al definir los Android Mobile Style Guidelines bajo los estándares de Material Design, asumí la entrega de un diseño que sirva como base confiable para la implementación.<br><br>
+                TP1: <br>Reconocí mi responsabilidad ética y profesional al asegurar la calidad del software mediante la implementación de una suite exhaustiva de pruebas unitarias para las entidades core (6.1.1). Al validar cada User Story y Technical Story de forma aislada, asumí el compromiso de entregar un sistema confiable y libre de errores en su lógica base. Asimismo, al documentar los componentes del pipeline de despliegue (7.2.2) y realizar validaciones en los módulos de recetas y calibración, garanticé la transparencia y trazabilidad del proceso de desarrollo, trabajando de forma coordinada con el equipo mediante el uso de ramas de feature y comunicación constante.<br><br>
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Mediante mi aporte en diferentes puntos del informe, como la implementacion de politica Saas que me permitio comprender el rol y funcion de la aplicacion no unicamente como codigo, lo que me ayudo a mejorar mi vision etica y profesional en el desarrollo de software.<br><br>  
                 TP1: <br>Mi colaboracion en este proyecto me permitio entender que el proyecto requiere de mayores responsabilidades como control de calidad del producto UI/UX, asi como visualizar la adecuada eleccion de herramientas y practicas de integracion continua<br><br>
@@ -445,7 +448,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Emití juicios informados al depurar el Product Backlog, priorizando únicamente funcionalidades implementadas que aportan valor real al sistema. Consideré el impacto económico y operativo de incluir o excluir historias, asegurando que la documentación refleje de forma precisa el alcance del producto y evite sobreestimar sus capacidades. Además, al incorporar los Sprint Backlogs, facilité la comprensión del avance del proyecto y su viabilidad, contribuyendo a una toma de decisiones más informada por parte del equipo y stakeholders.<br><br>
                 TP1: <br>Emití juicios informados al documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment, considerando su impacto en la estabilidad y disponibilidad de CaféLab. Al describir el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, consideré cómo estas decisiones apoyan una entrega más ordenada, reducen errores operativos, optimizan recursos del equipo y permiten que la solución sea accesible para usuarios y evaluadores de manera continua.<br><br>  
                 <strong>Christian Inga</strong><br>  
-                TB1: <br>Emití juicios informados al definir la estructura de los wireflows y las guías de estilo para Android, considerando el impacto social de la accesibilidad y usabilidad para los usuarios. Al seleccionar componentes de navegación y jerarquías visuales, tomé decisiones que afectan directamente la eficiencia operativa y productividad del usuario. Asimismo, consideré el impacto económico de optimizar el desarrollo mediante una documentación estandarizada que reduce errores de implementación<br><br>  
+                TB1: <br>Emití juicios informados al definir la estructura de los wireflows y las guías de estilo para Android, considerando el impacto social de la accesibilidad y usabilidad para los usuarios. Al seleccionar componentes de navegación y jerarquías visuales, tomé decisiones que afectan directamente la eficiencia operativa y productividad del usuario. Asimismo, consideré el impacto económico de optimizar el desarrollo mediante una documentación estandarizada que reduce errores de implementación<br><br>
+                TP1: <br>Emití juicios informados al definir los componentes del pipeline de despliegue (7.2.2), considerando el impacto operativo de contar con entornos de staging y producción para minimizar riesgos de fallos en el servicio real. Al realizar las pruebas unitarias de las entidades core, evalué el impacto económico de prevenir errores técnicos en etapas tempranas del ciclo de vida del software, lo cual optimiza los recursos de mantenimiento. Además, en las validaciones de los módulos de recetas y calibración, consideré el impacto social de ofrecer una herramienta precisa para baristas, cuya consistencia en la preparación depende de la fiabilidad de los datos técnicos procesados por el sistema.<br><br>
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Implementar y actualizar el contenido del proyecto me permitio reconocer la importancia de sistemas orientados a productividad en el area de cafeterias, emitiendo juicios adecuados sobre el impacto del proyecto presentado, no solo programacion, sino tambien en los resultados y mejoras de los usuarios.<br><br>  
                 TP1: <br>Las soluciones planteadas para el cumplimiento de calidad de construccion de software y validaciones me permitio entnder la importancia de implementar soluciones que aportan al sector economico por medio del aumento de desempeño laboral, asimismo el reconocimiento de herramientas y practicas para garantizar el funcionamiento correcto mediante la integracion continua<br><br>
@@ -5316,6 +5320,93 @@ Se muestra el video about the product, donde se evidencia la explicación sobre 
 
 ## 6.1. Testing Suites & Validation.
 ### 6.1.1. Core Entities Unit Tests.
+
+En esta sección se presentan las pruebas unitarias realizadas a las entidades del dominio (Core Entities) para validar la lógica de negocio fundamental de cada User Story. Estas pruebas aseguran que las reglas de validación y los comportamientos de las entidades se cumplan correctamente de forma aislada, garantizando la robustez del modelo de dominio antes de su integración con otros componentes.
+
+**A continuación, se muestra la evidencia de la ejecución de las pruebas unitarias para cada una de las User Stories (US):**
+
+#### US01 - Registro de Proveedores
+![US01 Test](public/assets/images/CoreUnitTests/US01Test.png)
+
+#### US02 - Gestión de Lotes de Café Verde
+![US02 Test](public/assets/images/CoreUnitTests/US02Test.png)
+
+#### US03 - Perfil de Tueste
+![US03 Test](public/assets/images/CoreUnitTests/US03Test.png)
+
+#### US04 - Defectos de Tueste
+![US04 Test](public/assets/images/CoreUnitTests/US04Test.png)
+
+#### US05 - Cata Digital
+![US05 Test](public/assets/images/CoreUnitTests/US05Test.png)
+
+#### US06 - Historial de Catas
+![US06 Test](public/assets/images/CoreUnitTests/US06Test.png)
+
+#### US07 - Recetas de Preparación
+![US07 Test](public/assets/images/CoreUnitTests/US07Test.png)
+
+#### US08 - Calibración de Molienda
+![US08 Test](public/assets/images/CoreUnitTests/US08Test.png)
+
+#### US09 - Portafolio de Bebidas
+![US09 Test](public/assets/images/CoreUnitTests/US09Test.png)
+
+#### US10 - Control de Inventario Integrado
+![US10 Test](public/assets/images/CoreUnitTests/US10Test.png)
+
+#### US11 - Análisis de Tuestes
+![US11 Test](public/assets/images/CoreUnitTests/US11Test.png)
+
+#### US13 - Gestión de Costos de Producción
+![US13 Test](public/assets/images/CoreUnitTests/US13Test.png)
+
+#### US15 - Secciones por Segmento
+![US15 Test](public/assets/images/CoreUnitTests/US15Test.png)
+
+#### US17 - Registro y Autenticación
+![US17 Test](public/assets/images/CoreUnitTests/US17Test.png)
+
+#### US18 - Perfil Personalizado
+![US18 Test](public/assets/images/CoreUnitTests/US18Test.png)
+
+#### US19 - Selección de Plan
+![US19 Test](public/assets/images/CoreUnitTests/US19Test.png)
+
+**A continuación, se muestra la evidencia de la ejecución de las pruebas unitarias para cada una de las Technical Stories (TS):**
+
+#### TS01 - API Proveedores
+![TS01 Test](public/assets/images/CoreUnitTests/TS01Test.png)
+
+#### TS02 - API Lotes
+![TS02 Test](public/assets/images/CoreUnitTests/TS02Test.png)
+
+#### TS03 - API Perfiles de Tueste
+![TS03 Test](public/assets/images/CoreUnitTests/TS03Test.png)
+
+#### TS04 - API Defectos
+![TS04 Test](public/assets/images/CoreUnitTests/TS04Test.png)
+
+#### TS05 - API Catas
+![TS05 Test](public/assets/images/CoreUnitTests/TS05Test.png)
+
+#### TS06 - API Recetas
+![TS06 Test](public/assets/images/CoreUnitTests/TS06Test.png)
+
+#### TS07 - API Calibraciones
+![TS07 Test](public/assets/images/CoreUnitTests/TS07Test.png)
+
+#### TS08 - API Inventario
+![TS08 Test](public/assets/images/CoreUnitTests/TS08Test.png)
+
+#### TS09 - API Usuarios
+![TS09 Test](public/assets/images/CoreUnitTests/TS09Test.png)
+
+#### TS10 - API Autenticación
+![TS10 Test](public/assets/images/CoreUnitTests/TS10Test.png)
+
+
+
 ### 6.1.2. Core Integration Tests.
 
 En esta sección se presentan las pruebas de integración implementadas para validar el correcto funcionamiento de los controladores y servicios principales del sistema CafeLab. Las pruebas fueron desarrolladas con JUnit y Mockito, esto simula las dependencias y valida las respuestas HTTP esperadas de cada User Story.
@@ -5345,197 +5436,328 @@ Las pruebas de integración se encuentran dentro de la carpeta `src/test/java/co
 
 ### 6.1.3. Core Behavior-Driven Development.
 
-En esta sección se presentan las pruebas de comportamiento (BDD) desarrolladas para el módulo de **Librería de Defectos** del backend de Café Lab. Las pruebas están implementadas en el archivo `DefectDomainBDDTest.java`, ubicado en `src/test/java/com/cafemetrix/cafelab/defects/domain/`, y utilizan JUnit 5 con clases `@Nested` y `@DisplayName` para estructurar los escenarios en formato Given/When/Then.
+En esta sección se presentan las pruebas de comportamiento (BDD) desarrolladas para los US core del backend de Café Lab. Las pruebas están implementadas con **Cucumber** usando archivos `.feature` en sintaxis Gherkin, integrados con Spring Boot a través de `@WebMvcTest` y MockMvc.
 
 **Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)
 
-**Archivo de pruebas BDD:** `src/test/java/com/cafemetrix/cafelab/defects/domain/DefectDomainBDDTest.java`
+**Rama:** `feature/bdd-system-tests`
 
-#### Feature: Librería de defectos — modelo de dominio
+**Infraestructura Cucumber:**
 
-Las pruebas BDD cubren los siguientes escenarios de comportamiento agrupados por entidad:
-
----
-
-**Scenario: Creación de DefectName**
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Valor válido | Un valor no vacío "Grano negro" | Se crea un `DefectName` | El valor se almacena correctamente |
-| Valor nulo | `null` | Se intenta crear un `DefectName` | Lanza `IllegalArgumentException` con mensaje sobre el nombre |
-| Valor en blanco | `"   "` | Se intenta crear un `DefectName` | Lanza `IllegalArgumentException` con mensaje sobre el nombre |
+| Archivo | Ubicación | Rol |
+|---------|-----------|-----|
+| `CucumberSpringConfiguration.java` | `src/test/java/.../bdd/` | Contexto Spring: `@WebMvcTest` + `@MockBean` |
+| `CucumberTestSuite.java` | `src/test/java/.../bdd/runner/` | Runner JUnit Platform Suite |
+| `SharedSteps.java` | `src/test/java/.../bdd/steps/` | Steps compartidos (autenticación, código de respuesta) |
+| `AuthenticationSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US17 |
+| `RoastProfileSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US03 |
+| `CuppingSessionSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US05 |
 
 ---
 
-**Scenario: Creación de DefectType**
+#### Feature: US17 — Registro y Autenticación de Usuarios
 
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Tipo válido | Un tipo no vacío "Categoría 1" | Se crea un `DefectType` | El valor se almacena correctamente |
-| Valor nulo | `null` | Se intenta crear un `DefectType` | Lanza `IllegalArgumentException` con mensaje sobre el tipo |
-| Valor en blanco | `""` | Se intenta crear un `DefectType` | Lanza `IllegalArgumentException` con mensaje sobre el tipo |
+**Archivo:** `src/test/resources/features/us17_autenticacion.feature`
 
----
+```gherkin
+Feature: US17 - Registro y Autenticación de Usuarios
 
-**Scenario: Creación de ProbableCause**
+  Scenario: Registro exitoso de un nuevo usuario
+    Given un usuario con email "barista@cafelab.com" y contraseña "Password123"
+    When el usuario envía una solicitud de registro
+    Then el sistema responde con código 201
+    And la respuesta contiene un token de acceso
 
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Causa válida | Una causa descriptiva | Se crea un `ProbableCause` | El valor se almacena correctamente |
-| Valor nulo | `null` | Se intenta crear un `ProbableCause` | Lanza `IllegalArgumentException` con mensaje sobre la causa |
-| Valor en blanco | `"  "` | Se intenta crear un `ProbableCause` | Lanza `IllegalArgumentException` con mensaje sobre la causa |
+  Scenario: Inicio de sesión exitoso con credenciales válidas
+    Given un usuario registrado con email "barista@cafelab.com" y contraseña "Password123"
+    When el usuario envía una solicitud de inicio de sesión
+    Then el sistema responde con código 200
+    And la respuesta contiene un token de acceso
 
----
-
-**Scenario: Creación de SuggestedSolution**
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Solución válida | Una solución descriptiva | Se crea un `SuggestedSolution` | El valor se almacena correctamente |
-| Valor nulo | `null` | Se intenta crear un `SuggestedSolution` | Lanza `IllegalArgumentException` con mensaje sobre la solución |
-| Valor en blanco | `""` | Se intenta crear un `SuggestedSolution` | Lanza `IllegalArgumentException` con mensaje sobre la solución |
-
----
-
-**Scenario: Validación de CreateDefectResource**
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Campos válidos | Todos los campos completos y en rango | Se construye el recurso | No lanza excepción |
-| Nombre de café nulo | `coffeeDisplayName = null` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el nombre del café |
-| Peso negativo | `defectWeight = -1.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el peso del defecto |
-| Porcentaje > 100 | `percentage = 150.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el porcentaje |
-| Porcentaje negativo | `percentage = -1.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el porcentaje |
-
----
-
-**Scenario: Creación del agregado Defect**
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Comando válido | Un `CreateDefectCommand` con todos los campos | Se crea un `Defect` | Todos los campos se mapean correctamente al agregado |
-| Nombre con espacios | `coffeeDisplayName = "  Café Etiopía  "` | Se crea un `Defect` | Se aplica `trim()` y el nombre queda como `"Café Etiopía"` |
-
----
-
-**Implementación representativa:**
-
-```java
-@Nested
-@DisplayName("Scenario: Creación del agregado Defect")
-class DefectAggregateBDD {
-
-    @Test
-    @DisplayName("Given un CreateDefectCommand válido, When se crea Defect, Then todos los campos son mapeados correctamente")
-    void givenValidCommand_whenCreate_thenFieldsMappedCorrectly() {
-        var command = new CreateDefectCommand(
-            1L, "Café Etiopía", "Yirgacheffe", "Heirloom",
-            500.0, "Grano negro", "Categoría 1",
-            25.0, 5.0, "Temperatura excesiva", "Reducir temperatura"
-        );
-
-        var defect = new Defect(command);
-
-        assertThat(defect.getUserId()).isEqualTo(1L);
-        assertThat(defect.getName()).isEqualTo("Grano negro");
-        assertThat(defect.getDefectType()).isEqualTo("Categoría 1");
-        assertThat(defect.getPercentage()).isEqualTo(5.0);
-    }
-}
+  Scenario: Inicio de sesión fallido con credenciales inválidas
+    Given un usuario no registrado con email "noexiste@cafelab.com" y contraseña "wrongpass"
+    When el usuario envía una solicitud de inicio de sesión
+    Then el sistema responde con código 404
 ```
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Registro exitoso | Usuario con email y contraseña válidos | POST `/api/v1/authentication/sign-up` | 201 + token en respuesta |
+| Login exitoso | Usuario registrado | POST `/api/v1/authentication/sign-in` | 200 + token en respuesta |
+| Login fallido | Usuario no registrado | POST `/api/v1/authentication/sign-in` | 404 |
+
+---
+
+#### Feature: US03 — Creación de Perfil de Tueste
+
+**Archivo:** `src/test/resources/features/us03_perfil_tueste.feature`
+
+```gherkin
+Feature: US03 - Creación de Perfil de Tueste
+
+  Scenario: Barista autenticado crea un perfil de tueste exitosamente
+    Given un barista autenticado con perfil id 1 y lote id 1 disponible
+    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
+    Then el sistema responde con código 201
+    And la respuesta contiene el id del perfil de tueste creado
+
+  Scenario: Usuario no autenticado intenta crear un perfil de tueste
+    Given un usuario no autenticado
+    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
+    Then el sistema responde con código 401
+
+  Scenario: Barista intenta crear un perfil con un lote que no le pertenece
+    Given un barista autenticado con perfil id 1 pero sin acceso al lote id 99
+    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
+    Then el sistema responde con código 403
+```
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Creación exitosa | Barista autenticado + lote propio disponible | POST `/api/v1/roast-profile` | 201 + id del perfil creado |
+| Sin autenticación | Usuario no autenticado | POST `/api/v1/roast-profile` | 401 |
+| Lote ajeno | Barista autenticado + lote de otro usuario | POST `/api/v1/roast-profile` | 403 |
+
+---
+
+#### Feature: US05 — Cata Digital Estructurada
+
+**Archivo:** `src/test/resources/features/us05_cata_digital.feature`
+
+```gherkin
+Feature: US05 - Cata Digital Estructurada
+
+  Scenario: Barista autenticado registra una sesión de cata exitosamente
+    Given un barista autenticado con perfil id 1
+    When envía una solicitud para crear una cata con nombre "Cata Etiopía Yirgacheffe" origen "Etiopía" variedad "Heirloom" procesamiento "Natural" fecha "2026-05-12"
+    Then el sistema responde con código 201
+    And la respuesta contiene el id de la sesión de cata
+
+  Scenario: Barista consulta su historial de catas
+    Given un barista autenticado con perfil id 1 y 2 catas registradas
+    When envía una solicitud para listar sus sesiones de cata
+    Then el sistema responde con código 200
+    And la respuesta contiene una lista con 2 sesiones
+
+  Scenario: Usuario no autenticado intenta registrar una cata
+    Given un usuario no autenticado
+    When envía una solicitud para crear una cata con nombre "Cata Etiopía Yirgacheffe" origen "Etiopía" variedad "Heirloom" procesamiento "Natural" fecha "2026-05-12"
+    Then el sistema responde con código 401
+```
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Cata registrada exitosamente | Barista autenticado | POST `/api/v1/cupping-sessions` | 201 + id de la sesión |
+| Historial de catas | Barista autenticado con 2 catas previas | GET `/api/v1/cupping-sessions` | 200 + lista con 2 elementos |
+| Sin autenticación | Usuario no autenticado | POST `/api/v1/cupping-sessions` | 401 |
+
+---
+
+**Resultado de ejecución:** 9 Scenarios (9 passed) — 32 Steps (32 passed)
+
+| Feature | Escenarios | Resultado |
+|---------|-----------|-----------|
+| US17 - Autenticación | 3 | ✅ Todos pasan |
+| US03 - Perfil de Tueste | 3 | ✅ Todos pasan |
+| US05 - Cata Digital | 3 | ✅ Todos pasan |
 
 ### 6.1.4. Core System Tests.
 
-En esta sección se presentan las pruebas de sistema desarrolladas para el módulo de **Librería de Defectos**. Las pruebas están implementadas en el archivo `DefectsControllerSystemTest.java`, ubicado en `src/test/java/com/cafemetrix/cafelab/defects/interfaces/rest/`, y validan el comportamiento completo de los endpoints REST del controlador `DefectsController`.
+En esta sección se presentan las pruebas de sistema implementadas para los User Stories del backend de **CafeLab**. Las pruebas utilizan la infraestructura Cucumber (`@WebMvcTest` + MockMvc) para validar el comportamiento HTTP de cada controlador REST. Para cada US se muestra la tabla de escenarios cubiertos y la evidencia de ejecución.
 
-**Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)
-
-**Archivo de pruebas de sistema:** `src/test/java/com/cafemetrix/cafelab/defects/interfaces/rest/DefectsControllerSystemTest.java`
-
-**Tecnologías utilizadas:** `@WebMvcTest`, `MockMvc`, `Mockito`, `AssertJ`, Spring Boot Test
-
-Los servicios `DefectCommandService`, `DefectQueryService` y `CurrentProfileIdResolver` son mockeados para aislar la capa de controlador y probar únicamente el comportamiento HTTP.
+**Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)  
+**Runner:** `CucumberTestSuite` — `src/test/java/com/cafemetrix/cafelab/bdd/runner/`  
+**Tecnologías:** Cucumber 7, `@WebMvcTest`, MockMvc, Mockito, Spring Boot Test 3.5
 
 ---
 
-**System Tests: `POST /api/v1/defects`**
+#### US01 - Gestión de Proveedores
 
-| Escenario | Condición | HTTP Status esperado | Verificación adicional |
-|-----------|-----------|---------------------|------------------------|
-| Creación exitosa | Usuario autenticado + cuerpo válido | `201 Created` | `id`, `name`, `defectType`, `coffeeDisplayName` presentes en respuesta |
-| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
-| Datos inválidos | `defectWeight = -5.0` | `400 Bad Request` | — |
+**Endpoint:** `POST /api/v1/suppliers`  
+**Archivo:** `us01_proveedores.feature` · `SupplierSteps.java`
 
----
-
-**System Tests: `GET /api/v1/defects`**
-
-| Escenario | Condición | HTTP Status esperado | Verificación adicional |
-|-----------|-----------|---------------------|------------------------|
-| Lista con defectos | Usuario autenticado, servicio retorna 2 defectos | `200 OK` | `$.length() == 2` |
-| Lista vacía | Usuario autenticado, servicio retorna lista vacía | `200 OK` | `$.length() == 0` |
-| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra un proveedor exitosamente | Perfil autenticado, `createSupplier` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar un proveedor | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Creación de proveedor falla por error interno | `createSupplier` retorna `0L` | `400 Bad Request` |
 
 ---
 
-**System Tests: `GET /api/v1/defects/{id}`**
+#### US02 - Gestión de Lotes de Café
 
-| Escenario | Condición | HTTP Status esperado | Verificación adicional |
-|-----------|-----------|---------------------|------------------------|
-| Defecto existente | Usuario autenticado + defecto encontrado | `200 OK` | `$.id == 10`, `$.userId == 1` |
-| Defecto no encontrado | Servicio lanza `DefectNotFoundException` | `404 Not Found` | — |
-| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
+**Endpoint:** `POST /api/v1/coffee-lots`  
+**Archivo:** `us02_lotes_cafe.feature` · `CoffeeLotSteps.java`
 
----
-
-**Implementación representativa:**
-
-```java
-@Test
-@DisplayName("Given usuario autenticado y datos válidos, When POST /api/v1/defects, Then responde 201 con el defecto creado")
-void givenAuthenticatedUserAndValidBody_whenPost_thenReturns201() throws Exception {
-    when(currentProfileIdResolver.resolveProfileId()).thenReturn(Optional.of(1L));
-    var defect = mockDefect(10L, 1L);
-    when(defectCommandService.handle(any(CreateDefectCommand.class))).thenReturn(Optional.of(defect));
-
-    mockMvc.perform(post("/api/v1/defects")
-            .contentType(MediaType.APPLICATION_JSON)
-            .content(objectMapper.writeValueAsString(validCreateBody())))
-        .andExpect(status().isCreated())
-        .andExpect(jsonPath("$.id").value(10))
-        .andExpect(jsonPath("$.name").value("Grano negro"));
-}
-```
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra un lote de café exitosamente | Perfil autenticado, proveedor le pertenece, `createCoffeeLot` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar un lote | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Barista intenta registrar un lote con proveedor que no le pertenece | `getSupplierById` retorna `Optional.empty()` | `403 Forbidden` |
 
 ---
 
-#### Validación del módulo: Librería de Defectos
+#### US03 - Creación de Perfil de Tueste
 
-El módulo de Librería de Defectos expone tres endpoints REST documentados y desplegados en el backend de Café Lab (Railway). A continuación se muestra la evidencia de validación del módulo:
+**Endpoint:** `POST /api/v1/roast-profile`  
+**Archivo:** `us03_perfil_tueste.feature` · `RoastProfileSteps.java`
 
-**Endpoints validados:**
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado crea un perfil de tueste exitosamente | Perfil autenticado, lote disponible, `createRoastProfile` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta crear un perfil de tueste | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Barista intenta crear un perfil con un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
 
-| Método | Endpoint | Descripción | Estado |
-|--------|----------|-------------|--------|
-| `POST` | `/api/v1/defects` | Crear registro de defecto asociado al usuario autenticado (JWT) | ✅ Implementado |
-| `GET` | `/api/v1/defects` | Listar todos los defectos del perfil autenticado | ✅ Implementado |
-| `GET` | `/api/v1/defects/{id}` | Obtener defecto por ID (validando pertenencia al perfil) | ✅ Implementado |
+---
 
-**Documentación Swagger:** El módulo está documentado en la especificación OpenAPI del backend bajo el tag `Defects`. La documentación Swagger puede consultarse en el endpoint `/swagger-ui/index.html` del servidor desplegado.
+#### US04 - Registro de Defectos de Tueste
 
-**Cobertura de pruebas del módulo:**
+**Endpoint:** `POST /api/v1/defects`  
+**Archivo:** `us04_defectos_tueste.feature` · `DefectSteps.java`
 
-| Tipo de prueba | Archivo | Escenarios cubiertos |
-|----------------|---------|---------------------|
-| BDD (dominio) | `DefectDomainBDDTest.java` | 14 escenarios — value objects + agregado + resource |
-| Sistema (REST) | `DefectsControllerSystemTest.java` | 9 escenarios — POST, GET all, GET by ID |
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra un defecto exitosamente | Perfil autenticado, `defectCommandService.handle` retorna `Optional.of(defect)` | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar un defecto | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Registro de defecto falla por datos inválidos | `defectCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
 
-**Reglas de negocio validadas:**
-- `DefectName`, `DefectType`, `ProbableCause` y `SuggestedSolution` rechazan valores nulos o en blanco con mensajes de error descriptivos.
-- `CreateDefectResource` valida que `defectWeight > 0` y que `percentage` esté en el rango `[0, 100]`.
-- El nombre del café se normaliza con `trim()` al crear el agregado `Defect`.
-- Los endpoints retornan `401 Unauthorized` cuando el usuario no está autenticado.
-- El endpoint `GET /api/v1/defects/{id}` retorna `404 Not Found` cuando el defecto no existe o no pertenece al perfil autenticado.
+---
+
+#### US05 - Cata Digital Estructurada
+
+**Endpoint:** `POST /api/v1/cupping-sessions`  
+**Archivo:** `us05_cata_digital.feature` · `CuppingSessionSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra una sesión de cata exitosamente | Perfil autenticado, `cuppingSessionCommandService.handle` retorna sesión válida | `201 Created` |
+| 2 | Barista consulta su historial de catas | Perfil autenticado, servicio retorna 2 sesiones | `200 OK` |
+| 3 | Usuario no autenticado intenta registrar una cata | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+
+---
+
+#### US06 - Historial de Catas
+
+**Endpoint:** `GET /api/v1/cupping-sessions`  
+**Archivo:** `us06_historial_catas.feature` · `CuppingSessionSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado consulta su historial de catas | Perfil autenticado, servicio retorna 2 sesiones | `200 OK` |
+| 2 | Barista sin catas registradas consulta historial vacío | Perfil autenticado, servicio retorna lista vacía | `200 OK` |
+| 3 | Usuario no autenticado intenta consultar el historial | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+
+---
+
+#### US07 - Gestión de Recetas de Preparación
+
+**Endpoint:** `POST /api/v1/recipes`  
+**Archivo:** `us07_recetas_preparacion.feature` · `RecipeSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado crea una receta exitosamente | Perfil autenticado, `preparationContextFacade.createRecipe` retorna receta válida | `201 Created` |
+| 2 | Usuario no autenticado intenta crear una receta | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Creación de receta falla por error interno | `preparationContextFacade.createRecipe` retorna `Optional.empty()` | `400 Bad Request` |
+
+---
+
+#### US08 - Calibración de Molienda
+
+**Endpoint:** `POST /api/v1/calibrations`  
+**Archivo:** `us08_calibracion_molienda.feature` · `CalibrationSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra una calibración exitosamente | Perfil autenticado, `grindCalibrationCommandService.handle` retorna calibración válida | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar una calibración | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Registro de calibración falla por datos inválidos | `grindCalibrationCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
+
+---
+
+#### US09 - Portafolio de Bebidas
+
+**Endpoint:** `POST /api/v1/portfolios`  
+**Archivo:** `us09_portafolio_bebidas.feature` · `PortfolioSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado crea un portafolio exitosamente | Perfil autenticado, `createPortfolio` retorna ID válido, `getPortfolioByIdForUser` retorna portafolio | `201 Created` |
+| 2 | Usuario no autenticado intenta crear un portafolio | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Creación de portafolio falla por error interno | `createPortfolio` retorna `0L` | `400 Bad Request` |
+
+---
+
+#### US10 - Control de Inventario
+
+**Endpoint:** `POST /api/v1/inventory-entries`  
+**Archivo:** `us10_control_inventario.feature` · `InventorySteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra una entrada de inventario exitosamente | Perfil autenticado, lote le pertenece, `createInventoryEntry` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar una entrada | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Barista intenta registrar consumo de un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
+
+---
+
+#### US13 - Gestión de Costos de Producción
+
+**Endpoint:** `POST /api/v1/production-cost-records`  
+**Archivo:** `us13_costos_produccion.feature` · `ProductionCostSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra un costo de producción exitosamente | Perfil autenticado, lote le pertenece, `createProductionCostRecord` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar costos | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Barista intenta registrar costos con un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
+
+---
+
+#### US17 - Autenticación de Usuarios
+
+**Endpoints:** `POST /api/v1/authentication/sign-up` · `POST /api/v1/authentication/sign-in`  
+**Archivo:** `us17_autenticacion.feature` · `AuthenticationSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Registro exitoso de un nuevo usuario | Email no existente, `userCommandService.handle(SignUpCommand)` retorna token | `201 Created` |
+| 2 | Inicio de sesión exitoso con credenciales válidas | Usuario registrado, `userCommandService.handle(SignInCommand)` retorna token | `200 OK` |
+| 3 | Inicio de sesión fallido con credenciales inválidas | Usuario no encontrado, servicio lanza excepción | `404 Not Found` |
+
+---
+
+#### US18 - Perfil Personalizado
+
+**Endpoint:** `POST /api/v1/profiles`  
+**Archivo:** `us18_perfil_personalizado.feature` · `ProfileCreationSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Usuario crea su perfil exitosamente | `profileCommandService.handle(CreateProfileCommand)` retorna perfil válido | `201 Created` |
+| 2 | Creación de perfil falla por error interno | `profileCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
+| 3 | Creación de perfil falla por rol inválido | Rol `"admin"` rechazado por `CreateProfileResource` en deserialización | `400 Bad Request` |
+
+---
+
+**Resumen de cobertura — Core System Tests:**
+
+| US | Feature file | Escenarios | Resultado |
+|----|-------------|------------|-----------|
+| US01 | `us01_proveedores.feature` | 3 | ✅ Passed |
+| US02 | `us02_lotes_cafe.feature` | 3 | ✅ Passed |
+| US03 | `us03_perfil_tueste.feature` | 3 | ✅ Passed |
+| US04 | `us04_defectos_tueste.feature` | 3 | ✅ Passed |
+| US05 | `us05_cata_digital.feature` | 3 | ✅ Passed |
+| US06 | `us06_historial_catas.feature` | 3 | ✅ Passed |
+| US07 | `us07_recetas_preparacion.feature` | 3 | ✅ Passed |
+| US08 | `us08_calibracion_molienda.feature` | 3 | ✅ Passed |
+| US09 | `us09_portafolio_bebidas.feature` | 3 | ✅ Passed |
+| US10 | `us10_control_inventario.feature` | 3 | ✅ Passed |
+| US13 | `us13_costos_produccion.feature` | 3 | ✅ Passed |
+| US17 | `us17_autenticacion.feature` | 3 | ✅ Passed |
+| US18 | `us18_perfil_personalizado.feature` | 3 | ✅ Passed |
+| **Total** | **13 features** | **39 scenarios** | **✅ 133 steps passed** |
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration.
@@ -6013,7 +6235,7 @@ En esta seccion se describen los componentes reales que intervienen en el despli
 - **Problema y segmentos**  
   Se identificó con claridad a los segmentos objetivo (baristas profesionales y administración de cafeterías de especialidad) y sus necesidades en la cadena de valor del café, sustentado en el needfinding, entrevistas y análisis competitivo descritos en los capítulos anteriores.
 
-- **Propuesta y alcance (TB1)**  
+- **Propuesta y alcance (TP1)**  
   **Café Lab** se plantea como solución que integra documentación de tueste, gestión de lotes, catas, recetas y análisis, en línea con el perfil de solución y los escenarios to-be. En este entregable se priorizó la trazabilidad del diseño (UX/UI, arquitectura, datos) y la evidencia de implementación inicial.
 
 - **Metodología**  
