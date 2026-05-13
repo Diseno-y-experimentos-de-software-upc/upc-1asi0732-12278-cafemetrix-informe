@@ -75,9 +75,11 @@
 | 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió la evidencia y documentación del RESTful API además del collaboration insights                                 |
 | 1.20    | 06/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió los links de las nuevas secciones del capítulo VI y VII                                                        |
 | 1.21    | 07/05/2026 | Quispe Roldan, Michael Fred       | Añadió 6.1.3. Core Behavior-Driven Development y 6.1.4. Core System Tests con pruebas del módulo Librería de Defectos |
-| 1.22    | 11/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 7.2.2. Stages Deployment Pipeline Components                                                                   |
-| 1.23    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió 6.1.2 Core Integration Tests y 7.1.2. Build & Test Suite Pipeline Components                                   |
-| 1.24    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
+| 1.22    | 08/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió la sección de tools and practices en 7.1 continuos integration                                                 |
+| 1.23    | 11/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 7.2.2. Stages Deployment Pipeline Components                                                                   |
+| 1.24    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió 6.1.2 Core Integration Tests y 7.1.2. Build & Test Suite Pipeline Components                                   |
+| 1.25    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
+| 1.25    | 11/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y student outcome                                                     |
 
 
 # Project Report Collaboration Insights
@@ -155,7 +157,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
-    <td></td>
+    <td>Me encargue de registrar validaciones pendientes en la plataforma, asimismo me encargué del cumplimiento del product backlog en us relacionados a usuarios y sesion de cata, ademas de implementar el servicio API para cost management. En la documentación me encargue de definir herramientas y practicas de integración continua</td>
     <td>TP1</td>
   </tr>
   <tr>
@@ -418,6 +420,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los Mobile Application Wireflow Diagrams, asegurando que la arquitectura de información y los flujos de navegación sean fieles a los requerimientos del sistema. Al definir los Android Mobile Style Guidelines bajo los estándares de Material Design, asumí la entrega de un diseño que sirva como base confiable para la implementación.<br><br>  
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Mediante mi aporte en diferentes puntos del informe, como la implementacion de politica Saas que me permitio comprender el rol y funcion de la aplicacion no unicamente como codigo, lo que me ayudo a mejorar mi vision etica y profesional en el desarrollo de software.<br><br>  
+                TP1: <br>Mi colaboracion en este proyecto me permitio entender que el proyecto requiere de mayores responsabilidades como control de calidad del producto UI/UX, asi como visualizar la adecuada eleccion de herramientas y practicas de integracion continua<br><br>
                 <strong>Michael Quispe</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los diagramas de flujo de usuario para la aplicación móvil (4.4.4. Mobile Applications User Flow Diagrams), asegurando que los flujos representen con fidelidad las interacciones reales del usuario. Definí con claridad cada nodo de decisión y camino de navegación, garantizando que la experiencia diseñada sea coherente, intuitiva y respetuosa de las expectativas del usuario final.<br><br>  
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al diseñar e implementar las pruebas BDD y de sistema para el módulo de Librería de Defectos del backend. Aseguré que cada escenario de prueba represente fielmente las reglas de negocio del dominio, validando que los value objects rechacen datos inválidos y que los endpoints REST respondan correctamente ante distintos contextos de autenticación y datos. Asumí la responsabilidad de garantizar que el módulo que gestiona el registro de defectos de tueste funcione de forma confiable, dado que los baristas dependen de esta información para tomar decisiones técnicas sobre la calidad del café.<br><br>  
@@ -442,6 +445,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Emití juicios informados al definir la estructura de los wireflows y las guías de estilo para Android, considerando el impacto social de la accesibilidad y usabilidad para los usuarios. Al seleccionar componentes de navegación y jerarquías visuales, tomé decisiones que afectan directamente la eficiencia operativa y productividad del usuario. Asimismo, consideré el impacto económico de optimizar el desarrollo mediante una documentación estandarizada que reduce errores de implementación<br><br>  
                 <strong>Carlos Fernandez</strong><br>  
                 TB1: <br>Implementar y actualizar el contenido del proyecto me permitio reconocer la importancia de sistemas orientados a productividad en el area de cafeterias, emitiendo juicios adecuados sobre el impacto del proyecto presentado, no solo programacion, sino tambien en los resultados y mejoras de los usuarios.<br><br>  
+                TP1: <br>Las soluciones planteadas para el cumplimiento de calidad de construccion de software y validaciones me permitio entnder la importancia de implementar soluciones que aportan al sector economico por medio del aumento de desempeño laboral, asimismo el reconocimiento de herramientas y practicas para garantizar el funcionamiento correcto mediante la integracion continua<br><br>
                 <strong>Michael Quispe</strong><br>  
                 TB1: <br>Emití juicios informados al diseñar los flujos de usuario para la aplicación móvil, considerando el impacto que tiene una navegación clara y eficiente en la experiencia del usuario final. Tomé decisiones sobre la estructura de los flujos priorizando la simplicidad y accesibilidad, reconociendo que una navegación deficiente puede afectar negativamente la adopción del sistema y, por ende, el valor social y económico del producto.<br><br>  
                 TP1: <br>Emití juicios informados al seleccionar el enfoque de pruebas para el módulo de Librería de Defectos, optando por pruebas BDD en el nivel de dominio y pruebas de sistema en la capa REST. Esta decisión consideró el impacto económico de detectar errores de validación tempranamente, antes de que lleguen a producción y afecten los registros de defectos de los baristas. Asimismo, evalué el impacto social de contar con un módulo de registro de defectos confiable, ya que la trazabilidad de defectos de tueste influye directamente en la calidad del producto final y en la reputación del establecimiento.<br><br>  
