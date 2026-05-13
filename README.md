@@ -46,7 +46,9 @@
 </ul>
 
 <!--Ciclo-->
-<div align="center" style="font-weight: bold;">Abril de 2026</div>
+<div align="center" style="font-weight: bold;">Mayo de 2026</div>
+
+<div style="page-break-after: always;"></div>
 
 <!--Cualquier modificación del documento es una nueva versión-->
 # Registro de versiones del informe
@@ -84,6 +86,7 @@
 | 1.28    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 6.1.1 Core Entities Unit Tests.                                                                               |
 | 1.29    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome.                                                    |
 
+<div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -137,6 +140,8 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
 </table>
 
+<div style="page-break-after: always;"></div>
+
 <table>
   <tr>
     <td width="10%"><strong>Integrante</strong></td>
@@ -183,6 +188,8 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     <img src="public/assets/images/tp1Collaboration/tp1report.png" alt="Evidencia">
   </tr>
 </table>
+
+<div style="page-break-after: always;"></div>
 
 <!--ÍNDICE-->
 # Contenido
@@ -393,7 +400,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     - [Anexos](#anexos)
 
 
-
+<div style="page-break-after: always;"></div>
 
 # Student Outcome
 
@@ -464,6 +471,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
 </table>  
 </div>
 
+<div style="page-break-after: always;"></div>
+
 # Part I: As-Is Software Project
 
 # Capítulo I: Introducción
@@ -488,6 +497,8 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 
 #### Logo, isotipo y logotipo de Café Lab:
 <img src="public/assets/images/chapter-2/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
+
+<div style="page-break-after: always;"></div>
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
@@ -517,6 +528,8 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
   </tr>
 
 </table>
+
+<div style="page-break-after: always;"></div>
 
 ## 1.2. Solution Profile
 
@@ -549,6 +562,8 @@ La solución que se utiliza hoy consiste en registros manuales en cuadernos, hoj
 **How much (¿Cuánto cuesta no resolverlo?):**
 
 Al no tomar acciones para implementar una solución, se genera pérdida de reputación en las cafeterías, inconsistencias en la calidad, dificultad para cumplir certificaciones y pérdida de clientes exigentes. Además, impide escalar el negocio con eficiencia.
+
+<div style="page-break-after: always;"></div>
 
 ### 1.2.2 Lean UX Process
 
