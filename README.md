@@ -80,6 +80,7 @@
 | 1.24    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió 6.1.2 Core Integration Tests y 7.1.2. Build & Test Suite Pipeline Components                                   |
 | 1.25    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
 | 1.26    | 11/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y student outcome                                                     |
+| 1.27    | 12/05/2026 | Antayhua Castillo, Oscar Josué    | Añadió 7.3.2. Production Deployment Pipeline Components.                                                              |
 
 
 # Project Report Collaboration Insights
@@ -147,7 +148,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Antayhua Castillo, Oscar Josué</strong></td>
-    <td></td>
+    <td>Me encargué de documentar los Production Deployment Pipeline Components (7.3.2), describiendo el flujo de despliegue a produccion desde GitHub hasta Vercel y Railway, incluyendo build, variables de entorno y validacion post-despliegue.</td>
     <td>TP1</td>
   </tr>
   <tr>
