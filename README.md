@@ -81,6 +81,8 @@
 | 1.25    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
 | 1.26    | 11/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y student outcome                                                     |
 | 1.27    | 12/05/2026 | Antayhua Castillo, Oscar Josué    | Añadió 7.3.2. Production Deployment Pipeline Components.                                                              |
+| 1.28    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 6.1.1 Core Entities Unit Tests.                                                                               |
+| 1.29    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome.                                                    |
 
 
 # Project Report Collaboration Insights
