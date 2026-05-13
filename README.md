@@ -5470,96 +5470,201 @@ Feature: US05 - Cata Digital Estructurada
 
 ### 6.1.4. Core System Tests.
 
-En esta sección se presentan las pruebas de sistema desarrolladas para el módulo de **Librería de Defectos**. Las pruebas están implementadas en el archivo `DefectsControllerSystemTest.java`, ubicado en `src/test/java/com/cafemetrix/cafelab/defects/interfaces/rest/`, y validan el comportamiento completo de los endpoints REST del controlador `DefectsController`.
+En esta sección se presentan las pruebas de sistema implementadas para los User Stories del backend de **CafeLab**. Las pruebas utilizan la infraestructura Cucumber (`@WebMvcTest` + MockMvc) para validar el comportamiento HTTP de cada controlador REST. Para cada US se muestra la tabla de escenarios cubiertos y la evidencia de ejecución.
 
-**Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)
-
-**Archivo de pruebas de sistema:** `src/test/java/com/cafemetrix/cafelab/defects/interfaces/rest/DefectsControllerSystemTest.java`
-
-**Tecnologías utilizadas:** `@WebMvcTest`, `MockMvc`, `Mockito`, `AssertJ`, Spring Boot Test
-
-Los servicios `DefectCommandService`, `DefectQueryService` y `CurrentProfileIdResolver` son mockeados para aislar la capa de controlador y probar únicamente el comportamiento HTTP.
+**Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)  
+**Runner:** `CucumberTestSuite` — `src/test/java/com/cafemetrix/cafelab/bdd/runner/`  
+**Tecnologías:** Cucumber 7, `@WebMvcTest`, MockMvc, Mockito, Spring Boot Test 3.5
 
 ---
 
-**System Tests: `POST /api/v1/defects`**
+#### US01 - Gestión de Proveedores
 
-| Escenario | Condición | HTTP Status esperado | Verificación adicional |
-|-----------|-----------|---------------------|------------------------|
-| Creación exitosa | Usuario autenticado + cuerpo válido | `201 Created` | `id`, `name`, `defectType`, `coffeeDisplayName` presentes en respuesta |
-| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
-| Datos inválidos | `defectWeight = -5.0` | `400 Bad Request` | — |
+**Endpoint:** `POST /api/v1/suppliers`  
+**Archivo:** `us01_proveedores.feature` · `SupplierSteps.java`
 
----
-
-**System Tests: `GET /api/v1/defects`**
-
-| Escenario | Condición | HTTP Status esperado | Verificación adicional |
-|-----------|-----------|---------------------|------------------------|
-| Lista con defectos | Usuario autenticado, servicio retorna 2 defectos | `200 OK` | `$.length() == 2` |
-| Lista vacía | Usuario autenticado, servicio retorna lista vacía | `200 OK` | `$.length() == 0` |
-| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra un proveedor exitosamente | Perfil autenticado, `createSupplier` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar un proveedor | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Creación de proveedor falla por error interno | `createSupplier` retorna `0L` | `400 Bad Request` |
 
 ---
 
-**System Tests: `GET /api/v1/defects/{id}`**
+#### US02 - Gestión de Lotes de Café
 
-| Escenario | Condición | HTTP Status esperado | Verificación adicional |
-|-----------|-----------|---------------------|------------------------|
-| Defecto existente | Usuario autenticado + defecto encontrado | `200 OK` | `$.id == 10`, `$.userId == 1` |
-| Defecto no encontrado | Servicio lanza `DefectNotFoundException` | `404 Not Found` | — |
-| Sin autenticación | Resolver retorna `Optional.empty()` | `401 Unauthorized` | — |
+**Endpoint:** `POST /api/v1/coffee-lots`  
+**Archivo:** `us02_lotes_cafe.feature` · `CoffeeLotSteps.java`
 
----
-
-**Implementación representativa:**
-
-```java
-@Test
-@DisplayName("Given usuario autenticado y datos válidos, When POST /api/v1/defects, Then responde 201 con el defecto creado")
-void givenAuthenticatedUserAndValidBody_whenPost_thenReturns201() throws Exception {
-    when(currentProfileIdResolver.resolveProfileId()).thenReturn(Optional.of(1L));
-    var defect = mockDefect(10L, 1L);
-    when(defectCommandService.handle(any(CreateDefectCommand.class))).thenReturn(Optional.of(defect));
-
-    mockMvc.perform(post("/api/v1/defects")
-            .contentType(MediaType.APPLICATION_JSON)
-            .content(objectMapper.writeValueAsString(validCreateBody())))
-        .andExpect(status().isCreated())
-        .andExpect(jsonPath("$.id").value(10))
-        .andExpect(jsonPath("$.name").value("Grano negro"));
-}
-```
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra un lote de café exitosamente | Perfil autenticado, proveedor le pertenece, `createCoffeeLot` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar un lote | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Barista intenta registrar un lote con proveedor que no le pertenece | `getSupplierById` retorna `Optional.empty()` | `403 Forbidden` |
 
 ---
 
-#### Validación del módulo: Librería de Defectos
+#### US03 - Creación de Perfil de Tueste
 
-El módulo de Librería de Defectos expone tres endpoints REST documentados y desplegados en el backend de Café Lab (Railway). A continuación se muestra la evidencia de validación del módulo:
+**Endpoint:** `POST /api/v1/roast-profile`  
+**Archivo:** `us03_perfil_tueste.feature` · `RoastProfileSteps.java`
 
-**Endpoints validados:**
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado crea un perfil de tueste exitosamente | Perfil autenticado, lote disponible, `createRoastProfile` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta crear un perfil de tueste | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Barista intenta crear un perfil con un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
 
-| Método | Endpoint | Descripción | Estado |
-|--------|----------|-------------|--------|
-| `POST` | `/api/v1/defects` | Crear registro de defecto asociado al usuario autenticado (JWT) | ✅ Implementado |
-| `GET` | `/api/v1/defects` | Listar todos los defectos del perfil autenticado | ✅ Implementado |
-| `GET` | `/api/v1/defects/{id}` | Obtener defecto por ID (validando pertenencia al perfil) | ✅ Implementado |
+---
 
-**Documentación Swagger:** El módulo está documentado en la especificación OpenAPI del backend bajo el tag `Defects`. La documentación Swagger puede consultarse en el endpoint `/swagger-ui/index.html` del servidor desplegado.
+#### US04 - Registro de Defectos de Tueste
 
-**Cobertura de pruebas del módulo:**
+**Endpoint:** `POST /api/v1/defects`  
+**Archivo:** `us04_defectos_tueste.feature` · `DefectSteps.java`
 
-| Tipo de prueba | Archivo | Escenarios cubiertos |
-|----------------|---------|---------------------|
-| BDD (dominio) | `DefectDomainBDDTest.java` | 14 escenarios — value objects + agregado + resource |
-| Sistema (REST) | `DefectsControllerSystemTest.java` | 9 escenarios — POST, GET all, GET by ID |
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra un defecto exitosamente | Perfil autenticado, `defectCommandService.handle` retorna `Optional.of(defect)` | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar un defecto | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Registro de defecto falla por datos inválidos | `defectCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
 
-**Reglas de negocio validadas:**
-- `DefectName`, `DefectType`, `ProbableCause` y `SuggestedSolution` rechazan valores nulos o en blanco con mensajes de error descriptivos.
-- `CreateDefectResource` valida que `defectWeight > 0` y que `percentage` esté en el rango `[0, 100]`.
-- El nombre del café se normaliza con `trim()` al crear el agregado `Defect`.
-- Los endpoints retornan `401 Unauthorized` cuando el usuario no está autenticado.
-- El endpoint `GET /api/v1/defects/{id}` retorna `404 Not Found` cuando el defecto no existe o no pertenece al perfil autenticado.
+---
+
+#### US05 - Cata Digital Estructurada
+
+**Endpoint:** `POST /api/v1/cupping-sessions`  
+**Archivo:** `us05_cata_digital.feature` · `CuppingSessionSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra una sesión de cata exitosamente | Perfil autenticado, `cuppingSessionCommandService.handle` retorna sesión válida | `201 Created` |
+| 2 | Barista consulta su historial de catas | Perfil autenticado, servicio retorna 2 sesiones | `200 OK` |
+| 3 | Usuario no autenticado intenta registrar una cata | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+
+---
+
+#### US06 - Historial de Catas
+
+**Endpoint:** `GET /api/v1/cupping-sessions`  
+**Archivo:** `us06_historial_catas.feature` · `CuppingSessionSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado consulta su historial de catas | Perfil autenticado, servicio retorna 2 sesiones | `200 OK` |
+| 2 | Barista sin catas registradas consulta historial vacío | Perfil autenticado, servicio retorna lista vacía | `200 OK` |
+| 3 | Usuario no autenticado intenta consultar el historial | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+
+---
+
+#### US07 - Gestión de Recetas de Preparación
+
+**Endpoint:** `POST /api/v1/recipes`  
+**Archivo:** `us07_recetas_preparacion.feature` · `RecipeSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado crea una receta exitosamente | Perfil autenticado, `preparationContextFacade.createRecipe` retorna receta válida | `201 Created` |
+| 2 | Usuario no autenticado intenta crear una receta | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Creación de receta falla por error interno | `preparationContextFacade.createRecipe` retorna `Optional.empty()` | `400 Bad Request` |
+
+---
+
+#### US08 - Calibración de Molienda
+
+**Endpoint:** `POST /api/v1/calibrations`  
+**Archivo:** `us08_calibracion_molienda.feature` · `CalibrationSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra una calibración exitosamente | Perfil autenticado, `grindCalibrationCommandService.handle` retorna calibración válida | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar una calibración | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Registro de calibración falla por datos inválidos | `grindCalibrationCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
+
+---
+
+#### US09 - Portafolio de Bebidas
+
+**Endpoint:** `POST /api/v1/portfolios`  
+**Archivo:** `us09_portafolio_bebidas.feature` · `PortfolioSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado crea un portafolio exitosamente | Perfil autenticado, `createPortfolio` retorna ID válido, `getPortfolioByIdForUser` retorna portafolio | `201 Created` |
+| 2 | Usuario no autenticado intenta crear un portafolio | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Creación de portafolio falla por error interno | `createPortfolio` retorna `0L` | `400 Bad Request` |
+
+---
+
+#### US10 - Control de Inventario
+
+**Endpoint:** `POST /api/v1/inventory-entries`  
+**Archivo:** `us10_control_inventario.feature` · `InventorySteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra una entrada de inventario exitosamente | Perfil autenticado, lote le pertenece, `createInventoryEntry` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar una entrada | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Barista intenta registrar consumo de un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
+
+---
+
+#### US13 - Gestión de Costos de Producción
+
+**Endpoint:** `POST /api/v1/production-cost-records`  
+**Archivo:** `us13_costos_produccion.feature` · `ProductionCostSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Barista autenticado registra un costo de producción exitosamente | Perfil autenticado, lote le pertenece, `createProductionCostRecord` retorna ID válido | `201 Created` |
+| 2 | Usuario no autenticado intenta registrar costos | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+| 3 | Barista intenta registrar costos con un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
+
+---
+
+#### US17 - Autenticación de Usuarios
+
+**Endpoints:** `POST /api/v1/authentication/sign-up` · `POST /api/v1/authentication/sign-in`  
+**Archivo:** `us17_autenticacion.feature` · `AuthenticationSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Registro exitoso de un nuevo usuario | Email no existente, `userCommandService.handle(SignUpCommand)` retorna token | `201 Created` |
+| 2 | Inicio de sesión exitoso con credenciales válidas | Usuario registrado, `userCommandService.handle(SignInCommand)` retorna token | `200 OK` |
+| 3 | Inicio de sesión fallido con credenciales inválidas | Usuario no encontrado, servicio lanza excepción | `404 Not Found` |
+
+---
+
+#### US18 - Perfil Personalizado
+
+**Endpoint:** `POST /api/v1/profiles`  
+**Archivo:** `us18_perfil_personalizado.feature` · `ProfileCreationSteps.java`
+
+| # | Escenario | Condición | HTTP Status |
+|---|-----------|-----------|-------------|
+| 1 | Usuario crea su perfil exitosamente | `profileCommandService.handle(CreateProfileCommand)` retorna perfil válido | `201 Created` |
+| 2 | Creación de perfil falla por error interno | `profileCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
+| 3 | Creación de perfil falla por rol inválido | Rol `"admin"` rechazado por `CreateProfileResource` en deserialización | `400 Bad Request` |
+
+---
+
+**Resumen de cobertura — Core System Tests:**
+
+| US | Feature file | Escenarios | Resultado |
+|----|-------------|------------|-----------|
+| US01 | `us01_proveedores.feature` | 3 | ✅ Passed |
+| US02 | `us02_lotes_cafe.feature` | 3 | ✅ Passed |
+| US03 | `us03_perfil_tueste.feature` | 3 | ✅ Passed |
+| US04 | `us04_defectos_tueste.feature` | 3 | ✅ Passed |
+| US05 | `us05_cata_digital.feature` | 3 | ✅ Passed |
+| US06 | `us06_historial_catas.feature` | 3 | ✅ Passed |
+| US07 | `us07_recetas_preparacion.feature` | 3 | ✅ Passed |
+| US08 | `us08_calibracion_molienda.feature` | 3 | ✅ Passed |
+| US09 | `us09_portafolio_bebidas.feature` | 3 | ✅ Passed |
+| US10 | `us10_control_inventario.feature` | 3 | ✅ Passed |
+| US13 | `us13_costos_produccion.feature` | 3 | ✅ Passed |
+| US17 | `us17_autenticacion.feature` | 3 | ✅ Passed |
+| US18 | `us18_perfil_personalizado.feature` | 3 | ✅ Passed |
+| **Total** | **13 features** | **39 scenarios** | **✅ 133 steps passed** |
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration.
