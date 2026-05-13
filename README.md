@@ -6233,7 +6233,7 @@ En esta seccion se describen los componentes reales que intervienen en el despli
 - **Problema y segmentos**  
   Se identificó con claridad a los segmentos objetivo (baristas profesionales y administración de cafeterías de especialidad) y sus necesidades en la cadena de valor del café, sustentado en el needfinding, entrevistas y análisis competitivo descritos en los capítulos anteriores.
 
-- **Propuesta y alcance (TB1)**  
+- **Propuesta y alcance (TP1)**  
   **Café Lab** se plantea como solución que integra documentación de tueste, gestión de lotes, catas, recetas y análisis, en línea con el perfil de solución y los escenarios to-be. En este entregable se priorizó la trazabilidad del diseño (UX/UI, arquitectura, datos) y la evidencia de implementación inicial.
 
 - **Metodología**  
