@@ -5436,328 +5436,189 @@ Las pruebas de integración se encuentran dentro de la carpeta `src/test/java/co
 
 ### 6.1.3. Core Behavior-Driven Development.
 
-En esta sección se presentan las pruebas de comportamiento (BDD) desarrolladas para los US core del backend de Café Lab. Las pruebas están implementadas con **Cucumber** usando archivos `.feature` en sintaxis Gherkin, integrados con Spring Boot a través de `@WebMvcTest` y MockMvc.
+En esta sección se presentan las pruebas de comportamiento (BDD) desarrolladas para los User Stories core del backend de **CafeLab**. Las pruebas están implementadas con Cucumber usando archivos `.feature` en sintaxis Gherkin, integrados con Spring Boot a través de `@WebMvcTest` y MockMvc.
 
-**Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)
+**Repositorio:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend) — rama `feature/bdd-system-tests`
 
-**Rama:** `feature/bdd-system-tests`
+A continuación se muestra la estructura de archivos `.feature` implementados, todos con ejecución exitosa:
 
-**Infraestructura Cucumber:**
+<img src="public/assets/images/chapter-6/bdd-features-folder.png" alt="Carpeta features con los 13 archivos .feature">
 
-| Archivo | Ubicación | Rol |
-|---------|-----------|-----|
-| `CucumberSpringConfiguration.java` | `src/test/java/.../bdd/` | Contexto Spring: `@WebMvcTest` + `@MockBean` |
-| `CucumberTestSuite.java` | `src/test/java/.../bdd/runner/` | Runner JUnit Platform Suite |
-| `SharedSteps.java` | `src/test/java/.../bdd/steps/` | Steps compartidos (autenticación, código de respuesta) |
-| `AuthenticationSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US17 |
-| `RoastProfileSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US03 |
-| `CuppingSessionSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US05 |
+**Feature: US03 — Creación de Perfil de Tueste**
 
----
+<img src="public/assets/images/chapter-6/bdd-us03.png" alt="us03_perfil_tueste.feature en el IDE">
 
-#### Feature: US17 — Registro y Autenticación de Usuarios
+**Feature: US10 — Control de Inventario**
 
-**Archivo:** `src/test/resources/features/us17_autenticacion.feature`
-
-```gherkin
-Feature: US17 - Registro y Autenticación de Usuarios
-
-  Scenario: Registro exitoso de un nuevo usuario
-    Given un usuario con email "barista@cafelab.com" y contraseña "Password123"
-    When el usuario envía una solicitud de registro
-    Then el sistema responde con código 201
-    And la respuesta contiene un token de acceso
-
-  Scenario: Inicio de sesión exitoso con credenciales válidas
-    Given un usuario registrado con email "barista@cafelab.com" y contraseña "Password123"
-    When el usuario envía una solicitud de inicio de sesión
-    Then el sistema responde con código 200
-    And la respuesta contiene un token de acceso
-
-  Scenario: Inicio de sesión fallido con credenciales inválidas
-    Given un usuario no registrado con email "noexiste@cafelab.com" y contraseña "wrongpass"
-    When el usuario envía una solicitud de inicio de sesión
-    Then el sistema responde con código 404
-```
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Registro exitoso | Usuario con email y contraseña válidos | POST `/api/v1/authentication/sign-up` | 201 + token en respuesta |
-| Login exitoso | Usuario registrado | POST `/api/v1/authentication/sign-in` | 200 + token en respuesta |
-| Login fallido | Usuario no registrado | POST `/api/v1/authentication/sign-in` | 404 |
-
----
-
-#### Feature: US03 — Creación de Perfil de Tueste
-
-**Archivo:** `src/test/resources/features/us03_perfil_tueste.feature`
-
-```gherkin
-Feature: US03 - Creación de Perfil de Tueste
-
-  Scenario: Barista autenticado crea un perfil de tueste exitosamente
-    Given un barista autenticado con perfil id 1 y lote id 1 disponible
-    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
-    Then el sistema responde con código 201
-    And la respuesta contiene el id del perfil de tueste creado
-
-  Scenario: Usuario no autenticado intenta crear un perfil de tueste
-    Given un usuario no autenticado
-    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
-    Then el sistema responde con código 401
-
-  Scenario: Barista intenta crear un perfil con un lote que no le pertenece
-    Given un barista autenticado con perfil id 1 pero sin acceso al lote id 99
-    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
-    Then el sistema responde con código 403
-```
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Creación exitosa | Barista autenticado + lote propio disponible | POST `/api/v1/roast-profile` | 201 + id del perfil creado |
-| Sin autenticación | Usuario no autenticado | POST `/api/v1/roast-profile` | 401 |
-| Lote ajeno | Barista autenticado + lote de otro usuario | POST `/api/v1/roast-profile` | 403 |
-
----
-
-#### Feature: US05 — Cata Digital Estructurada
-
-**Archivo:** `src/test/resources/features/us05_cata_digital.feature`
-
-```gherkin
-Feature: US05 - Cata Digital Estructurada
-
-  Scenario: Barista autenticado registra una sesión de cata exitosamente
-    Given un barista autenticado con perfil id 1
-    When envía una solicitud para crear una cata con nombre "Cata Etiopía Yirgacheffe" origen "Etiopía" variedad "Heirloom" procesamiento "Natural" fecha "2026-05-12"
-    Then el sistema responde con código 201
-    And la respuesta contiene el id de la sesión de cata
-
-  Scenario: Barista consulta su historial de catas
-    Given un barista autenticado con perfil id 1 y 2 catas registradas
-    When envía una solicitud para listar sus sesiones de cata
-    Then el sistema responde con código 200
-    And la respuesta contiene una lista con 2 sesiones
-
-  Scenario: Usuario no autenticado intenta registrar una cata
-    Given un usuario no autenticado
-    When envía una solicitud para crear una cata con nombre "Cata Etiopía Yirgacheffe" origen "Etiopía" variedad "Heirloom" procesamiento "Natural" fecha "2026-05-12"
-    Then el sistema responde con código 401
-```
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Cata registrada exitosamente | Barista autenticado | POST `/api/v1/cupping-sessions` | 201 + id de la sesión |
-| Historial de catas | Barista autenticado con 2 catas previas | GET `/api/v1/cupping-sessions` | 200 + lista con 2 elementos |
-| Sin autenticación | Usuario no autenticado | POST `/api/v1/cupping-sessions` | 401 |
-
----
-
-**Resultado de ejecución:** 9 Scenarios (9 passed) — 32 Steps (32 passed)
-
-| Feature | Escenarios | Resultado |
-|---------|-----------|-----------|
-| US17 - Autenticación | 3 | ✅ Todos pasan |
-| US03 - Perfil de Tueste | 3 | ✅ Todos pasan |
-| US05 - Cata Digital | 3 | ✅ Todos pasan |
+<img src="public/assets/images/chapter-6/bdd-us10.png" alt="us10_control_inventario.feature en el IDE">
 
 ### 6.1.4. Core System Tests.
 
-En esta sección se presentan las pruebas de sistema implementadas para los User Stories del backend de **CafeLab**. Las pruebas utilizan la infraestructura Cucumber (`@WebMvcTest` + MockMvc) para validar el comportamiento HTTP de cada controlador REST. Para cada US se muestra la tabla de escenarios cubiertos y la evidencia de ejecución.
+<table>
+  <tr>
+    <td>US17</td>
+    <td>Autenticación<br>de Usuarios<br>(Registro)</td>
+    <td><b>Como</b> barista profesional o dueño de cafetería de especialidad <b>quiero</b> registrarme y acceder de forma segura <b>para</b> mantener la confidencialidad de mis datos</td>
+  </tr>
+</table>
 
-**Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)  
-**Runner:** `CucumberTestSuite` — `src/test/java/com/cafemetrix/cafelab/bdd/runner/`  
-**Tecnologías:** Cucumber 7, `@WebMvcTest`, MockMvc, Mockito, Spring Boot Test 3.5
-
----
-
-#### US01 - Gestión de Proveedores
-
-**Endpoint:** `POST /api/v1/suppliers`  
-**Archivo:** `us01_proveedores.feature` · `SupplierSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado registra un proveedor exitosamente | Perfil autenticado, `createSupplier` retorna ID válido | `201 Created` |
-| 2 | Usuario no autenticado intenta registrar un proveedor | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Creación de proveedor falla por error interno | `createSupplier` retorna `0L` | `400 Bad Request` |
+<img src="public/assets/images/chapter-6/selenium-us17-registro.png" alt="Selenium US17 - Registro de usuario">
 
 ---
 
-#### US02 - Gestión de Lotes de Café
+<table>
+  <tr>
+    <td>US17</td>
+    <td>Autenticación<br>de Usuarios<br>(Inicio de sesión)</td>
+    <td><b>Como</b> barista profesional o dueño de cafetería de especialidad <b>quiero</b> registrarme y acceder de forma segura <b>para</b> mantener la confidencialidad de mis datos</td>
+  </tr>
+</table>
 
-**Endpoint:** `POST /api/v1/coffee-lots`  
-**Archivo:** `us02_lotes_cafe.feature` · `CoffeeLotSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado registra un lote de café exitosamente | Perfil autenticado, proveedor le pertenece, `createCoffeeLot` retorna ID válido | `201 Created` |
-| 2 | Usuario no autenticado intenta registrar un lote | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Barista intenta registrar un lote con proveedor que no le pertenece | `getSupplierById` retorna `Optional.empty()` | `403 Forbidden` |
-
----
-
-#### US03 - Creación de Perfil de Tueste
-
-**Endpoint:** `POST /api/v1/roast-profile`  
-**Archivo:** `us03_perfil_tueste.feature` · `RoastProfileSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado crea un perfil de tueste exitosamente | Perfil autenticado, lote disponible, `createRoastProfile` retorna ID válido | `201 Created` |
-| 2 | Usuario no autenticado intenta crear un perfil de tueste | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Barista intenta crear un perfil con un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
+<img src="public/assets/images/chapter-6/selenium-us17-login.png" alt="Selenium US17 - Inicio de sesión">
 
 ---
 
-#### US04 - Registro de Defectos de Tueste
+<table>
+  <tr>
+    <td>US18</td>
+    <td>Perfil<br>Personalizado</td>
+    <td><b>Como</b> barista profesional o dueño de cafetería de especialidad <b>quiero</b> configurar mi perfil profesional <b>para</b> personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
+  </tr>
+</table>
 
-**Endpoint:** `POST /api/v1/defects`  
-**Archivo:** `us04_defectos_tueste.feature` · `DefectSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado registra un defecto exitosamente | Perfil autenticado, `defectCommandService.handle` retorna `Optional.of(defect)` | `201 Created` |
-| 2 | Usuario no autenticado intenta registrar un defecto | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Registro de defecto falla por datos inválidos | `defectCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
-
----
-
-#### US05 - Cata Digital Estructurada
-
-**Endpoint:** `POST /api/v1/cupping-sessions`  
-**Archivo:** `us05_cata_digital.feature` · `CuppingSessionSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado registra una sesión de cata exitosamente | Perfil autenticado, `cuppingSessionCommandService.handle` retorna sesión válida | `201 Created` |
-| 2 | Barista consulta su historial de catas | Perfil autenticado, servicio retorna 2 sesiones | `200 OK` |
-| 3 | Usuario no autenticado intenta registrar una cata | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
+<img src="public/assets/images/chapter-6/selenium-us18.png" alt="Selenium US18 - Perfil personalizado">
 
 ---
 
-#### US06 - Historial de Catas
+<table>
+  <tr>
+    <td>US01</td>
+    <td>Gestión de<br>Proveedores</td>
+    <td><b>Como</b> dueño de cafetería de especialidad <b>quiero</b> registrar y evaluar a mis proveedores <b>para</b> mantener un control de calidad y trazabilidad de origen</td>
+  </tr>
+</table>
 
-**Endpoint:** `GET /api/v1/cupping-sessions`  
-**Archivo:** `us06_historial_catas.feature` · `CuppingSessionSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado consulta su historial de catas | Perfil autenticado, servicio retorna 2 sesiones | `200 OK` |
-| 2 | Barista sin catas registradas consulta historial vacío | Perfil autenticado, servicio retorna lista vacía | `200 OK` |
-| 3 | Usuario no autenticado intenta consultar el historial | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-
----
-
-#### US07 - Gestión de Recetas de Preparación
-
-**Endpoint:** `POST /api/v1/recipes`  
-**Archivo:** `us07_recetas_preparacion.feature` · `RecipeSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado crea una receta exitosamente | Perfil autenticado, `preparationContextFacade.createRecipe` retorna receta válida | `201 Created` |
-| 2 | Usuario no autenticado intenta crear una receta | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Creación de receta falla por error interno | `preparationContextFacade.createRecipe` retorna `Optional.empty()` | `400 Bad Request` |
+<img src="public/assets/images/chapter-6/selenium-us01.png" alt="Selenium US01 - Gestión de proveedores">
 
 ---
 
-#### US08 - Calibración de Molienda
+<table>
+  <tr>
+    <td>US02</td>
+    <td>Gestión de<br>Lotes de Café</td>
+    <td><b>Como</b> barista profesional o dueño de cafetería de especialidad <b>quiero</b> registrar y hacer seguimiento de cada lote de café verde <b>para</b> mantener control de inventario y trazabilidad</td>
+  </tr>
+</table>
 
-**Endpoint:** `POST /api/v1/calibrations`  
-**Archivo:** `us08_calibracion_molienda.feature` · `CalibrationSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado registra una calibración exitosamente | Perfil autenticado, `grindCalibrationCommandService.handle` retorna calibración válida | `201 Created` |
-| 2 | Usuario no autenticado intenta registrar una calibración | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Registro de calibración falla por datos inválidos | `grindCalibrationCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
-
----
-
-#### US09 - Portafolio de Bebidas
-
-**Endpoint:** `POST /api/v1/portfolios`  
-**Archivo:** `us09_portafolio_bebidas.feature` · `PortfolioSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado crea un portafolio exitosamente | Perfil autenticado, `createPortfolio` retorna ID válido, `getPortfolioByIdForUser` retorna portafolio | `201 Created` |
-| 2 | Usuario no autenticado intenta crear un portafolio | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Creación de portafolio falla por error interno | `createPortfolio` retorna `0L` | `400 Bad Request` |
+<img src="public/assets/images/chapter-6/selenium-us02.png" alt="Selenium US02 - Gestión de lotes de café">
 
 ---
 
-#### US10 - Control de Inventario
+<table>
+  <tr>
+    <td>US03</td>
+    <td>Creación de<br>Perfil de Tueste</td>
+    <td><b>Como</b> barista profesional <b>quiero</b> crear perfiles de tueste personalizados <b>para</b> documentar y replicar mis mejores resultados</td>
+  </tr>
+</table>
 
-**Endpoint:** `POST /api/v1/inventory-entries`  
-**Archivo:** `us10_control_inventario.feature` · `InventorySteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado registra una entrada de inventario exitosamente | Perfil autenticado, lote le pertenece, `createInventoryEntry` retorna ID válido | `201 Created` |
-| 2 | Usuario no autenticado intenta registrar una entrada | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Barista intenta registrar consumo de un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
-
----
-
-#### US13 - Gestión de Costos de Producción
-
-**Endpoint:** `POST /api/v1/production-cost-records`  
-**Archivo:** `us13_costos_produccion.feature` · `ProductionCostSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Barista autenticado registra un costo de producción exitosamente | Perfil autenticado, lote le pertenece, `createProductionCostRecord` retorna ID válido | `201 Created` |
-| 2 | Usuario no autenticado intenta registrar costos | `resolveProfileId()` retorna `Optional.empty()` | `401 Unauthorized` |
-| 3 | Barista intenta registrar costos con un lote que no le pertenece | `getCoffeeLotById` retorna `Optional.empty()` | `403 Forbidden` |
+<img src="public/assets/images/chapter-6/selenium-us03.png" alt="Selenium US03 - Perfil de tueste">
 
 ---
 
-#### US17 - Autenticación de Usuarios
+<table>
+  <tr>
+    <td>US04</td>
+    <td>Registro de<br>Defectos de Tueste</td>
+    <td><b>Como</b> barista profesional <b>quiero</b> registrar defectos detectados durante el tueste <b>para</b> documentar problemas recurrentes y consultarlos posteriormente</td>
+  </tr>
+</table>
 
-**Endpoints:** `POST /api/v1/authentication/sign-up` · `POST /api/v1/authentication/sign-in`  
-**Archivo:** `us17_autenticacion.feature` · `AuthenticationSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Registro exitoso de un nuevo usuario | Email no existente, `userCommandService.handle(SignUpCommand)` retorna token | `201 Created` |
-| 2 | Inicio de sesión exitoso con credenciales válidas | Usuario registrado, `userCommandService.handle(SignInCommand)` retorna token | `200 OK` |
-| 3 | Inicio de sesión fallido con credenciales inválidas | Usuario no encontrado, servicio lanza excepción | `404 Not Found` |
-
----
-
-#### US18 - Perfil Personalizado
-
-**Endpoint:** `POST /api/v1/profiles`  
-**Archivo:** `us18_perfil_personalizado.feature` · `ProfileCreationSteps.java`
-
-| # | Escenario | Condición | HTTP Status |
-|---|-----------|-----------|-------------|
-| 1 | Usuario crea su perfil exitosamente | `profileCommandService.handle(CreateProfileCommand)` retorna perfil válido | `201 Created` |
-| 2 | Creación de perfil falla por error interno | `profileCommandService.handle` retorna `Optional.empty()` | `400 Bad Request` |
-| 3 | Creación de perfil falla por rol inválido | Rol `"admin"` rechazado por `CreateProfileResource` en deserialización | `400 Bad Request` |
+<img src="public/assets/images/chapter-6/selenium-us04.png" alt="Selenium US04 - Defectos de tueste">
 
 ---
 
-**Resumen de cobertura — Core System Tests:**
+<table>
+  <tr>
+    <td>US05</td>
+    <td>Cata Digital<br>Estructurada</td>
+    <td><b>Como</b> barista profesional <b>quiero</b> registrar evaluaciones sensoriales estructuradas <b>para</b> documentar las características de cada lote y tueste</td>
+  </tr>
+</table>
 
-| US | Feature file | Escenarios | Resultado |
-|----|-------------|------------|-----------|
-| US01 | `us01_proveedores.feature` | 3 | ✅ Passed |
-| US02 | `us02_lotes_cafe.feature` | 3 | ✅ Passed |
-| US03 | `us03_perfil_tueste.feature` | 3 | ✅ Passed |
-| US04 | `us04_defectos_tueste.feature` | 3 | ✅ Passed |
-| US05 | `us05_cata_digital.feature` | 3 | ✅ Passed |
-| US06 | `us06_historial_catas.feature` | 3 | ✅ Passed |
-| US07 | `us07_recetas_preparacion.feature` | 3 | ✅ Passed |
-| US08 | `us08_calibracion_molienda.feature` | 3 | ✅ Passed |
-| US09 | `us09_portafolio_bebidas.feature` | 3 | ✅ Passed |
-| US10 | `us10_control_inventario.feature` | 3 | ✅ Passed |
-| US13 | `us13_costos_produccion.feature` | 3 | ✅ Passed |
-| US17 | `us17_autenticacion.feature` | 3 | ✅ Passed |
-| US18 | `us18_perfil_personalizado.feature` | 3 | ✅ Passed |
-| **Total** | **13 features** | **39 scenarios** | **✅ 133 steps passed** |
+<img src="public/assets/images/chapter-6/selenium-us05.png" alt="Selenium US05 - Cata digital">
+
+---
+
+<table>
+  <tr>
+    <td>US06</td>
+    <td>Historial<br>de Catas</td>
+    <td><b>Como</b> barista profesional <b>quiero</b> acceder al historial de catas por diferentes criterios <b>para</b> analizar tendencias y consistencia</td>
+  </tr>
+</table>
+
+<img src="public/assets/images/chapter-6/selenium-us06.png" alt="Selenium US06 - Historial de catas">
+
+---
+
+<table>
+  <tr>
+    <td>US07</td>
+    <td>Gestión de Recetas<br>de Preparación</td>
+    <td><b>Como</b> barista profesional <b>quiero</b> crear y documentar recetas detalladas para cada método de preparación y tipo de café <b>para</b> mantener consistencia en mis preparaciones</td>
+  </tr>
+</table>
+
+<img src="public/assets/images/chapter-6/selenium-us07.png" alt="Selenium US07 - Recetas de preparación">
+
+---
+
+<table>
+  <tr>
+    <td>US08</td>
+    <td>Calibración<br>de Molienda</td>
+    <td><b>Como</b> barista profesional <b>quiero</b> documentar configuraciones de molienda para diferentes equipos y métodos <b>para</b> mantener consistencia entre preparaciones</td>
+  </tr>
+</table>
+
+<img src="public/assets/images/chapter-6/selenium-us08.png" alt="Selenium US08 - Calibración de molienda">
+
+---
+
+<table>
+  <tr>
+    <td>US09</td>
+    <td>Portafolio<br>de Bebidas</td>
+    <td><b>Como</b> barista profesional o dueño de cafetería de especialidad <b>quiero</b> crear un portafolio digital de bebidas y recetas <b>para</b> presentar a clientes o eventos</td>
+  </tr>
+</table>
+
+<img src="public/assets/images/chapter-6/selenium-us09.png" alt="Selenium US09 - Portafolio de bebidas">
+
+---
+
+<table>
+  <tr>
+    <td>US10</td>
+    <td>Control de<br>Inventario</td>
+    <td><b>Como</b> dueño de cafetería de especialidad <b>quiero</b> gestionar el inventario de café verde y tostado de forma integrada <b>para</b> optimizar recursos y prevenir desabastecimiento</td>
+  </tr>
+</table>
+
+<img src="public/assets/images/chapter-6/selenium-us10.png" alt="Selenium US10 - Control de inventario">
+
+---
+
+<table>
+  <tr>
+    <td>US13</td>
+    <td>Gestión de Costos<br>de Producción</td>
+    <td><b>Como</b> dueño de cafetería de especialidad <b>quiero</b> registrar y analizar los costos de producción de cada lote <b>para</b> optimizar mi estructura de precios y rentabilidad</td>
+  </tr>
+</table>
+
+<img src="public/assets/images/chapter-6/selenium-us13.png" alt="Selenium US13 - Costos de producción">
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration.
