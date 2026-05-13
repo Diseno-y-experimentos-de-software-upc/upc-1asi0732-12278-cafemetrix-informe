@@ -5984,6 +5984,23 @@ Este flujo permite reducir riesgos antes del despliegue, validar la integración
 
 ### 7.3.2. Production Deployment Pipeline Components.
 
+En esta seccion se describen los componentes reales que intervienen en el despliegue a produccion de CafeLab, desde el origen del codigo en GitHub hasta la publicacion en los servicios cloud. El pipeline se activa cuando los cambios aprobados se integran a la rama estable y las plataformas conectadas ejecutan build y despliegue automaticamente.
+
+| Component | Description | Role in Production Deployment |
+| --- | --- | --- |
+| GitHub Repository | Repositorio central donde se almacenan el frontend, backend y landing page. | Punto de origen del pipeline y disparador del despliegue al integrar cambios en la rama estable. |
+| Stable Branch (`main`) | Rama estable utilizada para publicar versiones listas para produccion. | Evita que cambios incompletos lleguen al entorno productivo. |
+| Deployment Trigger | Evento generado por un push o merge hacia la rama estable. | Inicia automaticamente el proceso de build y despliegue en Vercel, Railway y Firebase. |
+| Build Process | Proceso de compilacion y preparacion de artefactos del frontend y backend. | Verifica que la aplicacion pueda ejecutarse correctamente antes de publicarse. |
+| Environment Variables | Variables configuradas en Vercel, Railway y Firebase (credenciales, rutas, endpoints). | Permite ejecutar la solucion en produccion sin exponer datos sensibles en el repositorio. |
+| Vercel | Plataforma de despliegue del frontend web. | Publica automaticamente la interfaz productiva cuando detecta cambios en la rama configurada. |
+| Railway | Plataforma de despliegue del backend y servicios asociados. | Publica el API y mantiene la conexion con la base de datos en produccion. |
+| Firebase Hosting | Hosting de la landing page estatica. | Mantiene disponible la landing page publica y actualizada en cada despliegue. |
+| Production Database (MySQL en Railway) | Base de datos conectada al backend desplegado. | Garantiza persistencia de la informacion utilizada por la aplicacion en operacion. |
+| Post-deployment Validation | Validacion posterior del frontend, backend y landing page. | Confirma que autenticacion, proveedores, lotes, inventario, recetas, catas y costos operan correctamente. |
+
+Flujo general: merge a `main` -> trigger automatico -> build -> inyeccion de variables -> despliegue en Vercel, Railway y Firebase -> validacion funcional en produccion.
+
 # Conclusiones y recomendaciones
 
 ## Conclusiones
