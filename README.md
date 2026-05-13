@@ -6306,6 +6306,6 @@ En esta seccion se describen los componentes reales que intervienen en el despli
 
 - Enlace para acceder al [Front-end deployado](https://cafelab-frontend.vercel.app/login)
 
-- Enlace para acceder al [Backend deployado](https://cafelab-backend-production-809b.up.railway.app/swagger-ui/index.html)
+- Enlace para acceder al [Backend deployado](https://cafelab-backend-production-2742.up.railway.app/swagger-ui/index.html)
 
 - Enlace al video "About the Product": [video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=oOeUxQ)
