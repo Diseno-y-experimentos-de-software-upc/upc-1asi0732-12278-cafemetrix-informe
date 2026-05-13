@@ -79,7 +79,7 @@
 | 1.23    | 11/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 7.2.2. Stages Deployment Pipeline Components                                                                   |
 | 1.24    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió 6.1.2 Core Integration Tests y 7.1.2. Build & Test Suite Pipeline Components                                   |
 | 1.25    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
-| 1.25    | 11/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y student outcome                                                     |
+| 1.26    | 11/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y student outcome                                                     |
 
 
 # Project Report Collaboration Insights
