@@ -5317,7 +5317,7 @@ Se muestra el video about the product, donde se evidencia la explicación sobre 
 
 En esta sección se presentan las pruebas unitarias realizadas a las entidades del dominio (Core Entities) para validar la lógica de negocio fundamental de cada User Story. Estas pruebas aseguran que las reglas de validación y los comportamientos de las entidades se cumplan correctamente de forma aislada, garantizando la robustez del modelo de dominio antes de su integración con otros componentes.
 
-A continuación, se muestra la evidencia de la ejecución de las pruebas unitarias para cada una de las User Stories (US):
+**A continuación, se muestra la evidencia de la ejecución de las pruebas unitarias para cada una de las User Stories (US):**
 
 #### US01 - Registro de Proveedores
 ![US01 Test](public/assets/images/CoreUnitTests/US01Test.png)
@@ -5366,6 +5366,39 @@ A continuación, se muestra la evidencia de la ejecución de las pruebas unitari
 
 #### US19 - Selección de Plan
 ![US19 Test](public/assets/images/CoreUnitTests/US19Test.png)
+
+**A continuación, se muestra la evidencia de la ejecución de las pruebas unitarias para cada una de las Technical Stories (TS):**
+
+#### TS01 - API Proveedores
+![TS01 Test](public/assets/images/CoreUnitTests/TS01Test.png)
+
+#### TS02 - API Lotes
+![TS02 Test](public/assets/images/CoreUnitTests/TS02Test.png)
+
+#### TS03 - API Perfiles de Tueste
+![TS03 Test](public/assets/images/CoreUnitTests/TS03Test.png)
+
+#### TS04 - API Defectos
+![TS04 Test](public/assets/images/CoreUnitTests/TS04Test.png)
+
+#### TS05 - API Catas
+![TS05 Test](public/assets/images/CoreUnitTests/TS05Test.png)
+
+#### TS06 - API Recetas
+![TS06 Test](public/assets/images/CoreUnitTests/TS06Test.png)
+
+#### TS07 - API Calibraciones
+![TS07 Test](public/assets/images/CoreUnitTests/TS07Test.png)
+
+#### TS08 - API Inventario
+![TS08 Test](public/assets/images/CoreUnitTests/TS08Test.png)
+
+#### TS09 - API Usuarios
+![TS09 Test](public/assets/images/CoreUnitTests/TS09Test.png)
+
+#### TS10 - API Autenticación
+![TS10 Test](public/assets/images/CoreUnitTests/TS10Test.png)
+
 
 
 ### 6.1.2. Core Integration Tests.
