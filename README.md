@@ -6168,6 +6168,8 @@ En esta seccion se describen los componentes reales que intervienen en el despli
 
 - Enlace para acceder al [video exposición de TB1](https://youtu.be/rgbAM8NypyM)
 
+- Enlace para acceder al [video exposición de TP1](https://youtu.be/ApVzihb3R_o)
+
 - Enlace para acceder al [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&p=f&t=f0KUudOr0KNMX5mk-0)
 
 - Enlace para acceder al [repositorio Informe](https://github.com/Diseno-y-experimentos-de-software-upc/upc-1asi0732-12278-cafemetrix-informe#521-sprint-backlogs)
