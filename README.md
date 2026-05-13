@@ -74,7 +74,7 @@
 | 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
 | 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió la evidencia y documentación del RESTful API además del collaboration insights                                 |
 | 1.20    | 06/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió los links de las nuevas secciones del capítulo VI y VII                                                        |
-| 1.21    | 07/05/2026 | Quispe Roldan, Michael Fred       | Añadió 6.1.3. Core Behavior-Driven Development y 6.1.4. Core System Tests con pruebas del módulo Librería de Defectos |
+| 1.21    | 07/05/2026 | Quispe Roldan, Michael Fred       | Añadió 6.1.3. Core Behavior-Driven Development con Cucumber .feature files (US17, US03, US05) y 6.1.4. Core System Tests con pruebas MockMvc del módulo Librería de Defectos |
 | 1.22    | 08/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió la sección de tools and practices en 7.1 continuos integration                                                 |
 | 1.23    | 11/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 7.2.2. Stages Deployment Pipeline Components                                                                   |
 | 1.24    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió 6.1.2 Core Integration Tests y 7.1.2. Build & Test Suite Pipeline Components                                   |
@@ -168,7 +168,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Quispe Roldan, Michael Fred</strong></td>
-    <td>Me encargué de implementar las pruebas de comportamiento (BDD) y las pruebas de sistema del módulo Librería de Defectos del backend de CafeLab. Para las pruebas BDD (6.1.3), desarrollé el archivo <code>DefectDomainBDDTest.java</code>, cubriendo 14 escenarios sobre los value objects del dominio (<code>DefectName</code>, <code>DefectType</code>, <code>ProbableCause</code>, <code>SuggestedSolution</code>), el recurso <code>CreateDefectResource</code> y el agregado <code>Defect</code>, validando reglas de negocio como rechazo de valores nulos, normalización con <code>trim()</code> y rangos de porcentaje. Para las pruebas de sistema (6.1.4), desarrollé el archivo <code>DefectsControllerSystemTest.java</code>, implementando 9 escenarios con <code>@WebMvcTest</code> y <code>MockMvc</code> que validan el comportamiento completo de los endpoints REST (<code>POST /api/v1/defects</code>, <code>GET /api/v1/defects</code>, <code>GET /api/v1/defects/{id}</code>), incluyendo respuestas 201, 200, 401 y 404 según el estado de autenticación y los datos enviados.</td>
+    <td>Me encargué de implementar las pruebas BDD con Cucumber y las pruebas de sistema del backend de CafeLab. Para las pruebas BDD (6.1.3), implementé la infraestructura completa de Cucumber con archivos <code>.feature</code> en Gherkin para los US core del sistema: <code>us17_autenticacion.feature</code> (registro y login), <code>us03_perfil_tueste.feature</code> (creación de perfiles de tueste con autenticación y control de acceso por lote) y <code>us05_cata_digital.feature</code> (sesiones de cata estructuradas). Los 9 escenarios cubren flujos exitosos, acceso no autenticado (401) y acceso no autorizado (403), todos ejecutándose con <code>@WebMvcTest</code> y MockMvc mediante el runner <code>CucumberTestSuite</code>. Para las pruebas de sistema (6.1.4), desarrollé el archivo <code>DefectsControllerSystemTest.java</code>, implementando 9 escenarios con <code>@WebMvcTest</code> y <code>MockMvc</code> que validan el comportamiento completo de los endpoints REST (<code>POST /api/v1/defects</code>, <code>GET /api/v1/defects</code>, <code>GET /api/v1/defects/{id}</code>), incluyendo respuestas 201, 200, 401 y 404 según el estado de autenticación y los datos enviados.</td>
     <td>TP1</td>
   </tr>
   <tr>
@@ -5343,104 +5343,130 @@ Las pruebas de integración se encuentran dentro de la carpeta `src/test/java/co
 
 ### 6.1.3. Core Behavior-Driven Development.
 
-En esta sección se presentan las pruebas de comportamiento (BDD) desarrolladas para el módulo de **Librería de Defectos** del backend de Café Lab. Las pruebas están implementadas en el archivo `DefectDomainBDDTest.java`, ubicado en `src/test/java/com/cafemetrix/cafelab/defects/domain/`, y utilizan JUnit 5 con clases `@Nested` y `@DisplayName` para estructurar los escenarios en formato Given/When/Then.
+En esta sección se presentan las pruebas de comportamiento (BDD) desarrolladas para los US core del backend de Café Lab. Las pruebas están implementadas con **Cucumber** usando archivos `.feature` en sintaxis Gherkin, integrados con Spring Boot a través de `@WebMvcTest` y MockMvc.
 
 **Repositorio de referencia:** [cafelab-backend](https://github.com/Diseno-y-experimentos-de-software-upc/cafelab-backend)
 
-**Archivo de pruebas BDD:** `src/test/java/com/cafemetrix/cafelab/defects/domain/DefectDomainBDDTest.java`
+**Rama:** `feature/bdd-system-tests`
 
-#### Feature: Librería de defectos — modelo de dominio
+**Infraestructura Cucumber:**
 
-Las pruebas BDD cubren los siguientes escenarios de comportamiento agrupados por entidad:
-
----
-
-**Scenario: Creación de DefectName**
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Valor válido | Un valor no vacío "Grano negro" | Se crea un `DefectName` | El valor se almacena correctamente |
-| Valor nulo | `null` | Se intenta crear un `DefectName` | Lanza `IllegalArgumentException` con mensaje sobre el nombre |
-| Valor en blanco | `"   "` | Se intenta crear un `DefectName` | Lanza `IllegalArgumentException` con mensaje sobre el nombre |
+| Archivo | Ubicación | Rol |
+|---------|-----------|-----|
+| `CucumberSpringConfiguration.java` | `src/test/java/.../bdd/` | Contexto Spring: `@WebMvcTest` + `@MockBean` |
+| `CucumberTestSuite.java` | `src/test/java/.../bdd/runner/` | Runner JUnit Platform Suite |
+| `SharedSteps.java` | `src/test/java/.../bdd/steps/` | Steps compartidos (autenticación, código de respuesta) |
+| `AuthenticationSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US17 |
+| `RoastProfileSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US03 |
+| `CuppingSessionSteps.java` | `src/test/java/.../bdd/steps/` | Steps para US05 |
 
 ---
 
-**Scenario: Creación de DefectType**
+#### Feature: US17 — Registro y Autenticación de Usuarios
 
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Tipo válido | Un tipo no vacío "Categoría 1" | Se crea un `DefectType` | El valor se almacena correctamente |
-| Valor nulo | `null` | Se intenta crear un `DefectType` | Lanza `IllegalArgumentException` con mensaje sobre el tipo |
-| Valor en blanco | `""` | Se intenta crear un `DefectType` | Lanza `IllegalArgumentException` con mensaje sobre el tipo |
+**Archivo:** `src/test/resources/features/us17_autenticacion.feature`
 
----
+```gherkin
+Feature: US17 - Registro y Autenticación de Usuarios
 
-**Scenario: Creación de ProbableCause**
+  Scenario: Registro exitoso de un nuevo usuario
+    Given un usuario con email "barista@cafelab.com" y contraseña "Password123"
+    When el usuario envía una solicitud de registro
+    Then el sistema responde con código 201
+    And la respuesta contiene un token de acceso
 
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Causa válida | Una causa descriptiva | Se crea un `ProbableCause` | El valor se almacena correctamente |
-| Valor nulo | `null` | Se intenta crear un `ProbableCause` | Lanza `IllegalArgumentException` con mensaje sobre la causa |
-| Valor en blanco | `"  "` | Se intenta crear un `ProbableCause` | Lanza `IllegalArgumentException` con mensaje sobre la causa |
+  Scenario: Inicio de sesión exitoso con credenciales válidas
+    Given un usuario registrado con email "barista@cafelab.com" y contraseña "Password123"
+    When el usuario envía una solicitud de inicio de sesión
+    Then el sistema responde con código 200
+    And la respuesta contiene un token de acceso
 
----
-
-**Scenario: Creación de SuggestedSolution**
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Solución válida | Una solución descriptiva | Se crea un `SuggestedSolution` | El valor se almacena correctamente |
-| Valor nulo | `null` | Se intenta crear un `SuggestedSolution` | Lanza `IllegalArgumentException` con mensaje sobre la solución |
-| Valor en blanco | `""` | Se intenta crear un `SuggestedSolution` | Lanza `IllegalArgumentException` con mensaje sobre la solución |
-
----
-
-**Scenario: Validación de CreateDefectResource**
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Campos válidos | Todos los campos completos y en rango | Se construye el recurso | No lanza excepción |
-| Nombre de café nulo | `coffeeDisplayName = null` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el nombre del café |
-| Peso negativo | `defectWeight = -1.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el peso del defecto |
-| Porcentaje > 100 | `percentage = 150.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el porcentaje |
-| Porcentaje negativo | `percentage = -1.0` | Se construye el recurso | Lanza `IllegalArgumentException` sobre el porcentaje |
-
----
-
-**Scenario: Creación del agregado Defect**
-
-| Escenario | Given | When | Then |
-|-----------|-------|------|------|
-| Comando válido | Un `CreateDefectCommand` con todos los campos | Se crea un `Defect` | Todos los campos se mapean correctamente al agregado |
-| Nombre con espacios | `coffeeDisplayName = "  Café Etiopía  "` | Se crea un `Defect` | Se aplica `trim()` y el nombre queda como `"Café Etiopía"` |
-
----
-
-**Implementación representativa:**
-
-```java
-@Nested
-@DisplayName("Scenario: Creación del agregado Defect")
-class DefectAggregateBDD {
-
-    @Test
-    @DisplayName("Given un CreateDefectCommand válido, When se crea Defect, Then todos los campos son mapeados correctamente")
-    void givenValidCommand_whenCreate_thenFieldsMappedCorrectly() {
-        var command = new CreateDefectCommand(
-            1L, "Café Etiopía", "Yirgacheffe", "Heirloom",
-            500.0, "Grano negro", "Categoría 1",
-            25.0, 5.0, "Temperatura excesiva", "Reducir temperatura"
-        );
-
-        var defect = new Defect(command);
-
-        assertThat(defect.getUserId()).isEqualTo(1L);
-        assertThat(defect.getName()).isEqualTo("Grano negro");
-        assertThat(defect.getDefectType()).isEqualTo("Categoría 1");
-        assertThat(defect.getPercentage()).isEqualTo(5.0);
-    }
-}
+  Scenario: Inicio de sesión fallido con credenciales inválidas
+    Given un usuario no registrado con email "noexiste@cafelab.com" y contraseña "wrongpass"
+    When el usuario envía una solicitud de inicio de sesión
+    Then el sistema responde con código 404
 ```
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Registro exitoso | Usuario con email y contraseña válidos | POST `/api/v1/authentication/sign-up` | 201 + token en respuesta |
+| Login exitoso | Usuario registrado | POST `/api/v1/authentication/sign-in` | 200 + token en respuesta |
+| Login fallido | Usuario no registrado | POST `/api/v1/authentication/sign-in` | 404 |
+
+---
+
+#### Feature: US03 — Creación de Perfil de Tueste
+
+**Archivo:** `src/test/resources/features/us03_perfil_tueste.feature`
+
+```gherkin
+Feature: US03 - Creación de Perfil de Tueste
+
+  Scenario: Barista autenticado crea un perfil de tueste exitosamente
+    Given un barista autenticado con perfil id 1 y lote id 1 disponible
+    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
+    Then el sistema responde con código 201
+    And la respuesta contiene el id del perfil de tueste creado
+
+  Scenario: Usuario no autenticado intenta crear un perfil de tueste
+    Given un usuario no autenticado
+    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
+    Then el sistema responde con código 401
+
+  Scenario: Barista intenta crear un perfil con un lote que no le pertenece
+    Given un barista autenticado con perfil id 1 pero sin acceso al lote id 99
+    When envía una solicitud para crear un perfil con nombre "Etiopía Natural" tipo "Light" duración 12 tempInicio 180.0 tempFin 195.0
+    Then el sistema responde con código 403
+```
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Creación exitosa | Barista autenticado + lote propio disponible | POST `/api/v1/roast-profile` | 201 + id del perfil creado |
+| Sin autenticación | Usuario no autenticado | POST `/api/v1/roast-profile` | 401 |
+| Lote ajeno | Barista autenticado + lote de otro usuario | POST `/api/v1/roast-profile` | 403 |
+
+---
+
+#### Feature: US05 — Cata Digital Estructurada
+
+**Archivo:** `src/test/resources/features/us05_cata_digital.feature`
+
+```gherkin
+Feature: US05 - Cata Digital Estructurada
+
+  Scenario: Barista autenticado registra una sesión de cata exitosamente
+    Given un barista autenticado con perfil id 1
+    When envía una solicitud para crear una cata con nombre "Cata Etiopía Yirgacheffe" origen "Etiopía" variedad "Heirloom" procesamiento "Natural" fecha "2026-05-12"
+    Then el sistema responde con código 201
+    And la respuesta contiene el id de la sesión de cata
+
+  Scenario: Barista consulta su historial de catas
+    Given un barista autenticado con perfil id 1 y 2 catas registradas
+    When envía una solicitud para listar sus sesiones de cata
+    Then el sistema responde con código 200
+    And la respuesta contiene una lista con 2 sesiones
+
+  Scenario: Usuario no autenticado intenta registrar una cata
+    Given un usuario no autenticado
+    When envía una solicitud para crear una cata con nombre "Cata Etiopía Yirgacheffe" origen "Etiopía" variedad "Heirloom" procesamiento "Natural" fecha "2026-05-12"
+    Then el sistema responde con código 401
+```
+
+| Escenario | Given | When | Then |
+|-----------|-------|------|------|
+| Cata registrada exitosamente | Barista autenticado | POST `/api/v1/cupping-sessions` | 201 + id de la sesión |
+| Historial de catas | Barista autenticado con 2 catas previas | GET `/api/v1/cupping-sessions` | 200 + lista con 2 elementos |
+| Sin autenticación | Usuario no autenticado | POST `/api/v1/cupping-sessions` | 401 |
+
+---
+
+**Resultado de ejecución:** 9 Scenarios (9 passed) — 32 Steps (32 passed)
+
+| Feature | Escenarios | Resultado |
+|---------|-----------|-----------|
+| US17 - Autenticación | 3 | ✅ Todos pasan |
+| US03 - Perfil de Tueste | 3 | ✅ Todos pasan |
+| US05 - Cata Digital | 3 | ✅ Todos pasan |
 
 ### 6.1.4. Core System Tests.
 
