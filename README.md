@@ -168,7 +168,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Quispe Roldan, Michael Fred</strong></td>
-    <td></td>
+    <td>Me encargué de implementar las pruebas de comportamiento (BDD) y las pruebas de sistema del módulo Librería de Defectos del backend de CafeLab. Para las pruebas BDD (6.1.3), desarrollé el archivo <code>DefectDomainBDDTest.java</code>, cubriendo 14 escenarios sobre los value objects del dominio (<code>DefectName</code>, <code>DefectType</code>, <code>ProbableCause</code>, <code>SuggestedSolution</code>), el recurso <code>CreateDefectResource</code> y el agregado <code>Defect</code>, validando reglas de negocio como rechazo de valores nulos, normalización con <code>trim()</code> y rangos de porcentaje. Para las pruebas de sistema (6.1.4), desarrollé el archivo <code>DefectsControllerSystemTest.java</code>, implementando 9 escenarios con <code>@WebMvcTest</code> y <code>MockMvc</code> que validan el comportamiento completo de los endpoints REST (<code>POST /api/v1/defects</code>, <code>GET /api/v1/defects</code>, <code>GET /api/v1/defects/{id}</code>), incluyendo respuestas 201, 200, 401 y 404 según el estado de autenticación y los datos enviados.</td>
     <td>TP1</td>
   </tr>
   <tr>
