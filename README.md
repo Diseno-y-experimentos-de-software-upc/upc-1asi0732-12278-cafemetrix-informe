@@ -5314,6 +5314,60 @@ Se muestra el video about the product, donde se evidencia la explicación sobre 
 
 ## 6.1. Testing Suites & Validation.
 ### 6.1.1. Core Entities Unit Tests.
+
+En esta sección se presentan las pruebas unitarias realizadas a las entidades del dominio (Core Entities) para validar la lógica de negocio fundamental de cada User Story. Estas pruebas aseguran que las reglas de validación y los comportamientos de las entidades se cumplan correctamente de forma aislada, garantizando la robustez del modelo de dominio antes de su integración con otros componentes.
+
+A continuación, se muestra la evidencia de la ejecución de las pruebas unitarias para cada una de las User Stories (US):
+
+#### US01 - Registro de Proveedores
+![US01 Test](public/assets/images/CoreUnitTests/US01Test.png)
+
+#### US02 - Gestión de Lotes de Café Verde
+![US02 Test](public/assets/images/CoreUnitTests/US02Test.png)
+
+#### US03 - Perfil de Tueste
+![US03 Test](public/assets/images/CoreUnitTests/US03Test.png)
+
+#### US04 - Defectos de Tueste
+![US04 Test](public/assets/images/CoreUnitTests/US04Test.png)
+
+#### US05 - Cata Digital
+![US05 Test](public/assets/images/CoreUnitTests/US05Test.png)
+
+#### US06 - Historial de Catas
+![US06 Test](public/assets/images/CoreUnitTests/US06Test.png)
+
+#### US07 - Recetas de Preparación
+![US07 Test](public/assets/images/CoreUnitTests/US07Test.png)
+
+#### US08 - Calibración de Molienda
+![US08 Test](public/assets/images/CoreUnitTests/US08Test.png)
+
+#### US09 - Portafolio de Bebidas
+![US09 Test](public/assets/images/CoreUnitTests/US09Test.png)
+
+#### US10 - Control de Inventario Integrado
+![US10 Test](public/assets/images/CoreUnitTests/US10Test.png)
+
+#### US11 - Análisis de Tuestes
+![US11 Test](public/assets/images/CoreUnitTests/US11Test.png)
+
+#### US13 - Gestión de Costos de Producción
+![US13 Test](public/assets/images/CoreUnitTests/US13Test.png)
+
+#### US15 - Secciones por Segmento
+![US15 Test](public/assets/images/CoreUnitTests/US15Test.png)
+
+#### US17 - Registro y Autenticación
+![US17 Test](public/assets/images/CoreUnitTests/US17Test.png)
+
+#### US18 - Perfil Personalizado
+![US18 Test](public/assets/images/CoreUnitTests/US18Test.png)
+
+#### US19 - Selección de Plan
+![US19 Test](public/assets/images/CoreUnitTests/US19Test.png)
+
+
 ### 6.1.2. Core Integration Tests.
 
 En esta sección se presentan las pruebas de integración implementadas para validar el correcto funcionamiento de los controladores y servicios principales del sistema CafeLab. Las pruebas fueron desarrolladas con JUnit y Mockito, esto simula las dependencias y valida las respuestas HTTP esperadas de cada User Story.
