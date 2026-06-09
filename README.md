@@ -5640,7 +5640,89 @@ A continuación se muestra la estructura de archivos `.feature` implementados, t
 ### 6.2.2. Reviews.
 
 ## 6.3. Validation Interviews.
+En la sección de “Validation Interviews” del proyecto CafeLab nos enfocamos en mejorar la presentación y funcionalidad de la plataforma web dirigida a baristas y dueños/administradores de cafeterías. En este punto se llega a la comunicación directa con los segmentos objetivos con el fin de entrevistar y obtener respuestas sobre la experiencia y percepción dentro de la plataforma, ya sean criticas positivas o negativas, esto ayuda en la mejora continua para la integración adecuada de futuras integraciones o correcciones orientadas en mejorar la mejora continua de la plataforma. A continuación se muestran los user goals necesarios para la realización de las entrevistas:
+
 ### 6.3.1. Diseño de Entrevistas.
+En esta sección de detallas los objetivos de los usuarios pertenecientes al segmento objetivo, mediante la definición de estos user gol se obtiene los resultados mas cercanos a la experiencia del usuario en la navegación y recorrido ideal en la plataforma para lograr sus objetivos ya sean baristas o dueños/administrados de cafeterías.
+
+#### User Goal: Registrarse y elegir suscripción(Barista y dueño/administrador de cafetería)
+El usuario elegirá si es un barista o un dueño de cafetería, en base a esto el formulario de registro mostrará más o menos campos a completar, una vez registrados podrán elegir el plan que más deseen, luego, procederán a la pantalla de pago. Confirmado el pago, podrán acceder a las herramientas disponibles según su plan.
+
+#### User Goal: Iniciar Sesión.(Barista y dueño/administrador de cafetería)
+El usuario de la aplicación ya cuenta con una cuenta, sea de barista o dueño de cafetería, si ingresa mal sus datos, se le pedirá que los ingrese nuevamente, una vez los datos sean correctos, podrá acceder a las herramientas según su plan.
+
+#### User Goal: Editar su Perfil. (Barista y dueño/administrador de cafetería)
+Una vez el usuario haya entrado a la app web, puede ver su perfil mediante el botón de "Perfil", de este modo puede editar los datos que le gusten.
+
+##### User Goal: Registrar, Editar y Observar sus Proveedores. (Barista y dueño/administrador de cafetería)
+El usuario desde la pantalla de inicio donde aparecen las herramientas, selecciona "Proveedores" accediendo a la pantalla de "Proveedores" el cuál tiene las funciones de registrar proveedores, editar los que ya están registrados y observar los datos del proveedor que gusten.
+
+#### User Goal: Registrar, Editar y Observar sus Lotes de Café. (Barista y dueño/administrador de cafetería)
+Desde el inicio, el usuario selecciona la herramienta de "Lotes de Café" accediendo a una lista con sus lotes registrados, del mismo modo puede registrar nuevos lotes de café, editar los existentes o simplemente ver la información de alguno que elija.
+
+#### User Goal: Registrar, Editar y Visualizar sus perfiles de tueste, también comparar entre dos de ellos. (Barista y dueño/administrador de cafetería)
+Desde el apartado de herramientas, selecciona "Perfiles de Tueste", de este modo puede observar en una tabla sus perfiles registrados, así como registrar uno nuevo, editar un existente, visualizar los datos y curva de tueste del que seleccione y también comparar las curvas de tueste entre dos perfiles.
+
+#### User Goal: Registrar, Editar y Observar sus Catas con su hexágono sensorial. (Barista y dueño/administrador de cafetería)
+Desde el apartado de herramientas, selecciona "Catas", accediendo a la tabla que contiene sus catas registradas, desde esta pantalla puede registrar una cata, editar una existente, visualizar sus catas registradas junto con su hexágono sensorial si lo requiere. Por otro lado, también puede comparar los hexágonos sensoriales entre dos catas.
+
+#### User Goal: Observar la biblioteca de defectos, con posibles causas y soluciones. (Barista y dueño/administrador de cafetería)
+Desde el apartado de herramientas, selecciona "Biblioteca de defectos", teniendo una lista con los defectos, si selecciones alguno puede observar sus posibles causas y las soluciones recomendadas.
+
+#### User Goal: Identificar la relación entre el tueste y los sabores del café. (Barista y dueño/administrador de cafetería)
+Desde el apartado de herramientas, selecciona la "Relación tueste - sabor", donde puede seleccionar las catas que se visualizarán en el gráfico mostrando la concentración de tuestes exitosos de color morado, en términos de temperatura y tiempo. También desde este apartado, pueden acceder a la biblioteca que muestra las variables en el tostado que pueden influir en la taza final de café.
+
+#### User Goal: Poder registrar, editar y visualizar sus recetas, así como portafolios con las recetas especiales. (Barista y dueño/administrador de cafetería)
+Desde el apartado de herramientas, selecciona "Recetas", de este modo accediendo a una pantalla que le muestra los portafolios que tiene y las recetas que están fuera de este portafolio, puede crear un nuevo portafolio o visualizar los ya creados con sus recetas asociadas, también puede asignar nuevas recetas a un portafolio. Puede crear una receta, al crear una debería seleccionar si está hecho por extracción o por método de espresso. Por otro lado, al visualizar las recetas hechas se le mostrará toda la información asociada.
+
+#### User Goal: Tener un registro de las calibraciones de sus moliendas para un mejor resultado. (Barista y dueño/administrador de cafetería)
+Desde el apartado de herramientas, selecciona "Calibración de Molienda", en este apartado puede registrar o editar las calibraciones de las moliendas, de este modo teniendo un acabado igual para sus recetas.
+
+#### User Goal: Tener un adecuado manejo de su inventario, pudiendo registrar lotes y visualizar información importante. (Barista y dueño/administrador de cafetería)
+Desde el apartado de herramientas, selecciona "Inventario", en el cual se puede observar la cantidad restante del lote seleccionado, puede registrar el consumo que se haga para las recetas, de esta forma teniendo un buen manejo de su inventario y stock.
+
+#### User Goal: Poder gestionar sus costos de una manera eficiente, para optimizar sus ganancias y rentabilidad.(Barista y dueño/administrador de cafetería)
+Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo al proceso en el que puede registrar todos sus costos, como de materia prima, mano de obra, costos de transporte, etc., de este modo calculará su margen potencial y el precio sugerido por kg.
+
+
+#### **Segmento #1: Dueños/Administradores de Cafeterías de Especialidad <br> (Funciones: Proveedores, Lotes de Café, Perfiles de Tuestes, Inventario, Gestión de Costos)**
+
+1. ¿Cómo describirías tu experiencia general con la aplicación web?
+
+2. ¿Hubo algo que no encontraste o que te confundió en cada una de esas secciones?
+
+3. De las tareas realizadas, ¿cuál te aportó mayor valor para la gestión de tu cafetería?
+
+4. ¿Qué paso o flujo te sorprendió positivamente (por su rapidez, claridad o utilidad)?
+
+5. En una escala del 1 al 5, ¿cómo calificarías la intuitividad de la navegación para acceder a Proveedores, Lotes, Perfiles, Inventario y Costos?
+
+6. ¿Viste algún elemento visual (íconos, botones, textos) que te distrajera o no resultara claro?
+
+7. Si pudieras añadir o mejorar una sola función en estas cinco áreas, ¿cuál sería y por qué?
+
+8. ¿Recomendarías CaféLab a otros dueños o administradores de cafeterías? ¿Qué ventaja destacarías para convencerlos?
+
+#### **Segmento #2: Baristas Profesionales <br> (Funciones: Sesiones de Cata, Librería de Defectos, Correlación Tueste-Sabor, Calibración de Molienda, Recetas)**
+
+1. ¿Cómo describirías tu experiencia general con la aplicación web?
+
+2. ¿Hubo algo que no encontraste o que te confundió al interactuar con esas secciones?
+
+3. De las cinco funciones, ¿cuál te pareció la que aporta más valor a tu trabajo diario como barista?
+
+4. ¿Qué parte del flujo te sorprendió positivamente (por ejemplo, la rapidez en cargar resultados de cata o la claridad de la librería)?
+
+5. En una escala del 1 al 5, ¿cómo calificarías la intuitividad de navegación en todas las funciones?
+
+6. ¿Observaste algún elemento visual que distraiga o no te quedara claro?
+
+7. Del 1 al 10, ¿qué tan útil te resultó la plataforma para optimizar tus procesos de preparación y cata?
+
+8. Si pudieras añadir o mejorar una sola función orientada a baristas, ¿cuál sería y por qué?
+
+9. ¿Recomendarías CaféLab a otros baristas profesionales? ¿Qué aspecto destacarías para convencerlos?
+
 ### 6.3.2. Registro de Entrevistas.
 ### 6.3.3. Evaluaciones según heurísticas.
 
