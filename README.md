@@ -5724,6 +5724,137 @@ Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo a
 9. ¿Recomendarías CaféLab a otros baristas profesionales? ¿Qué aspecto destacarías para convencerlos?
 
 ### 6.3.2. Registro de Entrevistas.
+#### Entrevistas a dueños o administradores de cafeterías de especialidad
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 1</td>
+    <td>Cesar Costa</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\interview-validation\Interview-owner1.png" alt="Foto de Cesar Costa"></td>
+    <td>Tuvo una experiencia muy positiva con Cafelab, destacando especialmente la funcionalidad de perfiles de tueste como el aspecto más valioso, ya que le permite ser más exacto en la preparación del café y prever estadísticas clave. Dio una calificación perfecta (5/5) en navegación e interacción, y afirmó que recomendaría la aplicación a otros dueños. Aprecia su capacidad para gestionar integralmente el negocio, no solo las ventas, y valora las gráficas comparativas de tueste, así como la sección de soporte. Señaló la utilidad de visualizar diferencias de temperatura y tiempo como un beneficio clave.
+
+</td>
+  </tr>
+  <tr>
+    <td>Timing:00:09-04:25</td>
+    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
+        Ver grabación</td>
+  </tr>
+</table>
+
+
+<table border="1">
+<tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 2</td>
+    <td>Raul Donayre</td>
+  </tr>
+  <tr>
+  <td><img src="public\assets\images\interview-validation\interview-owner2.png" alt="Foto de Raul Donayre"></td>
+    <td>Consideró que la aplicación es muy intuitiva, ágil y le permite obtener resultados rápidamente con menos esfuerzo operativo. Valoró especialmente el registro detallado de proveedores, granos y lotes, y la posibilidad de comparar perfiles de tueste. Describió la herramienta como un “paquete muy completo” y la recomendaría por su capacidad de centralizar información previamente dispersa.</td>
+  </tr>
+  <tr>
+    <td>Timing:04:25-08:57</td>
+    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
+        Ver grabación</td>
+  </tr>
+</table>
+
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 3</td>
+    <td>Ana Garcia</td>
+  </tr>
+  <tr>
+   <td><img src="public\assets\images\interview-validation\interview-owner3.png" alt="Foto de Ana Garcia"></td>
+    <td>Resaltó la fluidez de la experiencia y la coherencia visual de la interfaz, otorgando un 4/5 en intuitividad. Destacó la gestión de costos como la función de mayor valor, y se sorprendió positivamente por el manejo de inventarios y alertas automáticas. Aprecia la integración de todas las funciones en un solo sistema. Como puntos de mejora, sugirió aumentar la visibilidad de los íconos de edición, marcar claramente los campos obligatorios, diferenciar mejor los botones de editar y clonar, y añadir un registro de cambios para mayor control interno.
+</td>
+  </tr>
+  <tr>
+    <td>Timing:08:57-14:34</td>
+    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
+        Ver grabación</td>
+  </tr>
+</table>
+
+
+#### Entrevistas a baristas de cafeterías de especialidad
+<table border="1">
+<tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 4</td>
+    <td>Ranferi Valdivia</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\interview-validation\interview-barista1.png" alt="Foto de Ranferi Valdivia"></td>
+    <td>Tuvo una excelente primera impresión de la aplicación, describiéndola como ordenada y bien organizada. Valoró la disponibilidad del sistema en español e inglés, otorgando una calificación de 4/5 en intuitividad y recomendándola con firmeza a otros baristas. Resaltó la utilidad de contar con herramientas centralizadas para estandarizar procedimientos antes realizados manualmente y destacó las gráficas de tueste como recurso clave para optimizar temperaturas y tiempos. Aunque al inicio tuvo cierta dificultad para ubicar algunas secciones, encontró el sistema útil para la profesionalización del trabajo del barista.</td>
+  </tr>
+  <tr>
+    <td>Timing:17:41-22:37
+</td>
+    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+<tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 5</td>
+    <td>Patricia Alvarez</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\interview-validation\interview-barista2.png" alt="Foto de Patricia Alvarez"></td>
+    <td> Describió Cafelab como una aplicación amigable, práctica y suficiente para registrar la información necesaria en su día a día. Le dio una calificación perfecta de 10/10 en optimización de procesos, reconociendo su utilidad directa para la eficiencia del trabajo operativo.</td>
+  </tr>
+  <tr>
+    <td>Timing:22:37-29:42
+</td>
+    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+<tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 6</td>
+    <td>Aldo Zavala</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\interview-validation\interview-barista3.png" alt="Foto de Aldo Zavala"></td>
+    <td>Elogió la interfaz intuitiva, el diseño claro y la fluidez general del sistema. Calificó la navegación con un 4/5 y la optimización de procesos con un 9.5/10. Considera las sesiones de cata como la función más valiosa y destacó lo fácil que es gestionar recetas y centralizar notas, lo que le permite ahorrar tiempo en documentación. Propuso mejorar la biblioteca de defectos agregando filtros por intensidad y categoría, hacer más distinguibles los íconos de clonar, y añadió la sugerencia de integrar un temporizador en las sesiones de cata.</td>
+  </tr>
+  <tr>
+    <td>Timing:29:42-35:31</td>
+    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
+        Ver grabación</td>
+  </tr>
+</table>
+
 ### 6.3.3. Evaluaciones según heurísticas.
 
 ## 6.4. Auditoría de Experiencias de Usuario.
