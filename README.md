@@ -6346,10 +6346,448 @@ En esta seccion se describen los componentes reales que intervienen en el despli
 # Capítulo VIII: Experiment-Driven Development
 ## 8.1. Experiment Planning.
 ### 8.1.1. As-Is Summary.
+
+La plataforma de software actual, denominada **Café Lab**, fue concebida como un ecosistema digital integral diseñado para profesionalizar el flujo de trabajo de baristas profesionales y optimizar la gestión comercial en cafeterías de especialidad. En su estado presente, el sistema cuenta con módulos funcionales independientes y endpoints REST distribuidos para la gestión de usuarios, perfiles de tueste, calibración de molienda, portafolio de recetas, registro de proveedores, inventarios de café verde y tostado, sesiones de cata digital, gestión de costos de producción y biblioteca de defectos de tueste. El núcleo técnico contempla además la interconexión con el sensor físico IoT **TrackSilo**, proyectado para la persistencia de datos y el monitoreo ambiental continuo de variables críticas de almacenamiento.
+
+A la fecha de este informe, la solución se encuentra desplegada en un entorno productivo compuesto por: landing page en Firebase, frontend web en Angular (Vercel), backend REST en Spring Boot (Railway) con base de datos MySQL, y documentación de API disponible vía Swagger. La aplicación móvil nativa **no se encuentra implementada** en esta iteración del proyecto; el diseño móvil se documenta mediante wireframes, mock-ups y prototipos en Figma conforme a las guías de estilo iOS y Android (Cap. IV). La internacionalización básica (español e inglés) está habilitada en el frontend web mediante `ngx-translate` y un selector de idioma.
+
+Tras las evaluaciones técnicas del entorno desplegado, las auditorías internas de código, el análisis del product backlog, las pruebas de verificación y validación (Cap. VI) y las entrevistas de usabilidad ejecutadas con actores reales del dominio, se ha determinado que la plataforma **avanzó de forma significativa** en la centralización de información (proveedores, lotes, tuestes, catas, costos e inventarios) y obtuvo valoraciones positivas en intuitividad y utilidad operativa. No obstante, persisten brechas entre la visión integral del producto y su madurez actual: los procesos de la cadena productiva (almacenamiento → tueste → extracción → taza) operan de manera **parcialmente desarticulada**, lo que genera vacíos de trazabilidad cruzada y variabilidad en la calidad final del producto servido.
+
+#### Problemas identificados
+
+**Desarticulación de procesos técnicos y sensoriales (falta de integración end-to-end):**  
+Los módulos de software de tueste, cata e inventario funcionan de forma relativamente autónoma. Aunque el sistema ya permite registrar perfiles de tueste (vinculados a lote mediante `lot` en el modelo de datos), sesiones de cata estructuradas y visualizar hexágonos sensoriales (US12), **no existe aún una correlación automatizada** entre las curvas de temperatura/tiempo del tueste y el perfil sensorial resultante en taza: las sesiones de cata no persisten referencia a `lotId` ni a perfil de tueste en el backend actual. La pantalla “Relación tueste–sabor” descrita en validación (§6.3.1) **no está integrada** en el frontend desplegado (la ruta `/roast-flavor-correlation` no figura en `app.routes.ts` y su acceso desde el dashboard permanece comentado). El usuario debe cruzar manualmente la información entre módulos (`/compare-profile`, `/cupping-sessions`), reproduciendo en parte la fragmentación del needfinding (Cap. II). El componente IoT **TrackSilo** permanece **proyectado** en esta iteración, sin integración operativa en el código del backend.
+
+**Limitaciones de usabilidad en la experiencia móvil diseñada y en la interfaz web operativa:**  
+Dado que no hay aplicación móvil nativa desplegada, las limitaciones de UX móvil se evidencian en el **diseño prototipado** (Cap. 4.4–4.5) y en el uso de la aplicación web en contextos de barra y laboratorio. Los flujos de captura de variables como el ratio de extracción y el ajuste de molienda aún contemplan formularios densos que pueden interrumpir el flujo operativo. Las entrevistas de validación (Cap. VI) señalaron mejoras concretas: mayor visibilidad de íconos de edición, diferenciación entre acciones de editar y clonar, marcado de campos obligatorios y navegación más ágil en sesiones de cata. Adicionalmente, **no se ha implementado un modo oscuro nativo** con conmutación de tema; la guía de estilos define tokens para fondos oscuros, pero la plataforma web opera principalmente en tema claro, lo que limita la legibilidad en laboratorios de tueste o barras con iluminación variable.
+
+**Oportunidades de optimización en el rendimiento del backend REST:**  
+El backend desplegado en infraestructura cloud atiende múltiples módulos críticos (inventario, historiales de cata, cost management). Durante las revisiones técnicas internas y las sesiones de validación con datos reales, se identificaron **demoras perceptibles** en consultas y actualizaciones de estado ante volúmenes crecientes de registros o conexiones lentas. Los módulos de Cost Management, inventario e historiales de cata requieren un pipeline de solicitudes GET/PUT más eficiente para reducir la incertidumbre operativa del usuario. Estas observaciones constituyen hipótesis técnicas a verificar mediante experimentos con métricas de latencia (Cap. 8.2), dado que el informe aún no registra pruebas de carga formales.
+
+**Cobertura parcial de internacionalización (i18n):**  
+Si bien el frontend web incorpora soporte bilingüe español–inglés mediante `ngx-translate` —aspecto valorado positivamente en entrevistas de validación—, la traducción **no es exhaustiva** en todos los módulos, mensajes de error y flujos secundarios. Tampoco se contemplan idiomas adicionales de alto impacto en la industria global del café (como chino), lo que restringe parcialmente la adopción del software en competencias internacionales, consultorías o mercados fuera del entorno hispanohablante.
+
+#### Áreas de incertidumbre que motivan preguntas
+
+En línea con el enfoque XDPD, el As-Is Summary no define soluciones cerradas, sino **incógnitas** que darán origen a las preguntas de las secciones 8.1.2–8.1.3:
+
+1. **Rendimiento REST:** ¿En qué medida la latencia percibida en inventario, catas y cost management afecta la adopción y la confianza operativa del usuario bajo datos reales?
+2. **UX en barra y laboratorio:** ¿Qué fricciones de usabilidad (iconografía, onboarding, modo oscuro, formularios densos) impactan más el tiempo y la precisión del registro en contextos operativos?
+3. **Correlación tueste–cata:** ¿Cómo puede automatizarse el enlace lote–perfil de tueste–sesión de cata y qué formato de visualización unificada facilita la interpretación técnica en laboratorio?
+4. **Internacionalización:** ¿Hasta qué punto la cobertura incompleta de i18n limita la adopción fuera del entorno hispanohablante y qué idiomas adicionales generan mayor valor?
+
 ### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.
+
+Esta sección recopila la materia prima conceptual del proceso de experimentación, clasificando las premisas del equipo en suposiciones operativas (**Assumptions**), vacíos de información crítica (**Knowledge Gaps**), propuestas de solución (**Ideas**) y afirmaciones de valor respaldadas por el dominio o por hipótesis previas (**Claims**). Los cuatro temas siguientes derivan de las brechas identificadas en el [As-Is Summary (8.1.1)](#811-as-is-summary) y se mantienen alineados con el needfinding (Cap. II), las hipótesis Lean UX (§1.2.2.3) y la evidencia de implementación documentada en los capítulos IV–VI.
+
+> **Nota metodológica (XDPD):** Las **Ideas** orientan el dominio del problema y posibles intervenciones mínimas, pero **no constituyen el experimento en sí**. El equipo se centrará en **probar las Assumptions y Claims** subyacentes a cada idea (p. ej. “¿los baristas replican mejor el tueste si el enlace lote–cata es automático?”), en lugar de implementar la idea completa sin validación previa.
+
+---
+
+#### 1. Tema: Correlación tueste–cata y replicabilidad del perfil sensorial
+
+**Assumptions (Suposiciones):**  
+Se asume que los baristas profesionales experimentan dificultad y frustración al intentar reproducir manualmente perfiles o curvas de tueste exitosas cuando la información técnica (parámetros de tueste, lotes, catas) permanece fragmentada o enlazada de forma manual entre módulos. Esta suposición se sustenta en el needfinding con baristas (§2.3) y en el Lean UX Problem Statement.
+
+**Knowledge Gaps (Vacíos de conocimiento):**  
+El equipo necesita determinar qué formatos de visualización facilitan mejor la correlación tueste–sabor en laboratorio: curvas temporales superpuestas, comparación lado a lado con el hexágono sensorial u otras representaciones. Tampoco se conoce con precisión en qué momentos del flujo el barista abandona o retrasa el enlace entre un perfil de tueste y su cata asociada. La funcionalidad “Relación tueste–sabor” está documentada en §6.3.1, pero **aún no está accesible** en la plataforma desplegada.
+
+**Ideas (Propuestas):**  
+Evolucionar los módulos existentes de perfiles de tueste y cata digital (US03, US05, US12) hacia una **vista unificada de correlación**: registrar la ruta `/roast-flavor-correlation` en el frontend, habilitar su acceso desde el dashboard, implementar enlace automático lote–tueste–cata en el modelo de datos y combinar la superposición de curvas (`roast-profile-comparison`) con el gráfico radial (`cupping-sensory-radar`), reduciendo el cruce manual entre pantallas.
+
+**Claims (Afirmaciones):**  
+Se sostiene —en línea con la Hipótesis Lean UX 2 (§1.2.2.3)— que alinear digitalmente los parámetros técnicos del tostado con el perfil final en taza puede **disminuir las inconsistencias en la extracción en un 35%** y las pérdidas de calidad en un 25%, facilitando la estandarización sin depender exclusivamente de registro memorístico o empírico. Esta cifra constituye una afirmación **por validar** en los experimentos del Cap. 8.2–8.3.
+
+---
+
+#### 2. Tema: Gestión de costos, trazabilidad e inventario integrado
+
+**Assumptions (Suposiciones):**  
+Se asume que los administradores y dueños de cafeterías de especialidad perciben el cálculo manual de merma, costos de mano de obra y rentabilidad por lote como un riesgo para la utilidad neta, y que valoran una herramienta que centralice esos indicadores junto al inventario. Las entrevistas de validación (Cap. VI) respaldan parcialmente esta suposición: la gestión de costos fue señalada como una de las funciones de mayor valor percibido.
+
+**Knowledge Gaps (Vacíos de conocimiento):**  
+Falta evidencia sobre la disposición al cambio y el nivel de madurez digital de cafeterías urbanas y rurales para migrar registros históricos desde Excel o cuadernos hacia el portafolio digital de Café Lab. También se desconoce qué indicadores económicos por lote (costo por kilo, costo por taza, margen) son los más consultados en la operación diaria y cuáles requieren mayor integración con el inventario verde y tostado.
+
+**Ideas (Propuestas):**  
+Profundizar la **integración entre el dashboard matricial existente** (§4.3.1), el control de inventario integrado (US10) y la gestión de costos de producción (US13) ya implementados, de modo que un mismo lote muestre de forma consolidada: trazabilidad (origen, proveedor, procesamiento), stock disponible e indicadores económicos sin navegación fragmentada entre módulos.
+
+**Claims (Afirmaciones):**  
+Se afirma que un sistema de trazabilidad consolidada y reportes económicos por lote **refuerza la rentabilidad operativa** y permite sustentar ante clientes exigentes una narrativa de origen verificable. Esta afirmación se plantea como claim de dominio a contrastar con métricas de adopción y satisfacción en experimentos posteriores.
+
+---
+
+#### 3. Tema: Internacionalización, usabilidad y experiencia móvil/prototipada
+
+**Assumptions (Suposiciones):**  
+Se asume que un **modo oscuro** con conmutación de tema, una iconografía técnica más clara y flujos de captura simplificados mejoran la ergonomía del software en laboratorios de tueste y barras con iluminación variable. Asimismo, se asume que completar y ampliar el soporte i18n incrementa la adopción en contextos internacionales (competencias, catadores, consultorías).
+
+**Knowledge Gaps (Vacíos de conocimiento):**  
+Aunque el frontend web ya ofrece español e inglés mediante `ngx-translate` (valorado en validación), se desconoce el **grado de cobertura incompleta** por módulo y el impacto real de incorporar idiomas adicionales (p. ej. chino) en la adopción. Dado que **no existe aplicación móvil nativa desplegada** (§5.2.5), falta validar con usuarios si los prototipos móviles de Figma (Cap. 4.4–4.5) y la experiencia web responsive resuelven las fricciones de uso con una sola mano en barra, y qué mejoras de la validación (íconos de edición, campos obligatorios, distinguir editar vs. clonar) tienen mayor impacto.
+
+**Ideas (Propuestas):**  
+Implementar modo oscuro nativo en la aplicación web; sustituir bloques extensos de texto instructivo por iconografía contextual alineada a Material Design e iOS HIG; incorporar onboarding guiado en flujos críticos (cata, calibración, costos); completar traducciones pendientes en todos los módulos y evaluar un idioma adicional según segmento. Para alertas operativas, priorizar **notificaciones en plataforma web** antes que push móvil nativo, dado el alcance actual del proyecto.
+
+**Claims (Afirmaciones):**  
+Se sostiene —en coherencia con la Hipótesis Lean UX 1 (§1.2.2.3)— que un diseño minimalista orientado a usabilidad en contextos de barra y laboratorio puede **incrementar la satisfacción del usuario en un 30%** y mejorar la consistencia del café en un 40%, siempre que se validen con pruebas de usabilidad y métricas de tarea completada (Cap. 8.2). No se asume arquitectura de microservicios; el foco permanece en la experiencia sobre el stack actual (Angular + Spring Boot monolítico).
+
+---
+
+#### 4. Tema: Rendimiento y optimización del backend REST
+
+**Assumptions (Suposiciones):**  
+Se asume que la latencia perceptible en consultas de inventario, historiales de cata y cost management **afecta la confianza operativa** del usuario y la fluidez de sesiones de validación con datos reales, especialmente bajo conexiones lentas o volúmenes crecientes de registros.
+
+**Knowledge Gaps (Vacíos de conocimiento):**  
+El informe aún no registra pruebas de carga formales ni líneas base de tiempo de respuesta (p. ej. percentiles p95) para los endpoints críticos documentados en Swagger (§5.2.7). Se desconoce qué operaciones GET/PUT del backend Spring Boot desplegado en Railway concentran la mayor demora y si la optimización debe priorizarse en consultas, persistencia o serialización de respuestas.
+
+**Ideas (Propuestas):**  
+Definir un plan de medición de latencia sobre endpoints de inventario, catas y cost management; optimizar controladores y consultas en el backend monolítico; evaluar índices o estrategias de paginación en historiales extensos; establecer umbrales de respuesta aceptables alineados a ISO/IEC 25010 (eficiencia de desempeño) para los experimentos del Cap. 8.2.
+
+**Claims (Afirmaciones):**  
+Se afirma que reducir de forma medible los tiempos de respuesta en módulos críticos **disminuye la incertidumbre operativa** y facilita el uso del sistema en tiempo real durante calibraciones y revisiones de calidad. Esta afirmación se formulará como hipótesis cuantificable en §8.2.1 una vez definidas las métricas y condiciones de prueba.
+
 ### 8.1.3. Experiment-Ready Questions.
+
+A partir de la materia prima definida en [8.1.2](#812-raw-material-assumptions-knowledge-gaps-ideas-claims) y de la revisión del código desplegado (`cafelab-frontend`, `cafelab-backend`), se formularon preguntas listas para experimentación. Cada pregunta se clasifica según el marco XDPD:
+
+- **Belief-led (impulsada por creencias):** busca probar una suposición o claim previo del equipo o del dominio.
+- **Exploratoria:** busca recopilar conocimiento donde aún no hay creencias suficientemente fundamentadas.
+
+Asimismo, la técnica de las **Cinco Ws y una H** (Who, What, Where, When, Why, How) se aplicó para descubrir premisas ocultas y formular preguntas: **Who** — baristas profesionales y dueños/administradores de cafeterías; **What** — trazabilidad tueste–cata, costos, UX, i18n, rendimiento REST; **Where** — laboratorio de tueste, barra comercial y dashboard web; **When** — durante registro de catas, consulta de rentabilidad por lote y sesiones de validación; **Why** — reducir fragmentación de datos y mejorar decisiones técnicas y económicas; **How** — pruebas de usabilidad, entrevistas, medición de latencia (p95) y prototipos de interfaz.
+
+Cada pregunta se evalúa en cinco dimensiones (escala 1–10): **Confidence** (grado de certeza del equipo), **Risk** (riesgo de implementación o validación), **Impact** (impacto esperado en valor de negocio o calidad del producto), **Interest** (interés percibido del segmento objetivo) y **Total Score** (suma de las cuatro dimensiones).
+
+<table border="1">
+<tr>
+<th>Tipo</th>
+<th>Question</th>
+<th>Confidence</th>
+<th>Risk</th>
+<th>Impact</th>
+<th>Interest</th>
+<th>Total Score</th>
+</tr>
+<tr>
+<td>Belief-led</td>
+<td>¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste (<code>/api/v1/roast-profile</code>) y sesión de cata (<code>/api/v1/cupping-sessions</code>) sin intervención manual del usuario?</td>
+<td>8 — El needfinding y la Hipótesis Lean UX 2 (§1.2.2.3) respaldan la desconexión actual entre módulos; hoy el enlace es manual pese a existir <code>cupping-sensory-radar</code> y comparación de perfiles.</td>
+<td>4 — Riesgo medio: requiere integración transversal entre bounded contexts de producción y evaluación sensorial.</td>
+<td>9 — Afecta directamente la propuesta de valor central (trazabilidad tueste–taza).</td>
+<td>8 — Alto interés de baristas profesionales según entrevistas (§2.3, Cap. VI).</td>
+<td><strong>29</strong></td>
+</tr>
+<tr>
+<td>Belief-led</td>
+<td>¿Facilitará la toma de decisiones en laboratorio una vista unificada que superponga curvas de tueste (<code>roast-profile-comparison</code>) y el hexágono sensorial (<code>cupping-sensory-radar</code>) del mismo lote?</td>
+<td>7 — Existen <code>roast-profile-comparison</code> y <code>cupping-sensory-radar</code> por separado, pero la pantalla “Relación tueste–sabor” (§6.3.1) no está ruteada ni accesible en producción.</td>
+<td>3 — Riesgo bajo–medio: evolución de UI sobre módulos ya implementados (US03, US05, US12).</td>
+<td>8 — Mejora la interpretación técnica y reduce dependencia de registro empírico.</td>
+<td>8 — Los baristas valoraron las gráficas de tueste y las sesiones de cata en validación.</td>
+<td><strong>26</strong></td>
+</tr>
+<tr>
+<td>Belief-led</td>
+<td>¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario (<code>/api/v1/inventory-entries</code>) y costos de producción (<code>/api/v1/production-cost-records</code>)?</td>
+<td>8 — US10 y US13 están implementados; la gestión de costos fue la función de mayor valor en entrevistas a dueños (Cap. VI).</td>
+<td>3 — Riesgo bajo–medio: profundiza integración sobre APIs y dashboard matricial existentes (§4.3.1).</td>
+<td>8 — Impacto alto en administradores orientados a rentabilidad y trazabilidad económica.</td>
+<td>7 — Interés alto en dueños; interés moderado en baristas operativos.</td>
+<td><strong>26</strong></td>
+</tr>
+<tr>
+<td>Belief-led</td>
+<td>¿Mejorará la ergonomía en barra y laboratorio añadir un modo oscuro conmutable en la aplicación web Angular?</td>
+<td>7 — Patrón UX estándar; la guía de estilos define tokens oscuros, pero el frontend opera solo en tema claro.</td>
+<td>2 — Bajo riesgo técnico (ajuste de tema CSS/Material).</td>
+<td>6 — Mejora usabilidad en entornos de baja luminosidad, sin resolver brechas funcionales core.</td>
+<td>6 — Interés moderado; relevante en tostadores y laboratorios cerrados.</td>
+<td><strong>21</strong></td>
+</tr>
+<tr>
+<td>Belief-led / Exploratoria</td>
+<td>¿Ampliará la adopción internacional completar las traducciones pendientes en <code>public/i18n</code> (es/en) y evaluar un idioma adicional como chino?</td>
+<td>6 — Existe soporte bilingüe con <code>ngx-translate</code> (~1 400 claves), pero la cobertura no es exhaustiva en todos los flujos.</td>
+<td>3 — Riesgo medio por mantenimiento continuo de traducciones.</td>
+<td>7 — Potencial de expansión a catadores y mercados internacionales.</td>
+<td>6 — Interés moderado; el inglés ya fue valorado en validación con baristas.</td>
+<td><strong>22</strong></td>
+</tr>
+<tr>
+<td>Belief-led</td>
+<td>¿Reducirá errores y tiempo de registro simplificar la iconografía, el onboarding guiado y el marcado de campos obligatorios en flujos de cata y calibración?</td>
+<td>8 — Hallazgos explícitos en entrevistas de validación: íconos de edición poco visibles, confusión editar/clonar, campos obligatorios no marcados (Cap. VI).</td>
+<td>2 — Bajo riesgo: mejoras incrementales de UX sobre flujos existentes.</td>
+<td>7 — Mejora eficiencia operativa en barra sin alterar la lógica de negocio.</td>
+<td>7 — Alto interés operativo de baristas que capturan datos bajo presión de tiempo.</td>
+<td><strong>24</strong></td>
+</tr>
+<tr>
+<td>Exploratoria</td>
+<td>¿Mejorará la confianza operativa optimizar los tiempos de respuesta de los endpoints críticos del backend Spring Boot (<code>GET/POST /api/v1/inventory-entries</code>, <code>GET /api/v1/cupping-sessions</code>, <code>GET/PUT /api/v1/production-cost-records</code>)?</td>
+<td>6 — Se reportaron demoras perceptibles en validación, pero aún no hay línea base formal (p95) ni pruebas de carga.</td>
+<td>4 — Riesgo medio: cambios en persistencia, consultas o paginación del monolito desplegado en Railway.</td>
+<td>7 — Afecta la fluidez de todos los módulos críticos bajo datos reales.</td>
+<td>5 — Menos visible para el usuario final, aunque crítico para adopción sostenida.</td>
+<td><strong>22</strong></td>
+</tr>
+</table>
+
+Las preguntas con mayor puntuación total (correlación tueste–cata e integración inventario–costos) se priorizarán en el [Question Backlog (8.1.4)](#814-question-backlog) y en las [Experiment Cards (8.1.5)](#815-experiment-cards).
+
 ### 8.1.4. Question Backlog.
+
+El backlog prioriza las **preguntas de investigación** de [8.1.3](#813-experiment-ready-questions) —no una lista de características ni soluciones— mediante la escala Fibonacci (**1, 2, 3, 5, 8**), donde **1** representa la máxima prioridad de experimentación y **8** la menor.
+
+**Estructura del backlog:** Se adopta un backlog **deep** (profundo): un conjunto acotado de **7 preguntas** altamente priorizadas, derivadas del material bruto del As-Is y del Raw Material, listas para convertirse en Experiment Cards. Un backlog **broad** (amplio) quedaría reservado para iteraciones futuras con preguntas secundarias no incluidas en este ciclo.
+
+**Criterios de priorización:**
+- Total Score de [8.1.3](#813-experiment-ready-questions) (Confidence + Risk + Impact + Interest).
+- Alineamiento con las áreas de incertidumbre del [As-Is Summary (8.1.1)](#811-as-is-summary).
+- Viabilidad de validación en el ciclo actual del proyecto.
+- **Regla de desempate:** ante igual Total Score, se prioriza la pregunta con **mayor Riesgo** (mayor valor en la columna Risk de 8.1.3), por su potencial impacto en la decisión de experimentar.
+
+<table border="1">
+<tr>
+<th>Prioridad (1, 2, 3, 5, 8)</th>
+<th>Pregunta</th>
+<th>Why (motivación)</th>
+<th>Total Score</th>
+<th>Risk (desempate)</th>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata sin intervención manual del usuario?</td>
+<td>La desconexión lote–tueste–cata es la brecha central de trazabilidad y reproduce la fragmentación del needfinding; impacta directamente la propuesta de valor del producto.</td>
+<td>29</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario y costos de producción?</td>
+<td>Los dueños valoran la gestión de costos, pero hoy deben navegar módulos separados; consolidar reduce decisiones con datos incompletos.</td>
+<td>26</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>¿Facilitará la toma de decisiones en laboratorio una vista unificada que superponga curvas de tueste y el hexágono sensorial del mismo lote?</td>
+<td>Los componentes existen de forma aislada y la pantalla “Relación tueste–sabor” no está desplegada; los baristas necesitan contrastar datos técnicos y sensoriales sin cambiar de contexto.</td>
+<td>26</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>¿Reducirá errores y tiempo de registro simplificar la iconografía, el onboarding guiado y el marcado de campos obligatorios en flujos de cata y calibración?</td>
+<td>Las entrevistas de validación (Cap. VI) documentaron fricciones concretas que interrumpen el flujo operativo en barra.</td>
+<td>24</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>¿Ampliará la adopción internacional completar las traducciones pendientes en <code>public/i18n</code> (es/en) y evaluar un idioma adicional como chino?</td>
+<td>La cobertura i18n incompleta puede limitar la adopción en competencias y mercados internacionales del café de especialidad.</td>
+<td>22</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>¿Mejorará la confianza operativa optimizar los tiempos de respuesta de los endpoints críticos del backend Spring Boot?</td>
+<td>Se percibieron demoras sin línea base formal; optimizar requiere primero medir para tomar decisiones informadas (pregunta exploratoria).</td>
+<td>22</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>¿Mejorará la ergonomía en barra y laboratorio añadir un modo oscuro conmutable en la aplicación web Angular?</td>
+<td>Entornos de baja luminosidad en laboratorios y barras pueden afectar legibilidad y fatiga visual durante jornadas prolongadas.</td>
+<td>21</td>
+<td>2</td>
+</tr>
+</table>
+
+*Nota de desempate:* Entre i18n (22, Risk 3) y optimización REST (22, Risk 4), la pregunta de rendimiento REST queda en prioridad 5 por mayor riesgo, pero ambas permanecen en el backlog deep para este ciclo según capacidad del equipo.
+
 ### 8.1.5. Experiment Cards.
+
+A continuación se documentan las tarjetas de experimento para cada pregunta del backlog, siguiendo la estructura del marco **XDPD (Experiment-Driven Product Development)**.
+
+**Lado frontal de la tarjeta** (capturado en esta sección):
+
+| Elemento | Descripción |
+|---|---|
+| **Question** | Pregunta a investigar |
+| **Why** | Motivación y razón del experimento |
+| **What** | *Simplest Useful Thing* — intervención mínima y útil a probar |
+| **Hypothesis** | Resultado esperado si la creencia es correcta (cuando aplica) |
+
+**Lado posterior de la tarjeta** (detallado en [§8.2 Experiment Design](#82-experiment-design)):
+
+| Elemento | Sección |
+|---|---|
+| **Measures** (Medidas) | [8.2.3. Measures](#823-measures) |
+| **Conditions** (Condiciones) | [8.2.4. Conditions](#824-conditions) |
+| **Scale** (Escala) | [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions) |
+
+---
+
+**Tarjeta 1 — Prioridad 1**
+
+<table border="1">
+<tr>
+<th>Question</th>
+<td>¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste (<code>/api/v1/roast-profile</code>) y sesión de cata (<code>/api/v1/cupping-sessions</code>) sin intervención manual del usuario?</td>
+</tr>
+<tr>
+<th>Why</th>
+<td>Los baristas y dueños dependen hoy de enlazar manualmente lotes, perfiles de tueste y catas entre módulos separados: el perfil de tueste referencia al lote, pero la sesión de cata no persiste <code>lotId</code> ni perfil de tueste en el modelo actual. Esto dificulta replicar perfiles exitosos y traza la cadena tueste → taza de forma incompleta, pese a contar con APIs y componentes visuales independientes (<code>/compare-profile</code>, <code>cupping-sensory-radar</code>).</td>
+</tr>
+<tr>
+<th>What</th>
+<td>Implementar en backend y frontend un vínculo automático lote–perfil de tueste–sesión de cata al crear o consultar registros, de modo que al seleccionar un lote se precarguen sus perfiles de tueste y catas asociadas. Validar el flujo con baristas en sesiones de cata reales usando el entorno desplegado (Vercel + Railway).</td>
+</tr>
+<tr>
+<th>Hypothesis</th>
+<td>Se espera que la correlación automatizada reduzca las inconsistencias en la extracción en un <strong>35%</strong> y las pérdidas de calidad en un <strong>25%</strong> (Hipótesis Lean UX 2, §1.2.2.3), medido mediante tareas de replicación de perfil y encuestas post-sesión.</td>
+</tr>
+</table>
+
+---
+
+**Tarjeta 2 — Prioridad 2**
+
+<table border="1">
+<tr>
+<th>Question</th>
+<td>¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario (<code>/api/v1/inventory-entries</code>) y costos de producción (<code>/api/v1/production-cost-records</code>)?</td>
+</tr>
+<tr>
+<th>Why</th>
+<td>Los administradores valoran la gestión de costos como función de mayor impacto (Cap. VI), pero deben navegar entre el dashboard matricial, el módulo de inventario y el asistente de costos de cuatro pasos para obtener una visión económica completa de un lote. La dispersión incrementa el riesgo de decisiones basadas en datos incompletos.</td>
+</tr>
+<tr>
+<th>What</th>
+<td>Extender el dashboard existente (<code>owner-dashboard</code>, <code>complete-dashboard</code>) con una vista por lote que muestre stock disponible, movimientos de inventario e indicadores de <code>ProductionCostRecordsController</code> (costo por kilo, margen, precio sugerido). Probar con dueños de cafetería usando escenarios de lote real.</td>
+</tr>
+<tr>
+<th>Hypothesis</th>
+<td>Se espera que el <strong>80%</strong> de los administradores entrevistados califiquen la vista consolidada con ≥ 4/5 en utilidad para la toma de decisiones económicas, y que el tiempo para consultar rentabilidad por lote se reduzca al menos un <strong>40%</strong> frente al flujo actual fragmentado.</td>
+</tr>
+</table>
+
+---
+
+**Tarjeta 3 — Prioridad 2**
+
+<table border="1">
+<tr>
+<th>Question</th>
+<td>¿Facilitará la toma de decisiones en laboratorio una vista unificada que superponga curvas de tueste (<code>roast-profile-comparison</code>) y el hexágono sensorial (<code>cupping-sensory-radar</code>) del mismo lote?</td>
+</tr>
+<tr>
+<th>Why</th>
+<td>Existen componentes de comparación de curvas (<code>/compare-profile</code>) y visualización radar en catas, pero operan de forma aislada. La pantalla “Relación tueste–sabor” prevista en §6.3.1 no está integrada: su enlace en el dashboard está comentado y no existe ruta activa en <code>app.routes.ts</code>. Los baristas necesitan contrastar parámetros técnicos del tostado con el perfil sensorial en taza sin alternar entre pantallas.</td>
+</tr>
+<tr>
+<th>What</th>
+<td>Implementar y registrar la ruta <code>/roast-flavor-correlation</code>, habilitar su acceso desde el dashboard y desarrollar la pantalla que combine <code>roast-profile-comparison</code> con <code>cupping-sensory-radar</code> filtrado por el mismo lote. Evaluar con baristas qué formato (superpuesto, dividido o sincronizado) resulta más ágil en laboratorio.</td>
+</tr>
+<tr>
+<th>Hypothesis</th>
+<td>Se espera que el <strong>70%</strong> de los baristas completen la tarea de interpretar la relación tueste–sabor en menos de <strong>3 minutos</strong> con la vista unificada, frente a un tiempo mayor con el flujo actual de módulos separados.</td>
+</tr>
+</table>
+
+---
+
+**Tarjeta 4 — Prioridad 3**
+
+<table border="1">
+<tr>
+<th>Question</th>
+<td>¿Reducirá errores y tiempo de registro simplificar la iconografía, el onboarding guiado y el marcado de campos obligatorios en flujos de cata y calibración?</td>
+</tr>
+<tr>
+<th>Why</th>
+<td>Las entrevistas de validación (Cap. VI) señalaron fricciones concretas: íconos de edición poco visibles, confusión entre editar y clonar, campos obligatorios no marcados y navegación lenta en sesiones de cata. Estas barreras interrumpen el flujo operativo en barra, donde la captura debe ser rápida.</td>
+</tr>
+<tr>
+<th>What</th>
+<td>Aplicar mejoras incrementales en los flujos de <code>cupping-session</code> y calibración de molienda: iconografía estandarizada (Material Design), indicadores visuales de campos requeridos, diferenciación clara de acciones editar/clonar y un onboarding contextual en el primer uso de cada flujo crítico.</td>
+</tr>
+<tr>
+<th>Hypothesis</th>
+<td>Se espera que las mejoras de UX incrementen la satisfacción del usuario en un <strong>30%</strong> y reduzcan los errores de registro en flujos de cata en al menos un <strong>25%</strong> (alineado a Hipótesis Lean UX 1, §1.2.2.3), medido con pruebas de usabilidad y escala SUS o similar.</td>
+</tr>
+</table>
+
+---
+
+**Tarjeta 5 — Prioridad 3**
+
+<table border="1">
+<tr>
+<th>Question</th>
+<td>¿Ampliará la adopción internacional completar las traducciones pendientes en <code>public/i18n</code> (es/en) y evaluar un idioma adicional como chino?</td>
+</tr>
+<tr>
+<th>Why</th>
+<td>Café Lab ya ofrece español e inglés mediante <code>ngx-translate</code>, pero la cobertura no es exhaustiva en todos los módulos, mensajes de error y flujos secundarios. Para competencias internacionales, consultorías y catadores extranjeros, las traducciones incompletas constituyen una barrera de adopción.</td>
+</tr>
+<tr>
+<th>What</th>
+<td>Auditar y completar las claves faltantes en <code>es.json</code> y <code>en.json</code>; validar consistencia terminológica del dominio (glosario §2.4); ejecutar una prueba piloto con al menos un idioma adicional (chino) en los módulos de cata y tueste, priorizando pantallas de mayor uso.</td>
+</tr>
+<tr>
+<th>Hypothesis</th>
+<td>Se espera que, tras completar las traducciones, el <strong>90%</strong> de las pantallas críticas (dashboard, tueste, cata, costos) queden sin cadenas sin traducir, y que usuarios de habla no hispana reporten una mejora ≥ 1 punto (escala 1–5) en comprensión de la interfaz.</td>
+</tr>
+</table>
+
+---
+
+**Tarjeta 6 — Prioridad 5**
+
+<table border="1">
+<tr>
+<th>Question</th>
+<td>¿Mejorará la confianza operativa optimizar los tiempos de respuesta de los endpoints críticos del backend Spring Boot (<code>inventory-entries</code>, <code>cupping-sessions</code>, <code>production-cost-records</code>)?</td>
+</tr>
+<tr>
+<th>Why</th>
+<td>Durante validaciones con datos reales se percibieron demoras en consultas de inventario, historiales de cata y cost management. Sin línea base de latencia (p95) ni pruebas de carga, el equipo no puede cuantificar el impacto ni priorizar optimizaciones en el monolito desplegado en Railway.</td>
+</tr>
+<tr>
+<th>What</th>
+<td>Establecer métricas de referencia (p50, p95) sobre <code>GET /api/v1/inventory-entries</code>, <code>GET /api/v1/cupping-sessions</code> y operaciones de <code>ProductionCostRecordsController</code>; aplicar optimizaciones (paginación, índices, ajuste de consultas) y re-medir bajo condiciones de red lenta simulada.</td>
+</tr>
+<tr>
+<th>Hypothesis</th>
+<td>Se espera reducir el tiempo de respuesta p95 de los endpoints críticos en al menos un <strong>30%</strong> respecto a la línea base, manteniendo respuestas por debajo de <strong>2 segundos</strong> en condiciones operativas normales (ISO/IEC 25010 — eficiencia de desempeño).</td>
+</tr>
+</table>
+
+---
+
+**Tarjeta 7 — Prioridad 5**
+
+<table border="1">
+<tr>
+<th>Question</th>
+<td>¿Mejorará la ergonomía en barra y laboratorio añadir un modo oscuro conmutable en la aplicación web Angular?</td>
+</tr>
+<tr>
+<th>Why</th>
+<td>La plataforma opera en tema claro pese a que la guía de estilos contempla tokens para fondos oscuros. En tostadores y barras con iluminación variable, un tema oscuro puede reducir fatiga visual y mejorar la legibilidad de gráficas de tueste y hexágonos sensoriales durante jornadas prolongadas.</td>
+</tr>
+<tr>
+<th>What</th>
+<td>Implementar un conmutador de tema (claro/oscuro) en el layout principal (<code>layout.ts</code>), aplicando la paleta definida en §4.1.1 a componentes Angular Material y vistas de dashboard, tueste y cata. Validar contraste y legibilidad con al menos 3 usuarios en condiciones de baja luminosidad.</td>
+</tr>
+<tr>
+<th>Hypothesis</th>
+<td>Se espera que al menos el <strong>60%</strong> de los participantes en prueba de usabilidad prefieran o valoren positivamente el modo oscuro en entornos de laboratorio, y que la calificación de legibilidad de gráficas mejore en ≥ 1 punto (escala 1–5) respecto al tema claro.</td>
+</tr>
+</table>
 
 ## 8.2. Experiment Design.
 ### 8.2.1. Hypotheses.
