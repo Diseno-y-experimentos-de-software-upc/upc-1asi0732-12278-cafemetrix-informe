@@ -53,38 +53,40 @@
 <!--Cualquier modificación del documento es una nueva versión-->
 # Registro de versiones del informe
 
-| Versión | Fecha      | Autor                             | Descripción de Modificación                                                                                           |
-| ------- | ---------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| 1.0     | 25/04/2026 | Fernandez Camayo, Carlos Fredy    | Creó el documento, estructura del informe y carátula                                                                  |
-| 1.1     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo   | Puso nuevo formato para project report collaboration insights y student outcome                                       |
-| 1.2     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió su perfil de integrante                                                                                        |
-| 1.3     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió sprint backlogs, deployment evidence, US, TS y Product Backlog                                                 |
-| 1.4     | 27/04/2026 | Donayre Alvarez, Adrian Ricardo   | Actualizó los technical stories agrupandolos por API                                                                  |
-| 1.5     | 27/04/2026 | Fernandez Camayo, Carlos Fredy    | Acualizó secciones del punto 5.2                                                                                      |
-| 1.6     | 27/04/2026 | Fernandez Camayo, Carlos Fredy    | Añadio Terminos y condiciones.                                                                                        |
-| 1.7     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo   | Filtró US, TS y Product Backlog para alinearlos con las funciones implementadas                                       |
-| 1.8     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió su Student Outcome y Project Report Collaboration Insights                                                     |
-| 1.9     | 28/04/2026 | Loli Ramirez, Camila Cristina     | Añadió iOS Mobile Style Guidelines                                                                                    |
-| 1.10    | 28/04/2026 | Loli Ramirez, Camila Cristina     | Añadió su perfil al equipo y su student outcome.                                                                      |
-| 1.11    | 28/04/2026 | Fernandez Camayo, Carlos Fredy    | Acualizó link de landing page y nuevo despliegue                                                                      |
-| 1.12    | 28/04/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su student outcome.                                                                                            |
-| 1.13    | 28/04/2026 | Antayhua Castillo Oscar Josué     | Realizó el despliegue del frontend y backend, y configuró la conexión entre ambos.                                    |
-| 1.14    | 29/04/2026 | Donayre Alvarez, Adrian Ricardo   | Actualizó los Impact Mappings y la imagen del Collaboration Insights                                                  |
-| 1.15    | 29/04/2026 | Quispe Roldan, Michael Fred       | Añadió 4.4.4. Mobile Applications User Flow Diagrams                                                                  |
-| 1.16    | 29/04/2026 | Inga Orihuela, Christian Fabrizio | Añadió 4.4.2. Mobile Applications Wireflow Diagrams                                                                   |
-| 1.17    | 29/04/2026 | Inga Orihuela, Christian Fabrizio | Añadió 4.1.3.2. Android Mobile Style Guidelines                                                                       |
-| 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
-| 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió la evidencia y documentación del RESTful API además del collaboration insights                                 |
-| 1.20    | 06/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió los links de las nuevas secciones del capítulo VI y VII                                                        |
+| Versión | Fecha      | Autor                             | Descripción de Modificación                                                                                                                                                  |
+|---------|------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0     | 25/04/2026 | Fernandez Camayo, Carlos Fredy    | Creó el documento, estructura del informe y carátula                                                                                                                         |
+| 1.1     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo   | Puso nuevo formato para project report collaboration insights y student outcome                                                                                              |
+| 1.2     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió su perfil de integrante                                                                                                                                               |
+| 1.3     | 26/04/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió sprint backlogs, deployment evidence, US, TS y Product Backlog                                                                                                        |
+| 1.4     | 27/04/2026 | Donayre Alvarez, Adrian Ricardo   | Actualizó los technical stories agrupandolos por API                                                                                                                         |
+| 1.5     | 27/04/2026 | Fernandez Camayo, Carlos Fredy    | Acualizó secciones del punto 5.2                                                                                                                                             |
+| 1.6     | 27/04/2026 | Fernandez Camayo, Carlos Fredy    | Añadio Terminos y condiciones.                                                                                                                                               |
+| 1.7     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo   | Filtró US, TS y Product Backlog para alinearlos con las funciones implementadas                                                                                              |
+| 1.8     | 28/04/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió su Student Outcome y Project Report Collaboration Insights                                                                                                            |
+| 1.9     | 28/04/2026 | Loli Ramirez, Camila Cristina     | Añadió iOS Mobile Style Guidelines                                                                                                                                           |
+| 1.10    | 28/04/2026 | Loli Ramirez, Camila Cristina     | Añadió su perfil al equipo y su student outcome.                                                                                                                             |
+| 1.11    | 28/04/2026 | Fernandez Camayo, Carlos Fredy    | Acualizó link de landing page y nuevo despliegue                                                                                                                             |
+| 1.12    | 28/04/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su student outcome.                                                                                                                                                   |
+| 1.13    | 28/04/2026 | Antayhua Castillo Oscar Josué     | Realizó el despliegue del frontend y backend, y configuró la conexión entre ambos.                                                                                           |
+| 1.14    | 29/04/2026 | Donayre Alvarez, Adrian Ricardo   | Actualizó los Impact Mappings y la imagen del Collaboration Insights                                                                                                         |
+| 1.15    | 29/04/2026 | Quispe Roldan, Michael Fred       | Añadió 4.4.4. Mobile Applications User Flow Diagrams                                                                                                                         |
+| 1.16    | 29/04/2026 | Inga Orihuela, Christian Fabrizio | Añadió 4.4.2. Mobile Applications Wireflow Diagrams                                                                                                                          |
+| 1.17    | 29/04/2026 | Inga Orihuela, Christian Fabrizio | Añadió 4.1.3.2. Android Mobile Style Guidelines                                                                                                                              |
+| 1.18    | 29/04/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome                                                                                                            |
+| 1.19    | 04/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió la evidencia y documentación del RESTful API además del collaboration insights                                                                                        |
+| 1.20    | 06/05/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió los links de las nuevas secciones del capítulo VI y VII                                                                                                               |
 | 1.21    | 07/05/2026 | Quispe Roldan, Michael Fred       | Añadió 6.1.3. Core Behavior-Driven Development con Cucumber .feature files (US17, US03, US05) y 6.1.4. Core System Tests con pruebas MockMvc del módulo Librería de Defectos |
-| 1.22    | 08/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió la sección de tools and practices en 7.1 continuos integration                                                 |
-| 1.23    | 11/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 7.2.2. Stages Deployment Pipeline Components                                                                   |
-| 1.24    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió 6.1.2 Core Integration Tests y 7.1.2. Build & Test Suite Pipeline Components                                   |
-| 1.25    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió su Project Report Collaboration Insights y Student Outcome                                                     |
-| 1.26    | 11/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y student outcome                                                     |
-| 1.27    | 12/05/2026 | Antayhua Castillo, Oscar Josué    | Añadió 7.3.2. Production Deployment Pipeline Components.                                                              |
-| 1.28    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 6.1.1 Core Entities Unit Tests.                                                                               |
-| 1.29    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome.                                                    |
+| 1.22    | 08/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió la sección de tools and practices en 7.1 continuos integration                                                                                                        |
+| 1.23    | 11/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 7.2.2. Stages Deployment Pipeline Components                                                                                                                          |
+| 1.24    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió 6.1.2 Core Integration Tests y 7.1.2. Build & Test Suite Pipeline Components                                                                                          |
+| 1.25    | 11/05/2026 | Loli Ramirez, Camila Cristina     | Añadió su Project Report Collaboration Insights y Student Outcome                                                                                                            |
+| 1.26    | 11/05/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y student outcome                                                                                                            |
+| 1.27    | 12/05/2026 | Antayhua Castillo, Oscar Josué    | Añadió 7.3.2. Production Deployment Pipeline Components.                                                                                                                     |
+| 1.28    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 6.1.1 Core Entities Unit Tests.                                                                                                                                       |
+| 1.29    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome.                                                                                                           |
+| 1.30    | 11/06/2026 | Fernandez Camayo, Carlos Fredy    | Añadió las secciones 8.1.1, 8.1.2, 8.1.3, 8.1.4, 8.1.5                                                                                                                       |
+
 
 <div style="page-break-after: always;"></div>
 
