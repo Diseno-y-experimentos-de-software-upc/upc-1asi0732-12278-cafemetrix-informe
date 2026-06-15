@@ -5637,9 +5637,40 @@ A continuación se muestra la estructura de archivos `.feature` implementados, t
 
 ## 6.2. Static testing & Verification.
 ### 6.2.1. Static Code Analysis.
+Esta sección se centra en los métodos de prueba estática y verificación del código del proyecto **CafeLab**, orientados a asegurar que el software cumpla con los estándares de calidad y seguridad antes de su ejecución. El análisis de código estático consiste en revisar el código fuente sin necesidad de ejecutarlo, combinando herramientas automatizadas con revisiones manuales, lo que permite detectar errores, vulnerabilidades de seguridad y oportunidades de mejora en una fase temprana del ciclo de vida del desarrollo y reducir el costo de las correcciones posteriores.
+
+En CafeLab, este análisis se apoya en mecanismos ya integrados en el propio stack: el compilador de **TypeScript en modo `strict`** (con `noImplicitReturns`, `noImplicitOverride` y `strictTemplates` activos) en el frontend Angular, y el compilador de **Java 24** sobre **Spring Boot 3.5** en el backend. Estos verificadores actúan como una primera capa de análisis estático que rechaza tipos inconsistentes, retornos faltantes y referencias indebidas antes de compilar. Sobre esa base se definen las convenciones de codificación y las prácticas de calidad y seguridad descritas a continuación.
+
 #### 6.2.1.1. Coding standard & Code conventions.
+Las normas de codificación y convenciones son directrices que el equipo sigue para garantizar un código legible, mantenible y coherente entre el frontend (Angular) y el backend (Spring Boot). En CafeLab se aplican los siguientes principios:
+
+- **Clean Code:** se emplean nombres claros y descriptivos para variables, funciones y clases; las funciones se mantienen cortas y enfocadas en una sola responsabilidad, eliminando código muerto y comentarios innecesarios. Todo el código se redacta en inglés (ver [5.1.3](#513-source-code-style-guide--conventions)) para mantener consistencia internacional y facilitar el mantenimiento.
+- **Domain-Driven Design (DDD):** el backend está organizado en *bounded contexts* (`iam`, `defects`, `management`, entre otros), empleando el lenguaje ubicuo definido en [2.4](#24-ubiquitous-language). La lógica de negocio se gestiona mediante servicios de dominio y repositorios, con una separación clara entre las capas de dominio, aplicación, infraestructura e interfaces REST.
+- **Convenciones de frontend (Angular + TypeScript):** se respeta la guía oficial de estilo de Angular (arquitectura basada en componentes y servicios) y se aplica **Prettier** como formateador automático con una configuración compartida en el repositorio (`printWidth: 100`, `singleQuote: true`), garantizando un formato uniforme en todos los archivos `.ts` y `.html`.
+- **Convenciones de backend (Java + Spring Boot):** se siguen las convenciones estándar de Java (PascalCase para clases, camelCase para métodos y variables) y la estructura por capas propia de Spring Boot (controladores REST, servicios, repositorios y modelos de dominio).
+
 #### 6.2.1.2. Code Quality & Code Security.
+La calidad y la seguridad del código son esenciales para entregar software confiable:
+
+- **Calidad del código:** la calidad se sostiene en métricas como la cobertura de pruebas (ver suites en [6.1](#61-testing-suites--validation)) y la complejidad de los métodos, manteniendo funciones acotadas y de responsabilidad única. Para el seguimiento continuo se adopta **SonarLint** integrado en los IDE del equipo (IntelliJ IDEA para el backend y Visual Studio Code para el frontend), que analiza el código en tiempo real mientras se escribe y reporta *code smells* y deuda técnica de inmediato. Este análisis se complementa con el modo `strict` del compilador de TypeScript y con `strictTemplates` de Angular, que detectan inconsistencias de tipos y de plantillas en tiempo de compilación.
+- **Seguridad del código:** el backend incorpora **Spring Security** con autenticación basada en **JSON Web Tokens (JWT, librería `jjwt`)** y almacenamiento de contraseñas mediante **hashing BCrypt**, evitando guardar credenciales en texto plano. La validación de entradas se realiza con **`spring-boot-starter-validation`** (`@Valid` sobre los *resources* de los controladores), mitigando datos malformados. El acceso a datos mediante **Spring Data JPA** utiliza consultas parametrizadas, lo que previene inyecciones SQL. Las credenciales y cadenas de conexión se gestionan mediante variables de entorno (no se versionan secretos en el repositorio), y SonarLint apoya la detección temprana de vulnerabilidades comunes durante el desarrollo.
+
 ### 6.2.2. Reviews.
+Las revisiones de código son un proceso fundamental para garantizar la calidad y la conformidad con las normas establecidas en CafeLab. El proceso combina revisiones manuales y automáticas, alineadas con el flujo de trabajo **Gitflow** descrito en [5.1.2](#512-source-code-management).
+
+**Tipos de revisiones:**
+- **Revisión por pares:** cada cambio es revisado por al menos otro integrante del equipo, que verifica el cumplimiento de los estándares y la comprensibilidad del código antes de aprobarlo.
+- **Revisión automática:** **SonarLint** en el IDE y el compilador en modo `strict` detectan problemas de calidad y tipado durante el desarrollo, antes de abrir el Pull Request.
+
+**Proceso de revisión:**
+- **Creación de Pull Requests:** todo cambio se integra mediante un PR con descripción clara de las modificaciones y las pruebas asociadas, dirigido a la rama `develop` según Gitflow.
+- **Checklist de revisión:** el revisor verifica claridad del código, cobertura de pruebas, manejo de errores y adherencia a las convenciones de [6.2.1.1](#6211-coding-standard--code-conventions).
+- **Comentarios y feedback:** los revisores dejan comentarios constructivos y específicos en el PR; los problemas detectados deben resolverse antes de la aprobación.
+- **Aprobación o rechazo del PR:** el PR debe ser aprobado por al menos un revisor adicional antes de fusionarse a la rama principal.
+
+**Criterios de aceptación:** el código debe cumplir los estándares de calidad y seguridad, no introducir vulnerabilidades y mantener una cobertura de pruebas adecuada sobre la nueva funcionalidad.
+
+**Frecuencia:** las revisiones se realizan de forma continua con cada PR, intensificándose al cierre de cada sprint para evitar la acumulación de cambios y preservar la calidad de la rama principal.
 
 ## 6.3. Validation Interviews.
 En la sección de “Validation Interviews” del proyecto CafeLab nos enfocamos en mejorar la presentación y funcionalidad de la plataforma web dirigida a baristas y dueños/administradores de cafeterías. En este punto se llega a la comunicación directa con los segmentos objetivos con el fin de entrevistar y obtener respuestas sobre la experiencia y percepción dentro de la plataforma, ya sean criticas positivas o negativas, esto ayuda en la mejora continua para la integración adecuada de futuras integraciones o correcciones orientadas en mejorar la mejora continua de la plataforma. A continuación se muestran los user goals necesarios para la realización de las entrevistas:
@@ -5858,7 +5889,6 @@ Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo a
 </table>
 
 ### 6.3.3. Evaluaciones según heurísticas.
-
 ## 6.4. Auditoría de Experiencias de Usuario.
 ### 6.4.1. Auditoría realizada.
 #### 6.4.1.1. Información del grupo auditado.
@@ -6341,9 +6371,35 @@ En esta seccion se describen los componentes reales que intervienen en el despli
 
 ## 7.4. Continuous Monitoring.
 ### 7.4.1. Tools and Practices.
+El monitoreo continuo permite supervisar el estado, el rendimiento y la disponibilidad de **CafeLab** una vez desplegado, de modo que el equipo pueda detectar y resolver problemas antes de que afecten al usuario final. Considerando la infraestructura real del proyecto —frontend Angular en **Vercel**, backend Spring Boot y base de datos MySQL en **Railway**, y landing page en **Firebase Hosting**— se emplean las siguientes herramientas y prácticas:
+
+- **Auditorías de calidad web:** **Google Lighthouse** audita el rendimiento, la accesibilidad, las buenas prácticas y el SEO de la landing page y de la aplicación web, identificando problemas como tiempos de carga elevados o cambios de diseño. El equipo ejecuta estas auditorías mediante un script de Lighthouse sobre las URL desplegadas.
+- **Monitoreo de frontend:** **Vercel Analytics** recopila métricas reales de navegación (tiempos de carga, *Web Vitals* y tráfico) directamente desde el despliegue del frontend en Vercel, ofreciendo una visión del rendimiento percibido por el usuario.
+- **Monitoreo de backend e infraestructura:** el panel de métricas de **Railway** supervisa en tiempo real el uso de CPU, memoria y red del servicio Spring Boot y de la base de datos MySQL. Como complemento se contempla **Spring Boot Actuator** para exponer endpoints de salud (`/actuator/health`) y métricas internas de la API.
+- **Supervisión de la API:** **Swagger/OpenAPI** documenta los endpoints REST y **Postman** permite verificar manualmente la disponibilidad y los tiempos de respuesta de la API desplegada en Railway.
+
 ### 7.4.2. Monitoring Pipeline Components.
+El pipeline de monitoreo integra las etapas de recopilación, almacenamiento, análisis y visualización de datos sobre el comportamiento de la aplicación. En CafeLab estas etapas se cubren con herramientas complementarias:
+
+- **Recopilación de datos:** Vercel Analytics captura métricas de experiencia del usuario en el frontend, mientras que el panel de Railway y, opcionalmente, Spring Boot Actuator recogen métricas de salud y rendimiento del backend y la base de datos.
+- **Auditoría de calidad:** Google Lighthouse genera reportes periódicos de rendimiento, accesibilidad y SEO de la landing page (Firebase) y de la aplicación web (Vercel), permitiendo identificar regresiones tras cada despliegue.
+- **Análisis y visualización:** los paneles de Vercel y Railway centralizan la visualización de métricas en tiempo real, ofreciendo al equipo una perspectiva del estado del sistema sin necesidad de infraestructura adicional. De este modo, los problemas de rendimiento o disponibilidad pueden detectarse y atenderse de forma temprana.
+
 ### 7.4.3. Alerting Pipeline Components.
+El componente de alertas es clave para la detección y respuesta rápida ante problemas de disponibilidad o rendimiento. El objetivo es que el equipo sea notificado de inmediato cuando ocurra un evento crítico o una anomalía. Para CafeLab se contemplan:
+
+- **Alertas de disponibilidad (uptime):** un servicio de monitoreo externo como **UptimeRobot** verifica periódicamente que la landing page (Firebase), el frontend (Vercel) y la API (Railway) respondan correctamente, generando una alerta si alguno deja de estar disponible.
+- **Alertas de la plataforma de despliegue:** **Railway** y **Vercel** ofrecen notificaciones integradas ante fallos de *deployment*, caídas del servicio o consumo anómalo de recursos, enviadas por correo electrónico al equipo.
+- **Umbrales de rendimiento:** a partir de las métricas de Actuator/Railway se definen umbrales (por ejemplo, uso elevado de CPU/memoria o latencia de respuesta), de modo que al superarse se dispare una alerta y el equipo pueda actuar antes de que el problema escale.
+
+Un sistema de alertas bien configurado asegura una respuesta oportuna a incidentes, minimizando el tiempo de inactividad y preservando la experiencia del usuario.
+
 ### 7.4.4. Notification Pipeline Components.
+El pipeline de notificaciones comunica de forma automática el estado del pipeline y los resultados de las validaciones al equipo. En CafeLab se apoya en las herramientas ya utilizadas para CI/CD:
+
+- **GitHub Actions:** al finalizar cada flujo de integración o despliegue, notifica automáticamente el éxito o el fallo del *build* y de las pruebas, indicando en qué etapa ocurrió el error para una corrección inmediata.
+- **Notificaciones de Vercel y Railway:** ambas plataformas envían avisos por correo electrónico al concluir cada *deployment*, informando si la publicación a producción fue exitosa o falló.
+- **Canal del equipo:** los resultados relevantes (fallos de despliegue o de pruebas) se comunican al canal de coordinación del equipo, lo que permite una respuesta rápida y mantiene a todos los integrantes informados del estado de calidad del software en cada ciclo.
 
 # Capítulo VIII: Experiment-Driven Development
 ## 8.1. Experiment Planning.
