@@ -7067,6 +7067,27 @@ Luego de comparar las herramientas, el equipo decidió utilizar principalmente *
 **RedLine13** no será priorizada como herramienta principal en esta etapa, ya que su enfoque está más orientado a pruebas de carga y estrés. Sin embargo, puede ser considerada como apoyo si se requiere validar el comportamiento de CaféLab ante múltiples usuarios concurrentes en una futura etapa de escalamiento.
 
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+
+Como parte del proceso de selección y aplicación de métodos de análisis para CaféLab, se realizaron pruebas técnicas utilizando **Lighthouse**, herramienta incluida en Chrome DevTools que permite evaluar el rendimiento, accesibilidad, buenas prácticas y SEO de una aplicación web.
+
+Estas pruebas se aplicaron sobre páginas internas de la plataforma que requieren inicio de sesión, por lo que primero se accedió al sistema con una cuenta válida y luego se ejecutó Lighthouse sobre cada ruta protegida. Debido a que la validación se realizó en entorno local, los resultados deben considerarse como una referencia inicial del desempeño técnico de la aplicación antes de su evaluación en un entorno productivo.
+
+Las páginas evaluadas corresponden a módulos clave de CaféLab, relacionados con dashboard, inventario, catas, recetas y gestión de costos de producción. La finalidad de estas pruebas fue identificar el estado actual de la experiencia web en términos de carga, accesibilidad, buenas prácticas y optimización general.
+
+![Metrics 1](public/assets/images/Metrics/1.png)
+![Metrics 2](public/assets/images/Metrics/2.png)
+![Metrics 3](public/assets/images/Metrics/3.png)
+![Metrics 4](public/assets/images/Metrics/4.png)
+![Metrics 5](public/assets/images/Metrics/5.png)
+
+Los resultados obtenidos fueron consolidados en una hoja de cálculo para comparar el desempeño de cada módulo evaluado. Esta comparación permite identificar qué páginas presentan mejores resultados técnicos y cuáles requieren optimización antes de continuar con la etapa de experimentación y validación con usuarios.
+
+![Summary](public/assets/images/Metrics/Summary.png)
+![Average ](public/assets/images/Metrics/Average.png)
+![Scores](public/assets/images/Metrics/Scores.png)
+
+
+
 ### 8.2.8. Web and Mobile Tracking Plan.
 
 Para CaféLab, nuestro objetivo es monitorear la aplicación web y móvil con el fin de evaluar el uso real de las funcionalidades experimentales, validar la utilidad percibida por los usuarios y medir si las mejoras propuestas contribuyen a optimizar los procesos de trazabilidad, cata, tueste, inventario, costos y gestión operativa dentro de cafeterías de especialidad.
