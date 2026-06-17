@@ -212,7 +212,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
-    <td>Colocar actividades</td>
+    <td>Me encargué de diseñar y documentar el formulario de validación inicial de mejoras experimentales para CaféLab, alineando sus preguntas con las hipótesis del capítulo VIII y los resultados esperados del experimento. Asimismo, registré y sinteticé los resultados obtenidos, identificando las mejoras con mayor evidencia cuantitativa para priorizar las To-Be User Stories y el To-Be Product Backlog. Finalmente, redacté las historias de usuario To-Be y organicé el backlog experimental con pseudocódigo, asegurando trazabilidad entre formulario, hipótesis, métricas y funcionalidades priorizadas.</td>
     <td>TB2</td>
   </tr>
   <tr>
