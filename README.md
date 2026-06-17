@@ -7050,7 +7050,221 @@ La decisión de priorización se toma a partir del formulario inicial y la viabi
 
 ## 8.3. Experimentation.
 ### 8.3.1. To-Be User Stories.
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>User Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>Relacionado con (Epic ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TUS01</td>
+      <td>Mejora de ficha de proveedor</td>
+      <td>
+        Como dueño o administrador de cafetería de especialidad, quiero registrar una persona de contacto directa y un enlace web o red social dentro de la ficha del proveedor, para centralizar la información comercial y reducir la dependencia de herramientas externas.
+      </td>
+      <td>
+        <strong>Escenario 1: Registrar persona de contacto directa</strong><br><br>
+        <strong>Given</strong> el usuario está en el formulario de registro o edición de proveedor.<br><br>
+        <strong>When</strong> el usuario ingresa una persona de contacto directa y guarda los cambios.<br><br>
+        <strong>Then</strong> el sistema registra la información adicional dentro de la ficha del proveedor.<br><br><br>
+        <strong>Escenario 2: Registrar enlace web o red social del proveedor</strong><br><br>
+        <strong>Given</strong> el usuario está en el formulario de registro o edición de proveedor.<br><br>
+        <strong>When</strong> el usuario ingresa un enlace web o red social válido y guarda los cambios.<br><br>
+        <strong>Then</strong> el sistema almacena el enlace y lo muestra en el detalle del proveedor.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>TUS02</td>
+      <td>Traducción completa de pantallas críticas</td>
+      <td>
+        Como usuario de CaféLab, quiero que las pantallas críticas de la plataforma mantengan una traducción completa al cambiar el idioma, para comprender mejor la interfaz y aumentar mi confianza en el sistema.
+      </td>
+      <td>
+        <strong>Escenario 1: Cambiar idioma de la plataforma</strong><br><br>
+        <strong>Given</strong> el usuario se encuentra en una pantalla crítica de la plataforma.<br><br>
+        <strong>When</strong> el usuario cambia el idioma de la interfaz.<br><br>
+        <strong>Then</strong> el sistema muestra los títulos, botones, formularios y mensajes principales en el idioma seleccionado.<br><br><br>
+        <strong>Escenario 2: Evitar textos mezclados en la interfaz</strong><br><br>
+        <strong>Given</strong> el usuario navega por módulos críticos como proveedores, inventario, costos, cata o tueste.<br><br>
+        <strong>When</strong> el idioma seleccionado está activo.<br><br>
+        <strong>Then</strong> la aplicación no muestra textos mezclados entre español e inglés en los elementos principales de la interfaz.
+      </td>
+      <td>EP06</td>
+    </tr>
+    <tr>
+      <td>TUS03</td>
+      <td>Registro de motivo de consumo de inventario</td>
+      <td>
+        Como dueño o administrador de cafetería de especialidad, quiero registrar el motivo de consumo del inventario, como barra, retail o muestras, para mejorar la trazabilidad del uso del café y analizar con mayor claridad el destino de cada lote.
+      </td>
+      <td>
+        <strong>Escenario 1: Registrar consumo con motivo</strong><br><br>
+        <strong>Given</strong> el usuario está registrando un movimiento de consumo de inventario.<br><br>
+        <strong>When</strong> el usuario selecciona un motivo de consumo, como barra, retail, muestras u otro, y guarda el movimiento.<br><br>
+        <strong>Then</strong> el sistema registra el consumo junto con el motivo seleccionado y actualiza el stock del lote asociado.<br><br><br>
+        <strong>Escenario 2: Consultar historial de consumo</strong><br><br>
+        <strong>Given</strong> existen movimientos de inventario registrados con motivo de consumo.<br><br>
+        <strong>When</strong> el usuario consulta el historial de movimientos del inventario.<br><br>
+        <strong>Then</strong> el sistema muestra el motivo asociado a cada consumo registrado.
+      </td>
+      <td>EP06</td>
+    </tr>
+    <tr>
+      <td>TUS04</td>
+      <td>Vista mínima de correlación lote-tueste-cata</td>
+      <td>
+        Como barista profesional, quiero visualizar en una misma vista la relación entre lote, perfil de tueste y resultado de cata, para comparar información técnica y sensorial sin depender únicamente de memoria o experiencia empírica.
+      </td>
+      <td>
+        <strong>Escenario 1: Consultar relación entre lote, tueste y cata</strong><br><br>
+        <strong>Given</strong> el usuario selecciona un lote de café con información asociada de tueste y cata.<br><br>
+        <strong>When</strong> el usuario accede a la vista de correlación lote-tueste-cata.<br><br>
+        <strong>Then</strong> el sistema muestra la información del lote, el perfil de tueste y el resultado de cata en una misma vista.<br><br><br>
+        <strong>Escenario 2: Comparar información técnica y sensorial</strong><br><br>
+        <strong>Given</strong> el usuario está visualizando la vista de correlación lote-tueste-cata.<br><br>
+        <strong>When</strong> el sistema presenta los datos técnicos y sensoriales asociados.<br><br>
+        <strong>Then</strong> el usuario puede comparar la información de tueste y cata de forma centralizada.
+      </td>
+      <td>EP04</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 8.3.2. To-Be Product Backlog.
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th># Orden</th>
+      <th>To-Be User Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Prioridad</th>
+      <th>Story Points</th>
+      <th>Pseudocódigo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>TUS01</td>
+      <td>Mejora de ficha de proveedor</td>
+      <td>
+        Agregar campos opcionales de persona de contacto directa y enlace web o red social en la ficha del proveedor, con el objetivo de centralizar información comercial y reducir el uso de herramientas externas como WhatsApp, Excel o notas.
+      </td>
+      <td>Alta</td>
+      <td>5</td>
+      <td>
+        <pre>
+SI el usuario abre el formulario de proveedor ENTONCES
+  MOSTRAR campo personaDeContacto
+  MOSTRAR campo enlaceWebORedSocial
+FIN SI
+
+SI el usuario envía el formulario de proveedor ENTONCES
+  VALIDAR campos obligatorios del proveedor
+
+  SI enlaceWebORedSocial no está vacío ENTONCES
+    VALIDAR formato de URL
+  FIN SI
+
+  GUARDAR proveedor con personaDeContacto y enlaceWebORedSocial
+  MOSTRAR detalle actualizado del proveedor
+FIN SI
+</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TUS02</td>
+      <td>Traducción completa de pantallas críticas</td>
+      <td>
+        Completar las traducciones de los módulos críticos de CaféLab para evitar textos mezclados entre español e inglés y mejorar la comprensión de la plataforma en contextos internacionales.
+      </td>
+      <td>Alta</td>
+      <td>5</td>
+      <td>
+        <pre>
+PARA cada moduloCritico EN [dashboard, proveedores, inventario, costos, cata, tueste]
+  PARA cada textoInterfaz EN moduloCritico
+    SI idiomaSeleccionado ES "es" ENTONCES
+      MOSTRAR traduccionES[textoInterfaz]
+    SINO SI idiomaSeleccionado ES "en" ENTONCES
+      MOSTRAR traduccionEN[textoInterfaz]
+    FIN SI
+  FIN PARA
+FIN PARA
+
+SI falta una clave de traducción ENTONCES
+  REGISTRAR claveFaltante
+  EVITAR mostrar textos mezclados entre idiomas
+FIN SI
+</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TUS03</td>
+      <td>Registro de motivo de consumo de inventario</td>
+      <td>
+        Permitir que el usuario registre el motivo de consumo del inventario, como barra, retail, muestras u otro, para mejorar la trazabilidad del uso del café y el análisis de movimientos por lote.
+      </td>
+      <td>Alta</td>
+      <td>5</td>
+      <td>
+        <pre>
+SI el usuario abre el formulario de consumo de inventario ENTONCES
+  MOSTRAR selector de loteDeCafe
+  MOSTRAR campo cantidadUsada
+  MOSTRAR selector motivoDeConsumo
+  MOSTRAR campo notasDeUso
+FIN SI
+
+SI el usuario registra el consumo ENTONCES
+  VALIDAR loteDeCafe
+  VALIDAR que cantidadUsada sea mayor a 0
+  GUARDAR movimientoInventario con motivoDeConsumo y notasDeUso
+  ACTUALIZAR stock del loteDeCafe
+  MOSTRAR movimiento en el historial de inventario
+FIN SI
+</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>TUS04</td>
+      <td>Vista mínima de correlación lote-tueste-cata</td>
+      <td>
+        Crear una vista experimental que relacione lote, perfil de tueste y resultado de cata en una misma pantalla, permitiendo comparar información técnica y sensorial de forma centralizada.
+      </td>
+      <td>Media-Alta</td>
+      <td>8</td>
+      <td>
+        <pre>
+SI el usuario selecciona un loteDeCafe ENTONCES
+  perfilesTueste = OBTENER perfiles de tueste por loteDeCafeId
+  sesionesCata = OBTENER sesiones de cata por loteDeCafeId
+
+  MOSTRAR información del loteDeCafe
+  MOSTRAR datos del perfil de tueste relacionado
+  MOSTRAR resultado de cata relacionado
+FIN SI
+
+SI existen perfilesTueste y sesionesCata ENTONCES
+  MOSTRAR vista de correlación lote-tueste-cata
+SINO
+  MOSTRAR mensaje "No hay datos relacionados disponibles"
+FIN SI
+</pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 # Conclusiones y recomendaciones
 
