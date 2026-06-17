@@ -86,6 +86,8 @@
 | 1.28    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 6.1.1 Core Entities Unit Tests.                                                                                                                                       |
 | 1.29    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome.                                                                                                           |
 | 1.30    | 11/06/2026 | Fernandez Camayo, Carlos Fredy    | Añadió las secciones 8.1.1, 8.1.2, 8.1.3, 8.1.4, 8.1.5                                                                                                                       |
+| 1.31    | 17/06/2026 | Antayhua Castillo, Oscar Josué    | Completó la sección 6.3.3 Evaluaciones según heurísticas documentando 8 hallazgos de usabilidad derivados de las entrevistas de validación del Cap. VI                        |
+| 1.32    | 17/06/2026 | Antayhua Castillo, Oscar Josué    | Añadió las secciones 8.2.1 Hypotheses, 8.2.2 Domain Business Metrics, 8.2.3 Measures, 8.2.4 Conditions y 8.2.5 Scale Calculations and Decisions                              |
 
 
 <div style="page-break-after: always;"></div>
@@ -425,6 +427,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Oscar Antayhua</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al realizar el despliegue del frontend en Vercel y del backend con base de datos en Railway, asegurando una configuración adecuada de los entornos para el correcto funcionamiento del sistema. Asimismo, configuré la conexión entre ambos servicios de manera ordenada y verificable, priorizando la estabilidad, disponibilidad y confiabilidad de la aplicación para su uso y validación.<br><br>  
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al documentar los Production Deployment Pipeline Components (7.3.2), asegurando que el flujo real de despliegue a producción quede claro y verificable. Describí el disparo por rama estable, el build, la inyección de variables de entorno y la validación post-despliegue, evitando presentar procesos no aplicados en el proyecto.<br><br>
+                TB2: <br>Reconocí mi responsabilidad ética y profesional al completar la evaluación heurística de la plataforma (6.3.3) y al diseñar las secciones de experimentación (8.2.1–8.2.5). Al documentar los hallazgos de usabilidad derivados de las entrevistas de validación y asignarles severidad conforme a las heurísticas de Nielsen, asumí el compromiso de presentar una evaluación honesta y fundamentada sin omitir problemas que pudieran afectar la experiencia de los usuarios. Asimismo, al definir hipótesis, métricas de negocio, medidas, condiciones y umbrales de decisión para los nueve experimentos, me aseguré de que el diseño experimental sea verificable y esté alineado con la evidencia recogida a lo largo del proyecto, evitando formular objetivos que no puedan ser validados con los recursos disponibles del equipo.<br><br>
                 <strong>Adrian Donayre</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al depurar el Product Backlog para que refleje únicamente funcionalidades realmente implementadas en la aplicación. Eliminé inconsistencias y alineé las historias con el comportamiento real del sistema, evitando información inexacta. Además, incorporé los Sprint Backlogs para evidenciar la planificación y ejecución del trabajo, asegurando trazabilidad y transparencia.<br><br>
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment en el proyecto CaféLab. Al describir el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, procuré que la información refleje de manera clara y veraz el flujo real de trabajo del equipo. Además, consideré importante explicar cómo estas herramientas contribuyen a una gestión ordenada del código, una configuración más segura del entorno y una validación responsable de los servicios antes y después del despliegue, evitando presentar procesos que no fueron aplicados en el proyecto.<br><br>  
@@ -439,7 +442,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al diseñar e implementar las pruebas BDD y de sistema para el módulo de Librería de Defectos del backend. Aseguré que cada escenario de prueba represente fielmente las reglas de negocio del dominio, validando que los value objects rechacen datos inválidos y que los endpoints REST respondan correctamente ante distintos contextos de autenticación y datos. Asumí la responsabilidad de garantizar que el módulo que gestiona el registro de defectos de tueste funcione de forma confiable, dado que los baristas dependen de esta información para tomar decisiones técnicas sobre la calidad del café.<br><br>  
             </td>  
         <td style="border: 1px solid #ddd; vertical-align: top;">  
-            <b>TP1:</b> El equipo evidenció responsabilidad ética y profesional al verificar que las funcionalidades implementadas funcionen de manera correcta, segura y coherente con lo documentado. Se incorporaron pruebas unitarias, de integración, BDD y de sistema para validar el comportamiento del producto, además de revisiones por módulos como proveedores, inventario, costos, recetas, calibración y defectos. Asimismo, se documentaron prácticas DevOps relacionadas con integración, entrega y despliegue continuo, asegurando mayor trazabilidad en el flujo de trabajo. Finalmente, la integración ordenada de ramas hacia develop y main permitió mantener control sobre los cambios, reducir riesgos en el despliegue y garantizar una entrega más confiable del sistema.<br><br>  
+            <b>TP1:</b> El equipo evidenció responsabilidad ética y profesional al verificar que las funcionalidades implementadas funcionen de manera correcta, segura y coherente con lo documentado. Se incorporaron pruebas unitarias, de integración, BDD y de sistema para validar el comportamiento del producto, además de revisiones por módulos como proveedores, inventario, costos, recetas, calibración y defectos. Asimismo, se documentaron prácticas DevOps relacionadas con integración, entrega y despliegue continuo, asegurando mayor trazabilidad en el flujo de trabajo. Finalmente, la integración ordenada de ramas hacia develop y main permitió mantener control sobre los cambios, reducir riesgos en el despliegue y garantizar una entrega más confiable del sistema.<br><br>
+            <b>TB2:</b> El equipo reconoció su responsabilidad ética y profesional al completar las secciones de evaluación y diseño experimental del proyecto. La evaluación heurística (6.3.3) permitió documentar hallazgos de usabilidad con base en evidencia real de usuarios, y el diseño experimental (8.2.1–8.2.5) formalizó hipótesis verificables con métricas, condiciones y umbrales de decisión concretos, garantizando que el proceso de validación sea transparente y reproducible.<br><br>  
         </td>  
         </tr>  
         <tr>  
@@ -453,6 +457,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 <strong>Oscar Antayhua</strong><br>  
                 TB1: <br>Emití juicios informados al seleccionar plataformas de despliegue como Vercel para el frontend y Railway para el backend y la base de datos, considerando su utilidad para publicar, integrar y validar la solución de manera eficiente. Además, al configurar la conexión entre ambos entornos, contribuí a que el sistema funcione de forma accesible y continua, lo cual favorece una evaluación más realista del impacto operativo y del valor que ofrece la aplicación a sus usuarios.<br><br>  
                 TP1: <br>Emití juicios informados al documentar el pipeline de despliegue a producción (7.3.2), considerando el impacto de mantener un flujo claro, automatizado y verificable sobre la estabilidad del servicio. Al detallar el trigger por merge a `main`, el build, las variables de entorno y la validación post-despliegue, contribuí a reducir riesgos operativos y a respaldar una entrega continua confiable para los usuarios y evaluadores.<br><br>
+                TB2: <br>Emití juicios informados al diseñar el plan de experimentación (8.2.1–8.2.5) y al evaluar heurísticamente la plataforma (6.3.3), considerando el impacto que tienen las mejoras de usabilidad y la validación experimental en la calidad del producto y en la experiencia operativa de baristas y administradores de cafetería. Al definir umbrales de decisión basados en evidencia del dominio (reducción de inconsistencias en extracción, utilidad percibida del dashboard, tiempos de tarea), contribuí a orientar el desarrollo futuro hacia intervenciones de mayor impacto, priorizando aquellas con respaldo de usuarios reales y evitando invertir esfuerzo en cambios sin validación previa. Asimismo, reconocí el impacto social y económico de mejorar la usabilidad del sistema, ya que una plataforma más intuitiva y completa reduce la carga operativa de los baristas y facilita una toma de decisiones más informada por parte de los dueños de cafetería.<br><br>
                 <strong>Adrian Donayre</strong><br>  
                 TB1: <br>Emití juicios informados al depurar el Product Backlog, priorizando únicamente funcionalidades implementadas que aportan valor real al sistema. Consideré el impacto económico y operativo de incluir o excluir historias, asegurando que la documentación refleje de forma precisa el alcance del producto y evite sobreestimar sus capacidades. Además, al incorporar los Sprint Backlogs, facilité la comprensión del avance del proyecto y su viabilidad, contribuyendo a una toma de decisiones más informada por parte del equipo y stakeholders.<br><br>
                 TP1: <br>Emití juicios informados al documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment, considerando su impacto en la estabilidad y disponibilidad de CaféLab. Al describir el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, consideré cómo estas decisiones apoyan una entrega más ordenada, reducen errores operativos, optimizan recursos del equipo y permiten que la solución sea accesible para usuarios y evaluadores de manera continua.<br><br>  
@@ -467,7 +472,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TP1: <br>Emití juicios informados al seleccionar el enfoque de pruebas para el módulo de Librería de Defectos, optando por pruebas BDD en el nivel de dominio y pruebas de sistema en la capa REST. Esta decisión consideró el impacto económico de detectar errores de validación tempranamente, antes de que lleguen a producción y afecten los registros de defectos de los baristas. Asimismo, evalué el impacto social de contar con un módulo de registro de defectos confiable, ya que la trazabilidad de defectos de tueste influye directamente en la calidad del producto final y en la reputación del establecimiento.<br><br>  
             </td>  
         <td style="border: 1px solid #ddd; vertical-align: top;">  
-            <b>TP1:</b> El equipo emitió juicios informados al priorizar pruebas, validaciones por módulos y prácticas DevOps que fortalecen la calidad y estabilidad de CaféLab. Estas decisiones permitieron reducir riesgos técnicos, mejorar la confiabilidad del sistema y optimizar el trabajo del equipo. Además, contribuyen al impacto económico y operativo del proyecto al disminuir errores, facilitar el mantenimiento y asegurar una solución más estable y accesible para los usuarios.<br><br>  
+            <b>TP1:</b> El equipo emitió juicios informados al priorizar pruebas, validaciones por módulos y prácticas DevOps que fortalecen la calidad y estabilidad de CaféLab. Estas decisiones permitieron reducir riesgos técnicos, mejorar la confiabilidad del sistema y optimizar el trabajo del equipo. Además, contribuyen al impacto económico y operativo del proyecto al disminuir errores, facilitar el mantenimiento y asegurar una solución más estable y accesible para los usuarios.<br><br>
+            <b>TB2:</b> El equipo emitió juicios informados al priorizar los experimentos con mayor impacto en el dominio del negocio, definiendo umbrales de decisión basados en la evidencia recopilada durante las entrevistas de validación. Las secciones de diseño experimental (8.2.1–8.2.5) y la evaluación heurística (6.3.3) contribuyen a orientar el desarrollo hacia mejoras con respaldo de usuarios reales, considerando el impacto operativo, económico y de usabilidad en el producto final.<br><br>  
         </td>  
       </tr>  
 </table>  
@@ -5891,6 +5897,111 @@ Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo a
 </table>
 
 ### 6.3.3. Evaluaciones según heurísticas.
+
+La evaluación heurística se realizó tomando como base los hallazgos recogidos durante las entrevistas de validación (6.3.2) con seis usuarios: tres baristas profesionales (Ranferi Valdivia, Patricia Álvarez y Aldo Zavala) y tres dueños o administradores de cafetería (Raúl Donayre, Rodrigo Torres y Ana García). A partir de sus observaciones se identificaron problemas de usabilidad, los cuales se clasificaron según las **10 heurísticas de Nielsen** y se calificaron con la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema superficial: ocurre raramente o se supera con facilidad. No requiere corrección inmediata. |
+| 2 | Problema menor: ocurre con cierta frecuencia o presenta dificultad moderada. Prioridad baja. |
+| 3 | Problema mayor: frecuente o difícil de superar sin ayuda. Prioridad alta de corrección. |
+| 4 | Problema muy grave: impide al usuario continuar con el flujo. Corrección imperativa antes del lanzamiento. |
+
+**Tabla resumen de hallazgos:**
+
+| # | Descripción del problema | Heurística violada | Severidad |
+|---|---|---|---|
+| 1 | Los íconos de edición son poco visibles y no se distinguen con claridad del fondo en determinadas pantallas | H8: Diseño estético y minimalista | 3 |
+| 2 | Los campos obligatorios no están marcados visualmente, lo que provoca errores al enviar formularios | H5: Prevención de errores | 3 |
+| 3 | Los botones de editar y clonar son visualmente similares y generan confusión durante el registro de catas y calibraciones | H4: Consistencia y estándares | 3 |
+| 4 | No existe un temporizador incorporado en las sesiones de cata, obligando al usuario a recurrir a herramientas externas | H7: Flexibilidad y eficiencia de uso | 2 |
+| 5 | La biblioteca de defectos de tueste no cuenta con filtros por categoría o intensidad, dificultando la búsqueda conforme crece el catálogo | H7: Flexibilidad y eficiencia de uso | 2 |
+| 6 | Algunos usuarios tuvieron dificultad inicial para ubicar secciones del sistema fuera del flujo principal | H6: Reconocimiento antes que recuerdo | 2 |
+| 7 | Cadenas de texto sin traducir en flujos secundarios y mensajes de error cuando el idioma seleccionado es inglés | H4: Consistencia y estándares | 2 |
+| 8 | No existe un registro de cambios o historial de modificaciones que informe al usuario sobre acciones realizadas previamente | H1: Visibilidad del estado del sistema | 2 |
+
+---
+
+**Descripción de problemas:**
+
+**PROBLEMA #1:** Íconos de edición poco visibles
+
+- **Severidad:** 3
+- **Heurística violada:** H8 – Diseño estético y minimalista
+- **Usuarios que lo reportaron:** Ana García (Entrevistado 3), Aldo Zavala (Entrevistado 6)
+- **Descripción:** En pantallas como el listado de sesiones de cata y calibraciones, los íconos de acción de edición presentan bajo contraste con el fondo, lo que dificulta su identificación sin inspeccionarlos detenidamente. Esto ralentiza el flujo operativo, especialmente en contextos de barra donde el tiempo es crítico.
+- **Recomendación:** Aumentar el contraste y el tamaño del ícono de edición, o acompañarlo de una etiqueta textual en pantallas de listado. Aplicar jerarquía visual para diferenciar acciones primarias de secundarias.
+
+---
+
+**PROBLEMA #2:** Campos obligatorios sin indicación visual
+
+- **Severidad:** 3
+- **Heurística violada:** H5 – Prevención de errores
+- **Usuarios que lo reportaron:** Ana García (Entrevistado 3)
+- **Descripción:** Los formularios de registro de cata y calibración no distinguen visualmente entre campos obligatorios y opcionales. El usuario solo descubre cuáles son requeridos al intentar enviar el formulario y recibir el mensaje de error, lo que interrumpe el flujo y genera frustración.
+- **Recomendación:** Agregar asterisco (*) o indicador visual claro junto a cada campo obligatorio. Incluir un mensaje informativo al inicio del formulario indicando que los campos marcados con * son obligatorios.
+
+---
+
+**PROBLEMA #3:** Confusión entre acciones de editar y clonar
+
+- **Severidad:** 3
+- **Heurística violada:** H4 – Consistencia y estándares
+- **Usuarios que lo reportaron:** Ana García (Entrevistado 3), Aldo Zavala (Entrevistado 6)
+- **Descripción:** Los íconos de editar y clonar son visualmente similares y no disponen de tooltip ni etiqueta que diferencie su función. Varios usuarios los confundieron durante las sesiones de validación, generando acciones no deseadas al intentar modificar registros existentes.
+- **Recomendación:** Utilizar íconos semánticamente diferenciados (lápiz para editar, doble-página para clonar), añadir tooltips descriptivos al pasar el cursor y, opcionalmente, un modal de confirmación para la acción de clonar.
+
+---
+
+**PROBLEMA #4:** Ausencia de temporizador en sesiones de cata
+
+- **Severidad:** 2
+- **Heurística violada:** H7 – Flexibilidad y eficiencia de uso
+- **Usuarios que lo reportaron:** Aldo Zavala (Entrevistado 6)
+- **Descripción:** Durante una sesión de cata profesional el barista necesita controlar intervalos de tiempo (reposo, extracción, evaluación sensorial). Al no contar con un temporizador integrado, el usuario debe alternar entre la aplicación y herramientas externas, interrumpiendo el flujo operativo.
+- **Recomendación:** Incorporar un cronómetro local en la vista de sesión de cata, sin necesidad de persistencia en backend ni notificaciones push. Un botón de inicio/pausa/reset visible en pantalla sería suficiente para cubrir esta necesidad.
+
+---
+
+**PROBLEMA #5:** Sin filtros en la biblioteca de defectos de tueste
+
+- **Severidad:** 2
+- **Heurística violada:** H7 – Flexibilidad y eficiencia de uso
+- **Usuarios que lo reportaron:** Aldo Zavala (Entrevistado 6)
+- **Descripción:** La biblioteca de defectos presenta todos los registros en lista plana sin opciones de filtrado. A medida que crece el catálogo, localizar un defecto específico por categoría o intensidad requiere desplazarse manualmente por toda la lista, lo que reduce la utilidad del módulo en laboratorio.
+- **Recomendación:** Añadir filtros por categoría e intensidad en la vista de lista de defectos (`defect-library-list`) y, opcionalmente, una barra de búsqueda por nombre para agilizar la consulta en contextos de laboratorio.
+
+---
+
+**PROBLEMA #6:** Dificultad para ubicar secciones del sistema
+
+- **Severidad:** 2
+- **Heurística violada:** H6 – Reconocimiento antes que recuerdo
+- **Usuarios que lo reportaron:** Ranferi Valdivia (Entrevistado 4)
+- **Descripción:** En el primer contacto con el sistema, algunos usuarios reportaron dificultad para encontrar secciones específicas, especialmente aquellas anidadas bajo módulos secundarios o fuera del menú principal. Esto sugiere que la arquitectura de información no es completamente autoexplicativa.
+- **Recomendación:** Revisar el etiquetado de la navegación, añadir breadcrumbs en vistas secundarias y considerar un onboarding breve para nuevos usuarios que señale los módulos principales.
+
+---
+
+**PROBLEMA #7:** Traducciones incompletas en flujos secundarios
+
+- **Severidad:** 2
+- **Heurística violada:** H4 – Consistencia y estándares
+- **Usuarios que lo reportaron:** Ranferi Valdivia (Entrevistado 4)
+- **Descripción:** Aunque la plataforma cuenta con soporte bilingüe (español/inglés) mediante `ngx-translate`, algunos mensajes de error y textos en flujos secundarios permanecen sin traducir, generando inconsistencia en la experiencia cuando se opera en inglés.
+- **Recomendación:** Auditar los archivos `es.json` y `en.json` para identificar claves faltantes, completar las traducciones en los flujos críticos (cata, tueste, costos, inventario) y establecer un proceso de revisión de i18n antes de cada release.
+
+---
+
+**PROBLEMA #8:** Ausencia de historial de cambios o log de actividad
+
+- **Severidad:** 2
+- **Heurística violada:** H1 – Visibilidad del estado del sistema
+- **Usuarios que lo reportaron:** Ana García (Entrevistado 3)
+- **Descripción:** El sistema no ofrece al usuario un registro visible de las modificaciones realizadas a los registros (quién editó, cuándo y qué cambió). Esto genera incertidumbre en entornos multiusuario donde varios baristas o administradores acceden al mismo sistema.
+- **Recomendación:** Implementar un historial de actividad a nivel de entidad (al menos para los módulos de mayor sensibilidad: catas, inventario y costos), visible desde la vista de detalle de cada registro.
+
 ## 6.4. Auditoría de Experiencias de Usuario.
 ### 6.4.1. Auditoría realizada.
 #### 6.4.1.1. Información del grupo auditado.
@@ -6611,11 +6722,114 @@ A continuación se documentan las tarjetas de experimento para cada pregunta del
 | Hypothesis | Se espera que ≥ 65% de dueños en prueba utilicen al menos uno de los nuevos campos y califiquen la ficha de proveedor con ≥ 4/5 en utilidad para coordinación comercial. |
 
 ## 8.2. Experiment Design.
+
 ### 8.2.1. Hypotheses.
+
+Las hipótesis de experimentación se derivan directamente de las Experiment Cards definidas en [8.1.5](#815-experiment-cards), articulando el resultado esperado de cada intervención técnica sobre la plataforma Café Lab. Cada hipótesis sigue la estructura: **condición de intervención → resultado esperado → métrica de validación**.
+
+| ID | Experimento | Hipótesis |
+|----|-------------|-----------|
+| H-01 | Correlación automática tueste–cata | Se espera que la correlación automatizada reduzca las inconsistencias en la extracción en un 35% y las pérdidas de calidad percibida en un 25%, medido mediante tareas de replicación de perfil y encuestas post-sesión con baristas. |
+| H-02 | Dashboard consolidado por lote (inventario + costos) | Se espera que el 80% de los administradores entrevistados califiquen la vista consolidada con ≥ 4/5 en utilidad para la toma de decisiones económicas, y que el tiempo para consultar rentabilidad por lote se reduzca al menos un 40% frente al flujo actual fragmentado. |
+| H-03 | Vista unificada curvas de tueste + hexágono sensorial | Se espera que el 70% de los baristas completen la tarea de interpretar la relación tueste–sabor en menos de 3 minutos con la vista unificada, frente a un tiempo mayor con el flujo actual de módulos separados. |
+| H-04 | Mejoras UX en sesión de cata (campos obligatorios, editar/clonar, temporizador) | Se espera reducir los errores de envío de formulario en al menos un 25% y que la satisfacción en cata mejore ≥ 1 punto (escala 1–5), medido con prueba de usabilidad con al menos 3 baristas. |
+| H-05 | Marca y modelo del molino en calibraciones | Se espera que ≥ 70% de los baristas en prueba completen el campo de marca/modelo y que el tiempo para replicar una calibración previa se reduzca al menos un 25%. |
+| H-06 | Filtros por categoría e intensidad en biblioteca de defectos | Se espera que el tiempo para localizar un defecto registrado sea inferior a 30 segundos con filtros activos, frente a un tiempo mayor con búsqueda manual. |
+| H-07 | Motivo de consumo en movimientos de inventario | Se espera que ≥ 75% de los dueños en prueba califiquen la trazabilidad de consumo con ≥ 4/5 en utilidad para explicar mermas y rotación de stock. |
+| H-08 | Completar traducciones i18n en flujos críticos | Se espera que el 90% de las pantallas críticas queden sin cadenas sin traducir y que usuarios de habla no hispana reporten una mejora ≥ 1 punto (escala 1–5) en comprensión de la interfaz. |
+| H-09 | Persona de contacto y red social en ficha de proveedor | Se espera que ≥ 65% de los dueños en prueba utilicen al menos uno de los nuevos campos y califiquen la ficha de proveedor con ≥ 4/5 en utilidad para coordinación comercial. |
+
 ### 8.2.2. Domain Business Metrics.
+
+Las métricas de negocio del dominio representan los indicadores cuantificables que permiten evaluar el impacto de los experimentos en los objetivos estratégicos de Café Lab. Se derivan de las brechas identificadas en el [As-Is Summary (8.1.1)](#811-as-is-summary), de las Claims documentadas en [8.1.2](#812-raw-material-assumptions-knowledge-gaps-ideas-claims) y de las hipótesis de [8.2.1](#821-hypotheses).
+
+| ID Métrica | Nombre | Definición | Segmento objetivo | Experimento(s) relacionado(s) |
+|------------|--------|------------|-------------------|-------------------------------|
+| M-01 | Tasa de replicabilidad de tueste | Porcentaje de sesiones de cata correctamente enlazadas a su lote y perfil de tueste de forma automática, sin intervención manual | Baristas | H-01, H-03 |
+| M-02 | Tasa de inconsistencias en extracción | Porcentaje de intentos de replicación de extracción que quedan fuera del perfil objetivo del tueste | Baristas | H-01 |
+| M-03 | Tiempo de consulta de rentabilidad por lote | Tiempo en minutos que tarda un administrador en obtener la visión económica completa de un lote (stock + costos + margen) | Dueños/Admins | H-02 |
+| M-04 | Utilidad percibida del dashboard económico | Calificación promedio (escala 1–5) de los administradores sobre la utilidad del dashboard consolidado por lote | Dueños/Admins | H-02 |
+| M-05 | Tiempo de interpretación tueste–sabor | Tiempo en minutos para completar la tarea de correlacionar curva de tueste con perfil sensorial del mismo lote | Baristas | H-03 |
+| M-06 | Tasa de error en registro de cata | Porcentaje de intentos de envío del formulario de cata que resultan en error de validación | Baristas | H-04 |
+| M-07 | Satisfacción en sesión de cata | Calificación promedio (escala 1–5) del flujo de registro de cata tras las mejoras de UX implementadas | Baristas | H-04 |
+| M-08 | Tasa de completitud de campo marca/modelo molino | Porcentaje de registros de calibración que incluyen marca y modelo del molino | Baristas | H-05 |
+| M-09 | Tiempo de localización de defecto | Segundos necesarios para localizar un defecto específico en la biblioteca con y sin filtros activos | Baristas | H-06 |
+| M-10 | Tasa de trazabilidad de consumo de inventario | Porcentaje de movimientos de inventario registrados con motivo de consumo especificado | Dueños/Admins | H-07 |
+| M-11 | Utilidad percibida de trazabilidad de consumo | Calificación promedio (escala 1–5) de los dueños sobre la utilidad de registrar el motivo de consumo por lote | Dueños/Admins | H-07 |
+| M-12 | Cobertura de internacionalización | Porcentaje de pantallas críticas sin cadenas de texto sin traducir en los módulos de mayor uso | Baristas / Dueños | H-08 |
+| M-13 | Comprensión de interfaz en inglés | Calificación promedio (escala 1–5) de usuarios de habla no hispana sobre la comprensión de la interfaz al operar en inglés | Baristas | H-08 |
+| M-14 | Tasa de adopción de campos de proveedor | Porcentaje de fichas de proveedor que incluyen al menos uno de los campos nuevos (contacto o enlace web) | Dueños/Admins | H-09 |
+| M-15 | Utilidad percibida de la ficha de proveedor | Calificación promedio (escala 1–5) de los dueños sobre la ficha de proveedor ampliada para coordinación comercial | Dueños/Admins | H-09 |
+
 ### 8.2.3. Measures.
+
+Para cada experimento se definen las medidas específicas que permiten operacionalizar las hipótesis de [8.2.1](#821-hypotheses) y recopilar las métricas de [8.2.2](#822-domain-business-metrics). Las medidas se organizan por tipo: **comportamental** (observación directa de la interacción), **de rendimiento** (tiempos y tasas) y **de percepción** (autoreporte del usuario mediante encuesta post-sesión).
+
+| ID Exp. | Medida | Tipo | Instrumento | Momento de recolección |
+|---------|--------|------|-------------|------------------------|
+| H-01 | Número de intentos para replicar extracción usando el enlace automático tueste–cata | Rendimiento | Observación directa + conteo de intentos por moderador | Durante tarea |
+| H-01 | Puntuación sensorial de la cata replicada (escala SCA 0–100) | Comportamental | Formulario de cata digital en la plataforma | Al finalizar tarea |
+| H-01 | Satisfacción con el flujo de enlace automatizado (escala 1–5) | Percepción | Encuesta post-sesión de 3 ítems | Post-tarea |
+| H-02 | Tiempo para consultar rentabilidad por lote (minutos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea |
+| H-02 | Puntuación de utilidad del dashboard consolidado (escala 1–5) | Percepción | Encuesta post-sesión de 1 ítem Likert | Post-tarea |
+| H-03 | Tiempo para completar tarea de interpretación tueste–sabor (minutos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea |
+| H-03 | Tasa de completitud de tarea en < 3 minutos (%) | Rendimiento | Registro binario por moderador (completó/no completó) | Durante tarea |
+| H-04 | Número de errores de validación al enviar formulario de cata | Rendimiento | Observación directa + log de la plataforma | Durante tarea |
+| H-04 | Puntuación de satisfacción con el flujo de cata (escala 1–5) | Percepción | Encuesta post-sesión de escala Likert | Post-tarea |
+| H-05 | Porcentaje de registros de calibración con campo marca/modelo completado (%) | Comportamental | Revisión de registros creados durante la sesión | Post-tarea |
+| H-05 | Tiempo para replicar calibración previa con el nuevo campo (segundos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea |
+| H-06 | Tiempo para localizar un defecto con filtros activos (segundos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea |
+| H-06 | Tiempo para localizar el mismo defecto sin filtros –baseline– (segundos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea (baseline) |
+| H-07 | Porcentaje de movimientos de inventario con campo usageType completado (%) | Comportamental | Revisión de registros creados durante la sesión | Post-tarea |
+| H-07 | Puntuación de utilidad del campo de trazabilidad de consumo (escala 1–5) | Percepción | Encuesta post-sesión de 1 ítem Likert | Post-tarea |
+| H-08 | Porcentaje de pantallas críticas sin cadenas sin traducir (%) | Rendimiento | Auditoría manual de archivos `en.json` y `es.json` | Pre-release |
+| H-08 | Puntuación de comprensión de interfaz en inglés (escala 1–5) | Percepción | Encuesta post-sesión con usuarios de habla no hispana | Post-sesión |
+| H-09 | Porcentaje de fichas de proveedor con al menos un campo nuevo completado (%) | Comportamental | Revisión de registros creados durante la sesión | Post-tarea |
+| H-09 | Puntuación de utilidad de la ficha de proveedor ampliada (escala 1–5) | Percepción | Encuesta post-sesión de 1 ítem Likert | Post-tarea |
+
 ### 8.2.4. Conditions.
+
+Las condiciones de experimentación describen el contexto bajo el cual se recopilará cada medida definida en [8.2.3](#823-measures). Se especifican el perfil de participantes, el entorno tecnológico, el escenario de tarea asignado y la duración estimada de cada sesión.
+
+**Condiciones generales aplicables a todos los experimentos:**
+- **Entorno de aplicación:** Frontend desplegado en Vercel (`cafelab-frontend`), backend en Railway (`cafelab-backend`), base de datos MySQL en producción.
+- **Dispositivo:** PC o laptop con navegador web actualizado (Chrome o Firefox).
+- **Rol del moderador:** Un integrante del equipo observa, registra tiempos y anota errores sin intervenir ni orientar al participante.
+- **Consentimiento:** Los participantes son informados del propósito del experimento y aceptan el uso de sus observaciones de forma anónima para fines académicos.
+
+| ID Exp. | Perfil de participantes | N mínimo | Escenario de tarea asignado | Duración estimada |
+|---------|-------------------------|----------|-----------------------------|-------------------|
+| H-01 | Baristas profesionales con uso previo de los módulos de tueste y cata en Café Lab | 3 | Crear una nueva sesión de cata seleccionando lote y perfil de tueste mediante el enlace automatizado; replicar extracción con los parámetros del perfil previo | 30 min |
+| H-02 | Dueños o administradores de cafetería que consultan costos e inventario en Café Lab | 3 | Acceder al dashboard y obtener la rentabilidad completa de un lote específico (stock, costos, margen) sin salir de la vista consolidada | 20 min |
+| H-03 | Baristas profesionales con experiencia en módulos de tueste y cata | 3 | Usando la nueva vista unificada, identificar qué parámetro del tueste correlaciona con una nota sensorial específica de la cata del mismo lote | 25 min |
+| H-04 | Baristas profesionales con uso frecuente del módulo de sesiones de cata | 3 | Registrar una nueva sesión de cata completa; clonar y editar un registro existente; utilizar el temporizador durante la evaluación sensorial | 25 min |
+| H-05 | Baristas profesionales con uso del módulo de calibración de molienda | 3 | Crear una nueva calibración incluyendo marca y modelo del molino; clonar una calibración existente y verificar que el contexto del equipo se preserva | 20 min |
+| H-06 | Baristas profesionales con uso de la biblioteca de defectos de tueste | 3 | Localizar un defecto específico por categoría e intensidad usando los filtros; repetir la búsqueda del mismo defecto sin filtros para obtener el tiempo baseline | 15 min |
+| H-07 | Dueños o administradores de cafetería con uso del módulo de inventario | 3 | Registrar tres movimientos de inventario especificando el motivo de consumo; revisar el historial de movimientos por lote | 20 min |
+| H-08 | Usuarios de habla no hispana que operen la plataforma en inglés | 2–3 | Completar los flujos principales (cata, tueste, inventario) con el idioma configurado en inglés; reportar cualquier cadena sin traducir encontrada | 30 min |
+| H-09 | Dueños o administradores de cafetería con uso del módulo de proveedores | 3 | Crear un nuevo registro de proveedor incluyendo persona de contacto y enlace web; editar un proveedor existente para añadir los nuevos campos | 15 min |
+
 ### 8.2.5. Scale Calculations and Decisions.
+
+Esta sección define los umbrales de decisión para cada experimento: el criterio de éxito (**PASA**) y el criterio de fracaso (**NO PASA**). Los umbrales se derivan directamente de las hipótesis de [8.2.1](#821-hypotheses). Dado el carácter exploratorio del ciclo y el tamaño del segmento objetivo disponible, se adopta una muestra mínima de **n ≥ 3 participantes por segmento**, coherente con el principio de que pequeñas muestras descubren la mayoría de los problemas de usabilidad en etapas tempranas (Nielsen, 2000). Para los experimentos de tipo auditoría técnica (H-08) el criterio se aplica directamente sobre los archivos de i18n sin necesidad de sesión con usuarios.
+
+| ID Exp. | Métrica principal | Umbral PASA | Umbral NO PASA | N mínimo | Decisión si PASA | Decisión si NO PASA |
+|---------|-------------------|-------------|----------------|----------|------------------|---------------------|
+| H-01 | Reducción de inconsistencias en extracción | ≥ 35% de reducción respecto al flujo manual | < 20% de reducción | 3 baristas | Integrar el enlace automático tueste–cata en rama main; registrar como To-Be US en 8.3.1 | Rediseñar el flujo de enlace e iterar antes de promover a producción |
+| H-01 | Reducción de pérdidas de calidad percibida | ≥ 25% de mejora en puntuación sensorial de cata replicada | < 10% de mejora | 3 baristas | Confirmar hipótesis H-01 | Revisar modelo de datos y selector de lote/perfil en el formulario |
+| H-02 | Utilidad percibida del dashboard consolidado | ≥ 80% de administradores con puntaje ≥ 4/5 | < 60% con puntaje ≥ 4/5 | 3 dueños | Integrar la vista por lote en el dashboard de producción | Identificar métricas faltantes y rediseñar la vista consolidada |
+| H-02 | Reducción de tiempo para consultar rentabilidad | ≥ 40% de reducción respecto al flujo fragmentado | < 20% de reducción | 3 dueños | Confirmar hipótesis H-02 | Revisar la estructura de navegación del dashboard |
+| H-03 | Tasa de completitud de tarea en < 3 min | ≥ 70% de baristas completan la tarea en < 3 minutos | < 50% completan en < 3 minutos | 3 baristas | Activar la ruta `/roast-flavor-correlation` en producción | Ajustar el formato de visualización (superpuesto, dividido o sincronizado) |
+| H-04 | Reducción de errores de envío en cata | ≥ 25% de reducción de errores de validación | < 10% de reducción | 3 baristas | Integrar las mejoras UX en el módulo de cata en producción | Revisar iconografía y posición de campos obligatorios |
+| H-04 | Mejora de satisfacción en cata | Incremento ≥ 1 punto en escala 1–5 | Incremento < 0.5 puntos | 3 baristas | Confirmar hipótesis H-04 | Iterar el diseño del formulario de cata |
+| H-05 | Tasa de completitud del campo marca/modelo | ≥ 70% de registros de calibración con el campo completado | < 50% con el campo completado | 3 baristas | Incluir campo en el modelo de calibración en producción | Revisar posición, etiquetado y visibilidad del campo en el formulario |
+| H-05 | Reducción de tiempo para replicar calibración | ≥ 25% de reducción respecto al flujo actual | < 10% de reducción | 3 baristas | Confirmar hipótesis H-05 | Evaluar si el campo es percibido como relevante por los baristas |
+| H-06 | Tiempo de localización con filtros activos | < 30 segundos | > 60 segundos | 3 baristas | Implementar filtros en la biblioteca de defectos en producción | Revisar el diseño y el etiquetado de los filtros |
+| H-07 | Utilidad percibida de trazabilidad de consumo | ≥ 75% con puntaje ≥ 4/5 | < 50% con puntaje ≥ 4/5 | 3 dueños | Incluir el campo `usageType` en el módulo de inventario en producción | Validar si las opciones de tipo de consumo ofrecidas son relevantes para los dueños |
+| H-08 | Cobertura de i18n en flujos críticos | ≥ 90% de pantallas críticas sin cadenas sin traducir | < 75% | Auditoría técnica | Publicar actualización de i18n en producción | Completar la auditoría y reasignar claves faltantes en `en.json`/`es.json` |
+| H-08 | Comprensión de interfaz en inglés | Mejora ≥ 1 punto en escala 1–5 respecto a la versión anterior | Sin mejora o con regresión | 2–3 usuarios | Confirmar hipótesis H-08 | Revisar la terminología con el glosario del dominio (2.4) |
+| H-09 | Tasa de adopción de campos nuevos de proveedor | ≥ 65% de fichas usan al menos un campo nuevo | < 40% | 3 dueños | Incluir los campos en el módulo de proveedores en producción | Reevaluar la relevancia y el etiquetado de los campos nuevos |
+| H-09 | Utilidad percibida de la ficha de proveedor | ≥ 65% con puntaje ≥ 4/5 | < 40% con puntaje ≥ 4/5 | 3 dueños | Confirmar hipótesis H-09 | Ajustar el diseño del modal de registro y edición de proveedor |
 ### 8.2.6. Methods Selection.
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
 ### 8.2.8. Web and Mobile Tracking Plan.
