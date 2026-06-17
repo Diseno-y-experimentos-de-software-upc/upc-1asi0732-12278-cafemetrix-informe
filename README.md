@@ -1,5 +1,5 @@
 <!--Titulo principal-->
-<h1 align="center">Informe de Trabajo Parcial</h1>
+<h1 align="center">Informe de Trabajo Final</h1>
 
 <!--Nombre de la universidad-->
 <h3 align="center"> Universidad Peruana de Ciencias Aplicadas</h3>
@@ -46,7 +46,7 @@
 </ul>
 
 <!--Ciclo-->
-<div align="center" style="font-weight: bold;">Mayo de 2026</div>
+<div align="center" style="font-weight: bold;">Junio de 2026</div>
 
 <div style="page-break-after: always;"></div>
 
