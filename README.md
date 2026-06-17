@@ -193,6 +193,53 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Entregable</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Loli Ramirez Cristina</strong></td>
+    <td>Colocar actividades</td>
+    <td>TB2</td>
+  </tr>
+  <tr>
+    <td><strong>Antayhua Castillo, Oscar Josué</strong></td>
+    <td>Colocar actividades</td>
+    <td>TB2</td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td>Colocar actividades</td>
+    <td>TB2</td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td>Colocar actividades</td>
+    <td>TB2</td>
+  </tr>
+  <tr>
+    <td><strong>Christian Fabrizio, Inga Orihuela</strong></td>
+    <td>Colocar actividades</td>
+    <td>TB2</td>
+  </tr>
+  <tr>
+    <td><strong>Quispe Roldan, Michael Fred</strong></td>
+    <td>Colocar actividades</td>
+    <td>TB2</td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2">Cada integrante contribuyó en áreas específicas, como pruebas, validaciones por módulos, prácticas DevOps e integración de ramas, lo que permitió mantener trazabilidad del trabajo realizado. Además, el uso de GitHub facilitó evidenciar los commits, cambios y responsabilidades asumidas durante el desarrollo del proyecto.</td>
+  </tr>
+    <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2">
+    <img src="public/assets/images/tp1Collaboration/tp1report.png" alt="Evidencia">
+  </tr>
+</table>
+
 <div style="page-break-after: always;"></div>
 
 <!--ÍNDICE-->
