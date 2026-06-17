@@ -5675,220 +5675,133 @@ Las revisiones de código son un proceso fundamental para garantizar la calidad 
 **Frecuencia:** las revisiones se realizan de forma continua con cada PR, intensificándose al cierre de cada sprint para evitar la acumulación de cambios y preservar la calidad de la rama principal.
 
 ## 6.3. Validation Interviews.
-En la sección de “Validation Interviews” del proyecto CafeLab nos enfocamos en mejorar la presentación y funcionalidad de la plataforma web dirigida a baristas y dueños/administradores de cafeterías. En este punto se llega a la comunicación directa con los segmentos objetivos con el fin de entrevistar y obtener respuestas sobre la experiencia y percepción dentro de la plataforma, ya sean criticas positivas o negativas, esto ayuda en la mejora continua para la integración adecuada de futuras integraciones o correcciones orientadas en mejorar la mejora continua de la plataforma. A continuación se muestran los user goals necesarios para la realización de las entrevistas:
+En esta sección nos enfocamos en mejorar la presentación y funcionalidad de la plataforma web dirigida a baristas y dueños/administradores de cafeterías. En este punto se llega a la comunicación directa con los segmentos objetivos con el fin de obtener respuestas sobre la experiencia y percepción dentro de la plataforma mediante un formulario con preguntas cerradas. Esto ayuda en la mejora continua para la integración adecuada de futuras integraciones y correcciones orientadas en mejorar la mejora continua de la plataforma.
 
 ### 6.3.1. Diseño de Entrevistas.
-En esta sección de detallas los objetivos de los usuarios pertenecientes al segmento objetivo, mediante la definición de estos user gol se obtiene los resultados mas cercanos a la experiencia del usuario en la navegación y recorrido ideal en la plataforma para lograr sus objetivos ya sean baristas o dueños/administrados de cafeterías.
+Para esta etapa se reemplazó el formato de entrevistas por un formulario de validación compuesto por cuatro secciones con preguntas cerradas, acompañado de videos cortos demostrativos. El objetivo de es evaluar qué mejoras experimentales resultan más útiles para los segmentos objetivo de CaféLab: baristas profesionales y dueños o administradores de cafeterías de especialidad. Este enfoque facilita el análisis cuantitativo de los resultados y permite obtener métricas como promedios, porcentajes de aceptación y priorización de mejoras.
 
-#### User Goal: Registrarse y elegir suscripción(Barista y dueño/administrador de cafetería)
-El usuario elegirá si es un barista o un dueño de cafetería, en base a esto el formulario de registro mostrará más o menos campos a completar, una vez registrados podrán elegir el plan que más deseen, luego, procederán a la pantalla de pago. Confirmado el pago, podrán acceder a las herramientas disponibles según su plan.
+El formulario fue diseñado a partir de las necesidades, brechas de conocimiento y oportunidades de mejora identificadas en el Capítulo VIII. Por ello, las preguntas no buscan validar la aplicación completa, sino evaluar aspectos específicos relacionados con las mejoras experimentales propuestas: la correlación entre tueste y cata, la gestión de proveedores junto con inventario y costos, y la internacionalización de la interfaz.
 
-#### User Goal: Iniciar Sesión.(Barista y dueño/administrador de cafetería)
-El usuario de la aplicación ya cuenta con una cuenta, sea de barista o dueño de cafetería, si ingresa mal sus datos, se le pedirá que los ingrese nuevamente, una vez los datos sean correctos, podrá acceder a las herramientas según su plan.
+La primera sección recoge información general del participante, como su perfil principal, su experiencia registrando información relacionada con café y las herramientas que utiliza actualmente. Esta información permite segmentar las respuestas y analizar si la percepción de utilidad varía entre baristas y dueños o administradores.
 
-#### User Goal: Editar su Perfil. (Barista y dueño/administrador de cafetería)
-Una vez el usuario haya entrado a la app web, puede ver su perfil mediante el botón de "Perfil", de este modo puede editar los datos que le gusten.
+La segunda sección evalúa la correlación entre tueste, cata y trazabilidad. En este bloque se busca medir si los usuarios consideran útil relacionar un lote de café con su perfil de tueste y su resultado de cata. Asimismo, se evalúa la importancia de visualizar en una sola vista la curva de tueste y el perfil sensorial del café, además de conocer si esta mejora podría reducir decisiones basadas únicamente en memoria o experiencia empírica.
 
-##### User Goal: Registrar, Editar y Observar sus Proveedores. (Barista y dueño/administrador de cafetería)
-El usuario desde la pantalla de inicio donde aparecen las herramientas, selecciona "Proveedores" accediendo a la pantalla de "Proveedores" el cuál tiene las funciones de registrar proveedores, editar los que ya están registrados y observar los datos del proveedor que gusten.
+La tercera sección se enfoca en proveedores, inventario y costos. Este bloque permite evaluar si agregar campos como persona de contacto directa, enlace web o red social en la ficha de proveedor resulta útil para los usuarios. También se mide la importancia de consultar en una sola vista información como origen del lote, stock disponible y costos asociados, así como la utilidad de registrar el motivo de consumo del inventario.
 
-#### User Goal: Registrar, Editar y Observar sus Lotes de Café. (Barista y dueño/administrador de cafetería)
-Desde el inicio, el usuario selecciona la herramienta de "Lotes de Café" accediendo a una lista con sus lotes registrados, del mismo modo puede registrar nuevos lotes de café, editar los existentes o simplemente ver la información de alguno que elija.
+Finalmente, la cuarta sección evalúa la internacionalización y comprensión de la interfaz. En este bloque se busca determinar si los usuarios consideran importante que todas las pantallas mantengan una traducción completa al cambiar el idioma de la plataforma. También se evalúa si la presencia de textos mezclados entre español e inglés afectaría la confianza en el sistema y si sería relevante considerar otros idiomas en futuras versiones.
 
-#### User Goal: Registrar, Editar y Visualizar sus perfiles de tueste, también comparar entre dos de ellos. (Barista y dueño/administrador de cafetería)
-Desde el apartado de herramientas, selecciona "Perfiles de Tueste", de este modo puede observar en una tabla sus perfiles registrados, así como registrar uno nuevo, editar un existente, visualizar los datos y curva de tueste del que seleccione y también comparar las curvas de tueste entre dos perfiles.
+### Preguntas del formulario
 
-#### User Goal: Registrar, Editar y Observar sus Catas con su hexágono sensorial. (Barista y dueño/administrador de cafetería)
-Desde el apartado de herramientas, selecciona "Catas", accediendo a la tabla que contiene sus catas registradas, desde esta pantalla puede registrar una cata, editar una existente, visualizar sus catas registradas junto con su hexágono sensorial si lo requiere. Por otro lado, también puede comparar los hexágonos sensoriales entre dos catas.
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>Pregunta</th>
+      <th>Alternativas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Perfil del participante</td>
+      <td>¿Cuál es tu perfil principal?</td>
+      <td>Barista / Dueño o administrador</td>
+    </tr>
+    <tr>
+      <td>Perfil del participante</td>
+      <td>¿Tienes experiencia registrando información de café, tueste, cata, inventario o proveedores?</td>
+      <td>Sí / No</td>
+    </tr>
+    <tr>
+      <td>Perfil del participante</td>
+      <td>¿Qué herramientas usas actualmente para registrar información del café?</td>
+      <td>Excel / Software especializado / Notas a mano en cuaderno / WhatsApp</td>
+    </tr>
+    <tr>
+      <td>Correlación tueste-cata y trazabilidad</td>
+      <td>Después de ver el video, ¿qué tan útil te parece poder relacionar un lote de café con su perfil de tueste y su resultado de cata?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Correlación tueste-cata y trazabilidad</td>
+      <td>¿Qué tan importante consideras visualizar en una sola vista la curva de tueste y el perfil sensorial del café?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Correlación tueste-cata y trazabilidad</td>
+      <td>¿Crees que esta relación entre tueste y cata ayudaría a reducir decisiones basadas solo en memoria o experiencia empírica?</td>
+      <td>Sí / No</td>
+    </tr>
+    <tr>
+      <td>Correlación tueste-cata y trazabilidad</td>
+      <td>¿Qué tan probable sería que uses una vista de correlación tueste-sabor para comparar resultados entre lotes?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Correlación tueste-cata y trazabilidad</td>
+      <td>¿Para qué perfil consideras más útil esta mejora?</td>
+      <td>Barista / Dueño o administrador / Ambos</td>
+    </tr>
+    <tr>
+      <td>Proveedores, inventario y costos</td>
+      <td>¿Qué tan útil te parecería que la ficha de proveedor incluya persona de contacto directa?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Proveedores, inventario y costos</td>
+      <td>¿Qué tan útil te parecería que la ficha de proveedor incluya enlace web o red social?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Proveedores, inventario y costos</td>
+      <td>¿Consideras que estos campos reducirían el uso de herramientas externas como WhatsApp, Excel o notas?</td>
+      <td>Sí / No</td>
+    </tr>
+    <tr>
+      <td>Proveedores, inventario y costos</td>
+      <td>¿Qué tan importante es para ti consultar en una sola vista el origen del lote, stock disponible y costos asociados?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Proveedores, inventario y costos</td>
+      <td>¿Qué indicador económico por lote revisarías con mayor frecuencia?</td>
+      <td>Costo por kilo / Costo por taza / Margen / Merma / Otro</td>
+    </tr>
+    <tr>
+      <td>Proveedores, inventario y costos</td>
+      <td>¿Qué tan útil sería registrar el motivo de consumo del inventario, por ejemplo barra, retail o muestras?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Internacionalización y comprensión de interfaz</td>
+      <td>Al cambiar el idioma de la plataforma, ¿qué tan importante es que todas las pantallas mantengan traducción completa?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Internacionalización y comprensión de interfaz</td>
+      <td>¿Consideras que una traducción completa facilitaría el uso de CaféLab en contextos de consultoría, competencias o clientes internacionales?</td>
+      <td>Escala del 1 al 5</td>
+    </tr>
+    <tr>
+      <td>Internacionalización y comprensión de interfaz</td>
+      <td>¿Detectar textos mezclados entre español e inglés afectaría tu confianza en la plataforma?</td>
+      <td>Sí / No</td>
+    </tr>
+    <tr>
+      <td>Internacionalización y comprensión de interfaz</td>
+      <td>¿Consideras relevante que una futura versión incluya traducción a otro idioma adicional?</td>
+      <td>Sí / No</td>
+    </tr>
+  </tbody>
+</table>
 
-#### User Goal: Observar la biblioteca de defectos, con posibles causas y soluciones. (Barista y dueño/administrador de cafetería)
-Desde el apartado de herramientas, selecciona "Biblioteca de defectos", teniendo una lista con los defectos, si selecciones alguno puede observar sus posibles causas y las soluciones recomendadas.
+**Resultados**
+Los resultados obtenidos permitirán identificar qué mejoras tienen mayor valor percibido para los usuarios. Las preguntas con escala del 1 al 5 serán analizadas mediante promedios y porcentajes de respuestas positivas, considerando como respuestas favorables aquellas calificadas con 4 o 5. Las preguntas de Sí/No permitirán medir aceptación directa sobre aspectos específicos como reducción de herramientas externas, confianza en la interfaz y utilidad de la correlación entre tueste y cata.
 
-#### User Goal: Identificar la relación entre el tueste y los sabores del café. (Barista y dueño/administrador de cafetería)
-Desde el apartado de herramientas, selecciona la "Relación tueste - sabor", donde puede seleccionar las catas que se visualizarán en el gráfico mostrando la concentración de tuestes exitosos de color morado, en términos de temperatura y tiempo. También desde este apartado, pueden acceder a la biblioteca que muestra las variables en el tostado que pueden influir en la taza final de café.
+Estos datos serán utilizados como insumo para la formulación de hipótesis, la priorización del Question Backlog y la definición de las To-Be User Stories y el To-Be Product Backlog. De esta forma, las mejoras que obtengan mayor valoración podrán ser implementadas posteriormente en el servidor experimental para su validación To-Be.
 
-#### User Goal: Poder registrar, editar y visualizar sus recetas, así como portafolios con las recetas especiales. (Barista y dueño/administrador de cafetería)
-Desde el apartado de herramientas, selecciona "Recetas", de este modo accediendo a una pantalla que le muestra los portafolios que tiene y las recetas que están fuera de este portafolio, puede crear un nuevo portafolio o visualizar los ya creados con sus recetas asociadas, también puede asignar nuevas recetas a un portafolio. Puede crear una receta, al crear una debería seleccionar si está hecho por extracción o por método de espresso. Por otro lado, al visualizar las recetas hechas se le mostrará toda la información asociada.
-
-#### User Goal: Tener un registro de las calibraciones de sus moliendas para un mejor resultado. (Barista y dueño/administrador de cafetería)
-Desde el apartado de herramientas, selecciona "Calibración de Molienda", en este apartado puede registrar o editar las calibraciones de las moliendas, de este modo teniendo un acabado igual para sus recetas.
-
-#### User Goal: Tener un adecuado manejo de su inventario, pudiendo registrar lotes y visualizar información importante. (Barista y dueño/administrador de cafetería)
-Desde el apartado de herramientas, selecciona "Inventario", en el cual se puede observar la cantidad restante del lote seleccionado, puede registrar el consumo que se haga para las recetas, de esta forma teniendo un buen manejo de su inventario y stock.
-
-#### User Goal: Poder gestionar sus costos de una manera eficiente, para optimizar sus ganancias y rentabilidad.(Barista y dueño/administrador de cafetería)
-Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo al proceso en el que puede registrar todos sus costos, como de materia prima, mano de obra, costos de transporte, etc., de este modo calculará su margen potencial y el precio sugerido por kg.
-
-
-#### **Segmento #1: Dueños/Administradores de Cafeterías de Especialidad <br> (Funciones: Proveedores, Lotes de Café, Perfiles de Tuestes, Inventario, Gestión de Costos)**
-
-1. ¿Cómo describirías tu experiencia general con la aplicación web?
-
-2. ¿Hubo algo que no encontraste o que te confundió en cada una de esas secciones?
-
-3. De las tareas realizadas, ¿cuál te aportó mayor valor para la gestión de tu cafetería?
-
-4. ¿Qué paso o flujo te sorprendió positivamente (por su rapidez, claridad o utilidad)?
-
-5. En una escala del 1 al 5, ¿cómo calificarías la intuitividad de la navegación para acceder a Proveedores, Lotes, Perfiles, Inventario y Costos?
-
-6. ¿Viste algún elemento visual (íconos, botones, textos) que te distrajera o no resultara claro?
-
-7. Si pudieras añadir o mejorar una sola función en estas cinco áreas, ¿cuál sería y por qué?
-
-8. ¿Recomendarías CaféLab a otros dueños o administradores de cafeterías? ¿Qué ventaja destacarías para convencerlos?
-
-#### **Segmento #2: Baristas Profesionales <br> (Funciones: Sesiones de Cata, Librería de Defectos, Correlación Tueste-Sabor, Calibración de Molienda, Recetas)**
-
-1. ¿Cómo describirías tu experiencia general con la aplicación web?
-
-2. ¿Hubo algo que no encontraste o que te confundió al interactuar con esas secciones?
-
-3. De las cinco funciones, ¿cuál te pareció la que aporta más valor a tu trabajo diario como barista?
-
-4. ¿Qué parte del flujo te sorprendió positivamente (por ejemplo, la rapidez en cargar resultados de cata o la claridad de la librería)?
-
-5. En una escala del 1 al 5, ¿cómo calificarías la intuitividad de navegación en todas las funciones?
-
-6. ¿Observaste algún elemento visual que distraiga o no te quedara claro?
-
-7. Del 1 al 10, ¿qué tan útil te resultó la plataforma para optimizar tus procesos de preparación y cata?
-
-8. Si pudieras añadir o mejorar una sola función orientada a baristas, ¿cuál sería y por qué?
-
-9. ¿Recomendarías CaféLab a otros baristas profesionales? ¿Qué aspecto destacarías para convencerlos?
 
 ### 6.3.2. Registro de Entrevistas.
-#### Entrevistas a dueños o administradores de cafeterías de especialidad
 
-<table border="1">
-  <tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 1</td>
-    <td>Cesar Costa</td>
-  </tr>
-  <tr>
-    <td><img src="public\assets\images\interview-validation\Interview-owner1.png" alt="Foto de Cesar Costa"></td>
-    <td>Tuvo una experiencia muy positiva con Cafelab, destacando especialmente la funcionalidad de perfiles de tueste como el aspecto más valioso, ya que le permite ser más exacto en la preparación del café y prever estadísticas clave. Dio una calificación perfecta (5/5) en navegación e interacción, y afirmó que recomendaría la aplicación a otros dueños. Aprecia su capacidad para gestionar integralmente el negocio, no solo las ventas, y valora las gráficas comparativas de tueste, así como la sección de soporte. Señaló la utilidad de visualizar diferencias de temperatura y tiempo como un beneficio clave.
-
-</td>
-  </tr>
-  <tr>
-    <td>Timing:00:09-04:25</td>
-    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
-        Ver grabación</td>
-  </tr>
-</table>
-
-
-<table border="1">
-<tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 2</td>
-    <td>Raul Donayre</td>
-  </tr>
-  <tr>
-  <td><img src="public\assets\images\interview-validation\interview-owner2.png" alt="Foto de Raul Donayre"></td>
-    <td>Consideró que la aplicación es muy intuitiva, ágil y le permite obtener resultados rápidamente con menos esfuerzo operativo. Valoró especialmente el registro detallado de proveedores, granos y lotes, y la posibilidad de comparar perfiles de tueste. Describió la herramienta como un “paquete muy completo” y la recomendaría por su capacidad de centralizar información previamente dispersa.</td>
-  </tr>
-  <tr>
-    <td>Timing:04:25-08:57</td>
-    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
-        Ver grabación</td>
-  </tr>
-</table>
-
-
-<table border="1">
-  <tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 3</td>
-    <td>Ana Garcia</td>
-  </tr>
-  <tr>
-   <td><img src="public\assets\images\interview-validation\interview-owner3.png" alt="Foto de Ana Garcia"></td>
-    <td>Resaltó la fluidez de la experiencia y la coherencia visual de la interfaz, otorgando un 4/5 en intuitividad. Destacó la gestión de costos como la función de mayor valor, y se sorprendió positivamente por el manejo de inventarios y alertas automáticas. Aprecia la integración de todas las funciones en un solo sistema. Como puntos de mejora, sugirió aumentar la visibilidad de los íconos de edición, marcar claramente los campos obligatorios, diferenciar mejor los botones de editar y clonar, y añadir un registro de cambios para mayor control interno.
-</td>
-  </tr>
-  <tr>
-    <td>Timing:08:57-14:34</td>
-    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
-        Ver grabación</td>
-  </tr>
-</table>
-
-
-#### Entrevistas a baristas de cafeterías de especialidad
-<table border="1">
-<tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 4</td>
-    <td>Ranferi Valdivia</td>
-  </tr>
-  <tr>
-    <td><img src="public\assets\images\interview-validation\interview-barista1.png" alt="Foto de Ranferi Valdivia"></td>
-    <td>Tuvo una excelente primera impresión de la aplicación, describiéndola como ordenada y bien organizada. Valoró la disponibilidad del sistema en español e inglés, otorgando una calificación de 4/5 en intuitividad y recomendándola con firmeza a otros baristas. Resaltó la utilidad de contar con herramientas centralizadas para estandarizar procedimientos antes realizados manualmente y destacó las gráficas de tueste como recurso clave para optimizar temperaturas y tiempos. Aunque al inicio tuvo cierta dificultad para ubicar algunas secciones, encontró el sistema útil para la profesionalización del trabajo del barista.</td>
-  </tr>
-  <tr>
-    <td>Timing:17:41-22:37
-</td>
-    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
-        Ver grabación</td>
-  </tr>
-</table>
-
-<table border="1">
-<tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 5</td>
-    <td>Patricia Alvarez</td>
-  </tr>
-  <tr>
-    <td><img src="public\assets\images\interview-validation\interview-barista2.png" alt="Foto de Patricia Alvarez"></td>
-    <td> Describió Cafelab como una aplicación amigable, práctica y suficiente para registrar la información necesaria en su día a día. Le dio una calificación perfecta de 10/10 en optimización de procesos, reconociendo su utilidad directa para la eficiencia del trabajo operativo.</td>
-  </tr>
-  <tr>
-    <td>Timing:22:37-29:42
-</td>
-    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
-        Ver grabación</td>
-  </tr>
-</table>
-
-<table border="1">
-<tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 6</td>
-    <td>Aldo Zavala</td>
-  </tr>
-  <tr>
-    <td><img src="public\assets\images\interview-validation\interview-barista3.png" alt="Foto de Aldo Zavala"></td>
-    <td>Elogió la interfaz intuitiva, el diseño claro y la fluidez general del sistema. Calificó la navegación con un 4/5 y la optimización de procesos con un 9.5/10. Considera las sesiones de cata como la función más valiosa y destacó lo fácil que es gestionar recetas y centralizar notas, lo que le permite ahorrar tiempo en documentación. Propuso mejorar la biblioteca de defectos agregando filtros por intensidad y categoría, hacer más distinguibles los íconos de clonar, y añadió la sugerencia de integrar un temporizador en las sesiones de cata.</td>
-  </tr>
-  <tr>
-    <td>Timing:29:42-35:31</td>
-    <td>    <a href="https://upcedupe-my.sharepoint.com/personal/u202310210_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310210%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202510%2D1asi0729%2D4307%2Dcafemetrix%2Dvalidation%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf630f9d%2D2b60%2D4b48%2D9493%2Dfb339c946e34">
-        Ver grabación</td>
-  </tr>
-</table>
 
 ### 6.3.3. Evaluaciones según heurísticas.
 ## 6.4. Auditoría de Experiencias de Usuario.
