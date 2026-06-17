@@ -7097,6 +7097,8 @@ Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis. C
 
 # Anexos
 
+- Enlace para acceder a [resultados del formulario de validación](https://docs.google.com/spreadsheets/d/1Va8zjJxAe7c2eOcLDmY9A8dpXP7PXrrAbB7ZqRtNoPo/edit?usp=sharing)
+
 - Enlace para acceder al [video exposición de TB1](https://youtu.be/rgbAM8NypyM)
 
 - Enlace para acceder al [video exposición de TP1](https://youtu.be/ApVzihb3R_o)
