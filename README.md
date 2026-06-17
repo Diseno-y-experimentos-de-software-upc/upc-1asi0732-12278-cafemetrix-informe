@@ -5898,109 +5898,104 @@ Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo a
 
 ### 6.3.3. Evaluaciones según heurísticas.
 
-La evaluación heurística se realizó tomando como base los hallazgos recogidos durante las entrevistas de validación (6.3.2) con seis usuarios: tres baristas profesionales (Ranferi Valdivia, Patricia Álvarez y Aldo Zavala) y tres dueños o administradores de cafetería (Raúl Donayre, Rodrigo Torres y Ana García). A partir de sus observaciones se identificaron problemas de usabilidad, los cuales se clasificaron según las **10 heurísticas de Nielsen** y se calificaron con la siguiente escala de severidad:
+Aplicación para evaluar: Café Lab
 
-| Nivel | Descripción |
-|-------|-------------|
-| 1 | Problema superficial: ocurre raramente o se supera con facilidad. No requiere corrección inmediata. |
-| 2 | Problema menor: ocurre con cierta frecuencia o presenta dificultad moderada. Prioridad baja. |
-| 3 | Problema mayor: frecuente o difícil de superar sin ayuda. Prioridad alta de corrección. |
-| 4 | Problema muy grave: impide al usuario continuar con el flujo. Corrección imperativa antes del lanzamiento. |
+Tareas que evaluar:
 
-**Tabla resumen de hallazgos:**
+➢ Los baristas deberían poder registrar y editar sesiones de cata desde la plataforma de forma ágil y sin ambigüedad en las acciones disponibles.
 
-| # | Descripción del problema | Heurística violada | Severidad |
-|---|---|---|---|
-| 1 | Los íconos de edición son poco visibles y no se distinguen con claridad del fondo en determinadas pantallas | H8: Diseño estético y minimalista | 3 |
-| 2 | Los campos obligatorios no están marcados visualmente, lo que provoca errores al enviar formularios | H5: Prevención de errores | 3 |
-| 3 | Los botones de editar y clonar son visualmente similares y generan confusión durante el registro de catas y calibraciones | H4: Consistencia y estándares | 3 |
-| 4 | No existe un temporizador incorporado en las sesiones de cata, obligando al usuario a recurrir a herramientas externas | H7: Flexibilidad y eficiencia de uso | 2 |
-| 5 | La biblioteca de defectos de tueste no cuenta con filtros por categoría o intensidad, dificultando la búsqueda conforme crece el catálogo | H7: Flexibilidad y eficiencia de uso | 2 |
-| 6 | Algunos usuarios tuvieron dificultad inicial para ubicar secciones del sistema fuera del flujo principal | H6: Reconocimiento antes que recuerdo | 2 |
-| 7 | Cadenas de texto sin traducir en flujos secundarios y mensajes de error cuando el idioma seleccionado es inglés | H4: Consistencia y estándares | 2 |
-| 8 | No existe un registro de cambios o historial de modificaciones que informe al usuario sobre acciones realizadas previamente | H1: Visibilidad del estado del sistema | 2 |
+➢ Al completar un formulario de calibración o cata, los campos obligatorios deben estar claramente identificados para evitar envíos con errores.
 
----
+➢ La plataforma debe permitir al barista controlar los tiempos de evaluación sensorial sin necesidad de herramientas externas.
 
-**Descripción de problemas:**
+➢ La biblioteca de defectos de tueste debería contar con filtros que agilicen la búsqueda conforme crece el catálogo.
 
-**PROBLEMA #1:** Íconos de edición poco visibles
+➢ Los módulos secundarios del sistema deben ser fácilmente ubicables y la interfaz debe ser consistente en todos los idiomas configurados.
 
-- **Severidad:** 3
-- **Heurística violada:** H8 – Diseño estético y minimalista
-- **Usuarios que lo reportaron:** Ana García (Entrevistado 3), Aldo Zavala (Entrevistado 6)
-- **Descripción:** En pantallas como el listado de sesiones de cata y calibraciones, los íconos de acción de edición presentan bajo contraste con el fondo, lo que dificulta su identificación sin inspeccionarlos detenidamente. Esto ralentiza el flujo operativo, especialmente en contextos de barra donde el tiempo es crítico.
-- **Recomendación:** Aumentar el contraste y el tamaño del ícono de edición, o acompañarlo de una etiqueta textual en pantallas de listado. Aplicar jerarquía visual para diferenciar acciones primarias de secundarias.
+Tabla de resumen:
 
----
+Escala de Severidad
 
-**PROBLEMA #2:** Campos obligatorios sin indicación visual
+| 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|
+| No tan grave | Leve | Moderado | Grave | Muy grave |
 
-- **Severidad:** 3
-- **Heurística violada:** H5 – Prevención de errores
-- **Usuarios que lo reportaron:** Ana García (Entrevistado 3)
-- **Descripción:** Los formularios de registro de cata y calibración no distinguen visualmente entre campos obligatorios y opcionales. El usuario solo descubre cuáles son requeridos al intentar enviar el formulario y recibir el mensaje de error, lo que interrumpe el flujo y genera frustración.
-- **Recomendación:** Agregar asterisco (*) o indicador visual claro junto a cada campo obligatorio. Incluir un mensaje informativo al inicio del formulario indicando que los campos marcados con * son obligatorios.
+| #Orden | Problema | Escala de Severidad | Heurística / Principio violada(o) |
+|--------|----------|--------------------|------------------------------------|
+| #1 | Los íconos de edición son poco visibles y no se distinguen con claridad del fondo en determinadas pantallas. | 3 | Diseño estético y minimalista |
+| #2 | Los campos obligatorios no están marcados visualmente, lo que provoca errores al enviar formularios. | 3 | Prevención de errores |
+| #3 | Los botones de editar y clonar son visualmente similares y generan confusión durante el registro de catas y calibraciones. | 3 | Consistencia y estándares |
+| #4 | No existe un temporizador incorporado en las sesiones de cata, obligando al usuario a recurrir a herramientas externas. | 2 | Flexibilidad y eficiencia de uso |
+| #5 | La biblioteca de defectos de tueste no cuenta con filtros por categoría o intensidad, dificultando la búsqueda conforme crece el catálogo. | 2 | Flexibilidad y eficiencia de uso |
+| #6 | Algunos usuarios tuvieron dificultad inicial para ubicar secciones del sistema fuera del flujo principal. | 2 | Reconocimiento antes que recuerdo |
+| #7 | Cadenas de texto sin traducir en flujos secundarios y mensajes de error cuando el idioma seleccionado es inglés. | 2 | Consistencia y estándares |
+| #8 | No existe un registro de cambios o historial de modificaciones que informe al usuario sobre acciones realizadas previamente. | 2 | Visibilidad del estado del sistema |
 
----
+Heurísticas y Recomendaciones:
 
-**PROBLEMA #3:** Confusión entre acciones de editar y clonar
+Problema #1: Los íconos de edición son poco visibles en pantallas de listado.
 
-- **Severidad:** 3
-- **Heurística violada:** H4 – Consistencia y estándares
-- **Usuarios que lo reportaron:** Ana García (Entrevistado 3), Aldo Zavala (Entrevistado 6)
-- **Descripción:** Los íconos de editar y clonar son visualmente similares y no disponen de tooltip ni etiqueta que diferencie su función. Varios usuarios los confundieron durante las sesiones de validación, generando acciones no deseadas al intentar modificar registros existentes.
-- **Recomendación:** Utilizar íconos semánticamente diferenciados (lápiz para editar, doble-página para clonar), añadir tooltips descriptivos al pasar el cursor y, opcionalmente, un modal de confirmación para la acción de clonar.
+Heurística violada: Diseño estético y minimalista
 
----
+Descripción del problema: En pantallas como el listado de sesiones de cata y calibraciones, los íconos de acción de edición presentan bajo contraste con el fondo, lo que dificulta su identificación sin inspeccionarlos detenidamente. Esto ralentiza el flujo operativo, especialmente en contextos de barra donde el tiempo es crítico.
 
-**PROBLEMA #4:** Ausencia de temporizador en sesiones de cata
+Recomendación: Aumentar el contraste y el tamaño del ícono de edición, o acompañarlo de una etiqueta textual en pantallas de listado. Aplicar jerarquía visual para diferenciar acciones primarias de secundarias.
 
-- **Severidad:** 2
-- **Heurística violada:** H7 – Flexibilidad y eficiencia de uso
-- **Usuarios que lo reportaron:** Aldo Zavala (Entrevistado 6)
-- **Descripción:** Durante una sesión de cata profesional el barista necesita controlar intervalos de tiempo (reposo, extracción, evaluación sensorial). Al no contar con un temporizador integrado, el usuario debe alternar entre la aplicación y herramientas externas, interrumpiendo el flujo operativo.
-- **Recomendación:** Incorporar un cronómetro local en la vista de sesión de cata, sin necesidad de persistencia en backend ni notificaciones push. Un botón de inicio/pausa/reset visible en pantalla sería suficiente para cubrir esta necesidad.
+Problema #2: Los campos obligatorios no están marcados visualmente en los formularios.
 
----
+Heurística violada: Prevención de errores
 
-**PROBLEMA #5:** Sin filtros en la biblioteca de defectos de tueste
+Descripción del problema: Los formularios de registro de cata y calibración no distinguen visualmente entre campos obligatorios y opcionales. El usuario solo descubre cuáles son requeridos al intentar enviar el formulario y recibir el mensaje de error, lo que interrumpe el flujo y genera frustración.
 
-- **Severidad:** 2
-- **Heurística violada:** H7 – Flexibilidad y eficiencia de uso
-- **Usuarios que lo reportaron:** Aldo Zavala (Entrevistado 6)
-- **Descripción:** La biblioteca de defectos presenta todos los registros en lista plana sin opciones de filtrado. A medida que crece el catálogo, localizar un defecto específico por categoría o intensidad requiere desplazarse manualmente por toda la lista, lo que reduce la utilidad del módulo en laboratorio.
-- **Recomendación:** Añadir filtros por categoría e intensidad en la vista de lista de defectos (`defect-library-list`) y, opcionalmente, una barra de búsqueda por nombre para agilizar la consulta en contextos de laboratorio.
+Recomendación: Agregar asterisco (*) o indicador visual claro junto a cada campo obligatorio. Incluir un mensaje informativo al inicio del formulario indicando que los campos marcados con * son obligatorios.
 
----
+Problema #3: Los botones de editar y clonar son visualmente similares y generan confusión.
 
-**PROBLEMA #6:** Dificultad para ubicar secciones del sistema
+Heurística violada: Consistencia y estándares
 
-- **Severidad:** 2
-- **Heurística violada:** H6 – Reconocimiento antes que recuerdo
-- **Usuarios que lo reportaron:** Ranferi Valdivia (Entrevistado 4)
-- **Descripción:** En el primer contacto con el sistema, algunos usuarios reportaron dificultad para encontrar secciones específicas, especialmente aquellas anidadas bajo módulos secundarios o fuera del menú principal. Esto sugiere que la arquitectura de información no es completamente autoexplicativa.
-- **Recomendación:** Revisar el etiquetado de la navegación, añadir breadcrumbs en vistas secundarias y considerar un onboarding breve para nuevos usuarios que señale los módulos principales.
+Descripción del problema: Los íconos de editar y clonar son visualmente similares y no disponen de tooltip ni etiqueta que diferencie su función. Varios usuarios los confundieron durante las sesiones de validación, generando acciones no deseadas al intentar modificar registros existentes.
 
----
+Recomendación: Utilizar íconos semánticamente diferenciados (lápiz para editar, doble-página para clonar), añadir tooltips descriptivos al pasar el cursor y, opcionalmente, un modal de confirmación para la acción de clonar.
 
-**PROBLEMA #7:** Traducciones incompletas en flujos secundarios
+Problema #4: No existe un temporizador incorporado en las sesiones de cata.
 
-- **Severidad:** 2
-- **Heurística violada:** H4 – Consistencia y estándares
-- **Usuarios que lo reportaron:** Ranferi Valdivia (Entrevistado 4)
-- **Descripción:** Aunque la plataforma cuenta con soporte bilingüe (español/inglés) mediante `ngx-translate`, algunos mensajes de error y textos en flujos secundarios permanecen sin traducir, generando inconsistencia en la experiencia cuando se opera en inglés.
-- **Recomendación:** Auditar los archivos `es.json` y `en.json` para identificar claves faltantes, completar las traducciones en los flujos críticos (cata, tueste, costos, inventario) y establecer un proceso de revisión de i18n antes de cada release.
+Heurística violada: Flexibilidad y eficiencia de uso
 
----
+Descripción del problema: Durante una sesión de cata profesional el barista necesita controlar intervalos de tiempo (reposo, extracción, evaluación sensorial). Al no contar con un temporizador integrado, el usuario debe alternar entre la aplicación y herramientas externas, interrumpiendo el flujo operativo.
 
-**PROBLEMA #8:** Ausencia de historial de cambios o log de actividad
+Recomendación: Incorporar un cronómetro local en la vista de sesión de cata, sin necesidad de persistencia en backend ni notificaciones push. Un botón de inicio/pausa/reset visible en pantalla sería suficiente para cubrir esta necesidad.
 
-- **Severidad:** 2
-- **Heurística violada:** H1 – Visibilidad del estado del sistema
-- **Usuarios que lo reportaron:** Ana García (Entrevistado 3)
-- **Descripción:** El sistema no ofrece al usuario un registro visible de las modificaciones realizadas a los registros (quién editó, cuándo y qué cambió). Esto genera incertidumbre en entornos multiusuario donde varios baristas o administradores acceden al mismo sistema.
-- **Recomendación:** Implementar un historial de actividad a nivel de entidad (al menos para los módulos de mayor sensibilidad: catas, inventario y costos), visible desde la vista de detalle de cada registro.
+Problema #5: La biblioteca de defectos de tueste no cuenta con filtros de búsqueda.
+
+Heurística violada: Flexibilidad y eficiencia de uso
+
+Descripción del problema: La biblioteca de defectos presenta todos los registros en lista plana sin opciones de filtrado. A medida que crece el catálogo, localizar un defecto específico por categoría o intensidad requiere desplazarse manualmente por toda la lista, lo que reduce la utilidad del módulo en laboratorio.
+
+Recomendación: Añadir filtros por categoría e intensidad en la vista de lista de defectos y, opcionalmente, una barra de búsqueda por nombre para agilizar la consulta en contextos de laboratorio.
+
+Problema #6: Algunos usuarios tuvieron dificultad para ubicar secciones fuera del flujo principal.
+
+Heurística violada: Reconocimiento antes que recuerdo
+
+Descripción del problema: En el primer contacto con el sistema, algunos usuarios reportaron dificultad para encontrar secciones específicas, especialmente aquellas anidadas bajo módulos secundarios o fuera del menú principal. Esto sugiere que la arquitectura de información no es completamente autoexplicativa.
+
+Recomendación: Revisar el etiquetado de la navegación, añadir breadcrumbs en vistas secundarias y considerar un onboarding breve para nuevos usuarios que señale los módulos principales.
+
+Problema #7: Cadenas de texto sin traducir en flujos secundarios cuando se opera en inglés.
+
+Heurística violada: Consistencia y estándares
+
+Descripción del problema: Aunque la plataforma cuenta con soporte bilingüe (español/inglés), algunos mensajes de error y textos en flujos secundarios permanecen sin traducir, generando inconsistencia en la experiencia cuando se opera en inglés.
+
+Recomendación: Auditar los archivos de traducción para identificar claves faltantes, completar las traducciones en los flujos críticos (cata, tueste, costos, inventario) y establecer un proceso de revisión de i18n antes de cada release.
+
+Problema #8: No existe un historial de cambios que informe al usuario sobre acciones previas.
+
+Heurística violada: Visibilidad del estado del sistema
+
+Descripción del problema: El sistema no ofrece al usuario un registro visible de las modificaciones realizadas a los registros (quién editó, cuándo y qué cambió). Esto genera incertidumbre en entornos multiusuario donde varios baristas o administradores acceden al mismo sistema.
+
+Recomendación: Implementar un historial de actividad a nivel de entidad (al menos para los módulos de mayor sensibilidad: catas, inventario y costos), visible desde la vista de detalle de cada registro.
 
 ## 6.4. Auditoría de Experiencias de Usuario.
 ### 6.4.1. Auditoría realizada.
@@ -6725,23 +6720,74 @@ A continuación se documentan las tarjetas de experimento para cada pregunta del
 
 ### 8.2.1. Hypotheses.
 
-Las hipótesis de experimentación se derivan directamente de las Experiment Cards definidas en [8.1.5](#815-experiment-cards), articulando el resultado esperado de cada intervención técnica sobre la plataforma Café Lab. Cada hipótesis sigue la estructura: **condición de intervención → resultado esperado → métrica de validación**.
+Las hipótesis de experimentación se derivan de las Experiment Cards definidas en [8.1.5](#815-experiment-cards). Cada tabla articula la creencia del equipo, el resultado esperado medible y su hipótesis nula correspondiente.
 
-| ID | Experimento | Hipótesis |
-|----|-------------|-----------|
-| H-01 | Correlación automática tueste–cata | Se espera que la correlación automatizada reduzca las inconsistencias en la extracción en un 35% y las pérdidas de calidad percibida en un 25%, medido mediante tareas de replicación de perfil y encuestas post-sesión con baristas. |
-| H-02 | Dashboard consolidado por lote (inventario + costos) | Se espera que el 80% de los administradores entrevistados califiquen la vista consolidada con ≥ 4/5 en utilidad para la toma de decisiones económicas, y que el tiempo para consultar rentabilidad por lote se reduzca al menos un 40% frente al flujo actual fragmentado. |
-| H-03 | Vista unificada curvas de tueste + hexágono sensorial | Se espera que el 70% de los baristas completen la tarea de interpretar la relación tueste–sabor en menos de 3 minutos con la vista unificada, frente a un tiempo mayor con el flujo actual de módulos separados. |
-| H-04 | Mejoras UX en sesión de cata (campos obligatorios, editar/clonar, temporizador) | Se espera reducir los errores de envío de formulario en al menos un 25% y que la satisfacción en cata mejore ≥ 1 punto (escala 1–5), medido con prueba de usabilidad con al menos 3 baristas. |
-| H-05 | Marca y modelo del molino en calibraciones | Se espera que ≥ 70% de los baristas en prueba completen el campo de marca/modelo y que el tiempo para replicar una calibración previa se reduzca al menos un 25%. |
-| H-06 | Filtros por categoría e intensidad en biblioteca de defectos | Se espera que el tiempo para localizar un defecto registrado sea inferior a 30 segundos con filtros activos, frente a un tiempo mayor con búsqueda manual. |
-| H-07 | Motivo de consumo en movimientos de inventario | Se espera que ≥ 75% de los dueños en prueba califiquen la trazabilidad de consumo con ≥ 4/5 en utilidad para explicar mermas y rotación de stock. |
-| H-08 | Completar traducciones i18n en flujos críticos | Se espera que el 90% de las pantallas críticas queden sin cadenas sin traducir y que usuarios de habla no hispana reporten una mejora ≥ 1 punto (escala 1–5) en comprensión de la interfaz. |
-| H-09 | Persona de contacto y red social en ficha de proveedor | Se espera que ≥ 65% de los dueños en prueba utilicen al menos uno de los nuevos campos y califiquen la ficha de proveedor con ≥ 4/5 en utilidad para coordinación comercial. |
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata sin intervención manual del usuario? |
+| **Belief** | La fragmentación actual obliga al barista a reescribir datos que ya existen en el sistema, generando inconsistencias en la extracción. Al automatizar el enlace, el barista podrá replicar perfiles exitosos con mayor precisión y menor esfuerzo. |
+| **Hypothesis** | La correlación automatizada reducirá las inconsistencias en la extracción en un 35% y las pérdidas de calidad percibida en un 25%, medido mediante tareas de replicación de perfil y encuestas post-sesión. |
+| **Null Hypothesis** | La automatización del enlace entre lote, perfil de tueste y sesión de cata no reducirá de forma significativa las inconsistencias en la extracción ni las pérdidas de calidad percibida. |
+
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario y costos de producción? |
+| **Belief** | Los dueños valoran la gestión de costos como la función de mayor impacto, pero actualmente deben navegar entre módulos separados para obtener una visión económica completa, incrementando el riesgo de decisiones basadas en datos incompletos. |
+| **Hypothesis** | El 80% de los administradores calificarán la vista consolidada con ≥ 4/5 en utilidad para la toma de decisiones económicas, y el tiempo para consultar rentabilidad por lote se reducirá al menos un 40%. |
+| **Null Hypothesis** | La vista consolidada por lote no incrementará significativamente la utilidad percibida ni reducirá el tiempo de consulta de rentabilidad. |
+
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Facilitará la toma de decisiones en laboratorio una vista unificada que superponga curvas de tueste y el hexágono sensorial del mismo lote? |
+| **Belief** | Los baristas necesitan contrastar parámetros técnicos del tostado con el perfil sensorial en taza sin alternar entre pantallas. Los componentes ya existen por separado pero no están integrados, obligando al usuario a cambiar de módulo y perder el contexto del lote. |
+| **Hypothesis** | El 70% de los baristas completarán la tarea de interpretar la relación tueste–sabor en menos de 3 minutos con la vista unificada, frente a un tiempo mayor con el flujo actual de módulos separados. |
+| **Null Hypothesis** | La vista unificada no reducirá significativamente el tiempo para interpretar la relación tueste–sabor en comparación con el flujo actual. |
+
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local en la sesión de cata? |
+| **Belief** | Las entrevistas de validación documentaron fricciones concretas (íconos poco visibles, confusión editar/clonar, campos sin marcar, ausencia de timer) que interrumpen el flujo operativo en barra durante las sesiones de cata. |
+| **Hypothesis** | Los errores de envío del formulario de cata se reducirán en al menos un 25% y la satisfacción en cata mejorará ≥ 1 punto (escala 1–5), medido con prueba de usabilidad con al menos 3 baristas. |
+| **Null Hypothesis** | Las mejoras de UX en el formulario de cata no reducirán significativamente los errores de envío ni mejorarán la satisfacción del usuario. |
+
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Mejorará la consistencia entre turnos documentar marca y modelo del molino en el registro de calibraciones de molienda? |
+| **Belief** | El formulario actual registra categorías genéricas de equipo sin marca ni modelo real. Al clonar una calibración, el barista pierde el contexto del molino utilizado, dificultando la replicabilidad entre turnos. |
+| **Hypothesis** | ≥ 70% de los baristas completarán el campo de marca/modelo y el tiempo para replicar una calibración previa se reducirá al menos un 25%. |
+| **Null Hypothesis** | La adición del campo de marca/modelo del molino no incrementará de forma significativa la completitud de los registros de calibración ni reducirá el tiempo de replicación. |
+
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? |
+| **Belief** | Sin filtros, la consulta se vuelve lenta conforme crece el catálogo. Los baristas necesitan localizar defectos específicos rápidamente durante el análisis de tueste para tomar decisiones técnicas en tiempo real. |
+| **Hypothesis** | El tiempo para localizar un defecto registrado será inferior a 30 segundos con filtros activos, frente a un tiempo mayor con búsqueda manual. |
+| **Null Hypothesis** | La adición de filtros por categoría e intensidad no reducirá significativamente el tiempo de localización de defectos en comparación con la búsqueda manual. |
+
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Mejorará el control de merma registrar el motivo o tipo de consumo al registrar movimientos de inventario por lote? |
+| **Belief** | Los dueños necesitan explicar a dónde va el café consumido (barra, retail, muestreo), pero el sistema no captura esta información. La falta de trazabilidad del tipo de consumo impide analizar las mermas y optimizar el stock. |
+| **Hypothesis** | ≥ 75% de los dueños calificarán la trazabilidad de consumo con ≥ 4/5 en utilidad para explicar mermas y rotación de stock. |
+| **Null Hypothesis** | El registro del motivo de consumo en los movimientos de inventario no incrementará de forma significativa la utilidad percibida del módulo para el control de mermas. |
+
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Ampliará la adopción completar las traducciones pendientes en los flujos críticos de cata, tueste, costos e inventario? |
+| **Belief** | El soporte bilingüe es valorado por usuarios internacionales, pero las cadenas sin traducir en flujos secundarios y mensajes de error limitan la experiencia para hablantes de inglés y generan inconsistencia en la interfaz. |
+| **Hypothesis** | El 90% de las pantallas críticas quedarán sin cadenas sin traducir y usuarios de habla no hispana reportarán una mejora ≥ 1 punto (escala 1–5) en comprensión de la interfaz. |
+| **Null Hypothesis** | Completar las traducciones pendientes no mejorará de forma significativa la comprensión de la interfaz por parte de usuarios de habla no hispana. |
+
+| | Hypothesis |
+|----|------------|
+| **Question** | ¿Facilitará la coordinación con origen añadir persona de contacto y enlace web o red social al registro de proveedores? |
+| **Belief** | Los dueños registran información de contacto y redes sociales de sus proveedores en herramientas externas porque el formulario actual no captura estos datos, fragmentando la gestión comercial. |
+| **Hypothesis** | ≥ 65% de los dueños utilizarán al menos uno de los nuevos campos y calificarán la ficha de proveedor con ≥ 4/5 en utilidad para coordinación comercial. |
+| **Null Hypothesis** | Los campos adicionales de contacto y enlace web no incrementarán de forma significativa la utilidad percibida del módulo de proveedores para la coordinación comercial. |
 
 ### 8.2.2. Domain Business Metrics.
 
-Las métricas de negocio del dominio representan los indicadores cuantificables que permiten evaluar el impacto de los experimentos en los objetivos estratégicos de Café Lab. Se derivan de las brechas identificadas en el [As-Is Summary (8.1.1)](#811-as-is-summary), de las Claims documentadas en [8.1.2](#812-raw-material-assumptions-knowledge-gaps-ideas-claims) y de las hipótesis de [8.2.1](#821-hypotheses).
+Las métricas de negocio del dominio representan los indicadores cuantificables que permiten evaluar el impacto de los experimentos en los objetivos estratégicos de Café Lab. Se derivan de las brechas identificadas en el [As-Is Summary (8.1.1)](#811-as-is-summary) y de las Claims documentadas en [8.1.2](#812-raw-material-assumptions-knowledge-gaps-ideas-claims).
 
 | ID Métrica | Nombre | Definición | Segmento objetivo | Experimento(s) relacionado(s) |
 |------------|--------|------------|-------------------|-------------------------------|
@@ -6763,73 +6809,126 @@ Las métricas de negocio del dominio representan los indicadores cuantificables 
 
 ### 8.2.3. Measures.
 
-Para cada experimento se definen las medidas específicas que permiten operacionalizar las hipótesis de [8.2.1](#821-hypotheses) y recopilar las métricas de [8.2.2](#822-domain-business-metrics). Las medidas se organizan por tipo: **comportamental** (observación directa de la interacción), **de rendimiento** (tiempos y tasas) y **de percepción** (autoreporte del usuario mediante encuesta post-sesión).
+Para cada experimento se define la medida que permite operacionalizar la hipótesis correspondiente. Cada tabla incluye la pregunta de investigación y el plan de recolección de datos.
 
-| ID Exp. | Medida | Tipo | Instrumento | Momento de recolección |
-|---------|--------|------|-------------|------------------------|
-| H-01 | Número de intentos para replicar extracción usando el enlace automático tueste–cata | Rendimiento | Observación directa + conteo de intentos por moderador | Durante tarea |
-| H-01 | Puntuación sensorial de la cata replicada (escala SCA 0–100) | Comportamental | Formulario de cata digital en la plataforma | Al finalizar tarea |
-| H-01 | Satisfacción con el flujo de enlace automatizado (escala 1–5) | Percepción | Encuesta post-sesión de 3 ítems | Post-tarea |
-| H-02 | Tiempo para consultar rentabilidad por lote (minutos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea |
-| H-02 | Puntuación de utilidad del dashboard consolidado (escala 1–5) | Percepción | Encuesta post-sesión de 1 ítem Likert | Post-tarea |
-| H-03 | Tiempo para completar tarea de interpretación tueste–sabor (minutos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea |
-| H-03 | Tasa de completitud de tarea en < 3 minutos (%) | Rendimiento | Registro binario por moderador (completó/no completó) | Durante tarea |
-| H-04 | Número de errores de validación al enviar formulario de cata | Rendimiento | Observación directa + log de la plataforma | Durante tarea |
-| H-04 | Puntuación de satisfacción con el flujo de cata (escala 1–5) | Percepción | Encuesta post-sesión de escala Likert | Post-tarea |
-| H-05 | Porcentaje de registros de calibración con campo marca/modelo completado (%) | Comportamental | Revisión de registros creados durante la sesión | Post-tarea |
-| H-05 | Tiempo para replicar calibración previa con el nuevo campo (segundos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea |
-| H-06 | Tiempo para localizar un defecto con filtros activos (segundos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea |
-| H-06 | Tiempo para localizar el mismo defecto sin filtros –baseline– (segundos) | Rendimiento | Cronómetro externo operado por moderador | Durante tarea (baseline) |
-| H-07 | Porcentaje de movimientos de inventario con campo usageType completado (%) | Comportamental | Revisión de registros creados durante la sesión | Post-tarea |
-| H-07 | Puntuación de utilidad del campo de trazabilidad de consumo (escala 1–5) | Percepción | Encuesta post-sesión de 1 ítem Likert | Post-tarea |
-| H-08 | Porcentaje de pantallas críticas sin cadenas sin traducir (%) | Rendimiento | Auditoría manual de archivos `en.json` y `es.json` | Pre-release |
-| H-08 | Puntuación de comprensión de interfaz en inglés (escala 1–5) | Percepción | Encuesta post-sesión con usuarios de habla no hispana | Post-sesión |
-| H-09 | Porcentaje de fichas de proveedor con al menos un campo nuevo completado (%) | Comportamental | Revisión de registros creados durante la sesión | Post-tarea |
-| H-09 | Puntuación de utilidad de la ficha de proveedor ampliada (escala 1–5) | Percepción | Encuesta post-sesión de 1 ítem Likert | Post-tarea |
+| | |
+|----|------------|
+| **Question** | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata? |
+| **Measure** | Analizar el número de inconsistencias en la extracción al replicar un perfil usando el enlace automatizado comparado con el flujo manual, registrando errores observados y la puntuación sensorial de la cata resultante. Complementar con una encuesta post-sesión (escala 1–5) sobre la satisfacción con el flujo de enlace. |
+
+| | |
+|----|------------|
+| **Question** | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote? |
+| **Measure** | Cronometrar el tiempo que tarda un administrador en obtener la rentabilidad completa de un lote con la vista consolidada versus el flujo fragmentado actual. Registrar la puntuación de utilidad percibida mediante encuesta post-sesión (escala 1–5). |
+
+| | |
+|----|------------|
+| **Question** | ¿Facilitará la toma de decisiones en laboratorio una vista unificada que superponga curvas de tueste y el hexágono sensorial del mismo lote? |
+| **Measure** | Cronometrar el tiempo para completar la tarea de interpretación tueste–sabor con la vista unificada y con el flujo actual de módulos separados. Registrar si la tarea se completa en menos de 3 minutos (registro binario por moderador). |
+
+| | |
+|----|------------|
+| **Question** | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local? |
+| **Measure** | Contar el número de errores de validación al enviar el formulario de cata con y sin las mejoras de UX implementadas. Registrar la puntuación de satisfacción mediante encuesta post-sesión (escala 1–5). |
+
+| | |
+|----|------------|
+| **Question** | ¿Mejorará la consistencia entre turnos documentar marca y modelo del molino en el registro de calibraciones de molienda? |
+| **Measure** | Revisar los registros de calibración creados durante la sesión para calcular el porcentaje con el campo marca/modelo completado. Cronometrar el tiempo para replicar una calibración previa con el campo disponible. |
+
+| | |
+|----|------------|
+| **Question** | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? |
+| **Measure** | Cronometrar el tiempo para localizar un defecto específico con filtros activos y sin filtros (baseline). Comparar ambos tiempos para determinar la reducción obtenida con la nueva funcionalidad. |
+
+| | |
+|----|------------|
+| **Question** | ¿Mejorará el control de merma registrar el motivo o tipo de consumo al registrar movimientos de inventario por lote? |
+| **Measure** | Revisar los registros de inventario creados durante la sesión para calcular el porcentaje con el campo `usageType` completado. Registrar la puntuación de utilidad percibida mediante encuesta post-sesión (escala 1–5). |
+
+| | |
+|----|------------|
+| **Question** | ¿Ampliará la adopción completar las traducciones pendientes en los flujos críticos? |
+| **Measure** | Auditar los archivos `en.json` y `es.json` para calcular el porcentaje de claves traducidas en los módulos críticos. Registrar la puntuación de comprensión de la interfaz en inglés mediante encuesta con usuarios de habla no hispana (escala 1–5). |
+
+| | |
+|----|------------|
+| **Question** | ¿Facilitará la coordinación con origen añadir persona de contacto y enlace web o red social al registro de proveedores? |
+| **Measure** | Revisar los registros de proveedor creados durante la sesión para calcular el porcentaje con al menos un campo nuevo completado. Registrar la puntuación de utilidad percibida mediante encuesta post-sesión (escala 1–5). |
 
 ### 8.2.4. Conditions.
 
-Las condiciones de experimentación describen el contexto bajo el cual se recopilará cada medida definida en [8.2.3](#823-measures). Se especifican el perfil de participantes, el entorno tecnológico, el escenario de tarea asignado y la duración estimada de cada sesión.
+Para cada experimento se definen la condición experimental (con la mejora implementada) y la condición de control (flujo actual sin cambios), sobre el mismo entorno desplegado en Vercel y Railway.
 
-**Condiciones generales aplicables a todos los experimentos:**
-- **Entorno de aplicación:** Frontend desplegado en Vercel (`cafelab-frontend`), backend en Railway (`cafelab-backend`), base de datos MySQL en producción.
-- **Dispositivo:** PC o laptop con navegador web actualizado (Chrome o Firefox).
-- **Rol del moderador:** Un integrante del equipo observa, registra tiempos y anota errores sin intervenir ni orientar al participante.
-- **Consentimiento:** Los participantes son informados del propósito del experimento y aceptan el uso de sus observaciones de forma anónima para fines académicos.
+| | |
+|----|------------|
+| **Question** | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata? |
+| **Condición Experimental** | El barista accede a la nueva funcionalidad que permite seleccionar el lote y el perfil de tueste al crear o editar una sesión de cata, con precarga de datos asociados, y replica una extracción usando los parámetros precargados del perfil seleccionado. |
+| **Condición de Control** | El barista registra la sesión de cata de manera manual sin la selección de lote ni perfil de tueste integrada, tal como funciona el sistema actual. |
 
-| ID Exp. | Perfil de participantes | N mínimo | Escenario de tarea asignado | Duración estimada |
-|---------|-------------------------|----------|-----------------------------|-------------------|
-| H-01 | Baristas profesionales con uso previo de los módulos de tueste y cata en Café Lab | 3 | Crear una nueva sesión de cata seleccionando lote y perfil de tueste mediante el enlace automatizado; replicar extracción con los parámetros del perfil previo | 30 min |
-| H-02 | Dueños o administradores de cafetería que consultan costos e inventario en Café Lab | 3 | Acceder al dashboard y obtener la rentabilidad completa de un lote específico (stock, costos, margen) sin salir de la vista consolidada | 20 min |
-| H-03 | Baristas profesionales con experiencia en módulos de tueste y cata | 3 | Usando la nueva vista unificada, identificar qué parámetro del tueste correlaciona con una nota sensorial específica de la cata del mismo lote | 25 min |
-| H-04 | Baristas profesionales con uso frecuente del módulo de sesiones de cata | 3 | Registrar una nueva sesión de cata completa; clonar y editar un registro existente; utilizar el temporizador durante la evaluación sensorial | 25 min |
-| H-05 | Baristas profesionales con uso del módulo de calibración de molienda | 3 | Crear una nueva calibración incluyendo marca y modelo del molino; clonar una calibración existente y verificar que el contexto del equipo se preserva | 20 min |
-| H-06 | Baristas profesionales con uso de la biblioteca de defectos de tueste | 3 | Localizar un defecto específico por categoría e intensidad usando los filtros; repetir la búsqueda del mismo defecto sin filtros para obtener el tiempo baseline | 15 min |
-| H-07 | Dueños o administradores de cafetería con uso del módulo de inventario | 3 | Registrar tres movimientos de inventario especificando el motivo de consumo; revisar el historial de movimientos por lote | 20 min |
-| H-08 | Usuarios de habla no hispana que operen la plataforma en inglés | 2–3 | Completar los flujos principales (cata, tueste, inventario) con el idioma configurado en inglés; reportar cualquier cadena sin traducir encontrada | 30 min |
-| H-09 | Dueños o administradores de cafetería con uso del módulo de proveedores | 3 | Crear un nuevo registro de proveedor incluyendo persona de contacto y enlace web; editar un proveedor existente para añadir los nuevos campos | 15 min |
+| | |
+|----|------------|
+| **Question** | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario y costos de producción? |
+| **Condición Experimental** | El administrador consulta la rentabilidad de un lote usando la nueva vista consolidada del dashboard que muestra stock, movimientos de inventario e indicadores de costo en una sola pantalla. |
+| **Condición de Control** | El administrador consulta la rentabilidad del mismo lote navegando manualmente entre el dashboard, el módulo de inventario y el asistente de costos, como en el flujo actual. |
+
+| | |
+|----|------------|
+| **Question** | ¿Facilitará la toma de decisiones en laboratorio una vista unificada que superponga curvas de tueste y el hexágono sensorial del mismo lote? |
+| **Condición Experimental** | El barista utiliza la nueva vista unificada `/roast-flavor-correlation` que superpone las curvas de tueste y el hexágono sensorial del mismo lote para identificar correlaciones técnico-sensoriales. |
+| **Condición de Control** | El barista consulta la información del tueste y de la cata accediendo a los módulos por separado (`/compare-profile` y `/cupping-sessions`), sin la vista integrada. |
+
+| | |
+|----|------------|
+| **Question** | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local? |
+| **Condición Experimental** | El formulario de cata incluye asteriscos en campos obligatorios, iconografía diferenciada para editar y clonar con tooltips descriptivos, y un cronómetro local integrado en la pantalla de sesión. |
+| **Condición de Control** | El formulario de cata opera sin las mejoras de UX (sin indicadores de campos obligatorios, sin diferenciación visual de acciones, sin temporizador), tal como funciona actualmente. |
+
+| | |
+|----|------------|
+| **Question** | ¿Mejorará la consistencia entre turnos documentar marca y modelo del molino en el registro de calibraciones de molienda? |
+| **Condición Experimental** | El formulario de calibración incluye los campos opcionales `grinderBrand` y `grinderModel`, y el listado de calibraciones los muestra para facilitar la replicación entre turnos. |
+| **Condición de Control** | El formulario de calibración no incluye los campos de marca/modelo del molino, solo las categorías genéricas disponibles actualmente. |
+
+| | |
+|----|------------|
+| **Question** | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? |
+| **Condición Experimental** | La biblioteca de defectos de tueste incluye filtros por categoría e intensidad que el barista puede aplicar para acotar la búsqueda en el listado. |
+| **Condición de Control** | La biblioteca de defectos no tiene filtros; el barista debe desplazarse manualmente por la lista completa para localizar el defecto buscado. |
+
+| | |
+|----|------------|
+| **Question** | ¿Mejorará el control de merma registrar el motivo o tipo de consumo al registrar movimientos de inventario por lote? |
+| **Condición Experimental** | El formulario de movimientos de inventario incluye el campo `usageType` (barra, retail, muestreo, otro) que el usuario puede completar al registrar un movimiento de salida. |
+| **Condición de Control** | El formulario de inventario no incluye el campo de motivo de consumo; solo registra cantidad, fecha y producto, como en el flujo actual. |
+
+| | |
+|----|------------|
+| **Question** | ¿Ampliará la adopción completar las traducciones pendientes en los flujos críticos de cata, tueste, costos e inventario? |
+| **Condición Experimental** | La plataforma tiene las traducciones completadas en los flujos críticos (cata, tueste, costos, inventario) y mensajes de error para el idioma inglés, con las claves de `en.json` auditadas y completadas. |
+| **Condición de Control** | La plataforma opera con las traducciones parciales actuales, manteniendo las cadenas sin traducir en flujos secundarios y mensajes de error cuando se selecciona el idioma inglés. |
+
+| | |
+|----|------------|
+| **Question** | ¿Facilitará la coordinación con origen añadir persona de contacto y enlace web o red social al registro de proveedores? |
+| **Condición Experimental** | El modal de registro y edición de proveedores incluye los campos opcionales `contactPerson` y `websiteOrSocialUrl` que el dueño puede completar para ampliar la ficha comercial. |
+| **Condición de Control** | El formulario de proveedor opera sin los campos nuevos, capturando solo nombre, email, teléfono, ubicación y especialidades como actualmente. |
 
 ### 8.2.5. Scale Calculations and Decisions.
 
-Esta sección define los umbrales de decisión para cada experimento: el criterio de éxito (**PASA**) y el criterio de fracaso (**NO PASA**). Los umbrales se derivan directamente de las hipótesis de [8.2.1](#821-hypotheses). Dado el carácter exploratorio del ciclo y el tamaño del segmento objetivo disponible, se adopta una muestra mínima de **n ≥ 3 participantes por segmento**, coherente con el principio de que pequeñas muestras descubren la mayoría de los problemas de usabilidad en etapas tempranas (Nielsen, 2000). Para los experimentos de tipo auditoría técnica (H-08) el criterio se aplica directamente sobre los archivos de i18n sin necesidad de sesión con usuarios.
+Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis. Cada hipótesis se asocia con un indicador de éxito: se considera **Ideal** cuando la métrica alcanza plenamente el objetivo, **Aceptable** cuando está entre el mínimo y el ideal, y **Desfavorable** si queda por debajo del mínimo, requiriendo así una revisión. Un nivel **Excelente** se define como cuando el valor supera el ideal en un 25% o más, indicando un éxito significativo. Este enfoque permite tomar decisiones fundamentadas en métricas para validar o ajustar las hipótesis del proyecto.
 
-| ID Exp. | Métrica principal | Umbral PASA | Umbral NO PASA | N mínimo | Decisión si PASA | Decisión si NO PASA |
-|---------|-------------------|-------------|----------------|----------|------------------|---------------------|
-| H-01 | Reducción de inconsistencias en extracción | ≥ 35% de reducción respecto al flujo manual | < 20% de reducción | 3 baristas | Integrar el enlace automático tueste–cata en rama main; registrar como To-Be US en 8.3.1 | Rediseñar el flujo de enlace e iterar antes de promover a producción |
-| H-01 | Reducción de pérdidas de calidad percibida | ≥ 25% de mejora en puntuación sensorial de cata replicada | < 10% de mejora | 3 baristas | Confirmar hipótesis H-01 | Revisar modelo de datos y selector de lote/perfil en el formulario |
-| H-02 | Utilidad percibida del dashboard consolidado | ≥ 80% de administradores con puntaje ≥ 4/5 | < 60% con puntaje ≥ 4/5 | 3 dueños | Integrar la vista por lote en el dashboard de producción | Identificar métricas faltantes y rediseñar la vista consolidada |
-| H-02 | Reducción de tiempo para consultar rentabilidad | ≥ 40% de reducción respecto al flujo fragmentado | < 20% de reducción | 3 dueños | Confirmar hipótesis H-02 | Revisar la estructura de navegación del dashboard |
-| H-03 | Tasa de completitud de tarea en < 3 min | ≥ 70% de baristas completan la tarea en < 3 minutos | < 50% completan en < 3 minutos | 3 baristas | Activar la ruta `/roast-flavor-correlation` en producción | Ajustar el formato de visualización (superpuesto, dividido o sincronizado) |
-| H-04 | Reducción de errores de envío en cata | ≥ 25% de reducción de errores de validación | < 10% de reducción | 3 baristas | Integrar las mejoras UX en el módulo de cata en producción | Revisar iconografía y posición de campos obligatorios |
-| H-04 | Mejora de satisfacción en cata | Incremento ≥ 1 punto en escala 1–5 | Incremento < 0.5 puntos | 3 baristas | Confirmar hipótesis H-04 | Iterar el diseño del formulario de cata |
-| H-05 | Tasa de completitud del campo marca/modelo | ≥ 70% de registros de calibración con el campo completado | < 50% con el campo completado | 3 baristas | Incluir campo en el modelo de calibración en producción | Revisar posición, etiquetado y visibilidad del campo en el formulario |
-| H-05 | Reducción de tiempo para replicar calibración | ≥ 25% de reducción respecto al flujo actual | < 10% de reducción | 3 baristas | Confirmar hipótesis H-05 | Evaluar si el campo es percibido como relevante por los baristas |
-| H-06 | Tiempo de localización con filtros activos | < 30 segundos | > 60 segundos | 3 baristas | Implementar filtros en la biblioteca de defectos en producción | Revisar el diseño y el etiquetado de los filtros |
-| H-07 | Utilidad percibida de trazabilidad de consumo | ≥ 75% con puntaje ≥ 4/5 | < 50% con puntaje ≥ 4/5 | 3 dueños | Incluir el campo `usageType` en el módulo de inventario en producción | Validar si las opciones de tipo de consumo ofrecidas son relevantes para los dueños |
-| H-08 | Cobertura de i18n en flujos críticos | ≥ 90% de pantallas críticas sin cadenas sin traducir | < 75% | Auditoría técnica | Publicar actualización de i18n en producción | Completar la auditoría y reasignar claves faltantes en `en.json`/`es.json` |
-| H-08 | Comprensión de interfaz en inglés | Mejora ≥ 1 punto en escala 1–5 respecto a la versión anterior | Sin mejora o con regresión | 2–3 usuarios | Confirmar hipótesis H-08 | Revisar la terminología con el glosario del dominio (2.4) |
-| H-09 | Tasa de adopción de campos nuevos de proveedor | ≥ 65% de fichas usan al menos un campo nuevo | < 40% | 3 dueños | Incluir los campos en el módulo de proveedores en producción | Reevaluar la relevancia y el etiquetado de los campos nuevos |
-| H-09 | Utilidad percibida de la ficha de proveedor | ≥ 65% con puntaje ≥ 4/5 | < 40% con puntaje ≥ 4/5 | 3 dueños | Confirmar hipótesis H-09 | Ajustar el diseño del modal de registro y edición de proveedor |
+| Scale Calculation | Decision | Desfavorable | Aceptable | Ideal | Excelente |
+|---|---|:---:|:---:|:---:|:---:|
+| Creemos que al automatizar el enlace tueste–cata en Café Lab, las inconsistencias en la extracción se reducirán en un 35% y las pérdidas de calidad en un 25%. Sabremos que esto es cierto cuando observemos esa reducción en las tareas de replicación. | Implementar el enlace automático lote–tueste–cata en backend y frontend; registrar como To-Be US en 8.3.1. | | X | | |
+| Creemos que al integrar una vista consolidada por lote en el dashboard el 80% de los administradores la calificarán con ≥ 4/5 en utilidad y el tiempo de consulta bajará un 40%. Sabremos que esto es cierto cuando observemos esas métricas en las sesiones de prueba. | Implementar la vista por lote en el dashboard de producción combinando inventario y costos de producción. | | | X | |
+| Creemos que al habilitar la vista unificada `/roast-flavor-correlation` el 70% de los baristas completarán la tarea de interpretación en menos de 3 minutos. Sabremos que esto es cierto cuando observemos esa tasa en las sesiones de prueba. | Activar la ruta `/roast-flavor-correlation` en producción y habilitarla desde el dashboard. | | X | | |
+| Creemos que al mejorar la UX del formulario de cata (campos marcados, iconografía diferenciada, timer) los errores de envío bajarán un 25% y la satisfacción mejorará ≥ 1 punto. Sabremos que esto es cierto cuando lo validemos con al menos 3 baristas. | Integrar las mejoras UX en el módulo de sesiones de cata en producción. | | | X | |
+| Creemos que al añadir los campos `grinderBrand` y `grinderModel` en calibraciones el 70% de los baristas los completarán y el tiempo de replicación bajará un 25%. Sabremos que esto es cierto cuando lo observemos en los registros de la sesión de prueba. | Incluir los campos de marca/modelo del molino en el formulario de calibración en producción. | | X | | |
+| Creemos que al añadir filtros por categoría e intensidad en la biblioteca de defectos el tiempo de localización será inferior a 30 segundos con filtros activos. Sabremos que esto es cierto cuando lo cronometremos en las pruebas con baristas. | Implementar filtros por categoría e intensidad en la biblioteca de defectos de tueste en producción. | | | | X |
+| Creemos que al registrar el motivo de consumo en los movimientos de inventario el 75% de los dueños calificarán la trazabilidad con ≥ 4/5 en utilidad. Sabremos que esto es cierto cuando lo validemos en las encuestas post-sesión. | Incluir el campo `usageType` (barra, retail, muestreo, otro) en el módulo de movimientos de inventario en producción. | | | X | |
+| Creemos que al completar las traducciones en flujos críticos el 90% de las pantallas quedarán sin cadenas sin traducir y la comprensión mejorará ≥ 1 punto. Sabremos que esto es cierto al auditar los archivos i18n y encuestar a usuarios de habla no hispana. | Completar las claves faltantes en `en.json`/`es.json` para los módulos de cata, tueste, costos e inventario y publicar en producción. | | X | | |
+| Creemos que al añadir `contactPerson` y `websiteOrSocialUrl` en la ficha de proveedor el 65% de los dueños usarán al menos un campo y calificarán la ficha con ≥ 4/5. Sabremos que esto es cierto cuando lo revisemos en los registros y encuestas de la sesión. | Incluir los campos de persona de contacto y enlace web en el modal de registro y edición de proveedores en producción. | | X | | |
 ### 8.2.6. Methods Selection.
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
 ### 8.2.8. Web and Mobile Tracking Plan.
