@@ -6764,19 +6764,19 @@ A continuación se documentan las tarjetas de experimento para cada pregunta del
 | ----- | ----- |
 | Why | Los baristas y dueños dependen hoy de enlazar manualmente lotes, perfiles de tueste y catas entre módulos separados: el perfil de tueste referencia al lote (`coffeeLotId`), pero `CuppingSession` no persiste `coffeeLotId` ni `roastProfileId`. El formulario inicial respalda de forma indirecta esta brecha al valorar la correlación lote-tueste-cata con 4.11/5, aunque no midió todavía la automatización completa del enlace (US05, escenario 1). |
 | What | Añadir `coffeeLotId` y `roastProfileId` opcionales en backend y frontend; selector de lote y perfil de tueste al crear o editar una cata, con precarga de datos asociados. Validar con baristas en sesiones reales (Vercel + Railway). |
-| Hypothesis | Se espera que al menos el 70% de los baristas califique con ≥ 4/5 la utilidad del enlace automático lote-tueste-cata y que el tiempo para ubicar la información asociada a un mismo lote se reduzca al menos un 25% frente al flujo manual. |
+| Hypothesis | Se espera que al menos el 70% de los baristas califique con ≥ 4/5 la utilidad del enlace automático lote-tueste-cata y responda favorablemente que esta mejora reduce el esfuerzo manual de consulta y asociación entre lote, tueste y cata. |
 
 | Question | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario (`/api/v1/inventory-entries`) y costos de producción (`/api/v1/production-cost-records`)? |
 | ----- | ----- |
 | Why | Los administradores valoran la gestión de costos como función de mayor impacto (Cap. VI), pero deben navegar entre el dashboard matricial, el módulo de inventario y el asistente de costos de cuatro pasos para obtener una visión económica completa de un lote. La dispersión incrementa el riesgo de decisiones basadas en datos incompletos. |
 | What | Extender el dashboard existente (`owner-dashboard`, `complete-dashboard`) con una vista por lote que muestre stock disponible, movimientos de inventario e indicadores de `ProductionCostRecordsController` (costo por kilo, margen, precio sugerido). Probar con dueños de cafetería usando escenarios de lote real. |
-| Hypothesis | Se espera que la vista consolidada alcance una utilidad percibida promedio ≥ 4/5 y que el tiempo para consultar la rentabilidad de un lote se reduzca al menos un 30% frente al flujo actual fragmentado. |
+| Hypothesis | Se espera que la vista consolidada alcance una utilidad percibida promedio ≥ 4/5 y que al menos 70% de los participantes responda favorablemente que facilita la consulta económica del lote y reduce el esfuerzo manual de reunir información dispersa. |
 
 | Question | ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata que reúna curvas de tueste (`roast-profile-comparison`) y perfil sensorial (`cupping-sensory-radar`) del mismo lote? |
 | ----- | ----- |
 | Why | Existen componentes de comparación de curvas (`/compare-profile`) y visualización radar en catas, pero operan de forma aislada. La pantalla “Relación tueste-sabor” prevista en 6.3.1 no está integrada: su enlace en el dashboard está comentado y no existe ruta activa en `app.routes.ts`. El formulario inicial ofrece respaldo directo: utilidad de correlación lote-tueste-cata de 4.11/5, importancia de la vista curva + perfil sensorial de 4.05/5 y probabilidad de uso de 3.95/5. |
 | What | Implementar y registrar la ruta `/roast-flavor-correlation`, habilitar su acceso desde el dashboard y desarrollar una versión mínima de la pantalla que combine `roast-profile-comparison` con `cupping-sensory-radar` filtrado por el mismo lote. Evaluar con baristas qué formato (superpuesto, dividido o sincronizado) resulta más ágil en laboratorio. |
-| Hypothesis | Se espera que la vista mínima de correlación lote-tueste-cata alcance una importancia percibida promedio ≥ 4/5, una probabilidad de uso promedio ≥ 4/5 y que al menos 70% de los participantes complete la comparación en menos de 3 minutos. |
+| Hypothesis | Se espera que la vista mínima de correlación lote-tueste-cata alcance una importancia percibida promedio ≥ 4/5, una probabilidad de uso promedio ≥ 4/5 y al menos 70% de respuestas favorables sobre su aporte para comparar lote, tueste y cata en una sola vista. |
 
 | Question | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local en la sesión de cata? |
 | ----- | ----- |
@@ -6794,7 +6794,7 @@ A continuación se documentan las tarjetas de experimento para cada pregunta del
 | ----- | ----- |
 | Why | Aldo Zavala sugirió en validación (Cap. VI) filtros por intensidad y categoría en la biblioteca de defectos. Sin ellos, el catálogo crece y la consulta en laboratorio se vuelve lenta (US04). |
 | What | Añadir campos `category` e `intensity` al registrar un defecto y filtros correspondientes en `defect-library-list`. |
-| Hypothesis | Se espera que al menos 70% de los participantes localice el defecto buscado en ≤ 30 segundos con filtros activos y que la utilidad percibida de los filtros alcance un promedio ≥ 4/5. |
+| Hypothesis | Se espera que al menos 70% de los participantes responda favorablemente que los filtros facilitan la localización de defectos y que la utilidad percibida de los filtros alcance un promedio ≥ 4/5. |
 
 | Question | ¿Mejorará el control de merma registrar el motivo o tipo de consumo al registrar movimientos de inventario por lote? |
 | ----- | ----- |
@@ -6818,31 +6818,31 @@ A continuación se documentan las tarjetas de experimento para cada pregunta del
 
 ### 8.2.1. Hypotheses.
 
-Las hipótesis de experimentación se derivan de las Experiment Cards definidas en [8.1.5](#815-experiment-cards). Para mantener la concordancia con el registro del formulario de validación en [6.3.2](#632-registro-de-entrevistas), cada tabla explicita si la evidencia base proviene principalmente del formulario inicial o de entrevistas, heurísticas y supuestos previos del dominio.
+Las hipótesis de experimentación se derivan de las Experiment Cards definidas en [8.1.5](#815-experiment-cards). Para mantener la concordancia con el registro del formulario de validación en [6.3.2](#632-registro-de-entrevistas), cada tabla explicita si la evidencia base proviene principalmente del formulario inicial o de entrevistas, heurísticas y supuestos previos del dominio. En esta lógica, el **formulario inicial** sirve para **priorizar** mejoras, mientras que el **formulario To-Be** servirá para **comprobar** la aceptación de las mejoras implementadas con métricas viables para esta entrega.
 
 | | Hypothesis |
 |----|------------|
 | **Question** | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata sin intervención manual del usuario? |
 | **Evidence Source** | Predominantemente entrevistas previas, needfinding y Lean UX; el formulario inicial aporta soporte indirecto mediante la utilidad de la correlación lote-tueste-cata (4.11/5), pero no evalúa todavía la automatización completa. |
-| **Belief** | La fragmentación actual obliga al barista a reescribir datos que ya existen en el sistema. Si el enlace se automatiza, el barista debería consultar y reutilizar la información asociada a un lote con menor esfuerzo y mayor utilidad percibida. |
-| **Hypothesis** | Al menos 70% de los baristas calificará con ≥ 4/5 la utilidad del enlace automático lote-tueste-cata y el tiempo para ubicar la información asociada a un mismo lote se reducirá al menos un 25% frente al flujo manual. |
-| **Null Hypothesis** | La automatización del enlace entre lote, perfil de tueste y sesión de cata no incrementará significativamente la utilidad percibida ni reducirá de forma significativa el tiempo de consulta de la información asociada al lote. |
+| **Belief** | La fragmentación actual obliga al barista a reescribir datos que ya existen en el sistema. Si el enlace se automatiza, el barista debería percibir menor esfuerzo manual y mayor utilidad al consultar y reutilizar la información asociada a un lote. |
+| **Hypothesis** | Al menos 70% de los baristas calificará con ≥ 4/5 la utilidad del enlace automático lote-tueste-cata y responderá favorablemente que esta mejora reduce el esfuerzo manual de consulta y asociación entre lote, tueste y cata. |
+| **Null Hypothesis** | La automatización del enlace entre lote, perfil de tueste y sesión de cata no incrementará significativamente la utilidad percibida ni la percepción de reducción de esfuerzo manual. |
 
 | | Hypothesis |
 |----|------------|
 | **Question** | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario y costos de producción? |
 | **Evidence Source** | Mixta: el formulario inicial respalda la consulta integrada de origen, stock y costos con 4.32/5 de importancia y 57.9% prioriza costo por kilo; se complementa con entrevistas previas y revisión del backlog US10-US13. |
 | **Belief** | Los dueños valoran la gestión de costos, pero actualmente deben navegar entre módulos separados para obtener una visión económica completa, incrementando el riesgo de decisiones basadas en datos incompletos. |
-| **Hypothesis** | La vista consolidada por lote alcanzará una utilidad percibida promedio ≥ 4/5 y reducirá al menos un 30% el tiempo para consultar la rentabilidad de un lote frente al flujo actual fragmentado. |
-| **Null Hypothesis** | La vista consolidada por lote no incrementará significativamente la utilidad percibida ni reducirá de forma significativa el tiempo de consulta de rentabilidad. |
+| **Hypothesis** | La vista consolidada por lote alcanzará una utilidad percibida promedio ≥ 4/5 y al menos 70% de los participantes responderá favorablemente que facilita la consulta económica del lote y reduce el esfuerzo manual de reunir información dispersa. |
+| **Null Hypothesis** | La vista consolidada por lote no incrementará significativamente la utilidad percibida ni la percepción de reducción de esfuerzo manual en la consulta de rentabilidad. |
 
 | | Hypothesis |
 |----|------------|
 | **Question** | ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata que reúna curvas de tueste y perfil sensorial del mismo lote? |
 | **Evidence Source** | Sustentada directamente por el formulario inicial: utilidad de correlación lote-tueste-cata de 4.11/5, importancia de la vista curva + perfil sensorial de 4.05/5 y probabilidad de uso de 3.95/5. |
-| **Belief** | Los baristas necesitan contrastar parámetros técnicos del tostado con el perfil sensorial en taza sin alternar entre pantallas. Una vista mínima de correlación debería hacer más útil y más probable este análisis en contexto de laboratorio. |
-| **Hypothesis** | La vista mínima de correlación lote-tueste-cata alcanzará una importancia percibida promedio ≥ 4/5, una probabilidad de uso promedio ≥ 4/5 y permitirá que al menos 70% de los participantes complete la comparación en menos de 3 minutos. |
-| **Null Hypothesis** | La vista mínima de correlación no incrementará significativamente la importancia percibida ni la probabilidad de uso, ni reducirá de forma significativa el tiempo de comparación frente al flujo actual. |
+| **Belief** | Los baristas necesitan contrastar parámetros técnicos del tostado con el perfil sensorial en taza sin alternar entre pantallas. Una vista mínima de correlación debería hacer más útil, más importante y más probable este análisis en contexto de laboratorio. |
+| **Hypothesis** | La vista mínima de correlación lote-tueste-cata alcanzará una importancia percibida promedio ≥ 4/5, una probabilidad de uso promedio ≥ 4/5 y al menos 70% de respuestas favorables sobre su aporte para comparar lote, tueste y cata en una sola vista. |
+| **Null Hypothesis** | La vista mínima de correlación no incrementará significativamente la importancia percibida, la probabilidad de uso ni el porcentaje de respuestas favorables sobre su utilidad comparativa. |
 
 | | Hypothesis |
 |----|------------|
@@ -6864,9 +6864,9 @@ Las hipótesis de experimentación se derivan de las Experiment Cards definidas 
 |----|------------|
 | **Question** | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? |
 | **Evidence Source** | Principalmente entrevistas previas y evaluación heurística 6.3.3; el formulario inicial no midió esta mejora de manera directa. |
-| **Belief** | Sin filtros, la consulta se vuelve lenta conforme crece el catálogo. Los baristas necesitan localizar defectos específicos rápidamente durante el análisis de tueste para tomar decisiones técnicas en tiempo real. |
-| **Hypothesis** | Al menos 70% de los participantes localizará el defecto buscado en ≤ 30 segundos con filtros activos y calificará la utilidad de los filtros con un promedio ≥ 4/5. |
-| **Null Hypothesis** | La adición de filtros por categoría e intensidad no reducirá significativamente el tiempo de localización de defectos ni incrementará la utilidad percibida de la biblioteca. |
+| **Belief** | Sin filtros, la consulta se vuelve más demandante conforme crece el catálogo. Los baristas necesitan una biblioteca que haga más simple y útil la localización de defectos específicos durante el análisis de tueste. |
+| **Hypothesis** | Al menos 70% de los participantes responderá favorablemente que los filtros facilitan la localización de defectos y la utilidad percibida de los filtros alcanzará un promedio ≥ 4/5. |
+| **Null Hypothesis** | La adición de filtros por categoría e intensidad no incrementará significativamente la utilidad percibida de la biblioteca ni el porcentaje de respuestas favorables sobre facilidad de localización. |
 
 | | Hypothesis |
 |----|------------|
@@ -6894,22 +6894,22 @@ Las hipótesis de experimentación se derivan de las Experiment Cards definidas 
 
 ### 8.2.2. Domain Business Metrics.
 
-Las métricas de negocio del dominio representan los indicadores cuantificables que permiten evaluar el impacto de los experimentos en los objetivos estratégicos de Café Lab. Se derivan de las brechas identificadas en el [As-Is Summary (8.1.1)](#811-as-is-summary) y de las Claims documentadas en [8.1.2](#812-raw-material-assumptions-knowledge-gaps-ideas-claims).
+Las métricas de negocio del dominio representan los indicadores cuantificables que permiten evaluar el impacto de los experimentos en los objetivos estratégicos de Café Lab. Se derivan de las brechas identificadas en el [As-Is Summary (8.1.1)](#811-as-is-summary) y de las Claims documentadas en [8.1.2](#812-raw-material-assumptions-knowledge-gaps-ideas-claims). El formulario inicial orienta qué mejoras merecen priorización; el formulario **To-Be** será el instrumento principal para comprobarlas mediante utilidad, importancia, probabilidad de uso, respuestas favorables y tasas de uso de campos nuevos.
 
 | ID Métrica | Nombre | Definición | Segmento objetivo | Experimento(s) relacionado(s) |
 |------------|--------|------------|-------------------|-------------------------------|
 | M-01 | Utilidad percibida del enlace lote-tueste-cata | Calificación promedio (escala 1–5) sobre la utilidad de enlazar automáticamente lote, perfil de tueste y cata | Baristas | H-01 |
-| M-02 | Tiempo de consulta de información asociada por lote | Tiempo en minutos requerido para ubicar la información de tueste y cata asociada a un mismo lote | Baristas | H-01, H-03 |
+| M-02 | Percepción de reducción de esfuerzo manual en trazabilidad | Porcentaje de participantes que responde favorablemente que enlazar lote, perfil de tueste y cata reduce el esfuerzo manual de consulta y asociación | Baristas | H-01 |
 | M-03 | Utilidad percibida del dashboard económico por lote | Calificación promedio (escala 1–5) sobre la utilidad de la vista consolidada de rentabilidad | Dueños/Admins | H-02 |
-| M-04 | Tiempo de consulta de rentabilidad por lote | Tiempo en minutos requerido para obtener la visión económica completa de un lote (stock + costos + margen) | Dueños/Admins | H-02 |
+| M-04 | Percepción de reducción de esfuerzo manual en consulta económica | Porcentaje de participantes que responde favorablemente que la vista consolidada reduce el esfuerzo manual de reunir datos de inventario y costos | Dueños/Admins | H-02 |
 | M-05 | Importancia percibida de la vista mínima de correlación | Calificación promedio (escala 1–5) sobre la importancia de una vista mínima que reúna lote, curva de tueste y perfil sensorial | Baristas | H-03 |
 | M-06 | Probabilidad de uso de la vista de correlación | Calificación promedio (escala 1–5) sobre la probabilidad de uso de la vista mínima de correlación en el trabajo real | Baristas | H-03 |
-| M-07 | Tiempo de comparación lote-tueste-cata | Tiempo en minutos para completar una tarea de comparación técnica entre tueste y cata del mismo lote | Baristas | H-03 |
+| M-07 | Respuestas favorables sobre utilidad comparativa de la vista de correlación | Porcentaje de participantes que responde favorablemente que la vista mínima ayuda a comparar lote, tueste y cata en una sola consulta | Baristas | H-03 |
 | M-08 | Tasa de completitud exitosa del formulario de cata | Porcentaje de participantes que completan el registro de cata sin errores de validación en el primer intento | Baristas | H-04 |
 | M-09 | Utilidad percibida de mejoras UX en cata | Calificación promedio (escala 1–5) del flujo de cata tras marcar campos obligatorios, diferenciar editar/clonar e incorporar temporizador | Baristas | H-04 |
 | M-10 | Tasa de uso de campos marca/modelo de molino | Porcentaje de registros de calibración que incluyen marca y modelo del molino | Baristas | H-05 |
 | M-11 | Utilidad percibida del contexto de molino | Calificación promedio (escala 1–5) sobre la utilidad de documentar marca y modelo para replicar calibraciones | Baristas | H-05 |
-| M-12 | Tiempo de localización de defectos | Segundos necesarios para localizar un defecto específico en la biblioteca con filtros activos | Baristas | H-06 |
+| M-12 | Respuestas favorables sobre facilidad de localización de defectos | Porcentaje de participantes que responde favorablemente que los filtros facilitan la localización de defectos específicos | Baristas | H-06 |
 | M-13 | Utilidad percibida de filtros de defectos | Calificación promedio (escala 1–5) sobre la utilidad de filtrar por categoría e intensidad | Baristas | H-06 |
 | M-14 | Tasa de uso del campo motivo de consumo | Porcentaje de movimientos de inventario registrados con motivo de consumo especificado | Dueños/Admins | H-07 |
 | M-15 | Utilidad percibida de trazabilidad de consumo | Calificación promedio (escala 1–5) sobre la utilidad de registrar el motivo de consumo para explicar mermas | Dueños/Admins | H-07 |
@@ -6921,27 +6921,27 @@ Las métricas de negocio del dominio representan los indicadores cuantificables 
 
 ### 8.2.3. Measures.
 
-Para cada experimento se define la medida que permite operacionalizar la hipótesis correspondiente. Cada tabla incluye la pregunta de investigación y el plan de recolección de datos.
+Para cada experimento se define la medida que permite operacionalizar la hipótesis correspondiente. Cada tabla incluye la pregunta de investigación y el plan de recolección de datos. En coherencia con el objetivo de esta entrega, el **formulario To-Be** será la fuente principal de comprobación, mientras que cualquier medición de tiempo quedará solo como insumo complementario de pruebas internas y no como criterio principal de validación.
 
 | | |
 |----|------------|
 | **Question** | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata? |
-| **Measure** | Cronometrar el tiempo requerido para ubicar la información de tueste y cata asociada a un mismo lote usando el enlace automatizado versus el flujo manual. Complementar con una encuesta post-sesión (escala 1–5) sobre la utilidad percibida del enlace lote-tueste-cata. |
+| **Measure** | Registrar en el formulario To-Be la utilidad percibida del enlace lote-tueste-cata (escala 1–5) y el porcentaje de respuestas favorables ante enunciados sobre reducción de esfuerzo manual al asociar lote, tueste y cata. Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
 | **Question** | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote? |
-| **Measure** | Cronometrar el tiempo que tarda un administrador en obtener la rentabilidad completa de un lote con la vista consolidada versus el flujo fragmentado actual. Registrar la utilidad percibida mediante encuesta post-sesión (escala 1–5). |
+| **Measure** | Registrar en el formulario To-Be la utilidad percibida de la vista consolidada por lote (escala 1–5) y el porcentaje de respuestas favorables sobre reducción de esfuerzo manual al reunir información económica del lote. Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
 | **Question** | ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata? |
-| **Measure** | Registrar la importancia percibida y la probabilidad de uso de la vista mínima de correlación mediante encuesta (escala 1–5). Cronometrar además el tiempo para completar una tarea de comparación entre lote, curva de tueste y perfil sensorial, registrando si se resuelve en menos de 3 minutos. |
+| **Measure** | Registrar en el formulario To-Be la importancia percibida y la probabilidad de uso de la vista mínima de correlación (escala 1–5), además del porcentaje de respuestas favorables sobre su utilidad para comparar lote, curva de tueste y perfil sensorial en una sola vista. Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
 | **Question** | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local? |
-| **Measure** | Registrar el porcentaje de participantes que completa el formulario de cata sin errores de validación en el primer intento y cronometrar el tiempo total de registro. Complementar con una encuesta de utilidad percibida del flujo mejorado (escala 1–5). |
+| **Measure** | Registrar el porcentaje de participantes que completa el formulario de cata sin errores de validación en el primer intento y la utilidad percibida del flujo mejorado mediante formulario To-Be (escala 1–5). Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
@@ -6951,7 +6951,7 @@ Para cada experimento se define la medida que permite operacionalizar la hipóte
 | | |
 |----|------------|
 | **Question** | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? |
-| **Measure** | Cronometrar el tiempo para localizar un defecto específico con filtros activos y comparar el resultado con el flujo actual sin filtros. Complementar con una encuesta breve de utilidad percibida de los filtros (escala 1–5). |
+| **Measure** | Registrar en el formulario To-Be la utilidad percibida de los filtros (escala 1–5) y el porcentaje de respuestas favorables sobre facilidad para localizar defectos específicos. Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
@@ -6970,7 +6970,7 @@ Para cada experimento se define la medida que permite operacionalizar la hipóte
 
 ### 8.2.4. Conditions.
 
-Para cada experimento se definen la condición experimental (con la mejora implementada) y la condición de control (flujo actual sin cambios), sobre el mismo entorno desplegado en Vercel y Railway.
+Para cada experimento se definen la condición experimental (con la mejora implementada) y la condición de control (flujo actual sin cambios), sobre el mismo entorno desplegado en Vercel y Railway. La comparación entre ambas condiciones se interpretará principalmente con el **formulario To-Be**, mientras que el formulario inicial permanecerá como referencia de priorización y no como evidencia de validación final.
 
 | | |
 |----|------------|
@@ -7028,16 +7028,16 @@ Para cada experimento se definen la condición experimental (con la mejora imple
 
 ### 8.2.5. Scale Calculations and Decisions.
 
-Esta sección define **criterios de decisión esperados**, no resultados observados. Cada hipótesis se interpretará posteriormente según cuatro rangos: **Desfavorable** (no alcanza el umbral mínimo y exige reformulación), **Aceptable** (muestra señal positiva pero requiere iteración adicional), **Ideal** (justifica priorización como mejora To-Be) y **Excelente** (supera claramente el objetivo esperado). De esta manera, la decisión sobre qué mejoras pasarán a [8.3 Experimentation](#83-experimentation) se tomará después de ejecutar el experimento, no antes.
+Esta sección define **criterios de decisión esperados**, no resultados observados. Cada hipótesis se interpretará posteriormente según cuatro rangos: **Desfavorable** (no alcanza el umbral mínimo y exige reformulación), **Aceptable** (muestra señal positiva pero requiere iteración adicional), **Ideal** (justifica priorización como mejora To-Be) y **Excelente** (supera claramente el objetivo esperado). De esta manera, la decisión sobre qué mejoras pasarán a [8.3 Experimentation](#83-experimentation) se tomará después de ejecutar el experimento, no antes. Para esta entrega, los criterios principales se basarán en resultados del **formulario To-Be**; cualquier referencia a tiempo de tarea se considerará solo complementaria y opcional.
 
 | Scale Calculation | Decision | Desfavorable | Aceptable | Ideal | Excelente |
 |---|---|---|---|---|---|
-| Utilidad percibida del enlace automático lote-tueste-cata y reducción del tiempo de consulta por lote. | Si alcanza **Ideal** o **Excelente**, la hipótesis se mantiene como candidata a una futura historia To-Be de trazabilidad; si queda **Aceptable**, se recomienda iterar primero con prototipo; si es **Desfavorable**, se replantea el problema antes de tocar backend. | Utilidad < 3.8/5 o reducción de tiempo < 10% | Utilidad entre 3.8 y 4.19, y reducción entre 10% y 24% | Utilidad ≥ 4.2 y reducción ≥ 25% | Utilidad ≥ 4.5 y reducción ≥ 35% |
-| Utilidad percibida de la vista económica por lote y reducción del tiempo de consulta de rentabilidad. | Si alcanza **Ideal** o **Excelente**, la vista consolidada puede pasar a refinamiento funcional; si queda **Aceptable**, se conserva como hipótesis de apoyo; si es **Desfavorable**, se reevalúa su prioridad frente a otras mejoras. | Utilidad < 3.8/5 o reducción de tiempo < 15% | Utilidad entre 3.8 y 4.19, y reducción entre 15% y 29% | Utilidad ≥ 4.2 y reducción ≥ 30% | Utilidad ≥ 4.5 y reducción ≥ 40% |
-| Importancia percibida, probabilidad de uso y tiempo de comparación de la vista mínima de correlación lote-tueste-cata. | Si alcanza **Ideal** o **Excelente**, la vista mínima se prioriza como candidata directa a To-Be; si queda **Aceptable**, se prototipa una versión aún más acotada; si es **Desfavorable**, se posterga o redefine el formato de visualización. | Importancia < 3.8/5, probabilidad de uso < 3.7/5 o menos de 60% completa la tarea en < 3 min | Importancia entre 3.8 y 4.19, probabilidad entre 3.7 y 3.99, y 60%-69% completa la tarea en < 3 min | Importancia ≥ 4.2, probabilidad ≥ 4.0 y al menos 70% completa la tarea en < 3 min | Importancia ≥ 4.5, probabilidad ≥ 4.3 y al menos 80% completa la tarea en < 3 min |
+| Utilidad percibida del enlace automático lote-tueste-cata y percepción de reducción de esfuerzo manual. | Si alcanza **Ideal** o **Excelente**, la hipótesis se mantiene como candidata a una futura historia To-Be de trazabilidad; si queda **Aceptable**, se recomienda iterar primero con prototipo; si es **Desfavorable**, se replantea el problema antes de tocar backend. | Utilidad < 3.8/5 o respuestas favorables < 60% | Utilidad entre 3.8 y 3.99, y respuestas favorables entre 60% y 69% | Utilidad ≥ 4.0 y respuestas favorables ≥ 70% | Utilidad ≥ 4.5 y respuestas favorables ≥ 85% |
+| Utilidad percibida de la vista económica por lote y percepción de reducción de esfuerzo manual. | Si alcanza **Ideal** o **Excelente**, la vista consolidada puede pasar a refinamiento funcional; si queda **Aceptable**, se conserva como hipótesis de apoyo; si es **Desfavorable**, se reevalúa su prioridad frente a otras mejoras. | Utilidad < 3.8/5 o respuestas favorables < 60% | Utilidad entre 3.8 y 3.99, y respuestas favorables entre 60% y 69% | Utilidad ≥ 4.0 y respuestas favorables ≥ 70% | Utilidad ≥ 4.5 y respuestas favorables ≥ 85% |
+| Importancia percibida, probabilidad de uso y respuestas favorables sobre utilidad comparativa de la vista mínima de correlación lote-tueste-cata. | Si alcanza **Ideal** o **Excelente**, la vista mínima se prioriza como candidata directa a To-Be; si queda **Aceptable**, se prototipa una versión aún más acotada; si es **Desfavorable**, se posterga o redefine el formato de visualización. | Importancia < 3.8/5, probabilidad de uso < 3.8/5 o respuestas favorables < 60% | Importancia entre 3.8 y 3.99, probabilidad entre 3.8 y 3.99, y respuestas favorables entre 60% y 69% | Importancia ≥ 4.0, probabilidad de uso ≥ 4.0 y respuestas favorables ≥ 70% | Importancia ≥ 4.5, probabilidad de uso ≥ 4.5 y respuestas favorables ≥ 85% |
 | Completitud exitosa y utilidad percibida del flujo de cata con mejoras UX. | Si alcanza **Ideal** o **Excelente**, se justifica incorporar las mejoras UX al flujo estable; si queda **Aceptable**, se itera sobre los componentes específicos con más fricción; si es **Desfavorable**, se replantea la intervención. | Menos de 70% completa sin errores o utilidad < 3.8/5 | 70%-79% completa sin errores y utilidad entre 3.8 y 4.19 | Al menos 80% completa sin errores y utilidad ≥ 4.2 | Al menos 90% completa sin errores y utilidad ≥ 4.5 |
 | Tasa de uso y utilidad percibida de los campos marca/modelo del molino. | Si alcanza **Ideal** o **Excelente**, el campo se conserva como mejora contextual; si queda **Aceptable**, se mantiene opcional para una nueva ronda; si es **Desfavorable**, se retira del foco del siguiente ciclo. | Uso del campo < 50% o utilidad < 3.8/5 | Uso entre 50% y 69%, y utilidad entre 3.8 y 4.19 | Uso ≥ 70% y utilidad ≥ 4.2 | Uso ≥ 85% y utilidad ≥ 4.5 |
-| Tiempo de localización y utilidad percibida de filtros en defectos de tueste. | Si alcanza **Ideal** o **Excelente**, los filtros pasan a refinamiento de interfaz; si queda **Aceptable**, se valida un filtro más simple; si es **Desfavorable**, se posterga. | Tiempo > 45 s o utilidad < 3.8/5 | Tiempo entre 31 y 45 s, y utilidad entre 3.8 y 4.19 | Tiempo ≤ 30 s y utilidad ≥ 4.2 | Tiempo ≤ 20 s y utilidad ≥ 4.5 |
+| Respuestas favorables sobre facilidad de localización y utilidad percibida de filtros en defectos de tueste. | Si alcanza **Ideal** o **Excelente**, los filtros pasan a refinamiento de interfaz; si queda **Aceptable**, se valida un filtro más simple; si es **Desfavorable**, se posterga. | Respuestas favorables < 60% o utilidad < 3.8/5 | Respuestas favorables entre 60% y 69% y utilidad entre 3.8 y 3.99 | Respuestas favorables ≥ 70% y utilidad ≥ 4.0 | Respuestas favorables ≥ 85% y utilidad ≥ 4.5 |
 | Tasa de uso y utilidad percibida del campo motivo de consumo. | Si alcanza **Ideal** o **Excelente**, la mejora se prioriza como candidata directa a To-Be; si queda **Aceptable**, se conserva como campo opcional y se vuelve a validar; si es **Desfavorable**, se revisa su diseño o terminología. | Uso del campo < 50% o utilidad < 3.8/5 | Uso entre 50% y 69%, y utilidad entre 3.8 y 4.19 | Uso ≥ 70% y utilidad ≥ 4.2 | Uso ≥ 85% y utilidad ≥ 4.5 |
 | Importancia percibida y respuestas favorables sobre confianza y uso internacional tras completar traducciones críticas. | Si alcanza **Ideal** o **Excelente**, la mejora se prioriza como candidata directa a To-Be; si queda **Aceptable**, se limita a pantallas críticas; si es **Desfavorable**, se revisa el alcance real de i18n para la siguiente iteración. | Importancia < 3.8/5 o respuestas favorables < 70% | Importancia entre 3.8 y 4.19, y respuestas favorables entre 70% y 79% | Importancia ≥ 4.2 y respuestas favorables ≥ 80% | Importancia ≥ 4.5 y respuestas favorables ≥ 90% |
 | Tasa de uso de campos nuevos, utilidad percibida de la ficha ampliada y respuestas favorables sobre reducción de herramientas externas en proveedores. | Si alcanza **Ideal** o **Excelente**, la mejora se prioriza como candidata directa a To-Be; si queda **Aceptable**, se mantiene como intervención incremental de alta conveniencia; si es **Desfavorable**, se revisa el diseño del formulario antes de priorizarla. | Uso del campo < 50%, utilidad < 3.8/5 o respuestas favorables < 70% | Uso entre 50% y 69%, utilidad entre 3.8 y 4.19, y respuestas favorables entre 70% y 79% | Uso ≥ 70%, utilidad ≥ 4.2 y respuestas favorables ≥ 80% | Uso ≥ 85%, utilidad ≥ 4.5 y respuestas favorables ≥ 90% |
