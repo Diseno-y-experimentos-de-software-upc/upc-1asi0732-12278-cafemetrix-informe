@@ -212,7 +212,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
-    <td>Colocar actividades</td>
+    <td>Me encargué de diseñar y documentar el formulario de validación inicial de mejoras experimentales para CaféLab, alineando sus preguntas con las hipótesis del capítulo VIII y los resultados esperados del experimento. Asimismo, registré y sinteticé los resultados obtenidos, identificando las mejoras con mayor evidencia cuantitativa para priorizar las To-Be User Stories y el To-Be Product Backlog. Finalmente, redacté las historias de usuario To-Be y organicé el backlog experimental con pseudocódigo, asegurando trazabilidad entre formulario, hipótesis, métricas y funcionalidades priorizadas.</td>
     <td>TB2</td>
   </tr>
   <tr>
@@ -478,7 +478,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB2: <br>Reconocí mi responsabilidad ética y profesional al completar la evaluación heurística de la plataforma (6.3.3) y al diseñar las secciones de experimentación (8.2.1–8.2.5). Al documentar los hallazgos de usabilidad derivados de las entrevistas de validación y asignarles severidad conforme a las heurísticas de Nielsen, asumí el compromiso de presentar una evaluación honesta y fundamentada sin omitir problemas que pudieran afectar la experiencia de los usuarios. Asimismo, al definir hipótesis, métricas de negocio, medidas, condiciones y umbrales de decisión para los nueve experimentos, me aseguré de que el diseño experimental sea verificable y esté alineado con la evidencia recogida a lo largo del proyecto, evitando formular objetivos que no puedan ser validados con los recursos disponibles del equipo.<br><br>
                 <strong>Adrian Donayre</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al depurar el Product Backlog para que refleje únicamente funcionalidades realmente implementadas en la aplicación. Eliminé inconsistencias y alineé las historias con el comportamiento real del sistema, evitando información inexacta. Además, incorporé los Sprint Backlogs para evidenciar la planificación y ejecución del trabajo, asegurando trazabilidad y transparencia.<br><br>
-                TP1: <br>Reconocí mi responsabilidad ética y profesional al documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment en el proyecto CaféLab. Al describir el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, procuré que la información refleje de manera clara y veraz el flujo real de trabajo del equipo. Además, consideré importante explicar cómo estas herramientas contribuyen a una gestión ordenada del código, una configuración más segura del entorno y una validación responsable de los servicios antes y después del despliegue, evitando presentar procesos que no fueron aplicados en el proyecto.<br><br>  
+                TP1: <br>Reconocí mi responsabilidad ética y profesional al documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment en el proyecto CaféLab. Al describir el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, procuré que la información refleje de manera clara y veraz el flujo real de trabajo del equipo. Además, consideré importante explicar cómo estas herramientas contribuyen a una gestión ordenada del código, una configuración más segura del entorno y una validación responsable de los servicios antes y después del despliegue, evitando presentar procesos que no fueron aplicados en el proyecto.<br><br>
+                TB2: <br>Reconocí mi responsabilidad ética y profesional al documentar la validación inicial de mejoras experimentales de CaféLab con base en resultados reales del formulario aplicado. Evité presentar decisiones sin sustento, diferenciando entre funcionalidades priorizadas por evidencia y mejoras que quedan como futuras iteraciones. Asimismo, aseguré trazabilidad entre las hipótesis, métricas, To-Be User Stories y To-Be Product Backlog.<br><br>  
                 <strong>Christian Inga</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los Mobile Application Wireflow Diagrams, asegurando que la arquitectura de información y los flujos de navegación sean fieles a los requerimientos del sistema. Al definir los Android Mobile Style Guidelines bajo los estándares de Material Design, asumí la entrega de un diseño que sirva como base confiable para la implementación.<br><br>
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al asegurar la calidad del software mediante la implementación de una suite exhaustiva de pruebas unitarias para las entidades core (6.1.1). Al validar cada User Story y Technical Story de forma aislada, asumí el compromiso de entregar un sistema confiable y libre de errores en su lógica base. Asimismo, al documentar los componentes del pipeline de despliegue (7.2.2) y realizar validaciones en los módulos de recetas y calibración, garanticé la transparencia y trazabilidad del proceso de desarrollo, trabajando de forma coordinada con el equipo mediante el uso de ramas de feature y comunicación constante.<br><br>
@@ -490,8 +491,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los diagramas de flujo de usuario para la aplicación móvil (4.4.4. Mobile Applications User Flow Diagrams), asegurando que los flujos representen con fidelidad las interacciones reales del usuario. Definí con claridad cada nodo de decisión y camino de navegación, garantizando que la experiencia diseñada sea coherente, intuitiva y respetuosa de las expectativas del usuario final.<br><br>  
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al diseñar e implementar las pruebas BDD y de sistema para el módulo de Librería de Defectos del backend. Aseguré que cada escenario de prueba represente fielmente las reglas de negocio del dominio, validando que los value objects rechacen datos inválidos y que los endpoints REST respondan correctamente ante distintos contextos de autenticación y datos. Asumí la responsabilidad de garantizar que el módulo que gestiona el registro de defectos de tueste funcione de forma confiable, dado que los baristas dependen de esta información para tomar decisiones técnicas sobre la calidad del café.<br><br>  
             </td>  
-        <td style="border: 1px solid #ddd; vertical-align: top;">  
-            <b>TP1:</b> El equipo evidenció responsabilidad ética y profesional al verificar que las funcionalidades implementadas funcionen de manera correcta, segura y coherente con lo documentado. Se incorporaron pruebas unitarias, de integración, BDD y de sistema para validar el comportamiento del producto, además de revisiones por módulos como proveedores, inventario, costos, recetas, calibración y defectos. Asimismo, se documentaron prácticas DevOps relacionadas con integración, entrega y despliegue continuo, asegurando mayor trazabilidad en el flujo de trabajo. Finalmente, la integración ordenada de ramas hacia develop y main permitió mantener control sobre los cambios, reducir riesgos en el despliegue y garantizar una entrega más confiable del sistema.<br><br>
+        <td style="border: 1px solid #ddd; vertical-align: top;">
             <b>TB2:</b> El equipo reconoció su responsabilidad ética y profesional al completar las secciones de evaluación, planificación y diseño experimental del proyecto. La planificación de experimentación (8.1.1–8.1.5) documentó con honestidad el estado As-Is de Café Lab, clasificó la materia prima en suposiciones y claims verificables, priorizó nueve preguntas de investigación con criterios XDPD y elaboró Experiment Cards trazables al product backlog. La evaluación heurística (6.3.3) permitió documentar hallazgos de usabilidad con base en evidencia real de usuarios, y el diseño experimental (8.2.1–8.2.5) formalizó hipótesis verificables con métricas, condiciones y umbrales de decisión concretos, garantizando que el proceso de validación sea transparente y reproducible.<br><br>  
         </td>  
         </tr>  
@@ -509,7 +509,8 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB2: <br>Emití juicios informados al diseñar el plan de experimentación (8.2.1–8.2.5) y al evaluar heurísticamente la plataforma (6.3.3), considerando el impacto que tienen las mejoras de usabilidad y la validación experimental en la calidad del producto y en la experiencia operativa de baristas y administradores de cafetería. Al definir umbrales de decisión basados en evidencia del dominio (reducción de inconsistencias en extracción, utilidad percibida del dashboard, tiempos de tarea), contribuí a orientar el desarrollo futuro hacia intervenciones de mayor impacto, priorizando aquellas con respaldo de usuarios reales y evitando invertir esfuerzo en cambios sin validación previa. Asimismo, reconocí el impacto social y económico de mejorar la usabilidad del sistema, ya que una plataforma más intuitiva y completa reduce la carga operativa de los baristas y facilita una toma de decisiones más informada por parte de los dueños de cafetería.<br><br>
                 <strong>Adrian Donayre</strong><br>  
                 TB1: <br>Emití juicios informados al depurar el Product Backlog, priorizando únicamente funcionalidades implementadas que aportan valor real al sistema. Consideré el impacto económico y operativo de incluir o excluir historias, asegurando que la documentación refleje de forma precisa el alcance del producto y evite sobreestimar sus capacidades. Además, al incorporar los Sprint Backlogs, facilité la comprensión del avance del proyecto y su viabilidad, contribuyendo a una toma de decisiones más informada por parte del equipo y stakeholders.<br><br>
-                TP1: <br>Emití juicios informados al documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment, considerando su impacto en la estabilidad y disponibilidad de CaféLab. Al describir el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, consideré cómo estas decisiones apoyan una entrega más ordenada, reducen errores operativos, optimizan recursos del equipo y permiten que la solución sea accesible para usuarios y evaluadores de manera continua.<br><br>  
+                TP1: <br>Emití juicios informados al documentar las herramientas y prácticas utilizadas para Continuous Delivery y Continuous Deployment, considerando su impacto en la estabilidad y disponibilidad de CaféLab. Al describir el uso de GitHub, Trello, Vercel, Railway, Firebase y variables de entorno, consideré cómo estas decisiones apoyan una entrega más ordenada, reducen errores operativos, optimizan recursos del equipo y permiten que la solución sea accesible para usuarios y evaluadores de manera continua.<br><br>
+                TB2: <br>Emití juicios informados al analizar los resultados del formulario de validación para priorizar mejoras con impacto en la operación de cafeterías de especialidad. Consideré el valor económico de centralizar proveedores, inventario y costos; el impacto global de mejorar la internacionalización de la interfaz; y el impacto operativo y social de facilitar decisiones más claras para baristas y dueños mediante funcionalidades To-Be sustentadas en evidencia.<br><br>  
                 <strong>Christian Inga</strong><br>  
                 TB1: <br>Emití juicios informados al definir la estructura de los wireflows y las guías de estilo para Android, considerando el impacto social de la accesibilidad y usabilidad para los usuarios. Al seleccionar componentes de navegación y jerarquías visuales, tomé decisiones que afectan directamente la eficiencia operativa y productividad del usuario. Asimismo, consideré el impacto económico de optimizar el desarrollo mediante una documentación estandarizada que reduce errores de implementación<br><br>
                 TP1: <br>Emití juicios informados al definir los componentes del pipeline de despliegue (7.2.2), considerando el impacto operativo de contar con entornos de staging y producción para minimizar riesgos de fallos en el servicio real. Al realizar las pruebas unitarias de las entidades core, evalué el impacto económico de prevenir errores técnicos en etapas tempranas del ciclo de vida del software, lo cual optimiza los recursos de mantenimiento. Además, en las validaciones de los módulos de recetas y calibración, consideré el impacto social de ofrecer una herramienta precisa para baristas, cuya consistencia en la preparación depende de la fiabilidad de los datos técnicos procesados por el sistema.<br><br>
@@ -521,8 +522,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Emití juicios informados al diseñar los flujos de usuario para la aplicación móvil, considerando el impacto que tiene una navegación clara y eficiente en la experiencia del usuario final. Tomé decisiones sobre la estructura de los flujos priorizando la simplicidad y accesibilidad, reconociendo que una navegación deficiente puede afectar negativamente la adopción del sistema y, por ende, el valor social y económico del producto.<br><br>  
                 TP1: <br>Emití juicios informados al seleccionar el enfoque de pruebas para el módulo de Librería de Defectos, optando por pruebas BDD en el nivel de dominio y pruebas de sistema en la capa REST. Esta decisión consideró el impacto económico de detectar errores de validación tempranamente, antes de que lleguen a producción y afecten los registros de defectos de los baristas. Asimismo, evalué el impacto social de contar con un módulo de registro de defectos confiable, ya que la trazabilidad de defectos de tueste influye directamente en la calidad del producto final y en la reputación del establecimiento.<br><br>  
             </td>  
-        <td style="border: 1px solid #ddd; vertical-align: top;">  
-            <b>TP1:</b> El equipo emitió juicios informados al priorizar pruebas, validaciones por módulos y prácticas DevOps que fortalecen la calidad y estabilidad de CaféLab. Estas decisiones permitieron reducir riesgos técnicos, mejorar la confiabilidad del sistema y optimizar el trabajo del equipo. Además, contribuyen al impacto económico y operativo del proyecto al disminuir errores, facilitar el mantenimiento y asegurar una solución más estable y accesible para los usuarios.<br><br>
+        <td style="border: 1px solid #ddd; vertical-align: top;">
             <b>TB2:</b> El equipo emitió juicios informados al priorizar las preguntas y experimentos con mayor impacto en el dominio del negocio, con base en la evidencia recopilada durante las entrevistas de validación y el análisis del código desplegado. La planificación de experimentación (8.1.1–8.1.5) orientó el ciclo hacia intervenciones incrementales sobre módulos existentes —trazabilidad tueste–cata, consolidación económica por lote y mejoras operativas en cata, calibración, defectos e inventario— evitando propuestas fuera del alcance del producto. Las secciones de diseño experimental (8.2.1–8.2.5) y la evaluación heurística (6.3.3) contribuyen a orientar el desarrollo hacia mejoras con respaldo de usuarios reales, considerando el impacto operativo, económico y de usabilidad en el producto final.<br><br>  
         </td>  
       </tr>  
@@ -6764,19 +6764,19 @@ A continuación se documentan las tarjetas de experimento para cada pregunta del
 | ----- | ----- |
 | Why | Los baristas y dueños dependen hoy de enlazar manualmente lotes, perfiles de tueste y catas entre módulos separados: el perfil de tueste referencia al lote (`coffeeLotId`), pero `CuppingSession` no persiste `coffeeLotId` ni `roastProfileId`. El formulario inicial respalda de forma indirecta esta brecha al valorar la correlación lote-tueste-cata con 4.11/5, aunque no midió todavía la automatización completa del enlace (US05, escenario 1). |
 | What | Añadir `coffeeLotId` y `roastProfileId` opcionales en backend y frontend; selector de lote y perfil de tueste al crear o editar una cata, con precarga de datos asociados. Validar con baristas en sesiones reales (Vercel + Railway). |
-| Hypothesis | Se espera que al menos el 70% de los baristas califique con ≥ 4/5 la utilidad del enlace automático lote-tueste-cata y que el tiempo para ubicar la información asociada a un mismo lote se reduzca al menos un 25% frente al flujo manual. |
+| Hypothesis | Se espera que al menos el 70% de los baristas califique con ≥ 4/5 la utilidad del enlace automático lote-tueste-cata y responda favorablemente que esta mejora reduce el esfuerzo manual de consulta y asociación entre lote, tueste y cata. |
 
 | Question | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario (`/api/v1/inventory-entries`) y costos de producción (`/api/v1/production-cost-records`)? |
 | ----- | ----- |
 | Why | Los administradores valoran la gestión de costos como función de mayor impacto (Cap. VI), pero deben navegar entre el dashboard matricial, el módulo de inventario y el asistente de costos de cuatro pasos para obtener una visión económica completa de un lote. La dispersión incrementa el riesgo de decisiones basadas en datos incompletos. |
 | What | Extender el dashboard existente (`owner-dashboard`, `complete-dashboard`) con una vista por lote que muestre stock disponible, movimientos de inventario e indicadores de `ProductionCostRecordsController` (costo por kilo, margen, precio sugerido). Probar con dueños de cafetería usando escenarios de lote real. |
-| Hypothesis | Se espera que la vista consolidada alcance una utilidad percibida promedio ≥ 4/5 y que el tiempo para consultar la rentabilidad de un lote se reduzca al menos un 30% frente al flujo actual fragmentado. |
+| Hypothesis | Se espera que la vista consolidada alcance una utilidad percibida promedio ≥ 4/5 y que al menos 70% de los participantes responda favorablemente que facilita la consulta económica del lote y reduce el esfuerzo manual de reunir información dispersa. |
 
 | Question | ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata que reúna curvas de tueste (`roast-profile-comparison`) y perfil sensorial (`cupping-sensory-radar`) del mismo lote? |
 | ----- | ----- |
 | Why | Existen componentes de comparación de curvas (`/compare-profile`) y visualización radar en catas, pero operan de forma aislada. La pantalla “Relación tueste-sabor” prevista en 6.3.1 no está integrada: su enlace en el dashboard está comentado y no existe ruta activa en `app.routes.ts`. El formulario inicial ofrece respaldo directo: utilidad de correlación lote-tueste-cata de 4.11/5, importancia de la vista curva + perfil sensorial de 4.05/5 y probabilidad de uso de 3.95/5. |
 | What | Implementar y registrar la ruta `/roast-flavor-correlation`, habilitar su acceso desde el dashboard y desarrollar una versión mínima de la pantalla que combine `roast-profile-comparison` con `cupping-sensory-radar` filtrado por el mismo lote. Evaluar con baristas qué formato (superpuesto, dividido o sincronizado) resulta más ágil en laboratorio. |
-| Hypothesis | Se espera que la vista mínima de correlación lote-tueste-cata alcance una importancia percibida promedio ≥ 4/5, una probabilidad de uso promedio ≥ 4/5 y que al menos 70% de los participantes complete la comparación en menos de 3 minutos. |
+| Hypothesis | Se espera que la vista mínima de correlación lote-tueste-cata alcance una importancia percibida promedio ≥ 4/5, una probabilidad de uso promedio ≥ 4/5 y al menos 70% de respuestas favorables sobre su aporte para comparar lote, tueste y cata en una sola vista. |
 
 | Question | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local en la sesión de cata? |
 | ----- | ----- |
@@ -6794,7 +6794,7 @@ A continuación se documentan las tarjetas de experimento para cada pregunta del
 | ----- | ----- |
 | Why | Aldo Zavala sugirió en validación (Cap. VI) filtros por intensidad y categoría en la biblioteca de defectos. Sin ellos, el catálogo crece y la consulta en laboratorio se vuelve lenta (US04). |
 | What | Añadir campos `category` e `intensity` al registrar un defecto y filtros correspondientes en `defect-library-list`. |
-| Hypothesis | Se espera que al menos 70% de los participantes localice el defecto buscado en ≤ 30 segundos con filtros activos y que la utilidad percibida de los filtros alcance un promedio ≥ 4/5. |
+| Hypothesis | Se espera que al menos 70% de los participantes responda favorablemente que los filtros facilitan la localización de defectos y que la utilidad percibida de los filtros alcance un promedio ≥ 4/5. |
 
 | Question | ¿Mejorará el control de merma registrar el motivo o tipo de consumo al registrar movimientos de inventario por lote? |
 | ----- | ----- |
@@ -6818,31 +6818,31 @@ A continuación se documentan las tarjetas de experimento para cada pregunta del
 
 ### 8.2.1. Hypotheses.
 
-Las hipótesis de experimentación se derivan de las Experiment Cards definidas en [8.1.5](#815-experiment-cards). Para mantener la concordancia con el registro del formulario de validación en [6.3.2](#632-registro-de-entrevistas), cada tabla explicita si la evidencia base proviene principalmente del formulario inicial o de entrevistas, heurísticas y supuestos previos del dominio.
+Las hipótesis de experimentación se derivan de las Experiment Cards definidas en [8.1.5](#815-experiment-cards). Para mantener la concordancia con el registro del formulario de validación en [6.3.2](#632-registro-de-entrevistas), cada tabla explicita si la evidencia base proviene principalmente del formulario inicial o de entrevistas, heurísticas y supuestos previos del dominio. En esta lógica, el **formulario inicial** sirve para **priorizar** mejoras, mientras que el **formulario To-Be** servirá para **comprobar** la aceptación de las mejoras implementadas con métricas viables para esta entrega.
 
 | | Hypothesis |
 |----|------------|
 | **Question** | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata sin intervención manual del usuario? |
 | **Evidence Source** | Predominantemente entrevistas previas, needfinding y Lean UX; el formulario inicial aporta soporte indirecto mediante la utilidad de la correlación lote-tueste-cata (4.11/5), pero no evalúa todavía la automatización completa. |
-| **Belief** | La fragmentación actual obliga al barista a reescribir datos que ya existen en el sistema. Si el enlace se automatiza, el barista debería consultar y reutilizar la información asociada a un lote con menor esfuerzo y mayor utilidad percibida. |
-| **Hypothesis** | Al menos 70% de los baristas calificará con ≥ 4/5 la utilidad del enlace automático lote-tueste-cata y el tiempo para ubicar la información asociada a un mismo lote se reducirá al menos un 25% frente al flujo manual. |
-| **Null Hypothesis** | La automatización del enlace entre lote, perfil de tueste y sesión de cata no incrementará significativamente la utilidad percibida ni reducirá de forma significativa el tiempo de consulta de la información asociada al lote. |
+| **Belief** | La fragmentación actual obliga al barista a reescribir datos que ya existen en el sistema. Si el enlace se automatiza, el barista debería percibir menor esfuerzo manual y mayor utilidad al consultar y reutilizar la información asociada a un lote. |
+| **Hypothesis** | Al menos 70% de los baristas calificará con ≥ 4/5 la utilidad del enlace automático lote-tueste-cata y responderá favorablemente que esta mejora reduce el esfuerzo manual de consulta y asociación entre lote, tueste y cata. |
+| **Null Hypothesis** | La automatización del enlace entre lote, perfil de tueste y sesión de cata no incrementará significativamente la utilidad percibida ni la percepción de reducción de esfuerzo manual. |
 
 | | Hypothesis |
 |----|------------|
 | **Question** | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario y costos de producción? |
 | **Evidence Source** | Mixta: el formulario inicial respalda la consulta integrada de origen, stock y costos con 4.32/5 de importancia y 57.9% prioriza costo por kilo; se complementa con entrevistas previas y revisión del backlog US10-US13. |
 | **Belief** | Los dueños valoran la gestión de costos, pero actualmente deben navegar entre módulos separados para obtener una visión económica completa, incrementando el riesgo de decisiones basadas en datos incompletos. |
-| **Hypothesis** | La vista consolidada por lote alcanzará una utilidad percibida promedio ≥ 4/5 y reducirá al menos un 30% el tiempo para consultar la rentabilidad de un lote frente al flujo actual fragmentado. |
-| **Null Hypothesis** | La vista consolidada por lote no incrementará significativamente la utilidad percibida ni reducirá de forma significativa el tiempo de consulta de rentabilidad. |
+| **Hypothesis** | La vista consolidada por lote alcanzará una utilidad percibida promedio ≥ 4/5 y al menos 70% de los participantes responderá favorablemente que facilita la consulta económica del lote y reduce el esfuerzo manual de reunir información dispersa. |
+| **Null Hypothesis** | La vista consolidada por lote no incrementará significativamente la utilidad percibida ni la percepción de reducción de esfuerzo manual en la consulta de rentabilidad. |
 
 | | Hypothesis |
 |----|------------|
 | **Question** | ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata que reúna curvas de tueste y perfil sensorial del mismo lote? |
 | **Evidence Source** | Sustentada directamente por el formulario inicial: utilidad de correlación lote-tueste-cata de 4.11/5, importancia de la vista curva + perfil sensorial de 4.05/5 y probabilidad de uso de 3.95/5. |
-| **Belief** | Los baristas necesitan contrastar parámetros técnicos del tostado con el perfil sensorial en taza sin alternar entre pantallas. Una vista mínima de correlación debería hacer más útil y más probable este análisis en contexto de laboratorio. |
-| **Hypothesis** | La vista mínima de correlación lote-tueste-cata alcanzará una importancia percibida promedio ≥ 4/5, una probabilidad de uso promedio ≥ 4/5 y permitirá que al menos 70% de los participantes complete la comparación en menos de 3 minutos. |
-| **Null Hypothesis** | La vista mínima de correlación no incrementará significativamente la importancia percibida ni la probabilidad de uso, ni reducirá de forma significativa el tiempo de comparación frente al flujo actual. |
+| **Belief** | Los baristas necesitan contrastar parámetros técnicos del tostado con el perfil sensorial en taza sin alternar entre pantallas. Una vista mínima de correlación debería hacer más útil, más importante y más probable este análisis en contexto de laboratorio. |
+| **Hypothesis** | La vista mínima de correlación lote-tueste-cata alcanzará una importancia percibida promedio ≥ 4/5, una probabilidad de uso promedio ≥ 4/5 y al menos 70% de respuestas favorables sobre su aporte para comparar lote, tueste y cata en una sola vista. |
+| **Null Hypothesis** | La vista mínima de correlación no incrementará significativamente la importancia percibida, la probabilidad de uso ni el porcentaje de respuestas favorables sobre su utilidad comparativa. |
 
 | | Hypothesis |
 |----|------------|
@@ -6864,9 +6864,9 @@ Las hipótesis de experimentación se derivan de las Experiment Cards definidas 
 |----|------------|
 | **Question** | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? |
 | **Evidence Source** | Principalmente entrevistas previas y evaluación heurística 6.3.3; el formulario inicial no midió esta mejora de manera directa. |
-| **Belief** | Sin filtros, la consulta se vuelve lenta conforme crece el catálogo. Los baristas necesitan localizar defectos específicos rápidamente durante el análisis de tueste para tomar decisiones técnicas en tiempo real. |
-| **Hypothesis** | Al menos 70% de los participantes localizará el defecto buscado en ≤ 30 segundos con filtros activos y calificará la utilidad de los filtros con un promedio ≥ 4/5. |
-| **Null Hypothesis** | La adición de filtros por categoría e intensidad no reducirá significativamente el tiempo de localización de defectos ni incrementará la utilidad percibida de la biblioteca. |
+| **Belief** | Sin filtros, la consulta se vuelve más demandante conforme crece el catálogo. Los baristas necesitan una biblioteca que haga más simple y útil la localización de defectos específicos durante el análisis de tueste. |
+| **Hypothesis** | Al menos 70% de los participantes responderá favorablemente que los filtros facilitan la localización de defectos y la utilidad percibida de los filtros alcanzará un promedio ≥ 4/5. |
+| **Null Hypothesis** | La adición de filtros por categoría e intensidad no incrementará significativamente la utilidad percibida de la biblioteca ni el porcentaje de respuestas favorables sobre facilidad de localización. |
 
 | | Hypothesis |
 |----|------------|
@@ -6894,22 +6894,22 @@ Las hipótesis de experimentación se derivan de las Experiment Cards definidas 
 
 ### 8.2.2. Domain Business Metrics.
 
-Las métricas de negocio del dominio representan los indicadores cuantificables que permiten evaluar el impacto de los experimentos en los objetivos estratégicos de Café Lab. Se derivan de las brechas identificadas en el [As-Is Summary (8.1.1)](#811-as-is-summary) y de las Claims documentadas en [8.1.2](#812-raw-material-assumptions-knowledge-gaps-ideas-claims).
+Las métricas de negocio del dominio representan los indicadores cuantificables que permiten evaluar el impacto de los experimentos en los objetivos estratégicos de Café Lab. Se derivan de las brechas identificadas en el [As-Is Summary (8.1.1)](#811-as-is-summary) y de las Claims documentadas en [8.1.2](#812-raw-material-assumptions-knowledge-gaps-ideas-claims). El formulario inicial orienta qué mejoras merecen priorización; el formulario **To-Be** será el instrumento principal para comprobarlas mediante utilidad, importancia, probabilidad de uso, respuestas favorables y tasas de uso de campos nuevos.
 
 | ID Métrica | Nombre | Definición | Segmento objetivo | Experimento(s) relacionado(s) |
 |------------|--------|------------|-------------------|-------------------------------|
 | M-01 | Utilidad percibida del enlace lote-tueste-cata | Calificación promedio (escala 1–5) sobre la utilidad de enlazar automáticamente lote, perfil de tueste y cata | Baristas | H-01 |
-| M-02 | Tiempo de consulta de información asociada por lote | Tiempo en minutos requerido para ubicar la información de tueste y cata asociada a un mismo lote | Baristas | H-01, H-03 |
+| M-02 | Percepción de reducción de esfuerzo manual en trazabilidad | Porcentaje de participantes que responde favorablemente que enlazar lote, perfil de tueste y cata reduce el esfuerzo manual de consulta y asociación | Baristas | H-01 |
 | M-03 | Utilidad percibida del dashboard económico por lote | Calificación promedio (escala 1–5) sobre la utilidad de la vista consolidada de rentabilidad | Dueños/Admins | H-02 |
-| M-04 | Tiempo de consulta de rentabilidad por lote | Tiempo en minutos requerido para obtener la visión económica completa de un lote (stock + costos + margen) | Dueños/Admins | H-02 |
+| M-04 | Percepción de reducción de esfuerzo manual en consulta económica | Porcentaje de participantes que responde favorablemente que la vista consolidada reduce el esfuerzo manual de reunir datos de inventario y costos | Dueños/Admins | H-02 |
 | M-05 | Importancia percibida de la vista mínima de correlación | Calificación promedio (escala 1–5) sobre la importancia de una vista mínima que reúna lote, curva de tueste y perfil sensorial | Baristas | H-03 |
 | M-06 | Probabilidad de uso de la vista de correlación | Calificación promedio (escala 1–5) sobre la probabilidad de uso de la vista mínima de correlación en el trabajo real | Baristas | H-03 |
-| M-07 | Tiempo de comparación lote-tueste-cata | Tiempo en minutos para completar una tarea de comparación técnica entre tueste y cata del mismo lote | Baristas | H-03 |
+| M-07 | Respuestas favorables sobre utilidad comparativa de la vista de correlación | Porcentaje de participantes que responde favorablemente que la vista mínima ayuda a comparar lote, tueste y cata en una sola consulta | Baristas | H-03 |
 | M-08 | Tasa de completitud exitosa del formulario de cata | Porcentaje de participantes que completan el registro de cata sin errores de validación en el primer intento | Baristas | H-04 |
 | M-09 | Utilidad percibida de mejoras UX en cata | Calificación promedio (escala 1–5) del flujo de cata tras marcar campos obligatorios, diferenciar editar/clonar e incorporar temporizador | Baristas | H-04 |
 | M-10 | Tasa de uso de campos marca/modelo de molino | Porcentaje de registros de calibración que incluyen marca y modelo del molino | Baristas | H-05 |
 | M-11 | Utilidad percibida del contexto de molino | Calificación promedio (escala 1–5) sobre la utilidad de documentar marca y modelo para replicar calibraciones | Baristas | H-05 |
-| M-12 | Tiempo de localización de defectos | Segundos necesarios para localizar un defecto específico en la biblioteca con filtros activos | Baristas | H-06 |
+| M-12 | Respuestas favorables sobre facilidad de localización de defectos | Porcentaje de participantes que responde favorablemente que los filtros facilitan la localización de defectos específicos | Baristas | H-06 |
 | M-13 | Utilidad percibida de filtros de defectos | Calificación promedio (escala 1–5) sobre la utilidad de filtrar por categoría e intensidad | Baristas | H-06 |
 | M-14 | Tasa de uso del campo motivo de consumo | Porcentaje de movimientos de inventario registrados con motivo de consumo especificado | Dueños/Admins | H-07 |
 | M-15 | Utilidad percibida de trazabilidad de consumo | Calificación promedio (escala 1–5) sobre la utilidad de registrar el motivo de consumo para explicar mermas | Dueños/Admins | H-07 |
@@ -6921,27 +6921,27 @@ Las métricas de negocio del dominio representan los indicadores cuantificables 
 
 ### 8.2.3. Measures.
 
-Para cada experimento se define la medida que permite operacionalizar la hipótesis correspondiente. Cada tabla incluye la pregunta de investigación y el plan de recolección de datos.
+Para cada experimento se define la medida que permite operacionalizar la hipótesis correspondiente. Cada tabla incluye la pregunta de investigación y el plan de recolección de datos. En coherencia con el objetivo de esta entrega, el **formulario To-Be** será la fuente principal de comprobación, mientras que cualquier medición de tiempo quedará solo como insumo complementario de pruebas internas y no como criterio principal de validación.
 
 | | |
 |----|------------|
 | **Question** | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata? |
-| **Measure** | Cronometrar el tiempo requerido para ubicar la información de tueste y cata asociada a un mismo lote usando el enlace automatizado versus el flujo manual. Complementar con una encuesta post-sesión (escala 1–5) sobre la utilidad percibida del enlace lote-tueste-cata. |
+| **Measure** | Registrar en el formulario To-Be la utilidad percibida del enlace lote-tueste-cata (escala 1–5) y el porcentaje de respuestas favorables ante enunciados sobre reducción de esfuerzo manual al asociar lote, tueste y cata. Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
 | **Question** | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote? |
-| **Measure** | Cronometrar el tiempo que tarda un administrador en obtener la rentabilidad completa de un lote con la vista consolidada versus el flujo fragmentado actual. Registrar la utilidad percibida mediante encuesta post-sesión (escala 1–5). |
+| **Measure** | Registrar en el formulario To-Be la utilidad percibida de la vista consolidada por lote (escala 1–5) y el porcentaje de respuestas favorables sobre reducción de esfuerzo manual al reunir información económica del lote. Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
 | **Question** | ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata? |
-| **Measure** | Registrar la importancia percibida y la probabilidad de uso de la vista mínima de correlación mediante encuesta (escala 1–5). Cronometrar además el tiempo para completar una tarea de comparación entre lote, curva de tueste y perfil sensorial, registrando si se resuelve en menos de 3 minutos. |
+| **Measure** | Registrar en el formulario To-Be la importancia percibida y la probabilidad de uso de la vista mínima de correlación (escala 1–5), además del porcentaje de respuestas favorables sobre su utilidad para comparar lote, curva de tueste y perfil sensorial en una sola vista. Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
 | **Question** | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local? |
-| **Measure** | Registrar el porcentaje de participantes que completa el formulario de cata sin errores de validación en el primer intento y cronometrar el tiempo total de registro. Complementar con una encuesta de utilidad percibida del flujo mejorado (escala 1–5). |
+| **Measure** | Registrar el porcentaje de participantes que completa el formulario de cata sin errores de validación en el primer intento y la utilidad percibida del flujo mejorado mediante formulario To-Be (escala 1–5). Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
@@ -6951,7 +6951,7 @@ Para cada experimento se define la medida que permite operacionalizar la hipóte
 | | |
 |----|------------|
 | **Question** | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? |
-| **Measure** | Cronometrar el tiempo para localizar un defecto específico con filtros activos y comparar el resultado con el flujo actual sin filtros. Complementar con una encuesta breve de utilidad percibida de los filtros (escala 1–5). |
+| **Measure** | Registrar en el formulario To-Be la utilidad percibida de los filtros (escala 1–5) y el porcentaje de respuestas favorables sobre facilidad para localizar defectos específicos. Como métrica complementaria, se podrá registrar el tiempo estimado de tarea durante pruebas internas, sin considerarlo criterio principal de validación. |
 
 | | |
 |----|------------|
@@ -6970,7 +6970,7 @@ Para cada experimento se define la medida que permite operacionalizar la hipóte
 
 ### 8.2.4. Conditions.
 
-Para cada experimento se definen la condición experimental (con la mejora implementada) y la condición de control (flujo actual sin cambios), sobre el mismo entorno desplegado en Vercel y Railway.
+Para cada experimento se definen la condición experimental (con la mejora implementada) y la condición de control (flujo actual sin cambios), sobre el mismo entorno desplegado en Vercel y Railway. La comparación entre ambas condiciones se interpretará principalmente con el **formulario To-Be**, mientras que el formulario inicial permanecerá como referencia de priorización y no como evidencia de validación final.
 
 | | |
 |----|------------|
@@ -7028,21 +7028,22 @@ Para cada experimento se definen la condición experimental (con la mejora imple
 
 ### 8.2.5. Scale Calculations and Decisions.
 
-Esta sección define **criterios de decisión esperados**, no resultados observados. Cada hipótesis se interpretará posteriormente según cuatro rangos: **Desfavorable** (no alcanza el umbral mínimo y exige reformulación), **Aceptable** (muestra señal positiva pero requiere iteración adicional), **Ideal** (justifica priorización como mejora To-Be) y **Excelente** (supera claramente el objetivo esperado). De esta manera, la decisión sobre qué mejoras pasarán a [8.3 Experimentation](#83-experimentation) se tomará después de ejecutar el experimento, no antes.
+Esta sección consolida la **decisión de priorización** a partir de la evidencia cuantitativa del **formulario inicial de validación** y de la **viabilidad técnica incremental** identificada en las Experiment Cards. Para ello, cada hipótesis se clasifica en uno de cuatro rangos: **Desfavorable** (evidencia insuficiente o baja pertinencia para el ciclo), **Aceptable** (señal positiva, pero con menor evidencia directa o mayor incertidumbre), **Ideal** (evidencia favorable y viabilidad suficiente para pasar a experimentación To-Be) y **Excelente** (evidencia sobresaliente y alta conveniencia para priorización inmediata).
+
+La decisión de priorización se toma a partir del formulario inicial y la viabilidad técnica; la validación To-Be comprobará posteriormente si las mejoras implementadas cumplen los criterios definidos. En consecuencia, la clasificación siguiente **no anticipa resultados del To-Be**, sino que justifica qué hipótesis pasan a [8.3 Experimentation](#83-experimentation), específicamente a [8.3.1. To-Be User Stories](#831-to-be-user-stories) y [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog).
 
 | Scale Calculation | Decision | Desfavorable | Aceptable | Ideal | Excelente |
 |---|---|---|---|---|---|
-| Utilidad percibida del enlace automático lote-tueste-cata y reducción del tiempo de consulta por lote. | Si alcanza **Ideal** o **Excelente**, la hipótesis se mantiene como candidata a una futura historia To-Be de trazabilidad; si queda **Aceptable**, se recomienda iterar primero con prototipo; si es **Desfavorable**, se replantea el problema antes de tocar backend. | Utilidad < 3.8/5 o reducción de tiempo < 10% | Utilidad entre 3.8 y 4.19, y reducción entre 10% y 24% | Utilidad ≥ 4.2 y reducción ≥ 25% | Utilidad ≥ 4.5 y reducción ≥ 35% |
-| Utilidad percibida de la vista económica por lote y reducción del tiempo de consulta de rentabilidad. | Si alcanza **Ideal** o **Excelente**, la vista consolidada puede pasar a refinamiento funcional; si queda **Aceptable**, se conserva como hipótesis de apoyo; si es **Desfavorable**, se reevalúa su prioridad frente a otras mejoras. | Utilidad < 3.8/5 o reducción de tiempo < 15% | Utilidad entre 3.8 y 4.19, y reducción entre 15% y 29% | Utilidad ≥ 4.2 y reducción ≥ 30% | Utilidad ≥ 4.5 y reducción ≥ 40% |
-| Importancia percibida, probabilidad de uso y tiempo de comparación de la vista mínima de correlación lote-tueste-cata. | Si alcanza **Ideal** o **Excelente**, la vista mínima se prioriza como candidata directa a To-Be; si queda **Aceptable**, se prototipa una versión aún más acotada; si es **Desfavorable**, se posterga o redefine el formato de visualización. | Importancia < 3.8/5, probabilidad de uso < 3.7/5 o menos de 60% completa la tarea en < 3 min | Importancia entre 3.8 y 4.19, probabilidad entre 3.7 y 3.99, y 60%-69% completa la tarea en < 3 min | Importancia ≥ 4.2, probabilidad ≥ 4.0 y al menos 70% completa la tarea en < 3 min | Importancia ≥ 4.5, probabilidad ≥ 4.3 y al menos 80% completa la tarea en < 3 min |
-| Completitud exitosa y utilidad percibida del flujo de cata con mejoras UX. | Si alcanza **Ideal** o **Excelente**, se justifica incorporar las mejoras UX al flujo estable; si queda **Aceptable**, se itera sobre los componentes específicos con más fricción; si es **Desfavorable**, se replantea la intervención. | Menos de 70% completa sin errores o utilidad < 3.8/5 | 70%-79% completa sin errores y utilidad entre 3.8 y 4.19 | Al menos 80% completa sin errores y utilidad ≥ 4.2 | Al menos 90% completa sin errores y utilidad ≥ 4.5 |
-| Tasa de uso y utilidad percibida de los campos marca/modelo del molino. | Si alcanza **Ideal** o **Excelente**, el campo se conserva como mejora contextual; si queda **Aceptable**, se mantiene opcional para una nueva ronda; si es **Desfavorable**, se retira del foco del siguiente ciclo. | Uso del campo < 50% o utilidad < 3.8/5 | Uso entre 50% y 69%, y utilidad entre 3.8 y 4.19 | Uso ≥ 70% y utilidad ≥ 4.2 | Uso ≥ 85% y utilidad ≥ 4.5 |
-| Tiempo de localización y utilidad percibida de filtros en defectos de tueste. | Si alcanza **Ideal** o **Excelente**, los filtros pasan a refinamiento de interfaz; si queda **Aceptable**, se valida un filtro más simple; si es **Desfavorable**, se posterga. | Tiempo > 45 s o utilidad < 3.8/5 | Tiempo entre 31 y 45 s, y utilidad entre 3.8 y 4.19 | Tiempo ≤ 30 s y utilidad ≥ 4.2 | Tiempo ≤ 20 s y utilidad ≥ 4.5 |
-| Tasa de uso y utilidad percibida del campo motivo de consumo. | Si alcanza **Ideal** o **Excelente**, la mejora se prioriza como candidata directa a To-Be; si queda **Aceptable**, se conserva como campo opcional y se vuelve a validar; si es **Desfavorable**, se revisa su diseño o terminología. | Uso del campo < 50% o utilidad < 3.8/5 | Uso entre 50% y 69%, y utilidad entre 3.8 y 4.19 | Uso ≥ 70% y utilidad ≥ 4.2 | Uso ≥ 85% y utilidad ≥ 4.5 |
-| Importancia percibida y respuestas favorables sobre confianza y uso internacional tras completar traducciones críticas. | Si alcanza **Ideal** o **Excelente**, la mejora se prioriza como candidata directa a To-Be; si queda **Aceptable**, se limita a pantallas críticas; si es **Desfavorable**, se revisa el alcance real de i18n para la siguiente iteración. | Importancia < 3.8/5 o respuestas favorables < 70% | Importancia entre 3.8 y 4.19, y respuestas favorables entre 70% y 79% | Importancia ≥ 4.2 y respuestas favorables ≥ 80% | Importancia ≥ 4.5 y respuestas favorables ≥ 90% |
-| Tasa de uso de campos nuevos, utilidad percibida de la ficha ampliada y respuestas favorables sobre reducción de herramientas externas en proveedores. | Si alcanza **Ideal** o **Excelente**, la mejora se prioriza como candidata directa a To-Be; si queda **Aceptable**, se mantiene como intervención incremental de alta conveniencia; si es **Desfavorable**, se revisa el diseño del formulario antes de priorizarla. | Uso del campo < 50%, utilidad < 3.8/5 o respuestas favorables < 70% | Uso entre 50% y 69%, utilidad entre 3.8 y 4.19, y respuestas favorables entre 70% y 79% | Uso ≥ 70%, utilidad ≥ 4.2 y respuestas favorables ≥ 80% | Uso ≥ 85%, utilidad ≥ 4.5 y respuestas favorables ≥ 90% |
+| Enlace automático lote-tueste-cata. El formulario inicial respalda la necesidad de correlación con 4.11/5 de utilidad, pero la automatización completa del enlace no fue medida de forma directa y además implica integración transversal entre módulos. | Se mantiene como hipótesis estructural relevante, pero no entra entre las primeras mejoras To-Be porque su evidencia cuantitativa es indirecta y su esfuerzo incremental es mayor que otras opciones del ciclo. |  | X |  |  |
+| Vista económica consolidada por lote. El formulario inicial muestra 4.32/5 de importancia para la consulta integrada de origen, stock y costos, pero la mejora requiere una composición funcional más amplia del dashboard y su evidencia no es tan directa como en proveedores, i18n o consumo. | Se conserva como hipótesis de apoyo para iteraciones siguientes o refinamiento posterior, sin incluirla entre las cuatro mejoras priorizadas del presente ciclo. |  | X |  |  |
+| Vista mínima de correlación lote-tueste-cata. El formulario inicial reporta 4.11/5 de utilidad para la correlación, 4.05/5 de importancia para la vista combinada y 3.95/5 de probabilidad de uso; aunque la probabilidad de uso no supera 4/5, la mejora mantiene coherencia directa con la propuesta de valor central y puede construirse como versión mínima. | Pasa a 8.3 como mejora priorizada, en versión mínima, por combinar evidencia cuantitativa favorable con valor estratégico y alcance incremental acotado. |  |  | X |  |
+| Mejoras UX en cata (campos obligatorios, diferenciar editar/clonar y temporizador). La evidencia principal proviene de entrevistas y heurísticas, no del formulario inicial cuantitativo. | Se mantiene como hipótesis válida de usabilidad, pero no queda entre las mejoras priorizadas de 8.3 porque en esta entrega otras opciones cuentan con respaldo cuantitativo más directo. |  | X |  |  |
+| Marca y modelo del molino en calibraciones. La mejora surge del análisis del flujo y de entrevistas previas, sin evidencia cuantitativa directa en el formulario inicial. | Se conserva como mejora contextual de interés, pero no se prioriza para 8.3 debido a la ausencia de validación cuantitativa directa en el formulario inicial. |  | X |  |  |
+| Filtros por categoría e intensidad en defectos de tueste. La señal proviene principalmente de entrevistas y evaluación heurística, sin indicador directo en el formulario inicial cerrado. | Se mantiene como hipótesis aceptable de apoyo, útil para refinamiento futuro, pero fuera del conjunto priorizado de mejoras To-Be del ciclo actual. |  | X |  |  |
+| Motivo de consumo en inventario. El formulario inicial reporta 4.37/5 de utilidad percibida y la mejora tiene bajo esfuerzo incremental al tratarse de un campo adicional de trazabilidad. | Pasa a 8.3 como mejora priorizada por su evidencia cuantitativa directa, claridad funcional y viabilidad de implementación incremental. |  |  | X |  |
+| Traducción completa en pantallas críticas. El formulario inicial reporta 4.37/5 de importancia, 4.53/5 de utilidad para uso internacional y 84.2% de respuestas afirmando que los textos mezclados afectan la confianza. | Pasa a 8.3 como mejora priorizada por evidencia cuantitativa directa alta, impacto transversal y viabilidad clara en flujos críticos. |  |  | X |  |
+| Persona de contacto y enlace web/red social en proveedores. El formulario inicial reporta 4.58/5 para persona de contacto, 4.37/5 para enlace web/red social y 89.5% de respuestas afirmando reducción de herramientas externas. | Pasa a 8.3 como mejora de máxima prioridad dentro del ciclo, por presentar la evidencia más fuerte y el esfuerzo incremental más bajo entre las hipótesis evaluadas. |  |  |  | X |
 
-Si, tras la validación posterior, varias hipótesis alcanzan al menos nivel **Ideal**, la redacción de [8.3.1. To-Be User Stories](#831-to-be-user-stories) y [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog) priorizará un máximo de cuatro mejoras con mayor evidencia cuantitativa directa y menor esfuerzo incremental: ficha de proveedor con persona de contacto y enlace web/red social, traducción completa en pantallas críticas, registro del motivo de consumo de inventario y vista mínima de correlación lote-tueste-cata.
 ### 8.2.6. Methods Selection.
 
 Para la selección de métodos y herramientas de experimentación de CaféLab, se compararon cuatro alternativas: Google Analytics, Catchpoint, RedLine13 y Lighthouse. La comparación se realizó considerando criterios como precio, capacidad de análisis, sencillez de uso y ventajas para el seguimiento del comportamiento del usuario, rendimiento de la aplicación y validación técnica de la plataforma.
@@ -7149,7 +7150,221 @@ En conclusión, el Web and Mobile Tracking Plan permitirá evaluar de forma orde
 
 ## 8.3. Experimentation.
 ### 8.3.1. To-Be User Stories.
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>User Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>Relacionado con (Epic ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TUS01</td>
+      <td>Mejora de ficha de proveedor</td>
+      <td>
+        Como dueño o administrador de cafetería de especialidad, quiero registrar una persona de contacto directa y un enlace web o red social dentro de la ficha del proveedor, para centralizar la información comercial y reducir la dependencia de herramientas externas.
+      </td>
+      <td>
+        <strong>Escenario 1: Registrar persona de contacto directa</strong><br><br>
+        <strong>Given</strong> el usuario está en el formulario de registro o edición de proveedor.<br><br>
+        <strong>When</strong> el usuario ingresa una persona de contacto directa y guarda los cambios.<br><br>
+        <strong>Then</strong> el sistema registra la información adicional dentro de la ficha del proveedor.<br><br><br>
+        <strong>Escenario 2: Registrar enlace web o red social del proveedor</strong><br><br>
+        <strong>Given</strong> el usuario está en el formulario de registro o edición de proveedor.<br><br>
+        <strong>When</strong> el usuario ingresa un enlace web o red social válido y guarda los cambios.<br><br>
+        <strong>Then</strong> el sistema almacena el enlace y lo muestra en el detalle del proveedor.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>TUS02</td>
+      <td>Traducción completa de pantallas críticas</td>
+      <td>
+        Como usuario de CaféLab, quiero que las pantallas críticas de la plataforma mantengan una traducción completa al cambiar el idioma, para comprender mejor la interfaz y aumentar mi confianza en el sistema.
+      </td>
+      <td>
+        <strong>Escenario 1: Cambiar idioma de la plataforma</strong><br><br>
+        <strong>Given</strong> el usuario se encuentra en una pantalla crítica de la plataforma.<br><br>
+        <strong>When</strong> el usuario cambia el idioma de la interfaz.<br><br>
+        <strong>Then</strong> el sistema muestra los títulos, botones, formularios y mensajes principales en el idioma seleccionado.<br><br><br>
+        <strong>Escenario 2: Evitar textos mezclados en la interfaz</strong><br><br>
+        <strong>Given</strong> el usuario navega por módulos críticos como proveedores, inventario, costos, cata o tueste.<br><br>
+        <strong>When</strong> el idioma seleccionado está activo.<br><br>
+        <strong>Then</strong> la aplicación no muestra textos mezclados entre español e inglés en los elementos principales de la interfaz.
+      </td>
+      <td>EP06</td>
+    </tr>
+    <tr>
+      <td>TUS03</td>
+      <td>Registro de motivo de consumo de inventario</td>
+      <td>
+        Como dueño o administrador de cafetería de especialidad, quiero registrar el motivo de consumo del inventario, como barra, retail o muestras, para mejorar la trazabilidad del uso del café y analizar con mayor claridad el destino de cada lote.
+      </td>
+      <td>
+        <strong>Escenario 1: Registrar consumo con motivo</strong><br><br>
+        <strong>Given</strong> el usuario está registrando un movimiento de consumo de inventario.<br><br>
+        <strong>When</strong> el usuario selecciona un motivo de consumo, como barra, retail, muestras u otro, y guarda el movimiento.<br><br>
+        <strong>Then</strong> el sistema registra el consumo junto con el motivo seleccionado y actualiza el stock del lote asociado.<br><br><br>
+        <strong>Escenario 2: Consultar historial de consumo</strong><br><br>
+        <strong>Given</strong> existen movimientos de inventario registrados con motivo de consumo.<br><br>
+        <strong>When</strong> el usuario consulta el historial de movimientos del inventario.<br><br>
+        <strong>Then</strong> el sistema muestra el motivo asociado a cada consumo registrado.
+      </td>
+      <td>EP06</td>
+    </tr>
+    <tr>
+      <td>TUS04</td>
+      <td>Vista mínima de correlación lote-tueste-cata</td>
+      <td>
+        Como barista profesional, quiero visualizar en una misma vista la relación entre lote, perfil de tueste y resultado de cata, para comparar información técnica y sensorial sin depender únicamente de memoria o experiencia empírica.
+      </td>
+      <td>
+        <strong>Escenario 1: Consultar relación entre lote, tueste y cata</strong><br><br>
+        <strong>Given</strong> el usuario selecciona un lote de café con información asociada de tueste y cata.<br><br>
+        <strong>When</strong> el usuario accede a la vista de correlación lote-tueste-cata.<br><br>
+        <strong>Then</strong> el sistema muestra la información del lote, el perfil de tueste y el resultado de cata en una misma vista.<br><br><br>
+        <strong>Escenario 2: Comparar información técnica y sensorial</strong><br><br>
+        <strong>Given</strong> el usuario está visualizando la vista de correlación lote-tueste-cata.<br><br>
+        <strong>When</strong> el sistema presenta los datos técnicos y sensoriales asociados.<br><br>
+        <strong>Then</strong> el usuario puede comparar la información de tueste y cata de forma centralizada.
+      </td>
+      <td>EP04</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 8.3.2. To-Be Product Backlog.
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th># Orden</th>
+      <th>To-Be User Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Prioridad</th>
+      <th>Story Points</th>
+      <th>Pseudocódigo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>TUS01</td>
+      <td>Mejora de ficha de proveedor</td>
+      <td>
+        Agregar campos opcionales de persona de contacto directa y enlace web o red social en la ficha del proveedor, con el objetivo de centralizar información comercial y reducir el uso de herramientas externas como WhatsApp, Excel o notas.
+      </td>
+      <td>Alta</td>
+      <td>5</td>
+      <td>
+        <pre>
+SI el usuario abre el formulario de proveedor ENTONCES
+  MOSTRAR campo personaDeContacto
+  MOSTRAR campo enlaceWebORedSocial
+FIN SI
+
+SI el usuario envía el formulario de proveedor ENTONCES
+  VALIDAR campos obligatorios del proveedor
+
+  SI enlaceWebORedSocial no está vacío ENTONCES
+    VALIDAR formato de URL
+  FIN SI
+
+  GUARDAR proveedor con personaDeContacto y enlaceWebORedSocial
+  MOSTRAR detalle actualizado del proveedor
+FIN SI
+</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TUS02</td>
+      <td>Traducción completa de pantallas críticas</td>
+      <td>
+        Completar las traducciones de los módulos críticos de CaféLab para evitar textos mezclados entre español e inglés y mejorar la comprensión de la plataforma en contextos internacionales.
+      </td>
+      <td>Alta</td>
+      <td>5</td>
+      <td>
+        <pre>
+PARA cada moduloCritico EN [dashboard, proveedores, inventario, costos, cata, tueste]
+  PARA cada textoInterfaz EN moduloCritico
+    SI idiomaSeleccionado ES "es" ENTONCES
+      MOSTRAR traduccionES[textoInterfaz]
+    SINO SI idiomaSeleccionado ES "en" ENTONCES
+      MOSTRAR traduccionEN[textoInterfaz]
+    FIN SI
+  FIN PARA
+FIN PARA
+
+SI falta una clave de traducción ENTONCES
+  REGISTRAR claveFaltante
+  EVITAR mostrar textos mezclados entre idiomas
+FIN SI
+</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TUS03</td>
+      <td>Registro de motivo de consumo de inventario</td>
+      <td>
+        Permitir que el usuario registre el motivo de consumo del inventario, como barra, retail, muestras u otro, para mejorar la trazabilidad del uso del café y el análisis de movimientos por lote.
+      </td>
+      <td>Alta</td>
+      <td>5</td>
+      <td>
+        <pre>
+SI el usuario abre el formulario de consumo de inventario ENTONCES
+  MOSTRAR selector de loteDeCafe
+  MOSTRAR campo cantidadUsada
+  MOSTRAR selector motivoDeConsumo
+  MOSTRAR campo notasDeUso
+FIN SI
+
+SI el usuario registra el consumo ENTONCES
+  VALIDAR loteDeCafe
+  VALIDAR que cantidadUsada sea mayor a 0
+  GUARDAR movimientoInventario con motivoDeConsumo y notasDeUso
+  ACTUALIZAR stock del loteDeCafe
+  MOSTRAR movimiento en el historial de inventario
+FIN SI
+</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>TUS04</td>
+      <td>Vista mínima de correlación lote-tueste-cata</td>
+      <td>
+        Crear una vista experimental que relacione lote, perfil de tueste y resultado de cata en una misma pantalla, permitiendo comparar información técnica y sensorial de forma centralizada.
+      </td>
+      <td>Media-Alta</td>
+      <td>8</td>
+      <td>
+        <pre>
+SI el usuario selecciona un loteDeCafe ENTONCES
+  perfilesTueste = OBTENER perfiles de tueste por loteDeCafeId
+  sesionesCata = OBTENER sesiones de cata por loteDeCafeId
+
+  MOSTRAR información del loteDeCafe
+  MOSTRAR datos del perfil de tueste relacionado
+  MOSTRAR resultado de cata relacionado
+FIN SI
+
+SI existen perfilesTueste y sesionesCata ENTONCES
+  MOSTRAR vista de correlación lote-tueste-cata
+SINO
+  MOSTRAR mensaje "No hay datos relacionados disponibles"
+FIN SI
+</pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 # Conclusiones y recomendaciones
 
