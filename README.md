@@ -7069,6 +7069,63 @@ Luego de comparar las herramientas, el equipo decidió utilizar principalmente *
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
 ### 8.2.8. Web and Mobile Tracking Plan.
 
+Para CaféLab, nuestro objetivo es monitorear la aplicación web y móvil con el fin de evaluar el uso real de las funcionalidades experimentales, validar la utilidad percibida por los usuarios y medir si las mejoras propuestas contribuyen a optimizar los procesos de trazabilidad, cata, tueste, inventario, costos y gestión operativa dentro de cafeterías de especialidad.
+
+A medida que avancemos hacia la etapa de experimentación, estableceremos un plan de seguimiento que permita recopilar información cuantitativa y cualitativa sobre la interacción de los usuarios con la plataforma. Este seguimiento será útil para comparar los resultados obtenidos con las hipótesis, métricas y umbrales definidos previamente en el diseño experimental.
+
+El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas principales:
+
+### 1. Implementación Inicial
+
+Durante esta fase, nos enfocaremos en el lanzamiento y validación inicial de las mejoras propuestas para CaféLab. El propósito será establecer una línea base de uso y comportamiento antes de tomar decisiones sobre la incorporación definitiva de las funcionalidades al producto.
+
+#### Recopilación de Datos
+
+**Métricas de uso:**  
+Se recopilarán datos sobre la cantidad de usuarios activos, duración de sesión, frecuencia de acceso a los módulos principales y número de veces que se utilizan funcionalidades como registro de lotes, creación de perfiles de tueste, sesiones de cata, movimientos de inventario y consulta de costos por lote.
+
+**Interacciones de los usuarios:**  
+Se registrarán las acciones realizadas por los usuarios dentro de los flujos experimentales, como clics en dashboards, uso de filtros, acceso a la vista consolidada por lote, apertura de correlaciones entre tueste y cata, registro de calibraciones de molienda y selección de planes de suscripción.
+
+**Feedback de usuarios:**  
+A través de encuestas breves y formularios post-sesión, se recogerán opiniones sobre la claridad, utilidad y facilidad de uso de las funcionalidades evaluadas. Este feedback permitirá conocer si los baristas y dueños de cafeterías perciben una mejora real en sus procesos de trabajo.
+
+#### Análisis Comparativo
+
+Los datos obtenidos durante esta fase serán comparados con el estado actual de la plataforma y con los criterios definidos en las hipótesis experimentales. Esto permitirá identificar si las mejoras generan impacto inmediato en la eficiencia de las tareas, reducción de errores, satisfacción del usuario y utilidad percibida.
+
+### 2. Seguimiento Continuo
+
+Luego de la implementación inicial, se establecerá un proceso de monitoreo continuo para evaluar el comportamiento de los usuarios durante un periodo más amplio. Esta etapa permitirá detectar patrones de uso, validar la permanencia del valor generado y realizar ajustes según los resultados obtenidos.
+
+#### Recopilación de Datos
+
+**Métricas en tiempo real:**  
+Se utilizarán herramientas de analítica web y móvil para observar el comportamiento de los usuarios dentro de la plataforma. Esto permitirá identificar qué módulos tienen mayor uso, qué pantallas generan mayor permanencia y qué funcionalidades presentan bajo nivel de interacción.
+
+**Segmentación de usuarios:**  
+Los datos serán analizados según el tipo de usuario, principalmente baristas profesionales y dueños o administradores de cafeterías de especialidad. Esta segmentación permitirá diferenciar necesidades operativas y administrativas, considerando que cada perfil utiliza CaféLab con objetivos distintos.
+
+**Seguimiento de funcionalidades clave:**  
+Se dará prioridad al seguimiento de funcionalidades relacionadas con trazabilidad de lotes, perfiles de tueste, cata digital, inventario, costos de producción, proveedores, defectos de tueste y calibración de molienda. Estas funcionalidades representan el núcleo del valor de CaféLab y están directamente relacionadas con las hipótesis planteadas.
+
+**Identificación de problemas de uso:**  
+Se revisarán posibles puntos de abandono, errores frecuentes, tareas incompletas o pantallas con baja interacción. Esta información permitirá detectar oportunidades de mejora en la interfaz y en los flujos del sistema.
+
+#### Evaluación y Ajustes
+
+Los resultados del seguimiento continuo serán comparados con los indicadores definidos en las secciones anteriores, como tasa de finalización de tareas, reducción de errores, utilidad percibida, satisfacción del usuario y frecuencia de uso. Con base en estos resultados, el equipo podrá decidir si una funcionalidad debe mantenerse, ajustarse, priorizarse para una siguiente iteración o descartarse.
+
+### Herramientas de Seguimiento
+
+Para ejecutar este plan, se utilizarán herramientas seleccionadas previamente en la sección de Methods Selection, principalmente Google Analytics, Microsoft Clarity, Google Forms, Lighthouse y Google Sheets. Estas herramientas permitirán combinar métricas de comportamiento, rendimiento, retroalimentación de usuarios y análisis comparativo de resultados.
+
+### Consideraciones de Privacidad
+
+El tracking de CaféLab se enfocará únicamente en datos necesarios para la validación experimental. Se evitará recopilar información personal sensible y se priorizará el uso de métricas agregadas, identificadores internos y datos asociados al uso funcional de la plataforma.
+
+En conclusión, el Web and Mobile Tracking Plan permitirá evaluar de forma ordenada el impacto de las mejoras experimentales dentro de CaféLab. Este seguimiento facilitará la toma de decisiones basada en evidencia y permitirá orientar la evolución del producto hacia funcionalidades que generen valor real para baristas profesionales y dueños de cafeterías de especialidad.
+
 ## 8.3. Experimentation.
 ### 8.3.1. To-Be User Stories.
 ### 8.3.2. To-Be Product Backlog.
