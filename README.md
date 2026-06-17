@@ -5859,8 +5859,6 @@ Estos datos serán utilizados como insumo para la formulación de hipótesis, la
 
 ### 6.3.2. Registro de Entrevistas.
 
-**Resumen del formulario aplicado**
-
 <table>
   <thead>
     <tr>
@@ -5896,6 +5894,104 @@ Estos datos serán utilizados como insumo para la formulación de hipótesis, la
   </tbody>
 </table>
 
+**Resumen del formulario aplicado**
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspecto evaluado</th>
+      <th>Resultado resumido</th>
+      <th>Interpretación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Perfil de participantes</td>
+      <td>47.4% baristas y 52.6% dueños o administradores</td>
+      <td>La muestra está equilibrada entre los dos perfiles objetivo, por lo que permite analizar la percepción tanto operativa como administrativa.</td>
+    </tr>
+    <tr>
+      <td>Experiencia previa</td>
+      <td>84.2% indicó tener experiencia registrando información de café, tueste, cata, inventario o proveedores</td>
+      <td>La mayoría de participantes cuenta con experiencia relacionada al dominio, lo que da mayor validez a sus respuestas.</td>
+    </tr>
+    <tr>
+      <td>Herramientas actuales de registro</td>
+      <td>36.8% usa Excel, 26.3% WhatsApp, 21.1% notas a mano y 15.8% software especializado</td>
+      <td>Se evidencia que una parte importante aún depende de herramientas externas o manuales, lo que refuerza la necesidad de centralizar información en CaféLab.</td>
+    </tr>
+    <tr>
+      <td>Correlación lote-tueste-cata</td>
+      <td>Promedio de utilidad: 4.11/5. Además, 78.9% considera que ayudaría a reducir decisiones basadas solo en memoria o experiencia empírica</td>
+      <td>La mejora presenta aceptación favorable y puede ser priorizada como una funcionalidad experimental orientada a trazabilidad y análisis técnico.</td>
+    </tr>
+    <tr>
+      <td>Vista unificada de curva de tueste y perfil sensorial</td>
+      <td>Promedio de importancia: 4.05/5</td>
+      <td>Los usuarios consideran relevante visualizar información técnica y sensorial en una sola vista, aunque su prioridad es ligeramente menor que otras mejoras.</td>
+    </tr>
+    <tr>
+      <td>Uso de vista correlación tueste-sabor</td>
+      <td>Promedio de probabilidad de uso: 3.95/5</td>
+      <td>Existe interés moderado-alto, pero no tan fuerte como en proveedores o traducción. Podría implementarse como versión mínima o dejarse como mejora posterior.</td>
+    </tr>
+    <tr>
+      <td>Perfil más beneficiado por la correlación tueste-cata</td>
+      <td>57.9% considera que beneficia más al barista, 31.6% a ambos perfiles</td>
+      <td>Esta mejora se asocia principalmente al trabajo técnico del barista, aunque también puede aportar valor al dueño o administrador.</td>
+    </tr>
+    <tr>
+      <td>Persona de contacto directa en proveedor</td>
+      <td>Promedio de utilidad: 4.58/5</td>
+      <td>Es una de las mejoras mejor valoradas. Conviene priorizarla porque es concreta, viable y tiene alto valor percibido.</td>
+    </tr>
+    <tr>
+      <td>Enlace web o red social del proveedor</td>
+      <td>Promedio de utilidad: 4.37/5</td>
+      <td>También presenta alta aceptación, por lo que puede implementarse junto con la mejora de ficha de proveedor.</td>
+    </tr>
+    <tr>
+      <td>Reducción de herramientas externas</td>
+      <td>89.5% considera que los nuevos campos en proveedor reducirían el uso de WhatsApp, Excel o notas</td>
+      <td>Este resultado respalda la hipótesis de que mejorar la ficha de proveedor puede reducir dependencia de herramientas externas.</td>
+    </tr>
+    <tr>
+      <td>Consulta integrada de origen, stock y costos</td>
+      <td>Promedio de importancia: 4.32/5</td>
+      <td>Los usuarios valoran contar con información operativa y económica centralizada para tomar decisiones.</td>
+    </tr>
+    <tr>
+      <td>Indicador económico más relevante</td>
+      <td>57.9% eligió costo por kilo como indicador principal</td>
+      <td>El costo por kilo debería ser el indicador económico prioritario en una futura vista de costos por lote.</td>
+    </tr>
+    <tr>
+      <td>Motivo de consumo de inventario</td>
+      <td>Promedio de utilidad: 4.37/5</td>
+      <td>Registrar el motivo de consumo, como barra, retail o muestras, tiene alta aceptación y puede aportar a la trazabilidad del inventario.</td>
+    </tr>
+    <tr>
+      <td>Traducción completa de pantallas</td>
+      <td>Promedio de importancia: 4.37/5</td>
+      <td>La traducción completa de módulos críticos es considerada importante para mejorar la comprensión de la plataforma.</td>
+    </tr>
+    <tr>
+      <td>Uso en contextos internacionales</td>
+      <td>Promedio de utilidad: 4.53/5</td>
+      <td>La internacionalización tiene alta aceptación, especialmente si CaféLab se usa en consultorías, competencias o con clientes internacionales.</td>
+    </tr>
+    <tr>
+      <td>Textos mezclados español-inglés</td>
+      <td>84.2% considera que afectaría su confianza en la plataforma</td>
+      <td>Este resultado respalda la necesidad de corregir textos mixtos y completar traducciones.</td>
+    </tr>
+    <tr>
+      <td>Traducción a otro idioma adicional</td>
+      <td>73.7% considera relevante incluir otro idioma en futuras versiones</td>
+      <td>Existe interés en ampliar la internacionalización, aunque puede dejarse como mejora futura si no es viable para la iteración actual.</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### 6.3.3. Evaluaciones según heurísticas.
