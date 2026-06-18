@@ -86,12 +86,12 @@
 | 1.28    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió 6.1.1 Core Entities Unit Tests.                                                                                                                                       |
 | 1.29    | 13/05/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcome.                                                                                                           |
 | 1.30    | 11/06/2026 | Fernandez Camayo, Carlos Fredy    | Añadió las secciones 8.1.1, 8.1.2, 8.1.3, 8.1.4, 8.1.5                                                                                                                       |
-| 1.31    | 17/06/2026 | Antayhua Castillo, Oscar Josué    | Completó la sección 6.3.3 Evaluaciones según heurísticas documentando 8 hallazgos de usabilidad derivados de las entrevistas de validación del Cap. VI                        |
+| 1.31    | 17/06/2026 | Antayhua Castillo, Oscar Josué    | Completó la sección 6.3.3 Evaluaciones según heurísticas documentando 8 hallazgos de usabilidad derivados de las entrevistas de validación del Cap. VI                       |
 | 1.32    | 17/06/2026 | Antayhua Castillo, Oscar Josué    | Añadió las secciones 8.2.1 Hypotheses, 8.2.2 Domain Business Metrics, 8.2.3 Measures, 8.2.4 Conditions y 8.2.5 Scale Calculations and Decisions                              |
 | 1.33    | 11/06/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y Student Outcome para TB2                                                                                                   |
-| 1.34    | 17/06/2026 | Inga Orihuela, Christian Fabrizio | Añadió las secciones 8.2.6, 8.2.7 y 8.2.8 .                                                                                                            |
-| 1.35    | 17/06/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcomes.                                                                                                            |
-
+| 1.34    | 17/06/2026 | Inga Orihuela, Christian Fabrizio | Añadió las secciones 8.2.6, 8.2.7 y 8.2.8 .                                                                                                                                  |
+| 1.35    | 17/06/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcomes.                                                                                                          |
+| 1.36    | 18/06/2026 | Loli Ramirez, Camila Cristina     | Añadió su Student Outcome y Project Report Collaboration Insight                                                                                                             |
 
 <div style="page-break-after: always;"></div>
 
@@ -204,7 +204,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Loli Ramirez Cristina</strong></td>
-    <td>Colocar actividades</td>
+    <td>Me encargué de preparar la planificación de la auditoría interna correspondiente a las secciones 6.4.2.1 a 6.4.2.4, establecí la estructura base para la información del grupo auditor, el cronograma de auditoría, el contenido de revisión y el registro de modificaciones para la subsanación de los hallazgos. Asimismo, coordiné con el líder del equipo la organización de estas actividades para su desarrollo en la entrega final, se definieron los lineamientos y responsabilidades necesarios para su futura ejecución.</td>
     <td>TB2</td>
   </tr>
   <tr>
