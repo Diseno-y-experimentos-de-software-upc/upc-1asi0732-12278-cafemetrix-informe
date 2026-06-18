@@ -1,5 +1,5 @@
 <!--Titulo principal-->
-<h1 align="center">Informe de Trabajo Final</h1>
+<h1 align="center">Informe de TB2</h1>
 
 <!--Nombre de la universidad-->
 <h3 align="center"> Universidad Peruana de Ciencias Aplicadas</h3>
@@ -239,7 +239,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     <tr>
     <td><strong>Evidencia</strong></td>
     <td colspan="2">
-    <img src="public/assets/images/tp1Collaboration/tp1report.png" alt="Evidencia">
+    <img src="public/assets/images/tb2Collaboration/tb2report.png" alt="Evidencia">
   </tr>
 </table>
 
