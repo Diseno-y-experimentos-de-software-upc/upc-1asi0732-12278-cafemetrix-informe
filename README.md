@@ -89,6 +89,7 @@
 | 1.31    | 17/06/2026 | Antayhua Castillo, Oscar Josué    | Completó la sección 6.3.3 Evaluaciones según heurísticas documentando 8 hallazgos de usabilidad derivados de las entrevistas de validación del Cap. VI                        |
 | 1.32    | 17/06/2026 | Antayhua Castillo, Oscar Josué    | Añadió las secciones 8.2.1 Hypotheses, 8.2.2 Domain Business Metrics, 8.2.3 Measures, 8.2.4 Conditions y 8.2.5 Scale Calculations and Decisions                              |
 | 1.33    | 11/06/2026 | Fernandez Camayo, Carlos Fredy    | Añadió su Project Report Collaboration Insights y Student Outcome para TB2                                                                                                   |
+| 1.34    | 17/06/2026 | Inga Orihuela, Christian Fabrizio | Añadió las secciones 8.2.6, 8.2.7 y 8.2.8 .                                                                                                            |
 
 
 <div style="page-break-after: always;"></div>
