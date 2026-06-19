@@ -1,5 +1,5 @@
 <!--Titulo principal-->
-<h1 align="center">Informe de TB2</h1>
+<h1 align="center">Informe del Avance 2 del proyecto</h1>
 
 <!--Nombre de la universidad-->
 <h3 align="center"> Universidad Peruana de Ciencias Aplicadas</h3>
