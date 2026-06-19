@@ -6746,7 +6746,7 @@ Con este reajuste, las preguntas con respaldo cuantitativo más directo del form
 
 El backlog prioriza las **preguntas de investigación** de [8.1.3](#813-experiment-ready-questions) —no una lista de características ni soluciones— mediante la escala Fibonacci (**1, 2, 3, 5, 8**), donde **1** representa la máxima prioridad de experimentación y **8** la menor.
 
-**Estructura del backlog:** Se adopta un backlog **deep** (profundo): un conjunto acotado de **9 preguntas** priorizadas —tres de integración estructural y seis incrementales sobre módulos del product backlog— listas para convertirse en Experiment Cards. Dentro de este backlog, se deja preparado un subconjunto de **máximo cuatro mejoras candidatas** para [8.3 Experimentation](#83-experimentation): ficha ampliada de proveedor, traducción completa en pantallas críticas, motivo de consumo de inventario y vista mínima de correlación lote-tueste-cata. Un backlog **broad** (amplio) reserva para iteraciones futuras: optimización REST (p95 en endpoints críticos), modo oscuro conmutable, evaluación formal de proveedores (escenario 2 de US01) e idiomas adicionales como chino.
+**Estructura del backlog:** Se adopta un backlog **deep** (profundo): un conjunto acotado de **9 preguntas** priorizadas —tres de integración estructural y seis incrementales sobre módulos del product backlog— listas para convertirse en Experiment Cards. Dentro de este backlog, se deja preparado un subconjunto de **máximo cinco mejoras candidatas** para [8.3 Experimentation](#83-experimentation): ficha ampliada de proveedor, traducción completa en pantallas críticas, motivo de consumo de inventario, vista mínima de correlación lote-tueste-cata y vista económica consolidada por lote. Un backlog **broad** (amplio) reserva para iteraciones futuras: optimización REST (p95 en endpoints críticos), modo oscuro conmutable, evaluación formal de proveedores (escenario 2 de US01) e idiomas adicionales como chino.
 
 **Criterios de priorización:** Total Score de [8.1.3](#813-experiment-ready-questions), alineamiento con las áreas de incertidumbre del [As-Is Summary (8.1.1)](#811-as-is-summary), viabilidad en el ciclo actual, evidencia cuantitativa directa del formulario inicial y preferencia por intervenciones mínimas (*Simplest Useful Thing*) sobre módulos ya desplegados. La columna **Why (motivación)** captura la razón de experimentar cada pregunta, justificando el esfuerzo del ciclo.
 
@@ -6758,7 +6758,7 @@ El backlog prioriza las **preguntas de investigación** de [8.1.3](#813-experime
 | 2 | ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata que reúna curvas de tueste y perfil sensorial del mismo lote? | El formulario muestra interés favorable: correlación lote-tueste-cata 4.11/5, vista curva + perfil sensorial 4.05/5 y probabilidad de uso 3.95/5. |
 | 3 | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata sin intervención manual del usuario? | Es la hipótesis estructural complementaria a la vista mínima de correlación, pero requiere mayor validación porque el formulario no midió directamente la automatización completa. |
 | 3 | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario y costos de producción? | La consulta integrada de origen, stock y costos fue valorada con 4.32/5, aunque su respaldo directo es menor que el de proveedor, i18n e inventario. |
-| 5 | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local en la sesión de cata? | Entrevistas y heurísticas documentaron fricciones concretas en barra, pero esta línea depende menos del formulario inicial que las cuatro mejoras priorizadas. |
+| 5 | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local en la sesión de cata? | Entrevistas y heurísticas documentaron fricciones concretas en barra, pero esta línea depende menos del formulario inicial que las cinco mejoras priorizadas. |
 | 5 | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? | Aldo Zavala solicitó filtros en validación; sigue siendo una mejora útil, aunque con menor evidencia cuantitativa directa en esta entrega. |
 | 8 | ¿Mejorará la consistencia entre turnos documentar marca y modelo del molino en el registro de calibraciones de molienda? | El formulario actual no aporta aún una señal cuantitativa equivalente; por ello queda como experimento complementario de menor prioridad. |
 
@@ -7041,7 +7041,7 @@ La decisión de priorización se toma a partir del formulario inicial y la viabi
 | Scale Calculation | Decision | Desfavorable | Aceptable | Ideal | Excelente |
 |---|---|---|---|---|---|
 | Enlace automático lote-tueste-cata. El formulario inicial respalda la necesidad de correlación con 4.11/5 de utilidad, pero la automatización completa del enlace no fue medida de forma directa y además implica integración transversal entre módulos. | Se mantiene como hipótesis estructural relevante, pero no entra entre las primeras mejoras To-Be porque su evidencia cuantitativa es indirecta y su esfuerzo incremental es mayor que otras opciones del ciclo. |  | X |  |  |
-| Vista económica consolidada por lote. El formulario inicial muestra 4.32/5 de importancia para la consulta integrada de origen, stock y costos, pero la mejora requiere una composición funcional más amplia del dashboard y su evidencia no es tan directa como en proveedores, i18n o consumo. | Se conserva como hipótesis de apoyo para iteraciones siguientes o refinamiento posterior, sin incluirla entre las cuatro mejoras priorizadas del presente ciclo. |  | X |  |  |
+| Vista económica consolidada por lote. El formulario inicial muestra 4.32/5 de importancia para la consulta integrada de origen, stock y costos; además, prioriza costo por kilo como indicador económico principal (57.9%). Aunque la mejora requiere una composición funcional más amplia del dashboard, mantiene evidencia cuantitativa directa y fuerte relación con el valor de negocio para administradores. | Pasa a 8.3 como quinta mejora priorizada del ciclo, al combinar evidencia cuantitativa suficiente con una intervención To-Be coherente con US13 y el dashboard ya desplegado. |  |  | X |  |
 | Vista mínima de correlación lote-tueste-cata. El formulario inicial reporta 4.11/5 de utilidad para la correlación, 4.05/5 de importancia para la vista combinada y 3.95/5 de probabilidad de uso; aunque la probabilidad de uso no supera 4/5, la mejora mantiene coherencia directa con la propuesta de valor central y puede construirse como versión mínima. | Pasa a 8.3 como mejora priorizada, en versión mínima, por combinar evidencia cuantitativa favorable con valor estratégico y alcance incremental acotado. |  |  | X |  |
 | Mejoras UX en cata (campos obligatorios, diferenciar editar/clonar y temporizador). La evidencia principal proviene de entrevistas y heurísticas, no del formulario inicial cuantitativo. | Se mantiene como hipótesis válida de usabilidad, pero no queda entre las mejoras priorizadas de 8.3 porque en esta entrega otras opciones cuentan con respaldo cuantitativo más directo. |  | X |  |  |
 | Marca y modelo del molino en calibraciones. La mejora surge del análisis del flujo y de entrevistas previas, sin evidencia cuantitativa directa en el formulario inicial. | Se conserva como mejora contextual de interés, pero no se prioriza para 8.3 debido a la ausencia de validación cuantitativa directa en el formulario inicial. |  | X |  |  |
@@ -7049,6 +7049,8 @@ La decisión de priorización se toma a partir del formulario inicial y la viabi
 | Motivo de consumo en inventario. El formulario inicial reporta 4.37/5 de utilidad percibida y la mejora tiene bajo esfuerzo incremental al tratarse de un campo adicional de trazabilidad. | Pasa a 8.3 como mejora priorizada por su evidencia cuantitativa directa, claridad funcional y viabilidad de implementación incremental. |  |  | X |  |
 | Traducción completa en pantallas críticas. El formulario inicial reporta 4.37/5 de importancia, 4.53/5 de utilidad para uso internacional y 84.2% de respuestas afirmando que los textos mezclados afectan la confianza. | Pasa a 8.3 como mejora priorizada por evidencia cuantitativa directa alta, impacto transversal y viabilidad clara en flujos críticos. |  |  | X |  |
 | Persona de contacto y enlace web/red social en proveedores. El formulario inicial reporta 4.58/5 para persona de contacto, 4.37/5 para enlace web/red social y 89.5% de respuestas afirmando reducción de herramientas externas. | Pasa a 8.3 como mejora de máxima prioridad dentro del ciclo, por presentar la evidencia más fuerte y el esfuerzo incremental más bajo entre las hipótesis evaluadas. |  |  |  | X |
+
+A partir de los resultados del formulario inicial, se priorizarán como máximo cinco mejoras para 8.3.1 To-Be User Stories y 8.3.2 To-Be Product Backlog, considerando evidencia cuantitativa directa y esfuerzo incremental. La validación To-Be se utilizará posteriormente para comprobar si dichas mejoras cumplen las hipótesis.
 
 ### 8.2.6. Methods Selection.
 
@@ -7239,6 +7241,24 @@ En conclusión, el Web and Mobile Tracking Plan permitirá evaluar de forma orde
       </td>
       <td>EP04</td>
     </tr>
+    <tr>
+      <td>TUS05</td>
+      <td>Vista económica consolidada por lote</td>
+      <td>
+        Como dueño o administrador de cafetería de especialidad, quiero visualizar en una misma pantalla el stock, los movimientos de inventario y los indicadores de costos de producción de un lote, para evaluar su rentabilidad sin reunir manualmente información dispersa.
+      </td>
+      <td>
+        <strong>Escenario 1: Consultar rentabilidad consolidada del lote</strong><br><br>
+        <strong>Given</strong> el usuario selecciona un lote con datos de inventario y costos registrados.<br><br>
+        <strong>When</strong> el usuario accede a la vista económica consolidada por lote.<br><br>
+        <strong>Then</strong> el sistema muestra en una sola pantalla el stock disponible, los movimientos del lote y los indicadores económicos principales, como costo por kilo y margen estimado.<br><br><br>
+        <strong>Escenario 2: Revisar indicadores económicos clave</strong><br><br>
+        <strong>Given</strong> el usuario está visualizando la vista económica consolidada del lote.<br><br>
+        <strong>When</strong> el sistema carga la información disponible del lote seleccionado.<br><br>
+        <strong>Then</strong> el usuario puede identificar de forma centralizada los datos necesarios para analizar la rentabilidad y el estado económico del lote.
+      </td>
+      <td>EP06</td>
+    </tr>
   </tbody>
 </table>
 
@@ -7365,6 +7385,34 @@ SI existen perfilesTueste y sesionesCata ENTONCES
   MOSTRAR vista de correlación lote-tueste-cata
 SINO
   MOSTRAR mensaje "No hay datos relacionados disponibles"
+FIN SI
+</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>TUS05</td>
+      <td>Vista económica consolidada por lote</td>
+      <td>
+        Integrar en una misma vista del dashboard la información de stock, movimientos de inventario e indicadores de costos de producción por lote, para facilitar el análisis de rentabilidad sin consultar módulos separados.
+      </td>
+      <td>Media-Alta</td>
+      <td>8</td>
+      <td>
+        <pre>
+SI el usuario selecciona un loteDeCafe ENTONCES
+  datosInventario = OBTENER stock y movimientos por loteDeCafeId
+  datosCostos = OBTENER costos de producción por loteDeCafeId
+
+  MOSTRAR resumen del loteDeCafe
+  MOSTRAR stock disponible
+  MOSTRAR historial de movimientos
+  MOSTRAR costoPorKilo
+  MOSTRAR margenEstimado
+FIN SI
+
+SI faltan datosInventario O datosCostos ENTONCES
+  MOSTRAR mensaje "Faltan datos para el análisis económico completo del lote"
 FIN SI
 </pre>
       </td>
