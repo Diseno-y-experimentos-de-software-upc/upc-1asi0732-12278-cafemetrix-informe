@@ -209,7 +209,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Antayhua Castillo, Oscar Josué</strong></td>
-    <td>Colocar actividades</td>
+    <td>Me encargué de completar la sección 6.3.3 Evaluaciones según heurísticas, documentando 8 hallazgos de usabilidad identificados a partir de las entrevistas de validación del Capítulo VI, clasificándolos por escala de severidad y heurística de Nielsen violada, e incluyendo una recomendación concreta para cada uno. Asimismo, redacté las secciones del Capítulo VIII correspondientes al diseño experimental: 8.2.1 Hypotheses (9 hipótesis con umbrales medibles), 8.2.2 Domain Business Metrics (20 métricas agrupadas por experimento y segmento), 8.2.3 Measures (medidas principales y complementarias por hipótesis), 8.2.4 Conditions (condición experimental vs. control para cada experimento) y 8.2.5 Scale Calculations and Decisions (rangos Desfavorable, Aceptable, Ideal y Excelente con criterios de decisión).</td>
     <td>TB2</td>
   </tr>
   <tr>
