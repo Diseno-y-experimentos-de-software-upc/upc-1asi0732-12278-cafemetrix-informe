@@ -6104,8 +6104,246 @@ Recomendación: Implementar un historial de actividad a nivel de entidad (al men
 ## 6.4. Auditoría de Experiencias de Usuario.
 ### 6.4.1. Auditoría realizada.
 #### 6.4.1.1. Información del grupo auditado.
+
+El grupo auditado corresponde al startup **WorkMate**, responsable del producto digital **Jobsy**, de acuerdo con la carátula y el contenido del informe entregado por el equipo. La auditoría tomó como base el enfoque del **Project Statement** del trabajo final y contrastó la evidencia documental con los artefactos de software proporcionados localmente, a fin de verificar la coherencia entre lo reportado, lo expuesto y lo efectivamente implementado en el programa.
+
+El equipo auditado está conformado por **María Patricia Hernádez Uchuya (U202311258)**, **Jasmin Adriana Urrutia Pena (U202310008)**, **Fabricio Samir Vega Coronado (U202317000)** y **Ysaac Ligorio Villanueva Andrade (U20231c168)**. Como evidencia principal se revisó el informe, así como los proyectos frontend y backend entregados en local para la verificación de funcionalidades, estructura técnica y correspondencia con las secciones declaradas en el informe.
+
+<table>
+  <tr>
+    <th>Elemento</th>
+    <th>Información identificada</th>
+  </tr>
+  <tr>
+    <td>Startup auditado</td>
+    <td>WorkMate</td>
+  </tr>
+  <tr>
+    <td>Producto auditado</td>
+    <td>Jobsy</td>
+  </tr>
+  <tr>
+    <td>Integrantes del equipo auditado</td>
+    <td>María Patricia Hernádez Uchuya, Jasmin Adriana Urrutia Pena, Fabricio Samir Vega Coronado y Ysaac Ligorio Villanueva Andrade</td>
+  </tr>
+  <tr>
+    <td>Artefactos revisados</td>
+    <td>Informe, código fuente del frontend y código fuente del backend</td>
+  </tr>
+  <tr>
+    <td>Stack observado</td>
+    <td>Frontend web en Vue 3 + Vite con Vue Router, PrimeVue y Vue-i18n. Backend en ASP.NET Core (.NET 9) con JWT, Swagger, MySQL y servicios de apoyo con IA (Claude y Gemini).</td>
+  </tr>
+  <tr>
+    <td>Alcance funcional identificado</td>
+    <td>Selección de rol, registro e inicio de sesión. Flujo de postulante: panel principal, ofertas, postulaciones, bandeja de entrada, perfil y asistencia IA. Flujo de reclutador: panel principal, publicaciones, candidatos, analíticas, perfil y asistencia IA. Servicios backend para usuarios, vacantes, postulaciones, mensajería y análisis documental</td>
+  </tr>
+  <tr>
+    <td>Criterio de referencia para la auditoría</td>
+    <td>Índice del Final Project Statement, priorizando la correspondencia entre las secciones del informe, la exposición presentada y la implementación observable del producto</td>
+  </tr>
+</table>
+
+
 #### 6.4.1.2. Cronograma de auditoría realizada.
+El siguiente cronograma resume la ejecución de la auditoría interna desarrollada sobre el producto **Jobsy**, tomando como marco de referencia el **Final Project Statement**, el informe entregado por el grupo auditado, la exposición centrada en el Capítulo VIII y la revisión técnica del código fuente frontend y backend proporcionado en local.
+
+<table border="1">
+  <tr>
+    <th>Fecha</th>
+    <th>Horario</th>
+    <th>Actividad de auditoría</th>
+    <th>Evidencia revisada</th>
+    <th>Técnica aplicada</th>
+    <th>Resultado esperado</th>
+  </tr>
+  <tr>
+    <td>28/06/2026</td>
+    <td>09:00 – 09:30</td>
+    <td>Reunión de apertura y definición del alcance de la auditoría</td>
+    <td>Final Project Statement y programa de auditoría</td>
+    <td>Revisión documental</td>
+    <td>Definir alcance, criterios y documentación a revisar</td>
+  </tr>
+  <tr>
+    <td>28/06/2026</td>
+    <td>09:30 – 10:20</td>
+    <td>Revisión integral del informe del proyecto</td>
+    <td>Informe final (Capítulos 1 al 8)</td>
+    <td>Revisión documental</td>
+    <td>Verificar consistencia y cumplimiento del Project Statement</td>
+  </tr>
+  <tr>
+    <td>28/06/2026</td>
+    <td>10:20 – 11:10</td>
+    <td>Revisión de la exposición del Capítulo VIII</td>
+    <td>Diapositivas y notas de auditoría</td>
+    <td>Análisis comparativo</td>
+    <td>Contrastar lo expuesto con el informe</td>
+  </tr>
+  <tr>
+    <td>28/06/2026</td>
+    <td>11:10 – 12:00</td>
+    <td>Inspección del frontend</td>
+    <td>Código fuente Frontend Jobsy</td>
+    <td>Inspección del código</td>
+    <td>Verificar funcionalidades implementadas y su correspondencia con la documentación</td>
+  </tr>
+  <tr>
+    <td>28/06/2026</td>
+    <td>12:00 – 12:50</td>
+    <td>Inspección del backend</td>
+    <td>Código fuente Backend Jobsy</td>
+    <td>Inspección del código</td>
+    <td>Verificar servicios, endpoints y lógica implementada</td>
+  </tr>
+  <tr>
+    <td>28/06/2026</td>
+    <td>12:50 – 13:20</td>
+    <td>Inspección de la ejecución del sistema</td>
+    <td>Aplicación Jobsy en ejecución y resultados de las pruebas funcionales</td>
+    <td>Validación funcional</td>
+    <td>Comprobar el correcto funcionamiento de las funcionalidades implementadas e identificar errores durante la ejecución</td>
+  </tr>
+  <tr>
+    <td>28/06/2026</td>
+    <td>13:20 – 14:00</td>
+    <td>Consolidación de evidencias y elaboración de hallazgos</td>
+    <td>Informe, exposición, código y ejecución del sistema</td>
+    <td>Análisis comparativo</td>
+    <td>Identificar hallazgos sustentados en evidencia</td>
+  </tr>
+</table>
+
 #### 6.4.1.3. Contenido de auditoría realizada.
+El contenido de la auditoría se estructuró como una **lista de verificación basada en evidencia**, cuyo objetivo fue contrastar lo declarado por el grupo auditado en su informe y exposición con lo observable en los artefactos del programa entregados en local. Para esta primera versión, los resultados corresponden a una **revisión documental y técnica preliminar**; por ello, los ítems marcados como parciales deberán actualizarse cuando se ejecute la validación funcional de flujos en entorno local.
+
+**Lista de verificación aplicada**
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Referencia del Project Statement</th>
+    <th>Criterio de verificación</th>
+    <th>Evidencia revisada</th>
+    <th>Resultado preliminar</th>
+    <th>Clasificación</th>
+  </tr>
+  <tr>
+    <td>LV01</td>
+    <td>Estructura general del informe y presentación del producto</td>
+    <td>El informe identifica con claridad al startup, producto e integrantes del equipo auditado</td>
+    <td>Carátula y datos iniciales de <code>WorkMade-report-av2.pdf</code></td>
+    <td>Conforme: la identificación del grupo y del producto es clara y consistente</td>
+    <td>Fortaleza</td>
+  </tr>
+  <tr>
+    <td>LV02</td>
+    <td>5.2.3 Implemented Frontend-Web Application Evidence</td>
+    <td>Existen en el frontend flujos diferenciados para los roles principales del producto</td>
+    <td><code>src/app/routers/router.js</code> y vistas asociadas a postulante y reclutador</td>
+    <td>Conforme: se evidencian rutas y pantallas para autenticación, postulante y reclutador</td>
+    <td>Fortaleza</td>
+  </tr>
+  <tr>
+    <td>LV03</td>
+    <td>5.2.5 Implemented RESTful API Evidence y 5.2.6 RESTful API documentation</td>
+    <td>El backend expone servicios coherentes con los flujos del frontend</td>
+    <td>Controladores <code>UserController</code>, <code>JobOfferController</code>, <code>ApplicationController</code>, <code>MessagesController</code>, <code>ChatController</code> y <code>DocumentController</code></td>
+    <td>Conforme: existen endpoints para usuarios, vacantes, postulaciones, mensajería y apoyo con IA</td>
+    <td>Fortaleza</td>
+  </tr>
+  <tr>
+    <td>LV04</td>
+    <td>6.1 Testing Suites &amp; Validation</td>
+    <td>El sistema presenta evidencia técnica de pruebas asociadas a historias de usuario core</td>
+    <td>Proyecto <code>Jobsy.Tests</code> con pruebas <code>US001</code> a <code>US015</code></td>
+    <td>Conforme: se identifican pruebas unitarias y artefactos por historias de usuario</td>
+    <td>Fortaleza</td>
+  </tr>
+  <tr>
+    <td>LV05</td>
+    <td>5.1.4 Software Deployment Configuration y 5.2.5 Implemented RESTful API Evidence</td>
+    <td>La evidencia de despliegue declarada en el informe coincide con la configuración observada en el código</td>
+    <td>Informe <code>WorkMade-report-av2.pdf</code>, <code>.env</code> del frontend y comentarios/configuración de <code>Program.cs</code></td>
+    <td>Parcial: el informe refiere Railway, mientras que el código revisado apunta a <code>backend-jobsy.onrender.com</code> y comentarios asociados a Render</td>
+    <td>Observación</td>
+  </tr>
+  <tr>
+    <td>LV06</td>
+    <td>5.2.3 Implemented Frontend-Web Application Evidence</td>
+    <td>Las integraciones del frontend consumen un origen consistente y portable para todos los módulos</td>
+    <td>Servicios del frontend, especialmente <code>JobOffers.service.js</code> y variables <code>VITE_API_URL</code></td>
+    <td>Parcial: la mayoría de servicios usa <code>VITE_API_URL</code>, pero el módulo de analíticas consume <code>http://localhost:3500/job_applications_summary</code></td>
+    <td>Oportunidad de mejora</td>
+  </tr>
+  <tr>
+    <td>LV07</td>
+    <td>6.2.1.2 Code Quality &amp; Code Security</td>
+    <td>Las credenciales y llaves de servicios externos se gestionan de forma segura</td>
+    <td><code>apiPDF.service.js</code>, <code>appsettings.json</code> y configuración JWT</td>
+    <td>Parcial: se identificó una API key embebida en frontend y configuraciones sensibles visibles en archivos de desarrollo</td>
+    <td>Oportunidad de mejora</td>
+  </tr>
+  <tr>
+    <td>LV08</td>
+    <td>1.2 Solution Profile y 5.2 Product Implementation &amp; Deployment</td>
+    <td>Las funcionalidades declaradas en la descripción del producto tienen correlato verificable en el programa entregado</td>
+    <td>Descripción funcional del informe y búsqueda en frontend/backend</td>
+    <td>Parcial: sí se evidencian vacantes, postulaciones, mensajería, analíticas y asistencia IA, pero no se encontró evidencia clara en el código revisado para contratos laborales digitales ni onboarding</td>
+    <td>Observación</td>
+  </tr>
+  <tr>
+    <td>LV09</td>
+    <td>6.2 Static testing &amp; Verification</td>
+    <td>La configuración backend muestra una base técnica mínima para autenticación, documentación y acceso a servicios</td>
+    <td><code>Program.cs</code>, Swagger, JWT, CORS y DbContext</td>
+    <td>Conforme con observaciones: existe base técnica funcional, aunque con margen de endurecimiento en seguridad y despliegue</td>
+    <td>Fortaleza</td>
+  </tr>
+</table>
+
+**Relación de hallazgos identificados**
+
+<table>
+  <tr>
+    <th>Código</th>
+    <th>Hallazgo</th>
+    <th>Evidencia</th>
+    <th>Clasificación</th>
+  </tr>
+  <tr>
+    <td>H01</td>
+    <td>Se identificó inconsistencia entre la evidencia de despliegue del backend descrita en el informe y la configuración observada en el código entregado.</td>
+    <td>El informe hace referencia a Railway, mientras que el frontend consume <code>https://backend-jobsy.onrender.com/api</code> y el backend contiene comentarios de despliegue asociados a Render.</td>
+    <td>Observación</td>
+  </tr>
+  <tr>
+    <td>H02</td>
+    <td>El módulo de analíticas del frontend presenta una dependencia hardcodeada a <code>localhost</code>, lo que puede afectar su portabilidad y consistencia con el resto de la aplicación.</td>
+    <td><code>JobOffers.service.js</code> consume <code>http://localhost:3500/job_applications_summary</code> en lugar de usar la misma variable de entorno del resto de servicios.</td>
+    <td>Oportunidad de mejora</td>
+  </tr>
+  <tr>
+    <td>H03</td>
+    <td>Se detectó exposición de una API key de servicio externo directamente en el código frontend, lo cual incrementa el riesgo de uso indebido y compromete la seguridad del sistema.</td>
+    <td><code>apiPDF.service.js</code> contiene una clave de <code>pdf.co</code> embebida en el cliente.</td>
+    <td>Oportunidad de mejora</td>
+  </tr>
+  <tr>
+    <td>H04</td>
+    <td>Parte de la propuesta funcional declarada en el informe no pudo ser corroborada de manera clara en el programa revisado.</td>
+    <td>En la descripción del producto se mencionan contratos laborales digitales y onboarding, pero no se hallaron rutas, vistas o endpoints explícitos que sustenten esas funciones en los artefactos revisados.</td>
+    <td>Observación</td>
+  </tr>
+  <tr>
+    <td>H05</td>
+    <td>El producto evidencia una separación funcional clara por roles y una cobertura técnica mínima de backend, frontend y pruebas.</td>
+    <td>Se identificaron rutas diferenciadas por rol, endpoints coherentes con los flujos principales y pruebas organizadas por historias de usuario.</td>
+    <td>Fortaleza</td>
+  </tr>
+</table>
+
 ### 6.4.2. Auditoría recibida.
 #### 6.4.2.1. Información del grupo auditor.
 #### 6.4.2.2. Cronograma de auditoría recibida.
