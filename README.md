@@ -6216,90 +6216,122 @@ El siguiente cronograma resume la ejecución de la auditoría interna desarrolla
 </table>
 
 #### 6.4.1.3. Contenido de auditoría realizada.
-El contenido de la auditoría se estructuró como una **lista de verificación basada en evidencia**, cuyo objetivo fue contrastar lo declarado por el grupo auditado en su informe y exposición con lo observable en los artefactos del programa entregados en local. Para esta primera versión, los resultados corresponden a una **revisión documental y técnica preliminar**; por ello, los ítems marcados como parciales deberán actualizarse cuando se ejecute la validación funcional de flujos en entorno local.
+El contenido de la auditoría se actualizó con base en la **ejecución local del sistema**, la revisión de las **User Stories documentadas en la sección 3.2** y la validación complementaria del código fuente frontend y backend. La siguiente lista de verificación consolida el estado final de cumplimiento observado durante la auditoría.
 
-**Lista de verificación aplicada**
+**Lista de verificación final**
 
 <table>
   <tr>
     <th>ID</th>
-    <th>Referencia del Project Statement</th>
-    <th>Criterio de verificación</th>
-    <th>Evidencia revisada</th>
-    <th>Resultado preliminar</th>
+    <th>US auditada</th>
+    <th>Resultado de la ejecución local</th>
+    <th>Evidencia funcional y técnica</th>
     <th>Clasificación</th>
   </tr>
   <tr>
     <td>LV01</td>
-    <td>Estructura general del informe y presentación del producto</td>
-    <td>El informe identifica con claridad al startup, producto e integrantes del equipo auditado</td>
-    <td>Carátula y datos iniciales de <code>WorkMade-report-av2.pdf</code></td>
-    <td>Conforme: la identificación del grupo y del producto es clara y consistente</td>
+    <td>US001 - Crear nueva vacante</td>
+    <td>Cumple. Se pudo registrar una nueva vacante y hacerla visible para postulantes.</td>
+    <td>Validación local del flujo de publicación. Se observó además que la creación funciona sobre los estados disponibles Activa/Borrador.</td>
     <td>Fortaleza</td>
   </tr>
   <tr>
     <td>LV02</td>
-    <td>5.2.3 Implemented Frontend-Web Application Evidence</td>
-    <td>Existen en el frontend flujos diferenciados para los roles principales del producto</td>
-    <td><code>src/app/routers/router.js</code> y vistas asociadas a postulante y reclutador</td>
-    <td>Conforme: se evidencian rutas y pantallas para autenticación, postulante y reclutador</td>
-    <td>Fortaleza</td>
+    <td>US002 - Editar vacante existente</td>
+    <td>No cumple. Aunque la vacante puede editarse, no existe el estado Cerrada requerido por los criterios de aceptación.</td>
+    <td>La ejecución local mostró ausencia del escenario de restricción por estado cerrada. En código, el enum de backend solo define <code>Activa</code> y <code>Borrador</code>, y el formulario de edición del frontend también solo ofrece esos dos estados.</td>
+    <td>Observación</td>
   </tr>
   <tr>
     <td>LV03</td>
-    <td>5.2.5 Implemented RESTful API Evidence y 5.2.6 RESTful API documentation</td>
-    <td>El backend expone servicios coherentes con los flujos del frontend</td>
-    <td>Controladores <code>UserController</code>, <code>JobOfferController</code>, <code>ApplicationController</code>, <code>MessagesController</code>, <code>ChatController</code> y <code>DocumentController</code></td>
-    <td>Conforme: existen endpoints para usuarios, vacantes, postulaciones, mensajería y apoyo con IA</td>
-    <td>Fortaleza</td>
+    <td>US003 - Eliminar vacante</td>
+    <td>No cumple. La vacante se elimina, pero no se implementa el cierre del proceso mediante estado Cerrada.</td>
+    <td>La ejecución local confirmó que la única forma de detener una vacante es eliminarla. En código, el backend aplica borrado lógico y no cambio de estado a Cerrada.</td>
+    <td>No conformidad</td>
   </tr>
   <tr>
     <td>LV04</td>
-    <td>6.1 Testing Suites &amp; Validation</td>
-    <td>El sistema presenta evidencia técnica de pruebas asociadas a historias de usuario core</td>
-    <td>Proyecto <code>Jobsy.Tests</code> con pruebas <code>US001</code> a <code>US015</code></td>
-    <td>Conforme: se identifican pruebas unitarias y artefactos por historias de usuario</td>
+    <td>US004 - Aplicar a vacante</td>
+    <td>Cumple. El postulante puede aplicar correctamente a una oferta.</td>
+    <td>Validación local del flujo de postulación. El frontend solicita un enlace de CV y el backend registra la postulación mediante <code>CreateApplicationCommand</code>.</td>
     <td>Fortaleza</td>
   </tr>
   <tr>
     <td>LV05</td>
-    <td>5.1.4 Software Deployment Configuration y 5.2.5 Implemented RESTful API Evidence</td>
-    <td>La evidencia de despliegue declarada en el informe coincide con la configuración observada en el código</td>
-    <td>Informe <code>WorkMade-report-av2.pdf</code>, <code>.env</code> del frontend y comentarios/configuración de <code>Program.cs</code></td>
-    <td>Parcial: el informe refiere Railway, mientras que el código revisado apunta a <code>backend-jobsy.onrender.com</code> y comentarios asociados a Render</td>
-    <td>Observación</td>
+    <td>US005 - Visualizar analíticas de reclutamiento</td>
+    <td>Cumple. La vista de analíticas mostró las métricas esperadas en la validación local.</td>
+    <td>Validación funcional del módulo Analíticas y revisión del consumo de datos desde el frontend.</td>
+    <td>Fortaleza</td>
   </tr>
   <tr>
     <td>LV06</td>
-    <td>5.2.3 Implemented Frontend-Web Application Evidence</td>
-    <td>Las integraciones del frontend consumen un origen consistente y portable para todos los módulos</td>
-    <td>Servicios del frontend, especialmente <code>JobOffers.service.js</code> y variables <code>VITE_API_URL</code></td>
-    <td>Parcial: la mayoría de servicios usa <code>VITE_API_URL</code>, pero el módulo de analíticas consume <code>http://localhost:3500/job_applications_summary</code></td>
-    <td>Oportunidad de mejora</td>
+    <td>US006 - Visualizar resumen de actividad en el dashboard</td>
+    <td>Cumple. El dashboard del reclutador mostró indicadores clave y accesos rápidos a módulos.</td>
+    <td>Validación local del panel principal del reclutador y sus accesos a Publicaciones, Candidatos, Analíticas y Asistencia IA.</td>
+    <td>Fortaleza</td>
   </tr>
   <tr>
     <td>LV07</td>
-    <td>6.2.1.2 Code Quality &amp; Code Security</td>
-    <td>Las credenciales y llaves de servicios externos se gestionan de forma segura</td>
-    <td><code>apiPDF.service.js</code>, <code>appsettings.json</code> y configuración JWT</td>
-    <td>Parcial: se identificó una API key embebida en frontend y configuraciones sensibles visibles en archivos de desarrollo</td>
-    <td>Oportunidad de mejora</td>
+    <td>US007 - Registrar cuenta de postulante</td>
+    <td>Cumple. El registro base del postulante fue satisfactorio.</td>
+    <td>Validación local del formulario de registro y revisión del flujo de creación de usuario estándar.</td>
+    <td>Fortaleza</td>
   </tr>
   <tr>
     <td>LV08</td>
-    <td>1.2 Solution Profile y 5.2 Product Implementation &amp; Deployment</td>
-    <td>Las funcionalidades declaradas en la descripción del producto tienen correlato verificable en el programa entregado</td>
-    <td>Descripción funcional del informe y búsqueda en frontend/backend</td>
-    <td>Parcial: sí se evidencian vacantes, postulaciones, mensajería, analíticas y asistencia IA, pero no se encontró evidencia clara en el código revisado para contratos laborales digitales ni onboarding</td>
-    <td>Observación</td>
+    <td>US008 - Registrar cuenta de reclutador</td>
+    <td>No cumple. No se verificó RUC ni se implementó el estado pendiente de verificación indicado en los criterios.</td>
+    <td>La ejecución local mostró que el formulario de registro solo solicita nombre, correo y contraseña. En frontend se diferencia el rol, pero no se piden datos empresariales adicionales; en backend el registro utiliza el mismo endpoint general de usuarios.</td>
+    <td>No conformidad</td>
   </tr>
   <tr>
     <td>LV09</td>
-    <td>6.2 Static testing &amp; Verification</td>
-    <td>La configuración backend muestra una base técnica mínima para autenticación, documentación y acceso a servicios</td>
-    <td><code>Program.cs</code>, Swagger, JWT, CORS y DbContext</td>
-    <td>Conforme con observaciones: existe base técnica funcional, aunque con margen de endurecimiento en seguridad y despliegue</td>
-    <td>Fortaleza</td>
+    <td>US009 - Editar perfil profesional</td>
+    <td>No cumple. La edición de perfil no permite subir o reemplazar el CV desde el perfil.</td>
+    <td>La prueba local confirmó que el CV solo puede cargarse en Asistencia IA o enviarse como enlace al postular. El formulario de edición de perfil solo expone nombre, correo y descripción.</td>
+    <td>No conformidad</td>
+  </tr>
+  <tr>
+    <td>LV10</td>
+    <td>US010 - Sugerencia de evaluación</td>
+    <td>No cumple. La generación de la guía de entrevista falla con error 401 de OpenRouter.</td>
+    <td>Durante la ejecución local, la acción <code>Generar guía de entrevista</code> devolvió <code>Unauthorized: Missing Authentication header</code>. En backend, el servicio de OpenRouter depende de la variable <code>OPENROUTER_API_KEY</code>.</td>
+    <td>No conformidad</td>
+  </tr>
+  <tr>
+    <td>LV11</td>
+    <td>US011 - Obtener feedback de IA sobre mi CV</td>
+    <td>No cumple. El análisis del CV con IA falla con error 401 de OpenRouter.</td>
+    <td>La ejecución local mostró el mismo error de autenticación al invocar el endpoint de análisis de CV. El frontend sí envía token JWT al backend, por lo que la falla queda en la integración del servicio externo de IA.</td>
+    <td>No conformidad</td>
+  </tr>
+  <tr>
+    <td>LV12</td>
+    <td>US012 - Puntaje automático de CVs</td>
+    <td>No cumple. La puntuación automática no se ejecuta por el mismo fallo de autenticación con OpenRouter.</td>
+    <td>La prueba local devolvió error 401 al evaluar CV con IA. El módulo depende de la misma infraestructura de integración con OpenRouter utilizada por los flujos anteriores.</td>
+    <td>No conformidad</td>
+  </tr>
+  <tr>
+    <td>LV13</td>
+    <td>US013 - Recibir notificaciones de vacantes</td>
+    <td>No cumple. No existe una opción de configuración, personalización ni notificación push/email para vacantes relevantes.</td>
+    <td>La validación local no mostró un módulo de alertas configurables. En código solo se identificó bandeja/inbox de mensajes y textos estáticos de notificación.</td>
+    <td>No conformidad</td>
+  </tr>
+  <tr>
+    <td>LV14</td>
+    <td>US014 - Recibir notificaciones de postulaciones</td>
+    <td>Cumple parcialmente. El reclutador ve un contador y una lista de postulaciones recientes, pero no una notificación inmediata formal como la descrita.</td>
+    <td>La ejecución local mostró el número de postulaciones en el panel principal. En frontend, la sección <code>Postulaciones recientes</code> solo lista candidatos recientes y su cantidad.</td>
+    <td>Observación</td>
+  </tr>
+  <tr>
+    <td>LV15</td>
+    <td>US015 - Seleccionar rol de usuario</td>
+    <td>Cumple parcialmente. El sistema permite escoger rol entre postulante y reclutador, pero no existe un flujo de administrador que cambie permisos a reclutador.</td>
+    <td>En frontend solo se identifican dos roles de selección. En backend, el enum <code>Rol</code> define únicamente <code>CANDIDATE</code> y <code>EMPLOYER</code>.</td>
+    <td>Observación</td>
   </tr>
 </table>
 
@@ -6314,32 +6346,62 @@ El contenido de la auditoría se estructuró como una **lista de verificación b
   </tr>
   <tr>
     <td>H01</td>
-    <td>Se identificó inconsistencia entre la evidencia de despliegue del backend descrita en el informe y la configuración observada en el código entregado.</td>
-    <td>El informe hace referencia a Railway, mientras que el frontend consume <code>https://backend-jobsy.onrender.com/api</code> y el backend contiene comentarios de despliegue asociados a Render.</td>
-    <td>Observación</td>
+    <td>La gestión de vacantes no implementa el estado Cerrada exigido por los criterios de aceptación, lo que afecta los flujos de edición y cierre de vacantes.</td>
+    <td>El backend solo define los estados <code>Activa</code> y <code>Borrador</code>; el frontend también solo permite seleccionar esos dos estados y elimina la vacante en lugar de cerrarla.</td>
+    <td>No conformidad</td>
   </tr>
   <tr>
     <td>H02</td>
-    <td>El módulo de analíticas del frontend presenta una dependencia hardcodeada a <code>localhost</code>, lo que puede afectar su portabilidad y consistencia con el resto de la aplicación.</td>
-    <td><code>JobOffers.service.js</code> consume <code>http://localhost:3500/job_applications_summary</code> en lugar de usar la misma variable de entorno del resto de servicios.</td>
-    <td>Oportunidad de mejora</td>
+    <td>El registro de reclutador no contempla los datos empresariales ni el proceso de verificación descritos en la User Story.</td>
+    <td>La validación local y el formulario de registro muestran solo nombre/empresa, correo y contraseña. No existe campo RUC ni manejo visible del estado pendiente de verificación.</td>
+    <td>No conformidad</td>
   </tr>
   <tr>
     <td>H03</td>
-    <td>Se detectó exposición de una API key de servicio externo directamente en el código frontend, lo cual incrementa el riesgo de uso indebido y compromete la seguridad del sistema.</td>
-    <td><code>apiPDF.service.js</code> contiene una clave de <code>pdf.co</code> embebida en el cliente.</td>
-    <td>Oportunidad de mejora</td>
+    <td>La edición de perfil profesional del postulante no incluye la gestión del CV como archivo o documento reemplazable.</td>
+    <td>El formulario de perfil solo maneja nombre, correo y descripción; el CV se aporta como enlace en la postulación o como PDF en el módulo de Asistencia IA.</td>
+    <td>No conformidad</td>
   </tr>
   <tr>
     <td>H04</td>
-    <td>Parte de la propuesta funcional declarada en el informe no pudo ser corroborada de manera clara en el programa revisado.</td>
-    <td>En la descripción del producto se mencionan contratos laborales digitales y onboarding, pero no se hallaron rutas, vistas o endpoints explícitos que sustenten esas funciones en los artefactos revisados.</td>
-    <td>Observación</td>
+    <td>Los tres flujos de IA auditados fallan por un problema de autenticación con el servicio externo OpenRouter.</td>
+    <td>Las pruebas locales de US010, US011 y US012 devolvieron error 401. En backend, la integración depende de <code>OPENROUTER_API_KEY</code> para enviar el encabezado <code>Authorization</code>.</td>
+    <td>No conformidad</td>
   </tr>
   <tr>
     <td>H05</td>
-    <td>El producto evidencia una separación funcional clara por roles y una cobertura técnica mínima de backend, frontend y pruebas.</td>
-    <td>Se identificaron rutas diferenciadas por rol, endpoints coherentes con los flujos principales y pruebas organizadas por historias de usuario.</td>
+    <td>El sistema no implementa un módulo completo de notificaciones configurables para vacantes ni notificaciones inmediatas formales para postulaciones.</td>
+    <td>Solo se identificó bandeja de mensajes para postulantes y una sección de <code>Postulaciones recientes</code> con contador y lista resumida para reclutadores.</td>
+    <td>Observación</td>
+  </tr>
+  <tr>
+    <td>H06</td>
+    <td>El modelo de roles del sistema está limitado a postulante y reclutador, sin soporte real para un administrador que reasigne permisos.</td>
+    <td>La selección de rol en frontend contempla dos opciones y el enum backend <code>Rol</code> solo define <code>CANDIDATE</code> y <code>EMPLOYER</code>.</td>
+    <td>Observación</td>
+  </tr>
+  <tr>
+    <td>H07</td>
+    <td>El módulo de analíticas depende de una ruta hardcodeada a <code>localhost</code>, lo que compromete su portabilidad fuera del entorno local preparado.</td>
+    <td><code>JobOffers.service.js</code> consume <code>http://localhost:3500/job_applications_summary</code> en lugar de usar la variable de entorno general de API.</td>
+    <td>Oportunidad de mejora</td>
+  </tr>
+  <tr>
+    <td>H08</td>
+    <td>Se detectó exposición de una API key de servicio externo directamente en el frontend.</td>
+    <td>El servicio <code>apiPDF.service.js</code> contiene una clave embebida de <code>pdf.co</code>, lo cual incrementa el riesgo de uso indebido.</td>
+    <td>Oportunidad de mejora</td>
+  </tr>
+  <tr>
+    <td>H09</td>
+    <td>Se identificó inconsistencia entre la evidencia de despliegue reportada y la configuración técnica observada.</td>
+    <td>El informe menciona Railway, mientras que el frontend auditado consume <code>https://backend-jobsy.onrender.com/api</code> y el backend contiene referencias de despliegue vinculadas a Render.</td>
+    <td>Observación</td>
+  </tr>
+  <tr>
+    <td>H10</td>
+    <td>El sistema sí presenta fortalezas claras en autenticación base, postulación a vacantes, dashboard y analíticas principales.</td>
+    <td>La ejecución local confirmó cumplimiento en US004, US005, US006 y US007, además de una separación clara de flujos por rol en frontend y backend.</td>
     <td>Fortaleza</td>
   </tr>
 </table>
