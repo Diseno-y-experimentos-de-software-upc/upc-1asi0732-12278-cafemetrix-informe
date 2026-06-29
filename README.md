@@ -6158,60 +6158,60 @@ El siguiente cronograma resume la ejecución de la auditoría interna desarrolla
     <th>Resultado esperado</th>
   </tr>
   <tr>
-    <td>28/06/2026</td>
-    <td>09:00 – 09:30</td>
+    <td>22/06/2026</td>
+    <td>17:00 – 18:00</td>
     <td>Reunión de apertura y definición del alcance de la auditoría</td>
     <td>Final Project Statement y programa de auditoría</td>
     <td>Revisión documental</td>
-    <td>Definir alcance, criterios y documentación a revisar</td>
+    <td>Definir alcance, criterios y documentación a revisar.</td>
   </tr>
   <tr>
-    <td>28/06/2026</td>
-    <td>09:30 – 10:20</td>
+    <td>23/06/2026</td>
+    <td>18:30 – 20:00</td>
     <td>Revisión integral del informe del proyecto</td>
     <td>Informe final (Capítulos 1 al 8)</td>
     <td>Revisión documental</td>
-    <td>Verificar consistencia y cumplimiento del Project Statement</td>
+    <td>Verificar la consistencia del informe y el cumplimiento de los requisitos establecidos en el Final Project Statement.</td>
   </tr>
   <tr>
-    <td>28/06/2026</td>
-    <td>10:20 – 11:10</td>
+    <td>24/06/2026</td>
+    <td>19:00 – 20:00</td>
     <td>Revisión de la exposición del Capítulo VIII</td>
     <td>Diapositivas y notas de auditoría</td>
     <td>Análisis comparativo</td>
-    <td>Contrastar lo expuesto con el informe</td>
+    <td>Contrastar la información presentada durante la exposición con el contenido del informe.</td>
   </tr>
   <tr>
-    <td>28/06/2026</td>
-    <td>11:10 – 12:00</td>
+    <td>25/06/2026</td>
+    <td>18:30 – 20:00</td>
     <td>Inspección del frontend</td>
     <td>Código fuente Frontend Jobsy</td>
     <td>Inspección del código</td>
-    <td>Verificar funcionalidades implementadas y su correspondencia con la documentación</td>
+    <td>Verificar que las funcionalidades implementadas correspondan con la documentación y los requisitos del proyecto.</td>
   </tr>
   <tr>
-    <td>28/06/2026</td>
-    <td>12:00 – 12:50</td>
+    <td>26/06/2026</td>
+    <td>18:30 – 20:00</td>
     <td>Inspección del backend</td>
     <td>Código fuente Backend Jobsy</td>
     <td>Inspección del código</td>
-    <td>Verificar servicios, endpoints y lógica implementada</td>
+    <td>Verificar la implementación de servicios, endpoints, autenticación y lógica del negocio.</td>
   </tr>
   <tr>
-    <td>28/06/2026</td>
-    <td>12:50 – 13:20</td>
+    <td>27/06/2026</td>
+    <td>16:00 – 17:30</td>
     <td>Inspección de la ejecución del sistema</td>
     <td>Aplicación Jobsy en ejecución y resultados de las pruebas funcionales</td>
     <td>Validación funcional</td>
-    <td>Comprobar el correcto funcionamiento de las funcionalidades implementadas e identificar errores durante la ejecución</td>
+    <td>Comprobar el funcionamiento de las funcionalidades implementadas e identificar errores durante la ejecución.</td>
   </tr>
   <tr>
-    <td>28/06/2026</td>
-    <td>13:20 – 14:00</td>
+    <td>29/06/2026</td>
+    <td>12:00 – 16:00</td>
     <td>Consolidación de evidencias y elaboración de hallazgos</td>
     <td>Informe, exposición, código y ejecución del sistema</td>
     <td>Análisis comparativo</td>
-    <td>Identificar hallazgos sustentados en evidencia</td>
+    <td>Identificar y documentar los hallazgos de auditoría sustentados en la evidencia recopilada.</td>
   </tr>
 </table>
 
