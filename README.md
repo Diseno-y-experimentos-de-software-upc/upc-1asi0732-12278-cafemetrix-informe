@@ -6218,7 +6218,7 @@ El siguiente cronograma resume la ejecución de la auditoría interna desarrolla
 #### 6.4.1.3. Contenido de auditoría realizada.
 El contenido de la auditoría se actualizó con base en la **ejecución local del sistema**, la revisión de las **User Stories documentadas en la sección 3.2** y la validación complementaria del código fuente frontend y backend. La siguiente lista de verificación consolida el estado final de cumplimiento observado durante la auditoría.
 
-**Lista de verificación final**
+**Lista de verificación**
 
 <table>
   <tr>
