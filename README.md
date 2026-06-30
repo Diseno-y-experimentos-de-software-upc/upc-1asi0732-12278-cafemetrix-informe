@@ -7915,6 +7915,105 @@ El equipo organizó un sprint backlog orientado a implementaciones incrementales
 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow.
 
+<p>
+  En esta sección se presentan los artefactos utilizados para comunicar, validar y organizar los aprendizajes obtenidos
+  durante la experimentación de Café Lab. Para ello, se emplearon dos formularios de Google Forms y una división de
+  pantallas en Figma. Estos artefactos permitieron relacionar el feedback de los usuarios con las To-Be User Stories,
+  el To-Be Product Backlog y las decisiones sobre qué mejoras pasarán posteriormente al servidor de producción.
+</p>
+
+<h3>Primer formulario de validación experimental</h3>
+
+<p>
+  Se elaboró un primer formulario en Google Forms para recopilar la opinión de los usuarios sobre las mejoras
+  experimentales propuestas. Las preguntas fueron alineadas con las hipótesis del Capítulo VIII, permitiendo evaluar
+  la utilidad, claridad y prioridad de las funcionalidades planteadas para Café Lab.
+</p>
+
+<p>
+  <strong>Enlace del formulario:</strong>
+  <a href="https://forms.gle/ky87bLQtgHxKhRAb7" target="_blank">
+    https://forms.gle/ky87bLQtgHxKhRAb7
+  </a>
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-8/shareback-form1.png" alt="Primer formulario de validación experimental" width="850">
+</p>
+
+<h3>Segundo formulario de validación To-Be</h3>
+
+<p>
+  Posteriormente, se planteó un segundo formulario de Google Forms orientado a validar específicamente el recibimiento
+  de las To-Be User Stories. Este formulario permitirá identificar cuáles de las mejoras propuestas generan mayor valor
+  para los usuarios y, con base en ello, definir qué funcionalidades serán trasladadas al servidor de producción.
+</p>
+
+<p>
+  <strong>Enlace del segundo formulario:</strong>
+  <a href="COLOCA_AQUI_EL_SEGUNDO_FORMULARIO" target="_blank">
+    enlace al segundo formulario
+  </a>
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-8/shareback-form2.png" alt="Segundo formulario de validación To-Be" width="850">
+</p>
+
+<h3>División de pantallas en Figma</h3>
+
+<p>
+  Como parte del desarrollo To-Be, se organizó un archivo en Figma con pantallas orientadas a una posible versión
+  mobile de Café Lab. Aunque el producto actualmente cuenta con una plataforma web y no con una aplicación móvil,
+  estas vistas permiten representar visualmente cómo se adaptarían las mejoras To-Be a una interfaz mobile.
+</p>
+
+<p>
+  Las pantallas fueron divididas según las siguientes mejoras: ficha de proveedor, traducción de pantallas críticas,
+  motivo de consumo de inventario, correlación lote-tueste-cata y vista económica consolidada por lote.
+</p>
+
+<p>
+  <strong>Enlace de Figma:</strong>
+  <a href="https://www.figma.com/design/Gj3ENR1Bykf7YgEUXBNY7x/CafeLab---iOS-Mobile-Prototype?node-id=0-1&t=OMgGXsnU9n8HAVhh-1" target="_blank">
+    https://www.figma.com/design/Gj3ENR1Bykf7YgEUXBNY7x/CafeLab---iOS-Mobile-Prototype?node-id=0-1&t=OMgGXsnU9n8HAVhh-1
+  </a>
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-8/shareback-figma.png" alt="División de pantallas mobile en Figma" width="850">
+</p>
+
+<h3>Learning Workflow</h3>
+
+<table border="1">
+  <tr>
+    <th>Etapa</th>
+    <th>Artefacto</th>
+    <th>Resultado</th>
+  </tr>
+  <tr>
+    <td>Validación experimental inicial</td>
+    <td>Primer formulario de Google Forms</td>
+    <td>Se recopiló feedback sobre la utilidad, claridad y prioridad de las mejoras propuestas.</td>
+  </tr>
+  <tr>
+    <td>Representación visual mobile</td>
+    <td>Figma</td>
+    <td>Se organizaron los frames mobile según cada To-Be User Story, mostrando cómo se verían las mejoras en una futura interfaz móvil.</td>
+  </tr>
+  <tr>
+    <td>Validación To-Be</td>
+    <td>Segundo formulario de Google Forms</td>
+    <td>Se validará el recibimiento de las To-Be User Stories para identificar cuáles tienen mayor aceptación por parte de los usuarios.</td>
+  </tr>
+  <tr>
+    <td>Decisión de producción</td>
+    <td>To-Be User Stories y To-Be Product Backlog</td>
+    <td>Después de validar las mejoras To-Be, se definirán las funcionalidades que serán trasladadas al servidor de producción.</td>
+  </tr>
+</table>
+
 ## 8.6. To-Be Software Platform Pre-launch.
 
 ### 8.6.1. About-the-Product Intro Video.
