@@ -92,6 +92,7 @@
 | 1.34    | 17/06/2026 | Inga Orihuela, Christian Fabrizio | Añadió las secciones 8.2.6, 8.2.7 y 8.2.8 .                                                                                                                                  |
 | 1.35    | 17/06/2026 | Inga Orihuela, Christian Fabrizio | Añadió su Project Report Collaboration Insights y Student Outcomes.                                                                                                          |
 | 1.36    | 18/06/2026 | Loli Ramirez, Camila Cristina     | Añadió su Student Outcome y Project Report Collaboration Insight                                                                                                             |
+| 1.37    | 29/06/2026 | Donayre Alvarez, Adrian Ricardo   | Añadió la sección 8.3.3.1 To-Be Sprint Backlogs                                                                                                                              |
 
 <div style="page-break-after: always;"></div>
 
@@ -7723,6 +7724,119 @@ FIN SI
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle.
 
 #### 8.3.3.1. To-Be Sprint Backlogs.
+
+El equipo organizó un sprint backlog orientado a implementaciones incrementales sobre las cinco user stories priorizadas. La distribución del trabajo se realizó según afinidad técnica y responsabilidad funcional.
+
+<table border="1">
+  <thead>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item/Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Story Points)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In Process / To Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">TUS01</td>
+      <td rowspan="2">Mejora de ficha de proveedor</td>
+      <td>TKTB01</td>
+      <td>Extender formulario de proveedor</td>
+      <td>Agregar los campos opcionales de persona de contacto directa y enlace web o red social en el formulario de registro y edicion de proveedores.</td>
+      <td>3</td>
+      <td>Michael</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TKTB02</td>
+      <td>Mostrar nuevo detalle comercial</td>
+      <td>Validar y visualizar la informacion adicional del proveedor dentro de la ficha para centralizar el contacto comercial en una sola vista.</td>
+      <td>2</td>
+      <td>Michael</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TUS02</td>
+      <td rowspan="2">Traduccion completa de pantallas criticas</td>
+      <td>TKTB03</td>
+      <td>Completar archivos de traduccion</td>
+      <td>Registrar las claves faltantes en los modulos criticos de la plataforma para asegurar cobertura bilingue en dashboards, formularios y mensajes principales.</td>
+      <td>3</td>
+      <td>Camila</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TKTB04</td>
+      <td>Validar consistencia de idioma</td>
+      <td>Revisar pantallas criticas para evitar textos mezclados entre espanol e ingles al cambiar el idioma de la interfaz.</td>
+      <td>2</td>
+      <td>Camila</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TUS03</td>
+      <td rowspan="2">Registro de motivo de consumo de inventario</td>
+      <td>TKTB05</td>
+      <td>Agregar selector de motivo de consumo</td>
+      <td>Extender el flujo de registro de consumo para permitir la seleccion de motivos como barra, retail, muestras u otro.</td>
+      <td>3</td>
+      <td>Christian</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TKTB06</td>
+      <td>Reflejar motivo en historial</td>
+      <td>Mostrar el motivo registrado en el historial de movimientos del inventario para mejorar la trazabilidad del uso de cada lote.</td>
+      <td>2</td>
+      <td>Christian</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TUS04</td>
+      <td rowspan="2">Vista minima de correlacion lote-tueste-cata</td>
+      <td>TKTB07</td>
+      <td>Disenar vista de correlacion</td>
+      <td>Construir una pantalla experimental que concentre la informacion principal del lote, el perfil de tueste asociado y los resultados de cata relacionados.</td>
+      <td>5</td>
+      <td>Oscar</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TKTB08</td>
+      <td>Integrar datos tecnicos y sensoriales</td>
+      <td>Unificar la consulta y presentacion de datos tecnicos y sensoriales para permitir comparaciones centralizadas por lote.</td>
+      <td>3</td>
+      <td>Oscar</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TUS05</td>
+      <td rowspan="2">Vista economica consolidada por lote</td>
+      <td>TKTB09</td>
+      <td>Construir resumen economico del lote</td>
+      <td>Disenar una vista unica para presentar stock disponible, movimientos del lote e indicadores economicos clave en el mismo contexto operativo.</td>
+      <td>5</td>
+      <td>Fredy</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TKTB10</td>
+      <td>Unificar costos y rentabilidad</td>
+      <td>Integrar costo por kilo, margen estimado y datos de inventario para facilitar el analisis economico consolidado del lote seleccionado.</td>
+      <td>3</td>
+      <td>Fredy</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence.
 
