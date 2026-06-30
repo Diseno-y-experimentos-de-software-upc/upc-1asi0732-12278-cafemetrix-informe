@@ -7883,6 +7883,21 @@ El equipo organizó un sprint backlog orientado a implementaciones incrementales
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence.
 
 #### 8.3.3.6. Team Collaboration Insights.
+<hr>
+<h3 align="center">Frontend</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/team-insights-front.png" alt="Frontend">
+</p>
+<hr>
+<h3 align="center">Backend</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/team-insights-back.png" alt="Backend">
+</p>
+<hr>
+<h3 align="center">Landing</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/team-insights-landing.png" alt="Landing">
+</p>
 
 ### 8.3.4. To-Be Validation Interviews.
 
