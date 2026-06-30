@@ -7840,6 +7840,42 @@ El equipo organizó un sprint backlog orientado a implementaciones incrementales
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence.
 
+<hr>
+<h3 align="center">Traducción de la propuesta de valor inicial</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/landing1.png" alt="Traducción de la propuesta de valor inicial">
+</p>
+<hr>
+<h3 align="center">Traducción del enfoque por tipo de usuario</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/landing2.png" alt="Traducción del enfoque por tipo de usuario">
+</p>
+<hr>
+<h3 align="center">Traducción de módulos clave</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/landing3.png" alt="Traducción de módulos clave">
+</p>
+<hr>
+<h3 align="center">Traducción de modelos de suscripción</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/landing4.png" alt="Traducción de modelos de suscripción">
+</p>
+<hr>
+<h3 align="center">Traducción de casos de confianza</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/landing5.png" alt="Traducción de casos de confianza">
+</p>
+<hr>
+<h3 align="center">Traducción de preguntas frecuentes</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/landing6.png" alt="Traducción de preguntas frecuentes">
+</p>
+<hr>
+<h3 align="center">Traducción de presentación del equipo y producto</h3>
+<p align="center">
+  <img src="public/assets/images/chapter-8/landing7.png" alt="Traducción de presentación del equipo y producto">
+</p>
+
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence.
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence.
