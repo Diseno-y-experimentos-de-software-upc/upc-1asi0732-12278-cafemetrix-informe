@@ -244,6 +244,53 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Entregable</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Loli Ramirez, Camila Cristina</strong></td>
+    <td></td>
+    <td>TF1</td>
+  </tr>
+  <tr>
+    <td><strong>Antayhua Castillo, Oscar Josué</strong></td>
+    <td></td>
+    <td>TF1</td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td>Me encargué de documentar secciones del Capítulo VI y Capítulo VIII del informe. En el Capítulo VI, desarrollé la información del grupo auditado, el cronograma y el contenido de auditoría realizada, organizando el alcance, las actividades y las evidencias revisadas. En el Capítulo VIII, elaboré los To-Be Sprint Backlogs, la evidencia de la landing page To-Be implementada, el Team Collaboration Insights y la sección Shareback Session Artifacts: Learning Workflow, relacionando las mejoras experimentales con los formularios de validación, las pantallas en Figma y las decisiones sobre la evolución del producto.</td>
+    <td>TF1</td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td></td>
+    <td>TF1</td>
+  </tr>
+  <tr>
+    <td><strong>Christian Fabrizio, Inga Orihuela</strong></td>
+    <td></td>
+    <td>TF1</td>
+  </tr>
+  <tr>
+    <td><strong>Quispe Roldan, Michael Fred</strong></td>
+    <td></td>
+    <td>TF1</td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2">En general, todos los integrantes del equipo han demostrado una participación activa y comprometida en la elaboración del informe, contribuyendo con sus habilidades y conocimientos para asegurar que el documento refleje de manera precisa y completa el desarrollo de nuestro proyecto. La colaboración efectiva entre los miembros del equipo ha sido fundamental para el éxito de esta etapa del proyecto.</td>
+  </tr>
+    <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2">
+    <img src="public/assets/images/tb1Collaboration/tb1report.png" alt="Evidencia">
+  </tr>
+</table>
+
 <div style="page-break-after: always;"></div>
 
 <!--ÍNDICE-->
