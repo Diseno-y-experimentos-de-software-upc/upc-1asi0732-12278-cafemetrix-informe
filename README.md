@@ -7933,7 +7933,7 @@ Para la demostración del desarrollo de las historias de usuario To-Be en la apl
 
 
 | Story ID | Descripción breve                            |
-| -------- | -------------------------------------------- |
+|----------|----------------------------------------------|
 | TUS01    | Mejora de ficha de proveedor                 |
 | TUS02    | Traducción completa de pantallas críticas    |
 | TUS03    | Registro de motivo de consumo de inventario  |
@@ -7955,7 +7955,10 @@ En estas capturas se evidencia la traducción de las funciones críticas como ca
 
 
 
-**TUS03: Registro de motivo de consumo de inventario
+**TUS03: Registro de motivo de consumo de inventario**
+
+En estas capturas se muestra la adición de columnas en la tabla de Historial de Consumo como notas, stock y razón, para justificar el uso de café de un lote. Asimismo, también se han añadido dos campos al formulario de registro de consumo, en este caso, incluye Razón de consumo y notas de uso. De esta forma, ya pueden conocer los administradores las mermas, la rotación de stock y revisarlo en el historial cada vez que lo necesiten.
+
 
 
 **TUS04: Vista mínima de correlación lote-tueste-cata**
@@ -8008,7 +8011,9 @@ En estas capturas se evidencia la traducción de las funciones críticas como ca
 
 **TUS03: Registro de motivo de consumo de inventario**
 
+En estas capturas se muestra la adición de columnas en la tabla de Historial de Consumo como notas, stock y razón, para justificar el uso de café de un lote. Asimismo, también se han añadido dos campos al formulario de registro de consumo, en este caso, incluye Razón de consumo y notas de uso. De esta forma, ya pueden conocer los administradores las mermas, la rotación de stock y revisarlo en el historial cada vez que lo necesiten.
 
+![TUS-03 en App Móvil](public/assets/images/TUS-MOBILE/TUS03.png)
 
 **TUS04: Vista mínima de correlación lote-tueste-cata**
 
