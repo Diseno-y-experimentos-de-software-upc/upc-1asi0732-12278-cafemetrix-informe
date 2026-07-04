@@ -8248,4 +8248,4 @@ En estas capturas se muestra la adición de una pantalla importante: Análisis e
 
 - Enlace para acceder al [Backend deployado](https://cafelab-backend-production-2742.up.railway.app/swagger-ui/index.html)
 
-- Enlace al video "About the Product": [video about the product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311958_upc_edu_pe/EQ3UsP_LFOBBupVW2DAhJhgBZMjSyG5l-4oysyROw2Patw?e=oOeUxQ)
+- Enlace al video "About the Product": [video about the product] (https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110385_upc_edu_pe/IQAooDfCMNYlRKprxlOB9aWnAWP5gP5k-Z_2vylIQrmy2n0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1oiDI5)
