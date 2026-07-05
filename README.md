@@ -8467,28 +8467,13 @@ Estas preguntas se presentaron a una muestra de **21 participantes** del segment
 
 Los participantes se distribuyeron en un **57.1% baristas** y un **42.9% dueños o administradores de cafeterías**. Esta composición es comparable al formulario TB2 (47.4% / 52.6%) y permite analizar tanto la percepción operativa como la administrativa de las mejoras implementadas.
 
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-perfil.png" alt="Gráfico: ¿Cuál es tu perfil principal?" width="700">
-</p>
-
-
 **Experiencia previa en el dominio:**
 
 El **90.5%** de los participantes indicó tener experiencia registrando información de café, sesiones de cata, calibraciones, proveedores o inventario. Este porcentaje es ligeramente superior al TB2 (84.2%), lo que otorga mayor validez de dominio a las respuestas obtenidas.
 
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-experiencia.png" alt="Gráfico: experiencia registrando información" width="700">
-</p>
-
-
 **Herramientas actuales de registro:**
 
 La mayoría de participantes aún depende de herramientas externas: **38.1% Excel**, **23.8% aplicaciones de mensajería**, **23.8% notas escritas** y **14.3% aplicaciones especializadas**. Esta distribución es similar al TB2 y refuerza la necesidad de centralizar información en CaféLab; sin embargo, los resultados To-Be indican que las mejoras actuales aún no sustituyen esas herramientas en la práctica.
-
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-herramientas.png" alt="Gráfico: herramientas de registro actuales" width="700">
-</p>
-
 
 #### Evaluación de características
 
@@ -8496,64 +8481,21 @@ La mayoría de participantes aún depende de herramientas externas: **38.1% Exce
 
 El promedio de utilidad percibida fue **3.57/5**, por debajo del **4.11/5** obtenido en el TB2. El **76.2%** consideró que la vista permite comparar información técnica y sensorial sin cambiar de pantalla, pero solo el **42.9%** indicó que cumple plenamente su expectativa según la validación inicial; el **42.9%** respondió *Parcialmente* y el **14.3%** *No*. La probabilidad de uso real alcanzó **3.43/5**, también inferior al TB2 (3.95/5). Esto sugiere que la implementación en `/roast-flavor-correlation` requiere iteración antes de considerarse validada.
 
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-correlacion-utilidad.png" alt="Gráfico: utilidad vista correlación" width="700">
-</p>
-
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-correlacion-expectativa.png" alt="Gráfico: expectativa cumplida correlación" width="700">
-</p>
-
 **Ficha de proveedor ampliada (TUS01):**
 
 El campo **persona de contacto** obtuvo un promedio de **3.67/5** (TB2: 4.58/5) y el **enlace web** un promedio de **3.29/5** (TB2: 4.37/5). Solo el **33.3%** consideró que estos campos reducen el uso de WhatsApp, Excel o notas, frente al **89.5%** del formulario inicial. La brecha entre expectativa e implementación sugiere que los campos, aunque operativos en `/suppliers`, no resultan suficientemente visibles o útiles en el flujo actual (solo aparecen en detalle/edición, no en el listado).
-
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-proveedor-contacto.png" alt="Gráfico: utilidad persona de contacto" width="700">
-</p>
-
-
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-proveedor-reduce-herramientas.png" alt="Gráfico: reducción de herramientas externas" width="700">
-</p>
-
 
 **Motivo de consumo de inventario (TUS03):**
 
 El promedio de utilidad fue **3.57/5**, inferior al **4.37/5** del TB2. Aunque el selector de motivo (Barra / Retail / Muestras / Otro) funciona en `/inventory`, la percepción de utilidad no alcanza el umbral ≥ 4/5 definido en las hipótesis. Posibles causas incluyen la imposibilidad de editar consumos ya registrados y la complejidad del formulario de registro.
 
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-inventario-motivo.png" alt="Gráfico: utilidad motivo de consumo" width="700">
-</p>
-
-
 **Vista económica consolidada por lote (TUS05):**
 
 El promedio de utilidad fue **3.86/5**, ligeramente inferior al **4.32/5** de importancia reportado en el TB2. Sin embargo, el **81.0%** confirmó que el **costo por kilo** es el indicador económico que más consultaría, coherente con el **57.9%** del formulario inicial. La vista desde `/coffee-lots` aporta valor al centralizar stock e indicadores, pero aún no alcanza la expectativa generada en la priorización.
 
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-vista-economica.png" alt="Gráfico: utilidad vista económica" width="700">
-</p>
-
-
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-costo-kilo.png" alt="Gráfico: indicador costo por kilo" width="700">
-</p>
-
-
 **Traducción e internacionalización (TUS02):**
 
 La percepción de traducción completa alcanzó **4.43/5**, superando el **4.37/5** del TB2. Además, el **100%** de participantes respondió que **la traducción implementada incrementa su confianza** en la plataforma, superando el umbral ≥ 80% definido en la hipótesis H-08. El uso internacional promedió **4.29/5**, con **85.7%** de respuestas favorables (4 o 5). Estos resultados confirman que TUS02 es la mejora con mejor desempeño relativo frente a la expectativa del TB2.
-
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-traduccion.png" alt="Gráfico: traducción completa" width="700">
-</p>
-
-
-<p align="center">
-  <img src="public/assets/images/chapter-8/tobe-chart-confianza-traduccion.png" alt="Gráfico: confianza incrementada por traducción" width="700">
-</p>
-
 
 #### Recomendaciones derivadas de los resultados
 
