@@ -8317,10 +8317,6 @@ Las preguntas con escala del 1 al 5 se analizarán mediante promedios y porcenta
       <td>38</td>
     </tr>
     <tr>
-      <td>Modo de aplicación</td>
-      <td>Respuestas registradas en ventana de incógnito para simular sesiones independientes</td>
-    </tr>
-    <tr>
       <td>Fecha de aplicación</td>
       <td>04/07/2026 – 05/07/2026</td>
     </tr>
