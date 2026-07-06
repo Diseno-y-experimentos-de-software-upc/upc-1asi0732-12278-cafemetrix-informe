@@ -8163,7 +8163,13 @@ La tercera sección evalúa **TUS01, TUS03 y TUS05**: utilidad de los campos amp
 
 La cuarta sección evalúa **TUS02**: percepción de traducción completa en módulos críticos, detección de textos mezclados y confianza en la plataforma al cambiar idioma.
 
-**Enlace del formulario To-Be:** [CaféLab – Validación To-Be (respuestas)](https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing)
+**Enlace del formulario To-Be:** [CaféLab – Validación To-Be](https://docs.google.com/forms/d/e/1FAIpQLSeU11n87TndKnR4ZKWFllCHasYVZZ5XOKdMEYsiaUtq6vkPcg/viewform)
+
+**Enlace de resultados (38 respuestas):** [CaféLab – Validación To-Be (Google Sheets)](https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing)
+
+<p align="center">
+  <img src="public/assets/images/chapter-8/shareback-form2.png" alt="Segundo formulario de validación To-Be" width="850">
+</p>
 
 ### Preguntas del formulario To-Be
 
@@ -8320,7 +8326,7 @@ Las preguntas con escala del 1 al 5 se analizarán mediante promedios y porcenta
     </tr>
     <tr>
       <td>Evidencia completa</td>
-      <td>Ver Anexo: Resultados del formulario de validación To-Be</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing" target="_blank">Resultados del formulario de validación To-Be (Google Sheets)</a> — ver también <a href="#anexos">Anexos</a></td>
     </tr>
   </tbody>
 </table>
@@ -8519,7 +8525,7 @@ Los resultados del formulario To-Be (n = 38) revelan una **brecha entre la expec
 
 Con base en estos resultados, el equipo define que **TUS02 (traducción e internacionalización)** y **TUS01 (persona de contacto y enlace web en proveedores)** son las dos mejoras To-Be que **avanzan a producción**, por alcanzar el umbral de utilidad percibida ≥ 4/5. **TUS03, TUS04 y TUS05** permanecen en la rama `experiment` para refinamiento UX antes de su traslado definitivo.
 
-Estos hallazgos demuestran la importancia de validar con implementación real y no solo con prototipos o videos demostrativos. Las recomendaciones obtenidas servirán como base para futuras iteraciones de UX/UI del producto y para las decisiones de evolución documentadas en [8.5.1](#851-shareback-session-artifacts-learning-workflow).
+Estos hallazgos demuestran la importancia de validar con implementación real y no solo con prototipos o videos demostrativos. Las recomendaciones obtenidas servirán como base para futuras iteraciones de UX/UI del producto.
 
 **Resumen comparativo TB2 vs To-Be**
 
@@ -8569,16 +8575,15 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 <h3>Segundo formulario de validación To-Be</h3>
 
 <p>
-  Posteriormente, se aplicó un segundo formulario de Google Forms orientado a validar el recibimiento
-  de las To-Be User Stories implementadas en la rama <code>experiment</code>. Los resultados (38 respuestas)
-  permitieron comparar la experiencia real con las expectativas del formulario TB2 y definir qué funcionalidades
-  requieren iteración antes de trasladarse al servidor de producción.
+  Posteriormente, se planteó un segundo formulario de Google Forms orientado a validar específicamente el recibimiento
+  de las To-Be User Stories. Este formulario permitirá identificar cuáles de las mejoras propuestas generan mayor valor
+  para los usuarios y, con base en ello, definir qué funcionalidades serán trasladadas al servidor de producción.
 </p>
 
 <p>
-  <strong>Enlace de resultados del segundo formulario:</strong>
-  <a href="https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing" target="_blank">
-    https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing
+  <strong>Enlace del segundo formulario:</strong>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU11n87TndKnR4ZKWFllCHasYVZZ5XOKdMEYsiaUtq6vkPcg/viewform" target="_blank">
+    https://docs.google.com/forms/d/e/1FAIpQLSeU11n87TndKnR4ZKWFllCHasYVZZ5XOKdMEYsiaUtq6vkPcg/viewform
   </a>
 </p>
 
@@ -8631,12 +8636,12 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
   <tr>
     <td>Validación To-Be</td>
     <td>Segundo formulario de Google Forms</td>
-    <td>Se validó el recibimiento de las To-Be User Stories con 38 respuestas; TUS02 y TUS01 alcanzan umbral de utilidad, mientras TUS03, TUS04 y TUS05 requieren iteración.</td>
+    <td>Se validará el recibimiento de las To-Be User Stories para identificar cuáles tienen mayor aceptación por parte de los usuarios.</td>
   </tr>
   <tr>
     <td>Decisión de producción</td>
     <td>To-Be User Stories y To-Be Product Backlog</td>
-    <td>Se trasladan a producción <strong>TUS02</strong> (traducción EN/ES) y <strong>TUS01</strong> (contacto y enlace web en proveedores), por alcanzar umbral ≥ 4/5 en utilidad percibida. TUS03, TUS04 y TUS05 permanecen en <code>experiment</code> para iteración.</td>
+    <td>Después de validar las mejoras To-Be, se definirán las funcionalidades que serán trasladadas al servidor de producción.</td>
   </tr>
 </table>
 
@@ -8707,6 +8712,8 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 # Anexos
 
 - Enlace para acceder a [resultados del formulario de validación TB2](https://docs.google.com/spreadsheets/d/1Va8zjJxAe7c2eOcLDmY9A8dpXP7PXrrAbB7ZqRtNoPo/edit?usp=sharing)
+
+- Enlace para acceder al [formulario de validación To-Be](https://docs.google.com/forms/d/e/1FAIpQLSeU11n87TndKnR4ZKWFllCHasYVZZ5XOKdMEYsiaUtq6vkPcg/viewform)
 
 - Enlace para acceder a [resultados del formulario de validación To-Be](https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing)
 
