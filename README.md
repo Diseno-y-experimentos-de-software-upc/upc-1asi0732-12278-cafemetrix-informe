@@ -8058,48 +8058,8 @@ El equipo organizó un sprint backlog orientado a implementaciones incrementales
 
 Para la demostración del desarrollo de las historias de usuario To-Be en la aplicación móvil, lo hemos realizado de forma prototipada para poder proveer una visualización de cómo quedarían aplicadas acorde a las expectativas del usuario. Dado que la plataforma no cuenta con una aplicación móvil nativa implementada dentro del alcance actual del proyecto, se optó por elaborar en Figma las vistas correspondientes a las siguientes User Stories, representando cómo se vería cada funcionalidad en esta versión:
 
-
 | Story ID | Descripción breve                            |
 |----------|----------------------------------------------|
-| TUS01    | Mejora de ficha de proveedor                 |
-| TUS02    | Traducción completa de pantallas críticas    |
-| TUS03    | Registro de motivo de consumo de inventario  |
-| TUS04    | Vista mínima de correlación lote-tueste-cata |
-| TUS05    | Vista económica consolidada por lote         |
-
-A continuación se presenta cada To-Be User Story representada en Figma
-cada vista elaborada en Figma, junto con su respectiva decisión de diseño tomadas.
-
-**TUS01: Mejora de ficha de proveedor**
-
-En estas capturas se representa la adición de dos campos para especificar la persona a contactar de la empresa proveedora, y el método de comunicación, que implica ingresar un enlace, sea http o https, para contactar de forma directa al encargado de brindar los lotes de café a la cafetería. De esta forma, se cumple con la necesidad de acortar los pasos para contactar a un proveedor, sin tener que salir de la aplicación y buscar la forma de contacto de manera manual.
-
-
-
-**TUS02: Traducción completa de pantallas críticas**
-
-En estas capturas se evidencia la traducción de las funciones críticas como cata, tueste, costos e inventario. Todos las palabras se han traducido según los términos comunes que se utilizan para evitar confusiones al momento de subir información o de entenderla. Por ejemplo, en el caso de cata, se han traducido los 6 atributos (Aroma, Cuerpo, Acidez, Amargo, Postgusto, dulzor); para tueste, se han traducido las leyendas de los gráficos para que sea fácil de entender para los anglohablantes; en el caso de costo se consideró la traducción total de todas las etiquetas de cada campo del formulario para evitar confusiones y, por último, para inventario se consideraron los mismos aspectos que costos. Con este TUS solucionamos la incoherencia entre pantallas y permitimos a los usuarios a conocer y entender lo que están realizando.
-
-
-
-**TUS03: Registro de motivo de consumo de inventario**
-
-En estas capturas se muestra la adición de columnas en la tabla de Historial de Consumo como notas, stock y razón, para justificar el uso de café de un lote. Asimismo, también se han añadido dos campos al formulario de registro de consumo, en este caso, incluye Razón de consumo y notas de uso. De esta forma, ya pueden conocer los administradores las mermas, la rotación de stock y revisarlo en el historial cada vez que lo necesiten.
-
-
-
-**TUS04: Vista mínima de correlación lote-tueste-cata**
-
-
-**TUS05: Vista económica consolidada por lote**
-
-En estas capturas se muestra la adición de una pantalla importante: Análisis económico del lote seleccionado. Se muestra el lote escogido y se muestra el stock disponible, el stock financiero y su consumo. De esta forma, se une información importante en una sola pantalla, lo que facilita al administrador evitar una gran cantidad de errores o datos no contados al momento de hacer los costos.
-
-Para la demostración del desarrollo de las historias de usuario To-Be en la aplicación móvil, lo hemos realizado de forma prototipada para poder proveer una visualización de cómo quedarían aplicadas acorde a las expectativas del usuario. Dado que la plataforma no cuenta con una aplicación móvil nativa implementada dentro del alcance actual del proyecto, se optó por elaborar en Figma las vistas correspondientes a las siguientes User Stories, representando cómo se vería cada funcionalidad en esta versión:
-
-
-| Story ID | Descripción breve                            |
-| -------- | -------------------------------------------- |
 | TUS01    | Mejora de ficha de proveedor                 |
 | TUS02    | Traducción completa de pantallas críticas    |
 | TUS03    | Registro de motivo de consumo de inventario  |
@@ -8144,6 +8104,9 @@ En estas capturas se muestra la adición de columnas en la tabla de Historial de
 
 **TUS04: Vista mínima de correlación lote-tueste-cata**
 
+En estas capturas se muestra la adición de una funcionalidad nueva: Correlación Tueste-Sabor. Se muestra el lote, sus detalles, y el perfil de tueste y cata relacionados al lote. Así, el barista profesional puede comparar información de forma clara y específica, sin necesidad de depender de su memoria o experiencia empírica; además, ya no tiene que repasar diferentes pantallas varias veces para obtener la información que necesita, pues todo se encuentra en una sola pantalla.
+
+![TUS-04 en App Móvil](public/assets/images/TUS-MOBILE/TUS04.png)
 
 **TUS05: Vista económica consolidada por lote**
 
