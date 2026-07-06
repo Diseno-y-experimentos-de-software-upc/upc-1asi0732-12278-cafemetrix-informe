@@ -268,7 +268,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
-    <td>Me encargué de documentar la validación To-Be de CaféLab en el Capítulo VIII. En 8.3.4.1 diseñé el segundo formulario de entrevistas tomando como base el instrumento del TB2 (6.3.1), alineando las preguntas con las To-Be User Stories TUS01–TUS05, las hipótesis del capítulo VIII y las rutas reales de la plataforma experimental (rama <code>experiment</code>). En 8.3.4.2 registré las 21 respuestas recogidas en modo incógnito y elaboré una tabla comparativa con las métricas del TB2 (6.3.2). En 8.4.1 analicé e interpreté los resultados con gráficos, contrastando la utilidad esperada del formulario inicial con la utilidad percibida tras probar las mejoras implementadas, e identificando qué funcionalidades cumplen, superan o no alcanzan los umbrales definidos.</td>
+    <td>Me encargué de documentar la validación To-Be de CaféLab en el Capítulo VIII. En 8.3.4.1 diseñé el segundo formulario de entrevistas tomando como base el instrumento del TB2 (6.3.1), alineando las preguntas con las To-Be User Stories TUS01–TUS05, las hipótesis del capítulo VIII y las rutas reales de la plataforma experimental (rama <code>experiment</code>). En 8.3.4.2 registré las 38 respuestas recogidas en modo incógnito y elaboré una tabla comparativa con las métricas del TB2 (6.3.2). En 8.4.1 analicé e interpreté los resultados, contrastando la utilidad esperada del formulario inicial con la utilidad percibida tras probar las mejoras implementadas, e identificando qué funcionalidades cumplen, superan o no alcanzan los umbrales definidos.</td>
     <td>TF1</td>
   </tr>
   <tr>
@@ -540,7 +540,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Mediante mi aporte en diferentes puntos del informe, como la implementacion de politica Saas que me permitio comprender el rol y funcion de la aplicacion no unicamente como codigo, lo que me ayudo a mejorar mi vision etica y profesional en el desarrollo de software.<br><br>  
                 TP1: <br>Mi colaboracion en este proyecto me permitio entender que el proyecto requiere de mayores responsabilidades como control de calidad del producto UI/UX, asi como visualizar la adecuada eleccion de herramientas y practicas de integracion continua<br><br>
                 TB2: <br>Reconocí mi responsabilidad ética y profesional al elaborar la planificación de experimentación (8.1.1–8.1.5), documentando con honestidad el estado As-Is de Café Lab según el código desplegado y las entrevistas del Cap. VI, sin incluir funcionalidades no implementadas. Al clasificar la materia prima en Assumptions, Knowledge Gaps, Ideas y Claims, asumí el compromiso de orientar los experimentos hacia suposiciones verificables y no hacia soluciones cerradas. Asimismo, al priorizar nueve preguntas de investigación y elaborar las Experiment Cards, me aseguré de que cada intervención propuesta sea incremental, trazable al product backlog y validable con los recursos del equipo.<br><br>
-                TF1: <br>Reconocí mi responsabilidad ética y profesional al documentar la validación To-Be de CaféLab (8.3.4.1, 8.3.4.2 y 8.4.1). Al elaborar el segundo formulario basado en el instrumento del TB2 (6.3.1), recoger 21 respuestas en modo incógnito y comparar explícitamente los resultados con las métricas de 6.3.2, evité presentar mejoras como exitosas sin sustento y diferencié entre las expectativas del formulario inicial y la experiencia real en la plataforma experimental. Asimismo, al interpretar los hallazgos —incluyendo brechas en TUS01, TUS03, TUS04 y TUS05 frente a los umbrales ≥4/5— asumí el compromiso de reportar de forma transparente qué funcionalidades requieren refinamiento antes de avanzar a producción.<br><br>
+                TF1: <br>Reconocí mi responsabilidad ética y profesional al documentar la validación To-Be de CaféLab (8.3.4.1, 8.3.4.2 y 8.4.1). Al elaborar el segundo formulario basado en el instrumento del TB2 (6.3.1), recoger 38 respuestas en modo incógnito y comparar explícitamente los resultados con las métricas de 6.3.2, evité presentar mejoras como exitosas sin sustento y diferencié entre las expectativas del formulario inicial y la experiencia real en la plataforma experimental. Asimismo, al interpretar los hallazgos —incluyendo qué funcionalidades alcanzan el umbral ≥4/5 y cuáles aún requieren iteración— asumí el compromiso de reportar de forma transparente qué mejoras pueden avanzar a producción y cuáles deben refinarse.<br><br>
                 <strong>Michael Quispe</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los diagramas de flujo de usuario para la aplicación móvil (4.4.4. Mobile Applications User Flow Diagrams), asegurando que los flujos representen con fidelidad las interacciones reales del usuario. Definí con claridad cada nodo de decisión y camino de navegación, garantizando que la experiencia diseñada sea coherente, intuitiva y respetuosa de las expectativas del usuario final.<br><br>  
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al diseñar e implementar las pruebas BDD y de sistema para el módulo de Librería de Defectos del backend. Aseguré que cada escenario de prueba represente fielmente las reglas de negocio del dominio, validando que los value objects rechacen datos inválidos y que los endpoints REST respondan correctamente ante distintos contextos de autenticación y datos. Asumí la responsabilidad de garantizar que el módulo que gestiona el registro de defectos de tueste funcione de forma confiable, dado que los baristas dependen de esta información para tomar decisiones técnicas sobre la calidad del café.<br><br>  
@@ -575,7 +575,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Implementar y actualizar el contenido del proyecto me permitio reconocer la importancia de sistemas orientados a productividad en el area de cafeterias, emitiendo juicios adecuados sobre el impacto del proyecto presentado, no solo programacion, sino tambien en los resultados y mejoras de los usuarios.<br><br>  
                 TP1: <br>Las soluciones planteadas para el cumplimiento de calidad de construccion de software y validaciones me permitio entnder la importancia de implementar soluciones que aportan al sector economico por medio del aumento de desempeño laboral, asimismo el reconocimiento de herramientas y practicas para garantizar el funcionamiento correcto mediante la integracion continua<br><br>
                 TB2: <br>Emití juicios informados al priorizar las preguntas de experimentación según Total Score, alineamiento con las brechas del As-Is y viabilidad en el ciclo actual, considerando el impacto operativo y económico en baristas y dueños de cafetería. Al formular experimentos sobre enlace lote–tueste–cata, dashboard por lote y mejoras incrementales en cata, calibración, defectos e inventario, contribuí a orientar el desarrollo futuro hacia intervenciones con respaldo de usuarios reales (Cap. VI) y evité proponer cambios fuera del alcance del producto, como chat, IA o TrackSilo operativo.<br><br>
-                TF1: <br>Emití juicios informados al analizar los resultados To-Be frente al TB2, considerando el impacto operativo y económico de centralizar proveedores, inventario y costos por lote; el impacto en la toma de decisiones técnicas mediante la vista de correlación lote-tueste-cata; y el impacto global de la traducción EN/ES para uso internacional. Al identificar que solo TUS02 supera las expectativas del TB2 mientras TUS01, TUS03, TUS04 y TUS05 muestran brechas entre la utilidad prometida y la percibida, contribuí a orientar decisiones del equipo sobre qué mejoras deben priorizarse, ajustarse o revalidarse antes de su despliegue definitivo.<br><br>
+                TF1: <br>Emití juicios informados al analizar los resultados To-Be frente al TB2, considerando el impacto operativo y económico de centralizar proveedores, inventario y costos por lote; el impacto en la toma de decisiones técnicas mediante la vista de correlación lote-tueste-cata; y el impacto global de la traducción EN/ES para uso internacional. Al identificar que TUS02 y TUS01 alcanzan el umbral de utilidad percibida mientras TUS03, TUS04 y TUS05 permanecen por debajo de ≥4/5, contribuí a orientar decisiones del equipo sobre qué mejoras pueden trasladarse a producción y cuáles deben priorizarse para refinamiento UX antes de su despliegue definitivo.<br><br>
                 <strong>Michael Quispe</strong><br>  
                 TB1: <br>Emití juicios informados al diseñar los flujos de usuario para la aplicación móvil, considerando el impacto que tiene una navegación clara y eficiente en la experiencia del usuario final. Tomé decisiones sobre la estructura de los flujos priorizando la simplicidad y accesibilidad, reconociendo que una navegación deficiente puede afectar negativamente la adopción del sistema y, por ende, el valor social y económico del producto.<br><br>  
                 TP1: <br>Emití juicios informados al seleccionar el enfoque de pruebas para el módulo de Librería de Defectos, optando por pruebas BDD en el nivel de dominio y pruebas de sistema en la capa REST. Esta decisión consideró el impacto económico de detectar errores de validación tempranamente, antes de que lleguen a producción y afecten los registros de defectos de los baristas. Asimismo, evalué el impacto social de contar con un módulo de registro de defectos confiable, ya que la trazabilidad de defectos de tueste influye directamente en la calidad del producto final y en la reputación del establecimiento.<br><br>  
@@ -8308,7 +8308,7 @@ Las preguntas con escala del 1 al 5 se analizarán mediante promedios y porcenta
     </tr>
     <tr>
       <td>Total de respuestas</td>
-      <td>21</td>
+      <td>38</td>
     </tr>
     <tr>
       <td>Modo de aplicación</td>
@@ -8339,81 +8339,87 @@ Las preguntas con escala del 1 al 5 se analizarán mediante promedios y porcenta
   <tbody>
     <tr>
       <td>Perfil de participantes</td>
-      <td>57.1% baristas y 42.9% dueños o administradores</td>
+      <td>52.6% baristas y 47.4% dueños o administradores</td>
       <td>47.4% / 52.6%</td>
-      <td>La muestra mantiene representación de ambos perfiles, con ligero predominio de baristas.</td>
+      <td>La muestra replica casi exactamente la composición del TB2, con representación equilibrada de ambos perfiles.</td>
     </tr>
     <tr>
       <td>Experiencia previa</td>
-      <td>90.5% indicó tener experiencia registrando información del dominio</td>
+      <td>94.7% indicó tener experiencia registrando información del dominio</td>
       <td>84.2%</td>
       <td>Mayor proporción con experiencia que en TB2; las respuestas conservan validez de dominio.</td>
     </tr>
     <tr>
       <td>Herramientas actuales de registro</td>
-      <td>38.1% Excel, 23.8% WhatsApp/mensajería, 23.8% notas a mano, 14.3% software especializado</td>
+      <td>42.1% Excel, 13.2% WhatsApp/mensajería, 34.2% notas a mano, 10.5% software especializado</td>
       <td>36.8% / 26.3% / 21.1% / 15.8%</td>
       <td>Distribución similar al TB2; persiste dependencia de herramientas externas.</td>
     </tr>
     <tr>
       <td>Vista de correlación lote-tueste-cata (TUS04)</td>
-      <td>Promedio de utilidad: 3.57/5. 76.2% considera que permite comparar tueste y cata sin cambiar de pantalla</td>
+      <td>Promedio de utilidad: 3.74/5. 57.1% considera que permite comparar tueste y cata sin cambiar de pantalla</td>
       <td>4.11/5 utilidad; 4.05/5 importancia vista unificada</td>
       <td>Por debajo de la expectativa del TB2 y del umbral ≥ 4/5. H-03 no validada en utilidad percibida.</td>
     </tr>
     <tr>
       <td>Expectativa cumplida (TUS04)</td>
-      <td>42.9% Sí, 42.9% Parcialmente, 14.3% No</td>
+      <td>28.9% Sí, 57.9% Parcialmente, 13.2% No</td>
       <td>—</td>
-      <td>Solo 43% considera que la vista cumple plenamente lo prometido en la validación inicial.</td>
+      <td>La mayoría (57.9%) considera que la vista cumple solo parcialmente lo prometido en la validación inicial.</td>
     </tr>
     <tr>
       <td>Probabilidad de uso de correlación (TUS04)</td>
-      <td>Promedio: 3.43/5</td>
+      <td>Promedio: 3.55/5</td>
       <td>3.95/5</td>
       <td>Disminuye respecto al TB2; la implementación actual no incrementa disposición de uso real.</td>
     </tr>
     <tr>
       <td>Perfil más beneficiado por correlación</td>
-      <td>81.0% barista, 19.0% ambos</td>
+      <td>65.8% barista, 31.6% ambos, 2.6% dueño/administrador</td>
       <td>57.9% barista, 31.6% ambos</td>
-      <td>Consistente con TB2: la mejora se asocia al trabajo técnico del barista.</td>
+      <td>Consistente con TB2: la mejora se asocia principalmente al trabajo técnico del barista.</td>
     </tr>
     <tr>
       <td>Persona de contacto en proveedor (TUS01)</td>
-      <td>Promedio de utilidad: 3.67/5</td>
+      <td>Promedio de utilidad: 4.24/5</td>
       <td>4.58/5</td>
-      <td>Caída de −0.91 puntos respecto al TB2; no alcanza umbral ≥ 4/5 de H-09.</td>
+      <td>Alcanza umbral ≥ 4/5, aunque por debajo de la expectativa del TB2 (−0.34).</td>
     </tr>
     <tr>
       <td>Enlace web en proveedor (TUS01)</td>
-      <td>Promedio de utilidad: 3.29/5</td>
+      <td>Promedio de utilidad: 4.03/5</td>
       <td>4.37/5</td>
-      <td>Caída significativa (−1.08); solo 28.6% calificó con 4 o 5.</td>
+      <td>Alcanza umbral ≥ 4/5; 60.5% calificó con 4 o 5.</td>
     </tr>
     <tr>
       <td>Reducción de herramientas externas (TUS01)</td>
-      <td>33.3% considera que los campos implementados reducen WhatsApp, Excel o notas</td>
+      <td>50.0% considera que los campos implementados reducen WhatsApp, Excel o notas</td>
       <td>89.5%</td>
-      <td>Contraste marcado con TB2; la implementación no demostró reducir dependencia externa.</td>
+      <td>Mejora respecto a la primera tanda de respuestas, pero aún por debajo del TB2 y del umbral ≥ 80% de H-09.</td>
     </tr>
     <tr>
       <td>Motivo de consumo de inventario (TUS03)</td>
-      <td>Promedio de utilidad: 3.57/5</td>
+      <td>Promedio de utilidad: 3.66/5</td>
       <td>4.37/5</td>
       <td>Por debajo del TB2 y del umbral ≥ 4/5; H-07 no validada.</td>
     </tr>
     <tr>
       <td>Vista económica consolidada por lote (TUS05)</td>
-      <td>Promedio de utilidad: 3.86/5. 81.0% considera costo por kilo el indicador más consultado</td>
+      <td>Promedio de utilidad: 3.66/5. 84.2% considera costo por kilo el indicador más consultado</td>
       <td>4.32/5 importancia consulta integrada</td>
-      <td>Ligeramente por debajo del TB2; el indicador económico prioritario se confirma, pero la utilidad global no alcanza ≥ 4/5.</td>
+      <td>Por debajo del TB2; el indicador económico prioritario se confirma, pero la utilidad global no alcanza ≥ 4/5.</td>
     </tr>
     <tr>
       <td>Traducción completa en módulos críticos (TUS02)</td>
-      <td>Promedio de percepción de traducción completa: 4.43/5</td>
+      <td>Promedio de percepción de traducción completa: 4.63/5</td>
       <td>4.37/5 importancia traducción completa</td>
       <td>Supera expectativa del TB2 en percepción de traducción; 100% calificó con 4 o 5.</td>
+    </tr>
+    <tr>
+      <td>Textos mezclados en módulos probados (TUS02)</td>
+      <td>5.3% reportó textos mezclados entre español e inglés</td>
+      <td>84.2% consideraba que textos mezclados afectarían su confianza (TB2)</td>
+      <td>La percepción de textos mixtos disminuye notablemente frente al riesgo anticipado en TB2.</td>
     </tr>
     <tr>
       <td>Confianza incrementada por traducción (TUS02)</td>
@@ -8423,9 +8429,9 @@ Las preguntas con escala del 1 al 5 se analizarán mediante promedios y porcenta
     </tr>
     <tr>
       <td>Uso internacional (TUS02)</td>
-      <td>Promedio: 4.29/5</td>
+      <td>Promedio: 4.32/5</td>
       <td>4.53/5 utilidad en contextos internacionales</td>
-      <td>Ligeramente inferior al TB2, pero mantiene aceptación favorable (85.7% calificó 4 o 5).</td>
+      <td>Ligeramente inferior al TB2, pero mantiene aceptación favorable (92.1% calificó 4 o 5).</td>
     </tr>
   </tbody>
 </table>
@@ -8457,7 +8463,7 @@ En el estudio se realizaron las siguientes preguntas para evaluar la experiencia
 13. ¿La traducción implementada aumenta tu confianza en la plataforma? (TUS02)
 14. ¿Usarías CaféLab en contextos internacionales con esta versión? (TUS02)
 
-Estas preguntas se presentaron a una muestra de **21 participantes** del segmento objetivo (baristas y dueños/administradores de cafeterías de especialidad). Los participantes respondieron basándose en su experiencia con las funcionalidades desplegadas en la rama `experiment`. A continuación, se explican los resultados obtenidos.
+Estas preguntas se presentaron a una muestra de **38 participantes** del segmento objetivo (baristas y dueños/administradores de cafeterías de especialidad). Los participantes respondieron basándose en su experiencia con las funcionalidades desplegadas en la rama `experiment`. A continuación, se explican los resultados obtenidos.
 
 **Evidencia completa:** [Resultados del formulario To-Be (Google Sheets)](https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing)
 
@@ -8465,50 +8471,53 @@ Estas preguntas se presentaron a una muestra de **21 participantes** del segment
 
 **Distribución de perfiles:**
 
-Los participantes se distribuyeron en un **57.1% baristas** y un **42.9% dueños o administradores de cafeterías**. Esta composición es comparable al formulario TB2 (47.4% / 52.6%) y permite analizar tanto la percepción operativa como la administrativa de las mejoras implementadas.
+Los participantes se distribuyeron en un **52.6% baristas** y un **47.4% dueños o administradores de cafeterías**, composición casi idéntica al formulario TB2 (47.4% / 52.6%). Esto permite analizar la percepción operativa y administrativa con representación equilibrada.
 
 **Experiencia previa en el dominio:**
 
-El **90.5%** de los participantes indicó tener experiencia registrando información de café, sesiones de cata, calibraciones, proveedores o inventario. Este porcentaje es ligeramente superior al TB2 (84.2%), lo que otorga mayor validez de dominio a las respuestas obtenidas.
+El **94.7%** de los participantes indicó tener experiencia registrando información de café, sesiones de cata, calibraciones, proveedores o inventario. Este porcentaje es superior al TB2 (84.2%), lo que otorga mayor validez de dominio a las respuestas obtenidas.
 
 **Herramientas actuales de registro:**
 
-La mayoría de participantes aún depende de herramientas externas: **38.1% Excel**, **23.8% aplicaciones de mensajería**, **23.8% notas escritas** y **14.3% aplicaciones especializadas**. Esta distribución es similar al TB2 y refuerza la necesidad de centralizar información en CaféLab; sin embargo, los resultados To-Be indican que las mejoras actuales aún no sustituyen esas herramientas en la práctica.
+La mayoría de participantes aún depende de herramientas externas: **42.1% Excel**, **13.2% aplicaciones de mensajería**, **34.2% notas escritas** y **10.5% aplicaciones especializadas**. Esta distribución es similar al TB2 y refuerza la necesidad de centralizar información en CaféLab.
 
 #### Evaluación de características
 
 **Vista de correlación lote-tueste-cata (TUS04):**
 
-El promedio de utilidad percibida fue **3.57/5**, por debajo del **4.11/5** obtenido en el TB2. El **76.2%** consideró que la vista permite comparar información técnica y sensorial sin cambiar de pantalla, pero solo el **42.9%** indicó que cumple plenamente su expectativa según la validación inicial; el **42.9%** respondió *Parcialmente* y el **14.3%** *No*. La probabilidad de uso real alcanzó **3.43/5**, también inferior al TB2 (3.95/5). Esto sugiere que la implementación en `/roast-flavor-correlation` requiere iteración antes de considerarse validada.
+El promedio de utilidad percibida fue **3.74/5**, por debajo del **4.11/5** obtenido en el TB2. El **57.1%** consideró que la vista permite comparar información técnica y sensorial sin cambiar de pantalla, pero solo el **28.9%** indicó que cumple plenamente su expectativa según la validación inicial; el **57.9%** respondió *Parcialmente* y el **13.2%** *No*. La probabilidad de uso real alcanzó **3.55/5**, también inferior al TB2 (3.95/5). El **65.8%** asocia la mejora principalmente al perfil barista. Esto sugiere que la implementación en `/roast-flavor-correlation` requiere iteración antes de considerarse validada.
 
 **Ficha de proveedor ampliada (TUS01):**
 
-El campo **persona de contacto** obtuvo un promedio de **3.67/5** (TB2: 4.58/5) y el **enlace web** un promedio de **3.29/5** (TB2: 4.37/5). Solo el **33.3%** consideró que estos campos reducen el uso de WhatsApp, Excel o notas, frente al **89.5%** del formulario inicial. La brecha entre expectativa e implementación sugiere que los campos, aunque operativos en `/suppliers`, no resultan suficientemente visibles o útiles en el flujo actual (solo aparecen en detalle/edición, no en el listado).
+El campo **persona de contacto** obtuvo un promedio de **4.24/5** (TB2: 4.58/5) y el **enlace web** un promedio de **4.03/5** (TB2: 4.37/5). Ambos alcanzan el umbral ≥ 4/5 definido en H-09, aunque permanecen por debajo de la expectativa del formulario inicial. El **50.0%** consideró que estos campos reducen el uso de WhatsApp, Excel o notas, frente al **89.5%** del TB2; esta brecha indica que, aunque los campos son percibidos como útiles, aún no demuestran reducir de forma consistente la dependencia de herramientas externas.
 
 **Motivo de consumo de inventario (TUS03):**
 
-El promedio de utilidad fue **3.57/5**, inferior al **4.37/5** del TB2. Aunque el selector de motivo (Barra / Retail / Muestras / Otro) funciona en `/inventory`, la percepción de utilidad no alcanza el umbral ≥ 4/5 definido en las hipótesis. Posibles causas incluyen la imposibilidad de editar consumos ya registrados y la complejidad del formulario de registro.
+El promedio de utilidad fue **3.66/5**, inferior al **4.37/5** del TB2. Aunque el selector de motivo (Barra / Retail / Muestras / Otro) funciona en `/inventory`, la percepción de utilidad no alcanza el umbral ≥ 4/5 definido en las hipótesis. Posibles causas incluyen la imposibilidad de editar consumos ya registrados y la complejidad del formulario de registro.
 
 **Vista económica consolidada por lote (TUS05):**
 
-El promedio de utilidad fue **3.86/5**, ligeramente inferior al **4.32/5** de importancia reportado en el TB2. Sin embargo, el **81.0%** confirmó que el **costo por kilo** es el indicador económico que más consultaría, coherente con el **57.9%** del formulario inicial. La vista desde `/coffee-lots` aporta valor al centralizar stock e indicadores, pero aún no alcanza la expectativa generada en la priorización.
+El promedio de utilidad fue **3.66/5**, inferior al **4.32/5** de importancia reportado en el TB2. Sin embargo, el **84.2%** confirmó que el **costo por kilo** es el indicador económico que más consultaría, coherente con el **57.9%** del formulario inicial. La vista desde `/coffee-lots` aporta valor al centralizar stock e indicadores, pero aún no alcanza la expectativa generada en la priorización.
 
 **Traducción e internacionalización (TUS02):**
 
-La percepción de traducción completa alcanzó **4.43/5**, superando el **4.37/5** del TB2. Además, el **100%** de participantes respondió que **la traducción implementada incrementa su confianza** en la plataforma, superando el umbral ≥ 80% definido en la hipótesis H-08. El uso internacional promedió **4.29/5**, con **85.7%** de respuestas favorables (4 o 5). Estos resultados confirman que TUS02 es la mejora con mejor desempeño relativo frente a la expectativa del TB2.
+La percepción de traducción completa alcanzó **4.63/5**, superando el **4.37/5** del TB2. Solo el **5.3%** reportó textos mezclados entre español e inglés en los módulos probados. Además, el **100%** de participantes respondió que **la traducción implementada incrementa su confianza** en la plataforma, superando el umbral ≥ 80% definido en la hipótesis H-08. El uso internacional promedió **4.32/5**, con **92.1%** de respuestas favorables (4 o 5). Estos resultados confirman que TUS02 es la mejora con mejor desempeño relativo frente a la expectativa del TB2.
 
 #### Recomendaciones derivadas de los resultados
 
 Entre las mejoras To-Be evaluadas, los resultados indican lo siguiente:
 
-- **Traducción e internacionalización (TUS02):** mejor desempeño relativo; percepción de traducción superior al TB2 (4.43/5) y **100%** reporta incremento de confianza en la plataforma.
-- **Vista económica por lote (TUS05):** confirmación del costo por kilo como indicador prioritario (81%); requiere mejorar utilidad percibida hacia ≥ 4/5.
-- **Correlación lote-tueste-cata (TUS04):** relevante para baristas (81% del segmento), pero expectativa cumplida plenamente solo en 42.9%; iterar curvas de tueste y experiencia de comparación.
-- **Ficha de proveedor (TUS01) y motivo de consumo (TUS03):** caída notable respecto al TB2; mejorar visibilidad de campos, flujo de registro y reducción real de herramientas externas.
+- **Traducción e internacionalización (TUS02):** mejor desempeño relativo; percepción de traducción superior al TB2 (4.63/5), solo 5.3% reporta textos mezclados y **100%** reporta incremento de confianza en la plataforma.
+- **Ficha de proveedor (TUS01):** alcanza umbral de utilidad en contacto (4.24/5) y enlace web (4.03/5); requiere mejorar la reducción percibida de herramientas externas (50% vs 89.5% en TB2).
+- **Vista económica por lote (TUS05):** confirmación del costo por kilo como indicador prioritario (84.2%); requiere mejorar utilidad percibida hacia ≥ 4/5.
+- **Correlación lote-tueste-cata (TUS04):** relevante para baristas (65.8%), pero expectativa cumplida plenamente solo en 28.9%; iterar curvas de tueste y experiencia de comparación.
+- **Motivo de consumo (TUS03):** por debajo del umbral; simplificar flujo de registro y permitir edición de consumos.
 
 #### Conclusión
 
-Los resultados del formulario To-Be revelan una **brecha entre la expectativa generada en el TB2 y la experiencia real** con las mejoras implementadas. Ninguna de las cuatro mejoras funcionales principales (TUS01, TUS03, TUS04, TUS05) alcanzó el umbral ≥ 4/5 definido en [8.2.5](#825-scale-calculations-and-decisions). **TUS02** es la única que supera la expectativa del TB2 en percepción de traducción (**4.43/5**) y además obtiene **100%** de respuestas favorables sobre incremento de confianza en la plataforma.
+Los resultados del formulario To-Be (n = 38) revelan una **brecha entre la expectativa generada en el TB2 y la experiencia real** con las mejoras implementadas, aunque con matices según la funcionalidad evaluada. **TUS02** supera la expectativa del TB2 en percepción de traducción (**4.63/5**) y obtiene **100%** de respuestas favorables sobre incremento de confianza. **TUS01** alcanza el umbral ≥ 4/5 en utilidad percibida de contacto y enlace web, pero no en reducción de herramientas externas. **TUS03, TUS04 y TUS05** permanecen por debajo del umbral ≥ 4/5 definido en [8.2.5](#825-scale-calculations-and-decisions).
+
+Con base en estos resultados, el equipo define que **TUS02 (traducción e internacionalización)** y **TUS01 (persona de contacto y enlace web en proveedores)** son las dos mejoras To-Be que **avanzan a producción**, por alcanzar el umbral de utilidad percibida ≥ 4/5. **TUS03, TUS04 y TUS05** permanecen en la rama `experiment` para refinamiento UX antes de su traslado definitivo.
 
 Estos hallazgos demuestran la importancia de validar con implementación real y no solo con prototipos o videos demostrativos. Las recomendaciones obtenidas servirán como base para futuras iteraciones de UX/UI del producto y para las decisiones de evolución documentadas en [8.5.1](#851-shareback-session-artifacts-learning-workflow).
 
@@ -8516,14 +8525,14 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 
 | Funcionalidad | TB2 (expectativa) | To-Be (experiencia real) | Resultado |
 |---------------|-------------------|--------------------------|-----------|
-| Correlación lote-tueste-cata | 4.11/5 | 3.57/5 | No alcanza umbral |
-| Persona de contacto proveedor | 4.58/5 | 3.67/5 | No alcanza umbral |
-| Enlace web proveedor | 4.37/5 | 3.29/5 | No alcanza umbral |
-| Motivo de consumo inventario | 4.37/5 | 3.57/5 | No alcanza umbral |
-| Vista económica por lote | 4.32/5 | 3.86/5 | No alcanza umbral |
-| Traducción completa | 4.37/5 | 4.43/5 | Supera expectativa |
+| Correlación lote-tueste-cata | 4.11/5 | 3.74/5 | No alcanza umbral |
+| Persona de contacto proveedor | 4.58/5 | 4.24/5 | Alcanza umbral; por debajo de TB2 |
+| Enlace web proveedor | 4.37/5 | 4.03/5 | Alcanza umbral; por debajo de TB2 |
+| Motivo de consumo inventario | 4.37/5 | 3.66/5 | No alcanza umbral |
+| Vista económica por lote | 4.32/5 | 3.66/5 | No alcanza umbral |
+| Traducción completa | 4.37/5 | 4.63/5 | Supera expectativa |
 | Confianza incrementada por traducción | — | 100% Sí | Supera umbral H-08 |
-| Reduce herramientas externas | 89.5% Sí | 33.3% Sí | Brecha significativa |
+| Reduce herramientas externas | 89.5% Sí | 50.0% Sí | Brecha significativa |
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog.
 
@@ -8561,7 +8570,7 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 
 <p>
   Posteriormente, se aplicó un segundo formulario de Google Forms orientado a validar el recibimiento
-  de las To-Be User Stories implementadas en la rama <code>experiment</code>. Los resultados (21 respuestas)
+  de las To-Be User Stories implementadas en la rama <code>experiment</code>. Los resultados (38 respuestas)
   permitieron comparar la experiencia real con las expectativas del formulario TB2 y definir qué funcionalidades
   requieren iteración antes de trasladarse al servidor de producción.
 </p>
@@ -8622,12 +8631,12 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
   <tr>
     <td>Validación To-Be</td>
     <td>Segundo formulario de Google Forms</td>
-    <td>Se validó el recibimiento de las To-Be User Stories con 21 respuestas; los resultados revelaron brecha entre expectativa (TB2) y experiencia real.</td>
+    <td>Se validó el recibimiento de las To-Be User Stories con 38 respuestas; TUS02 y TUS01 alcanzan umbral de utilidad, mientras TUS03, TUS04 y TUS05 requieren iteración.</td>
   </tr>
   <tr>
     <td>Decisión de producción</td>
     <td>To-Be User Stories y To-Be Product Backlog</td>
-    <td>Después de validar las mejoras To-Be, se definirán las funcionalidades que serán trasladadas al servidor de producción.</td>
+    <td>Se trasladan a producción <strong>TUS02</strong> (traducción EN/ES) y <strong>TUS01</strong> (contacto y enlace web en proveedores), por alcanzar umbral ≥ 4/5 en utilidad percibida. TUS03, TUS04 y TUS05 permanecen en <code>experiment</code> para iteración.</td>
   </tr>
 </table>
 
