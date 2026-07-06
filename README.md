@@ -8662,6 +8662,112 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 
 # Matriz de Evaluación Etica y de Impacto
 
+<table border="1">
+  <tr>
+    <th>Dimensión / Criterio a Evaluar</th>
+    <th>Identificación de Riesgos e Impactos (Positivos y Negativos)</th>
+    <th>Evaluación del Impacto (¿A quién afecta y cuál es la magnitud?)</th>
+    <th>Estrategias de Mitigación y Acciones de Diseño</th>
+  </tr>
+
+  <tr>
+    <td><strong>1. Salud Pública y Seguridad</strong></td>
+    <td>
+      <strong>Negativo:</strong> Si la información registrada sobre lotes, recetas, catas o procesos de tueste es incorrecta, los usuarios podrían tomar decisiones equivocadas sobre la calidad del café.<br>
+      <strong>Positivo:</strong> La plataforma permite centralizar información importante del proceso cafetero, reduciendo errores por registros manuales dispersos.
+    </td>
+    <td>
+      <strong>Afectados:</strong> Baristas, dueños de cafeterías y consumidores finales. La magnitud es media, ya que influye en la calidad del producto ofrecido y en la confianza del cliente.
+    </td>
+    <td>
+      <strong>Acciones:</strong> Validar los datos ingresados, mostrar mensajes de error claros, permitir la revisión de registros históricos y evitar que se guarde información incompleta o incoherente.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>2. Inclusión y Accesibilidad</strong></td>
+    <td>
+      <strong>Negativo:</strong> Una interfaz poco clara o con lenguaje demasiado técnico puede dificultar el uso de la plataforma para usuarios con menor experiencia digital.<br>
+      <strong>Positivo:</strong> Una plataforma intuitiva facilita que baristas y administradores adopten herramientas digitales en sus procesos diarios.
+    </td>
+    <td>
+      <strong>Afectados:</strong> Baristas, dueños de cafeterías y personal operativo. La magnitud es media, porque puede limitar la adopción y uso constante del sistema.
+    </td>
+    <td>
+      <strong>Acciones:</strong> Diseñar una interfaz simple, usar etiquetas comprensibles, mantener una navegación clara e incluir mensajes de ayuda en formularios y módulos principales.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>3. Impacto Social y Cultural</strong></td>
+    <td>
+      <strong>Negativo:</strong> La digitalización de procesos puede generar resistencia en usuarios acostumbrados a registros manuales o métodos tradicionales.<br>
+      <strong>Positivo:</strong> CaféLab contribuye a profesionalizar el trabajo de baristas y cafeterías de especialidad, fortaleciendo la cultura del café de calidad.
+    </td>
+    <td>
+      <strong>Afectados:</strong> Baristas, cafeterías de especialidad y comunidad cafetera. La magnitud es media, ya que impacta en hábitos de trabajo y cultura operativa.
+    </td>
+    <td>
+      <strong>Acciones:</strong> Implementar una adopción progresiva, mantener formularios fáciles de completar y explicar los beneficios de la trazabilidad digital para el trabajo diario.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>4. Impacto Económico</strong></td>
+    <td>
+      <strong>Negativo:</strong> El costo de adopción o mantenimiento de la plataforma podría ser una barrera para cafeterías pequeñas.<br>
+      <strong>Positivo:</strong> La gestión de inventario, proveedores, lotes y costos puede reducir pérdidas, mejorar decisiones de compra y aumentar la rentabilidad.
+    </td>
+    <td>
+      <strong>Afectados:</strong> Dueños de cafeterías, administradores y negocios de café de especialidad. La magnitud es alta, porque influye directamente en costos, pérdidas y rentabilidad.
+    </td>
+    <td>
+      <strong>Acciones:</strong> Priorizar funcionalidades de mayor valor económico, ofrecer módulos escalables y permitir que los usuarios gestionen información clave sin procesos complejos.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>5. Impacto Ambiental (Antrópico)</strong></td>
+    <td>
+      <strong>Negativo:</strong> El uso de servicios digitales implica consumo energético asociado al alojamiento, procesamiento y almacenamiento de datos.<br>
+      <strong>Positivo:</strong> Una mejor gestión de inventario y lotes puede ayudar a reducir desperdicios de café por mala planificación o falta de trazabilidad.
+    </td>
+    <td>
+      <strong>Afectados:</strong> Cafeterías, proveedores y entorno ambiental. La magnitud es media, ya que el impacto depende del volumen de uso y de la eficiencia de los procesos.
+    </td>
+    <td>
+      <strong>Acciones:</strong> Optimizar consultas y almacenamiento de datos, evitar procesos innecesarios en la plataforma y promover reportes que ayuden a reducir pérdidas de materia prima.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>6. Enfoque Global</strong></td>
+    <td>
+      <strong>Negativo:</strong> Si la plataforma se usa en distintos contextos, puede enfrentar diferencias de idioma, normativas de datos y prácticas del sector cafetero.<br>
+      <strong>Positivo:</strong> La plataforma puede adaptarse a distintos mercados y apoyar la internacionalización de cafeterías de especialidad.
+    </td>
+    <td>
+      <strong>Afectados:</strong> Usuarios de distintos países, cafeterías y potenciales clientes internacionales. La magnitud es media-alta si el producto escala fuera del mercado local.
+    </td>
+    <td>
+      <strong>Acciones:</strong> Invertir más en el soporte multidioma, proteger los datos de usuarios y diseñar la plataforma con criterios adaptables a diferentes contextos de uso.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>7. Revelación de Peligros y Responsabilidad</strong></td>
+    <td>
+      <strong>Riesgo:</strong> Se podría identificar una falla en el sistema, como exposición de datos, errores en el cálculo de inventario, inconsistencias en costos o registros incorrectos.
+    </td>
+    <td>
+      <strong>Afectados:</strong> Baristas, dueños de cafeterías y usuarios de la plataforma. La magnitud puede ser alta si la falla afecta decisiones operativas o información sensible.
+    </td>
+    <td>
+      <strong>Acciones:</strong> Informar oportunamente a los usuarios, corregir el error detectado, documentar la incidencia y evitar ocultar problemas que afecten la confianza en el sistema.
+    </td>
+  </tr>
+</table>
+
 # Conclusiones y recomendaciones
 
 ## Conclusiones
