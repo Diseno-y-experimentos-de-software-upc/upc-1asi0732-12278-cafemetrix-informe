@@ -8649,6 +8649,19 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 
 ### 8.6.1. About-the-Product Intro Video.
 
+<table border="1" width="100%">
+  <tr>
+    <td>
+      <img src="public/assets/images/chapter-8/about-the-product.png" alt="Video About The Product">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      URL: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110385_upc_edu_pe/IQAooDfCMNYlRKprxlOB9aWnAWP5gP5k-Z_2vylIQrmy2n0?
+    </td>
+  </tr>
+</table>
+
 # Conclusiones y recomendaciones
 
 ## Conclusiones
@@ -8739,4 +8752,4 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 
 - Enlace para acceder al [Backend deployado](https://cafelab-backend-production-2742.up.railway.app/swagger-ui/index.html)
 
-- Enlace al video "About the Product": [video about the product] (https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110385_upc_edu_pe/IQAooDfCMNYlRKprxlOB9aWnAWP5gP5k-Z_2vylIQrmy2n0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1oiDI5)
+- Enlace para acceder al [Video About-The-Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110385_upc_edu_pe/IQAooDfCMNYlRKprxlOB9aWnAWP5gP5k-Z_2vylIQrmy2n0?)
