@@ -493,10 +493,12 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
     - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
         - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
 
-- [Avance de Conclusiones, Bibliografía y Anexos](#avance-de-conclusiones-bibliografía-y-anexos)
+    - [Matriz de Evaluación Etica y de Impacto](#matriz-de-evaluación-etica-y-de-impacto)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
     - [Conclusiones](#conclusiones)
     - [Recomendaciones](#recomendaciones)
+    - [Video App Validation](#video-app-validation)
+    - [Video About the Team](#video-about-the-team)
     - [Bibliografía](#bibliografía)
     - [Anexos](#anexos)
 
@@ -8657,6 +8659,8 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
     </td>
   </tr>
 </table>
+
+# Matriz de Evaluación Etica y de Impacto
 
 # Conclusiones y recomendaciones
 
