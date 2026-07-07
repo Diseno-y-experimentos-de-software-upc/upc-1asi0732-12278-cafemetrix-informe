@@ -6658,7 +6658,7 @@ Solución provista: Para este proyecto no se ha provisto el despliegue del backe
 
 Evidencia:
 
-![Hallazgo 2](ha-2.png)
+![Hallazgo 2](public/assets/images/hallazgos/ha-2.png)
 
 **Número de Hallazgo: 3**
 
@@ -6668,8 +6668,87 @@ Solución provista: Para solucionar este hallazgo, hemos añadido las secciones 
 
 Evidencia: 
 
-![Hallazgo 3](ha-3.png)
+![Hallazgo 3](public/assets/images/hallazgos/ha-3.png)
 
+**Número de Hallazgo: 5**
+
+Descripción provista: Las pruebas de integración declaradas en 6.1.2 no existen en la copia entregada del backend (evidencia): el informe indica que se encuentran en `src/test/java/com/cafemetrix/cafelab/core/integration/tests`, pero esa ruta no existe; `src/test` solo contiene la suite BDD y `CafeLabApplicationTests`, incumpliendo la sección 6.1.2 del TF (requisito). Casos: `IamIntegrationTests.java`, `ProfilesIntegrationTests.java`, `ProductionIntegrationTests.java` y demás archivos listados en el informe (enunciado).
+
+Solución provista: Para solucionar este hallazgo se añadieron las pruebas integrales a la rama develop.
+
+Evidencia: 
+
+![Hallazgo 5](public/assets/images/hallazgos/ha-5.png)
+
+
+**Número de Hallazgo: 6**
+
+Descripción provista: Las conclusiones y recomendaciones del informe TB2 permanecen redactadas para el hito TP1/TB1 (evidencia): refieren “lo requerido para el informe de medio término” y priorización TB1 (pág. 260), desviándose de la exigencia de actualizar conclusiones en cada hito (requisito). Es una desviación puntual que no invalida el contenido del resto del informe (enunciado).
+
+Solución provista: Para solucionar este hallazgo, hemos añadido las conclusiones y recomendaciones correspondientes al TB2 en el informe, dado que esta es la entrega final. Las conclusiones del hito TP1/TB1 se eliminan.
+
+Evidencia: 
+
+![Hallazgo 6](public/assets/images/hallazgos/ha-6.png)
+
+
+**Número de Hallazgo: 7**
+
+Descripción provista: Inconsistencia de branding entre la guía de estilo y los mock-ups (evidencia): 4.1.1 define como color primario el Verde Oliva `#618985`, mientras 4.3.2 describe el mock-up de la landing con “tonos tierra y marrones cálidos como color primario”, desviándose de la consistencia visual que la propia guía establece (requisito). Caso único detectado en 4.3.2 (enunciado).
+
+Solución provista: Para solucionar este hallazgo, hemos corregido la descripción del mock-up en la sección 4.3.2 para alinearla con la paleta oficial definida en la guía de estilo (4.1.1), cuyo color primario es el Verde Oliva `#618985`. Se eliminó la referencia a "tonos tierra y marrones cálidos como color primario", dejando la descripción consistente con el branding declarado.
+
+Evidencia: 
+
+![Hallazgo 7](public/assets/images/hallazgos/ha-7.png)
+
+**Número de Hallazgo: 8**
+
+Descripción provista: El atributo lang de los documentos HTML desplegados no corresponde al idioma del contenido (evidencia): landing y web app declaran `lang="en"` con interfaz en español, desviación de las buenas prácticas de accesibilidad WCAG 3.1.1 (requisito). Casos: ambas URLs de producción, verif. el 01/07/2026 (enunciado).
+
+Solución provista: Para solucionar este hallazgo, hemos añadido las secciones 8.3.3. a 8.6 del informe como se tenía provisto considerando que esta es la entrega final.
+
+Evidencia: 
+
+![Hallazgo 8A](public/assets/images/hallazgos/ha-1.png)
+
+
+![Hallazgo 8B](public/assets/images/hallazgos/ha-8.png)
+
+
+**Número de Hallazgo: 9**
+
+Descripción provista: Higiene de configuración de los repositorios entregados (evidencia): el backend incluye `target/`, `.idea` y `.DS_Store`; el frontend incluye `node_modules`, `.angular` y un archivo duplicado “package-lock 2.json”, desviación de las buenas prácticas de source code management declaradas en 5.1.2 (requisito). Casos: ambos repositorios de la entrega (enunciado).
+
+Solución provista: Para solucionar este hallazgo, hemos añadido las secciones 8.3.3. a 8.6 del informe como se tenía provisto considerando que esta es la entrega final.
+
+Evidencia: 
+
+![Hallazgo 9A](public/assets/images/hallazgos/ha-9A.png)
+
+![Hallazgo 9B](public/assets/images/hallazgos/ha-9B.png)
+
+
+**Número de Hallazgo: 12**
+
+Descripción provista: La organización podría ejecutar a corto plazo las mejoras de usabilidad que su propia evaluación heurística priorizó con severidad 3 (campos obligatorios sin señalizar, íconos editar/clonar confundibles, íconos de baja visibilidad), dado que ya están traducidas a To-Be User Stories (TUS01–TUS05) con pseudocódigo y métricas definidas.
+
+Solución provista: Para solucionar este hallazgo, hemos añadido las To-Be stories aprobadas por los usuarios mediante formularios planteados por el equipo. En este caso, TUS-01 (Mejora de ficha de proveedor) y TUS-02 (Traducción completa de pantallas críticas).
+
+Evidencia: 
+
+![Hallazgo 12](public/assets/images/hallazgos/ha-12.png)
+
+
+**Número de Hallazgo: 13**
+
+Descripción provista: La organización podría acompañar los diagramas de arquitectura C4 (4.8.1, 4.8.2) con descripciones textuales de decisiones y relaciones entre contenedores, lo que facilitaría la evaluación y el onboarding de nuevos integrantes.
+
+Solución provista: Para solucionar este hallazgo, hemos añadido las secciones 8.3.3. a 8.6 del informe como se tenía provisto considerando que esta es la entrega final.
+
+Evidencia: 
+
+![Hallazgo 13](public/assets/images/hallazgos/ha-13.png)
 
 
 # Capítulo VII: DevOps Practices
@@ -8867,10 +8946,10 @@ Al cierre del ciclo de vida del proyecto, las conclusiones se sustentan en los r
   Quedó establecida una cadena de valor DevOps completa: **integración continua** con GitHub Actions, Maven, JUnit/Mockito, Cucumber y análisis estático (que bloquea el *merge* ante cualquier fallo), bajo prácticas de TDD y BDD; **entrega y despliegue continuos** hacia Firebase (landing), Vercel (aplicación web) y Railway (API); y **monitoreo continuo** con Vercel Analytics y el panel de Railway. Esto habilita ciclos de despliegue ágiles con observabilidad básica y protección de la rama principal.
 
 - **Validación con implementación real (Capítulo VIII)**  
-  A partir de los hallazgos de usabilidad se formularon hipótesis con métricas y umbrales, se derivó un To-Be Product Backlog priorizado (TUS01–TUS05) y se implementaron las mejoras en la rama `experiment`. La validación con **38 participantes** del segmento objetivo (94.7% con experiencia previa en el dominio) midió la utilidad **percibida** tras el uso real, superando el enfoque de expectativas basado en videos demostrativos del TB2.
+  A partir de los hallazgos de usabilidad se formularon hipótesis con métricas y umbrales, se derivó un To-Be Product Backlog priorizado (TUS01–TUS05) y se implementaron las mejoras en la rama `experiment`. La validación con **38 participantes** del segmento objetivo (94.7% con experiencia previa en el dominio) midió la utilidad **percibida** tras el uso real, superando el enfoque de expectativas basado en videos demostrativos del TF.
 
 - **Decisiones basadas en evidencia (Capítulo VIII)**  
-  Los resultados mostraron una brecha entre la expectativa del TB2 y la experiencia real: **TUS02 (internacionalización)** superó la expectativa (traducción 4.63/5 y 100% de incremento de confianza) y **TUS01 (ficha de proveedor ampliada)** alcanzó el umbral ≥ 4/5 (contacto 4.24/5, enlace web 4.03/5); ambas **avanzan a producción**. En cambio, **TUS03 (motivo de consumo, 3.66/5), TUS04 (correlación lote-tueste-cata, 3.74/5) y TUS05 (vista económica por lote, 3.66/5)** no alcanzaron el umbral y **permanecen en la rama `experiment`** para refinamiento UX. Esto demuestra el valor de validar con producto real y no solo con prototipos.
+  Los resultados mostraron una brecha entre la expectativa del TF y la experiencia real: **TUS02 (internacionalización)** superó la expectativa (traducción 4.63/5 y 100% de incremento de confianza) y **TUS01 (ficha de proveedor ampliada)** alcanzó el umbral ≥ 4/5 (contacto 4.24/5, enlace web 4.03/5); ambas **avanzan a producción**. En cambio, **TUS03 (motivo de consumo, 3.66/5), TUS04 (correlación lote-tueste-cata, 3.74/5) y TUS05 (vista económica por lote, 3.66/5)** no alcanzaron el umbral y **permanecen en la rama `experiment`** para refinamiento UX. Esto demuestra el valor de validar con producto real y no solo con prototipos.
 
 - **Cierre del ciclo de vida del proyecto**  
   El producto se encuentra **finalizado**, con trazabilidad completa entre requisitos, diseño, implementación, verificación, validación y experimentación, y con evidencia reproducible en los repositorios. Los hallazgos de la auditoría cruzada fueron atendidos e incorporados, cerrando un ciclo de mejora continua coherente con la entrega final del curso.
