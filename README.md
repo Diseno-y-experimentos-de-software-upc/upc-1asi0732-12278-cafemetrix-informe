@@ -2315,7 +2315,7 @@ La versión wireframe de nuestra landing page presenta una estructura básica co
 
 ### 4.3.2. Landing Page Mock-up.
 **Landing Page para Desktop Web Browser**
-En nuestra versión mock-up se evidencia la implementación de los elementos de diseño específicos de Café Lab. Se aplicó la paleta de colores característica, que incluye tonos tierra y marrones cálidos como color primario, junto con verdes oscuros como color secundario, creando una estética que evoca la naturaleza del café y su proceso artesanal. La tipografía seleccionada se implementó de manera consistente en todos los elementos de texto, desde los encabezados principales hasta los párrafos descriptivos y botones de acción.
+En nuestra versión mock-up se evidencia la implementación de los elementos de diseño específicos de Café Lab. Se aplicó la paleta de colores característica definida en la guía de estilo (sección 4.1.1), con el Verde Oliva `#618985` como color primario, acompañado de los tonos tierra y marrones cálidos (León `#C19875`) y el Negro Oliva `#414535` como colores secundarios, creando una estética que evoca la naturaleza del café y su proceso artesanal. La tipografía seleccionada se implementó de manera consistente en todos los elementos de texto, desde los encabezados principales hasta los párrafos descriptivos y botones de acción.
 
 ![Hero](public/assets/images/LandingMockUps/1.png)
 ![Segmentacion de usuarios](public/assets/images/LandingMockUps/2.png)
@@ -2492,8 +2492,48 @@ Enlace del prototipo [Figma](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/
 ### 4.8.1. Software Architecture Context Diagram.
 <td><img src="public/assets/images/New-ddd/C4 Contexto.png"></td>
 
+El **diagrama de contexto (Nivel 1 del modelo C4)** sitúa a **Café Lab** como un único sistema de software dentro de su entorno, identificando a los actores humanos y a los sistemas externos con los que interactúa. El objetivo de este nivel es ofrecer una vista de alto nivel, comprensible tanto para el equipo técnico como para los *stakeholders* de negocio, antes de descomponer la solución en contenedores y componentes.
+
+**Actores (usuarios del sistema):**
+
+- **Barista profesional:** utiliza Café Lab para documentar perfiles de tueste, registrar catas y calibraciones, y consultar recetas y defectos. Es el usuario que aporta y consume la información técnica y sensorial del café.
+- **Dueño o administrador de cafetería de especialidad:** emplea el sistema para gestionar proveedores, controlar el inventario integrado de café verde y tostado, y consultar costos e indicadores económicos por lote. Se centra en la trazabilidad y en las decisiones administrativas.
+
+**Sistemas externos con los que se relaciona:**
+
+- **Proveedor de autenticación / seguridad:** Café Lab gestiona el registro e inicio de sesión mediante tokens **JWT**, garantizando que cada usuario acceda únicamente a la información asociada a su cuenta.
+- **Plataformas de despliegue e infraestructura:** el sistema se apoya en servicios en la nube (Firebase para la landing, Vercel para la aplicación web y Railway para la API y la base de datos), que proveen alojamiento, disponibilidad y persistencia de datos.
+
+**Decisiones y relaciones clave en este nivel:**
+
+- Se optó por modelar Café Lab como un **sistema centralizado** al que ambos perfiles acceden desde la misma plataforma web, diferenciando la experiencia mediante secciones por segmento en lugar de aplicaciones separadas. Esto reduce la duplicación de datos y refuerza la trazabilidad extremo a extremo (proveedor → lote → tueste → cata → costo).
+- Todas las interacciones de los actores con el sistema ocurren a través de la interfaz web, y toda comunicación con datos sensibles se realiza sobre canales autenticados, aislando la lógica de negocio de los detalles de infraestructura.
+
 ### 4.8.2. Software Architecture Container Diagrams.
 <td><img src="public/assets/images/New-ddd/C4 Contenedores.png"></td>
+
+El **diagrama de contenedores (Nivel 2 del modelo C4)** descompone el sistema Café Lab en las unidades desplegables que lo conforman, describiendo la tecnología de cada una, sus responsabilidades y la forma en que se comunican entre sí. Un *contenedor*, en la terminología C4, representa una aplicación o almacén de datos que se ejecuta de forma independiente.
+
+**Contenedores que integran la solución:**
+
+- **Landing Page (sitio estático):** página de presentación del producto orientada a la captación y difusión. Está construida con tecnologías web estáticas y **desplegada en Firebase Hosting**. Su rol es informativo y deriva al usuario hacia la aplicación web; no accede directamente a la base de datos.
+- **Aplicación Web (SPA – Angular + TypeScript):** cliente principal del sistema, desarrollado como *Single Page Application* con Angular en modo `strict`. Es el contenedor con el que interactúan directamente baristas y administradores. **Desplegado en Vercel**, no contiene lógica de negocio de dominio: delega toda operación de datos en la API mediante peticiones HTTP/JSON.
+- **RESTful API (Spring Boot 3.5 / Java 24):** núcleo de la lógica de negocio, organizado según **Domain-Driven Design** en *bounded contexts* (IAM, Profiles, Coffee Production, Defects, Coffees, Cupping Sessions, Preparation, Calibrations y Management). Expone endpoints REST documentados con **Swagger/OpenAPI** y **desplegado en Railway**. Concentra la validación, la seguridad y las reglas del dominio del café.
+- **Base de datos relacional (MySQL):** almacén de persistencia de todas las entidades del dominio (usuarios, perfiles, proveedores, lotes, tuestes, catas, recetas, calibraciones, inventario y costos). Se ejecuta como **volumen MySQL dentro del mismo entorno de Railway**, enlazado a la API.
+
+**Relaciones y flujo de comunicación entre contenedores:**
+
+1. El usuario accede a la **Landing Page** (Firebase), que lo redirige a la **Aplicación Web** (Vercel).
+2. La **Aplicación Web** consume la **RESTful API** mediante peticiones **HTTPS con formato JSON**, adjuntando el token **JWT** obtenido durante la autenticación en cada solicitud protegida.
+3. La **RESTful API** aplica las reglas de negocio, la validación de entradas (`spring-boot-starter-validation`) y la seguridad (**Spring Security**, JWT con `jjwt`, contraseñas con **BCrypt**), y accede a la **base de datos MySQL** a través de **Spring Data JPA** con consultas parametrizadas.
+4. La **base de datos** devuelve los datos solicitados a la API, que los transforma en respuestas REST consumidas por la aplicación web.
+
+**Decisiones arquitectónicas relevantes en este nivel:**
+
+- **Separación cliente–servidor:** se aisló la presentación (Angular) de la lógica de negocio (Spring Boot), permitiendo evolucionar y desplegar cada contenedor de forma independiente y habilitando el flujo DevOps descrito en el [Capítulo VII](#capítulo-vii-devops-practices).
+- **API como única puerta a los datos:** ni la landing ni la aplicación web acceden directamente a la base de datos; toda operación pasa por la API, lo que centraliza la seguridad, la validación y la trazabilidad del dominio.
+- **Despliegue distribuido por responsabilidad:** cada contenedor se aloja en la plataforma más adecuada a su naturaleza (Firebase para contenido estático, Vercel para el SPA, Railway para API y base de datos), optimizando costo, disponibilidad y facilidad de despliegue continuo.
+- **Persistencia relacional:** se eligió MySQL por la naturaleza fuertemente relacional del dominio (relaciones proveedor–lote–tueste–cata–costo), donde la integridad referencial y las consultas estructuradas son prioritarias frente a la flexibilidad de un modelo no relacional.
 
 ### 4.8.3. Software Architecture Components Diagrams.
 **Auth**
@@ -6611,13 +6651,21 @@ Evidencia:
 
 Descripción provista: El backend desplegado en Railway no está disponible (evidencia): la raíz, `/swagger-ui/index.html`, `/v3/api-docs` y `/actuator/health` respondieron HTTP 404 el 01/07/2026, incumpliendo las secciones 5.2.6 y 5.2.7 del TF que exigen evidencia de API desplegada y su documentación (requisito). Caso: `https://cafelab-backend-production-809b.up.railway.app/` — enlace publicado en el propio informe (enunciado).
 
-Solución provista: Para este proyecto no se ha provisto el despliegue del backend debido a que se va a presentar de forma local.
+Solución provista: Para este proyecto no se ha provisto el despliegue del backend debido a que se va a presentar de forma local. Sin embargo, ya se cuenta con el despliegue realizado y su respectiva documentación.
+
+Evidencia:
+
+![Hallazgo 2](ha-2.png)
 
 **Número de Hallazgo: 3**
 
 Descripción provista: Las secciones 8.3.3 a 8.6 del informe (To-Be Sprint Backlogs, evidencias de implementación To-Be, To-Be Validation Interviews, Experiment Aftermath & Analysis, Continuous Learning y Pre-launch) figuran en el índice pero no tienen contenido en el cuerpo del documento (evidencia), incumpliendo el hito 4 del TF que exige ejecutar los experimentos planificados con To-Be Product Backlog, To-Be Sprint Backlogs, pipeline y Continuous Learning (requisito). El informe pasa de 8.3.2 directamente a Conclusiones, pág. 260 (enunciado).
 
 Solución provista: Para solucionar este hallazgo, hemos añadido las secciones 8.3.3. a 8.6 del informe como se tenía provisto considerando que esta es la entrega final.
+
+Evidencia: 
+
+![Hallazgo 3](ha-3.png)
 
 
 
@@ -8084,6 +8132,7 @@ El equipo organizó un sprint backlog orientado a implementaciones incrementales
 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence.
 
+
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence.
 
 Para la demostración del desarrollo de las historias de usuario To-Be en la aplicación móvil, lo hemos realizado de forma prototipada para poder proveer una visualización de cómo quedarían aplicadas acorde a las expectativas del usuario. Dado que la plataforma no cuenta con una aplicación móvil nativa implementada dentro del alcance actual del proyecto, se optó por elaborar en Figma las vistas correspondientes a las siguientes User Stories, representando cómo se vería cada funcionalidad en esta versión:
@@ -8800,31 +8849,39 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 
 ## Conclusiones
 
-- **Problema y segmentos**  
-  Se identificó con claridad a los segmentos objetivo (baristas profesionales y administración de cafeterías de especialidad) y sus necesidades en la cadena de valor del café, sustentado en el needfinding, entrevistas y análisis competitivo descritos en los capítulos anteriores.
+Al cierre del ciclo de vida del proyecto, las conclusiones se sustentan en los resultados obtenidos en los capítulos VI (Verificación y Validación), VII (Prácticas DevOps) y VIII (Desarrollo Guiado por Experimentos), que constituyen la evidencia final de la calidad, operabilidad y validación de **Café Lab**.
 
-- **Propuesta y alcance (TP1)**  
-  **Café Lab** se plantea como solución que integra documentación de tueste, gestión de lotes, catas, recetas y análisis, en línea con el perfil de solución y los escenarios to-be. En este entregable se priorizó la trazabilidad del diseño (UX/UI, arquitectura, datos) y la evidencia de implementación inicial.
+- **Verificación y validación consolidada (Capítulo VI)**  
+  La estrategia de pruebas en múltiples niveles quedó implementada y evidenciada en el repositorio: pruebas unitarias sobre las entidades core (US01–US19) y la API (TS01–TS10), pruebas de integración con JUnit y Mockito sobre los *bounded contexts*, pruebas BDD con Cucumber (13 archivos `.feature` en Gherkin con ejecución exitosa) y pruebas de sistema con Selenium sobre los flujos críticos (registro, autenticación, perfil y gestión). Esto proporciona evidencia verificable y reproducible de que la lógica de negocio del dominio del café opera conforme a lo especificado.
 
-- **Metodología**  
-  Se aplicó **Lean UX** (problema, supuestos, hipótesis, canvas) y técnicas de levantamiento y especificación (historias, backlog, impact mapping), con una base sólida para medir y refinar en iteraciones posteriores del curso.
+- **Calidad y seguridad del código (Capítulo VI)**  
+  El análisis estático se sostuvo en el compilador de **TypeScript en modo `strict`** (con `strictTemplates` de Angular) y en **SonarLint** integrado en los IDE del equipo para la detección temprana de *code smells* y deuda técnica. La seguridad se reforzó con **Spring Security**, autenticación por **JWT** (`jjwt`), *hashing* de contraseñas con **BCrypt**, validación de entradas con `spring-boot-starter-validation` y consultas parametrizadas vía Spring Data JPA, sin versionar secretos en el repositorio.
 
-- **Diseño de producto**  
-  Se documentaron guías de estilo, arquitectura de información, landing page, experiencia web y móvil, arquitectura de software, diseño orientado a objetos y esquema de base de datos, de modo que el producto mantiene coherencia visual, semántica de dominio y estructura implementable.
+- **Hallazgos de usabilidad accionables (Capítulo VI)**  
+  La evaluación heurística de Nielsen identificó **8 problemas** priorizados por severidad (íconos de edición de bajo contraste, campos obligatorios no señalizados, confusión entre editar/clonar, ausencia de temporizador de cata, falta de filtros en la biblioteca de defectos, dificultad de navegación en módulos secundarios, cadenas sin traducir en inglés e inexistencia de historial de cambios). Estos hallazgos, junto con la auditoría cruzada recibida, alimentaron directamente el diseño de los experimentos del Capítulo VIII.
 
-- **Implementación y gestión**  
-  Se detallan entorno de desarrollo, flujo de trabajo (Gitflow, convenciones) y criterios de estilo, con evidencia de avance en landing, front web, app móvil (mock-ups y prototipos) y criterios de colaboración en equipo, según lo requerido para el informe de medio término.
+- **Ciclo DevOps operativo (Capítulo VII)**  
+  Quedó establecida una cadena de valor DevOps completa: **integración continua** con GitHub Actions, Maven, JUnit/Mockito, Cucumber y análisis estático (que bloquea el *merge* ante cualquier fallo), bajo prácticas de TDD y BDD; **entrega y despliegue continuos** hacia Firebase (landing), Vercel (aplicación web) y Railway (API); y **monitoreo continuo** con Vercel Analytics y el panel de Railway. Esto habilita ciclos de despliegue ágiles con observabilidad básica y protección de la rama principal.
 
-- **Alineación con el curso**  
-  Los siguientes ciclos del curso podrán vincular estos artefactos con el ciclo de experimentación (diseño de experimentos, métricas, validación) sin rehacer el fundamento de requisitos y diseño ya consolidado en TB1.
+- **Validación con implementación real (Capítulo VIII)**  
+  A partir de los hallazgos de usabilidad se formularon hipótesis con métricas y umbrales, se derivó un To-Be Product Backlog priorizado (TUS01–TUS05) y se implementaron las mejoras en la rama `experiment`. La validación con **38 participantes** del segmento objetivo (94.7% con experiencia previa en el dominio) midió la utilidad **percibida** tras el uso real, superando el enfoque de expectativas basado en videos demostrativos del TB2.
+
+- **Decisiones basadas en evidencia (Capítulo VIII)**  
+  Los resultados mostraron una brecha entre la expectativa del TB2 y la experiencia real: **TUS02 (internacionalización)** superó la expectativa (traducción 4.63/5 y 100% de incremento de confianza) y **TUS01 (ficha de proveedor ampliada)** alcanzó el umbral ≥ 4/5 (contacto 4.24/5, enlace web 4.03/5); ambas **avanzan a producción**. En cambio, **TUS03 (motivo de consumo, 3.66/5), TUS04 (correlación lote-tueste-cata, 3.74/5) y TUS05 (vista económica por lote, 3.66/5)** no alcanzaron el umbral y **permanecen en la rama `experiment`** para refinamiento UX. Esto demuestra el valor de validar con producto real y no solo con prototipos.
+
+- **Cierre del ciclo de vida del proyecto**  
+  El producto se encuentra **finalizado**, con trazabilidad completa entre requisitos, diseño, implementación, verificación, validación y experimentación, y con evidencia reproducible en los repositorios. Los hallazgos de la auditoría cruzada fueron atendidos e incorporados, cerrando un ciclo de mejora continua coherente con la entrega final del curso.
 
 ## Recomendaciones
 
-- Completar y validar con usuarios **wireflows y flujos de usuario de la aplicación móvil** donde aún haya evolución de diseño, y vincular cada flujo a historias de usuario priorizadas.
-- Afinar **métricas y criterios de verificación** asociados a las hipótesis Lean UX (p. ej. tareas completadas, tiempo en flujo, errores en registro) para soportar análisis en la parte de experimentación del curso.
-- Preparar **sesiones de validación** (usabilidad o entrevistas demostrativas) con registro estructurado de hallazgos y trazabilidad a ítems del backlog y al mapa de impacto.
-- Mantener **sincronización** entre repositorio de código, Figma, tablero de tareas (Trello) y el presente informe para cierres de TP y entregas posteriores.
-- Revisar **accesibilidad, rendimiento y consistencia** entre landing, web responsive y móvil antes de ampliar alcance a nuevas integraciones o despliegues.
+Las recomendaciones se derivan directamente de los resultados de los capítulos VI–VIII y orientan la evolución del producto tras el cierre del ciclo.
+
+- **Iterar las mejoras que no alcanzaron el umbral (Cap. VIII):** simplificar el flujo de registro del motivo de consumo y permitir editar consumos ya registrados (TUS03); refinar las curvas de tueste y la experiencia de comparación en la vista de correlación (TUS04); y mejorar la utilidad percibida de la vista económica por lote hacia ≥ 4/5 (TUS05) antes de promoverlas a producción.
+- **Cerrar los hallazgos de la evaluación heurística (Cap. VI):** señalizar los campos obligatorios, diferenciar los íconos de editar/clonar con tooltips, incorporar un temporizador local en la sesión de cata, añadir filtros en la biblioteca de defectos, completar las traducciones faltantes en flujos secundarios y habilitar un historial de cambios en los módulos sensibles (catas, inventario, costos).
+- **Reforzar la reducción de herramientas externas (Cap. VIII):** solo el 50% de los participantes percibió que la ficha de proveedor reduce el uso de WhatsApp, Excel o notas (frente a 89.5% de expectativa en TB2); profundizar la centralización de información para consolidar a Café Lab como fuente única de registro.
+- **Evolucionar el pipeline DevOps (Cap. VII):** incorporar cobertura de pruebas automatizada como *quality gate* explícito, ampliar el monitoreo con alertas y notificaciones proactivas, y considerar entornos de *staging* previos a producción para las funcionalidades que salen de la rama `experiment`.
+- **Institucionalizar el ciclo experimento–validación–decisión:** mantener el proceso de hipótesis, métricas y umbrales de aceptación como práctica estándar para futuras funcionalidades, preservando la trazabilidad entre feedback de usuarios, To-Be Product Backlog y decisiones de promoción a producción.
+- **Sostener la sincronización de artefactos:** mantener alineados el repositorio de código, Figma, el tablero de tareas y el presente informe para asegurar la reproducibilidad y la mantenibilidad del producto tras el cierre del proyecto.
 
 # Video App Validation
 
