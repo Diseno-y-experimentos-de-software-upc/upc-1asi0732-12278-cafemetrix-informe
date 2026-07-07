@@ -98,6 +98,7 @@
 | 1.40    | 07/07/2026 | Loli Ramirez, Camila Cristina     | Implementó TUS02 (traducción de pantallas críticas en el prototipo móvil y el frontend real), subsanó los 10 hallazgos de la auditoría recibida (6.4.2) y añadió el video About-the-Product (8.6.1); actualizó su Project Report Collaboration Insights y Student Outcome para TF1 |
 | 1.41    | 07/07/2026 | Quispe Roldan, Michael Fred       | Añadió su Project Report Collaboration Insights y Student Outcome para TF1 (implementación de TUS01, mejora de la ficha de proveedor, front y back)                          |
 | 1.42    | 07/07/2026 | Fernandez Camayo, Carlos Fredy    | Amplió la sección 8.4.1 con las conclusiones de las nueve Experiment Cards y su significado para el proyecto                                                                |
+| 1.43    | 07/07/2026 | Fernandez Camayo, Carlos Fredy    | Actualizó 8.3.4.1, 8.3.4.2 y 8.4.1 para alinear la validación To-Be con video demostrativo (coherente con el formulario Google Forms)                                       |
 
 <div style="page-break-after: always;"></div>
 
@@ -272,7 +273,7 @@ Link del project report: [https://github.com/Diseno-y-experimentos-de-software-u
   </tr>
   <tr>
     <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
-    <td>Me encargué de documentar la validación To-Be de CaféLab en el Capítulo VIII. En 8.3.4.1 diseñé el segundo formulario de entrevistas tomando como base el instrumento del TB2 (6.3.1), alineando las preguntas con las To-Be User Stories TUS01–TUS05, las hipótesis del capítulo VIII y las rutas reales de la plataforma experimental (rama <code>experiment</code>). En 8.3.4.2 registré las 38 respuestas recogidas en modo incógnito y elaboré una tabla comparativa con las métricas del TB2 (6.3.2). En 8.4.1 analicé e interpreté los resultados, contrastando la utilidad esperada del formulario inicial con la utilidad percibida tras probar las mejoras implementadas, e identificando qué funcionalidades cumplen, superan o no alcanzan los umbrales definidos.</td>
+    <td>Me encargué de documentar la validación To-Be de CaféLab en el Capítulo VIII. En 8.3.4.1 diseñé el segundo formulario de entrevistas tomando como base el instrumento del TB2 (6.3.1), alineando las preguntas con las To-Be User Stories TUS01–TUS05, las hipótesis del capítulo VIII y las funcionalidades mostradas en el video demostrativo de las mejoras implementadas (rama <code>experiment</code>). En 8.3.4.2 registré las 38 respuestas recogidas en modo incógnito y elaboré una tabla comparativa con las métricas del TB2 (6.3.2). En 8.4.1 analicé e interpreté los resultados, contrastando la utilidad esperada del formulario inicial con la utilidad percibida tras visualizar el video de demostración, e identificando qué funcionalidades cumplen, superan o no alcanzan los umbrales definidos.</td>
     <td>TF1</td>
   </tr>
   <tr>
@@ -548,7 +549,7 @@ La capacidad de reconocer responsabilidades éticas y profesionales en situacion
                 TB1: <br>Mediante mi aporte en diferentes puntos del informe, como la implementacion de politica Saas que me permitio comprender el rol y funcion de la aplicacion no unicamente como codigo, lo que me ayudo a mejorar mi vision etica y profesional en el desarrollo de software.<br><br>  
                 TP1: <br>Mi colaboracion en este proyecto me permitio entender que el proyecto requiere de mayores responsabilidades como control de calidad del producto UI/UX, asi como visualizar la adecuada eleccion de herramientas y practicas de integracion continua<br><br>
                 TB2: <br>Reconocí mi responsabilidad ética y profesional al elaborar la planificación de experimentación (8.1.1–8.1.5), documentando con honestidad el estado As-Is de Café Lab según el código desplegado y las entrevistas del Cap. VI, sin incluir funcionalidades no implementadas. Al clasificar la materia prima en Assumptions, Knowledge Gaps, Ideas y Claims, asumí el compromiso de orientar los experimentos hacia suposiciones verificables y no hacia soluciones cerradas. Asimismo, al priorizar nueve preguntas de investigación y elaborar las Experiment Cards, me aseguré de que cada intervención propuesta sea incremental, trazable al product backlog y validable con los recursos del equipo.<br><br>
-                TF1: <br>Reconocí mi responsabilidad ética y profesional al documentar la validación To-Be de CaféLab (8.3.4.1, 8.3.4.2 y 8.4.1). Al elaborar el segundo formulario basado en el instrumento del TB2 (6.3.1), recoger 38 respuestas en modo incógnito y comparar explícitamente los resultados con las métricas de 6.3.2, evité presentar mejoras como exitosas sin sustento y diferencié entre las expectativas del formulario inicial y la experiencia real en la plataforma experimental. Asimismo, al interpretar los hallazgos —incluyendo qué funcionalidades alcanzan el umbral ≥4/5 y cuáles aún requieren iteración— asumí el compromiso de reportar de forma transparente qué mejoras pueden avanzar a producción y cuáles deben refinarse.<br><br>
+                TF1: <br>Reconocí mi responsabilidad ética y profesional al documentar la validación To-Be de CaféLab (8.3.4.1, 8.3.4.2 y 8.4.1). Al elaborar el segundo formulario basado en el instrumento del TB2 (6.3.1), recoger 38 respuestas en modo incógnito y comparar explícitamente los resultados con las métricas de 6.3.2, evité presentar mejoras como exitosas sin sustento y diferencié entre las expectativas del formulario inicial y la utilidad percibida tras el video demostrativo de las mejoras implementadas. Asimismo, al interpretar los hallazgos —incluyendo qué funcionalidades alcanzan el umbral ≥4/5 y cuáles aún requieren iteración— asumí el compromiso de reportar de forma transparente qué mejoras pueden avanzar a producción y cuáles deben refinarse.<br><br>
                 <strong>Michael Quispe</strong><br>  
                 TB1: <br>Reconocí mi responsabilidad ética y profesional al elaborar los diagramas de flujo de usuario para la aplicación móvil (4.4.4. Mobile Applications User Flow Diagrams), asegurando que los flujos representen con fidelidad las interacciones reales del usuario. Definí con claridad cada nodo de decisión y camino de navegación, garantizando que la experiencia diseñada sea coherente, intuitiva y respetuosa de las expectativas del usuario final.<br><br>  
                 TP1: <br>Reconocí mi responsabilidad ética y profesional al diseñar e implementar las pruebas BDD y de sistema para el módulo de Librería de Defectos del backend. Aseguré que cada escenario de prueba represente fielmente las reglas de negocio del dominio, validando que los value objects rechacen datos inválidos y que los endpoints REST respondan correctamente ante distintos contextos de autenticación y datos. Asumí la responsabilidad de garantizar que el módulo que gestiona el registro de defectos de tueste funcione de forma confiable, dado que los baristas dependen de esta información para tomar decisiones técnicas sobre la calidad del café.<br><br>  
@@ -8305,23 +8306,23 @@ En estas capturas se muestra la adición de una pantalla importante: Análisis e
 
 #### 8.3.4.1. Diseño de Entrevistas.
 
-Para esta etapa se elaboró un **segundo formulario de validación** en Google Forms, tomando como base el diseño documentado en [6.3.1](#631-diseño-de-entrevistas) del TB2. A diferencia del formulario inicial —orientado a **priorizar** mejoras experimentales mediante videos demostrativos—, este instrumento evalúa la **aceptación de las funcionalidades To-Be ya implementadas** en la rama `experiment` de los repositorios `cafelab-frontend` y `cafelab-backend`.
+Para esta etapa se elaboró un **segundo formulario de validación** en Google Forms, tomando como base el diseño documentado en [6.3.1](#631-diseño-de-entrevistas) del TB2. Al igual que el formulario inicial, este instrumento se acompaña de un **video breve de demostración**; a diferencia del TB2 —orientado a **priorizar** mejoras experimentales según utilidad **esperada**—, el formulario To-Be evalúa la **aceptación de las funcionalidades ya implementadas** (TUS01–TUS05 en la rama `experiment` de los repositorios `cafelab-frontend` y `cafelab-backend`), midiendo la utilidad **percibida** tras visualizar cómo quedaron en la plataforma.
 
-El formulario fue alineado con las cinco To-Be User Stories priorizadas ([8.3.1](#831-to-be-user-stories)) y con las hipótesis, métricas y umbrales definidos en [8.2.1](#821-hypotheses)–[8.2.5](#825-scale-calculations-and-decisions). Las preguntas hacen referencia a **flujos reales** de la plataforma experimental, no a prototipos o mockups.
+El formulario fue alineado con las cinco To-Be User Stories priorizadas ([8.3.1](#831-to-be-user-stories)) y con las hipótesis, métricas y umbrales definidos en [8.2.1](#821-hypotheses)–[8.2.5](#825-scale-calculations-and-decisions). Las preguntas hacen referencia a las **funcionalidades mostradas en el video demostrativo**, desarrolladas en la rama `experiment`, no a prototipos o mockups.
 
 **Instrucciones para el participante (texto del formulario):**
 
-> Antes de responder, accede a la plataforma experimental To-Be de CaféLab e interactúa con las funcionalidades indicadas en cada sección. El formulario valida mejoras implementadas en la rama `experiment`; tus respuestas se compararán con los resultados del formulario de priorización del TB2 ([6.3.2](#632-registro-de-entrevistas)).
+> Antes de responder, visualiza el **video breve de demostración** de las mejoras To-Be implementadas en CaféLab. El formulario valida la aceptación de funcionalidades desarrolladas en la rama `experiment`; tus respuestas se compararán con los resultados del formulario de priorización del TB2 ([6.3.2](#632-registro-de-entrevistas)).
 
-**Rutas y flujos a probar antes de responder:**
+**Funcionalidades mostradas en el video demostrativo:**
 
-| To-Be User Story | Ruta / acceso en la plataforma | Qué probar |
-|------------------|--------------------------------|------------|
-| TUS01 — Ficha de proveedor ampliada | `/suppliers` | Registrar o editar un proveedor con **Persona de contacto** y **Enlace web**; abrir el detalle y verificar el enlace clicable. |
-| TUS02 — Traducción de pantallas críticas | Selector EN/ES en la barra superior | Cambiar idioma en `/suppliers`, `/inventory`, `/production-cost-management`, `/cupping-sessions` y `/roast-flavor-correlation`; revisar etiquetas, botones y mensajes. |
-| TUS03 — Motivo de consumo de inventario | `/inventory` → **Registrar consumo** | Completar fecha, lote, **motivo** (Barra / Retail / Muestras / Otro), notas de uso y kg consumidos; verificar el registro en **Historial de Consumos**. |
-| TUS04 — Vista de correlación lote-tueste-cata | `/roast-flavor-correlation` (también accesible desde el dashboard) | Seleccionar un lote con datos de tueste y cata; revisar panel de información del lote, curvas de tueste y perfil sensorial (radar) en una sola pantalla. |
-| TUS05 — Vista económica consolidada por lote | `/coffee-lots` → ícono de análisis económico | Abrir el diálogo de análisis económico de un lote; revisar stock disponible, indicadores (costo por kilo, margen, precio sugerido) e historial de consumos. |
+| To-Be User Story | Módulo / flujo mostrado | Qué se demuestra |
+|------------------|-------------------------|------------------|
+| TUS01 — Ficha de proveedor ampliada | `/suppliers` | Registro o edición de un proveedor con **Persona de contacto** y **Enlace web**; detalle con enlace clicable. |
+| TUS02 — Traducción de pantallas críticas | Selector EN/ES en la barra superior | Cambio de idioma en `/suppliers`, `/inventory`, `/production-cost-management`, `/cupping-sessions` y `/roast-flavor-correlation`; etiquetas, botones y mensajes traducidos. |
+| TUS03 — Motivo de consumo de inventario | `/inventory` → **Registrar consumo** | Fecha, lote, **motivo** (Barra / Retail / Muestras / Otro), notas de uso y kg consumidos; registro en **Historial de Consumos**. |
+| TUS04 — Vista de correlación lote-tueste-cata | `/roast-flavor-correlation` (también accesible desde el dashboard) | Selección de un lote con datos de tueste y cata; panel de información del lote, curvas de tueste y perfil sensorial (radar) en una sola pantalla. |
+| TUS05 — Vista económica consolidada por lote | `/coffee-lots` → ícono de análisis económico | Diálogo de análisis económico de un lote; stock disponible, indicadores (costo por kilo, margen, precio sugerido) e historial de consumos. |
 
 La primera sección recoge información general del participante (perfil, experiencia y herramientas actuales), igual que en 6.3.1, para permitir segmentar las respuestas.
 
@@ -8332,6 +8333,8 @@ La tercera sección evalúa **TUS01, TUS03 y TUS05**: utilidad de los campos amp
 La cuarta sección evalúa **TUS02**: percepción de traducción completa en módulos críticos, detección de textos mezclados y confianza en la plataforma al cambiar idioma.
 
 **Enlace del formulario To-Be:** [CaféLab – Validación To-Be](https://docs.google.com/forms/d/e/1FAIpQLSeU11n87TndKnR4ZKWFllCHasYVZZ5XOKdMEYsiaUtq6vkPcg/viewform)
+
+**Video demostrativo:** embebido en el formulario anterior; el participante debe visualizarlo antes de responder (texto del formulario: *"Antes de responder, visualiza el video breve de demostración"*).
 
 **Enlace de resultados (38 respuestas):** [CaféLab – Validación To-Be (Google Sheets)](https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing)
 
@@ -8371,7 +8374,7 @@ La cuarta sección evalúa **TUS02**: percepción de traducción completa en mó
     </tr>
     <tr>
       <td>Correlación lote-tueste-cata (TUS04)</td>
-      <td>Después de probar la vista en <code>/roast-flavor-correlation</code>, ¿qué tan útil te resultó ver lote, perfil de tueste y resultado de cata en una sola pantalla?</td>
+      <td>Después de ver el video sobre la vista en <code>/roast-flavor-correlation</code>, ¿qué tan útil te resultó ver lote, perfil de tueste y resultado de cata en una sola pantalla?</td>
       <td>Escala del 1 al 5</td>
       <td>TUS04 / H-03 (M-05, M-06, M-07)</td>
     </tr>
@@ -8395,7 +8398,7 @@ La cuarta sección evalúa **TUS02**: percepción de traducción completa en mó
     </tr>
     <tr>
       <td>Proveedores (TUS01)</td>
-      <td>Después de registrar o editar un proveedor en <code>/suppliers</code>, ¿qué tan útil te resultó el campo <strong>Persona de contacto directa</strong>?</td>
+      <td>Después de ver el video sobre la ficha de proveedor en <code>/suppliers</code>, ¿qué tan útil te resultó el campo <strong>Persona de contacto directa</strong>?</td>
       <td>Escala del 1 al 5</td>
       <td>TUS01 / H-09 (M-19)</td>
     </tr>
@@ -8413,13 +8416,13 @@ La cuarta sección evalúa **TUS02**: percepción de traducción completa en mó
     </tr>
     <tr>
       <td>Inventario (TUS03)</td>
-      <td>Después de registrar un consumo con motivo (Barra / Retail / Muestras / Otro) en <code>/inventory</code>, ¿qué tan útil te resultó este campo?</td>
+      <td>Después de ver el video sobre el registro de consumo con motivo (Barra / Retail / Muestras / Otro) en <code>/inventory</code>, ¿qué tan útil te resultó este campo?</td>
       <td>Escala del 1 al 5</td>
       <td>TUS03 / H-07 (M-15)</td>
     </tr>
     <tr>
       <td>Vista económica por lote (TUS05)</td>
-      <td>Después de abrir el análisis económico desde <code>/coffee-lots</code>, ¿qué tan útil te resultó consultar stock, indicadores económicos e historial de consumos en un solo diálogo?</td>
+      <td>Después de ver el video sobre el análisis económico desde <code>/coffee-lots</code>, ¿qué tan útil te resultó consultar stock, indicadores económicos e historial de consumos en un solo diálogo?</td>
       <td>Escala del 1 al 5</td>
       <td>TUS05 / H-02 (M-03)</td>
     </tr>
@@ -8431,13 +8434,13 @@ La cuarta sección evalúa **TUS02**: percepción de traducción completa en mó
     </tr>
     <tr>
       <td>Internacionalización (TUS02)</td>
-      <td>Al cambiar el idioma (EN/ES) en módulos críticos, ¿qué tan completa percibes la traducción de etiquetas, botones y mensajes?</td>
+      <td>Después de ver el video sobre el cambio de idioma (EN/ES) en módulos críticos, ¿qué tan completa percibes la traducción de etiquetas, botones y mensajes?</td>
       <td>Escala del 1 al 5</td>
       <td>TUS02 / H-08 (M-16)</td>
     </tr>
     <tr>
       <td>Internacionalización (TUS02)</td>
-      <td>¿Detectaste textos mezclados entre español e inglés en los módulos que probaste?</td>
+      <td>¿Detectaste textos mezclados entre español e inglés en los módulos mostrados en el video?</td>
       <td>Sí / No</td>
       <td>TUS02 / H-08 (M-17)</td>
     </tr>
@@ -8469,8 +8472,8 @@ Las preguntas con escala del 1 al 5 se analizarán mediante promedios y porcenta
       <td>Segundo formulario de validación To-Be en Google Forms (basado en el diseño de 6.3.1)</td>
     </tr>
     <tr>
-      <td>Plataforma evaluada</td>
-      <td>Frontend web rama <code>experiment</code> (<code>cafelab-frontend</code>) con backend rama <code>experiment</code> (<code>cafelab-backend</code>)</td>
+      <td>Material de evaluación</td>
+      <td>Video breve de demostración de las mejoras To-Be implementadas (rama <code>experiment</code> en <code>cafelab-frontend</code> y <code>cafelab-backend</code>)</td>
     </tr>
     <tr>
       <td>Tipo de preguntas</td>
@@ -8610,9 +8613,9 @@ Las preguntas con escala del 1 al 5 se analizarán mediante promedios y porcenta
 
 ### 8.4.1. Analysis and Interpretation of Results.
 
-En el estudio, las preguntas de investigación planteadas en el Capítulo VIII fueron reformuladas y estructuradas con el objetivo de captar respuestas más claras y relevantes sobre la **experiencia real** del usuario con las mejoras To-Be implementadas en la plataforma experimental (rama `experiment`). A diferencia del formulario TB2 ([6.3.1](#631-diseño-de-entrevistas)), que evaluaba la utilidad **esperada** mediante videos demostrativos, el formulario To-Be ([8.3.4.1](#8341-diseño-de-entrevistas)) midió la utilidad **percibida** tras probar las funcionalidades en rutas concretas de CaféLab.
+En el estudio, las preguntas de investigación planteadas en el Capítulo VIII fueron reformuladas y estructuradas con el objetivo de captar respuestas más claras y relevantes sobre la **utilidad percibida** de las mejoras To-Be **mostradas en el video demostrativo**. A diferencia del formulario TB2 ([6.3.1](#631-diseño-de-entrevistas)), que evaluaba la utilidad **esperada** de mejoras propuestas mediante videos cortos, el formulario To-Be ([8.3.4.1](#8341-diseño-de-entrevistas)) midió la utilidad **percibida** de funcionalidades **ya implementadas**, presentadas en un video breve de demostración.
 
-Este enfoque permitió comparar las expectativas del TB2 ([6.3.2](#632-registro-de-entrevistas)) con los resultados reales del To-Be ([8.3.4.2](#8342-registro-de-entrevistas)) e identificar con mayor precisión qué mejoras cumplen, superan o no alcanzan lo prometido en la validación inicial.
+Este enfoque permitió comparar las expectativas del TB2 ([6.3.2](#632-registro-de-entrevistas)) con la percepción tras visualizar las mejoras To-Be ([8.3.4.2](#8342-registro-de-entrevistas)) e identificar con mayor precisión qué mejoras cumplen, superan o no alcanzan lo prometido en la validación inicial.
 
 #### Preguntas formuladas
 
@@ -8629,11 +8632,11 @@ En el estudio se realizaron las siguientes preguntas para evaluar la experiencia
 9. ¿Qué tan útil resultó registrar el motivo de consumo de inventario? (TUS03)
 10. ¿El indicador económico mostrado (costo por kilo) es el que más consultarías? (TUS05)
 11. Al cambiar el idioma, ¿las pantallas críticas mantienen traducción completa? (TUS02)
-12. ¿Notaste textos mezclados entre español e inglés en los módulos probados? (TUS02)
+12. ¿Notaste textos mezclados entre español e inglés en los módulos mostrados en el video? (TUS02)
 13. ¿La traducción implementada aumenta tu confianza en la plataforma? (TUS02)
 14. ¿Usarías CaféLab en contextos internacionales con esta versión? (TUS02)
 
-Estas preguntas se presentaron a una muestra de **38 participantes** del segmento objetivo (baristas y dueños/administradores de cafeterías de especialidad). Los participantes respondieron basándose en su experiencia con las funcionalidades desplegadas en la rama `experiment`. A continuación, se explican los resultados obtenidos.
+Estas preguntas se presentaron a una muestra de **38 participantes** del segmento objetivo (baristas y dueños/administradores de cafeterías de especialidad). Los participantes respondieron tras visualizar el **video breve de demostración** de las mejoras To-Be implementadas en la rama `experiment`. A continuación, se explican los resultados obtenidos.
 
 **Evidencia completa:** [Resultados del formulario To-Be (Google Sheets)](https://docs.google.com/spreadsheets/d/1nUnMy7YMM29iZ8-Of3PYZbBpncNSrUmD5oVqpIOQNEw/edit?usp=sharing)
 
@@ -8655,7 +8658,7 @@ La mayoría de participantes aún depende de herramientas externas: **42.1% Exce
 
 **Vista de correlación lote-tueste-cata (TUS04):**
 
-El promedio de utilidad percibida fue **3.74/5**, por debajo del **4.11/5** obtenido en el TB2. El **57.1%** consideró que la vista permite comparar información técnica y sensorial sin cambiar de pantalla, pero solo el **28.9%** indicó que cumple plenamente su expectativa según la validación inicial; el **57.9%** respondió *Parcialmente* y el **13.2%** *No*. La probabilidad de uso real alcanzó **3.55/5**, también inferior al TB2 (3.95/5). El **65.8%** asocia la mejora principalmente al perfil barista. Esto sugiere que la implementación en `/roast-flavor-correlation` requiere iteración antes de considerarse validada.
+El promedio de utilidad percibida fue **3.74/5**, por debajo del **4.11/5** obtenido en el TB2. El **57.1%** consideró que la vista permite comparar información técnica y sensorial sin cambiar de pantalla, pero solo el **28.9%** indicó que cumple plenamente su expectativa según la validación inicial; el **57.9%** respondió *Parcialmente* y el **13.2%** *No*. La probabilidad de uso real alcanzó **3.55/5**, también inferior al TB2 (3.95/5). El **65.8%** asocia la mejora principalmente al perfil barista. Esto sugiere que la vista de correlación mostrada en el video requiere iteración antes de considerarse validada.
 
 **Ficha de proveedor ampliada (TUS01):**
 
@@ -8663,15 +8666,15 @@ El campo **persona de contacto** obtuvo un promedio de **4.24/5** (TB2: 4.58/5) 
 
 **Motivo de consumo de inventario (TUS03):**
 
-El promedio de utilidad fue **3.66/5**, inferior al **4.37/5** del TB2. Aunque el selector de motivo (Barra / Retail / Muestras / Otro) funciona en `/inventory`, la percepción de utilidad no alcanza el umbral ≥ 4/5 definido en las hipótesis. Posibles causas incluyen la imposibilidad de editar consumos ya registrados y la complejidad del formulario de registro.
+El promedio de utilidad fue **3.66/5**, inferior al **4.37/5** del TB2. Aunque el video muestra el selector de motivo (Barra / Retail / Muestras / Otro) en inventario, la percepción de utilidad no alcanza el umbral ≥ 4/5 definido en las hipótesis. Posibles causas incluyen la imposibilidad de editar consumos ya registrados y la complejidad del formulario de registro.
 
 **Vista económica consolidada por lote (TUS05):**
 
-El promedio de utilidad fue **3.66/5**, inferior al **4.32/5** de importancia reportado en el TB2. Sin embargo, el **84.2%** confirmó que el **costo por kilo** es el indicador económico que más consultaría, coherente con el **57.9%** del formulario inicial. La vista desde `/coffee-lots` aporta valor al centralizar stock e indicadores, pero aún no alcanza la expectativa generada en la priorización.
+El promedio de utilidad fue **3.66/5**, inferior al **4.32/5** de importancia reportado en el TB2. Sin embargo, el **84.2%** confirmó que el **costo por kilo** es el indicador económico que más consultaría, coherente con el **57.9%** del formulario inicial. La vista económica mostrada en el video aporta valor al centralizar stock e indicadores, pero aún no alcanza la expectativa generada en la priorización.
 
 **Traducción e internacionalización (TUS02):**
 
-La percepción de traducción completa alcanzó **4.63/5**, superando el **4.37/5** del TB2. Solo el **5.3%** reportó textos mezclados entre español e inglés en los módulos probados. Además, el **100%** de participantes respondió que **la traducción implementada incrementa su confianza** en la plataforma, superando el umbral ≥ 80% definido en la hipótesis H-08. El uso internacional promedió **4.32/5**, con **92.1%** de respuestas favorables (4 o 5). Estos resultados confirman que TUS02 es la mejora con mejor desempeño relativo frente a la expectativa del TB2.
+La percepción de traducción completa alcanzó **4.63/5**, superando el **4.37/5** del TB2. Solo el **5.3%** reportó textos mezclados entre español e inglés en los módulos mostrados en el video. Además, el **100%** de participantes respondió que **la traducción implementada incrementa su confianza** en la plataforma, superando el umbral ≥ 80% definido en la hipótesis H-08. El uso internacional promedió **4.32/5**, con **92.1%** de respuestas favorables (4 o 5). Estos resultados confirman que TUS02 es la mejora con mejor desempeño relativo frente a la expectativa del TB2.
 
 #### Recomendaciones derivadas de los resultados
 
@@ -8727,7 +8730,7 @@ A continuación se sintetiza qué significó cada una de las nueve Experiment Ca
 
 *Pregunta:* ¿Mejorará el control de merma registrar el motivo o tipo de consumo al registrar movimientos de inventario por lote?
 
-**Conclusión:** TUS03 implementó el selector de motivo (Barra / Retail / Muestras / Otro) en `/inventory`, respondiendo a una necesidad con fuerte respaldo en el TB2 (**4.37/5** de utilidad esperada). En la experiencia real, la utilidad percibida fue **3.66/5**, por debajo del umbral ≥ 4/5. La tarjeta confirmó que la trazabilidad del consumo es relevante para dueños, pero la implementación actual —incluyendo la imposibilidad de editar consumos ya registrados— no alcanza la expectativa generada. Permanece en `experiment` para refinamiento; no forma parte del traspaso inmediato a `develop` en esta entrega.
+**Conclusión:** TUS03 implementó el selector de motivo (Barra / Retail / Muestras / Otro) en `/inventory`, respondiendo a una necesidad con fuerte respaldo en el TB2 (**4.37/5** de utilidad esperada). Tras visualizar el video de demostración, la utilidad percibida fue **3.66/5**, por debajo del umbral ≥ 4/5. La tarjeta confirmó que la trazabilidad del consumo es relevante para dueños, pero la implementación mostrada —incluyendo la imposibilidad de editar consumos ya registrados— no alcanza la expectativa generada. Permanece en `experiment` para refinamiento; no forma parte del traspaso inmediato a `develop` en esta entrega.
 
 **8. Traducción completa en flujos críticos (es/en)**
 
@@ -8743,15 +8746,15 @@ A continuación se sintetiza qué significó cada una de las nueve Experiment Ca
 
 #### Conclusión
 
-Los resultados del formulario To-Be (n = 38) revelan una **brecha entre la expectativa generada en el TB2 y la experiencia real** con las mejoras implementadas, aunque con matices según la funcionalidad evaluada. **TUS02** supera la expectativa del TB2 en percepción de traducción (**4.63/5**) y obtiene **100%** de respuestas favorables sobre incremento de confianza. **TUS01** alcanza el umbral ≥ 4/5 en utilidad percibida de contacto y enlace web, pero no en reducción de herramientas externas. **TUS03, TUS04 y TUS05** permanecen por debajo del umbral ≥ 4/5 definido en [8.2.5](#825-scale-calculations-and-decisions).
+Los resultados del formulario To-Be (n = 38) revelan una **brecha entre la expectativa generada en el TB2 y la utilidad percibida tras visualizar las mejoras implementadas**, aunque con matices según la funcionalidad evaluada. **TUS02** supera la expectativa del TB2 en percepción de traducción (**4.63/5**) y obtiene **100%** de respuestas favorables sobre incremento de confianza. **TUS01** alcanza el umbral ≥ 4/5 en utilidad percibida de contacto y enlace web, pero no en reducción de herramientas externas. **TUS03, TUS04 y TUS05** permanecen por debajo del umbral ≥ 4/5 definido en [8.2.5](#825-scale-calculations-and-decisions).
 
 Con base en estos resultados, el equipo define que **TUS02 (traducción e internacionalización)** y **TUS01 (persona de contacto y enlace web en proveedores)** son las dos mejoras To-Be que **avanzan a producción**, por alcanzar el umbral de utilidad percibida ≥ 4/5. **TUS03, TUS04 y TUS05** permanecen en la rama `experiment` para refinamiento UX antes de su traslado definitivo.
 
-Estos hallazgos demuestran la importancia de validar con implementación real y no solo con prototipos o videos demostrativos. Las recomendaciones obtenidas servirán como base para futuras iteraciones de UX/UI del producto.
+Estos hallazgos permiten contrastar la priorización del TB2 con la percepción de las mejoras To-Be ya desarrolladas. Las recomendaciones obtenidas servirán como base para futuras iteraciones de UX/UI del producto.
 
 **Resumen comparativo TB2 vs To-Be**
 
-| Funcionalidad | TB2 (expectativa) | To-Be (experiencia real) | Resultado |
+| Funcionalidad | TB2 (expectativa) | To-Be (tras el video) | Resultado |
 |---------------|-------------------|--------------------------|-----------|
 | Correlación lote-tueste-cata | 4.11/5 | 3.74/5 | No alcanza umbral |
 | Persona de contacto proveedor | 4.58/5 | 4.24/5 | Alcanza umbral; por debajo de TB2 |
@@ -8798,8 +8801,8 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
 
 <p>
   Posteriormente, se planteó un segundo formulario de Google Forms orientado a validar específicamente el recibimiento
-  de las To-Be User Stories. Este formulario permitirá identificar cuáles de las mejoras propuestas generan mayor valor
-  para los usuarios y, con base en ello, definir qué funcionalidades serán trasladadas al servidor de producción.
+  de las To-Be User Stories, acompañado de un video breve de demostración de las mejoras implementadas. Este formulario permitió identificar cuáles de las mejoras propuestas generan mayor valor
+  para los usuarios y, con base en ello, definir qué funcionalidades serían trasladadas al servidor de producción.
 </p>
 
 <p>
@@ -8857,8 +8860,8 @@ Estos hallazgos demuestran la importancia de validar con implementación real y 
   </tr>
   <tr>
     <td>Validación To-Be</td>
-    <td>Segundo formulario de Google Forms</td>
-    <td>Se validará el recibimiento de las To-Be User Stories para identificar cuáles tienen mayor aceptación por parte de los usuarios.</td>
+    <td>Segundo formulario de Google Forms + video demostrativo</td>
+    <td>Se validó el recibimiento de las To-Be User Stories (38 respuestas) para identificar cuáles tienen mayor aceptación por parte de los usuarios.</td>
   </tr>
   <tr>
     <td>Decisión de producción</td>
@@ -9010,11 +9013,11 @@ Al cierre del ciclo de vida del proyecto, las conclusiones se sustentan en los r
 - **Ciclo DevOps operativo (Capítulo VII)**  
   Quedó establecida una cadena de valor DevOps completa: **integración continua** con GitHub Actions, Maven, JUnit/Mockito, Cucumber y análisis estático (que bloquea el *merge* ante cualquier fallo), bajo prácticas de TDD y BDD; **entrega y despliegue continuos** hacia Firebase (landing), Vercel (aplicación web) y Railway (API); y **monitoreo continuo** con Vercel Analytics y el panel de Railway. Esto habilita ciclos de despliegue ágiles con observabilidad básica y protección de la rama principal.
 
-- **Validación con implementación real (Capítulo VIII)**  
-  A partir de los hallazgos de usabilidad se formularon hipótesis con métricas y umbrales, se derivó un To-Be Product Backlog priorizado (TUS01–TUS05) y se implementaron las mejoras en la rama `experiment`. La validación con **38 participantes** del segmento objetivo (94.7% con experiencia previa en el dominio) midió la utilidad **percibida** tras el uso real, superando el enfoque de expectativas basado en videos demostrativos del TF.
+- **Validación con video demostrativo (Capítulo VIII)**  
+  A partir de los hallazgos de usabilidad se formularon hipótesis con métricas y umbrales, se derivó un To-Be Product Backlog priorizado (TUS01–TUS05) y se implementaron las mejoras en la rama `experiment`. La validación con **38 participantes** del segmento objetivo (94.7% con experiencia previa en el dominio) midió la utilidad **percibida** tras visualizar un video de las mejoras implementadas, permitiendo contrastar con las expectativas del TB2.
 
 - **Decisiones basadas en evidencia (Capítulo VIII)**  
-  Los resultados mostraron una brecha entre la expectativa del TF y la experiencia real: **TUS02 (internacionalización)** superó la expectativa (traducción 4.63/5 y 100% de incremento de confianza) y **TUS01 (ficha de proveedor ampliada)** alcanzó el umbral ≥ 4/5 (contacto 4.24/5, enlace web 4.03/5); ambas **avanzan a producción**. En cambio, **TUS03 (motivo de consumo, 3.66/5), TUS04 (correlación lote-tueste-cata, 3.74/5) y TUS05 (vista económica por lote, 3.66/5)** no alcanzaron el umbral y **permanecen en la rama `experiment`** para refinamiento UX. Esto demuestra el valor de validar con producto real y no solo con prototipos.
+  Los resultados mostraron una brecha entre la expectativa del TF y la utilidad percibida tras el video: **TUS02 (internacionalización)** superó la expectativa (traducción 4.63/5 y 100% de incremento de confianza) y **TUS01 (ficha de proveedor ampliada)** alcanzó el umbral ≥ 4/5 (contacto 4.24/5, enlace web 4.03/5); ambas **avanzan a producción**. En cambio, **TUS03 (motivo de consumo, 3.66/5), TUS04 (correlación lote-tueste-cata, 3.74/5) y TUS05 (vista económica por lote, 3.66/5)** no alcanzaron el umbral y **permanecen en la rama `experiment`** para refinamiento UX. Esto evidencia la importancia de iterar la experiencia de usuario antes de promover a producción las mejoras que no alcanzaron el umbral.
 
 - **Cierre del ciclo de vida del proyecto**  
   El producto se encuentra **finalizado**, con trazabilidad completa entre requisitos, diseño, implementación, verificación, validación y experimentación, y con evidencia reproducible en los repositorios. Los hallazgos de la auditoría cruzada fueron atendidos e incorporados, cerrando un ciclo de mejora continua coherente con la entrega final del curso.
