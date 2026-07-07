@@ -97,6 +97,7 @@
 | 1.39    | 06/07/2026 | Antayhua Castillo, Oscar Josué    | Añadió su Project Report Collaboration Insights y Student Outcome para TF1 (implementación de TUS04, front y back)                                                           |
 | 1.40    | 07/07/2026 | Loli Ramirez, Camila Cristina     | Implementó TUS02 (traducción de pantallas críticas en el prototipo móvil y el frontend real), subsanó los 10 hallazgos de la auditoría recibida (6.4.2) y añadió el video About-the-Product (8.6.1); actualizó su Project Report Collaboration Insights y Student Outcome para TF1 |
 | 1.41    | 07/07/2026 | Quispe Roldan, Michael Fred       | Añadió su Project Report Collaboration Insights y Student Outcome para TF1 (implementación de TUS01, mejora de la ficha de proveedor, front y back)                          |
+| 1.42    | 07/07/2026 | Fernandez Camayo, Carlos Fredy    | Amplió la sección 8.4.1 con las conclusiones de las nueve Experiment Cards y su significado para el proyecto                                                                |
 
 <div style="page-break-after: always;"></div>
 
@@ -8681,6 +8682,64 @@ Entre las mejoras To-Be evaluadas, los resultados indican lo siguiente:
 - **Vista económica por lote (TUS05):** confirmación del costo por kilo como indicador prioritario (84.2%); requiere mejorar utilidad percibida hacia ≥ 4/5.
 - **Correlación lote-tueste-cata (TUS04):** relevante para baristas (65.8%), pero expectativa cumplida plenamente solo en 28.9%; iterar curvas de tueste y experiencia de comparación.
 - **Motivo de consumo (TUS03):** por debajo del umbral; simplificar flujo de registro y permitir edición de consumos.
+
+#### Conclusiones por Experiment Card
+
+A continuación se sintetiza qué significó cada una de las nueve Experiment Cards definidas en [8.1.5](#815-experiment-cards) para CaféLab, contrastando la hipótesis planteada, la evidencia recogida en el formulario To-Be (cuando aplicó) y la decisión del equipo sobre su traslado a producción o su permanencia en iteración.
+
+**1. Enlace automático entre lote, perfil de tueste y sesión de cata**
+
+*Pregunta:* ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste (`/api/v1/roast-profile`) y sesión de cata (`/api/v1/cupping-sessions`) sin intervención manual del usuario?
+
+**Conclusión:** Esta tarjeta evidenció una brecha estructural del As-Is: el perfil de tueste ya referencia al lote, pero la sesión de cata no persiste de forma consistente `coffeeLotId` ni `roastProfileId`. Aunque no se implementó en este ciclo la automatización completa del enlace en backend, la tarjeta orientó el diseño de TUS04 y demostró que la trazabilidad lote–tueste–cata es un eje prioritario del producto. Queda como deuda técnica y funcional para una iteración posterior, en la que el enlace automático deberá validarse con métricas de reducción de esfuerzo manual (H-01).
+
+**2. Vista económica consolidada por lote en el dashboard**
+
+*Pregunta:* ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario (`/api/v1/inventory-entries`) y costos de producción (`/api/v1/production-cost-records`)?
+
+**Conclusión:** La implementación To-Be (TUS05) confirmó que el **costo por kilo** es el indicador económico más consultado (**84.2%** de participantes), validando la dirección del experimento. Sin embargo, la utilidad percibida de la vista consolidada fue **3.66/5**, por debajo del umbral ≥ 4/5 y del **4.32/5** del TB2. La tarjeta aportó al proyecto la evidencia de que centralizar stock e indicadores aporta valor, pero la experiencia actual aún no cumple la expectativa generada en la priorización; permanece en la rama `experiment` para refinamiento UX antes de producción.
+
+**3. Vista mínima de correlación lote-tueste-cata**
+
+*Pregunta:* ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata que reúna curvas de tueste (`roast-profile-comparison`) y perfil sensorial (`cupping-sensory-radar`) del mismo lote?
+
+**Conclusión:** TUS04 materializó esta tarjeta en la ruta `/roast-flavor-correlation`, unificando en una sola pantalla datos técnicos y sensoriales del mismo lote. El **65.8%** de participantes asocia la mejora al perfil barista, lo que confirma su pertinencia operativa. No obstante, la utilidad percibida (**3.74/5**) y la probabilidad de uso (**3.55/5**) quedaron por debajo del TB2 y del umbral definido; solo el **28.9%** consideró que la vista cumple plenamente su expectativa. La tarjeta demostró que la correlación es valorada, pero la implementación requiere iterar curvas, comparación y claridad visual antes de considerarse validada para producción.
+
+**4. Mejoras UX en el flujo de cata digital**
+
+*Pregunta:* ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local en la sesión de cata?
+
+**Conclusión:** Esta tarjeta tradujo a experimento verificable las fricciones documentadas en entrevistas (Cap. VI) y en la evaluación heurística (6.3.3): íconos poco visibles, confusión entre editar y clonar, campos sin marcar y ausencia de temporizador. No fue implementada en el sprint To-Be de esta entrega ni evaluada en el formulario de validación, pero permanece en el backlog como mejora incremental de alto impacto operativo para baristas (US05). Su valor para el proyecto consiste en formalizar mejoras UX concretas y medibles, evitando rediseños genéricos sin evidencia de usuario.
+
+**5. Marca y modelo del molino en calibraciones de molienda**
+
+*Pregunta:* ¿Mejorará la consistencia entre turnos documentar marca y modelo del molino en el registro de calibraciones de molienda?
+
+**Conclusión:** La tarjeta identificó que el formulario de calibración (US08) pierde contexto replicable al clonar registros, porque no captura el equipo real (p. ej. Comandante, Mazzer). Fue priorizada como experimento complementario de menor urgencia en el backlog profundo (pregunta 8, Fibonacci bajo) y no se implementó en este ciclo. Para el proyecto, significó reconocer una brecha de trazabilidad entre turnos sin desviar recursos del subconjunto de cinco mejoras To-Be validadas con usuarios reales.
+
+**6. Filtros por categoría e intensidad en la biblioteca de defectos**
+
+*Pregunta:* ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste?
+
+**Conclusión:** Propuesta a partir de la retroalimentación de Aldo Zavala en validación (Cap. VI), esta tarjeta anticipó el problema de escalabilidad del catálogo de defectos conforme crece el historial del laboratorio (US04). No alcanzó priorización para implementación To-Be en esta entrega. Su aporte al proyecto fue mantener visible una mejora de consulta y filtrado para baristas, reservada para una iteración futura cuando el volumen de registros lo justifique.
+
+**7. Motivo de consumo en movimientos de inventario**
+
+*Pregunta:* ¿Mejorará el control de merma registrar el motivo o tipo de consumo al registrar movimientos de inventario por lote?
+
+**Conclusión:** TUS03 implementó el selector de motivo (Barra / Retail / Muestras / Otro) en `/inventory`, respondiendo a una necesidad con fuerte respaldo en el TB2 (**4.37/5** de utilidad esperada). En la experiencia real, la utilidad percibida fue **3.66/5**, por debajo del umbral ≥ 4/5. La tarjeta confirmó que la trazabilidad del consumo es relevante para dueños, pero la implementación actual —incluyendo la imposibilidad de editar consumos ya registrados— no alcanza la expectativa generada. Permanece en `experiment` para refinamiento; no forma parte del traspaso inmediato a `develop` en esta entrega.
+
+**8. Traducción completa en flujos críticos (es/en)**
+
+*Pregunta:* ¿Ampliará la adopción completar las traducciones pendientes en `public/i18n` (es/en) en los flujos críticos de cata, tueste, costos e inventario?
+
+**Conclusión:** TUS02 fue la Experiment Card con **mejor desempeño relativo** frente al TB2: traducción percibida **4.63/5** (superior al **4.37/5** esperado), solo **5.3%** reportó textos mezclados y **100%** indicó que la traducción incrementa su confianza en la plataforma. La tarjeta demostró que la internacionalización no es un detalle cosmético, sino un factor de adopción y confianza, especialmente para uso en contextos internacionales (**92.1%** de respuestas favorables). Por ello, el equipo la define como **mejora validada para avanzar a producción**.
+
+**9. Persona de contacto y enlace web en proveedores**
+
+*Pregunta:* ¿Facilitará la coordinación con origen añadir persona de contacto y enlace web o red social al registro de proveedores?
+
+**Conclusión:** TUS01 implementó `contactPerson` y `webLink` en la ficha de proveedor, con validación en dominio, API y pruebas BDD. La utilidad percibida alcanzó **4.24/5** (contacto) y **4.03/5** (enlace web), cumpliendo el umbral ≥ 4/5. La tarjeta validó que ampliar la ficha reduce la fragmentación de datos comerciales dentro de CaféLab. La brecha respecto al TB2 (**89.5%** esperaba reducir herramientas externas vs **50.0%** en To-Be) indica que los campos son útiles, pero aún no sustituyen por completo WhatsApp, Excel o notas. Aun así, el equipo la considera **lista para avanzar a producción** junto con TUS02.
 
 #### Conclusión
 
