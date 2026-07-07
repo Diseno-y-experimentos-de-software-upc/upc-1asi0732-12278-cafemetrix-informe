@@ -6592,6 +6592,34 @@ El contenido de la auditoría que hemos recibido se basa en el Enunciado de Trab
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
 
 
+Para desarrollar el resumen de modificaciones para subsanar los hallazgos de la auditoría realizada por Defontes, se van a presentar mediante un listado que incluye el número del hallazgo, el tipo, su descripción y cómo se ha solucionado, junto con evidencia representativa. En este apartado no se ha considerado los hallazgos considerados como Fortaleza.
+
+##### Resumen
+
+**Número de Hallazgo: 1**
+
+Descripción provista: La landing page desplegada no implementa los SEO tags y meta tags declarados en la sección 4.2.3 del informe (evidencia): el HTML servido el 01/07/2026 contiene `<title>AngularLanding</title>` y `lang="en"`, sin las etiquetas description, keywords, author ni copyright que el informe presenta como implementadas, incumpliendo lo declarado en 4.2.3 y la sección 4.2 del TF (requisito). Caso: `https://cafemetrix-cafelab-landingpage.web.app/` (enunciado).
+
+Solución provista: Para solucionar este hallazgo, hemos realizado la implementación de los SEO tags y meta tags, entre otros aspectos notados en la auditoría. Al estar estos incluidos en el informe, lo hemos aplicado para mantener coherencia entre la planificación del producto y su desarrollo.
+
+Evidencia:
+
+![Hallazgo 1](public/assets/images/hallazgos/ha-1.png)
+
+
+**Número de Hallazgo: 2**
+
+Descripción provista: El backend desplegado en Railway no está disponible (evidencia): la raíz, `/swagger-ui/index.html`, `/v3/api-docs` y `/actuator/health` respondieron HTTP 404 el 01/07/2026, incumpliendo las secciones 5.2.6 y 5.2.7 del TF que exigen evidencia de API desplegada y su documentación (requisito). Caso: `https://cafelab-backend-production-809b.up.railway.app/` — enlace publicado en el propio informe (enunciado).
+
+Solución provista: Para este proyecto no se ha provisto el despliegue del backend debido a que se va a presentar de forma local.
+
+**Número de Hallazgo: 3**
+
+Descripción provista: Las secciones 8.3.3 a 8.6 del informe (To-Be Sprint Backlogs, evidencias de implementación To-Be, To-Be Validation Interviews, Experiment Aftermath & Analysis, Continuous Learning y Pre-launch) figuran en el índice pero no tienen contenido en el cuerpo del documento (evidencia), incumpliendo el hito 4 del TF que exige ejecutar los experimentos planificados con To-Be Product Backlog, To-Be Sprint Backlogs, pipeline y Continuous Learning (requisito). El informe pasa de 8.3.2 directamente a Conclusiones, pág. 260 (enunciado).
+
+Solución provista: Para solucionar este hallazgo, hemos añadido las secciones 8.3.3. a 8.6 del informe como se tenía provisto considerando que esta es la entrega final.
+
+
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration.
