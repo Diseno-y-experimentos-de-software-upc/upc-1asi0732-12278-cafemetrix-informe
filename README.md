@@ -8222,6 +8222,101 @@ El equipo organizó un sprint backlog orientado a implementaciones incrementales
 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence.
 
+Para la demostración del desarrollo de las historias de usuario To-Be en la aplicación web, se utilizaron capturas de la implementación realizada sobre la plataforma, con el fin de evidenciar cómo quedaron incorporadas las mejoras funcionales propuestas para los distintos perfiles de usuario. A través de estas vistas se puede observar la aplicación concreta de cada historia de usuario dentro de los módulos correspondientes del sistema web.
+
+| Story ID | Descripción breve                            |
+|----------|----------------------------------------------|
+| TUS01    | Mejora de ficha de proveedor                 |
+| TUS02    | Traducción completa de pantallas críticas    |
+| TUS03    | Registro de motivo de consumo de inventario  |
+| TUS04    | Vista mínima de correlación lote-tueste-cata |
+| TUS05    | Vista económica consolidada por lote         |
+
+A continuación se presenta cada To-Be User Story implementada en la aplicación web, junto con las capturas que evidencian su funcionamiento y la decisión de diseño aplicada en cada caso.
+
+**TUS01: Mejora de ficha de proveedor**
+
+En estas capturas se evidencia la mejora de la ficha de proveedor dentro del sistema web. Se incorporan campos orientados a registrar de forma más completa la información de contacto del proveedor, facilitando la comunicación directa y reduciendo la dependencia de registros externos o búsquedas manuales. Con esta mejora, el administrador puede consultar y gestionar mejor la relación con cada proveedor desde una sola interfaz.
+
+![TUS-01 Evidencia 1 en Web](public/assets/images/TUS-WebApp/TUS1_1.png)
+
+![TUS-01 Evidencia 2 en Web](public/assets/images/TUS-WebApp/TUS1_2.png)
+
+![TUS-01 Evidencia 3 en Web](public/assets/images/TUS-WebApp/TUS1_3.png)
+
+**TUS02: Traducción completa de pantallas críticas**
+
+En estas capturas se evidencia la traducción de pantallas críticas dentro de la aplicación web. La implementación considera la adaptación terminológica de los módulos clave del negocio para que la experiencia sea comprensible y consistente para usuarios angloparlantes. Esta mejora reduce ambigüedades, evita errores de interpretación y aporta coherencia entre las distintas vistas del sistema.
+
+**Módulo Cata**
+
+![TUS-02 Cata Evidencia 1 en Web](public/assets/images/TUS-WebApp/TUS2_Cata1.png)
+
+![TUS-02 Cata Evidencia 2 en Web](public/assets/images/TUS-WebApp/TUS2_Cata2.png)
+
+![TUS-02 Cata Evidencia 3 en Web](public/assets/images/TUS-WebApp/TUS2_Cata3.png)
+
+**Módulo Costos**
+
+![TUS-02 Costos Evidencia 1 en Web](public/assets/images/TUS-WebApp/TUS2_Costos1.png)
+
+![TUS-02 Costos Evidencia 2 en Web](public/assets/images/TUS-WebApp/TUS2_Costos2.png)
+
+![TUS-02 Costos Evidencia 3 en Web](public/assets/images/TUS-WebApp/TUS2_Costos3.png)
+
+![TUS-02 Costos Evidencia 4 en Web](public/assets/images/TUS-WebApp/TUS2_Costos4.png)
+
+![TUS-02 Costos Evidencia 5 en Web](public/assets/images/TUS-WebApp/TUS2_Costos5.png)
+
+![TUS-02 Costos Evidencia 6 en Web](public/assets/images/TUS-WebApp/TUS2_Costos6.png)
+
+![TUS-02 Costos Evidencia 7 en Web](public/assets/images/TUS-WebApp/TUS2_Costos7.png)
+
+![TUS-02 Costos Evidencia 8 en Web](public/assets/images/TUS-WebApp/TUS2_Costos8.png)
+
+**Módulo Inventario**
+
+![TUS-02 Inventario Evidencia 1 en Web](public/assets/images/TUS-WebApp/TUS2_Inventario1.png)
+
+![TUS-02 Inventario Evidencia 2 en Web](public/assets/images/TUS-WebApp/TUS2_Inventario2.png)
+
+![TUS-02 Inventario Evidencia 3 en Web](public/assets/images/TUS-WebApp/TUS2_Inventario3.png)
+
+**Módulo Tueste**
+
+![TUS-02 Tueste Evidencia 1 en Web](public/assets/images/TUS-WebApp/TUS2_Tueste1.png)
+
+![TUS-02 Tueste Evidencia 2 en Web](public/assets/images/TUS-WebApp/TUS2_Tueste2.png)
+
+![TUS-02 Tueste Evidencia 3 en Web](public/assets/images/TUS-WebApp/TUS2_Tueste3.png)
+
+![TUS-02 Tueste Evidencia 4 en Web](public/assets/images/TUS-WebApp/TUS2_Tueste4.png)
+
+![TUS-02 Tueste Evidencia 5 en Web](public/assets/images/TUS-WebApp/TUS2_Tueste5.png)
+
+**TUS03: Registro de motivo de consumo de inventario**
+
+En estas capturas se muestra la incorporación de campos y datos asociados al motivo de consumo de inventario, permitiendo justificar la salida o uso del café por lote. Esta mejora ayuda a dar trazabilidad al consumo, fortalece el control administrativo y permite revisar posteriormente las razones registradas para cada movimiento dentro del historial.
+
+![TUS-03 Evidencia 1 en Web](public/assets/images/TUS-WebApp/TUS3_1.png)
+
+![TUS-03 Evidencia 2 en Web](public/assets/images/TUS-WebApp/TUS3_2.png)
+
+**TUS04: Vista mínima de correlación lote-tueste-cata**
+
+En esta captura se evidencia la incorporación de una vista que relaciona información del lote con sus datos de tueste y cata, permitiendo visualizar en un mismo contexto elementos que antes estaban dispersos en distintas pantallas. Con ello, se facilita el análisis operativo del café y se mejora la toma de decisiones basada en la información consolidada.
+
+![TUS-04 en Web](public/assets/images/TUS-WebApp/TUS4_1.png)
+
+**TUS05: Vista económica consolidada por lote**
+
+En estas capturas se presenta la vista económica consolidada por lote implementada en la aplicación web. Esta funcionalidad reúne indicadores clave como disponibilidad, consumo y seguimiento financiero del lote en una sola pantalla, ayudando al administrador a reducir omisiones y a interpretar mejor el impacto económico asociado a cada lote gestionado.
+
+![TUS-05 Evidencia 1 en Web](public/assets/images/TUS-WebApp/TUS5_1.png)
+
+![TUS-05 Evidencia 2 en Web](public/assets/images/TUS-WebApp/TUS5_2.png)
+
+![TUS-05 Evidencia 3 en Web](public/assets/images/TUS-WebApp/TUS5_3.png)
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence.
 
