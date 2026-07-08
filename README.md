@@ -9049,6 +9049,8 @@ Las recomendaciones se derivan directamente de los resultados de los capítulos 
 
 # Video App Validation
 
+- Enlace para acceder al [Video App Validation](https://youtu.be/XTZlbfPDETg)
+
 # Video About the Team
 
 # Bibliografía
