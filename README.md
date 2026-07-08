@@ -8285,6 +8285,20 @@ En estas capturas se muestra la adición de una pantalla importante: Análisis e
 
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence.
 
+Se levantó el backend `cafelab-backend` (Spring Boot 3.5 / Java 24) en un contenedor Docker junto a su base de datos MySQL, y se accedió a la documentación interactiva generada con **Swagger/OpenAPI** (`/swagger-ui/index.html`) para evidenciar los endpoints REST implementados en la rama `experiment` que soportan las cinco To-Be User Stories (TUS01–TUS05).
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-8/tobe-api-evidence1.png" alt="Evidencia API To-Be 1 - Listado completo de módulos y endpoints en Swagger">
+</figure>
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-8/tobe-api-evidence2.png" alt="Evidencia API To-Be 2 - Detalle de endpoints del módulo Inventory Entries">
+</figure>
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-8/tobe-api-evidence3.png" alt="Evidencia API To-Be 3 - Detalle de parámetros y respuesta de un endpoint">
+</figure>
+
 #### 8.3.3.6. Team Collaboration Insights.
 <hr>
 <h3 align="center">Frontend</h3>
