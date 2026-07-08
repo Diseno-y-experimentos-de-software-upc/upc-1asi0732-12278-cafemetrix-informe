@@ -99,6 +99,7 @@
 | 1.41    | 07/07/2026 | Quispe Roldan, Michael Fred       | Añadió su Project Report Collaboration Insights y Student Outcome para TF1 (implementación de TUS01, mejora de la ficha de proveedor, front y back)                          |
 | 1.42    | 07/07/2026 | Fernandez Camayo, Carlos Fredy    | Amplió la sección 8.4.1 con las conclusiones de las nueve Experiment Cards y su significado para el proyecto                                                                |
 | 1.43    | 07/07/2026 | Fernandez Camayo, Carlos Fredy    | Actualizó 8.3.4.1, 8.3.4.2 y 8.4.1 para alinear la validación To-Be con video demostrativo (coherente con el formulario Google Forms)                                       |
+| 1.44    | 07/07/2026 | Inga Orihuela, Christian Fabrizio    |  Añadió las secciones 8.3.3.3, 8.4.2.                                       |
 
 <div style="page-break-after: always;"></div>
 
@@ -8876,16 +8877,16 @@ Estos hallazgos permiten contrastar la priorización del TB2 con la percepción 
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog.
 
-Con los resultados del formulario To-Be ([8.3.4.2](#8342-registro-de-entrevistas)) y su interpretación en [8.4.1](#841-analysis-and-interpretation-of-results), el equipo re-puntúa y re-prioriza el Question Backlog inicialmente definido en [8.1.4](#814-question-backlog). A diferencia del backlog original, que se apoyaba principalmente en la utilidad esperada del formulario TB2, esta nueva versión incorpora evidencia de utilidad percibida, cumplimiento de hipótesis y señales de traslado a producción o permanencia en iteración.
+A diferencia del backlog original, que se apoyaba principalmente en la utilidad esperada del formulario TB2, esta nueva versión incorpora evidencia de utilidad percibida, cumplimiento de hipótesis y señales de traslado a producción o permanencia en iteración.
 
 **Criterios de re-score empleados:**
 
-- **Validación directa en To-Be:** prioridad superior para preguntas cuyas mejoras alcanzaron o superaron el umbral de aceptación definido en [8.2.5](#825-scale-calculations-and-decisions).
+- **Validación directa en To-Be:** prioridad superior para preguntas cuyas mejoras alcanzaron o superaron el umbral de aceptación.
 - **Brecha TB2 vs To-Be:** se reduce prioridad cuando la utilidad percibida cae respecto a la expectativa inicial o no alcanza el umbral ≥ 4/5.
 - **Valor residual para la siguiente iteración:** se mantiene o eleva prioridad en mejoras que, aun sin validar plenamente, conservan señales claras de necesidad operativa.
 - **Evidencia indirecta o ausencia de validación en esta ronda:** preguntas no implementadas en el video To-Be conservan prioridad media o baja, salvo cuando los resultados de una mejora relacionada justifican moverlas.
 
-La escala Fibonacci se mantiene (**1, 2, 3, 5, 8**), donde **1** representa la mayor prioridad posterior al experimento y **8** la menor.
+La escala Fibonacci se mantiene (1, 2, 3, 5, 8), donde 1 representa la mayor prioridad posterior al experimento y 8 la menor.
 
 | Prioridad (1, 2, 3, 5, 8) | Pregunta re-priorizada | Re-score rationale |
 | ----- | ----- | ----- |
@@ -8899,15 +8900,6 @@ La escala Fibonacci se mantiene (**1, 2, 3, 5, 8**), donde **1** representa la m
 | 5 | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? | Sigue siendo una mejora útil para escalabilidad del laboratorio, aunque en esta validación no recibió evidencia nueva cuantitativa. Permanece en backlog profundo para una iteración posterior. |
 | 8 | ¿Mejorará la consistencia entre turnos documentar marca y modelo del molino en el registro de calibraciones de molienda? | Continúa siendo una mejora complementaria sin evidencia nueva en el formulario To-Be ni presión inmediata frente a otras necesidades del producto. Conserva la menor prioridad relativa en este ciclo. |
 
-#### Lectura del backlog re-priorizado
-
-El re-score posterior al experimento modifica el objetivo del backlog: ya no se trata solo de decidir qué conviene experimentar primero, sino también qué conviene mover a producción, qué debe iterarse pronto y qué puede esperar. Bajo esta nueva lectura, las nueve preguntas quedan agrupadas en tres bloques prácticos:
-
-- **Listas para avanzar a producción:** traducción completa (TUS02) y ficha ampliada de proveedor (TUS01), ambas con prioridad **1**.
-- **Listas para nueva iteración en rama `experiment`:** correlación lote-tueste-cata (TUS04), vista económica por lote (TUS05), motivo de consumo (TUS03) y automatización estructural del enlace lote-tueste-cata, con prioridades **2** y **3**.
-- **Backlog profundo para ciclos posteriores:** mejoras UX de cata, filtros en defectos y marca/modelo de molino, con prioridades **5** y **8**.
-
-En consecuencia, el equipo redefine el orden de trabajo del próximo ciclo de esta forma: primero consolidar y trasladar a producción las mejoras ya validadas; después, iterar las funcionalidades que mostraron valor parcial pero insuficiente; y finalmente conservar en backlog profundo las preguntas que aún no cuentan con evidencia nueva suficiente para justificar su implementación inmediata.
 
 ## 8.5. Continuous Learning.
 
