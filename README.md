@@ -9176,6 +9176,8 @@ Las recomendaciones se derivan directamente de los resultados de los capítulos 
 
 # Video About the Team
 
+- Enlace para acceder al [Video About the Team](https://youtu.be/dtWpKHs-EVw)
+
 # Bibliografía
 
 - **Google** (s. f.). *Material Design — design system (Android)*. [https://m3.material.io](https://m3.material.io)
@@ -9215,6 +9217,8 @@ Las recomendaciones se derivan directamente de los resultados de los capítulos 
 - Enlace para acceder al [video exposición de TP1](https://youtu.be/ApVzihb3R_o)
 
 - Enlace para acceder al [video exposición de TB2](https://youtu.be/ZQcRmK4I8FM)
+
+- Enlace para acceder al [video exposición de TF1](https://youtu.be/HLIOt764nfo)
 
 - Enlace para acceder al [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&p=f&t=f0KUudOr0KNMX5mk-0)
 
