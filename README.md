@@ -8876,6 +8876,39 @@ Estos hallazgos permiten contrastar la priorización del TB2 con la percepción 
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog.
 
+Con los resultados del formulario To-Be ([8.3.4.2](#8342-registro-de-entrevistas)) y su interpretación en [8.4.1](#841-analysis-and-interpretation-of-results), el equipo re-puntúa y re-prioriza el Question Backlog inicialmente definido en [8.1.4](#814-question-backlog). A diferencia del backlog original, que se apoyaba principalmente en la utilidad esperada del formulario TB2, esta nueva versión incorpora evidencia de utilidad percibida, cumplimiento de hipótesis y señales de traslado a producción o permanencia en iteración.
+
+**Criterios de re-score empleados:**
+
+- **Validación directa en To-Be:** prioridad superior para preguntas cuyas mejoras alcanzaron o superaron el umbral de aceptación definido en [8.2.5](#825-scale-calculations-and-decisions).
+- **Brecha TB2 vs To-Be:** se reduce prioridad cuando la utilidad percibida cae respecto a la expectativa inicial o no alcanza el umbral ≥ 4/5.
+- **Valor residual para la siguiente iteración:** se mantiene o eleva prioridad en mejoras que, aun sin validar plenamente, conservan señales claras de necesidad operativa.
+- **Evidencia indirecta o ausencia de validación en esta ronda:** preguntas no implementadas en el video To-Be conservan prioridad media o baja, salvo cuando los resultados de una mejora relacionada justifican moverlas.
+
+La escala Fibonacci se mantiene (**1, 2, 3, 5, 8**), donde **1** representa la mayor prioridad posterior al experimento y **8** la menor.
+
+| Prioridad (1, 2, 3, 5, 8) | Pregunta re-priorizada | Re-score rationale |
+| ----- | ----- | ----- |
+| 1 | ¿Ampliará la adopción completar las traducciones pendientes en `public/i18n` (es/en) en los flujos críticos de cata, tueste, costos e inventario? | Es la pregunta con mejor evidencia post-experimento: traducción completa **4.63/5**, **100%** reporta mayor confianza, solo **5.3%** detecta textos mixtos y el uso internacional alcanza **4.32/5**. Se confirma como mejora lista para producción. |
+| 1 | ¿Facilitará la coordinación con origen añadir persona de contacto y enlace web o red social al registro de proveedores? | La utilidad percibida se mantiene favorable: **4.24/5** para persona de contacto y **4.03/5** para enlace web. Aunque la reducción de herramientas externas baja a **50.0%**, la mejora alcanza el umbral y queda lista para producción. |
+| 2 | ¿Facilitará la toma de decisiones en laboratorio una vista mínima de correlación lote-tueste-cata que reúna curvas de tueste y perfil sensorial del mismo lote? | Aunque no valida plenamente la hipótesis, sigue siendo la mejora iterativa con mejor señal entre las no aprobadas: utilidad **3.74/5**, probabilidad de uso **3.55/5** y **65.8%** la asocia al perfil barista. Debe liderar la siguiente iteración UX en laboratorio. |
+| 2 | ¿Incrementará la rentabilidad percibida integrar en el dashboard una vista consolidada por lote que combine inventario y costos de producción? | La utilidad global fue **3.66/5**, pero **84.2%** confirma que el costo por kilo es el indicador económico prioritario. La necesidad de negocio persiste con claridad, por lo que merece una nueva iteración cercana a producción. |
+| 3 | ¿Mejorará el control de merma registrar el motivo o tipo de consumo al registrar movimientos de inventario por lote? | La utilidad percibida fue **3.66/5**, por debajo del umbral, pero la mejora conserva sentido operativo para trazabilidad y control administrativo. Debe continuar en backlog activo, aunque por detrás de correlación y vista económica. |
+| 3 | ¿Mejorará la replicabilidad del tueste al automatizar el enlace entre lote, perfil de tueste y sesión de cata sin intervención manual del usuario? | No fue validada directamente en el formulario To-Be, pero los resultados de TUS04 muestran que la correlación lote–tueste–cata sigue siendo valiosa. La automatización del enlace permanece como apuesta estructural de prioridad media. |
+| 5 | ¿Reducirá errores y tiempo de registro en cata al marcar campos obligatorios, diferenciar editar/clonar e incorporar un temporizador local en la sesión de cata? | No fue medida en esta ronda y sigue respaldada principalmente por entrevistas y heurísticas. Mantiene relevancia operativa, pero sin evidencia nueva suficiente para desplazar a las mejoras ya validadas o reprobadas directamente. |
+| 5 | ¿Agilizará la consulta en laboratorio añadir filtros por categoría e intensidad en la biblioteca de defectos de tueste? | Sigue siendo una mejora útil para escalabilidad del laboratorio, aunque en esta validación no recibió evidencia nueva cuantitativa. Permanece en backlog profundo para una iteración posterior. |
+| 8 | ¿Mejorará la consistencia entre turnos documentar marca y modelo del molino en el registro de calibraciones de molienda? | Continúa siendo una mejora complementaria sin evidencia nueva en el formulario To-Be ni presión inmediata frente a otras necesidades del producto. Conserva la menor prioridad relativa en este ciclo. |
+
+#### Lectura del backlog re-priorizado
+
+El re-score posterior al experimento modifica el objetivo del backlog: ya no se trata solo de decidir qué conviene experimentar primero, sino también qué conviene mover a producción, qué debe iterarse pronto y qué puede esperar. Bajo esta nueva lectura, las nueve preguntas quedan agrupadas en tres bloques prácticos:
+
+- **Listas para avanzar a producción:** traducción completa (TUS02) y ficha ampliada de proveedor (TUS01), ambas con prioridad **1**.
+- **Listas para nueva iteración en rama `experiment`:** correlación lote-tueste-cata (TUS04), vista económica por lote (TUS05), motivo de consumo (TUS03) y automatización estructural del enlace lote-tueste-cata, con prioridades **2** y **3**.
+- **Backlog profundo para ciclos posteriores:** mejoras UX de cata, filtros en defectos y marca/modelo de molino, con prioridades **5** y **8**.
+
+En consecuencia, el equipo redefine el orden de trabajo del próximo ciclo de esta forma: primero consolidar y trasladar a producción las mejoras ya validadas; después, iterar las funcionalidades que mostraron valor parcial pero insuficiente; y finalmente conservar en backlog profundo las preguntas que aún no cuentan con evidencia nueva suficiente para justificar su implementación inmediata.
+
 ## 8.5. Continuous Learning.
 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow.
